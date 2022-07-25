@@ -1,0 +1,162 @@
+:root {
+  --main-color: #306EB6;
+  --light-color: #EDEDED;
+  --disabled-color:#ececec;
+  --secondary-color: #000000; 
+}
+
+
+.bg-menu{
+  background-color: #2557ac;
+}
+
+
+.truncate{
+  max-width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.delete-btn{
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: underline;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.view-btn {
+    color: lightgreen;
+  }
+  .view-btn:hover {
+    color: darkgreen;
+  }
+  
+  
+  .edit-btn {
+    color: lightblue;
+  }
+  .edit-btn:hover {
+    color: darkblue;
+  }
+  
+  .delete-btn {
+    color: lightcoral;
+  }
+  .delete-btn:hover {
+    color: darkred;
+  }
+
+  @media only screen and (max-width: 600px) {
+  .mobile-limit{
+    width: 30% !important;
+  }
+  
+  .mobile-hide {
+    display: none;
+  }
+}
+
+.isf-title{
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+.card-icon{
+  font-size: xx-large;
+  color: lightgray;
+}
+
+.note {
+  padding: 0.75em;
+  background-color: #0653B617;
+  margin-bottom: 0.5em;
+  border-radius: 10px;
+}
+
+.note_title{
+  border-bottom: 1px solid #b7b9cc;
+  margin-bottom: 10px;
+}
+
+.comment_area{
+  margin-bottom: 10px
+}
+
+.table_header{
+  background-color: #f8f9fc;
+} 
+
+.sorting_1, .sorting_2, .sorting_3, .sorting_4, .sorting_5 {
+  background-color: transparent !important;
+}
+
+tr.odd, tr.even{
+  background-color: transparent !important;
+}
+
+.cancelled-admin, .cancelled{
+  color: #d2d2d2;
+}
+
+.campaign_active{
+  color: var(--main-color);
+}
+
+.btn-isf{
+  background-color: var(--main-color);
+  border: 1px solid var(--secondary-color);
+  color: #fff;
+}
+
+.btn-isf:hover{
+  background-color: var(--light-color);
+  border: 1px solid var(--main-color) ;
+  color: #fff;
+}
+
+.reserve-active{
+  color: var(--main-color);
+}
+
+.value-text{
+  font-weight: lighter;
+}
+
+
+@media only screen and (max-width: 992px) {
+.table-card-body{
+  padding: 1.25rem 0px ;
+  /* font-size: smaller; */
+}
+
+.table-card-body > div > div > table {
+  font-size: x-small;
+}
+
+.info-block{
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 10px;
+  padding-bottom: 10px;  
+}
+
+}
+
+
+.border-left-isf{
+    border-left: .25rem solid var(--main-color) !important;
+}
+
+.text-isf{
+  color: var(--main-color);
+}
+
+.system_title{
+  color: var(--main-color);
+  font-size: larger;
+  margin-left: 4%;
+}

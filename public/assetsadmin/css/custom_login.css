@@ -1,0 +1,44 @@
+:root {
+    --main-color: #306EB6;
+    --light-color: #EDEDED;
+    --disabled-color:#ececec;
+    --secondary-color: #000000; 
+}
+
+#app{
+    min-height: 100vh;
+    background-image: linear-gradient(180deg,#000 5%,var(--main-color) 110%)
+}
+
+.img_logo{
+    width:150px;
+}
+
+.img_logo>img{
+    width:100%;
+}
+
+.card{
+    background-color: transparent;
+border: none;
+}
+
+.btn.btn-link:hover{
+    color: grey;
+}
+.btn.btn-link{
+    color: #fff;
+}
+
+
+.btn-isf{
+    background-color: var(--main-color);
+    border: 1px solid var(--secondary-color);
+    color: #fff;
+  }
+  
+  .btn-isf:hover{
+    background-color: var(--light-color);
+    border: 1px solid var(--main-color) ;
+    color: #fff;
+  }
