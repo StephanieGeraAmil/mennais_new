@@ -23,7 +23,7 @@ class AdminController extends Controller
         ->with('institution')
         ->with('attendances')->get();
         $registered_users_quantity = $registered_users->count();
-        $functions = array();
+        $functions = [0,0];
         foreach($registered_users as $registered_user){
             $offset = $registered_user->userData->function;
             if(array_key_exists($offset, $functions)){
