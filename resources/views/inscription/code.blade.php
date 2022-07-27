@@ -8,7 +8,7 @@
     <title>Inscripción Indivudual</title>
     <link rel="stylesheet" href="/css/nicepage.css?v=6" media="screen">
     <link rel="stylesheet" href="/css/inscripcion.css?v=6" media="screen">
-    <script class="u-script" type="text/javascript" src="jquery.js?v=6" defer=""></script>
+    <script class="u-script" type="text/javascript" src="/js/jquery.js"></script>
     <script class="u-script" type="text/javascript" src="nicepage.js?v=6" defer=""></script>
     <meta name="generator" content="Nicepage 4.11.3, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
@@ -107,12 +107,32 @@
                                                 {{-- <label for="phone-4c18" class="u-label">Teléfono: *</label> --}}
                                                 <input type="text" placeholder="Ingrese su teléfono" id="phone-4c18" name="phone" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" required="" value="{{old('phone')}}">
                                             </div>
-                                            <div class="u-form-group u-form-select u-form-group-7">
+                                            {{-- <div class="u-form-group u-form-select u-form-group-7">
                                                 <label for="select-c15f" class="u-form-control-hidden u-label"></label>
                                                 <div class="u-form-select-wrapper">
                                                     <select id="select-c15f" name="function" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white">
                                                         <option value="0" {{old('function') == 0?"selected":""}}>Directivo o Coordinador</option>
                                                         <option value="1" {{old('function')==1?"selected":""}}>Docente de aula</option>
+                                                    </select>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
+                                                </div>
+                                            </div> --}}
+                                            <div class="u-form-group u-form-select u-form-group-7">
+                                                <label for="first_workshop_group_id" class="u-form-control-hidden u-label"></label>
+                                                <div class="u-form-select-wrapper">
+                                                    <select id="first_workshop_group_id" name="first_workshop_group_id" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white">
+                                                        @foreach ($first_workshop_groups as $first_workshop_group)
+                                                            <option value="{{$first_workshop_group->id}}">{{$first_workshop_group->school->name}} 
+                                                                ({{ Carbon\Carbon::parse($first_workshop_group->start_at)->format('H:i') }} - {{ Carbon\Carbon::parse($first_workshop_group->end_at)->format('H:i') }})</option>
+                                                        @endforeach
+                                                    </select>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
+                                                </div>
+                                            </div>
+                                            <div class="u-form-group u-form-select u-form-group-7">
+                                                <label for="second_workshop_group_id" class="u-form-control-hidden u-label"></label>
+                                                <div class="u-form-select-wrapper">
+                                                    <select id="second_workshop_group_id" name="second_workshop_group_id" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white">     
                                                     </select>
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
                                                 </div>
@@ -152,5 +172,30 @@
     <p class="u-small-text u-text u-text-variant u-text-1">Desarrollado por <a href="https://isf.uy/" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" target="_blank">ISF</a></p>
 </div>
 </footer>    
+<script>
+    jQuery( document ).ready(function() {
+        loadSecondWorkshopGroup();
+        $('#first_workshop_group_id').change(function(ev){
+            loadSecondWorkshopGroup();
+        })
+    });
+    
+    function loadSecondWorkshopGroup(){
+        let first_workshop_group = $('#first_workshop_group_id').val();
+        let second_workshop_group = $('#second_workshop_group_id');
+        second_workshop_group.children().remove();
+        $.ajax({
+            url: '/api/second_workshop_group/'+first_workshop_group
+        }).done(function(data){
+            if('data' in data){
+                if(Array.isArray(data.data)){
+                    data.data.forEach(function(valor, indice, array){
+                        second_workshop_group.append(new Option(valor.school+" "+valor.hour,valor.id));
+                    });
+                }
+            }
+        });
+    }
+    </script>
 </body>
 </html>

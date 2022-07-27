@@ -24,10 +24,11 @@ class CodeInscriptionController extends Controller
         if($i_code->status > 1){
             return redirect('/');
         }
-
-
+        $first_workshop_groups = FirstWorkshopGroup::where('has_vacant', true)->get();        
+        
         return view('inscription.code')
         ->with('code',$i_code)
+        ->with('first_workshop_groups',$first_workshop_groups)
         ->with('institution',$i_code->groupInscription->institution);
     }
 
@@ -40,7 +41,7 @@ class CodeInscriptionController extends Controller
             'email' => 'required|email',
             'phone' => 'required|string|max:255',
             'institution_name' => 'required|string|max:255',
-            'institution_type' => 'required|boolean',
+            // 'institution_type' => 'required|boolean',
             'city' => 'required|string|max:255',
             'code' => 'required|integer',
             'first_workshop_group_id' => 'required|integer',
@@ -107,7 +108,7 @@ class CodeInscriptionController extends Controller
 
         $first_workshop_group->refresh_vacant();
         $second_workshop_group->refresh_vacant();
-        
+
         $code->status = 2;
         $code->inscription_id = $inscription->id;
         $code->save();
