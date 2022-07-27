@@ -43,7 +43,7 @@ class SimpleInscriptionController extends Controller
             'email' => 'required|email',
             'phone' => 'required|string|max:255',
             'institution_name' => 'required|string|max:255',
-            'institution_type' => 'required|boolean',
+            // 'institution_type' => 'required|boolean',
             'city' => 'required|string|max:255',
             'first_workshop_group_id' => 'required|integer',
             'second_workshop_group_id' => 'required|integer',
@@ -51,7 +51,7 @@ class SimpleInscriptionController extends Controller
             'payment_ref' => 'required|string|max:255',
             'payment_file'=>'required|file|mimes:jpg,png,jpeg,gif,svg,pdf',
         ]); 
-        
+        $document = str_replace([',','-','.',' '], '',$validated_data['document']);
         $first_workshop_group = FirstWorkshopGroup::findOrFail($validated_data['first_workshop_group_id']);
         $second_workshop_group = SecondWorkshopGroup::findOrFail($validated_data['second_workshop_group_id']);
     
@@ -76,7 +76,7 @@ class SimpleInscriptionController extends Controller
         */
         $institution = Institution::create([
             'institution'=>$validated_data['institution_name'],
-            'is_formal_institution'=>$validated_data['institution_type'],
+            // 'is_formal_institution'=>$validated_data['institution_type'],
             'city'=>$validated_data['city']
         ]);
         
@@ -86,7 +86,7 @@ class SimpleInscriptionController extends Controller
         $user_data = UserData::create([
             'name'=>$validated_data['name'],
             'lastname'=>$validated_data['lastname'],
-            'document'=>$validated_data['document'],
+            'document'=>$document,
             'email'=>$validated_data['email'],
             'phone'=>$validated_data['phone']
         ]);

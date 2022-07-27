@@ -16,7 +16,7 @@ class CreateInstitutionsTable extends Migration
         Schema::create('institutions', function (Blueprint $table) {
             $table->id();
             $table->string('institution');
-            $table->boolean('is_formal_institution');
+            // $table->boolean('is_formal_institution');
             $table->string('city');
             $table->timestamps();
         });

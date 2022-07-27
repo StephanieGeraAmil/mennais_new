@@ -16,7 +16,7 @@ class Institution extends Model
      */
     protected $fillable = [
         'institution',
-        'is_formal_institution',
+        // 'is_formal_institution',
         'city'
     ];
 
