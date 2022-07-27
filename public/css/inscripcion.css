@@ -1,5 +1,5 @@
  .u-section-1 {
-  background-image: linear-gradient(#151670, #812c6a);
+  background-image: linear-gradient(var(--custom-color-2), var(--custom-color-3));
 }
 
 .u-section-1 .u-sheet-1 {

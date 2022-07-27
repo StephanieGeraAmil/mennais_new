@@ -17,8 +17,7 @@ class SecondWorkshopGroupResource extends JsonResource
     {
         return [
             'id' => $this->id,
-            'school' => $this->school->name,
-            'hour' => "(".Carbon::parse($this->start_at)->format('H:i')." - ".Carbon::parse($this->end_at)->format('H:i').")",            
+            'text' => $this->getString()
         ];
     }
 

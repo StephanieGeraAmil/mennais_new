@@ -122,9 +122,9 @@
                                                 <div class="u-form-select-wrapper">
                                                     <select id="first_workshop_group_id" name="first_workshop_group_id" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white">
                                                         @foreach ($first_workshop_groups as $first_workshop_group)
-                                                            <option value="{{$first_workshop_group->id}}">{{$first_workshop_group->school->name}} 
-                                                                ({{ Carbon\Carbon::parse($first_workshop_group->start_at)->format('H:i') }} - {{ Carbon\Carbon::parse($first_workshop_group->end_at)->format('H:i') }})</option>
+                                                            <option value="{{$first_workshop_group->id}}">{{$first_workshop_group->getString()}}</option>
                                                         @endforeach
+                                                        <option value="0">No asistiré en este horario</option>
                                                     </select>
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
                                                 </div>
@@ -183,16 +183,17 @@
     function loadSecondWorkshopGroup(){
         let first_workshop_group = $('#first_workshop_group_id').val();
         let second_workshop_group = $('#second_workshop_group_id');
-        second_workshop_group.children().remove();
         $.ajax({
             url: '/api/second_workshop_group/'+first_workshop_group
         }).done(function(data){
+            second_workshop_group.children().remove();
             if('data' in data){
                 if(Array.isArray(data.data)){
                     data.data.forEach(function(valor, indice, array){
-                        second_workshop_group.append(new Option(valor.school+" "+valor.hour,valor.id));
+                        second_workshop_group.append(new Option(valor.text,valor.id));
                     });
                 }
+                second_workshop_group.append(new Option('No asistiré en este horario',0));
             }
         });
     }

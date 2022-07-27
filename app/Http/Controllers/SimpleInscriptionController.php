@@ -17,23 +17,26 @@ use Illuminate\Support\Facades\Mail;
 
 class SimpleInscriptionController extends Controller
 {
-
+    
     public function simpleInscription()
     {
         $first_workshop_groups = FirstWorkshopGroup::where('has_vacant', true)->get();        
         return view('inscription.simple')
         ->with('first_workshop_groups',$first_workshop_groups);
     }
-
-    public function list_second_groups($first_workshop_group_id){
-        $first_workshop_group = FirstWorkshopGroup::findOrFail($first_workshop_group_id);        
-        $second_workshop_groups = SecondWorkshopGroup::where('school_id','!=', $first_workshop_group->school_id)->where('has_vacant',true)->get();
-        return SecondWorkshopGroupResource::collection($second_workshop_groups);
-
     
+    public function list_second_groups($first_workshop_group_id){
+        $school = 0;
+        if($first_workshop_group_id > 0){
+            $first_workshop_group = FirstWorkshopGroup::findOrFail($first_workshop_group_id);
+            $school = $first_workshop_group->school_id;                    
+        }
+        $second_workshop_groups = SecondWorkshopGroup::where('school_id','!=', $school)->where('has_vacant',true)->get();
+        return SecondWorkshopGroupResource::collection($second_workshop_groups);        
+        
     }
-
-
+    
+    
     public function simpleInscriptionStore(Request $request)
     {
         $validated_data = $request->validate([
@@ -52,9 +55,12 @@ class SimpleInscriptionController extends Controller
             'payment_file'=>'required|file|mimes:jpg,png,jpeg,gif,svg,pdf',
         ]); 
         $document = str_replace([',','-','.',' '], '',$validated_data['document']);
-        $first_workshop_group = FirstWorkshopGroup::findOrFail($validated_data['first_workshop_group_id']);
-        $second_workshop_group = SecondWorkshopGroup::findOrFail($validated_data['second_workshop_group_id']);
-    
+        if($validated_data['first_workshop_group_id'] > 0){
+            $first_workshop_group = FirstWorkshopGroup::findOrFail($validated_data['first_workshop_group_id']);
+        }
+        if($validated_data['second_workshop_group_id'] > 0){
+            $second_workshop_group = SecondWorkshopGroup::findOrFail($validated_data['second_workshop_group_id']);
+        }
         /**Chequear si no esta lleno. */
         
         /**
@@ -103,17 +109,21 @@ class SimpleInscriptionController extends Controller
             'first_workshop_group_id'=>$validated_data['first_workshop_group_id'],
             'second_workshop_group_id'=>$validated_data['second_workshop_group_id'],
         ]);
-
-        $first_workshop_group->refresh_vacant();
-        $second_workshop_group->refresh_vacant();
-       
+        
+        if($validated_data['first_workshop_group_id'] > 0){
+            $first_workshop_group->refresh_vacant();
+        }
+        if($validated_data['second_workshop_group_id'] > 0){
+            $second_workshop_group->refresh_vacant();
+        }
+        
         
         Mail::to($user_data->email)->send(new FacetofaceInscriptionMail($inscription));   
         Mail::to(env('ADMIN_EMAIL'))->send(new AdminInscriptionMail($inscription));     
-
+        
         session()->flash('msg', 'Inscripción realizada con exito!!!');
         return redirect('/simple_inscription');
     }
-
-
+    
+    
 }
