@@ -202,11 +202,14 @@ class InscriptionController extends Controller
     
     
     public function attendance(Inscription $inscription, $token){
+        $user_id = auth()->user()->id;
+        
         if($inscription->validateToken($token)){
             try {                
                 $attendance = Attendance::create([
                     'inscription_id'=>$inscription->id,
-                    'date'=>Carbon::now()
+                    'date'=>Carbon::now(),
+                    'user_id'=>$user_id
                 ]);            
             } catch (\Throwable $th) {
                 

@@ -21,4 +21,6 @@ class SecondWorkshopGroupResource extends JsonResource
             'hour' => "(".Carbon::parse($this->start_at)->format('H:i')." - ".Carbon::parse($this->end_at)->format('H:i').")",            
         ];
     }
+
+    
 }

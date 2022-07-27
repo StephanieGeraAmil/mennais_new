@@ -101,13 +101,13 @@
                                                 {{-- <label for="phone-4c18" class="u-label">Teléfono: *</label> --}}
                                                 <input type="text" placeholder="Institución" id="institution_name-4c18" name="institution_name" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" required="" value="{{old('institution_name')}}">
                                             </div>
-                                            <div class="u-form-group u-form-name">
-                                                {{-- <label for="phone-4c18" class="u-label">Teléfono: *</label> --}}
+                                            {{-- <div class="u-form-group u-form-name">
+                                                
                                                 <select id="institution_type-4c18" name="institution_type" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
                                                     <option value="0" {{old('institution_type') == 0?"selected":""}}>Formal</option>
                                                         <option value="1" {{old('insitution_type')==1?"selected":""}}>No Formal</option>
                                                 </select>
-                                            </div>
+                                            </div> --}}
                                             <div class="u-form-group u-form-name">
                                                 {{-- <label for="phone-4c18" class="u-label">Teléfono: *</label> --}}
                                                 <input type="text" placeholder="Ciudad" id="city-4c18" name="city" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" required="" value="{{old('city')}}">

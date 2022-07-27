@@ -27,7 +27,7 @@ class GroupInscriptionController extends Controller
             'email' => 'required|email',
             'phone' => 'required|string|max:255',
             'institution_name' => 'required|string|max:255',
-            'institution_type' => 'required|boolean',
+            // 'institution_type' => 'required|boolean',
             'city' => 'required|string|max:255',
             'quantity_insc' => 'required|integer',
             'amount' => 'required|integer',
@@ -55,7 +55,7 @@ class GroupInscriptionController extends Controller
         */
         $institution = Institution::create([
             'institution'=>$validated_data['institution_name'],
-            'is_formal_institution'=>$validated_data['institution_type'],
+            // 'is_formal_institution'=>$validated_data['institution_type'],
             'city'=>$validated_data['city']
         ]);
         
