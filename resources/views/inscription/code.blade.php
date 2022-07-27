@@ -29,7 +29,7 @@
 </head>
 <body class="u-body u-overlap u-xl-mode" data-lang="es"><header class="u-clearfix u-header u-palette-1-dark-1 u-sticky u-sticky-387b u-header" id="sec-055d"><div class="u-clearfix u-sheet u-sheet-1">
     <h5 class="u-custom-font u-font-raleway u-text u-text-default u-text-1">
-        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-white u-btn-1" href="Inicio.html" data-page-id="126800706">VIV​ENCIANDO LA&nbsp;<br>TRANSFORMACIÓN​&nbsp;<br>EDUCATIVA<span style="font-size: 1.875rem;"></span>
+        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-white u-btn-1" href="/" data-page-id="126800706">VIV​ENCIANDO LA&nbsp;<br>TRANSFORMACIÓN​&nbsp;<br>EDUCATIVA<span style="font-size: 1.875rem;"></span>
             <br>
         </a>
     </h5>
