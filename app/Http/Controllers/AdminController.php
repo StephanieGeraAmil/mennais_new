@@ -22,20 +22,10 @@ class AdminController extends Controller
         $registered_users = Inscription::with('userData')
         ->with('institution')
         ->with('attendances')->get();
-        $registered_users_quantity = $registered_users->count();
-        $functions = [0,0];
-        foreach($registered_users as $registered_user){
-            $offset = $registered_user->userData->function;
-            if(array_key_exists($offset, $functions)){
-                $functions[$registered_user->userData->function] ++;
-            }else{
-                $functions[$registered_user->userData->function] = 1;
-            }
-        }        
+        $registered_users_quantity = $registered_users->count();                
         $accreditations = Attendance::all()->count();
         return view('admin.index')
         ->with('accreditations',$accreditations)
-        ->with('functions',$functions)
         ->with('registered_users_quantity',$registered_users_quantity)
         ->with('registered_users',$registered_users);
     }

@@ -83,8 +83,7 @@ class UserDataController extends Controller
         $user_data->lastname=$validated_data['lastname'];
         $user_data->document=$validated_data['document'];
         $user_data->email=$validated_data['email'];
-        $user_data->phone=$validated_data['phone'];
-        $user_data->function=$validated_data['function'];
+        $user_data->phone=$validated_data['phone'];        
         $user_data->save();
         return redirect("/admin/inscription/".$user_data->inscription->id);
     }

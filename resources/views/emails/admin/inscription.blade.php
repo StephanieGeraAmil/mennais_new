@@ -18,11 +18,7 @@ Se ha inscripto:
     <tr>
         <td>Teléfono</td>
         <td>{{$inscription->userData->phone}}</td>
-    </tr>
-    <tr>
-        <td>Función</td>
-        <td>{{($inscription->userData->function == 0)?"Directivo o coordinador":"Docente de aula"}}</td>
-    </tr>
+    </tr>    
     <tr>
         <td>Institución</td>
         <td>{{$inscription->institution->institution}}</td>

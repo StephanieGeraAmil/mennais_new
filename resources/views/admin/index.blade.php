@@ -126,12 +126,7 @@ Admin Panel
                                             <p class="text-gray-900 whitespace-no-wrap">
                                                 {{$registered_user->institution->institution}}
                                             </p>
-                                        </td>
-                                        <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                            <p class="text-gray-900 whitespace-no-wrap">
-                                                {{($registered_user->userData->function == 0)?"D/C":"Do"}}
-                                            </p>
-                                        </td>
+                                        </td>                                        
                                         <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                             {!!($registered_user->payment_id == 0)?"<span
                                             class=\"relative inline-block px-3 py-1 font-semibold text-orange-900 leading-tight\">

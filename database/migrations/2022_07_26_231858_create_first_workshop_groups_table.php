@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUserDataTable extends Migration
+class CreateFirstWorkshopGroupsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,13 @@ class CreateUserDataTable extends Migration
      */
     public function up()
     {
-        Schema::create('user_data', function (Blueprint $table) {
+        Schema::create('first_workshop_groups', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('lastname');
-            $table->string('document');
-            $table->string('email');
-            $table->string('phone');
-            // $table->integer('function'); //0: Directivo/coordinador, 1: Docente
+            $table->time('start_at');
+            $table->time('end_at');
+            $table->integer('school_id');
+            $table->integer('capacity');
+            $table->boolean('has_vacant');
             $table->timestamps();
         });
     }
@@ -32,6 +31,6 @@ class CreateUserDataTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user_data');
+        Schema::dropIfExists('first_workshop_groups');
     }
 }

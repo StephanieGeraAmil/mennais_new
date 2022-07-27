@@ -41,7 +41,6 @@ class CodeInscriptionController extends Controller
             'institution_type' => 'required|boolean',
             'city' => 'required|string|max:255',
             'code' => 'required|integer',
-            'function' => 'required|integer',
         ]); 
         
         /**
@@ -83,7 +82,6 @@ class CodeInscriptionController extends Controller
             'document'=>$validated_data['document'],
             'email'=>$validated_data['email'],
             'phone'=>$validated_data['phone'],
-            'function'=>$validated_data['function']
         ]);
         
         

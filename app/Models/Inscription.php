@@ -19,7 +19,10 @@ class Inscription extends Model
         'user_data_id',
         'institution_id',
         'payment_id',
-        'status'
+        'status',
+        'first_workshop_group_id',
+        'second_workshop_group_id'
+
     ];
 
 
@@ -34,6 +37,14 @@ class Inscription extends Model
 
     public function institution(){
         return $this->belongsTo(Institution::class);
+    }
+
+    public function firstWorkshopGroup(){
+        return $this->belongsTo(FirstWorkshopGroup::class);
+    }
+
+    public function secondWorkshopGroup(){
+        return $this->belongsTo(SecondWorkshopGroup::class);
     }
 
     public function generateToken(){

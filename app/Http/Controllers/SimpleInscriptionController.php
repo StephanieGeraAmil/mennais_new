@@ -2,11 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\SecondWorkshopGroupResource;
 use App\Mail\AdminInscriptionMail;
 use App\Mail\FacetofaceInscriptionMail;
+use App\Models\FirstWorkshopGroup;
 use App\Models\Inscription;
 use App\Models\Institution;
 use App\Models\Payment;
+use App\Models\SecondWorkshopGroup;
 use App\Models\UserData;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -17,7 +20,17 @@ class SimpleInscriptionController extends Controller
 
     public function simpleInscription()
     {
-        return view('inscription.simple');
+        $first_workshop_groups = FirstWorkshopGroup::where('has_vacant', true)->get();        
+        return view('inscription.simple')
+        ->with('first_workshop_groups',$first_workshop_groups);
+    }
+
+    public function list_second_groups($first_workshop_group_id){
+        $first_workshop_group = FirstWorkshopGroup::findOrFail($first_workshop_group_id);        
+        $second_workshop_groups = SecondWorkshopGroup::where('school_id','!=', $first_workshop_group->school_id)->where('has_vacant',true)->get();
+        return SecondWorkshopGroupResource::collection($second_workshop_groups);
+
+    
     }
 
 
@@ -32,12 +45,17 @@ class SimpleInscriptionController extends Controller
             'institution_name' => 'required|string|max:255',
             'institution_type' => 'required|boolean',
             'city' => 'required|string|max:255',
-            'function' => 'required|integer',
+            'first_workshop_group_id' => 'required|integer',
+            'second_workshop_group_id' => 'required|integer',
             'amount' => 'required|integer',
             'payment_ref' => 'required|string|max:255',
             'payment_file'=>'required|file|mimes:jpg,png,jpeg,gif,svg,pdf',
         ]); 
         
+        $first_workshop_group = FirstWorkshopGroup::findOrFail($validated_data['first_workshop_group_id']);
+        $second_workshop_group = SecondWorkshopGroup::findOrFail($validated_data['second_workshop_group_id']);
+    
+        /**Chequear si no esta lleno. */
         
         /**
         * Create Payment
@@ -70,8 +88,7 @@ class SimpleInscriptionController extends Controller
             'lastname'=>$validated_data['lastname'],
             'document'=>$validated_data['document'],
             'email'=>$validated_data['email'],
-            'phone'=>$validated_data['phone'],
-            'function'=>$validated_data['function']
+            'phone'=>$validated_data['phone']
         ]);
         
         
@@ -82,14 +99,20 @@ class SimpleInscriptionController extends Controller
             'user_data_id'=>$user_data->id,
             'institution_id'=>$institution->id,
             'payment_id'=>$payment->id,
-            'status'=>1
+            'status'=>1,
+            'first_workshop_group_id'=>$validated_data['first_workshop_group_id'],
+            'second_workshop_group_id'=>$validated_data['second_workshop_group_id'],
         ]);
+
+        $first_workshop_group->refresh_vacant();
+        $second_workshop_group->refresh_vacant();
+       
         
         Mail::to($user_data->email)->send(new FacetofaceInscriptionMail($inscription));   
         Mail::to(env('ADMIN_EMAIL'))->send(new AdminInscriptionMail($inscription));     
 
         session()->flash('msg', 'Inscripción realizada con exito!!!');
-        return redirect('/simple_inscription');        
+        return redirect('/simple_inscription');
     }
 
 

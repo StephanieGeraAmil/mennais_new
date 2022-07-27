@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SimpleInscriptionController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +18,6 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+Route::get('/second_workshop_group/{first_workshop_group_id}', [SimpleInscriptionController::class, 'list_second_groups']);
