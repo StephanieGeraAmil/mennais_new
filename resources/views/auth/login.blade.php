@@ -24,7 +24,7 @@
 
                     <div class="">
                         <div class="pt-3">
-                            <button type="submit" class="bg-purple-900 hover:bg-purple-700 text-white font-bold py-2 px-4 border border-white rounded-3xl">
+                            <button type="submit" class="bg-red-200 hover:bg-red-100 text-white font-bold py-2 px-4 border border-white rounded-3xl">
                                 Ingresar
                             </button>
 

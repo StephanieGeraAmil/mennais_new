@@ -32,7 +32,7 @@
 </head>
 
 
-<body class="bg-gray-100 font-sans leading-normal tracking-normal" style="background: rgb(21,22,112);background: linear-gradient(180deg, rgba(21,22,112,1) 0%, rgba(129,44,106,1) 100%);">
+<body class="bg-red-100 font-sans leading-normal tracking-normal">
 	<div class="flex flex-col justify-between">
     <nav id="header" class="bg-white fixed w-full z-10 top-0 shadow">
 
@@ -93,7 +93,7 @@
             <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-white z-20" id="nav-content">
                 <ul class="list-reset lg:flex flex-1 items-center px-4 md:px-0">
                     <li class="mr-6 my-2 md:my-0">
-                        <a href="/admin" class="block py-1 md:py-3 pl-1 align-middle no-underline hover:text-blue-700 border-b-2 hover:border-purple-900 {{(Route::current()->getName() == "index")?"text-blue-700 border-purple-900 ":"text-blue-900 border-purple-700 "}}">
+                        <a href="/admin" class="block py-1 md:py-3 pl-1 align-middle no-underline hover:text-blue-700 border-b-2 hover:border-red-200 {{(Route::current()->getName() == "index")?"text-blue-700 border-red-200 ":"text-blue-900 border-purple-700 "}}">
                             <i class="fas fa-user mr-3"></i><span class="pb-1 md:pb-0 text-sm">Inscripciones</span>
                         </a>
                     </li>                    
@@ -103,12 +103,12 @@
 						</a>
                     </li> --}}
 					<li class="mr-6 my-2 md:my-0">
-                        <a href="/admin/group_insc" class="block py-1 md:py-3 pl-1 align-middle no-underline hover:text-blue-700 border-b-2 hover:border-purple-900 {{(Route::current()->getName() == "admingrupal")?"text-blue-700 border-purple-900 ":"text-blue-900 border-purple-700 "}}">
+                        <a href="/admin/group_insc" class="block py-1 md:py-3 pl-1 align-middle no-underline hover:text-blue-700 border-b-2 hover:border-red-200 {{(Route::current()->getName() == "admingrupal")?"text-blue-700 border-red-200 ":"text-blue-900 border-purple-700 "}}">
                             <i class="fas fa-users mr-3"></i><span class="pb-1 md:pb-0 text-sm">Insc. Grupales</span>
 						</a>
                     </li>
                     {{-- <li class="mr-6 my-2 md:my-0">
-                        <a href="/admin/payment" class="block py-1 md:py-3 pl-1 align-middle no-underline hover:text-blue-700 border-b-2 hover:border-purple-900 {{(Route::current()->getName() == "adminpayment")?"text-blue-700 border-purple-900 ":"text-blue-900 border-purple-700 "}}">
+                        <a href="/admin/payment" class="block py-1 md:py-3 pl-1 align-middle no-underline hover:text-blue-700 border-b-2 hover:border-red-200 {{(Route::current()->getName() == "adminpayment")?"text-blue-700 border-red-200 ":"text-blue-900 border-purple-700 "}}">
                             <i class="fa fa-wallet fa-fw mr-3"></i><span class="pb-1 md:pb-0 text-sm">Pagos realizados</span>
 						</a>
                     </li> --}}

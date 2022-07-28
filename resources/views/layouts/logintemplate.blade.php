@@ -18,7 +18,7 @@
 
 </head>
 
-<body class="bg-gray-100 font-sans leading-normal tracking-normal" style="background: rgb(21,22,112);background: linear-gradient(180deg, rgba(21,22,112,1) 0%, rgba(129,44,106,1) 100%);">
+<body class="bg-red-100 font-sans leading-normal tracking-normal">
 	<div class="flex flex-col h-screen justify-between ">
     
 

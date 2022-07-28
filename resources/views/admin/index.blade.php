@@ -34,7 +34,7 @@ Admin Panel
                 <div class="bg-white border rounded shadow p-2">
                     <div class="flex flex-row items-center">
                         <div class="flex-shrink pr-4">
-                            <div class="rounded p-3 bg-purple-900"><i class="fas fa-user fa-2x fa-fw fa-inverse"></i></div>
+                            <div class="rounded p-3 bg-red-200"><i class="fas fa-user fa-2x fa-fw fa-inverse"></i></div>
                         </div>
                         <div class="flex-1 text-right md:text-center">
                             <h5 class="font-bold uppercase text-gray-400">Inscriptos</h5>
@@ -49,7 +49,7 @@ Admin Panel
                 <div class="bg-white border rounded shadow p-2">
                     <div class="flex flex-row items-center">
                         <div class="flex-shrink pr-4">
-                            <div class="rounded p-3 bg-purple-900"><i class="fas fa-user-friends fa-2x fa-fw fa-inverse"></i></div>
+                            <div class="rounded p-3 bg-red-200"><i class="fas fa-user-friends fa-2x fa-fw fa-inverse"></i></div>
                         </div>
                         <div class="flex-1 text-right md:text-center">
                             <h5 class="font-bold uppercase text-gray-400">Directivo / Docente</h5>
@@ -64,7 +64,7 @@ Admin Panel
                 <div class="bg-white border rounded shadow p-2">
                     <div class="flex flex-row items-center">
                         <div class="flex-shrink pr-4">
-                            <div class="rounded p-3 bg-purple-900"><i class="fas fa-tasks fa-2x fa-fw fa-inverse"></i></div>
+                            <div class="rounded p-3 bg-red-200"><i class="fas fa-tasks fa-2x fa-fw fa-inverse"></i></div>
                         </div>
                         <div class="flex-1 text-right md:text-center">
                             <h5 class="font-bold uppercase text-gray-400">Acreditaciones</h5>
@@ -92,15 +92,15 @@ Admin Panel
                             <table class="min-w-full leading-normal" id="inscriptionList">
                                 <thead>
                                     <tr>                                        
-                                        <th class="px-5 py-3 border-b-2 bg-purple-900 text-left text-xs font-semibold text-white uppercase tracking-wider">Nombre</th>
-                                        <th class="px-5 py-3 border-b-2 bg-purple-900 text-left text-xs font-semibold text-white uppercase tracking-wider">E-mail</th>
-                                        <th class="px-5 py-3 border-b-2 bg-purple-900 text-left text-xs font-semibold text-white uppercase tracking-wider">Documento</th>
-                                        <th class="px-5 py-3 border-b-2 bg-purple-900 text-left text-xs font-semibold text-white uppercase tracking-wider">Institución</th>
-                                        <th class="px-5 py-3 border-b-2 bg-purple-900 text-left text-xs font-semibold text-white uppercase tracking-wider">Workshop 1</th>
-                                        <th class="px-5 py-3 border-b-2 bg-purple-900 text-left text-xs font-semibold text-white uppercase tracking-wider">Workshop 2</th>
-                                        <th class="px-5 py-3 border-b-2 bg-purple-900 text-left text-xs font-semibold text-white uppercase tracking-wider">Pag.</th>
-                                        <th class="px-5 py-3 border-b-2 bg-purple-900 text-left text-xs font-semibold text-white uppercase tracking-wider">Acred.</th>
-                                        <th class="px-5 py-3 border-b-2 bg-purple-900 text-left text-xs font-semibold text-white uppercase tracking-wider">Acción</th>
+                                        <th class="px-5 py-3 border-b-2 bg-red-200 text-left text-xs font-semibold text-white uppercase tracking-wider">Nombre</th>
+                                        <th class="px-5 py-3 border-b-2 bg-red-200 text-left text-xs font-semibold text-white uppercase tracking-wider">E-mail</th>
+                                        <th class="px-5 py-3 border-b-2 bg-red-200 text-left text-xs font-semibold text-white uppercase tracking-wider">Documento</th>
+                                        <th class="px-5 py-3 border-b-2 bg-red-200 text-left text-xs font-semibold text-white uppercase tracking-wider">Institución</th>
+                                        <th class="px-5 py-3 border-b-2 bg-red-200 text-left text-xs font-semibold text-white uppercase tracking-wider">Workshop 1</th>
+                                        <th class="px-5 py-3 border-b-2 bg-red-200 text-left text-xs font-semibold text-white uppercase tracking-wider">Workshop 2</th>
+                                        <th class="px-5 py-3 border-b-2 bg-red-200 text-left text-xs font-semibold text-white uppercase tracking-wider">Pag.</th>
+                                        <th class="px-5 py-3 border-b-2 bg-red-200 text-left text-xs font-semibold text-white uppercase tracking-wider">Acred.</th>
+                                        <th class="px-5 py-3 border-b-2 bg-red-200 text-left text-xs font-semibold text-white uppercase tracking-wider">Acción</th>
                                     </tr>
                                 </thead>
                                 <tbody>
