@@ -5,14 +5,14 @@ Admin Panel
 @section('custom_style')
 <style>
 .dt-button {
-    background-color: #4c1d95; 
+    background-color: #9ca3af; 
     border: 2px solid white;
     color: #fff;
     padding: 10px;
     border-radius: 10px  
   }
   .dt-button:hover {
-    background-color: #812c6a; 
+    background-color: #68696a; 
   }
   .dt-buttons {
     width: 25%;
@@ -45,15 +45,15 @@ Admin Panel
                             <table class="min-w-full leading-normal" id="inscriptionList">
                                 <thead>
                                     <tr>                                        
-                                        <th class="px-5 py-3 border-b-2 bg-red-200 text-left text-xs font-semibold text-white uppercase tracking-wider">Nombre</th>
-                                        <th class="px-5 py-3 border-b-2 bg-red-200 text-left text-xs font-semibold text-white uppercase tracking-wider">E-mail</th>
-                                        <th class="px-5 py-3 border-b-2 bg-red-200 text-left text-xs font-semibold text-white uppercase tracking-wider">Teléfono</th>
-                                        <th class="px-5 py-3 border-b-2 bg-red-200 text-left text-xs font-semibold text-white uppercase tracking-wider">Institución</th>
-                                        <th class="px-5 py-3 border-b-2 bg-red-200 text-left text-xs font-semibold text-white uppercase tracking-wider">Invitaciones</th>
-                                        <th class="px-5 py-3 border-b-2 bg-red-200 text-left text-xs font-semibold text-white uppercase tracking-wider">link</th>
-                                        <th class="px-5 py-3 border-b-2 bg-red-200 text-left text-xs font-semibold text-white uppercase tracking-wider">Pago.</th>
-                                        {{-- <th class="px-5 py-3 border-b-2 bg-red-200 text-left text-xs font-semibold text-white uppercase tracking-wider">Accred.</th>
-                                        <th class="px-5 py-3 border-b-2 bg-red-200 text-left text-xs font-semibold text-white uppercase tracking-wider">Acción</th> --}}
+                                        <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Nombre</th>
+                                        <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">E-mail</th>
+                                        <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Teléfono</th>
+                                        <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Institución</th>
+                                        <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Invitaciones</th>
+                                        <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">link</th>
+                                        <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Pago.</th>
+                                        {{-- <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Accred.</th>
+                                        <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Acción</th> --}}
                                     </tr>
                                 </thead>
                                 <tbody>

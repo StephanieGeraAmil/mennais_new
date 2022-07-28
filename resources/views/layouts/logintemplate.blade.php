@@ -18,7 +18,7 @@
 
 </head>
 
-<body class="bg-red-100 font-sans leading-normal tracking-normal">
+<body class="bg-gray-200 font-sans leading-normal tracking-normal">
 	<div class="flex flex-col h-screen justify-between ">
     
 
