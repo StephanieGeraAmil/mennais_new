@@ -34,7 +34,7 @@ Inscripción Grupal
 @endif 
 @endsection
 @section('subtitle')
-<h4 class="u-text u-text-body-color u-text-2">INSCRIPCIÓN GRUPAL</h4>
+INSCRIPCIÓN GRUPAL
 @endsection
 @section('left-text-box')
 <p class="u-text">
