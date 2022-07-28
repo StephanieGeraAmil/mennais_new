@@ -41,7 +41,7 @@ Admin Panel
                                     </div>                                    
                                     <div class="">
                                         <div class="pt-3">
-                                            <button type="submit" class="bg-red-200 hover:bg-red-100 text-white font-bold py-2 px-4 border border-white rounded-3xl">
+                                            <button type="submit" class="bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 border border-white rounded-3xl">
                                                 Guardar cambios
                                             </button>                
                                         </div>
@@ -114,12 +114,12 @@ Admin Panel
                     <div class="w-full overflow-hidden shadow-xs">
                         <div class="w-full overflow-x-auto">
                             <div class="flex items-center py-2 w-100">
-                                <a href="{!!$inscription->certificateUrl()!!}" class="mx-3.5 border-b bg-red-200 hover:bg-red-100 text-white font-bold py-2 px-4 border border-white rounded-3xl">
+                                <a href="{!!$inscription->certificateUrl()!!}" class="mx-3.5 border-b bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 border border-white rounded-3xl">
                                    link a certificado <i class="fas fa-certificate"></i>
                                 </a>
                             </div>
                             <div class="flex items-center py-2 w-100">
-                                <a href="/admin/resend_qr/{{$inscription->id}}" class="mx-3.5 border-b bg-red-200 hover:bg-red-100 text-white font-bold py-2 px-4 border border-white rounded-3xl">
+                                <a href="/admin/resend_qr/{{$inscription->id}}" class="mx-3.5 border-b bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 border border-white rounded-3xl">
                                     Reenviar código <i class="fas fa-qrcode"></i> 
                                 </a>
                             </div>
@@ -130,7 +130,7 @@ Admin Panel
                                     <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="date" placeholder="Nombre" aria-label="" name="acreditation_date" value=""/>	  
                                 </div>
                                 <div class="flex items-center py-2 w-100">
-                                    <button type="submit" class="bg-red-200 hover:bg-red-100 text-white font-bold py-2 px-4 border border-white rounded-3xl">
+                                    <button type="submit" class="bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 border border-white rounded-3xl">
                                         Acreditación Manual
                                     </button>
                                 </div>

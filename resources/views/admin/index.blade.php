@@ -29,7 +29,7 @@ Admin Panel
     <div class="w-full px-4 md:px-0 md:mt-8 mb-16 text-gray-800 leading-normal">        
         <!--Console Content-->        
         <div class="flex flex-wrap">
-            <div class="w-full md:w-1/2 xl:w-1/3 p-3">
+            <div class="w-full md:w-1/2 xl:w-1/6 p-3">
                 <!--Metric Card-->
                 <div class="bg-white border rounded shadow p-2">
                     <div class="flex flex-row items-center">
@@ -44,22 +44,7 @@ Admin Panel
                 </div>
                 <!--/Metric Card-->
             </div>
-            <div class="w-full md:w-1/2 xl:w-1/3 p-3">
-                <!--Metric Card-->
-                <div class="bg-white border rounded shadow p-2">
-                    <div class="flex flex-row items-center">
-                        <div class="flex-shrink pr-4">
-                            <div class="rounded p-3 bg-gray-400"><i class="fas fa-user-friends fa-2x fa-fw fa-inverse"></i></div>
-                        </div>
-                        <div class="flex-1 text-right md:text-center">
-                            <h5 class="font-bold uppercase text-gray-400">Directivo / Docente</h5>
-                            {{-- <h3 class="font-bold text-3xl text-gray-600">{{$functions[0]}} / {{$functions[1]}}</h3> --}}
-                        </div>
-                    </div>
-                </div>
-                <!--/Metric Card-->
-            </div>                
-            <div class="w-full md:w-1/2 xl:w-1/3 p-3">
+            <div class="w-full md:w-1/2 xl:w-1/6 p-3">
                 <!--Metric Card-->
                 <div class="bg-white border rounded shadow p-2">
                     <div class="flex flex-row items-center">
@@ -74,6 +59,23 @@ Admin Panel
                 </div>
                 <!--/Metric Card-->
             </div>                
+            @foreach ($schools_list as $school)
+            <div class="w-full md:w-1/2 xl:w-1/6 p-3">
+                <!--Metric Card-->
+                <div class="bg-white border rounded shadow p-2">
+                    <div class="flex flex-row items-center">
+                        <div class="flex-shrink pr-4">
+                            <div class="rounded p-3 bg-gray-400"><i class="fas fa-home fa-2x fa-fw fa-inverse"></i></div>
+                        </div>
+                        <div class="flex-1 text-right md:text-center">
+                            <h5 class="font-bold uppercase text-gray-400">{{$school->shortName()}}</h5>
+                            <h3 class="font-bold text-3xl text-gray-600">{{$school->firstWorkshopGroups->inscription->count()}}/{{$school->secondWorkshopGroups->inscription->count()}}</h3>
+                        </div>
+                    </div>
+                </div>
+                <!--/Metric Card-->
+            </div>
+            @endforeach
         </div>
         
         <!--Divider-->

@@ -130,12 +130,12 @@
 
 	@yield('container_body')
     
-	<footer class="bg-white border-t border-green-800 border-b-2 shadow opacity-80">
+	<footer class="bg-white border-t border-gray-400 border-b-2 shadow opacity-80">
         <div class="container max-w-md mx-auto flex py-8">
 
 			<div class="w-full mx-auto flex flex-wrap justify-center">
 				<div class="px-8">
-						<h3 class="font-bold font-bold text-green-900">Designed by ISF</h3>			
+						<h3 class="font-bold font-bold text-gray-400">Designed by ISF</h3>			
 					</div>
 				</div>
 			</div>

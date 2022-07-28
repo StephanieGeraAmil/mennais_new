@@ -20,6 +20,17 @@ class School extends Model
         'map_link'
     ];
 
+    public function firstWorkshopGroups(){
+        return $this->hasOne(FirstWorkshopGroup::class);
+    }
+
+    public function secondWorkshopGroups(){
+        return $this->hasOne(SecondWorkshopGroup::class);
+    }
+
+    public function shortName(){
+        return str_replace("COLEGIO ","",strtoupper($this->name));
+    }
 
 
 }

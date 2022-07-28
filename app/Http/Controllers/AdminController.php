@@ -6,6 +6,7 @@ use App\Mail\FacetofaceInscriptionMail;
 use App\Models\Attendance;
 use App\Models\GroupInscription;
 use App\Models\Inscription;
+use App\Models\School;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -19,6 +20,7 @@ class AdminController extends Controller
      */
     public function index()
     {
+        $schools_list = School::all();
         $registered_users = Inscription::with('userData')
         ->with('institution')
         ->with('attendances')->get();
@@ -26,6 +28,7 @@ class AdminController extends Controller
         $accreditations = Attendance::all()->count();
         return view('admin.index')
         ->with('accreditations',$accreditations)
+        ->with('schools_list',$schools_list)
         ->with('registered_users_quantity',$registered_users_quantity)
         ->with('registered_users',$registered_users);
     }
@@ -118,14 +121,14 @@ class AdminController extends Controller
         ]);
         $date = Carbon::createFromFormat('Y-m-d',  $validated_data['acreditation_date']); 
         $inscription = Inscription::findOrFail($validated_data['inscription_id']);
+        $user_id = auth()->user()->id;
         $attendance = Attendance::create([
             'inscription_id'=>$inscription->id,
-            'date'=>$date
+            'date'=>$date,
+            'user_id'=>$user_id
         ]);            
         return redirect("/admin/inscription/".$inscription->id);
                 
     }
-
-
-
+        
 }
