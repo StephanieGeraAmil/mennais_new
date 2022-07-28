@@ -57,7 +57,7 @@ Por favor, complete y envíe el formulario con sus datos
   </div>
   <div class="u-form-group u-form-name u-form-group-3">
     <label for="name-b2b6" class="u-form-control-hidden u-label"></label>
-    <input type="text" placeholder="Cédula de Identidad (1234567-8)" id="name-b2b6" name="document" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-3" required="" value="{{old('document')}}">
+    <input type="text" placeholder="Cédula de Identidad, sin puntos ni guiones (12345678)" id="name-b2b6" name="document" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-3" onblur="clean_document(this)" required="" value="{{old('document')}}">
   </div>
   <div class="u-form-email u-form-group">
     <label for="email-05a8" class="u-form-control-hidden u-label"></label>
@@ -137,6 +137,13 @@ Por favor, complete y envíe el formulario con sus datos
               }
           }
       });
+  }
+  
+  function clean_document(element){
+    let input = $(element);
+    let input_val = input.val();
+    new_input_val = input_val.replace(/\D/g, "");
+    input.val(new_input_val);
   }
 </script>    
 @endsection 

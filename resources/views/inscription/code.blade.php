@@ -54,7 +54,7 @@ Por favor, complete y envíe el formulario con sus datos
         <input type="text" placeholder="Ingrese su apellido" id="lastname-4c18" name="lastname" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" required="" value="{{old('lastname')}}">
     </div>
     <div class="u-form-group u-form-name">                                                
-        <input type="text" placeholder="Cédula de Identidad (1234567-8)" id="document-4c18" name="document" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" required="" value="{{old('document')}}">
+        <input type="text" placeholder="Cédula de Identidad (12345678)" id="document-4c18" name="document" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" required="" value="{{old('document')}}" onblur="clean_document(this)">
     </div>
     <div class="u-form-email u-form-group">                                                
         <input type="email" placeholder="Ingrese su email" id="email-4c18" name="email" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" required="" value="{{$code->email}}" readonly>
@@ -120,6 +120,13 @@ Por favor, complete y envíe el formulario con sus datos
                 }
             }
         });
+    }
+
+    function clean_document(element){
+        let input = $(element);
+        let input_val = input.val();
+        new_input_val = input_val.replace(/\D/g, "");
+        input.val(new_input_val);
     }
     </script>
 @endsection

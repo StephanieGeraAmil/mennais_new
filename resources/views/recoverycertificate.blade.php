@@ -108,7 +108,7 @@
                                             @csrf
                                             <div class="u-form-group u-form-name">
                                                 <label for="document-05a8" class="u-form-control-hidden u-label"></label>
-                                                <input type="text" placeholder="Ingrese el documento" id="document-05a8" name="document" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-1" required="" value="{{old('document')}}">
+                                                <input type="text" placeholder="Ingrese el documento" id="document-05a8" name="document" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-1" required="" value="{{old('document')}}" onblur="clean_document(this)">
                                             </div>											
                                             <div class="u-align-right u-form-group u-form-submit">           
                                                 <input type="submit" class="u-active-custom-color-3 u-border-2 u-border-active-white u-border-hover-white u-border-white u-btn u-btn-round u-btn-submit u-button-style u-hover-custom-color-4 u-none u-radius-50 u-btn-1" value="Enviar">
@@ -128,5 +128,13 @@
     <p class="u-small-text u-text u-text-variant u-text-1">Desarrollado por <a href="https://isf.uy/" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" target="_blank">ISF</a></p>
 </div>
 </footer>    
+<script>
+    function clean_document(element){
+        let input = $(element);
+        let input_val = input.val();
+        new_input_val = input_val.replace(/\D/g, "");
+        input.val(new_input_val);
+    }
+</script>
 </body>
 </html>
