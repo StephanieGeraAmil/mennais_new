@@ -1,5 +1,5 @@
  .u-section-1 {
-  background-image: linear-gradient(var(--custom-color-2), var(--custom-color-3));
+  background-image: linear-gradient(#b8aed9, #fcd1cf);
 }
 
 .u-section-1 .u-sheet-1 {
@@ -34,19 +34,30 @@
 .u-section-1 .u-text-2 {
   font-size: 1.5rem;
   width: 428px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
   margin: 42px auto 0;
 }
 
+.u-section-1 .u-group-1 {
+  background-image: none;
+  min-height: 110px;
+  height: auto;
+  margin: 28px 0 0;
+}
+
+.u-section-1 .u-container-layout-3 {
+  padding: 30px;
+}
+
 .u-section-1 .u-text-3 {
-  width: 414px;
-  margin: 30px auto 0;
+  margin: 0 37px;
 }
 
 .u-section-1 .u-layout-cell-3 {
   min-height: 790px;
 }
 
-.u-section-1 .u-container-layout-3 {
+.u-section-1 .u-container-layout-4 {
   padding: 0 30px 30px;
 }
 
@@ -161,6 +172,18 @@
     font-size: 1.25rem;
   }
 
+  .u-section-1 .u-group-1 {
+    margin-right: initial;
+    margin-left: initial;
+    height: auto;
+  }
+
+  .u-section-1 .u-text-3 {
+    width: 414px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
   .u-section-1 .u-layout-cell-3 {
     min-height: 651px;
   }
@@ -221,6 +244,11 @@
   }
 
   .u-section-1 .u-container-layout-3 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-1 .u-container-layout-4 {
     padding-left: 10px;
     padding-right: 10px;
   }

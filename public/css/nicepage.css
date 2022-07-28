@@ -19289,6 +19289,8 @@ a.pswp__share--download:hover {
 /*begin-commonstyles animation*/
 .backstage {
   animation-play-state: paused;
+}
+.u-backstage-hidden {
   visibility: hidden;
 }
 @keyframes slideOutUp {
