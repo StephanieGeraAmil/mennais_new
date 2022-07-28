@@ -4,7 +4,7 @@
 <div class="flex flex-row flex-wrap flex-grow mt-2 justify-center content-center">            
     <div class="w-full md:w-1/2 xl:w-1/3 p-3 opacity-80">
         <!--Table Card-->
-        <div class="bg-white border rounded-2xl shadow">
+        <div class="bg-white border rounded-2xl shadow p-12">
             <div class="border-b p-3 ">
                 <h5 class="font-bold text-center">Ingreso</h5>
             </div>
@@ -24,7 +24,7 @@
 
                     <div class="">
                         <div class="pt-3">
-                            <button type="submit" class="bg-red-200 hover:bg-red-100 text-white font-bold py-2 px-4 border border-white rounded-3xl">
+                            <button type="submit" class="bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 border border-white rounded-3xl">
                                 Ingresar
                             </button>
 
