@@ -69,7 +69,7 @@ Admin Panel
                         </div>
                         <div class="flex-1 text-right md:text-center">
                             <h5 class="font-bold uppercase text-gray-400">{{$school->shortName()}}</h5>                            
-                            <h3 class="font-bold text-3xl text-gray-600">{{$school->firstWorkshopGroups->inscription->count()}}<span class="text-gray-400"> | </span>{{$school->secondWorkshopGroups->inscription->count()}}</h3>
+                            <h3 class="font-bold text-3xl text-gray-600">{{($school->firstWorkshopGroups != null)?$school->firstWorkshopGroups->inscription->count():0}}<span class="text-gray-400"> | </span>{{($school->secondWorkshopGroups != null)?$school->secondWorkshopGroups->inscription->count():0}}</h3>
                         </div>
                     </div>
                 </div>
@@ -132,12 +132,12 @@ Admin Panel
                                         </td>
                                         <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                             <p class="text-gray-900 whitespace-no-wrap">
-                                                {{$registered_user->firstWorkshopGroup->getString()}}
+                                                {{($registered_user->firstWorkshopGroup!=null)?$registered_user->firstWorkshopGroup->getString():"No asistiré"}}
                                             </p>
                                         </td>
                                         <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                             <p class="text-gray-900 whitespace-no-wrap">
-                                                {{$registered_user->secondWorkshopGroup->getString()}}
+                                                {{($registered_user->secondWorkshopGroup != null)?$registered_user->secondWorkshopGroup->getString():"No asistiré"}}
                                             </p>
                                         </td>                                        
                                         <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
