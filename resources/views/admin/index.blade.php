@@ -68,8 +68,8 @@ Admin Panel
                             <div class="rounded p-3 bg-gray-400"><i class="fas fa-home fa-2x fa-fw fa-inverse"></i></div>
                         </div>
                         <div class="flex-1 text-right md:text-center">
-                            <h5 class="font-bold uppercase text-gray-400">{{$school->shortName()}}</h5>
-                            <h3 class="font-bold text-3xl text-gray-600">{{$school->firstWorkshopGroups->inscription->count()}}/{{$school->secondWorkshopGroups->inscription->count()}}</h3>
+                            <h5 class="font-bold uppercase text-gray-400">{{$school->shortName()}}</h5>                            
+                            <h3 class="font-bold text-3xl text-gray-600">{{$school->firstWorkshopGroups->inscription->count()}}<span class="text-gray-400"> | </span>{{$school->secondWorkshopGroups->inscription->count()}}</h3>
                         </div>
                     </div>
                 </div>
