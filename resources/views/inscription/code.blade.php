@@ -40,7 +40,7 @@ Inscripción Indivudual
 INSCRIPCIÓN INDIVIDUAL
 @endsection
 @section('left-text-box')
-Por favor, complete y envíe el formulario con sus datos
+Por favor, complete el formulario con sus datos y seleccione los 2 colegios que visitará el miércoles 28 de setiembre
 @endsection
 @section('form')
 <form action="/store_code_inscription" method="POST" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" enctype="multipart/form-data" style="padding: 0px;">
