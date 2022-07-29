@@ -29,7 +29,7 @@ Admin Panel
     <div class="w-full px-4 md:px-0 md:mt-8 mb-16 text-gray-800 leading-normal">        
         <!--Console Content-->        
         <div class="flex flex-wrap">
-            <div class="w-full md:w-1/2 xl:w-1/6 p-3">
+            <div class="w-full md:w-1/2 xl:w-1/2 p-3">
                 <!--Metric Card-->
                 <div class="bg-white border rounded shadow p-2">
                     <div class="flex flex-row items-center">
@@ -44,7 +44,7 @@ Admin Panel
                 </div>
                 <!--/Metric Card-->
             </div>
-            <div class="w-full md:w-1/2 xl:w-1/6 p-3">
+            <div class="w-full md:w-1/2 xl:w-1/2 p-3">
                 <!--Metric Card-->
                 <div class="bg-white border rounded shadow p-2">
                     <div class="flex flex-row items-center">
@@ -60,7 +60,7 @@ Admin Panel
                 <!--/Metric Card-->
             </div>                
             @foreach ($schools_list as $school)
-            <div class="w-full md:w-1/2 xl:w-1/6 p-3">
+            <div class="w-full md:w-1/2 xl:w-1/4 p-3">
                 <!--Metric Card-->
                 <div class="bg-white border rounded shadow p-2">
                     <div class="flex flex-row items-center">
