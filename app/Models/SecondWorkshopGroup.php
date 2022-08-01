@@ -21,7 +21,7 @@ class SecondWorkshopGroup extends Model
         'school_id',
         'capacity',
         'has_vacant',
-        'addicional_text'
+        'additional_text'
     ];
 
     public function inscription(){
@@ -40,7 +40,7 @@ class SecondWorkshopGroup extends Model
     }
 
     public function getString(){
-        return $this->school->name." (".Carbon::parse($this->start_at)->format('H:i')." - ".Carbon::parse($this->end_at)->format('H:i').")";
+        return $this->school->name." ".$this->additional_text." (".Carbon::parse($this->start_at)->format('H:i')." - ".Carbon::parse($this->end_at)->format('H:i').")";
     }
 
 }

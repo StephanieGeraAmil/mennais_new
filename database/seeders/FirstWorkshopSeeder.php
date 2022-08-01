@@ -23,7 +23,7 @@ class FirstWorkshopSeeder extends Seeder
                 'school_id' => 1,
                 'capacity' => 30,
                 'has_vacant' => true,
-                'addicional_text'=>'',
+                'additional_text'=>'',
                 'created_at' => Carbon::now()
             ],
             [
@@ -33,7 +33,7 @@ class FirstWorkshopSeeder extends Seeder
                 'school_id' => 2,
                 'capacity' => 30,
                 'has_vacant' => true,
-                'addicional_text'=>'',
+                'additional_text'=>'Ciclo Básico',
                 'created_at' => Carbon::now()
             ],
             [
@@ -43,7 +43,7 @@ class FirstWorkshopSeeder extends Seeder
                 'school_id' => 3,
                 'capacity' => 30,
                 'has_vacant' => true,
-                'addicional_text'=>'',
+                'additional_text'=>'',
                 'created_at' => Carbon::now()
             ],
             [
@@ -53,7 +53,7 @@ class FirstWorkshopSeeder extends Seeder
                 'school_id' => 4,
                 'capacity' => 30,
                 'has_vacant' => true,
-                'addicional_text'=>'',
+                'additional_text'=>'',
                 'created_at' => Carbon::now()
             ]
         ]);

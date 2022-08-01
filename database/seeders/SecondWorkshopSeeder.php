@@ -23,17 +23,17 @@ class SecondWorkshopSeeder extends Seeder
                 'school_id' => 1,
                 'capacity' => 30,
                 'has_vacant' => true,
-                'addicional_text'=>'',
+                'additional_text'=>'',
                 'created_at' => Carbon::now()
             ],
             [
                 'id' => 2,
-                'start_at' => '11:00',
-                'end_at' => '13:00',
+                'start_at' => '13:00',
+                'end_at' => '15:00',
                 'school_id' => 2,
                 'capacity' => 30,
                 'has_vacant' => true,
-                'addicional_text'=>'',
+                'additional_text'=>'Inicial y Primaria',
                 'created_at' => Carbon::now()
             ],
             [
@@ -43,7 +43,7 @@ class SecondWorkshopSeeder extends Seeder
                 'school_id' => 3,
                 'capacity' => 30,
                 'has_vacant' => true,
-                'addicional_text'=>'',
+                'additional_text'=>'',
                 'created_at' => Carbon::now()
             ],
             [
@@ -53,7 +53,7 @@ class SecondWorkshopSeeder extends Seeder
                 'school_id' => 4,
                 'capacity' => 30,
                 'has_vacant' => true,
-                'addicional_text'=>'',
+                'additional_text'=>'',
                 'created_at' => Carbon::now()
             ]
         ]);
