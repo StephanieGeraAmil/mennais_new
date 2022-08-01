@@ -20,7 +20,8 @@ class FirstWorkshopGroup extends Model
         'end_at',
         'school_id',
         'capacity',
-        'has_vacant'
+        'has_vacant',
+        'addicional_text'
     ];
 
     public function inscription(){

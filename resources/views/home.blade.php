@@ -26,11 +26,12 @@
   <meta property="og:description" content="Vivenciando la transformación educativa es un evento organizado por AUDEC - Asociación Uruguaya de Educación Católica">
   <meta property="og:type" content="website">
   
+  
 </head>
 <body class="u-body u-stick-footer u-xl-mode" data-lang="es"> 
   @if (session('success_contact'))  
-  <div style="background-color: #adf6f2;padding: 5px;border: 1px solid #1e403e;color: #1e403e;">El mensaje se envió correctamente.</div>     
-  @endif
+<div style="background-color: #adf6f2;padding: 5px;border: 1px solid #1e403e;color: #1e403e;">El mensaje se envió correctamente.</div>     
+@endif
   <section class="u-align-center u-clearfix u-gradient u-section-1" id="sec-d247">
     <div class="u-clearfix u-sheet u-valign-middle-xs u-sheet-1">
       <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
@@ -52,7 +53,7 @@
                     <h1 class="u-align-center u-custom-font u-font-raleway u-text u-text-default-xl u-text-palette-1-dark-2 u-title u-text-1"><b>VIV​ENCIANDO LA TRANSFORMACIÓN​ EDUCATIVA</b>
                     </h1>
                     <h4 class="u-align-center u-text u-text-default-lg u-text-default-xl u-text-palette-1-dark-2 u-text-2"><b>Educación Católica: innovaciones que están
-                      creando futuro </b>
+creando futuro </b>
                     </h4>
                   </div>
                 </div>
@@ -93,7 +94,7 @@
           </div>
           <div class="u-align-center u-border-1 u-border-palette-1-dark-1 u-container-style u-gradient u-list-item u-radius-26 u-repeater-item u-shape-round u-list-item-5">
             <div class="u-container-layout u-similar-container u-valign-top-xs u-container-layout-5"><span class="u-custom-item u-file-icon u-icon u-icon-circle u-text-custom-color-21 u-white u-icon-5"><img src="images/1077976.png" alt=""></span>
-              <h5 class="u-text u-text-body-alt-color u-text-default u-text-5">$2.500</h5>
+              <h5 class="u-text u-text-body-alt-color u-text-default u-text-5">$5.000 para socios de AUDEC</h5>
             </div>
           </div>
         </div>
@@ -152,43 +153,43 @@
       <div class="u-container-style u-group u-opacity u-opacity-85 u-radius-33 u-shape-round u-white u-group-1">
         <div class="u-container-layout u-container-layout-1">
           <p class="u-custom-item u-text u-text-1"><b>VIVENCIANDO LA TRANSFORMACIÓN EDUCATIVA</b>&nbsp;<br><b>Educación
-            Católica: innovaciones que están creando futuro</b>&nbsp;<br>
+Católica: innovaciones que están creando futuro</b>&nbsp;<br>
             <br> El mundo está cambiando a marcha acelerada. Y
-            la educación se transforma para dar respuesta a este cambio,
-            formando personas que puedan vivir plenamente este tiempo incierto y
-            disruptivo.<br>
+la educación se transforma para dar respuesta a este cambio,
+formando personas que puedan vivir plenamente este tiempo incierto y
+disruptivo.<br>
             <br>Desde
-            la Educación Católica trabajamos firmemente para dar respuesta a
-            esta realidad cambiante, y por eso desde hace algunos años hemos
-            comenzado a trabajar en la reflexión y el debate del cambio así
-            como en experiencias innovadoras.&nbsp;<br>
+la Educación Católica trabajamos firmemente para dar respuesta a
+esta realidad cambiante, y por eso desde hace algunos años hemos
+comenzado a trabajar en la reflexión y el debate del cambio así
+como en experiencias innovadoras.&nbsp;<br>
             <br>Hoy
-            te ofrecemos conocer y vivenciar la transformación educativa
-            directamente en Uruguay.&nbsp;<br>
+te ofrecemos conocer y vivenciar la transformación educativa
+directamente en Uruguay.&nbsp;<br>
             <br>En
-            un workshop de tres días nos acercaremos a estos procesos de cambio
-            que son ya una realidad en colegios de nuestro país.&nbsp;<br>
+un workshop de tres días nos acercaremos a estos procesos de cambio
+que son ya una realidad en colegios de nuestro país.&nbsp;<br>
             <br>Compartiremos
-            una primera tarde de introducción a las experiencias de
-            transformación de la mano de Xavier Aragay, consultor internacional
-            en innovación educativa, quien nos seguirá dando impulso para
-            construir juntos un nuevo escenario.&nbsp;<br>
+una primera tarde de introducción a las experiencias de
+transformación de la mano de Xavier Aragay, consultor internacional
+en innovación educativa, quien nos seguirá dando impulso para
+construir juntos un nuevo escenario.&nbsp;<br>
             <br>Viviremos
-            después, por primera vez en nuestro país,  la experiencia de la
-            transformación educativa. Visitaremos colegios que ya están
-            implementado la transformación, para vivenciar y ser parte de una
-            jornada de inmersión educativa. Una oportunidad privilegiada para
-            observar, dialogar, preguntar y compartir, y sobre todo, sentir, en
-            vivo y en directo la experiencia del cambio.&nbsp;<br>
+después, por primera vez en nuestro país,  la experiencia de la
+transformación educativa. Visitaremos colegios que ya están
+implementado la transformación, para vivenciar y ser parte de una
+jornada de inmersión educativa. Una oportunidad privilegiada para
+observar, dialogar, preguntar y compartir, y sobre todo, sentir, en
+vivo y en directo la experiencia del cambio.&nbsp;<br>
             <br>Seguiremos
-            con una mañana donde conoceremos más experiencias de transformación
-            locales, incluyendo educación superior, y finalizaremos
-            reflexionando juntos sobre las características y los caminos del
-            cambio, soñando con una educación transformada en Uruguay en el
-            2030.<br>
+con una mañana donde conoceremos más experiencias de transformación
+locales, incluyendo educación superior, y finalizaremos
+reflexionando juntos sobre las características y los caminos del
+cambio, soñando con una educación transformada en Uruguay en el
+2030.<br>
             <br>Nos
-            acompañarán invitados de primer nivel
-            del ámbito público y privado de la educación de Uruguay.<br>
+acompañarán invitados de primer nivel
+del ámbito público y privado de la educación de Uruguay.<br>
             <br>No dejes pasar esta oportunidad. Los cupos son muy limitados. ¡Inscribite ya y reservá tu lugar!
           </p>
         </div>
@@ -207,9 +208,11 @@
           <div class="u-container-style u-custom-item u-list-item u-opacity u-opacity-85 u-radius-30 u-repeater-item u-shape-round u-white u-list-item-1">
             <div class="u-container-layout u-similar-container u-container-layout-1">
               <img class="u-image u-image-default u-preserve-proportions u-image-1" src="images/col_maristas_c.png" alt="" data-image-width="350" data-image-height="350">
-              <h5 class="u-text u-text-default u-text-1"> Colegio Zorrilla<span style="font-weight: 700;"></span>
+              <h5 class="u-align-center u-text u-text-default u-text-1"> Colegio Juan Zorrilla de San Martín<br>
+                <span style="font-weight: 400; font-size: 0.875rem;">Hnos. Maristas</span>
+                <span style="font-weight: 700;"></span>
               </h5>
-              <p class="u-text u-text-2"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+              <p class="u-text u-text-2"> Experiencia de transformación educativa en&nbsp;Ciclo Básico,&nbsp; Educación Inicial y Primaria.</p>
               <p class="u-text u-text-3">
                 <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-color u-btn-1" href="https://www.google.com.uy/maps/place/Colegio+Juan+Zorrilla+de+San+Mart%C3%ADn+-+Maristas/@-34.9210708,-56.1577908,18z/data=!4m5!3m4!1s0x959f817616d2f621:0x5eb1117d0417b213!8m2!3d-34.9209476!4d-56.1582234?hl=es-419" target="_blank"><span class="u-file-icon u-icon u-icon-1"><img src="images/2991231.png" alt=""></span>&nbsp;​José Ellauri&nbsp; 527
                 </a>
@@ -218,23 +221,33 @@
           </div>
           <div class="u-container-style u-custom-item u-list-item u-opacity u-opacity-85 u-radius-30 u-repeater-item u-shape-round u-white u-list-item-2">
             <div class="u-container-layout u-similar-container u-container-layout-2">
-              <img class="u-image u-image-default u-preserve-proportions u-image-2" src="images/col_sanignacio_c1.png" alt="" data-image-width="350" data-image-height="350">
-              <h5 class="u-text u-text-default u-text-4"> Colegio San Ignacio<span style="font-weight: 700;"></span>
+              <img class="u-image u-image-default u-preserve-proportions u-image-2" src="images/col_maturana_c.png" alt="" data-image-width="350" data-image-height="350">
+              <h5 class="u-align-center u-text u-text-default u-text-4">Colegio San Francisco de Sales - Maturana<br>
+                <span style="font-weight: 400; font-size: 0.875rem;">Salesianos de Don Bosco</span>
               </h5>
-              <p class="u-text u-text-5"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+              <p class="u-text u-text-5"> Experiencia de transformación educativa en&nbsp;Ciclo Básico.<br>
+                <br>
+              </p>
               <p class="u-text u-text-6">
-                <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-color u-btn-2" href="https://www.google.com.uy/maps/place/Colegio+San+Ignacio+-+Mons.+Isasa/@-34.8974492,-56.14751,18z/data=!4m5!3m4!1s0x959f811b4f6c0f7d:0x6e413c229f3bab38!8m2!3d-34.8974382!4d-56.1469441?hl=es-419" target="_blank"><span class="u-file-icon u-icon u-icon-2"><img src="images/2991231.png" alt=""></span>&nbsp;​Alejo Rosell y Rius 1641
+                <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-color u-btn-2" href="https://www.google.com.uy/maps/place/Colegio+Maturana/@-34.8727793,-56.2030818,17z/data=!4m5!3m4!1s0x959f8001a9984a2d:0x3925feb3a7d4e430!8m2!3d-34.8727177!4d-56.2011828?hl=es-419" target="_blank"> &nbsp; <span class="u-file-icon u-icon u-icon-2"><img src="images/2991231.png" alt=""></span>&nbsp;​​Bv. Gral. Artigas 4365
                 </a>
               </p>
             </div>
           </div>
           <div class="u-container-style u-custom-item u-list-item u-opacity u-opacity-85 u-radius-30 u-repeater-item u-shape-round u-white u-list-item-3">
             <div class="u-container-layout u-similar-container u-container-layout-3">
-              <img class="u-image u-image-default u-preserve-proportions u-image-3" src="images/col_maturana_c.png" alt="" data-image-width="350" data-image-height="350">
-              <h5 class="u-text u-text-default u-text-7">Colegio Maturana</h5>
-              <p class="u-text u-text-8"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+              <img class="u-image u-image-default u-preserve-proportions u-image-3" src="images/col_sanignacio_c1.png" alt="" data-image-width="350" data-image-height="350">
+              <h5 class="u-align-center u-text u-text-default u-text-7"> Colegio San Ignacio<br>
+                <br>
+                <span style="font-weight: 700;">
+                  <span style="font-weight: 400; font-size: 0.875rem;">Jesuitas</span>
+                </span>
+              </h5>
+              <p class="u-text u-text-8"> Experiencia de transformación educativa en&nbsp;Bachillerato.<br>
+                <br>
+              </p>
               <p class="u-text u-text-9">
-                <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-color u-btn-3" href="https://www.google.com.uy/maps/place/Colegio+Maturana/@-34.8727793,-56.2030818,17z/data=!4m5!3m4!1s0x959f8001a9984a2d:0x3925feb3a7d4e430!8m2!3d-34.8727177!4d-56.2011828?hl=es-419" target="_blank"> &nbsp; <span class="u-file-icon u-icon u-icon-3"><img src="images/2991231.png" alt=""></span>&nbsp;​​Bv. Gral. Artigas 4365
+                <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-color u-btn-3" href="https://www.google.com.uy/maps/place/Colegio+San+Ignacio+-+Mons.+Isasa/@-34.8974492,-56.14751,18z/data=!4m5!3m4!1s0x959f811b4f6c0f7d:0x6e413c229f3bab38!8m2!3d-34.8974382!4d-56.1469441?hl=es-419" target="_blank"><span class="u-file-icon u-icon u-icon-3"><img src="images/2991231.png" alt=""></span>&nbsp;​Alejo Rosell y Rius 1641
                 </a>
               </p>
             </div>
@@ -242,9 +255,14 @@
           <div class="u-container-style u-custom-item u-list-item u-opacity u-opacity-85 u-radius-30 u-repeater-item u-shape-round u-white u-list-item-4">
             <div class="u-container-layout u-similar-container u-container-layout-4">
               <img class="u-image u-image-default u-preserve-proportions u-image-4" src="images/col_stellamaris_c1.png" alt="" data-image-width="350" data-image-height="350">
-              <h5 class="u-text u-text-default u-text-10"> Colegio Stella Maris<span style="font-weight: 700;"></span>
+              <h5 class="u-align-center u-text u-text-default u-text-10"> Colegio Stella Maris<br>
+                <br>
+                <span style="font-weight: 400; font-size: 0.875rem;">Christian Brothers<span style="font-weight: 700;"></span>
+                </span>
               </h5>
-              <p class="u-text u-text-11"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+              <p class="u-text u-text-11"> Experiencia de transformación educativa en&nbsp;Educación Inicial.<br>
+                <br>
+              </p>
               <p class="u-text u-text-12">
                 <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-color u-btn-4" href="https://www.google.com.uy/maps/place/Colegio+Stella+Maris/@-34.8746305,-56.0466259,17z/data=!3m1!4b1!4m5!3m4!1s0x959f87896bdcf8ad:0xac5acdacfa6e4aa8!8m2!3d-34.8746305!4d-56.0444372?hl=es-419" target="_blank"> &nbsp; <span class="u-file-icon u-icon u-icon-4"><img src="images/2991231.png" alt=""></span>&nbsp;​​Gral. Máximo Tajes 7359
                 </a>
@@ -296,7 +314,7 @@
                       <tr style="height: 46px;">
                         <td class="u-border-1 u-border-grey-40 u-table-cell u-table-cell-9">16:30</td>
                         <td class="u-border-1 u-border-grey-40 u-table-cell u-table-cell-10"><b>Funciones ejecutivas: Modelo didáctico e implicaciones para el
-                          aula</b>
+aula</b>
                         </td>
                       </tr>
                       <tr style="height: 46px;">
@@ -357,7 +375,7 @@
                       <tr style="height: 46px;">
                         <td class="u-border-1 u-border-grey-40 u-table-cell u-table-cell-22">11:00</td>
                         <td class="u-border-1 u-border-grey-40 u-table-cell u-table-cell-23"><b>La acción tutorial como eje vertebrador de la escuela y el
-                          aprendizaje</b>
+aprendizaje</b>
                         </td>
                       </tr>
                       <tr style="height: 46px;">
@@ -384,9 +402,9 @@
                 <div class="u-container-style u-layout-cell u-size-60 u-layout-cell-1">
                   <div class="u-container-layout u-container-layout-1"><span class="u-file-icon u-icon u-icon-circle u-text-custom-color-21 u-white u-icon-1"><img src="images/1077976.png" alt=""></span>
                     <h3 class="u-text u-text-default u-text-1">PAGO</h3>
-                    <div class="u-container-style u-expanded-width u-group u-opacity u-opacity-80 u-radius-15 u-shape-round u-white u-group-1">
+                    <div class="u-container-style u-group u-opacity u-opacity-80 u-radius-15 u-shape-round u-white u-group-1">
                       <div class="u-container-layout u-valign-top u-container-layout-2">
-                        <p class="u-text u-text-2">El costo de participación es de $2.500 e incluye materiales, coffee break y visitas a centros educativos.<br>
+                        <p class="u-text u-text-2">El costo de participación es de $5.000 para socios de AUDEC y $6.000 para no socios, e incluye materiales, coffee break y visitas a colegios.<br>
                           <br>El pago se realiza en:<br><b>SANTANDER CC Pesos Nº </b>
                           <span style="font-weight: 700;">000000256277</span>
                           <span style="font-weight: 700;">&nbsp;- Sucursal 62</span>
@@ -430,7 +448,7 @@
             <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
               <div class="u-container-layout u-container-layout-1"><span class="u-file-icon u-icon u-icon-circle u-text-custom-color-21 u-white u-icon-1"><img src="images/1034204.png" alt=""></span>
                 <h3 class="u-text u-text-custom-color-21 u-text-default u-text-1">CONTACTO</h3>
-                <p class="u-text u-text-custom-color-21 u-text-default u-text-2">Por dudas o consultas sobre el evento, por favor comuníquese con nosotros al teléfono&nbsp;<a href="tel:24099899" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-color u-btn-1">2409 9899</a>, al mail <a href="mailto:secretaria@audec.edu.uy?subject=Contacto%20Workshop" class="u-active-none u-border-grey-75 u-border-none u-btn u-button-link u-button-style u-hover-none u-text-body-color u-btn-2">secretaria@audec.edu.uy</a> o complete el siguiente formulario:
+                <p class="u-text u-text-custom-color-21 u-text-default u-text-2">Por dudas o consultas sobre el evento, por favor comuníquese con nosotros al teléfono&nbsp;<a href="tel:24099899" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-color u-btn-1">2409 9899</a>, al mail <a href="mailto:secretaria@audec.edu.uy?subject=Contacto%20Proeducar" class="u-active-none u-border-grey-75 u-border-none u-btn u-button-link u-button-style u-hover-none u-text-body-color u-btn-2">secretaria@audec.edu.uy</a> o complete el siguiente formulario:
                 </p>
                 <div class="u-form u-form-1">
                   <form action="/contact" method="POST" class="u-clearfix u-form-custom-backend u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="form" style="padding: 10px;" redirect="true">
@@ -458,7 +476,7 @@
                     <div class="u-form-send-message u-form-send-success">Gracias por enviarnos su mensaje. Le responderemos a la brevedad.</div>
                     <div class="u-form-send-error u-form-send-message">No fue posible enviar el mensaje.</div>
                     <input type="hidden" value="" name="recaptchaResponse">
-                  </form>                  
+                  </form>
                 </div>
               </div>
             </div>
@@ -485,8 +503,9 @@
   
   
   <footer class="u-align-center u-clearfix u-footer u-palette-1-dark-1 u-footer" id="sec-ca3a"><div class="u-clearfix u-sheet u-sheet-1">
-    <p class="u-small-text u-text u-text-variant u-text-1">Desarrollado por <a href="https://isf.uy/" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-1" target="_blank">ISF</a>
-    </p>
-  </div></footer>
-  
-</body></html>
+      <p class="u-small-text u-text u-text-variant u-text-1">Desarrollado por <a href="https://isf.uy/" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-1" target="_blank">ISF</a>
+      </p>
+    </div></footer>
+
+</body>
+</html>

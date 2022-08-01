@@ -20,6 +20,7 @@ class CreateSecondWorkshopGroupsTable extends Migration
             $table->integer('school_id');
             $table->integer('capacity');
             $table->boolean('has_vacant');
+            $table->string('addicional_text');
             $table->timestamps();
         });
     }
