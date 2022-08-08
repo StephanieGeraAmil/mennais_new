@@ -24,6 +24,14 @@ Se ha inscripto:
         <td>{{$inscription->institution->institution}}</td>
     </tr>
     <tr>
+        <td>TURNO 1</td>
+        <td>{{$inscription->firstWorkshopGroup->school->name}} de {{Carbon\Carbon::parse($inscription->firstWorkshopGroup->start_at)->format('H:i')}} a {{Carbon\Carbon::parse($inscription->firstWorkshopGroup->end_at)->format('H:i')}}</td>
+    </tr>
+    <tr>
+        <td>TURNO 2</td>
+        <td>{{$inscription->secondWorkshopGroup->school->name}} de {{Carbon\Carbon::parse($inscription->secondWorkshopGroup->start_at)->format('H:i')}} a {{Carbon\Carbon::parse($inscription->secondWorkshopGroup->end_at)->format('H:i')}}</td>
+    </tr>
+    <tr>
         <td>Ciudad</td>
         <td>{{$inscription->institution->city}}</td>
     </tr>

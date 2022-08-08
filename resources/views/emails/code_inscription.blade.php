@@ -1,6 +1,6 @@
 <p>Ha recibido una invitación</p>
 <p>
-{{$code->groupInscription->name}} de {{$code->groupInscription->institution->institution}} le ha invitado a participar de {{env('EVENT_NAME')}}, que se realizará los días 8 y 9 de julio de 2022 en el Teatro del Colegio La Mennais – Montevideo.
+{{$code->groupInscription->name}} de {{$code->groupInscription->institution->institution}} le ha invitado a participar del Workshop VIVENCIANDO LA TRANSFORMACIÓN EDUCATIVA, que se realizará los días 27 al 29 de setiembre de 2022 en el Colegio Seminario – Montevideo.
 </p>
 <p>
 Usted deberá completar su inscripción sin costo con sus datos personales en el siguiente vínculo:<BR/>
