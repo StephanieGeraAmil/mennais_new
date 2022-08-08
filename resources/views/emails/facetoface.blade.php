@@ -6,7 +6,7 @@ Gracias por inscribirse al Workshop.
 El siguiente código QR es su pase al evento y le será requerido al acreditarse.
 </p>
 <p>
-    <img src="{!!$message->embedData(QrCode::format('png')->generate($inscription->url()), 'QrCode.png', 'image/png')!!}">
+    {{-- <img src="{!!$message->embedData(QrCode::format('png')->generate($inscription->url()), 'QrCode.png', 'image/png')!!}"> --}}
 </p>
 <p>
 Saludos,
