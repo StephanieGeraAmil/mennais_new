@@ -23,7 +23,7 @@
     <div style="width:100%; text-align:center;margin-top:10px; font-size: 24px;font-weight: bold;letter-spacing:2px">
         {{$name}}, C.I.: {{$document}} 
     </div>
-    <div style="width:904px;margin-left:70px; margin-top:10px">
+    <div style="width:904px;margin-left:60px; margin-top:10px">
         Ha participado del {{env('EVENT_NAME')}}, en calidad de asistente, @if($singular_day)el día @else los días @endif {{$date}}.
     </div>
 </body>
