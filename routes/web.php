@@ -80,7 +80,7 @@ Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/mail/inscription', function(){
+/* Route::get('/mail/inscription', function(){
     $inscription = Inscription::findOrFail(1);
     return view('emails.facetoface')
     ->with('inscription', $inscription);
@@ -108,4 +108,4 @@ Route::get('/admin/mail/group_inscription', function(){
     $group_inscription = GroupInscription::findOrFail(1);
     return view('emails.admin.group_inscription')
     ->with('group_inscription', $group_inscription);
-});
+}); */
