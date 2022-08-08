@@ -12,12 +12,12 @@ Bienvenida
     <!--Main Col-->
     <div id="profile" class="w-full rounded-lg lg:rounded-l-lg shadow-2xl bg-white opacity-90 mx-6 lg:mx-0" style="max-width:90vw">
         <div class="p-4 md:p-12 text-center lg:text-left">
-            <div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" style="background-image: url('/images/ano_cab.png');background-color: #151670;"></div>			
+            <div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" style="background-image: url('/images/logo_audec.png');background-color: #ddd5f2;"></div>			
             <p></p>
             <div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-grey-500 opacity-25"></div>
             <div class="items-center border-b border-teal-500 py-2">
-                <h3 class="font-bold mt-3.5 mb-3.5" style="color: #151670;">{{$user_data->name}} {{$user_data->lastname}}</h3>                
-                <h5 class="pt-3.5" style="color: #151670;">Bienvenido a {{env('EVENT_NAME')}}</h5>                
+                <h3 class="font-bold mt-3.5 mb-3.5" style="color: #363d45;">{{$user_data->name}} {{$user_data->lastname}}</h3>                
+                <h5 class="pt-3.5" style="color: #363d45;">Bienvenido al {{env('EVENT_NAME')}}</h5>                
             </div>
         </div>
         

@@ -15,7 +15,7 @@
 </head>
 <body style="width: 1024px; font-size:24px; font-family:'Open Sans',sans-serif"; >
     <div style="width:934px; margin-top:260px; text-align:right">
-        Montevideo, lunes 11 de julio de 2022
+        Montevideo, Viernes 30 de setiembre de 2022
         </div>
     <div style="margin-left:80px; margin-top:49px">
         Se certifica que:
@@ -24,7 +24,7 @@
         {{$name}}, C.I.: {{$document}} 
     </div>
     <div style="width:904px;margin-left:80px; margin-top:10px">
-        Ha participado de PROEDUCAR 31 Ediciones: Claves de futuro para una escuela que aprende, en calidad de asistente, @if($singular_day)el día @else los días @endif {{$date}}.
+        Ha participado del {{env('EVENT_NAME')}}, en calidad de asistente, @if($singular_day)el día @else los días @endif {{$date}}.
     </div>
 </body>
 </html>

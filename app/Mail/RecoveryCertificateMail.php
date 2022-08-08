@@ -30,7 +30,7 @@ class RecoveryCertificateMail extends Mailable
      */
     public function build()
     {
-        return $this->subject('Certificado Workshop Audec')->view('emails.recoverycertificate')
+        return $this->subject('Certificado '.env('EVENT_NAME'))->view('emails.recoverycertificate')
         ->with('inscription',$this->inscription);
     }
 }
