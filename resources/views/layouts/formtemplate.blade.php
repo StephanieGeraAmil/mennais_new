@@ -49,7 +49,7 @@
                                     <h4 class="u-text u-text-2">@yield('subtitle')</h4>
                                     <div class="u-container-style u-expanded-width u-group u-opacity u-opacity-70 u-radius-22 u-shape-round u-white u-group-1">
                                         <div class="u-container-layout u-valign-middle u-container-layout-3">
-                                            <p class="u-text u-text-3">@yield('left-text-box')</p>
+                                            @yield('left-text-box')
                                         </div>
                                     </div>
                                     @yield('left-form')

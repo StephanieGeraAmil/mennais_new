@@ -60,7 +60,7 @@ Solicitud de certificado
 Solicitud de certificado  
 @endsection
 @section('left-text-box')
-Ingrese su documento y le enviaremos a su mail un link donde podrá descargar el certificado.
+<p class="u-text u-text-3">Ingrese su documento y le enviaremos a su mail un link donde podrá descargar el certificado.</p>
 @endsection
 @section('form')
 <form class="w-full max-w-sm" action="{{Route('inscription.certificateRecoveryMail')}}" method="POST">

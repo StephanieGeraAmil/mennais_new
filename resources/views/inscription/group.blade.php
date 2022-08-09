@@ -40,7 +40,7 @@ Inscripción Grupal
 INSCRIPCIÓN GRUPAL
 @endsection
 @section('left-text-box')
-Por favor, complete y envíe el formulario con sus datos
+<p class="u-text u-text-3">Por favor, complete y envíe el formulario con sus datos</p>
 @endsection
 @section('form')
 <form action="/store_group_inscription" method="POST" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" enctype="multipart/form-data" style="padding: 0px;">

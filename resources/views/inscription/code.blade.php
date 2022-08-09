@@ -40,7 +40,38 @@ Inscripción Indivudual
 INSCRIPCIÓN INDIVIDUAL
 @endsection
 @section('left-text-box')
-Por favor, complete el formulario con sus datos y seleccione los 2 colegios que visitará el miércoles 28 de setiembre
+<p>
+    Por favor, complete el formulario con sus datos.
+  </p>
+  <p>
+    El miércoles 28 de setiembre cada participante podrá visitar dos centros educativos miembros de AUDEC que ya están implementando experiencias de transformación.
+  </p>
+  <span>
+      Centros disponibles para visitar:
+</span>
+    <ul>
+      <li>
+        Colegio Juan Zorrilla de San Martín - Hermanos Maristas - Ciclo Básico, Ed. Inicial y Primaria.
+      </li>
+      <li>
+        Colegio y Liceo San Francisco de Sales - Maturana - Salesianos- Ciclo Básico
+      </li>
+      <li>
+        Colegio San Ignacio - Jesuitas - Ciclo Básico y Bachillerato.      
+      </li>
+      <li>
+        Colegio Stella Maris - Christian Brothers - Ed. Inicial.
+      </li>
+    </ul>
+  <p>
+    Las visitas tienen una duración de dos horas cada una.
+  </p>
+  <p>
+    Seleccione la institución que desee visitar en cada turno según su interés.
+  </p>
+  <p>
+    Sólo se mostrarán los colegios con cupos disponibles.
+  </p>
 @endsection
 @section('form')
 <form action="/store_code_inscription" method="POST" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" enctype="multipart/form-data" style="padding: 0px;">
