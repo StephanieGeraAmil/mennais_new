@@ -1,10 +1,45 @@
+@yield('headers')
+@yield('alert_message')
 <!DOCTYPE html>
-<html style="font-size: 16px;" lang="es-UY">
-  <head>
-    @yield('headers')
+<html style="font-size: 16px;" lang="es-UY"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Cosmos, Read what our customers say, ​View our work, discover more about us, read more of our stories, explore our archive or get in touch., How We Work, ​Uncover and meet customer needs., ​Want your brand to stand above the rest?, Get in touch">
+    <meta name="description" content="Vivenciando la transformación educativa es un evento organizado por AUDEC - Asociación Uruguaya de Educación Católica">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="Inicio.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" "="" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" "="" defer=""></script>
+    <meta name="generator" content="Nicepage 4.16.0, nicepage.com">
+    <link rel="icon" href="images/favicon1.png">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Workshop_AUDEC"
+}</script>
+    <meta name="theme-color" content="#ddd6f3">
+    <meta property="og:title" content="Inicio">
+    <meta property="og:description" content="Vivenciando la transformación educativa es un evento organizado por AUDEC - Asociación Uruguaya de Educación Católica">
+    <meta property="og:type" content="website">
   </head>
   <body class="u-body u-stick-footer u-xl-mode" data-lang="es"> 
-    @yield('alert_message')
     <section class="u-align-center u-clearfix u-gradient u-section-1" id="sec-d247">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
@@ -425,7 +460,7 @@ del ámbito público y privado de la educación de Uruguay.<br>
                       <h3 class="u-text u-text-default u-text-1">PAGO</h3>
                       <div class="u-container-style u-group u-opacity u-opacity-80 u-radius-15 u-shape-round u-white u-group-1">
                         <div class="u-container-layout u-valign-top u-container-layout-2">
-                          <p class="u-text u-text-2">El costo de participación es de $5.000 para socios de AUDEC y $6.000 para no socios, e incluye materiales, coffee break y visitas a colegios.<br>
+                          <p class="u-text u-text-2">El costo de participación es de $5.000 para socios de AUDEC y $6.000 para no socios, e incluye materiales, coffee break.<br>
                             <br>El pago se realiza en:<br><b>SANTANDER CC Pesos Nº </b>
                             <span style="font-weight: 700;">000000256277</span>
                             <span style="font-weight: 700;">&nbsp;- Sucursal 62</span>
