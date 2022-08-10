@@ -5,8 +5,8 @@
 <meta name="keywords" content="Cosmos, Read what our customers say, ​View our work, discover more about us, read more of our stories, explore our archive or get in touch., How We Work, ​Uncover and meet customer needs., ​Want your brand to stand above the rest?, Get in touch">
 <meta name="description" content="Vivenciando la transformación educativa es un evento organizado por AUDEC - Asociación Uruguaya de Educación Católica">
 <title>Workshop Audec</title>
-<link rel="stylesheet" href="/css/nicepage.css?v=20 media="screen">
-<link rel="stylesheet" href="/css/inicio.css?v=20" media="screen">
+<link rel="stylesheet" href="/css/nicepage.css?v=21 media="screen">
+<link rel="stylesheet" href="/css/inicio.css?v=21" media="screen">
 <script class="u-script" type="text/javascript" src="/js/jquery.js" defer=""></script>
 <script class="u-script" type="text/javascript" src="/js/nicepage.js" defer=""></script>
 <meta name="generator" content="Nicepage 4.12.5, nicepage.com">
