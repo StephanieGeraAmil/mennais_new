@@ -1600,7 +1600,8 @@
 .u-section-11 .u-group-1 {
   min-height: 375px;
   width: 532px;
-  margin: 33px auto 0;
+  height: auto;
+  margin: 32px auto 0;
 }
 
 .u-section-11 .u-container-layout-2 {
@@ -1685,6 +1686,7 @@
 
   .u-section-11 .u-group-1 {
     width: 434px;
+    height: auto;
   }
 
   .u-section-11 .u-layout-cell-2 {
