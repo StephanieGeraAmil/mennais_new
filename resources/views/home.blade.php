@@ -21,7 +21,7 @@
   }
 </script>
 <meta name="theme-color" content="#ddd6f3">
-<meta property="og:title" content="Inicio">
+<meta property="og:title" content="Workshop Audec">
 <meta property="og:description" content="Vivenciando la transformación educativa es un evento organizado por AUDEC - Asociación Uruguaya de Educación Católica">
 <meta property="og:type" content="website">
 @endsection

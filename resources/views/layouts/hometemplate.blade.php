@@ -42,7 +42,7 @@ creando futuro </b>
         <div class="u-expanded-width u-list u-list-1">
           <div class="u-repeater u-repeater-1">
             <div class="u-align-center u-border-1 u-border-palette-1-dark-1 u-container-style u-gradient u-list-item u-radius-26 u-repeater-item u-shape-round u-list-item-1">
-              <div class="u-container-layout u-similar-container u-valign-top-xs u-container-layout-1"><span class="u-custom-item u-file-icon u-icon u-icon-circle u-text-custom-color-21 u-white u-icon-1"><img src="images/1581943.png" alt=""></span>
+              <div class="u-container-layout u-similar-container u-valign-top-xs u-container-layout-1"><span class="u-custom-item u-file-icon u-icon u-icon-circle u-text-custom-color-21 u-white u-icon-1"><img src="images/1581943-fa02a201.png" alt=""></span>
                 <h5 class="u-text u-text-body-alt-color u-text-default u-text-1">
                   <span style="font-weight: 700;"></span>
                   <span style="font-weight: 400;"> 27 al 29 de setiembre 2022</span>
@@ -50,23 +50,23 @@ creando futuro </b>
               </div>
             </div>
             <div class="u-align-center u-border-1 u-border-palette-1-dark-1 u-container-style u-gradient u-list-item u-radius-26 u-repeater-item u-shape-round u-list-item-2">
-              <div class="u-container-layout u-similar-container u-valign-top-xs u-container-layout-2"><span class="u-custom-item u-file-icon u-icon u-icon-circle u-text-custom-color-21 u-white u-icon-2"><img src="images/535239.png" alt=""></span>
+              <div class="u-container-layout u-similar-container u-valign-top-xs u-container-layout-2"><span class="u-custom-item u-file-icon u-icon u-icon-circle u-text-custom-color-21 u-white u-icon-2"><img src="images/535239-50c608fd.png" alt=""></span>
                 <h5 class="u-text u-text-body-alt-color u-text-default u-text-2">Colegio<br>Seminario 
                 </h5>
               </div>
             </div>
             <div class="u-align-center u-border-1 u-border-palette-1-dark-1 u-container-style u-gradient u-list-item u-radius-26 u-repeater-item u-shape-round u-list-item-3">
-              <div class="u-container-layout u-similar-container u-valign-top-xs u-container-layout-3"><span class="u-custom-item u-file-icon u-icon u-icon-circle u-text-custom-color-21 u-white u-icon-3"><img src="images/1564.png" alt=""></span>
+              <div class="u-container-layout u-similar-container u-valign-top-xs u-container-layout-3"><span class="u-custom-item u-file-icon u-icon u-icon-circle u-text-custom-color-21 u-white u-icon-3"><img src="images/1564-22cfc346.png" alt=""></span>
                 <h5 class="u-text u-text-body-alt-color u-text-default u-text-3">Cupos muy limitados</h5>
               </div>
             </div>
             <div class="u-align-center u-border-1 u-border-palette-1-dark-1 u-container-style u-gradient u-list-item u-radius-26 u-repeater-item u-shape-round u-list-item-4">
-              <div class="u-container-layout u-similar-container u-valign-top-xs u-container-layout-4"><span class="u-custom-item u-file-icon u-icon u-icon-circle u-text-custom-color-21 u-white u-icon-4"><img src="images/2910793.png" alt=""></span>
+              <div class="u-container-layout u-similar-container u-valign-top-xs u-container-layout-4"><span class="u-custom-item u-file-icon u-icon u-icon-circle u-text-custom-color-21 u-white u-icon-4"><img src="images/2910793-6c2c064b.png" alt=""></span>
                 <h5 class="u-text u-text-body-alt-color u-text-default u-text-4">Equipos directivos y líderes del cambio educativo</h5>
               </div>
             </div>
             <div class="u-align-center u-border-1 u-border-palette-1-dark-1 u-container-style u-gradient u-list-item u-radius-26 u-repeater-item u-shape-round u-list-item-5">
-              <div class="u-container-layout u-similar-container u-valign-top-xs u-container-layout-5"><span class="u-custom-item u-file-icon u-icon u-icon-circle u-text-custom-color-21 u-white u-icon-5"><img src="images/1077976.png" alt=""></span>
+              <div class="u-container-layout u-similar-container u-valign-top-xs u-container-layout-5"><span class="u-custom-item u-file-icon u-icon u-icon-circle u-text-custom-color-21 u-white u-icon-5"><img src="images/1077976-28c6a43a.png" alt=""></span>
                 <h5 class="u-text u-text-body-alt-color u-text-default u-text-5">$5.000 para socios de AUDEC</h5>
               </div>
             </div>
@@ -75,7 +75,7 @@ creando futuro </b>
       </div>
     </section>
     <section class="u-clearfix u-palette-1-base u-section-3" id="sec-fc88">
-      <div class="u-clearfix u-sheet u-sheet-1"><span class="u-file-icon u-icon u-icon-circle u-text-custom-color-21 u-white u-icon-1"><img src="images/33308.png" alt=""></span>
+      <div class="u-clearfix u-sheet u-sheet-1"><span class="u-file-icon u-icon u-icon-circle u-text-custom-color-21 u-white u-icon-1"><img src="images/33308-f2019ed3.png" alt=""></span>
         <h3 class="u-text u-text-default u-text-1">EXPOSITORES</h3>
       </div>
     </section>
@@ -120,7 +120,7 @@ creando futuro </b>
       </div>
     </section>
     <section class="u-clearfix u-palette-2-light-2 u-section-5" id="carousel_949d">
-      <div class="u-clearfix u-sheet u-sheet-1"><span class="u-file-icon u-icon u-icon-circle u-text-custom-color-21 u-white u-icon-1"><img src="images/151776.png" alt=""></span>
+      <div class="u-clearfix u-sheet u-sheet-1"><span class="u-file-icon u-icon u-icon-circle u-text-custom-color-21 u-white u-icon-1"><img src="images/151776-15847fc2.png" alt=""></span>
         <h3 class="u-text u-text-default u-text-1">SOBRE EL EVENTO</h3>
       </div>
     </section>
@@ -249,7 +249,7 @@ del ámbito público y privado de la educación de Uruguay.<br>
       </div>
     </section>
     <section class="u-clearfix u-palette-2-light-2 u-section-9" id="carousel_1f6d">
-      <div class="u-clearfix u-sheet u-sheet-1"><span class="u-file-icon u-icon u-icon-circle u-text-custom-color-21 u-white u-icon-1"><img src="images/3286280.png" alt=""></span>
+      <div class="u-clearfix u-sheet u-sheet-1"><span class="u-file-icon u-icon u-icon-circle u-text-custom-color-21 u-white u-icon-1"><img src="images/3286280-2d579705.png" alt=""></span>
         <h3 class="u-text u-text-default u-text-1">AGENDA</h3>
       </div>
     </section>
@@ -421,7 +421,7 @@ del ámbito público y privado de la educación de Uruguay.<br>
               <div class="u-size-30">
                 <div class="u-layout-col">
                   <div class="u-container-style u-layout-cell u-size-60 u-layout-cell-1">
-                    <div class="u-container-layout u-container-layout-1"><span class="u-file-icon u-icon u-icon-circle u-text-custom-color-21 u-white u-icon-1"><img src="images/1077976.png" alt=""></span>
+                    <div class="u-container-layout u-container-layout-1"><span class="u-file-icon u-icon u-icon-circle u-text-custom-color-21 u-white u-icon-1"><img src="images/1077976-28c6a43a.png" alt=""></span>
                       <h3 class="u-text u-text-default u-text-1">PAGO</h3>
                       <div class="u-container-style u-group u-opacity u-opacity-80 u-radius-15 u-shape-round u-white u-group-1">
                         <div class="u-container-layout u-valign-top u-container-layout-2">
@@ -441,13 +441,13 @@ del ámbito público y privado de la educación de Uruguay.<br>
               <div class="u-size-30">
                 <div class="u-layout-col">
                   <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2">
-                    <div class="u-container-layout u-valign-bottom u-container-layout-3"><span class="u-file-icon u-icon u-icon-circle u-text-custom-color-21 u-white u-icon-2"><img src="images/684831.png" alt=""></span>
+                    <div class="u-container-layout u-valign-bottom u-container-layout-3"><span class="u-file-icon u-icon u-icon-circle u-text-custom-color-21 u-white u-icon-2"><img src="images/684831-175d6ebc.png" alt=""></span>
                       <h3 class="u-text u-text-default u-text-3">INSCRIPCIÓN</h3>
                       <div class="u-clearfix u-custom-html u-custom-html-1">@yield('inscription_buttons')</div>
                     </div>
                   </div>
                   <div class="u-container-style u-layout-cell u-shape-rectangle u-size-30 u-layout-cell-3">
-                    <div class="u-container-layout u-container-layout-4"><span class="u-file-icon u-icon u-icon-circle u-text-custom-color-21 u-white u-icon-3"><img src="images/1895474.png" alt=""></span>
+                    <div class="u-container-layout u-container-layout-4"><span class="u-file-icon u-icon u-icon-circle u-text-custom-color-21 u-white u-icon-3"><img src="images/1895474-909b6687.png" alt=""></span>
                       <h3 class="u-text u-text-default u-text-4">CERTIFICADO</h3>
                       <p class="u-text u-text-5">A partir del 30 de setiembre podrá descargar aquí su certificado digital de asistencia​&nbsp; </p>
                       <div class="u-clearfix u-custom-html u-custom-html-2">@yield('certificate_button')</div>
@@ -466,7 +466,7 @@ del ámbito público y privado de la educación de Uruguay.<br>
           <div class="u-layout">
             <div class="u-layout-row">
               <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
-                <div class="u-container-layout u-container-layout-1"><span class="u-file-icon u-icon u-icon-circle u-text-custom-color-21 u-white u-icon-1"><img src="images/1034204.png" alt=""></span>
+                <div class="u-container-layout u-container-layout-1"><span class="u-file-icon u-icon u-icon-circle u-text-custom-color-21 u-white u-icon-1"><img src="images/1034204-fb4d36dc.png" alt=""></span>
                   <h3 class="u-text u-text-custom-color-21 u-text-default u-text-1">CONTACTO</h3>
                   <p class="u-text u-text-custom-color-21 u-text-default u-text-2">Por dudas o consultas sobre el evento, por favor comuníquese con nosotros al teléfono&nbsp;<a href="tel:24099899" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-color u-btn-1">2409 9899</a>, al mail <a href="mailto:secretaria@audec.edu.uy?subject=Contacto%20Proeducar" class="u-active-none u-border-grey-75 u-border-none u-btn u-button-link u-button-style u-hover-none u-text-body-color u-btn-2">secretaria@audec.edu.uy</a> o complete el siguiente formulario:
                   </p>
@@ -474,7 +474,7 @@ del ámbito público y privado de la educación de Uruguay.<br>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2">
-                <div class="u-container-layout u-container-layout-2"><span class="u-file-icon u-icon u-icon-circle u-text-custom-color-21 u-white u-icon-2"><img src="images/1716764.png" alt=""></span>
+                <div class="u-container-layout u-container-layout-2"><span class="u-file-icon u-icon u-icon-circle u-text-custom-color-21 u-white u-icon-2"><img src="images/1716764-87ec4833.png" alt=""></span>
                   <h3 class="u-text u-text-default u-text-3">ORGANIZA</h3>
                   <img class="u-image u-image-default u-preserve-proportions u-image-1" src="images/logo_audec.png" alt="" data-image-width="550" data-image-height="550" data-href="https://www.audec.edu.uy/">
                   <h3 class="u-text u-text-default u-text-4">

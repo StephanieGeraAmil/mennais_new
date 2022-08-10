@@ -850,20 +850,20 @@
 
 @media (max-width: 575px) {
   .u-section-4 .u-sheet-1 {
-    min-height: 2569px;
+    min-height: 2568px;
   }
 
   .u-section-4 .u-layout-wrap-1 {
-    margin-top: -33px;
-    margin-bottom: 36px;
+    margin-top: 1px;
+    margin-bottom: 58px;
   }
 
   .u-section-4 .u-layout-cell-1 {
-    min-height: 1146px;
+    min-height: 1192px;
   }
 
   .u-section-4 .u-layout-cell-2 {
-    min-height: 1397px;
+    min-height: 1367px;
   }
 
   .u-section-4 .u-image-3 {
