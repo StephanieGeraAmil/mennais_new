@@ -53,16 +53,16 @@ INSCRIPCIÓN INDIVIDUAL
 </span>
   <ul>
     <li>
-      Colegio Juan Zorrilla de San Martín - Hermanos Maristas - Ciclo Básico, Ed. Inicial y Primaria.
+      Colegio Juan Zorrilla de San Martín - Hermanos Maristas - <b>Ciclo Básico, Ed. Inicial y Primaria</b>.
     </li>
     <li>
-      Colegio y Liceo San Francisco de Sales - Maturana - Salesianos- Ciclo Básico
+      Colegio y Liceo San Francisco de Sales - Maturana - Salesianos- <b>Ciclo Básico</b>
     </li>
     <li>
-      Colegio San Ignacio - Jesuitas - Ciclo Básico y Bachillerato.      
+      Colegio San Ignacio - Jesuitas - <b>Ciclo Básico y Bachillerato.</b>
     </li>
     <li>
-      Colegio Stella Maris - Christian Brothers - Ed. Inicial.
+      Colegio Stella Maris - Christian Brothers - <b>Ed. Inicial.</b>
     </li>
   </ul>
 <p>
