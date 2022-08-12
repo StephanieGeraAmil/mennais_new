@@ -44,7 +44,11 @@ class SecondWorkshopGroup extends Model
     }
 
     public function getString(){
-        return $this->school->name." ".$this->additional_text." (".Carbon::parse($this->start_at)->format('H:i')." - ".Carbon::parse($this->end_at)->format('H:i').")";
+        $pre_text = "";
+        if($this->additional_text != ""){
+            $pre_text = $this->additional_text." - ";
+        }
+        return  $pre_text.$this->school->name." (".Carbon::parse($this->start_at)->format('H:i')." - ".Carbon::parse($this->end_at)->format('H:i').")";
     }
 
 }
