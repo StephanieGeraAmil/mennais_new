@@ -52,17 +52,17 @@ INSCRIPCIÓN INDIVIDUAL
   Centros disponibles para visitar:
 </span>
   <ul>
-    <li>
-      Colegio Juan Zorrilla de San Martín - Hermanos Maristas - <b>Ciclo Básico, Ed. Inicial y Primaria</b>.
+    <li style="margin-bottom:10px">
+      Colegio Juan Zorrilla de San Martín - Hermanos Maristas<br/><b>Ciclo Básico, Ed. Inicial y Primaria</b>.
     </li>
-    <li>
-      Colegio y Liceo San Francisco de Sales - Maturana - Salesianos- <b>Ciclo Básico</b>
+    <li style="margin-bottom:10px">
+      Colegio y Liceo San Francisco de Sales - Maturana - Salesianos<br/><b>Ciclo Básico</b>
     </li>
-    <li>
-      Colegio San Ignacio - Jesuitas - <b>Ciclo Básico y Bachillerato.</b>
+    <li style="margin-bottom:10px">
+      Colegio San Ignacio - Jesuitas<br/><b>Ciclo Básico y Bachillerato.</b>
     </li>
-    <li>
-      Colegio Stella Maris - Christian Brothers - <b>Ed. Inicial.</b>
+    <li style="margin-bottom:10px">
+      Colegio Stella Maris - Christian Brothers<br/><b>Ed. Inicial.</b>
     </li>
   </ul>
 <p>
