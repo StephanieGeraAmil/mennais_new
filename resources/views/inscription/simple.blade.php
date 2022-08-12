@@ -173,7 +173,7 @@ INSCRIPCIÓN INDIVIDUAL
       });
   }
   
-  funciton loadOldWorkShops(){
+  function loadOldWorkShops(){
     let old_first_workshop_group = $('#old_first_workshop_group_id').val();
     let old_second_workshop_group = $('#old_second_workshop_group_id').val();
     if(old_first_workshop_group > 0){
