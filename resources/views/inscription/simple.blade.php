@@ -150,9 +150,9 @@ INSCRIPCIÓN INDIVIDUAL
   jQuery( document ).ready(function() {
       loadSecondWorkshopGroup();
       $('#first_workshop_group_id').change(function(ev){
-          loadSecondWorkshopGroup();
-          loadOldWorkShops();
-      })
+          loadSecondWorkshopGroup();          
+      });
+      loadOldWorkShops();
   });
   
   function loadSecondWorkshopGroup(){      
