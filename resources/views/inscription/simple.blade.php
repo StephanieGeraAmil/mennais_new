@@ -159,7 +159,8 @@ INSCRIPCIÓN INDIVIDUAL
       let first_workshop_group = $('#first_workshop_group_id').val();
       let second_workshop_group = $('#second_workshop_group_id');
       $.ajax({
-          url: '/api/second_workshop_group/'+first_workshop_group
+          url: '/api/second_workshop_group/'+first_workshop_group,
+          async:false
       }).done(function(data){
           second_workshop_group.children().remove();
           if('data' in data){
