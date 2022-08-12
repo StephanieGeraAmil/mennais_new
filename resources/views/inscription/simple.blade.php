@@ -76,6 +76,8 @@ INSCRIPCIÓN INDIVIDUAL
 </p>
 @endsection
 @section('form')
+<input type="hidden" id="old_first_workshop_group" value={{old('first_workshop_group_id')??0}}>
+<input type="hidden" id="old_second_workshop_group" value={{old('second_workshop_group_id')??0}}>
 <form action="/store_inscription" method="POST" class="u-clearfix u-form-spacing-12 u-form-vertical u-inner-form" source="custom" name="Inscripción Individual" style="padding: 18px 0px;" enctype="multipart/form-data" >
   @csrf
   <div class="u-form-group u-form-name">
@@ -149,10 +151,11 @@ INSCRIPCIÓN INDIVIDUAL
       loadSecondWorkshopGroup();
       $('#first_workshop_group_id').change(function(ev){
           loadSecondWorkshopGroup();
+          loadOldWorkShops();
       })
   });
   
-  function loadSecondWorkshopGroup(){
+  function loadSecondWorkshopGroup(){      
       let first_workshop_group = $('#first_workshop_group_id').val();
       let second_workshop_group = $('#second_workshop_group_id');
       $.ajax({
@@ -170,6 +173,19 @@ INSCRIPCIÓN INDIVIDUAL
       });
   }
   
+  funciton loadOldWorkShops(){
+    let old_first_workshop_group = $('#old_first_workshop_group_id').val();
+    let old_second_workshop_group = $('#old_second_workshop_group_id').val();
+    if(old_first_workshop_group > 0){
+      let first_workshop_group = $('#first_workshop_group_id').val(old_first_workshop_group);
+    }
+    if(old_second_workshop_group > 0){
+      let first_workshop_group = $('#second_workshop_group_id').val(old_second_workshop_group);
+    }
+  }
+
+
+
   function clean_document(element){
     let input = $(element);
     let input_val = input.val();
