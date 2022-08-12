@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\FirstWorkshopGroup;
 use App\Models\Inscription;
+use App\Models\SecondWorkshopGroup;
 use Illuminate\Http\Request;
 
 class AdminInscriptionController extends Controller
@@ -47,7 +49,11 @@ class AdminInscriptionController extends Controller
     public function show($id)
     {
         $inscription = Inscription::findOrFail($id);
+        $first_workshop_groups = FirstWorkshopGroup::all();
+        $second_workshop_groups = SecondWorkshopGroup::all();
         return view('admin.show')
+        ->with('first_workshop_groups', $first_workshop_groups)
+        ->with('second_workshop_groups', $second_workshop_groups)
         ->with('inscription', $inscription);
     }
 
@@ -71,7 +77,15 @@ class AdminInscriptionController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $validated_data = $request->validate([            
+            'first_workshop_group_id' => 'required|integer',
+            'second_workshop_group_id' => 'required|integer',
+        ]); 
+        $inscription = Inscription::findOrFail($id);
+        $inscription->first_workshop_group_id = $validated_data['first_workshop_group_id'];
+        $inscription->second_workshop_group_id = $validated_data['second_workshop_group_id'];
+        $inscription->save();
+        return redirect('/admin/inscription/'.$id);
     }
 
     /**
