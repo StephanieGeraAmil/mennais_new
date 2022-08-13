@@ -24,7 +24,7 @@ Inscripción Indivudual
           @error('lastname')  El campo apellido no es correcto.<br/>  @enderror
           @error('document')  
           @if ($message == "The document has already been taken.")
-            Su cédula de indentidad ya se encuentra inscripta.<br/>Si aún no recibió el email de confirmación, comuniquese con audec.<br/>
+            Su cédula de indentidad ya se encuentra inscripta. Si aún no recibió el email de confirmación, comuniquese con audec.<br/>
             @else
             El campo cédula no es válido.<br/>
             @endif
