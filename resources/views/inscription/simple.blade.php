@@ -22,7 +22,7 @@ Inscripción Indivudual
         <h5 class="u-text u-text-default u-text-1">
           @error('name') El campo nombre no es correcto.<br/> @enderror
           @error('lastname')  El campo apellido no es correcto.<br/>  @enderror
-          @error('document')  {{ ($message == "The document has already been taken.")?"El documento ya está en uso": "El campo documento no es válido." }}.<br/> @enderror
+          @error('document')  {{ ($message == "The document has already been taken.")?"Su cédula de indentidad ya se encuentra inscripta.<br/>Si aún no recibió el email de confirmación, comuniquese con audec.": "El campo cédula no es válido." }}.<br/> @enderror
           @error('email')  El campo email no es correcto.<br/>  @enderror
           @error('phone') El campo teléfono no es correcto.<br/> @enderror
           @error('institution_name') El campo institución no es correcto.<br/> @enderror
