@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html style="font-size: 16px;" lang="es-UY">
 <head>
-  @yield('headers')
+  @yield('headers')    
 </head>
 <body class="u-body u-stick-footer u-xl-mode" data-lang="es"> 
   @yield('alert_message')
@@ -425,7 +425,7 @@
                   <h3 class="u-text u-text-default u-text-1">PAGO</h3>
                   <div class="u-container-style u-group u-opacity u-opacity-80 u-radius-15 u-shape-round u-white u-group-1">
                     <div class="u-container-layout u-valign-top u-container-layout-2">
-                      <p class="u-text u-text-2">El costo de participación es de $5.000 para socios de AUDEC y $6.000 para no socios, e incluye materiales y coffee break.<br>
+                      <p class="u-text u-text-2">El costo de participación es de $5.000 por persona para socios de AUDEC y $6.000 por persona para no socios, e incluye materiales y coffee break.<br>
                         <br>El pago se realiza en:<br><b>SANTANDER CC Pesos Nº </b>
                         <span style="font-weight: 700;">000000256277</span>
                         <span style="font-weight: 700;">&nbsp;- Sucursal 62</span>
