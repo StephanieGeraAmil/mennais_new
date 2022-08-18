@@ -87,6 +87,7 @@ Admin Panel
                                 @method('PUT')                                
                                 <div class="flex items-center border-b @error('first_workshop_group') border-red-500 @else border-teal-500 @enderror py-2 w-100">
                                     <select name="first_workshop_group_id" id="first_workshop_group_id" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none">
+                                        <option value="0" {{($inscription->first_workshop_group_id == 0)?"Selected":""}}>No asistiré</option>
                                         @foreach ($first_workshop_groups as $first_workshop_group)
                                         <option value="{{$first_workshop_group->id}}" {{($first_workshop_group->id == $inscription->first_workshop_group_id)?"Selected":""}}>{{$first_workshop_group->full_name}}</option>                                                
                                         @endforeach
@@ -94,6 +95,7 @@ Admin Panel
                                 </div>
                                 <div class="flex items-center border-b @error('first_workshop_group') border-red-500 @else border-teal-500 @enderror py-2 w-100">
                                     <select name="second_workshop_group_id" id="second_workshop_group_id" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none">
+                                        <option value="0" {{($inscription->second_workshop_group_id == 0)?"Selected":""}}>No asistiré</option>
                                         @foreach ($second_workshop_groups as $second_workshop_group)
                                         <option value="{{$second_workshop_group->id}}" {{($second_workshop_group->id == $inscription->second_workshop_group_id)?"Selected":""}}>{{$second_workshop_group->full_name}}</option>                                                
                                         @endforeach
