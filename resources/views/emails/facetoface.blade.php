@@ -15,9 +15,7 @@
                 @else
                 No asistiré
                 @endif
-            </td>
-            
-            @endif
+            </td>         
         </tr>
         @if ($inscription->first_workshop_group_id > 0)        
         <tr>
