@@ -6,10 +6,17 @@ Admin Panel
 @endsection
 @section('container_body')
 <!--Container-->
-@foreach ($errors->all() as $error)
-<div>{{ $error }}</div>
-@endforeach
-<div class="container w-full mx-auto pt-20">    
+<div class="container w-full mx-auto pt-20">
+    @if ($errors->any())
+    <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 m-0 rounded relative" role="alert">
+        @foreach ($errors->all() as $error)        
+        <span class="block">{{ $error }}</span><br/>
+        @endforeach        
+        <span class="absolute top-0 bottom-0 right-0 px-4 py-3">
+            <svg class="fill-current h-6 w-6 text-red-500" role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>Close</title><path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"/></svg>
+        </span>
+    </div>    
+    @endif
     <div class="w-full px-4 md:px-0 md:mt-8 mb-16 text-gray-800 leading-normal">        
         <div class="flex flex-row flex-wrap flex-grow mt-2">
             <div class="w-full md:w-1/4 p-3">
@@ -151,7 +158,7 @@ Admin Panel
                         <div class="w-full overflow-x-auto">
                             <div class="flex items-center py-2 w-100">
                                 <a href="{!!$inscription->certificateUrl()!!}" class="mx-3.5 border-b bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 border border-white rounded-xl">
-                                   link a certificado <i class="fas fa-certificate"></i>
+                                    link a certificado <i class="fas fa-certificate"></i>
                                 </a>
                             </div>
                             <div class="flex items-center py-2 w-100">
@@ -174,7 +181,7 @@ Admin Panel
                             <div class="flex items-center py-2 w-100">                                
                                 <ul>
                                     @foreach ($inscription->attendances as $attendance)
-                                        <li>{{Carbon\Carbon::parse($attendance->date)->format('d-m-Y')}}</li>
+                                    <li>{{Carbon\Carbon::parse($attendance->date)->format('d-m-Y')}}</li>
                                     @endforeach
                                 </ul>
                             </div>
