@@ -16,7 +16,7 @@ Admin Panel
                 <!--Table Card-->                
                 <div class="h-full bg-white border rounded shadow">
                     <div class="border-b p-3">
-                        <h5 class="font-bold uppercase text-gray-600">Datos personales</h5>
+                        <h5 class="font-bold uppercase text-gray-600">Datos Personales</h5>
                     </div>                    
                     <div class="w-full overflow-hidden shadow-xs">
                         <div class="w-full overflow-x-auto">
