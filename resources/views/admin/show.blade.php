@@ -38,10 +38,10 @@ Admin Panel
                                     </div>
                                     <div class="flex items-center border-b @error('phone') border-red-500 @else border-teal-500 @enderror py-2 w-100">
                                         <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Teléfono" aria-label="Teléfono" name="phone" value="{{$inscription->userData->phone}}"/>	  
-                                    </div>                                    
-                                    <div class="flex items-center border-b @error('email') border-red-500 @else border-teal-500 @enderror py-2 w-100">
-                                        <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="E-Mail" aria-label="E-Mail" name="email" value="{{$inscription->userData->email}}"/>	  
                                     </div>
+                                    {{-- <div class="flex items-center border-b @error('email') border-red-500 @else border-teal-500 @enderror py-2 w-100">
+                                        <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="E-Mail" aria-label="E-Mail" name="email" value="{{$inscription->userData->email}}"/>	  
+                                    </div> --}}
                                     <div class="">
                                         <div class="pt-3">
                                             <button type="submit" class="bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 border border-white rounded-xl">
