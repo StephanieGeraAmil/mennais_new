@@ -9,23 +9,41 @@
     <table>
         <tr>
             <td>TURNO 1 -</td>
-            <td>{{$inscription->firstWorkshopGroup->school->name}} de {{Carbon\Carbon::parse($inscription->firstWorkshopGroup->start_at)->format('H:i')}} a {{Carbon\Carbon::parse($inscription->firstWorkshopGroup->end_at)->format('H:i')}}</td>
+            <td>
+                @if ($inscription->first_workshop_group_id > 0)
+                {{$inscription->firstWorkshopGroup->school->name}} de {{Carbon\Carbon::parse($inscription->firstWorkshopGroup->start_at)->format('H:i')}} a {{Carbon\Carbon::parse($inscription->firstWorkshopGroup->end_at)->format('H:i')}}
+                @else
+                No asistiré
+                @endif
+            </td>
+            
+            @endif
         </tr>
+        @if ($inscription->first_workshop_group_id > 0)        
         <tr>
             <td></td>
             <td><a href="{!!$inscription->firstWorkshopGroup->school->map_link!!}" target="_Blank">{{$inscription->firstWorkshopGroup->school->address}}</a></td>
         </tr>
+        @endif
     </table>
     <br>
     <table>
         <tr>
             <td>TURNO 2 -</td>
-            <td>{{$inscription->secondWorkshopGroup->school->name}} de {{Carbon\Carbon::parse($inscription->secondWorkshopGroup->start_at)->format('H:i')}} a {{Carbon\Carbon::parse($inscription->secondWorkshopGroup->end_at)->format('H:i')}}</td>
+            <td>
+                @if ($inscription->second_workshop_group_id > 0)
+                {{$inscription->secondWorkshopGroup->school->name}} de {{Carbon\Carbon::parse($inscription->secondWorkshopGroup->start_at)->format('H:i')}} a {{Carbon\Carbon::parse($inscription->secondWorkshopGroup->end_at)->format('H:i')}}                
+                @else
+                No asistiré
+                @endif
+            </td>
         </tr>
+        @if ($inscription->second_workshop_group_id > 0)
         <tr>
             <td></td>
             <td><a href="{!!$inscription->secondWorkshopGroup->school->map_link!!}" target="_Blank">{{$inscription->secondWorkshopGroup->school->address}}</a></td>
         </tr>
+        @endif
     </table>
 </p>
 <p>

@@ -75,9 +75,7 @@ class UserDataController extends Controller
             'document' => 'required|string|max:255',
             'email' => 'required|email',
             'phone' => 'required|string|max:255',
-            'function' => 'required|integer'            
         ]); 
-
         $user_data = UserData::findOrFail($id);               
         $user_data->name=$validated_data['name'];
         $user_data->lastname=$validated_data['lastname'];
