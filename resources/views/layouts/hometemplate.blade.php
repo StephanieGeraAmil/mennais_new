@@ -299,7 +299,7 @@
                       <td class="u-border-1 u-border-grey-40 u-table-cell u-table-cell-10">
                         <span style="font-style: italic;">
                           <span style="font-style: normal;">
-                            <span style="font-weight: 700;" class="u-text-black">Conferencia</span> -
+                            <span style="font-weight: 700;" class="u-text-black">Las transformaciones curriculares en la era post pandémica</span> -
                           </span> Renato Opertti&nbsp;- EDU21
                         </span>
                         <br>
