@@ -67,7 +67,7 @@
           </div>
           <div class="u-align-center u-border-1 u-border-palette-1-dark-1 u-container-style u-gradient u-list-item u-radius-26 u-repeater-item u-shape-round u-list-item-5">
             <div class="u-container-layout u-similar-container u-valign-top-xs u-container-layout-5"><span class="u-custom-item u-file-icon u-icon u-icon-circle u-text-custom-color-21 u-white u-icon-5"><img src="images/1077976-28c6a43a.png" alt=""></span>
-              <h5 class="u-text u-text-body-alt-color u-text-default u-text-5">$5.000 para socios de AUDEC<br/>$6.000 no socios</h5>
+              <h5 class="u-text u-text-body-alt-color u-text-default u-text-5">$5.000 socios AUDEC<br/>$6.000 no socios</h5>
             </div>
           </div>
         </div>
