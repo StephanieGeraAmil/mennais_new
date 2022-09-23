@@ -4,6 +4,8 @@ namespace App\Console\Commands;
 
 use App\Mail\FacetofaceInscriptionMail;
 use App\Models\Inscription;
+use App\Models\SendMail;
+use Carbon\Carbon;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
@@ -42,15 +44,28 @@ class SendIncriptionMail extends Command
     public function handle()
     {
         Log::info("Se envían los correos de inscripcion");
-        $inscriptions_list = Inscription::all();   
-        foreach($inscriptions_list as $inscription){
-            if($inscription->id > 121){
+        $mail = SendMail::find(1);
+        if(!isset($mail)){
+            $mail = SendMail::create([
+                'id'=>1,
+                'last_id'=>0,
+                'created_at'=>Carbon::now()
+            ]);
+        }
+
+        $inscriptions_list = Inscription::where('id','>',$mail->last_id)->take(2)->get();   
+        $last_id = 0;
+        foreach($inscriptions_list as $inscription){            
+            if($inscription->id > 0){
                 $email = $inscription->userData->email;
                 Log::info("email: ".$email);
                 Mail::to($email)->send(new FacetofaceInscriptionMail($inscription));
                 echo "Correo enviado a: ".$email."\n";
+                $last_id = $inscription->id;                
             }
-        }        
+        } 
+        $mail->last_id = $last_id;
+        $mail->save();
         Log::info("Fin del envio de correo.");
         return true;
     }
