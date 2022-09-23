@@ -15,8 +15,8 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('store:loginfo')->weeklyOn(5, '17:04');
-        $schedule->command('store:loginfo')->weeklyOn(5, '20:05');
+        $schedule->command('store:loginfo')->weeklyOn(5, '17:07');
+        $schedule->command('store:loginfo')->weeklyOn(5, '20:08');
 //        $schedule->command('store:loginfo')->everyMinute();
     }
 
