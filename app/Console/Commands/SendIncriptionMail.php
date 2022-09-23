@@ -54,7 +54,7 @@ class SendIncriptionMail extends Command
             ]);
         }
 
-        $inscriptions_list = Inscription::where('id','>',$mail->last_id)->take(2)->get();   
+        $inscriptions_list = Inscription::where('id','>',$mail->last_id)->take(30)->get();   
         $last_id = 0;
         foreach($inscriptions_list as $inscription){            
             if($inscription->id > 0){
