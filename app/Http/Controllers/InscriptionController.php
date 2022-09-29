@@ -66,33 +66,23 @@ class InscriptionController extends Controller
             $attendance_date->settings(['formatFunction' => 'translatedFormat']);
             $attendance_text = $attendance_date->format('j')." de ".$attendance_date->format('F')." de ".$attendance_date->format('Y');
         }else{
-            
-            $attendance_text = "8 y 9 de julio de 2022";
-            /* $month = 0;
-            $quantity = $attendances->count();
-            $counter = 1;
-            foreach($attendances as $attendance){                
-                $attendance_date = Carbon::parse($attendance->date)->locale('es');
-                $attendance_date->settings(['formatFunction' => 'translatedFormat']);                
-                if($counter > 2 && $quantity >= 2){
-                    if($counter < $quantity - 1){
-                        $attendance_text .= ', ';
+            $date_text = "";            
+            $limit = $attendances->count();
+            $last = $limit -1;
+            for ($i=0; $i < $limit; $i++) {
+                if($i > 0){
+                    var_dump($i);
+                    var_dump($last);
+                    if($i==$last){
+                        $date_text .= " y ";
                     }else{
-                        $attendance_text .= ' y ';
+                        $date_text .= ", ";
                     }
-                }else{
-                    if($counter > 1){
-                        if($quantity == 2){
-                            
-                        }else{
-                            $attendance_text .= ', ';
-                        }
-                    }                        
-                }                    
-                $month = $attendance_date->format('m');
-                $attendance_text .= $attendance_date->format('j F');
-                $counter ++;
-            } */
+                } 
+                $date = Carbon::parse($attendances[$i]->date);
+                $date_text .= $date->format('j');                
+            }
+            $attendance_text = $date_text." de ".$date->format('F')." de ".$date->format('Y');            
         }
         return $attendance_text;
     }
