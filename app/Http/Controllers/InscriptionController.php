@@ -58,8 +58,7 @@ class InscriptionController extends Controller
             abort(403);
         }
     }
-    
-    
+        
     private function attendance_text($attendances){
         if($attendances->count() == 1){            
             $attendance_date = Carbon::parse($attendances->first()->date)->locale('es');
