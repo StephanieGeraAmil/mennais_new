@@ -50,7 +50,7 @@ class InscriptionController extends Controller
                 /* return view('pdf.certificate', $data); */
                 return $pdf->loadView('pdf.certificate', $data)
                 ->setPaper('a4', 'landscape')
-                ->download('archivo.pdf');
+                ->download('certificado_'.$token.'.pdf');
             }else{
                 abort(404);   
             }            
@@ -70,16 +70,14 @@ class InscriptionController extends Controller
             $limit = $attendances->count();
             $last = $limit -1;
             for ($i=0; $i < $limit; $i++) {
-                if($i > 0){
-                    var_dump($i);
-                    var_dump($last);
+                if($i > 0){                    
                     if($i==$last){
                         $date_text .= " y ";
                     }else{
                         $date_text .= ", ";
                     }
                 } 
-                $date = Carbon::parse($attendances[$i]->date);
+                $date = Carbon::parse($attendances[$i]->date)->locale('es');
                 $date_text .= $date->format('j');                
             }
             $attendance_text = $date_text." de ".$date->format('F')." de ".$date->format('Y');            
