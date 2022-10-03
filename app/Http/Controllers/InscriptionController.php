@@ -80,6 +80,7 @@ class InscriptionController extends Controller
                 $date = Carbon::parse($attendances[$i]->date)->locale('es');
                 $date_text .= $date->format('j');                
             }
+            $date->settings(['formatFunction' => 'translatedFormat']);
             $attendance_text = $date_text." de ".$date->format('F')." de ".$date->format('Y');            
         }
         return $attendance_text;
