@@ -60,10 +60,10 @@
 @endsection
 
 @section('inscription_buttons')
-@if (Carbon\Carbon::now()->lt(Carbon\Carbon::parse('29-09-2022'))) 
+@if (Carbon\Carbon::now()->lt(Carbon\Carbon::parse(env('FINISHINSCRIPTIONDATE','29-09-2022')))) 
 <div align="center">
   <a href="/simple_inscription" class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-1">inscripción individual</a>
-  {{-- <a href="/group_inscription" class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-2">inscripción Grupal</a> --}}
+  <a href="/group_inscription" class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-2">inscripción Grupal</a>
 </div>
 @else
 <p class="u-text u-text-5">Inscripción finalizada.</p>
@@ -71,7 +71,7 @@
 @endsection
 
 @section('certificate_button')
-@if (Carbon\Carbon::now()->gt(Carbon\Carbon::parse('30-09-2022'))) 
+@if (Carbon\Carbon::now()->gt(env('FINISHINSCRIPTIONDATE','29-09-2022'))) 
     <div align="center">
       <a href="/inscription/certificateRecoveryMail" class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-3">Descargar certificado</a>
     </div>
