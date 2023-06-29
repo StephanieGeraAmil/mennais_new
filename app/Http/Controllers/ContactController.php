@@ -15,7 +15,7 @@ class ContactController extends Controller
             'phone' => 'required|string|max:255',
             'message' => 'required|string'                        
         ]);         
-        Mail::to(env('ADMIN_EMAIL'))->send(new ContactMail($validated_data['name'],$validated_data['email'],$validated_data['phone'],$validated_data['message']));
+        Mail::to(env('ADMIN_EMAIL'))->queue(new ContactMail($validated_data['name'],$validated_data['email'],$validated_data['phone'],$validated_data['message']));
         session()->flash('success_contact', 'Inscripción realizada con exito!!!');
         return redirect('/');
     }

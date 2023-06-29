@@ -24,26 +24,6 @@
             <td>{{$inscription->institution->institution}}</td>
         </tr>
         <tr>
-            <td>TURNO 1</td>        
-            <td>
-                @if ($inscription->first_workshop_group_id > 0)
-                {{$inscription->firstWorkshopGroup->school->name}} de {{Carbon\Carbon::parse($inscription->firstWorkshopGroup->start_at)->format('H:i')}} a {{Carbon\Carbon::parse($inscription->firstWorkshopGroup->end_at)->format('H:i')}}
-                @else
-                No asistirá        
-                @endif
-            </td>
-        </tr>
-        <tr>
-            <td>TURNO 2</td>
-            <td>
-                @if ($inscription->second_workshop_group_id > 0)
-                {{$inscription->secondWorkshopGroup->school->name}} de {{Carbon\Carbon::parse($inscription->secondWorkshopGroup->start_at)->format('H:i')}} a {{Carbon\Carbon::parse($inscription->secondWorkshopGroup->end_at)->format('H:i')}}
-                @else
-                No asistirá        
-                @endif
-            </td>
-        </tr>
-        <tr>
             <td>Ciudad</td>
             <td>{{$inscription->institution->city}}</td>
         </tr>

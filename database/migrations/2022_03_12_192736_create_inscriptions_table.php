@@ -18,8 +18,6 @@ class CreateInscriptionsTable extends Migration
             $table->integer('user_data_id');
             $table->integer('institution_id');
             $table->integer('payment_id')->default(0);
-            $table->integer('first_workshop_group_id');
-            $table->integer('second_workshop_group_id');
             $table->integer('status')->default(0);
             $table->timestamps();
         });

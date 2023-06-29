@@ -20,7 +20,6 @@ class AdminController extends Controller
      */
     public function index()
     {
-        $schools_list = School::all();
         $registered_users = Inscription::with('userData')
         ->with('institution')
         ->with('attendances')->get();
@@ -28,7 +27,6 @@ class AdminController extends Controller
         $accreditations = Attendance::all()->count();
         return view('admin.index')
         ->with('accreditations',$accreditations)
-        ->with('schools_list',$schools_list)
         ->with('registered_users_quantity',$registered_users_quantity)
         ->with('registered_users',$registered_users);
     }
@@ -110,7 +108,7 @@ class AdminController extends Controller
 
     public function resendQr($id){
         $inscription = Inscription::findOrFail($id);        
-        Mail::to($inscription->userData->email)->send(new FacetofaceInscriptionMail($inscription));   
+        Mail::to($inscription->userData->email)->queue(new FacetofaceInscriptionMail($inscription));   
         return redirect('/admin/inscription/'.$id);
     }
 

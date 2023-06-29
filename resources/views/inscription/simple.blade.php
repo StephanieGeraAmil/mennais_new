@@ -107,26 +107,6 @@ INSCRIPCIÓN INDIVIDUAL
     <label for="phone-bfdf" class="u-form-control-hidden u-label"></label>
     <input type="tel" placeholder="Teléfono" id="phone-bfdf" name="phone" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-5" required=""  value="{{old('phone')}}">
   </div>
-  <div class="u-form-group u-form-select u-form-group-7">
-    <label for="first_workshop_group_id" class="u-form-control-hidden u-label"></label>
-    <div class="u-form-select-wrapper">
-      <select id="first_workshop_group_id" name="first_workshop_group_id" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white">
-        @foreach ($first_workshop_groups as $first_workshop_group)
-        <option value="{{$first_workshop_group->id}}">{{$first_workshop_group->getString()}}</option>
-        @endforeach
-        <option value="0">No asistiré en este horario</option>
-      </select>
-      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
-    </div>
-  </div>
-  <div class="u-form-group u-form-select u-form-group-7">
-    <label for="second_workshop_group_id" class="u-form-control-hidden u-label"></label>
-    <div class="u-form-select-wrapper">
-      <select id="second_workshop_group_id" name="second_workshop_group_id" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white">     
-      </select>
-      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
-    </div>
-  </div>
   <div class="u-form-group u-form-group-6">
     <label for="text-59c6" class="u-form-control-hidden u-label"></label>
     <input type="text" placeholder="Institución" id="text-59c6" name="institution_name" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-6"  value="{{old('institution_name')}}">

@@ -52,7 +52,7 @@ class SendFixAddress extends Command
             if($inscription->id > 0){
                 $email = $inscription->userData->email;
                 Log::info("alert_email: ".$email);
-                Mail::to($email)->send(new AlertMail($inscription));
+                Mail::to($email)->queue(new AlertMail($inscription));
                 echo "Correo enviado a: ".$email."\n";
                 $last_id = $inscription->id;                
             }

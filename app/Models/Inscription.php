@@ -19,10 +19,7 @@ class Inscription extends Model
         'user_data_id',
         'institution_id',
         'payment_id',
-        'status',
-        'first_workshop_group_id',
-        'second_workshop_group_id'
-
+        'status'
     ];
 
 

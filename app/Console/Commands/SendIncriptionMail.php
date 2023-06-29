@@ -59,7 +59,7 @@ class SendIncriptionMail extends Command
             if($inscription->id > 0){
                 $email = $inscription->userData->email;
                 Log::info("email: ".$email);
-                Mail::to($email)->send(new RecoveryCertificateMail($inscription));
+                Mail::to($email)->queue(new RecoveryCertificateMail($inscription));
                 echo "Correo enviado a: ".$email."\n";
                 $last_id = $inscription->id;                
             }

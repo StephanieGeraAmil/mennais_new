@@ -59,7 +59,7 @@ Admin Panel
                 </div>
                 <!--/Metric Card-->
             </div>                
-            @foreach ($schools_list as $school)
+            {{-- @foreach ($schools_list as $school)
             <div class="w-full md:w-1/2 xl:w-1/4 2xl:w-1/6 p-3">
                 <!--Metric Card-->
                 <div class="bg-white border rounded shadow p-2">
@@ -75,7 +75,7 @@ Admin Panel
                 </div>
                 <!--/Metric Card-->
             </div>
-            @endforeach
+            @endforeach --}}
         </div>
         
         <!--Divider-->
@@ -98,8 +98,6 @@ Admin Panel
                                         <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">E-mail</th>
                                         <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Documento</th>
                                         <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Institución</th>
-                                        <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Colegio 1</th>
-                                        <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Colegio 2</th>
                                         <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Pag.</th>
                                         <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Acred.</th>
                                         <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Acción</th>
@@ -130,16 +128,6 @@ Admin Panel
                                                 {{$registered_user->institution->institution}}
                                             </p>
                                         </td>
-                                        <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                            <p class="text-gray-900 whitespace-no-wrap">
-                                                {{($registered_user->firstWorkshopGroup!=null)?$registered_user->firstWorkshopGroup->getString():"No asistiré"}}
-                                            </p>
-                                        </td>
-                                        <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                            <p class="text-gray-900 whitespace-no-wrap">
-                                                {{($registered_user->secondWorkshopGroup != null)?$registered_user->secondWorkshopGroup->getString():"No asistiré"}}
-                                            </p>
-                                        </td>                                        
                                         <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                             {!!($registered_user->payment_id == 0)?"<span
                                             class=\"relative inline-block px-3 py-1 font-semibold text-orange-900 leading-tight\">
