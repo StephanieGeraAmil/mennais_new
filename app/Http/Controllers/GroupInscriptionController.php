@@ -89,8 +89,8 @@ class GroupInscriptionController extends Controller
             ]);
             array_push($codes,$i_code);
         }
-        Mail::to($group_inscription->email)->queue(new GroupInscriptionMail($group_inscription));
-        Mail::to(env('ADMIN_EMAIL'))->queue(new AdminGroupInscriptionMail($group_inscription));
+        Mail::to($group_inscription->email)->send(new GroupInscriptionMail($group_inscription));
+        Mail::to(env('ADMIN_EMAIL'))->send(new AdminGroupInscriptionMail($group_inscription));
         
         return redirect($group_inscription->getUrl());        
     }

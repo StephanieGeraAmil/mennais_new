@@ -113,8 +113,8 @@ class CodeInscriptionController extends Controller
         $code->inscription_id = $inscription->id;
         $code->save();
         
-        Mail::to($user_data->email)->queue(new FacetofaceInscriptionMail($inscription));
-        Mail::to(env('ADMIN_EMAIL'))->queue(new AdminInscriptionMail($inscription));
+        Mail::to($user_data->email)->send(new FacetofaceInscriptionMail($inscription));
+        Mail::to(env('ADMIN_EMAIL'))->send(new AdminInscriptionMail($inscription));
 
         session()->flash('msg', 'Inscripción realizada con exito!!!');
         return redirect('/simple_inscription');        

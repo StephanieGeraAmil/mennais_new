@@ -108,7 +108,7 @@ class AdminController extends Controller
 
     public function resendQr($id){
         $inscription = Inscription::findOrFail($id);        
-        Mail::to($inscription->userData->email)->queue(new FacetofaceInscriptionMail($inscription));   
+        Mail::to($inscription->userData->email)->send(new FacetofaceInscriptionMail($inscription));   
         return redirect('/admin/inscription/'.$id);
     }
 

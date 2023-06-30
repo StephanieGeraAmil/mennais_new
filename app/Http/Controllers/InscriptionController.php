@@ -99,7 +99,7 @@ class InscriptionController extends Controller
                 return view('recoverycertificate')->with('fail', true);
             }
             if($user_data->inscription->attendances->count() > 0){
-                Mail::to($user_data->email)->queue(new RecoveryCertificateMail($user_data->inscription));            
+                Mail::to($user_data->email)->send(new RecoveryCertificateMail($user_data->inscription));            
                 return view('recoverycertificate')->with('success', true);
             }
             return view('recoverycertificate')->with('fail', 'Attendance error');
@@ -126,7 +126,7 @@ class InscriptionController extends Controller
     public function create()
     {
         // $notification_mail = explode(";",config('app.notification_mail'));
-        // Mail::to($notification_mail)->queue(new FacetofaceInscriptionMail());        
+        // Mail::to($notification_mail)->send(new FacetofaceInscriptionMail());        
         return view('home');
     }
     
@@ -177,8 +177,8 @@ class InscriptionController extends Controller
         
         // // QrCode::format('png')->size(399)->color(40,40,40)->generate('Make me a QrCode!');
         // // $notification_mail = explode(";",config('app.notification_mail'));
-        // Mail::to($user_data->email)->queue(new FacetofaceInscriptionMail($inscription));       
-        // Mail::to(env('ADMIN_EMAIL'))->queue(new AdminInscriptionMail($inscription));             
+        // Mail::to($user_data->email)->send(new FacetofaceInscriptionMail($inscription));       
+        // Mail::to(env('ADMIN_EMAIL'))->send(new AdminInscriptionMail($inscription));             
         // return view('successinscription')
         // ->with('user_data', $user_data);
         
@@ -235,7 +235,7 @@ class InscriptionController extends Controller
                     $code->status = 1;
                     $code->email = $validated_data['email'];
                     $code->save();
-                    Mail::to($validated_data['email'])->queue(new SendInscriptionCodeMail($code));                    
+                    Mail::to($validated_data['email'])->send(new SendInscriptionCodeMail($code));                    
                     $find_code_available = true;
                 }
             }
