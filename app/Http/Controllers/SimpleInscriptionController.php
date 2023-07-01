@@ -66,7 +66,7 @@ class SimpleInscriptionController extends Controller
         ]);
         
         Mail::to($user_data->email)->send(new FacetofaceInscriptionMail($inscription));   
-        Mail::to(env('ADMIN_EMAIL'))->send(new AdminInscriptionMail($inscription));     
+        Mail::to(env('ADMIN_EMAIL', "goday985@gmail.com"))->send(new AdminInscriptionMail($inscription));     
         
         session()->flash('msg', 'Inscripción realizada con exito!!!');
         return redirect('/simple_inscription');
