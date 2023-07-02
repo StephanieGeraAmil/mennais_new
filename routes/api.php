@@ -20,4 +20,3 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
-Route::get('/second_workshop_group/{first_workshop_group_id}', [SimpleInscriptionController::class, 'list_second_groups']);

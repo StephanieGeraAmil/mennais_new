@@ -3,8 +3,6 @@
 namespace App\Console\Commands;
 
 use App\Mail\AlertMail;
-use App\Models\School;
-use App\Models\SecondWorkshopGroup;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;

@@ -36,14 +36,6 @@ class Inscription extends Model
         return $this->belongsTo(Institution::class);
     }
 
-    public function firstWorkshopGroup(){
-        return $this->belongsTo(FirstWorkshopGroup::class);
-    }
-
-    public function secondWorkshopGroup(){
-        return $this->belongsTo(SecondWorkshopGroup::class);
-    }
-
     public function generateToken(){
         return md5($this->id . "SecurityKey" . $this->userData->document);        
     }
@@ -55,8 +47,6 @@ class Inscription extends Model
     public function certificateUrl(){
         return env('APP_URL')."/certificate/".$this->id."/".$this->generateToken();
     }
-
-
 
     public function validateToken($token){       
         return $this->generateToken() == $token;

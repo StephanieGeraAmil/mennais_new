@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="keywords" content="Cosmos, Read what our customers say, ​View our work, discover more about us, read more of our stories, explore our archive or get in touch., How We Work, ​Uncover and meet customer needs., ​Want your brand to stand above the rest?, Get in touch">
 <meta name="description" content="Vivenciando la transformación educativa es un evento organizado por AUDEC - Asociación Uruguaya de Educación Católica">
-<title>Workshop Audec</title>
+<title>Audec</title>
 <link rel="stylesheet" href="/css/nicepage.css?v=22 media="screen">
 <link rel="stylesheet" href="/css/inicio.css?v=22" media="screen">
 <script class="u-script" type="text/javascript" src="/js/jquery.js" defer=""></script>
@@ -17,11 +17,11 @@
   {
     "@context": "http://schema.org",
     "@type": "Organization",
-    "name": "Workshop_AUDEC"
+    "name": "AUDEC"
   }
 </script>
 <meta name="theme-color" content="#ddd6f3">
-<meta property="og:title" content="Workshop Audec">
+<meta property="og:title" content="Audec">
 <meta property="og:description" content="Vivenciando la transformación educativa es un evento organizado por AUDEC - Asociación Uruguaya de Educación Católica">
 <meta property="og:type" content="website">
 @endsection

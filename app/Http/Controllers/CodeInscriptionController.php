@@ -5,10 +5,8 @@ namespace App\Http\Controllers;
 use App\Mail\AdminInscriptionMail;
 use App\Mail\FacetofaceInscriptionMail;
 use App\Models\Code;
-use App\Models\FirstWorkshopGroup;
 use App\Models\Inscription;
 use App\Models\Institution;
-use App\Models\SecondWorkshopGroup;
 use App\Models\UserData;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -24,11 +22,8 @@ class CodeInscriptionController extends Controller
         if($i_code->status > 1){
             return redirect('/');
         }
-        $first_workshop_groups = FirstWorkshopGroup::where('has_vacant', true)->get();        
-        
         return view('inscription.code')
         ->with('code',$i_code)
-        ->with('first_workshop_groups',$first_workshop_groups)
         ->with('institution',$i_code->groupInscription->institution);
     }
 
@@ -41,16 +36,11 @@ class CodeInscriptionController extends Controller
             'email' => 'required|email',
             'phone' => 'required|string|max:255',
             'institution_name' => 'required|string|max:255',
-            // 'institution_type' => 'required|boolean',
             'city' => 'required|string|max:255',
             'code' => 'required|integer',
-            'first_workshop_group_id' => 'required|integer',
-            'second_workshop_group_id' => 'required|integer',
         ]); 
         
         $document = str_replace([',','-','.',' '], '',$validated_data['document']);
-        $first_workshop_group = FirstWorkshopGroup::findOrFail($validated_data['first_workshop_group_id']);
-        $second_workshop_group = SecondWorkshopGroup::findOrFail($validated_data['second_workshop_group_id']);
 
         /**
         * Get code
@@ -67,17 +57,14 @@ class CodeInscriptionController extends Controller
         $institution_stored = $group_inscription->institution;
         $create = true;
         if($institution_stored->institution == $validated_data['institution_name']){
-            // if($institution_stored->is_formal_institution == $validated_data['institution_type']){
-                if($institution_stored->city == $validated_data['city']){
-                    $create = false;
-                    $institution = $institution_stored;                    
-                }
-            // }
+            if($institution_stored->city == $validated_data['city']){
+                $create = false;
+                $institution = $institution_stored;                    
+            }
         }
         if($create){
             $institution = Institution::create([
                 'institution'=>$validated_data['institution_name'],
-                // 'is_formal_institution'=>$validated_data['institution_type'],
                 'city'=>$validated_data['city']
             ]);
         }
@@ -101,13 +88,8 @@ class CodeInscriptionController extends Controller
             'user_data_id'=>$user_data->id,
             'institution_id'=>$institution->id,
             'payment_id'=>$group_inscription->payment_id,
-            'status'=>1,
-            'first_workshop_group_id'=>$validated_data['first_workshop_group_id'],
-            'second_workshop_group_id'=>$validated_data['second_workshop_group_id'],
+            'status'=>1
         ]);
-
-        $first_workshop_group->refresh_vacant();
-        $second_workshop_group->refresh_vacant();
 
         $code->status = 2;
         $code->inscription_id = $inscription->id;

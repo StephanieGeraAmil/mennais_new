@@ -24,13 +24,10 @@ Admin Panel
   </style>
 @endsection
 @section('container_body')
-<!--Container-->
 <div class="container w-full mx-auto pt-20">    
-    <div class="w-full px-4 md:px-0 md:mt-8 mb-16 text-gray-800 leading-normal">        
-        <!--Console Content-->        
+    <div class="w-full px-4 md:px-0 md:mt-8 mb-16 text-gray-800 leading-normal">
         <div class="flex flex-wrap">
             <div class="w-full md:w-1/2 xl:w-1/2  2xl:w-1/6 p-3">
-                <!--Metric Card-->
                 <div class="bg-white border rounded shadow p-2">
                     <div class="flex flex-row items-center">
                         <div class="flex-shrink pr-4">
@@ -42,10 +39,8 @@ Admin Panel
                         </div>
                     </div>
                 </div>
-                <!--/Metric Card-->
             </div>
             <div class="w-full md:w-1/2 xl:w-1/2 2xl:w-1/6 p-3">
-                <!--Metric Card-->
                 <div class="bg-white border rounded shadow p-2">
                     <div class="flex flex-row items-center">
                         <div class="flex-shrink pr-4">
@@ -57,34 +52,11 @@ Admin Panel
                         </div>
                     </div>
                 </div>
-                <!--/Metric Card-->
-            </div>                
-            {{-- @foreach ($schools_list as $school)
-            <div class="w-full md:w-1/2 xl:w-1/4 2xl:w-1/6 p-3">
-                <!--Metric Card-->
-                <div class="bg-white border rounded shadow p-2">
-                    <div class="flex flex-row items-center">
-                        <div class="flex-shrink pr-4">
-                            <div class="rounded p-3 bg-gray-400"><i class="fas fa-home fa-2x fa-fw fa-inverse"></i></div>
-                        </div>
-                        <div class="flex-1 text-right md:text-center">
-                            <h5 class="font-bold uppercase text-gray-400">{{$school->shortName()}}</h5>                            
-                            <h3 class="font-bold text-3xl text-gray-600">{{($school->firstWorkshopGroups != null)?$school->firstWorkshopGroups->inscription->count():0}}<span class="text-gray-400"> | </span>{{($school->secondWorkshopGroups != null)?$school->secondWorkshopGroups->inscription->count():0}}</h3>
-                        </div>
-                    </div>
-                </div>
-                <!--/Metric Card-->
             </div>
-            @endforeach --}}
         </div>
-        
-        <!--Divider-->
-        <hr class="border-b-2 border-gray-600 my-8 mx-4">
-        
-        <div class="flex flex-row flex-wrap flex-grow mt-2">
-            
+        <hr class="border-b-2 border-gray-600 my-8 mx-4">        
+        <div class="flex flex-row flex-wrap flex-grow mt-2">            
             <div class="w-full p-3">
-                <!--Table Card-->                
                 <div class="bg-white border rounded shadow">
                     <div class="border-b p-3">
                         <h5 class="font-bold uppercase text-gray-600">Inscripciones</h5>
@@ -157,22 +129,12 @@ Admin Panel
                                 </tbody>
                             </table>                                                                    
                         </div>
-                    </div>
-                    
+                    </div>                    
                 </div>
-                <!--/table Card-->
             </div>
-            
-            
-        </div>
-        
-        <!--/ Console Content-->
-        
+        </div>        
     </div>
-    
-    
-</div> 
-<!--/container-->
+</div>
 <script type="text/javascript">
     var inscTable;
     $(function () {
