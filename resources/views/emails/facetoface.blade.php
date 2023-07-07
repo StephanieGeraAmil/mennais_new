@@ -6,7 +6,7 @@
     El siguiente código QR es su pase al evento y le será requerido al acreditarse.
 </p>
 <p>
-    {{-- <img src="{!!$message->embedData(QrCode::format('png')->generate($inscription->url()), 'QrCode.png', 'image/png')!!}"> --}}
+    <a href="{!!$inscription->url()!!}" target="_blank" >Link de acceso</a>
 </p>
 <p>
     Saludos,
