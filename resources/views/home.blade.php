@@ -1,29 +1,27 @@
 @extends('layouts.hometemplate')
 @section('headers')
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta charset="utf-8">
-<meta name="keywords" content="Cosmos, Read what our customers say, ​View our work, discover more about us, read more of our stories, explore our archive or get in touch., How We Work, ​Uncover and meet customer needs., ​Want your brand to stand above the rest?, Get in touch">
-<meta name="description" content="Vivenciando la transformación educativa es un evento organizado por AUDEC - Asociación Uruguaya de Educación Católica">
-<title>Audec</title>
-<link rel="stylesheet" href="/css/nicepage.css?v=22 media="screen">
-<link rel="stylesheet" href="/css/inicio.css?v=22" media="screen">
-<script class="u-script" type="text/javascript" src="/js/jquery.js" defer=""></script>
-<script class="u-script" type="text/javascript" src="/js/nicepage.js" defer=""></script>
-<meta name="generator" content="Nicepage 4.12.5, nicepage.com">
-<link rel="icon" href="/images/favicon1.png">
-<link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-<link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
-<script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Organization",
-    "name": "AUDEC"
-  }
-</script>
-<meta name="theme-color" content="#ddd6f3">
-<meta property="og:title" content="Audec">
-<meta property="og:description" content="Vivenciando la transformación educativa es un evento organizado por AUDEC - Asociación Uruguaya de Educación Católica">
-<meta property="og:type" content="website">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Cosmos, Read what our customers say, ​View our work, discover more about us, read more of our stories, explore our archive or get in touch., How We Work, ​Uncover and meet customer needs., ​Want your brand to stand above the rest?, Get in touch">
+    <meta name="description" content="Vivenciando la transformación educativa es un evento organizado por AUDEC - Asociación Uruguaya de Educación Católica">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="/css/nicepage.css" media="screen">
+<link rel="stylesheet" href="/css/inicio.css" media="screen">
+    <script class="u-script" type="text/javascript" src="/js/jquery.js" defer=""></script>
+    <meta name="generator" content="Nicepage 5.13.1, nicepage.com">
+    <link rel="icon" href="images/favicon1.png">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "AUDEC_EF_ago_oct_23"
+}</script>
+    <meta name="theme-color" content="#ddd6f3">
+    <meta property="og:title" content="Inicio">
+    <meta property="og:description" content="Vivenciando la transformación educativa es un evento organizado por AUDEC - Asociación Uruguaya de Educación Católica">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/">
 @endsection
 
 @section('alert_message')
@@ -66,7 +64,7 @@
   <a href="/group_inscription" class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-2">inscripción Grupal</a>
 </div>
 @else
-<p class="u-text u-text-5">Inscripción finalizada.</p>
+<p class="">Inscripción finalizada.</p>
 @endif
 @endsection
 

@@ -49,38 +49,7 @@ Inscripción Indivudual
 INSCRIPCIÓN INDIVIDUAL    
 @endsection
 @section('left-text-box')
-<p>
-  Por favor, complete el formulario con sus datos.
-</p>
-<p>
-  El miércoles 28 de setiembre cada participante podrá visitar dos centros educativos miembros de AUDEC que ya están implementando experiencias de transformación.
-</p>
-<span>
-  Centros disponibles para visitar:
-</span>
-  <ul>
-    <li style="margin-bottom:5px;border-bottom: 1px solid #b7a9ce;padding-bottom: 5px;">
-      Colegio Juan Zorrilla de San Martín - Hermanos Maristas<br/><b>Ciclo Básico, Ed. Inicial y Primaria</b>.
-    </li>
-    <li style="margin-bottom:5px;border-bottom: 1px solid #b7a9ce;padding-bottom: 5px;">
-      Colegio y Liceo San Francisco de Sales - Maturana - Salesianos<br/><b>Ciclo Básico</b>
-    </li>
-    <li style="margin-bottom:5px;border-bottom: 1px solid #b7a9ce;padding-bottom: 5px;">
-      Colegio San Ignacio - Jesuitas<br/><b>Ciclo Básico y Bachillerato.</b>
-    </li>
-    <li style="margin-bottom:10px">
-      Colegio Stella Maris - Christian Brothers<br/><b>Ed. Inicial.</b>
-    </li>
-  </ul>
-<p>
-  Las visitas tienen una duración de dos horas cada una.
-</p>
-<p>
-  Seleccione la institución que desee visitar en cada turno según su interés.
-</p>
-<p>
-  Sólo se mostrarán los colegios con cupos disponibles.
-</p>
+Por favor, complete el formulario con sus datos.
 @endsection
 @section('form')
 <input type="hidden" id="old_first_workshop_group_id" value={{old('first_workshop_group_id')??0}}>
