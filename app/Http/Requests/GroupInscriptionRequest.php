@@ -3,9 +3,8 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Support\Arr;
 
-class SimpleInscriptionRequest extends FormRequest
+class GroupInscriptionRequest extends FormRequest
 {
     /**
     * Get the validation rules that apply to the request.
@@ -16,13 +15,14 @@ class SimpleInscriptionRequest extends FormRequest
     {
         
         return [
-            'name' => 'required|string|max:255',
-            'lastname' => 'required|string|max:255',
-            'document' => 'required|string|max:255|unique:user_data',
+            'name' => 'required|string|max:255',            
             'email' => 'required|email',
             'phone' => 'required|string|max:255',
+            'extra.institution' => 'required|string|max:255',            
+            'city' => 'required|string|max:255',
+            'quantity_insc' => 'required|integer',
+            'amount' => 'required|integer',
             'payment_file'=>'required|file|mimes:jpg,png,jpeg,gif,svg,pdf',
-            'extra' => 'required|array',
         ];
     }
 }

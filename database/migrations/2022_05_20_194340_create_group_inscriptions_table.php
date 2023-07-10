@@ -19,7 +19,7 @@ class CreateGroupInscriptionsTable extends Migration
             $table->string('email');
             $table->string('phone');
             $table->integer('quantity');
-            $table->integer('institution_id');
+            $table->string('institution');
             $table->integer('payment_id')->default(0);
             $table->string('code');
             $table->timestamps();

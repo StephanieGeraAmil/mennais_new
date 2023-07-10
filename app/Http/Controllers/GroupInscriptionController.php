@@ -2,14 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\GroupInscriptionRequest;
 use App\Mail\AdminGroupInscriptionMail;
 use App\Mail\GroupInscriptionMail;
 use App\Models\Code;
 use App\Models\GroupInscription;
-use App\Models\Institution;
 use App\Models\Payment;
 use Carbon\Carbon;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
 class GroupInscriptionController extends Controller
@@ -20,21 +19,9 @@ class GroupInscriptionController extends Controller
     }
 
 
-    public function groupInscriptionStore(Request $request)
+    public function groupInscriptionStore(GroupInscriptionRequest $request)
     {
-        $validated_data = $request->validate([
-            'name' => 'required|string|max:255',            
-            'email' => 'required|email',
-            'phone' => 'required|string|max:255',
-            'institution_name' => 'required|string|max:255',
-            // 'institution_type' => 'required|boolean',
-            'city' => 'required|string|max:255',
-            'quantity_insc' => 'required|integer',
-            'amount' => 'required|integer',
-            'payment_ref' => 'required|string|max:255',
-            'payment_file'=>'required|file|mimes:jpg,png,jpeg,gif,svg,pdf',
-        ]); 
-        
+        $validated_data = $request->validated();
         
         /**
         * Create Payment
@@ -45,19 +32,10 @@ class GroupInscriptionController extends Controller
         
         $payment = Payment::create([
             'url_payment'=>"/images/".$image_name,
-            'amount_deposited'=>$validated_data['amount'],
-            'reference'=>$validated_data['payment_ref']
+            'amount_deposited'=>$validated_data['amount'] ?? 0,
+            'reference'=>$validated_data['payment_ref'] ?? ""
         ]);
         
-        
-        /**
-        * Create Institution
-        */
-        $institution = Institution::create([
-            'institution'=>$validated_data['institution_name'],
-            // 'is_formal_institution'=>$validated_data['institution_type'],
-            'city'=>$validated_data['city']
-        ]);
         
         /**
         * Create Grupal inscription
@@ -68,7 +46,7 @@ class GroupInscriptionController extends Controller
             'email'=>$validated_data['email'],
             'phone'=>$validated_data['phone'],
             'quantity'=>$validated_data['quantity_insc'],
-            'institution_id'=>$institution->id,
+            'institution'=>$validated_data['extra']['institution'] ?? "",
             'payment_id'=>$payment->id,
             'code'=>$code_group_insc
         ]);
@@ -81,7 +59,7 @@ class GroupInscriptionController extends Controller
             $code = $this->codeGenerator($i);
             $i_code = Code::create([
                 'group_inscription_id'=>$group_inscription->id,
-                'institution_id'=>$institution->id,
+                'institution'=>$validated_data['extra']['institution']  ?? "",
                 'code'=>$code,
                 'inscription_id'=>0,
                 'status'=>0,

@@ -11,17 +11,14 @@ class Code extends Model
 
     protected $fillable = [
         'group_inscription_id',
-        'institution_id',
+        'institution',
         'email',
         'code',
         'inscription_id',
         'status',
     ];
 
-    public function institution(){
-        return $this->belongsTo(Institution::class);
-    }
-
+    
     public function inscription(){
         return $this->belongsTo(Inscription::class);
     }

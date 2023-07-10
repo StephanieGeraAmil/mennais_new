@@ -16,7 +16,7 @@ class CreateCodesTable extends Migration
         Schema::create('codes', function (Blueprint $table) {
             $table->id();
             $table->integer('group_inscription_id');
-            $table->integer('institution_id');
+            $table->string('institution');
             $table->string('email');
             $table->string('code');
             $table->integer('inscription_id');

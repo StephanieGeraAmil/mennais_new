@@ -40,58 +40,51 @@ Inscripción Indivudual
 INSCRIPCIÓN INDIVIDUAL
 @endsection
 @section('left-text-box')
-<p>
-    Por favor, complete el formulario con sus datos.
-  </p>
+Por favor, complete el formulario con sus datos.
 @endsection
 @section('form')
 <form action="/store_code_inscription" method="POST" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" enctype="multipart/form-data" style="padding: 0px;">
     @csrf
     <input type="hidden" name="code" value="{{$code->id}}">
     
-    <div class="u-form-group u-form-name">                                                
-        <input type="text" placeholder="Ingrese su nombre" id="name-4c18" name="name" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" required="" value="{{old('name')}}">
-    </div>
-    <div class="u-form-group u-form-name">                                                
-        <input type="text" placeholder="Ingrese su apellido" id="lastname-4c18" name="lastname" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" required="" value="{{old('lastname')}}">
-    </div>
-    <div class="u-form-group u-form-name">                                                
-        <input type="text" placeholder="Cédula de Identidad (12345678)" id="document-4c18" name="document" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" required="" value="{{old('document')}}" onblur="clean_document(this)">
-    </div>
-    <div class="u-form-email u-form-group">                                                
-        <input type="email" placeholder="Ingrese su email" id="email-4c18" name="email" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" required="" value="{{$code->email}}" readonly>
-    </div>
-    <div class="u-form-group u-form-name">                                                
-        <input type="text" placeholder="Ingrese su teléfono" id="phone-4c18" name="phone" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" required="" value="{{old('phone')}}">
-    </div>
-    <div class="u-form-group u-form-select u-form-group-7">
-        <label for="first_workshop_group_id" class="u-form-control-hidden u-label"></label>
-        <div class="u-form-select-wrapper">
-            <select id="first_workshop_group_id" name="first_workshop_group_id" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white">
-                @foreach ($first_workshop_groups as $first_workshop_group)
-                    <option value="{{$first_workshop_group->id}}">{{$first_workshop_group->getString()}}</option>
-                @endforeach
-                <option value="0">No asistiré en este horario</option>
-            </select>
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
-        </div>
-    </div>
-    <div class="u-form-group u-form-select u-form-group-7">
-        <label for="second_workshop_group_id" class="u-form-control-hidden u-label"></label>
-        <div class="u-form-select-wrapper">
-            <select id="second_workshop_group_id" name="second_workshop_group_id" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white">     
-            </select>
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
-        </div>
-    </div>
-    <div class="u-form-group u-form-group-6">
+    <div class="u-form-group u-form-name">
+        <label for="name-05a8" class="u-form-control-hidden u-label"></label>
+        <input type="text" placeholder="Nombre" id="name-05a8" name="name" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-1" required="" value="{{old('name')}}">
+      </div>
+      <div class="u-form-group u-form-group-2">
+        <label for="text-8cb6" class="u-form-control-hidden u-label"></label>
+        <input type="text" placeholder="Apellido" id="text-8cb6" name="lastname" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-2" value="{{old('lastname')}}">
+      </div>
+      <div class="u-form-group u-form-name u-form-group-3">
+        <label for="name-b2b6" class="u-form-control-hidden u-label"></label>
+        <input type="text" placeholder="Cédula de Identidad, sin puntos ni guiones (12345678)" id="name-b2b6" name="document" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-3" onblur="clean_document(this)" required="" value="{{old('document')}}">
+      </div>
+      <div class="u-form-email u-form-group">
+        <label for="email-05a8" class="u-form-control-hidden u-label"></label>
+        <input type="email" placeholder="email" id="email-05a8" name="email" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-4" required=""  value="{{$code->email}}" readonly>
+      </div>
+      <div class="u-form-group u-form-phone u-form-group-5">
+        <label for="phone-bfdf" class="u-form-control-hidden u-label"></label>
+        <input type="tel" placeholder="Teléfono" id="phone-bfdf" name="phone" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-5" required=""  value="{{old('phone')}}">
+      </div>
+      <div class="u-form-group u-form-group-6">
         <label for="text-59c6" class="u-form-control-hidden u-label"></label>
-        <input type="text" placeholder="Institución" id="text-59c6" name="institution_name" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-6"  value="{{$institution->institution}}">
-    </div>
-    <div class="u-form-group u-form-group-8">
-        <label for="text-8b97" class="u-form-control-hidden u-label"></label>
-        <input type="text" placeholder="Ciudad" id="text-8b97" name="city" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-8"  value="{{$institution->city}}">
-    </div>
+        <input type="text" placeholder="Centro Educativo" id="text-59c6" name="extra[centro_educativo]" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-6"  value="{{old('extra.centro_educativo')??$code->institution}}">    
+      </div>  
+      <div class="u-form-group u-form-group-11">
+        <label for="text-c55e" class="u-form-control-hidden u-label"></label>
+        <select id="place" name="extra[place]" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
+          <option value="montevideo">Montevideo</option>
+          <option value="interior">Interior</option>
+        </select>
+      </div>
+      <div class="u-form-group u-form-group-11">
+        <label for="text-c55e" class="u-form-control-hidden u-label"></label>
+        <select id="place" name="extra[role]" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
+          <option value="docente">Docente</option>
+          <option value="gestión">Gestión</option>
+        </select>
+      </div>
     <div class="u-align-right u-form-group u-form-submit">                                              
         <a onclick="$(this).closest('form').submit()" class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-1">Enviar</a>
     </div>

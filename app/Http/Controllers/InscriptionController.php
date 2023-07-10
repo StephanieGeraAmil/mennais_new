@@ -2,17 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Mail\AdminInscriptionMail;
-use App\Mail\FacetofaceInscriptionMail;
-use App\Mail\GroupInscriptionMail;
 use App\Mail\RecoveryCertificateMail;
 use App\Mail\SendInscriptionCodeMail;
 use App\Models\Attendance;
-use App\Models\Code;
 use App\Models\GroupInscription;
 use App\Models\Inscription;
-use App\Models\Institution;
-use App\Models\Payment;
 use App\Models\UserData;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -188,14 +182,14 @@ class InscriptionController extends Controller
     
     
     public function attendance(Inscription $inscription, $token){
-        $user_id = auth()->user()->id;
+        //$user_id = auth()->user()->id;
         
         if($inscription->validateToken($token)){
             try {                
                 $attendance = Attendance::create([
                     'inscription_id'=>$inscription->id,
                     'date'=>Carbon::now(),
-                    'user_id'=>$user_id
+                    'user_id'=>0
                 ]);            
             } catch (\Throwable $th) {
                 

@@ -5,11 +5,7 @@ Se ha realizado una nueva inscripción grupal:
 <table>
     <tr>
         <td>Institucion</td>
-        <td>{{$group_inscription->institution->institution}}</td>
-    </tr>
-    <tr>
-        <td>Ciudad</td>
-        <td>{{$group_inscription->institution->city}}</td>
+        <td>{{$group_inscription->institution}}</td>
     </tr>
     <tr>
         <td>Inscribe</td>

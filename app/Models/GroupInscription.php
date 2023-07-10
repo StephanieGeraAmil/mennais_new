@@ -19,7 +19,7 @@ class GroupInscription extends Model
         'email',
         'phone',
         'quantity',
-        'institution_id',
+        'institution',
         'payment_id',
         'code'
     ];
@@ -27,10 +27,7 @@ class GroupInscription extends Model
     public function payment(){
         return $this->belongsTo(Payment::class);
     }
-
-    public function institution(){
-        return $this->belongsTo(Institution::class);
-    }
+    
 
     public function codes()
     {

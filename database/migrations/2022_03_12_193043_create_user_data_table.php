@@ -20,7 +20,7 @@ class CreateUserDataTable extends Migration
             $table->string('document');
             $table->string('email');
             $table->string('phone');
-            // $table->integer('function'); //0: Directivo/coordinador, 1: Docente
+            $table->json("extra");
             $table->timestamps();
         });
     }

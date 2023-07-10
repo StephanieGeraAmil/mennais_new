@@ -17,8 +17,6 @@
     <link rel="icon" href="images/favicon1.png">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
-    
-    
     <script type="application/ld+json">{
         "@context": "http://schema.org",
         "@type": "Organization",
@@ -49,12 +47,13 @@
                             <div class="u-container-style u-layout-cell u-opacity u-opacity-85 u-shape-rectangle u-size-30 u-layout-cell-2">
                                 <div class="u-container-layout u-container-layout-2">
                                     <h4 class="u-text u-text-2">@yield('subtitle')</h4>
+                                    
                                     <div class="u-container-style u-expanded-width u-group u-opacity u-opacity-70 u-radius-22 u-shape-round u-white u-group-1">
                                         <div class="u-container-layout u-valign-middle u-container-layout-3">
                                             <p class="u-text u-text-3">@yield('left-text-box')</p>
                                         </div>
                                     </div>
-                                    <div class="u-clearfix u-custom-html u-expanded-width u-custom-html-1">@yield('left-text')</div>                                    
+                                    @yield('left-form')
                                 </div>
                             </div>
                             <div class="u-container-style u-layout-cell u-opacity u-opacity-85 u-shape-rectangle u-size-30 u-layout-cell-3">
