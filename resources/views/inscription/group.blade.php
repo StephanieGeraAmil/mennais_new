@@ -55,7 +55,7 @@ INSCRIPCIÓN GRUPAL
         <input type="text" placeholder="Teléfono de quien inscribe" id="phone-4c18" name="phone" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" required="" value="{{old('phone')}}">
     </div>                                            
     <div class="u-form-group u-form-name">
-        <input type="text" placeholder="Institución" id="institution_name-4c18" name="institution_name" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" required="" value="{{old('institution_name')}}">
+        <input type="text" placeholder="Institución" id="institution_name-4c18" name="extra[institution]" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" required="" value="{{old('institution_name')}}">
     </div>
     <div class="u-form-group u-form-name">
         <input type="text" placeholder="Ciudad" id="city-4c18" name="city" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" required="" value="{{old('city')}}">
@@ -65,10 +65,7 @@ INSCRIPCIÓN GRUPAL
     </div>
     <div class="u-form-group u-form-name">
         <input type="number" placeholder="Monto depositado" min="0" step="1" pattern="\d*" id="amount-4c18" name="amount" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" required="" value="{{old('amount')}}">
-    </div>
-    <div class="u-form-group u-form-name">
-        <input type="text" placeholder="Número de comprobante de pago" id="payment_ref-4c18" name="payment_ref" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" required="" value="{{old('payment_ref')}}">
-    </div>
+    </div>    
     <div class="u-form-group u-form-name">
         <input type="file" placeholder="Adjunte un comprobante de pago" id="payment_img-4c18" name="payment_file" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" required="">
     </div>

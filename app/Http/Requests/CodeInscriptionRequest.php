@@ -3,9 +3,8 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Support\Arr;
 
-class SimpleInscriptionRequest extends FormRequest
+class CodeInscriptionRequest extends FormRequest
 {
     /**
     * Get the validation rules that apply to the request.
@@ -21,8 +20,8 @@ class SimpleInscriptionRequest extends FormRequest
             'document' => 'required|string|max:255|unique:user_data',
             'email' => 'required|email',
             'phone' => 'required|string|max:255',
-            'payment_file'=>'required|file|mimes:jpg,png,jpeg,gif,svg,pdf',
             'extra' => 'required|array',
+            'code' => 'required|integer',
         ];
     }
 }

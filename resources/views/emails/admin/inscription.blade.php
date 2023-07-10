@@ -18,22 +18,10 @@
         <tr>
             <td>Teléfono</td>
             <td>{{$inscription->userData->phone}}</td>
-        </tr>    
-        <tr>
-            <td>Institución</td>
-            <td>{{$inscription->institution->institution}}</td>
-        </tr>
-        <tr>
-            <td>Ciudad</td>
-            <td>{{$inscription->institution->city}}</td>
         </tr>
         <tr>
             <td>Monto</td>
             <td>{{$inscription->payment->amount_deposited}}</td>
-        </tr>
-        <tr>
-            <td>Número de comprobante:</td>
-            <td>{{$inscription->payment->reference}}</td>
         </tr>
         <tr>
             <td>Monto</td>

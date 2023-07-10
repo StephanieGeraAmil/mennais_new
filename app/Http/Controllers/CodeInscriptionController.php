@@ -2,13 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CodeInscriptionRequest;
 use App\Mail\AdminInscriptionMail;
 use App\Mail\FacetofaceInscriptionMail;
 use App\Models\Code;
 use App\Models\Inscription;
-use App\Models\Institution;
 use App\Models\UserData;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
 class CodeInscriptionController extends Controller
@@ -28,18 +27,9 @@ class CodeInscriptionController extends Controller
     }
 
 
-    public function codeInscriptionStore(Request $request){
-        $validated_data = $request->validate([
-            'name' => 'required|string|max:255',
-            'lastname' => 'required|string|max:255',
-            'document' => 'required|string|max:255|unique:user_data',
-            'email' => 'required|email',
-            'phone' => 'required|string|max:255',
-            'institution_name' => 'required|string|max:255',
-            'city' => 'required|string|max:255',
-            'code' => 'required|integer',
-        ]); 
+    public function codeInscriptionStore(CodeInscriptionRequest $request){
         
+        $validated_data = $request->validated();
         $document = str_replace([',','-','.',' '], '',$validated_data['document']);
 
         /**
@@ -54,20 +44,7 @@ class CodeInscriptionController extends Controller
         * Create Institution
         */
         //Check institution and change.
-        $institution_stored = $group_inscription->institution;
-        $create = true;
-        if($institution_stored->institution == $validated_data['institution_name']){
-            if($institution_stored->city == $validated_data['city']){
-                $create = false;
-                $institution = $institution_stored;                    
-            }
-        }
-        if($create){
-            $institution = Institution::create([
-                'institution'=>$validated_data['institution_name'],
-                'city'=>$validated_data['city']
-            ]);
-        }
+        
         
         /**
         * Create UserData
@@ -78,6 +55,7 @@ class CodeInscriptionController extends Controller
             'document'=>$document,
             'email'=>$validated_data['email'],
             'phone'=>$validated_data['phone'],
+            'extra'=>$validated_data['extra'] ?? [],
         ]);
         
         
@@ -86,7 +64,7 @@ class CodeInscriptionController extends Controller
         */
         $inscription = Inscription::create([
             'user_data_id'=>$user_data->id,
-            'institution_id'=>$institution->id,
+            'institution'=>$group_inscription->institution,
             'payment_id'=>$group_inscription->payment_id,
             'status'=>1
         ]);

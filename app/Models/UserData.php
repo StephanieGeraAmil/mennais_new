@@ -19,7 +19,8 @@ class UserData extends Model
         'lastname',
         'document',
         'email',
-        'phone',        
+        'phone',
+        'extra',        
     ];
 
     public function inscription(){

@@ -78,19 +78,21 @@ Por favor, complete el formulario con sus datos.
   </div>
   <div class="u-form-group u-form-group-6">
     <label for="text-59c6" class="u-form-control-hidden u-label"></label>
-    <input type="text" placeholder="Institución" id="text-59c6" name="institution_name" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-6"  value="{{old('institution_name')}}">
-  </div>                                            
-  <div class="u-form-group u-form-group-8">
-    <label for="text-8b97" class="u-form-control-hidden u-label"></label>
-    <input type="text" placeholder="Ciudad" id="text-8b97" name="city" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-8"  value="{{old('city')}}">
+    <input type="text" placeholder="Centro Educativo" id="text-59c6" name="extra[centro_educativo]" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-6"  value="{{old('extra.centro_educativo')}}">    
+  </div>  
+  <div class="u-form-group u-form-group-11">
+    <label for="text-c55e" class="u-form-control-hidden u-label"></label>
+    <select id="place" name="extra[place]" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
+      <option value="montevideo">Montevideo</option>
+      <option value="interior">Interior</option>
+    </select>
   </div>
-  <div class="u-form-group u-form-group-9">
-    <label for="text-1207" class="u-form-control-hidden u-label"></label>
-    <input type="text" placeholder="Monto depositado" id="text-1207" name="amount" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-9"  value="{{old('amount')}}">
-  </div>
-  <div class="u-form-group u-form-group-10">
-    <label for="text-83e2" class="u-form-control-hidden u-label"></label>
-    <input type="text" placeholder="Número de comprobante de pago" id="text-83e2" name="payment_ref" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-10"  value="{{old('payment_ref')}}">
+  <div class="u-form-group u-form-group-11">
+    <label for="text-c55e" class="u-form-control-hidden u-label"></label>
+    <select id="place" name="extra[role]" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
+      <option value="docente">Docente</option>
+      <option value="gestión">Gestión</option>
+    </select>
   </div>
   <div class="u-form-group u-form-group-11">
     <label for="text-c55e" class="u-form-control-hidden u-label"></label>

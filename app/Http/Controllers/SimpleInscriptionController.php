@@ -34,24 +34,18 @@ class SimpleInscriptionController extends Controller
         
         $payment = Payment::create([
             'url_payment'=>"/images/".$image_name,
-            'amount_deposited'=>$validated_data['amount'],
-            'reference'=>$validated_data['payment_ref']
+            'amount_deposited'=>$validated_data['amount'] ?? 0,
+            'reference'=>$validated_data['payment_ref'] ?? ""
         ]);
-        
-        $institution = Institution::where('institution', $validated_data['institution_name'])->where('city', $validated_data['city'])->first();
-        if($institution === null){
-            $institution = Institution::create([
-                'institution'=>$validated_data['institution_name'],
-                'city'=>$validated_data['city']
-            ]);
-        }
+         
         
         $user_data = UserData::create([
             'name'=>$validated_data['name'],
             'lastname'=>$validated_data['lastname'],
             'document'=>$document,
             'email'=>$validated_data['email'],
-            'phone'=>$validated_data['phone']
+            'phone'=>$validated_data['phone'],
+            'extra'=>json_encode($validated_data['extra']) ?? json_encode([]),
         ]);
         
         
@@ -60,7 +54,7 @@ class SimpleInscriptionController extends Controller
         */
         $inscription = Inscription::create([
             'user_data_id'=>$user_data->id,
-            'institution_id'=>$institution->id,
+            'institution_id'=>0,
             'payment_id'=>$payment->id,
             'status'=>1
         ]);
