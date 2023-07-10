@@ -1,10 +1,8 @@
-<p>Ha recibido una invitación</p>
-<p>
-{{$code->groupInscription->name}} de {{$code->groupInscription->institution}} le ha invitado a participar del Workshop VIVENCIANDO LA TRANSFORMACIÓN EDUCATIVA, que se realizará los días 27 al 29 de setiembre de 2022 en el Colegio Seminario – Montevideo.
+<p>Hola {{$code->groupInscription->name}} lo ha invitado a {{env('EVENT_NAME')}}
 </p>
 <p>
-Usted deberá completar su inscripción sin costo con sus datos personales en el siguiente vínculo:<BR/>
-<a href="{!!$code->getUrl()!!}">{!!$code->getUrl()!!}</a><BR/>
+    Para completar su inscripción, por favor siga el siguiente link:
+    <a href="{!!$code->getUrl()!!}">{!!$code->getUrl()!!}</a><BR/>
 </p>
 <p>
 Saludos,

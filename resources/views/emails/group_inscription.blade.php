@@ -1,14 +1,10 @@
-<p>Hola {{$group_inscription->name}},</p>
+<p>Gracias {{$group_inscription->name}} por realizar una inscripción grupal al evento {{env('EVENT_NAME')}}.</p>
 <p>
-Gracias por la inscripción grupal al Workshop VIVENCIANDO LA TRANSFORMACIÓN EDUCATIVA.
+    A cada uno de sus invitados le llegará por mail indicaciones para completar su inscripción.
 </p>
 <p>
-Cantidad de invitaciones disponibles: {{$group_inscription->quantity}}
-</p>
-<p>
-Accediendo al siguiente vínculo usted podrá gestionar sus invitaciones:<BR/>
-{!!$group_inscription->getUrl()!!}<BR/>
-A cada persona que invite le llegará un mail para que complete su inscripción con sus datos personales.
+    Ud. puede gestionar sus invitaciones desde el siguiente link:
+    {!!$group_inscription->getUrl()!!}<BR/>
 </p>
 <p>
 Saludos,

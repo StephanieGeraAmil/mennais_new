@@ -61,17 +61,14 @@ Admin Panel
             <div class="w-full md:w-1/4 p-3">    
                 <div class="h-full bg-white border rounded shadow">
                     <div class="border-b p-3">
-                        <h5 class="font-bold uppercase text-gray-600">Datos de la institución</h5>
+                        <h5 class="font-bold uppercase text-gray-600">Datos Extras</h5>
                     </div>                    
                     <div class="w-full overflow-hidden shadow-xs">
                         <div class="w-full overflow-x-auto">
-                            <div class="flex items-center border-b py-2 w-100">
-                                <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" value="{{$inscription->institution->institution}}" readonly/>	  
+                                @foreach ($inscription->userData->jsonextra as $key => $extra)
+                                    <div class="m-2"><label for="">{{$key}}: {{$extra}}</label></div>
+                                @endforeach                                
                             </div>
-                            <div class="flex items-center border-b py-2 w-100">
-                                <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" value="{{$inscription->institution->city}}" readonly/>	  
-                            </div>                            
-                        </div>
                     </div>                    
                 </div>                
             </div>            
