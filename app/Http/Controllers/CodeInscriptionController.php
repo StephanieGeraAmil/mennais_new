@@ -64,7 +64,7 @@ class CodeInscriptionController extends Controller
         */
         $inscription = Inscription::create([
             'user_data_id'=>$user_data->id,
-            'institution'=>$group_inscription->institution,
+            'institution_id'=>0,
             'payment_id'=>$group_inscription->payment_id,
             'status'=>1
         ]);
