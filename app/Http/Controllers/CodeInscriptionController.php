@@ -55,7 +55,7 @@ class CodeInscriptionController extends Controller
             'document'=>$document,
             'email'=>$validated_data['email'],
             'phone'=>$validated_data['phone'],
-            'extra'=>$validated_data['extra'] ?? [],
+            'extra'=>json_encode($validated_data['extra']) ?? json_encode([]),
         ]);
         
         
