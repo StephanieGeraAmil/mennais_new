@@ -217,7 +217,7 @@ desempeños de comprensión </li>
                             <span style="font-weight: 700;">000000256277</span>
                             <span style="font-weight: 700;">&nbsp;- Sucursal 62</span>
                             <br>a nombre de la Asociación Uruguaya de Educación Católica.<br>
-                            <br>Es necesario realizar el depósito previo a la inscripción. Necesitará el número de comprobante y una imagen del mismo para poder inscribirse.
+                            <br>Es necesario realizar el depósito previo a la inscripción. Necesitará una imagen del mismo para poder inscribirse.
                           </p>
                         </div>
                       </div>
