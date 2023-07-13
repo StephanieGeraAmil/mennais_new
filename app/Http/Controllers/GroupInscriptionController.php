@@ -90,7 +90,6 @@ class GroupInscriptionController extends Controller
             $code = $this->codeGenerator();
             $i_code = Code::create([
                 'group_inscription_id'=>$old_code->group_inscription_id,
-                'institution_id'=>$old_code->institution_id,
                 'code'=>$code,
                 'inscription_id'=>0,
                 'status'=>0,

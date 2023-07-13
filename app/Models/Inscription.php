@@ -17,7 +17,6 @@ class Inscription extends Model
      */
     protected $fillable = [
         'user_data_id',
-        'institution_id',
         'payment_id',
         'status'
     ];

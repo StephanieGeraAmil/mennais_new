@@ -16,7 +16,6 @@ class CreateInscriptionsTable extends Migration
         Schema::create('inscriptions', function (Blueprint $table) {
             $table->id();
             $table->integer('user_data_id');
-            $table->integer('institution_id');
             $table->integer('payment_id')->default(0);
             $table->integer('status')->default(0);
             $table->timestamps();

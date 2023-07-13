@@ -24,7 +24,7 @@ Inscripción Grupal
                     @error('email')  El campo email no es correcto.<br/>  @enderror
                     @error('phone') El campo teléfono no es correcto.<br/> @enderror
                     @error('quantity')  El campo cantidad no es correcto.<br/>  @enderror
-                    @error('code','institution_id', 'payment_id') Hemos encontrado un error al procesar su solicitud. Por favor contacte a la administración.<br/> @enderror
+                    @error('code', 'payment_id') Hemos encontrado un error al procesar su solicitud. Por favor contacte a la administración.<br/> @enderror
                     @error('amount', 'payment_ref', 'payment_file') Hemos encontrado un error al procesar su solicitud. Por favor contacte a la administración.<br/> @enderror
                 </h5>                         
                 @if ($errors->any())

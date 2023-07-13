@@ -54,7 +54,6 @@ class SimpleInscriptionController extends Controller
         */
         $inscription = Inscription::create([
             'user_data_id'=>$user_data->id,
-            'institution_id'=>0,
             'payment_id'=>$payment->id,
             'status'=>1
         ]);
