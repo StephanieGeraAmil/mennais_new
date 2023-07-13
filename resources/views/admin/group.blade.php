@@ -73,7 +73,7 @@ Admin Panel
                                             <p class="text-gray-900 whitespace-no-wrap">{{$gr_inscription->phone}}</p>
                                         </td>
                                         <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                            <p class="text-gray-900 whitespace-no-wrap">{{$gr_inscription->institution->institution}}</p>
+                                            <p class="text-gray-900 whitespace-no-wrap">{{$gr_inscription->institution}}</p>
                                         </td>
                                         <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                             <p class="text-gray-900 whitespace-no-wrap">{{$gr_inscription->inscriptedCodes()}}/{{$gr_inscription->usedCodes()}}/{{$gr_inscription->quantity}}</p>
