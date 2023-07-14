@@ -25,6 +25,7 @@ Inscripción Grupal
         <div class="u-align-center u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
             <div class="u-container-layout u-valign-middle u-container-layout-1">
                 <h5 class="u-text u-text-default u-text-1">
+                    @error('no_code') No quedan mas invitaciones @enderror
                     @error('email')  {{ ($message == "The email has already been taken.")?"Ya se envió un código a este email.": "El campo email no es válido." }}.<br/> @enderror                                            
                 </h5>                         
             </div>

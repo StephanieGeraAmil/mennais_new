@@ -11,7 +11,7 @@ use App\Models\UserData;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
-
+use Illuminate\Support\Facades\Redirect;
 
 class InscriptionController extends Controller
 {
@@ -247,7 +247,7 @@ class InscriptionController extends Controller
             }
         }
         if($find_code_available == false){
-            abort(403); //not more codes available
+            return Redirect::back()->withErrors(['no_code' => 'No cuenta con códigos disponibles']);
         }
         return redirect($group_inscription->getUrl());
     }
