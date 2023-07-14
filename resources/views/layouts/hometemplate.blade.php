@@ -25,7 +25,7 @@
                     <div class="u-container-layout u-container-layout-2">
                       <h1 class="u-align-center u-custom-font u-font-raleway u-text u-text-default-xl u-text-palette-1-dark-2 u-title u-text-1"><b> La Transformación Educativa en acción<span style="text-decoration: underline !important;"></span></b>
                       </h1>
-                      <h4 class="u-align-center u-text u-text-palette-1-dark-2 u-text-2"> EncuentroS de Formación en formato virtual</h4>
+                      <h4 class="u-align-center u-text u-text-palette-1-dark-2 u-text-2"> Encuentros de Formación en formato virtual</h4>
                     </div>
                   </div>
                 </div>
