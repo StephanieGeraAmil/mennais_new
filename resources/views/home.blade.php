@@ -2,8 +2,7 @@
 @section('headers')
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Cosmos, Read what our customers say, ​View our work, discover more about us, read more of our stories, explore our archive or get in touch., How We Work, ​Uncover and meet customer needs., ​Want your brand to stand above the rest?, Get in touch">
-    <meta name="description" content="Vivenciando la transformación educativa es un evento organizado por AUDEC - Asociación Uruguaya de Educación Católica">
+    <meta name="description" content="La transformación educativa en acción es un evento organizado por AUDEC - Asociación Uruguaya de Educación Católica">
     <title>Inicio</title>
     <link rel="stylesheet" href="/css/nicepage.css" media="screen">
 <link rel="stylesheet" href="/css/inicio.css" media="screen">
@@ -19,7 +18,7 @@
 }</script>
     <meta name="theme-color" content="#ddd6f3">
     <meta property="og:title" content="Inicio">
-    <meta property="og:description" content="Vivenciando la transformación educativa es un evento organizado por AUDEC - Asociación Uruguaya de Educación Católica">
+    <meta property="og:description" content="La transformación educativa en acción es un evento organizado por AUDEC - Asociación Uruguaya de Educación Católica">
     <meta property="og:type" content="website">
   <meta data-intl-tel-input-cdn-path="intlTelInput/">
 @endsection
