@@ -84,5 +84,5 @@
     </p>
 </div>
 </footer>
-
+@yield('custom_script')
 </body></html>
