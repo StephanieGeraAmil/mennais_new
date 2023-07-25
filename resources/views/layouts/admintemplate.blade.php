@@ -41,7 +41,7 @@
 
             <div class="w-1/2 pl-2 md:pl-0">
                 <a class="text-gray-600 text-base xl:text-xl no-underline hover:no-underline font-bold" href="#">
-                    Workshop Setiembre <sup>2022</sup>
+                    {{env('APP_NAME')}}
                 </a>
             </div>
             <div class="w-1/2 pr-0">
