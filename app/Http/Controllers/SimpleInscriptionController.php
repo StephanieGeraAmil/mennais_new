@@ -11,6 +11,7 @@ use App\Models\Payment;
 use App\Models\UserData;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 
 class SimpleInscriptionController extends Controller
@@ -57,9 +58,14 @@ class SimpleInscriptionController extends Controller
             'payment_id'=>$payment->id,
             'status'=>1
         ]);
-        
-        Mail::to($user_data->email)->send(new FacetofaceInscriptionMail($inscription));   
-        Mail::to(env('ADMIN_EMAIL', "goday985@gmail.com"))->send(new AdminInscriptionMail($inscription));     
+        try {
+            Mail::to($user_data->email)->send(new FacetofaceInscriptionMail($inscription));   
+            Mail::to(env('ADMIN_EMAIL', "goday985@gmail.com"))->send(new AdminInscriptionMail($inscription));     
+            session()->flash('msg', 'Inscripción realizada con exito!!!');
+        } catch (\Throwable $th) {
+            Log::error("SimpleInscriptionController::Email: ".$user_data->email."; ".env('ADMIN_EMAIL'));
+            session()->flash('msg', 'Inscripción realizada con exito. En caso de no recibir el email, contactese con Audec');
+        }        
         
         session()->flash('msg', 'Inscripción realizada con exito!!!');
         return redirect('/simple_inscription');

@@ -9,6 +9,7 @@ use App\Models\Inscription;
 use App\Models\School;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 
 class AdminController extends Controller
@@ -107,8 +108,12 @@ class AdminController extends Controller
 
 
     public function resendQr($id){
-        $inscription = Inscription::findOrFail($id);        
-        Mail::to($inscription->userData->email)->send(new FacetofaceInscriptionMail($inscription));   
+        $inscription = Inscription::findOrFail($id);
+        try {
+            Mail::to($inscription->userData->email)->send(new FacetofaceInscriptionMail($inscription));
+        } catch (\Throwable $th) {
+            Log::error("AdminController::Email: ".$inscription->userData->email);
+        }           
         return redirect('/admin/inscription/'.$id);
     }
 

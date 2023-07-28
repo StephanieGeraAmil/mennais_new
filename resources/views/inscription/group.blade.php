@@ -68,6 +68,7 @@ INSCRIPCIÓN GRUPAL
     </div>    
     <div class="u-form-group u-form-name">
         <input type="file" placeholder="Adjunte un comprobante de pago" id="payment_img-4c18" name="payment_file" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" required="">
+        <div style="width: 100%;text-align: center;"><small>Adjunte el comprobante de pago (pdf o jpg)</small></div>
     </div>
     <div class="u-align-right u-form-group u-form-submit">                                                    
         <a onclick="$(this).closest('form').submit()" class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-1">Enviar</a>

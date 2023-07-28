@@ -9,6 +9,7 @@ use App\Models\Code;
 use App\Models\GroupInscription;
 use App\Models\Payment;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 
 class GroupInscriptionController extends Controller
@@ -67,9 +68,14 @@ class GroupInscriptionController extends Controller
             ]);
             array_push($codes,$i_code);
         }
-        Mail::to($group_inscription->email)->send(new GroupInscriptionMail($group_inscription));
-        Mail::to(env('ADMIN_EMAIL'))->send(new AdminGroupInscriptionMail($group_inscription));
-        
+        try {
+            Mail::to($group_inscription->email)->send(new GroupInscriptionMail($group_inscription));
+            Mail::to(env('ADMIN_EMAIL'))->send(new AdminGroupInscriptionMail($group_inscription));
+            session()->flash('msg', 'Inscripción realizada con exito!!!');
+        } catch (\Throwable $th) {
+            Log::error("GroupInscriptionController::Email: ".$group_inscription->email."; ".env('ADMIN_EMAIL'));
+            session()->flash('msg', 'Inscripción realizada con exito. En caso de no recibir el email, contactese con Audec');
+        }        
         return redirect($group_inscription->getUrl());        
     }
 

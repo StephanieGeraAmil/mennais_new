@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Mail\ContactMail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
@@ -14,9 +15,13 @@ class ContactController extends Controller
             'email' => 'required|email',
             'phone' => 'required|string|max:255',
             'message' => 'required|string'                        
-        ]);         
-        Mail::to(env('ADMIN_EMAIL'))->send(new ContactMail($validated_data['name'],$validated_data['email'],$validated_data['phone'],$validated_data['message']));
-        session()->flash('success_contact', 'Inscripción realizada con exito!!!');
+        ]);
+        try {
+            Mail::to(env('ADMIN_EMAIL'))->send(new ContactMail($validated_data['name'],$validated_data['email'],$validated_data['phone'],$validated_data['message']));
+        } catch (\Throwable $th) {
+            Log::error("ConatctEmail");
+        }         
+        session()->flash('success_contact', 'Mensaje enviado correctamente!!!');
         return redirect('/');
     }
 }

@@ -8,6 +8,7 @@ use App\Mail\FacetofaceInscriptionMail;
 use App\Models\Code;
 use App\Models\Inscription;
 use App\Models\UserData;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 
 class CodeInscriptionController extends Controller
@@ -71,11 +72,14 @@ class CodeInscriptionController extends Controller
         $code->status = 2;
         $code->inscription_id = $inscription->id;
         $code->save();
-        
-        Mail::to($user_data->email)->send(new FacetofaceInscriptionMail($inscription));
-        Mail::to(env('ADMIN_EMAIL'))->send(new AdminInscriptionMail($inscription));
-
-        session()->flash('msg', 'Inscripción realizada con exito!!!');
+        try {
+            Mail::to($user_data->email)->send(new FacetofaceInscriptionMail($inscription));
+            Mail::to(env('ADMIN_EMAIL'))->send(new AdminInscriptionMail($inscription));
+            session()->flash('msg', 'Inscripción realizada con exito!!!');
+        } catch (\Throwable $th) {
+            Log::error("AdminController::Email: ".$user_data->email."; ".env('ADMIN_EMAIL'));
+            session()->flash('msg', 'Inscripción realizada con exito. En caso de no recibir el email, contactese con Audec');
+        }
         return redirect('/simple_inscription');        
     }
 

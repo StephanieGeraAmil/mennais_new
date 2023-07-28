@@ -10,6 +10,7 @@ use App\Models\Inscription;
 use App\Models\UserData;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Redirect;
 
@@ -241,7 +242,11 @@ class InscriptionController extends Controller
                     $code->status = 1;
                     $code->email = $validated_data['email'];
                     $code->save();
-                    Mail::to($validated_data['email'])->send(new SendInscriptionCodeMail($code));                    
+                    try {
+                        Mail::to($validated_data['email'])->send(new SendInscriptionCodeMail($code));                    
+                    } catch (\Throwable $th) {
+                        Log::error("InscriptionController::Email: ".$validated_data['email']."; ".env('ADMIN_EMAIL'));
+                    }
                     $find_code_available = true;
                 }
             }
