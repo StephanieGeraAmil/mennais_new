@@ -51,7 +51,7 @@ class SendFixAddress extends Command
                 try {
                     Mail::to($email)->send(new SendInscriptionCodeMail($code));                    
                 } catch (\Throwable $th) {
-                    Log::error("InscriptionController::Email: ".$email."; ".env('ADMIN_EMAIL'));
+                    Log::error("InscriptionController::Email: ".$email);
                 }                               
                 
                 echo "Correo enviado a: ".$email."\n";                

@@ -200,7 +200,7 @@ class InscriptionController extends Controller
         if(!$is_valid_date){
             return redirect('/');
         }
-        if($inscription->validateToken($token)){
+        //if($inscription->validateToken($token)){
             try {                
                 $attendance = Attendance::create([
                     'inscription_id'=>$inscription->id,
@@ -212,9 +212,9 @@ class InscriptionController extends Controller
             }
             
             return view('welcome')->with('zoom_link', env('ZOOMLINK_'.Carbon::now()->format('Ymd')));
-        }else{            
+        /* }else{            
             abort(403);
-        }
+        } */
     }
     
     

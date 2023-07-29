@@ -1,9 +1,9 @@
 <p>Hola {{$inscription->userData->name}} {{$inscription->userData->lastname}},</p>
 <p>
-    Para acreditarse necesitará el siguiente QR:
+    Le recordamos que está inscripto al  {!!env("EVENT_NAME", "Workshop VIVENCIANDO LA TRANSFORMACIÓN EDUCATIVA")!!} el próximo miércoles 2 de agosto a las 18:30 hs.
 </p>
 <p>
-    <img src="{!!$message->embedData(QrCode::format('png')->generate($inscription->url()), 'QrCode.png', 'image/png')!!}">
+    <a href="{!!$inscription->url()!!}" target="_blank" >Link de acceso</a>
 </p>
 <p>
     Saludos,

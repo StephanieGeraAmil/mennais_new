@@ -2,8 +2,8 @@
 
 namespace App\Console\Commands;
 
-use App\Mail\FacetofaceInscriptionMail;
 use App\Mail\RecoveryCertificateMail;
+use App\Mail\ReminderMail;
 use App\Models\Inscription;
 use App\Models\SendMail;
 use Carbon\Carbon;
@@ -60,7 +60,7 @@ class SendReminderMail extends Command
             if($inscription->id > 0){
                 $email = $inscription->userData->email;
                 Log::info("email: ".$email);
-                Mail::to($email)->send(new FacetofaceInscriptionMail($inscription));
+                Mail::to($email)->send(new ReminderMail($inscription));
                 echo "Correo enviado a: ".$email."\n";
                 $last_id = $inscription->id;                
             }
