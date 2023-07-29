@@ -183,7 +183,7 @@ class InscriptionController extends Controller
     
     
     
-    public function attendance($inscription_id, $token){
+    public function attendance(int $inscription_id, $token){
 
         dd($inscription_id);
         $inscription = Inscription::find($inscription_id); 
