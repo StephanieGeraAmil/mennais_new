@@ -74,10 +74,16 @@ class CodeInscriptionController extends Controller
         $code->save();
         try {
             Mail::to($user_data->email)->send(new FacetofaceInscriptionMail($inscription));
+            session()->flash('msg', 'Inscripción realizada con exito!!!');
+        } catch (\Throwable $th) {
+            Log::error("CodeInscriptionController::Email: ".$user_data->email);
+            session()->flash('msg', 'Inscripción realizada con exito. En caso de no recibir el email, contactese con Audec');
+        }
+        try {
             Mail::to(env('ADMIN_EMAIL'))->send(new AdminInscriptionMail($inscription));
             session()->flash('msg', 'Inscripción realizada con exito!!!');
         } catch (\Throwable $th) {
-            Log::error("AdminController::Email: ".$user_data->email."; ".env('ADMIN_EMAIL'));
+            Log::error("CodeInscriptionController::AdminEmail: ".env('ADMIN_EMAIL'));
             session()->flash('msg', 'Inscripción realizada con exito. En caso de no recibir el email, contactese con Audec');
         }
         return redirect('/simple_inscription');        
