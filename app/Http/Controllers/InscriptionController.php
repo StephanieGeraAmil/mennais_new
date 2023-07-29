@@ -189,10 +189,9 @@ class InscriptionController extends Controller
         if($inscription === null){
             return redirect('/');
         }
-        $event_date = explode(",", env('EVENTDATES', []));
-        dd($event_date, $inscription);
         $is_valid_date = false;
-        foreach($event_date as $ev_date){
+        dd($inscription);
+        foreach(["2023-08-02","2023-10-25"] as $ev_date){
             $date = Carbon::parse($ev_date);
             if($date->isToday()){
                 $is_valid_date = true;
