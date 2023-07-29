@@ -2,7 +2,8 @@
 
 namespace App\Console\Commands;
 
-use App\Mail\AlertMail;
+use App\Mail\SendInscriptionCodeMail;
+use App\Models\Code;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
@@ -14,7 +15,7 @@ class SendFixAddress extends Command
      *
      * @varx string
      */
-    protected $signature = 'send:fixaddress';
+    protected $signature = 'send:fix';
 
     /**
      * The console command description.
@@ -40,20 +41,21 @@ class SendFixAddress extends Command
      */
     public function handle()
     {
-        Log::info("Se envían los correos de Alerta");
+        Log::info("Se envían los correos con códigos de invitación");
 
-        //$second_ws = SecondWorkshopGroup::find(2);
-        $second_ws = SecondWorkshopGroup::findOrFail(4);
-        $inscriptions_list = $second_ws->inscription;
-
-        foreach($inscriptions_list as $inscription){            
-            if($inscription->id > 0){
-                $email = $inscription->userData->email;
+        $code_list = Code::where('inscription_id', 0)->where('status', 1)->get();
+        foreach($code_list as $code){
+                $email = $code->email;
                 Log::info("alert_email: ".$email);
-                Mail::to($email)->send(new AlertMail($inscription));
-                echo "Correo enviado a: ".$email."\n";
-                $last_id = $inscription->id;                
-            }
+                
+                try {
+                    Mail::to($email)->send(new SendInscriptionCodeMail($code));                    
+                } catch (\Throwable $th) {
+                    Log::error("InscriptionController::Email: ".$email."; ".env('ADMIN_EMAIL'));
+                }                               
+                
+                echo "Correo enviado a: ".$email."\n";                
+            
         }         
         Log::info("Fin del envio de correo de alerta.");
         return true;
