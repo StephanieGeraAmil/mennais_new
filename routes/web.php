@@ -60,7 +60,7 @@ Route::post('/contact',[ContactController::class,'contact']);
 Route::post('/code/{id}/delete',[GroupInscriptionController::class,'deleteCode']);
 
 /** Acreditación */
-Route::get('/attendance/{inscription}/{token}', [InscriptionController::class, 'attendance']);
+Route::get('/attendance/{inscription_id}/{token}', [InscriptionController::class, 'attendance']);
 
 /** Certificados */
 Route::get('/inscription/certificateRecoveryMail', [InscriptionController::class,'certificateRecovery']);
