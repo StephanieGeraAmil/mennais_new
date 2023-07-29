@@ -186,8 +186,11 @@ class InscriptionController extends Controller
     public function attendance(int $inscription_id, $token){
 
         $inscription = Inscription::find($inscription_id); 
-        dd($inscription);
+        if($inscription === null){
+            return redirect('/');
+        }
         $event_date = explode(",", env('EVENTDATES', []));
+        dd($event_date, $inscription);
         $is_valid_date = false;
         foreach($event_date as $ev_date){
             $date = Carbon::parse($ev_date);
