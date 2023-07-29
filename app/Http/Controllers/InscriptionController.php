@@ -188,6 +188,7 @@ class InscriptionController extends Controller
         $inscription = Inscription::findOrFail($inscription_id); 
         $event_date = explode(",", env('EVENTDATES', []));
         $is_valid_date = false;
+        dd($event_date);
         foreach($event_date as $ev_date){
             $date = Carbon::parse($ev_date);
             if($date->isToday()){
