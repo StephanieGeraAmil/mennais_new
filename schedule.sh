@@ -1,4 +1,4 @@
 #!/bin/bash
-cd /home/u431715252/public_html
+cd /home/u370571502/domains/audec.org/public_html
 pwd
 php artisan schedule:run
