@@ -185,7 +185,8 @@ class InscriptionController extends Controller
     
     public function attendance($inscription_id, $token){
 
-        dd($inscription_id);
+        $inscription = Inscription::findOrFail($inscription_id); 
+        dd($inscription);
         $event_date = explode(",", env('EVENTDATES', []));
         $is_valid_date = false;
         foreach($event_date as $ev_date){
