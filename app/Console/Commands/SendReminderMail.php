@@ -54,7 +54,7 @@ class SendReminderMail extends Command
             ]);
         }
 
-        $inscriptions_list = Inscription::where('id','>',$mail->last_id)->take(150)->get();   
+        $inscriptions_list = Inscription::where('id','>',$mail->last_id)->take(100)->get();   
         $last_id = 0;
         foreach($inscriptions_list as $inscription){            
             if($inscription->id > 0){
