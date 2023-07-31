@@ -10,6 +10,7 @@ use Carbon\Carbon;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
+use PhpParser\Node\Stmt\TryCatch;
 
 class SendReminderMail extends Command
 {
@@ -60,7 +61,11 @@ class SendReminderMail extends Command
             if($inscription->id > 0){
                 $email = $inscription->userData->email;
                 Log::info("email: ".$email);
-                Mail::to($email)->send(new ReminderMail($inscription));
+                try {
+                    Mail::to($email)->send(new ReminderMail($inscription));
+                } catch (\Throwable $th) {
+                    Log::error("Fallo email: ".$email);
+                }
                 echo "Correo enviado a: ".$email."\n";
                 $last_id = $inscription->id;                
             }
