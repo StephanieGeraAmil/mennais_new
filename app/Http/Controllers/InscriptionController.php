@@ -184,7 +184,7 @@ class InscriptionController extends Controller
     
     
     public function attendance(int $inscription_id, $token){
-
+        
         $inscription = Inscription::find($inscription_id); 
         if($inscription === null){
             return redirect('/');
@@ -211,7 +211,7 @@ class InscriptionController extends Controller
                 
             }
             
-            return view('welcome')->with('zoom_link', env('ZOOMLINK_'.Carbon::now()->format('Ymd')));
+            return view('welcome')->with('zoom_link', env('ZOOMLINK_'.Carbon::now()->format('Ymd'), "https://us02web.zoom.us/j/85489536544?pwd=Z2NodSt1NmJnVllTS3FhZHB1VmRvdz09"));
         /* }else{            
             abort(403);
         } */
