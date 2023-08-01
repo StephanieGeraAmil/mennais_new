@@ -117,7 +117,7 @@ Admin Panel
                                             <p class="text-gray-900 whitespace-no-wrap">{{$registered_user->attendances->count()}}</p>
                                         </td>
                                         <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                            <p class="text-gray-900 whitespace-no-wrap">{{$registered_user->created_at->format("d-m-Y H:i:s", 'America/Montevideo')}}</p>
+                                            <p class="text-gray-900 whitespace-no-wrap">{{$registered_user->created_at->setTimezone('America/Montevideo')->format("d-m-Y H:i:s")}}</p>
                                         </td>
                                         <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                             <p class="text-gray-900 whitespace-no-wrap"><a href="/admin/inscription/{{$registered_user->id}}">Ver</a></p>
