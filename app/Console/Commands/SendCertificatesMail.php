@@ -24,7 +24,7 @@ class SendCertificatesMail extends Command
      *
      * @var string
      */
-    protected $description = 'Resend inscription mail.';
+    protected $description = 'Send Email with certificates links.';
 
     /**
      * Create a new command instance.

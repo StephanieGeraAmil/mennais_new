@@ -26,7 +26,7 @@ class SendReminderMail extends Command
      *
      * @var string
      */
-    protected $description = 'Resend inscription mail.';
+    protected $description = 'Send reminder mail.';
 
     /**
      * Create a new command instance.

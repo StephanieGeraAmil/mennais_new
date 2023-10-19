@@ -20,7 +20,7 @@ class ResetMailCounter extends Command
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Reset last email counter, use only when proccess begin';
 
     /**
      * Create a new command instance.
