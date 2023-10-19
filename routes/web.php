@@ -79,33 +79,40 @@ Route::resource('/admin/user_data', UserDataController::class)->middleware('auth
 Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::middleware('auth')->group(function (){
+    Route::get('/mail/inscription', function(){
+        $inscription = Inscription::findOrFail(1);
+        return view('emails.facetoface')
+        ->with('inscription', $inscription);
+    });
 
-/* Route::get('/mail/inscription', function(){
-    $inscription = Inscription::findOrFail(1);
-    return view('emails.facetoface')
-    ->with('inscription', $inscription);
+    Route::get('/mail/group_inscription', function(){
+        $group_inscription = GroupInscription::findOrFail(1);
+        return view('emails.group_inscription')
+        ->with('group_inscription', $group_inscription);
+    });
+
+    Route::get('/mail/code_inscription', function(){
+        $code = Code::FindOrFail(1);
+        return view('emails.code_inscription')
+        ->with('code', $code);
+    });
+
+    Route::get('/admin/mail/inscription', function(){
+        $inscription = Inscription::findOrFail(1);
+        return view('emails.admin.inscription')
+        ->with('inscription', $inscription);
+    });
+
+    Route::get('/admin/mail/group_inscription', function(){
+        $group_inscription = GroupInscription::findOrFail(1);
+        return view('emails.admin.group_inscription')
+        ->with('group_inscription', $group_inscription);
+    });
+    
+    Route::get('/mail/reminder', function(){
+        $inscription = Inscription::findOrFail(1);
+        return view('emails.reminder')
+        ->with('inscription', $inscription);
+    }); 
 });
-
-Route::get('/mail/group_inscription', function(){
-    $group_inscription = GroupInscription::findOrFail(1);
-    return view('emails.group_inscription')
-    ->with('group_inscription', $group_inscription);
-});
-
-Route::get('/mail/code_inscription', function(){
-    $code = Code::FindOrFail(1);
-    return view('emails.code_inscription')
-    ->with('code', $code);
-});
-
-Route::get('/admin/mail/inscription', function(){
-    $inscription = Inscription::findOrFail(1);
-    return view('emails.admin.inscription')
-    ->with('inscription', $inscription);
-});
-
-Route::get('/admin/mail/group_inscription', function(){
-    $group_inscription = GroupInscription::findOrFail(1);
-    return view('emails.admin.group_inscription')
-    ->with('group_inscription', $group_inscription);
-}); */
