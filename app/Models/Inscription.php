@@ -40,11 +40,11 @@ class Inscription extends Model
     }
 
     public function url(){
-        return "https://audec.org/attendance/".$this->id."/".$this->generateToken();
+        return env("APP_URL", "https://audec.org")."/attendance/".$this->id."/".$this->generateToken();
     }
 
     public function certificateUrl(){
-        return "https://audec.org/certificate/".$this->id."/".$this->generateToken();
+        return env("APP_URL", "https://audec.org")."/certificate/".$this->id."/".$this->generateToken();
     }
 
     public function validateToken($token){       

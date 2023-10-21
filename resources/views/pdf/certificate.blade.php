@@ -7,15 +7,15 @@
     <title>Document</title>
     <style>
         body{
-            background: url("{{ URL::asset('images') }}/proeducar_certificado_blco_c.jpg"); 
+            background: url("{{ URL::asset('images') }}/proeducar_certificado_blco_c.jpeg"); 
             background-size: 1024px 722px; 
             background-repeat: no-repeat;
         }
     </style>
 </head>
 <body style="width: 1024px; font-size:24px; font-family:'Open Sans',sans-serif"; >
-    <div style="width:934px; margin-top:260px; text-align:right">
-        Montevideo, Viernes 30 de septiembre de 2022
+    <div style="width:934px; margin-top:200px; text-align:right">
+        Montevideo, miércoles 25 de octubre de 2023
         </div>
     <div style="margin-left:80px; margin-top:49px">
         Se certifica que:
@@ -24,7 +24,8 @@
         {{$name}}, C.I.: {{$document}} 
     </div>
     <div style="width:904px;margin-left:60px; margin-top:10px">
-        Ha participado del {{env('EVENT_NAME')}}, en calidad de asistente, @if($singular_day)el día @else los días @endif {{$date}}.
+        Ha participado de los encuentros {{env('EVENT_NAME')}}, liderados por Melina Furman y organizados por AUDEC.<BR/>
+        Dichos encuentros fueron realizados el 2 de agosto y el 25 de octubre, con una duración de 2 horas y media cada uno.
     </div>
 </body>
 </html>
