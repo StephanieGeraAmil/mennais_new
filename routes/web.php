@@ -114,5 +114,11 @@ Route::middleware('auth')->group(function (){
         $inscription = Inscription::findOrFail(1);
         return view('emails.reminder')
         ->with('inscription', $inscription);
-    }); 
+    });
+    
+    Route::get('/mail/recovery_certificate', function(){
+        $inscription = Inscription::findOrFail(1);
+        return view('emails.recoverycertificate')
+        ->with('inscription', $inscription);
+    });
 });

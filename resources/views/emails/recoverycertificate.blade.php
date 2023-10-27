@@ -1,17 +1,14 @@
-<p>Hola {{$inscription->userData->name}} {{$inscription->userData->lastname}},</p>
+<p>Hola {{$inscription->userData->name}} {{$inscription->userData->lastname}}, Agradecemos su participación en los encuentros LA TRANSFORMACIÓN EDUCATIVA EN ACCIÓN con Melina Furman.</p>
 <p>
-    Gracias por asistir a {{env('EVENT_NAME')}}.<BR/>
-    En el siguiente link podrá descargar su certificado de asistencia: {!!$inscription->certificateUrl()!!}
+    En este enlace encontrará la grabación de la segunda sesión: <a href="https://www.youtube.com/watch?v=dOBDNueFvZg">https://www.youtube.com/watch?v=dOBDNueFvZg</a>
 </p>
 <p>
-    Le solicitamos completar este breve formulario de evaluación, con el objetivo de seguir mejorando y acercando propuestas de valor.<BR/>
-    COMPLETAR AQUÍ:  <a href="https://forms.gle/RZUTkgc1d3aTJemR7" target="_blank">https://forms.gle/RZUTkgc1d3aTJemR7</a>
+    En el siguiente enlace puede descargarse su  certificado de asistencia: <a href="{!!$inscription->certificateUrl()!!}">{!!$inscription->certificateUrl()!!}</a>
 </p>
 <p>
-    Saludos,<BR/>
-    AUDEC
+    Cordiales saludos;
 </p>
-
-
-
-
+<p>
+    Equipo de AUDEC<BR/>
+    Asociación Uruguaya de Educación Católica
+</p>
