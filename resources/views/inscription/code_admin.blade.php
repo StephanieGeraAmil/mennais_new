@@ -55,9 +55,8 @@ INSCRIPCIÓN GRUPAL
         <div class="u-form-group u-form-group-11">
     <label for="text-c55e" class="u-form-control-hidden u-label"></label>
     <select id="type" name="type" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
-      <option value="presencial">Presencial</option>
-      <option value="remoto">Remoto</option>
-      <option value="hibrido">ambas</option>
+      <option value="virtual">Virtual</option>
+      <option value="hibrido">Hibrido</option>
     </select>
   </div>
         <div class="u-align-right u-form-group u-form-submit">                                                    
@@ -68,7 +67,7 @@ INSCRIPCIÓN GRUPAL
 @endsection
 @section('form')
 <div class="u-container-layout u-valign-top u-container-layout-2" style="min-height: 460px;background-color:#ffffff80;margin-top:65px">
-    <h5 class="u-text u-text-custom-color-2 u-text-default u-text-2">Invitaciones enviadas:</BR/>{{$group_inscription->usedPresencialCodes()}}<BR/>{{$group_inscription->usedRemoteCodes()}}<BR/>{{$group_inscription->usedHybridCodes()}}</h5>
+    <h5 class="u-text u-text-custom-color-2 u-text-default u-text-2">Invitaciones enviadas:</BR/>{{$group_inscription->usedRemoteCodes()}}<BR/>{{$group_inscription->usedHybridCodes()}}</h5>
     <div class="u-expanded-width u-table u-table-responsive u-table-2">
         <div style="width: 100%;border-bottom: 1px solid #D3D3D3;padding: 3px;"></div>
         <TABLE>

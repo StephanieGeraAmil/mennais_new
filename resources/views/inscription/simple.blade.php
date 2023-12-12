@@ -32,6 +32,8 @@ Inscripción Indivudual
             @enderror
           @error('email')  El campo email no es correcto.<br/>  @enderror
           @error('phone') El campo teléfono no es correcto.<br/> @enderror
+          @error('extra.place') Debe seleccionar el Origen.<br/> @enderror
+          @error('type') Debe seleccionar la modalidad.<br/> @enderror
           @error('institution_name') El campo institución no es correcto.<br/> @enderror
           @error('institution_type') El campo tipo de institución no es correcto.<br/> @enderror
           @error('city') El campo ciudad no es correcto.<br/> @enderror
@@ -75,6 +77,7 @@ Por favor, complete el formulario con sus datos.
   <div class="u-form-group u-form-group-11">
     <label for="text-c55e" class="u-form-control-hidden u-label"></label>
     <select id="place" name="extra[place]" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
+      <option value="">Origen</option>
       <option value="montevideo">Montevideo</option>
       <option value="interior">Interior</option>
     </select>
@@ -82,9 +85,9 @@ Por favor, complete el formulario con sus datos.
   <div class="u-form-group u-form-group-11">
     <label for="text-c55e" class="u-form-control-hidden u-label"></label>
     <select id="type" name="type" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
-      <option value="presencial">Presencial</option>
-      <option value="remoto">Remoto</option>
-      <option value="ambas">ambas</option>
+      <option value="">Modalidad </option>
+      <option value="virtual">Parcial</option>
+      <option value="hybrid">Completa</option>
     </select>
   </div>
   <div class="u-form-group u-form-group-11">
