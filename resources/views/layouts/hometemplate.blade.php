@@ -15,23 +15,6 @@ El docente como protagonista del cambio">
     <link rel="icon" href="images/favicon1.png">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
@@ -45,7 +28,7 @@ El docente como protagonista del cambio">
     <meta property="og:type" content="website">
   <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
   <body data-home-page="Inicio.html" data-home-page-title="Inicio" data-path-to-root="./" data-include-products="false" class="u-body u-stick-footer u-xl-mode" data-lang="es"> 
-    <section class="u-align-center u-clearfix u-gradient u-section-1" id="sec-d247">
+  <section class="u-align-center u-clearfix u-gradient u-section-1" id="sec-d247">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="data-layout-selected u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
           <div class="u-gutter-0 u-layout">
@@ -421,9 +404,9 @@ Laura Pérez</b>
                 <div class="u-container-layout u-valign-middle-sm u-valign-middle-xl u-container-layout-1">
                   <div class="u-border-2 u-border-palette-1-light-1 u-container-style u-expanded-width u-group u-palette-2-light-3 u-radius-14 u-shape-round u-group-1">
                     <div class="u-container-layout u-container-layout-2">
-                      <h6 class="u-text u-text-default u-text-1" data-lang-es="Sample Headline">Colegio Santo Domin<span style="font-weight: 700;"></span>go<span style="font-weight: 700;"></span>
+                      <h6 class="u-text u-text-default u-text-1" data-lang-es="Sample Headline"> Auditorio Nacional Adela Reta - SODRE<span style="font-weight: 700;"></span>
                       </h6>
-                      <p class="u-text u-text-2" data-lang-es="Sample text. Click to select the Text Element."> Av.Gral Rivera 2257,&nbsp;<br>11200 Montevideo,&nbsp;<br>Departamento de Montevideo,&nbsp;<br>Uruguay
+                      <p class="u-text u-text-2" data-lang-es="Sample text. Click to select the Text Element."> Andes esq. Mercedes<br>Montevideo
                       </p>
                     </div>
                   </div>
@@ -433,7 +416,7 @@ Laura Pérez</b>
                 <div class="u-container-layout u-valign-bottom-lg u-valign-bottom-md u-valign-bottom-xl u-container-layout-3">
                   <div class="u-expanded-width u-grey-light-2 u-map u-map-1">
                     <div class="embed-responsive">
-                      <iframe class="embed-responsive-item" src="https://maps.google.com/maps?output=embed&amp;q=Av.Gral%20Rivera%202257%2C%2011200%20Montevideo%2C%20Departamento%20de%20Montevideo%2C%20Uruguay&amp;z=17&amp;t=m" data-map="JTdCJTIycG9zaXRpb25UeXBlJTIyJTNBJTIybWFwLWFkZHJlc3MlMjIlMkMlMjJhZGRyZXNzJTIyJTNBJTIyQXYuR3JhbCUyMFJpdmVyYSUyMDIyNTclMkMlMjAxMTIwMCUyME1vbnRldmlkZW8lMkMlMjBEZXBhcnRhbWVudG8lMjBkZSUyME1vbnRldmlkZW8lMkMlMjBVcnVndWF5JTIyJTJDJTIyem9vbSUyMiUzQTE3JTJDJTIydHlwZUlkJTIyJTNBJTIycm9hZCUyMiUyQyUyMmxhbmclMjIlM0FudWxsJTJDJTIyYXBpS2V5JTIyJTNBbnVsbCUyQyUyMm1hcmtlcnMlMjIlM0ElNUIlNUQlN0Q="></iframe>
+                      <iframe class="embed-responsive-item" src="https://maps.google.com/maps?output=embed&amp;q=Andes%201464%2C%2011100%20Montevideo%2C%20Departamento%20de%20Montevideo&amp;z=18&amp;t=m" data-map="JTdCJTIycG9zaXRpb25UeXBlJTIyJTNBJTIybWFwLWFkZHJlc3MlMjIlMkMlMjJhZGRyZXNzJTIyJTNBJTIyQW5kZXMlMjAxNDY0JTJDJTIwMTExMDAlMjBNb250ZXZpZGVvJTJDJTIwRGVwYXJ0YW1lbnRvJTIwZGUlMjBNb250ZXZpZGVvJTIyJTJDJTIyem9vbSUyMiUzQTE4JTJDJTIydHlwZUlkJTIyJTNBJTIycm9hZCUyMiUyQyUyMmxhbmclMjIlM0FudWxsJTJDJTIyYXBpS2V5JTIyJTNBbnVsbCUyQyUyMm1hcmtlcnMlMjIlM0ElNUIlNUQlN0Q="></iframe>
                     </div>
                   </div>
                 </div>
@@ -519,6 +502,6 @@ Laura Pérez</b>
           <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-white u-btn-1" data-href="https://isf.uy/"><span class="u-file-icon u-icon u-text-white u-icon-1"><img src="images/7199452-c2e758c2.png" alt=""></span>&nbsp;ISF.uy
           </a>
         </p>
-      </div></footer>
-  
-</body></html>
+      </div></footer>  
+  </body>
+  </html>
