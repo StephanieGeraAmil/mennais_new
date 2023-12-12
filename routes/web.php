@@ -61,6 +61,7 @@ Route::post('/code/{id}/delete',[GroupInscriptionController::class,'deleteCode']
 
 /** Acreditación */
 Route::get('/attendance/{inscription_id}/{token}', [InscriptionController::class, 'attendance']);
+Route::get('/attendance_presencial/{inscription_id}/{token}', [InscriptionController::class, 'presencialAttendance']);
 
 /** Certificados */
 Route::get('/inscription/certificateRecoveryMail', [InscriptionController::class,'certificateRecovery']);

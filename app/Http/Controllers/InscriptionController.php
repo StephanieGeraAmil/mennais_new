@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Enums\InscriptionTypeEnum;
 use App\Http\Requests\SendInscriptionRequest;
 use App\Mail\RecoveryCertificateMail;
 use App\Mail\SendInscriptionCodeMail;
@@ -188,21 +189,16 @@ class InscriptionController extends Controller
     public function attendance(int $inscription_id, $token){
         
         $inscription = Inscription::find($inscription_id); 
-        if($inscription === null){
+        
+        $returned = Arr::where(explode(",",env("EVENTDATES","2023-12-12")),function($value){
+            return Carbon::parse($value)->isToday();
+        });
+
+        if($inscription === null || empty($returned)){
             return redirect('/');
         }
-        $is_valid_date = false;
-        foreach(["2023-08-02","2023-10-25"] as $ev_date){
-            $date = Carbon::parse($ev_date);
-            if($date->isToday()){
-                $is_valid_date = true;
-                break;
-            }
-        }
-        if(!$is_valid_date){
-            return redirect('/');
-        }
-        //if($inscription->validateToken($token)){
+
+        if($inscription->validateToken($token)){
             try {                
                 $attendance = Attendance::create([
                     'inscription_id'=>$inscription->id,
@@ -214,9 +210,42 @@ class InscriptionController extends Controller
             }
             
             return view('welcome')->with('zoom_link', env('ZOOMLINK_'.Carbon::now()->format('Ymd'), "https://us02web.zoom.us/j/82435816542?pwd=Q2F1cVdZMi96OGl1Q3lidlkzSTlLdz09"));
-        /* }else{            
+        }else{            
             abort(403);
-        } */
+        }
+    }
+
+
+    public function presencialAttendance(int $inscription_id, $token){
+        
+        $inscription = Inscription::find($inscription_id); 
+        
+        $returned = Arr::where(explode(",",env("EVENTDATES","2023-12-12")),function($value){
+            return Carbon::parse($value)->isToday();
+        });
+
+        if($inscription === null || empty($returned)){
+            return redirect('/');
+        }
+        if($inscription->type !== InscriptionTypeEnum::HIBRIDO){
+            return view('errorPresencialInscrption')->with('userData', $inscription->userData);
+        }
+
+        if($inscription->validateToken($token)){
+            try {                
+                Attendance::create([
+                    'inscription_id'=>$inscription->id,
+                    'date'=>Carbon::now(),
+                    'user_id'=>0
+                ]);            
+            } catch (\Throwable $th) {
+                
+            }
+            
+            return view('welcomePresencial')->with('userData', $inscription->userData);
+        }else{            
+            abort(403);
+        }
     }
     
     

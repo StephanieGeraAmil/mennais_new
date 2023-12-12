@@ -24,7 +24,7 @@ class GroupInscriptionController extends Controller
     
     public function groupInscriptionStore(GroupInscriptionRequest $request)
     {
-        $validated_data = $request->validated();
+        $validated_data = $request->all();
         /**
         * Create Payment
         */
@@ -124,6 +124,7 @@ class GroupInscriptionController extends Controller
                 'code'=>$code,
                 'inscription_id'=>0,
                 'status'=>0,
+                'type'=>$old_code->type,
                 'email'=>""
             ]);
             $old_code->delete();

@@ -30,7 +30,9 @@ transformación Educativa">
   <meta data-intl-tel-input-cdn-path="intlTelInput/">
 
 </head>
-  <body class="u-body u-overlap u-xl-mode" data-lang="es"><header class="u-clearfix u-header u-palette-1-dark-1 u-sticky u-sticky-387b u-header" id="sec-055d"><div class="u-clearfix u-sheet u-sheet-1">
+  <body class="u-body u-overlap u-xl-mode" data-lang="es">
+    <header class="u-clearfix u-header u-palette-1-dark-1 u-sticky u-sticky-387b u-header" id="sec-055d">
+      <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-group-elements u-group-elements-1">
           <h5 class="u-custom-font u-font-raleway u-text u-text-default u-text-1" data-lang-es="<a class=&quot;u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-3 u-block-control&quot; data-href=&quot;https://nicepage.com&quot; style=&quot;background-image: none; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot; data-block=&quot;552&quot; data-lang-es=&quot;{&amp;quot;content&amp;quot;:&amp;quot;PROEDUCAR XXXII&amp;quot;}&quot;>PROEDUCAR XXXII</a>">
             <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-2 u-btn-1" data-href="https://nicepage.com" data-lang-es="{&quot;content&quot;:&quot;PROEDUCAR XXXII&quot;}">PROEDUCAR XXXII</a>
@@ -43,13 +45,9 @@ transformación Educativa">
         <h3 class="u-align-center u-text u-text-body-alt-color u-text-1">BIENVENIDO</h3>
         <div class="u-align-center u-border-2 u-border-palette-1-light-1 u-container-style u-expanded-width-xs u-group u-opacity u-opacity-60 u-radius-22 u-shape-round u-white u-group-1">
           <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-top-xs u-container-layout-1">
-            <p class="u-text u-text-2">Gracias por participar de PROEDUCAR XXXII.<br>
-              <br>Será redirigido al zoom del evento en unos segundos.&nbsp;Si no es redireccionado automáticamente, presione el botón a continuación.
+            <p class="u-text u-text-2">{{$userData->name}}<BR/>Gracias por participar de PROEDUCAR XXXII.<br>              
             </p>
           </div>
-        </div>
-        <a href="{{$zoom_link}}" class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-2 u-btn u-button-style u-hover-palette-1-dark-1 u-palette-1-light-2 u-btn-1" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">Ingresar a Zoom</a>
-        </div>
     </section>
     <style class="u-overlap-style">.u-overlap:not(.u-sticky-scroll) .u-header {
 background-color: #756c90 !important
@@ -64,8 +62,4 @@ background-color: #756c90 !important
         </p>
       </div>
     </footer>
-      <script type="application/javascript">
-      window.open("{{$zoom_link}}", '_blank');
-        
-        </script> 
 </body></html>
