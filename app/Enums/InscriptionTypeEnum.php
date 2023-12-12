@@ -9,4 +9,13 @@ enum InscriptionTypeEnum: string
     case REMOTO = "virtual";
     case HIBRIDO = "hibrido";
 
+    public function text(){
+        return match($this){
+            Self::PRESENCIAL => "presencial",
+            Self::REMOTO => "Parcial",
+            Self::HIBRIDO => "Completo",
+        };
+    }
+
+
 }

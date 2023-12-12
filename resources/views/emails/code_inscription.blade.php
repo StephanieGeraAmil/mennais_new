@@ -1,5 +1,5 @@
 <p>¡Hola!</p>
-<p>{{$code->groupInscription->name}}lo ha invitado al PROEDUCAR FEBRERO 2024
+<p>{{$code->groupInscription->name}}  lo ha invitado a participar en su modalidad {{$code->type->text()}} de PROEDUCAR FEBRERO 2024
 </p>
 <p>
     Para que su inscripción quede activada, es indispensable que complete sus datos aquí:

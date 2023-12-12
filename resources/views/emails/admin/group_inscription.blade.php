@@ -20,9 +20,13 @@ Se ha realizado una nueva Invitación grupal:
         <td>{{$group_inscription->email}}</td>
     </tr>
     <tr>
-        <td>Cantidad de Cupos</td>
-        <td>{{$group_inscription->quantity}}</td>
+        <td>Cantidad de Cupos Parcial</td>
+        <td>{{$group_inscription->quantity_remote}}</td>
     </tr>
+    <tr>
+        <td>Cantidad de Cupos Parcial</td>
+        <td>{{$group_inscription->quantity_hybrid}}</td>
+    </tr>    
     <tr>
         <td>Monto depositado</td>
         <td>{{$group_inscription->payment->amount_deposited}}</td>
