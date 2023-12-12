@@ -1,7 +1,10 @@
-<p>Hola {{$code->groupInscription->name}} lo ha invitado a {{env('EVENT_NAME', "La Transformación Educativa en acción")}}
+<p>¡Hola!</p>
+<p>{{$code->groupInscription->name}}lo ha invitado al PROEDUCAR FEBRERO 2024
 </p>
 <p>
-    Para completar su inscripción y recibir el enlace de acceso, por favor siga el siguiente link:
+    Para que su inscripción quede activada, es indispensable que complete sus datos aquí:
+</p>
+<p>
     <a href="{!!$code->getUrl()!!}">{!!$code->getUrl()!!}</a><BR/>
 </p>
 <p>

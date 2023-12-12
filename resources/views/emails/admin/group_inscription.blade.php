@@ -1,5 +1,5 @@
 <p>
-Se ha realizado una nueva inscripción grupal:
+Se ha realizado una nueva Invitación grupal:
 </p>
 <p>
 <table>

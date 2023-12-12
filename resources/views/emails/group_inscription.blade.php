@@ -1,4 +1,4 @@
-<p>Gracias {{$group_inscription->name}} por realizar una inscripción grupal al evento {{env('EVENT_NAME', "La Transformación Educativa en acción")}}.</p>
+<p>Gracias {{$group_inscription->name}} por realizar una Invitación grupal al evento {{env('EVENT_NAME', "La Transformación Educativa en acción")}}.</p>
 <p>
     A cada uno de sus invitados le llegará por mail indicaciones para completar su inscripción. Es indispensable que lo hagan para que reciban link de conexión.
 </p>

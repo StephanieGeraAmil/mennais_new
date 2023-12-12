@@ -39,7 +39,7 @@
                             <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/simple_inscription" style="padding: 10px 20px;">Inscripción Simple</a>
                         </li>
                         <li class="u-nav-item">
-                            <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/group_inscription" style="padding: 10px 20px;">Inscripción Grupal</a>
+                            <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/group_inscription" style="padding: 10px 20px;">Invitación Grupal</a>
                         </li>
                     </ul>
                 </div>        

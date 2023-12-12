@@ -45,6 +45,10 @@ class Inscription extends Model
         return env("APP_URL", "https://audec.org")."/attendance/".$this->id."/".$this->generateToken();
     }
 
+    public function qrUrl(){
+        return env("APP_URL", "https://audec.org")."/attendance_presencial/".$this->id."/".$this->generateToken();
+    }
+
     public function certificateUrl(){
         return env("APP_URL", "https://audec.org")."/certificate/".$this->id."/".$this->generateToken();
     }

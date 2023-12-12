@@ -1,6 +1,6 @@
 @extends('layouts.formtemplate')
 @section('title')
-Inscripción Grupal
+Invitación Grupal
 @endsection
 @section('custom_css')
 <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
@@ -35,7 +35,7 @@ Inscripción Grupal
 @endif 
 @endsection
 @section('subtitle')
-INSCRIPCIÓN GRUPAL
+INVITACIÓN GRUPAL
 @endsection
 @section('left-text-box')
 <p class="u-text">

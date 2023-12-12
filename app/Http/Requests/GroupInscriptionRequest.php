@@ -20,7 +20,6 @@ class GroupInscriptionRequest extends FormRequest
             'phone' => 'required|string|max:255',
             'extra.institution' => 'required|string|max:255',            
             'city' => 'required|string|max:255',
-            'quantity_insc' => 'required|integer',
             'quantity_insc_remote' => 'required|integer',
             'quantity_insc_hybrid' => 'required|integer',
             'amount' => 'required|integer',

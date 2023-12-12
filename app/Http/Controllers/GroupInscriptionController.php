@@ -48,7 +48,7 @@ class GroupInscriptionController extends Controller
             'name'=>$validated_data['name'],
             'email'=>$validated_data['email'],
             'phone'=>$validated_data['phone'],
-            'quantity'=>$validated_data['quantity_insc'],
+            'quantity'=>Arr::get($validated_data, 'quantity_insc', 0),
             'quantity_remote'=>Arr::get($validated_data, 'quantity_insc_remote', 0),
             'quantity_hybrid'=>Arr::get($validated_data, 'quantity_insc_hybrid',0),
             'institution'=>$validated_data['extra']['institution'] ?? "",
@@ -70,7 +70,7 @@ class GroupInscriptionController extends Controller
             'type'=>InscriptionTypeEnum::PRESENCIAL,
             'email'=>""
         ];
-        for ($i=0; $i < $validated_data['quantity_insc']; $i++) { 
+        for ($i=0; $i < Arr::get($validated_data, 'quantity_insc',0); $i++) { 
             $arrayCode['code']=$this->codeGenerator($i);
             Code::create($arrayCode);
         }

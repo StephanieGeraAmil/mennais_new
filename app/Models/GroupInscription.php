@@ -21,8 +21,7 @@ class GroupInscription extends Model
         'phone',
         'quantity',
         'quantity_remote',
-        'quantity_hybrid
-        ',
+        'quantity_hybrid',
         'institution',
         'payment_id',
         'code'

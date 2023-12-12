@@ -31,7 +31,7 @@ class GroupInscriptionMail extends Mailable
      */
     public function build()
     {
-        return $this->subject(env('EVENT_NAME').' - Inscripción grupal')->view('emails.group_inscription')
+        return $this->subject(env('EVENT_NAME').' - Invitación grupal')->view('emails.group_inscription')
         ->with('group_inscription',$this->group_inscription);         
     }
 }
