@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\SendInscriptionRequest;
 use App\Mail\RecoveryCertificateMail;
 use App\Mail\SendInscriptionCodeMail;
 use App\Models\Attendance;
@@ -10,6 +11,7 @@ use App\Models\Inscription;
 use App\Models\UserData;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Redirect;
@@ -232,31 +234,21 @@ class InscriptionController extends Controller
 
 
 
-    public function sendInscription(Request $request){
-        $validated_data = $request->validate([
-            'email' => 'required|email|unique:codes',
-            'group_inscription_id' => 'required|integer'
-        ]); 
+    public function sendInscription(SendInscriptionRequest $request){
+        $validated_data = $request->validated(); 
         $group_inscription = GroupInscription::findOrFail($validated_data['group_inscription_id']);
-        $find_code_available = false;
-        foreach($group_inscription->codes as $code){
-            if(!$find_code_available){
-                if($code->status == 0){
-                    $code->status = 1;
-                    $code->email = $validated_data['email'];
-                    $code->save();
-                    try {
-                        Mail::to($validated_data['email'])->send(new SendInscriptionCodeMail($code));                    
-                    } catch (\Throwable $th) {
-                        Log::error("InscriptionController::Email: ".$validated_data['email']."; ".env('ADMIN_EMAIL'));
-                    }
-                    $find_code_available = true;
-                }
-            }
-        }
-        if($find_code_available == false){
+        $code = $group_inscription->codes()->where('status', 0)->where("type",Arr::get($validated_data,'type'))->first();
+        if($code === null){
             return Redirect::back()->withErrors(['no_code' => 'No cuenta con códigos disponibles']);
         }
+        $code->status = 1;
+        $code->email = $validated_data['email'];
+        $code->save();
+        try {
+            Mail::to($validated_data['email'])->send(new SendInscriptionCodeMail($code));                    
+        } catch (\Throwable $th) {
+            Log::error("InscriptionController::Email: ".$validated_data['email']."; ".env('ADMIN_EMAIL'));
+        }         
         return redirect($group_inscription->getUrl());
     }
     

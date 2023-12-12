@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Enums\InscriptionTypeEnum;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -16,9 +17,11 @@ class Code extends Model
         'code',
         'inscription_id',
         'status',
+        'type'
     ];
 
-    
+    protected $casts = ["type"=>InscriptionTypeEnum::class];
+
     public function inscription(){
         return $this->belongsTo(Inscription::class);
     }

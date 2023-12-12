@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Enums\InscriptionTypeEnum;
 use App\Http\Requests\GroupInscriptionRequest;
 use App\Mail\AdminGroupInscriptionMail;
 use App\Mail\GroupInscriptionMail;
@@ -9,6 +10,7 @@ use App\Models\Code;
 use App\Models\GroupInscription;
 use App\Models\Payment;
 use Carbon\Carbon;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 
@@ -18,8 +20,8 @@ class GroupInscriptionController extends Controller
     {
         return view('inscription.group');
     }
-
-
+    
+    
     public function groupInscriptionStore(GroupInscriptionRequest $request)
     {
         $validated_data = $request->validated();
@@ -47,6 +49,8 @@ class GroupInscriptionController extends Controller
             'email'=>$validated_data['email'],
             'phone'=>$validated_data['phone'],
             'quantity'=>$validated_data['quantity_insc'],
+            'quantity_remote'=>Arr::get($validated_data, 'quantity_insc_remote', 0),
+            'quantity_hybrid'=>Arr::get($validated_data, 'quantity_insc_hybrid',0),
             'institution'=>$validated_data['extra']['institution'] ?? "",
             'payment_id'=>$payment->id,
             'code'=>$code_group_insc
@@ -55,19 +59,34 @@ class GroupInscriptionController extends Controller
         /**
         * Create Codes
         */
+        
         $codes = array();
+        $arrayCode = [
+            'group_inscription_id'=>$group_inscription->id,
+            'institution'=>$validated_data['extra']['institution']  ?? "",
+            'code'=>0,
+            'inscription_id'=>0,
+            'status'=>0,
+            'type'=>InscriptionTypeEnum::PRESENCIAL,
+            'email'=>""
+        ];
         for ($i=0; $i < $validated_data['quantity_insc']; $i++) { 
-            $code = $this->codeGenerator($i);
-            $i_code = Code::create([
-                'group_inscription_id'=>$group_inscription->id,
-                'institution'=>$validated_data['extra']['institution']  ?? "",
-                'code'=>$code,
-                'inscription_id'=>0,
-                'status'=>0,
-                'email'=>""
-            ]);
-            array_push($codes,$i_code);
+            $arrayCode['code']=$this->codeGenerator($i);
+            Code::create($arrayCode);
         }
+        
+        $arrayCode['type'] = InscriptionTypeEnum::REMOTO;
+        for($i=0; $i < Arr::get($validated_data, 'quantity_insc_remote', 0); $i++){
+            $arrayCode['code']=$this->codeGenerator($i);
+            Code::create($arrayCode);
+        }
+
+        $arrayCode['type'] = InscriptionTypeEnum::HIBRIDO;
+        for($i=0; $i < Arr::get($validated_data, 'quantity_insc_hybrid', 0); $i++){
+            $arrayCode['code']=$this->codeGenerator($i);
+            Code::create($arrayCode);
+        }
+        
         try {
             Mail::to($group_inscription->email)->send(new GroupInscriptionMail($group_inscription));
             session()->flash('msg', 'Inscripción realizada con exito!!!');
@@ -84,8 +103,8 @@ class GroupInscriptionController extends Controller
         }        
         return redirect($group_inscription->getUrl());        
     }
-
-
+    
+    
     private function codeGenerator($i = 15){
         $rand_code = rand(10,100);
         $date = date('YmdHis');
@@ -93,8 +112,8 @@ class GroupInscriptionController extends Controller
         $code = md5($i.":sk".$value.":".$date);
         return substr($code, 0, 8); 
     }
-
-
+    
+    
     public function deleteCode($id){
         $old_code = Code::findOrFail($id);
         $group_inscription = $old_code->groupInscription;

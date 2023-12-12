@@ -8,6 +8,7 @@ use App\Mail\FacetofaceInscriptionMail;
 use App\Models\Code;
 use App\Models\Inscription;
 use App\Models\UserData;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 
@@ -39,8 +40,6 @@ class CodeInscriptionController extends Controller
         $code = Code::findOrFail($validated_data['code']);
         $group_inscription = $code->groupInscription;
         
-        
-        
         /**
         * Create Institution
         */
@@ -52,11 +51,9 @@ class CodeInscriptionController extends Controller
         */
         $user_data = UserData::create([
             'name'=>$validated_data['name'],
-            'lastname'=>$validated_data['lastname'],
             'document'=>$document,
             'email'=>$validated_data['email'],
-            'phone'=>$validated_data['phone'],
-            'extra'=>json_encode($validated_data['extra']) ?? json_encode([]),
+            'extra'=>Arr::get($validated_data, 'extra', []),
         ]);
         
         
@@ -66,7 +63,8 @@ class CodeInscriptionController extends Controller
         $inscription = Inscription::create([
             'user_data_id'=>$user_data->id,
             'payment_id'=>$group_inscription->payment_id,
-            'status'=>1
+            'status'=>1,
+            'type'=>$code->type
         ]);
 
         $code->status = 2;

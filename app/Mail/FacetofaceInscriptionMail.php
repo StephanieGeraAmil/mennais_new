@@ -2,6 +2,7 @@
 
 namespace App\Mail;
 
+use App\Enums\InscriptionTypeEnum;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
@@ -30,7 +31,16 @@ class FacetofaceInscriptionMail extends Mailable
      */
     public function build()
     {
-        return $this->subject(env('EVENT_NAME').' - Confirmación de inscripción')->view('emails.facetoface')
-        ->with('inscription',$this->inscription);         
+        switch($this->inscription->type){
+            case InscriptionTypeEnum::PRESENCIAL:
+                return $this->subject(env('EVENT_NAME').' - Confirmación de inscripción')->view('emails.facetoface')
+                ->with('inscription',$this->inscription);
+            case InscriptionTypeEnum::REMOTO:
+                return $this->subject(env('EVENT_NAME').' - Confirmación de inscripción')->view('emails.remote')
+                ->with('inscription',$this->inscription);
+            case InscriptionTypeEnum::HIBRIDO:
+                return $this->subject(env('EVENT_NAME').' - Confirmación de inscripción')->view('emails.hybrid')
+                ->with('inscription',$this->inscription);
+        }
     }
 }
