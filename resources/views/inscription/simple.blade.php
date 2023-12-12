@@ -87,7 +87,7 @@ Por favor, complete el formulario con sus datos.
     <select id="type" name="type" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
       <option value="">Modalidad </option>
       <option value="virtual">Parcial</option>
-      <option value="hybrid">Completa</option>
+      <option value="hibrido">Completa</option>
     </select>
   </div>
   <div class="u-form-group u-form-group-11">
