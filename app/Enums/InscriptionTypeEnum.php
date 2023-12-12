@@ -17,5 +17,4 @@ enum InscriptionTypeEnum: string
         };
     }
 
-
 }

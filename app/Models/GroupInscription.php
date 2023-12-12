@@ -70,16 +70,16 @@ class GroupInscription extends Model
 
     public function usedPresencialCodes() : string
     {    
-        return ucfirst(InscriptionTypeEnum::PRESENCIAL->value) . " " .$this->codes->where('status',">",0)->where('type', InscriptionTypeEnum::PRESENCIAL)->count() ."/". $this->codes->where('type', InscriptionTypeEnum::PRESENCIAL)->count();        
+        return ucfirst(InscriptionTypeEnum::PRESENCIAL->text()) . " " .$this->codes->where('status',">",0)->where('type', InscriptionTypeEnum::PRESENCIAL)->count() ."/". $this->codes->where('type', InscriptionTypeEnum::PRESENCIAL)->count();        
     }
 
     public function usedRemoteCodes() : string
     {    
-        return ucfirst(InscriptionTypeEnum::REMOTO->value) . " " .$this->codes->where('status',">",0)->where('type', InscriptionTypeEnum::REMOTO)->count() ."/". $this->codes->where('type', InscriptionTypeEnum::REMOTO)->count();        
+        return ucfirst(InscriptionTypeEnum::REMOTO->text()) . " " .$this->codes->where('status',">",0)->where('type', InscriptionTypeEnum::REMOTO)->count() ."/". $this->codes->where('type', InscriptionTypeEnum::REMOTO)->count();        
     }
     public function usedHybridCodes() : string
     {    
-        return ucfirst(InscriptionTypeEnum::HIBRIDO->value). " " .$this->codes->where('status',">",0)->where('type', InscriptionTypeEnum::HIBRIDO)->count() ."/". $this->codes->where('type', InscriptionTypeEnum::HIBRIDO)->count();        
+        return ucfirst(InscriptionTypeEnum::HIBRIDO->text()). " " .$this->codes->where('status',">",0)->where('type', InscriptionTypeEnum::HIBRIDO)->count() ."/". $this->codes->where('type', InscriptionTypeEnum::HIBRIDO)->count();        
     }
 
 }

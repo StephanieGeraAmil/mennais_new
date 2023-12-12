@@ -78,16 +78,16 @@ Por favor, complete el formulario con sus datos.
     <label for="text-c55e" class="u-form-control-hidden u-label"></label>
     <select id="place" name="extra[place]" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
       <option value="">Origen</option>
-      <option value="montevideo">Montevideo</option>
-      <option value="interior">Interior</option>
+      <option value="montevideo" {{(old('extra.place') =="montevideo")?"Selected":""}}>Montevideo</option>
+      <option value="interior" {{(old('extra.place') =="interior")?"Selected":""}}>Interior</option>
     </select>
   </div>
   <div class="u-form-group u-form-group-11">
     <label for="text-c55e" class="u-form-control-hidden u-label"></label>
     <select id="type" name="type" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
       <option value="">Modalidad </option>
-      <option value="virtual">Parcial</option>
-      <option value="hibrido">Completa</option>
+      <option value="virtual" {{(old('type') =="virtual")?"Selected":""}}>Parcial</option>
+      <option value="hibrido" {{(old('type') =="hibrido")?"Selected":""}}>Completa</option>
     </select>
   </div>
   <div class="u-form-group u-form-group-11">
