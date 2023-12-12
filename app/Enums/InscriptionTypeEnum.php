@@ -6,7 +6,7 @@ enum InscriptionTypeEnum: string
 {
 
     case PRESENCIAL = "presencial";
-    case REMOTO = "remoto";
+    case REMOTO = "virtual";
     case HIBRIDO = "hibrido";
 
 }

@@ -82,9 +82,8 @@ Por favor, complete el formulario con sus datos.
   <div class="u-form-group u-form-group-11">
     <label for="text-c55e" class="u-form-control-hidden u-label"></label>
     <select id="type" name="type" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
-      <option value="presencial">Presencial</option>
-      <option value="remoto">Remoto</option>
-      <option value="ambas">ambas</option>
+      <option value="virtual">Virtual</option>
+      <option value="hybrid">Hibrido</option>
     </select>
   </div>
   <div class="u-form-group u-form-group-11">
