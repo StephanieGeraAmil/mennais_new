@@ -46,12 +46,20 @@ INSCRIPCIÓN GRUPAL
 @endsection
 @section('left-form')
 <div class="u-form u-form-1">
-    <form action="/send_inscripton" method="POST" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" enctype="multipart/form-data" style="padding: 0px;">
+    <form action="/send_inscripton" method="POST" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 0px;">
         @csrf
         <input type="hidden" name="group_inscription_id" value="{{$group_inscription->id}}">
         <div class="u-form-email u-form-group">                                                    
             <input type="email" placeholder="Email para enviar invitación" id="email-4c18" name="email" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" required="" value="{{old('email')}}">
         </div>
+        <div class="u-form-group u-form-group-11">
+    <label for="text-c55e" class="u-form-control-hidden u-label"></label>
+    <select id="type" name="type" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
+      <option value="presencial">Presencial</option>
+      <option value="remoto">Remoto</option>
+      <option value="hibrido">ambas</option>
+    </select>
+  </div>
         <div class="u-align-right u-form-group u-form-submit">                                                    
             <a onclick="$(this).closest('form').submit()" class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-1">Enviar</a>
         </div>
@@ -60,7 +68,7 @@ INSCRIPCIÓN GRUPAL
 @endsection
 @section('form')
 <div class="u-container-layout u-valign-top u-container-layout-2" style="min-height: 460px;background-color:#ffffff80;margin-top:65px">
-    <h5 class="u-text u-text-custom-color-2 u-text-default u-text-2">Invitaciones enviadas: {{$group_inscription->usedCodes()}} / Restantes: {{$group_inscription->codes->count() - $group_inscription->usedCodes() }}</h5>
+    <h5 class="u-text u-text-custom-color-2 u-text-default u-text-2">Invitaciones enviadas:</BR/>{{$group_inscription->usedPresencialCodes()}}<BR/>{{$group_inscription->usedRemoteCodes()}}<BR/>{{$group_inscription->usedHybridCodes()}}</h5>
     <div class="u-expanded-width u-table u-table-responsive u-table-2">
         <div style="width: 100%;border-bottom: 1px solid #D3D3D3;padding: 3px;"></div>
         <TABLE>
@@ -68,7 +76,7 @@ INSCRIPCIÓN GRUPAL
             @if ($code->status > 0)
             <TR>
                 <td style="width: 45px">@if ($code->status == 1) <i class="fa-solid fa-user-clock" style="color:#A9A9A9"></i> @else <i class="fa-solid fa-user-check" style="color:#00A36C "></i> @endif</td>
-                <td>{{$code->email}}</td>
+                <td>{{$code->email}} ({{$code->type->value}})</td>
                 <td>
                     <form action="/code/{{$code->id}}/delete" method="post" id="delete_{{$code->id}}">
                         @csrf

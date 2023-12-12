@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Enums\InscriptionTypeEnum;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -19,6 +20,9 @@ class GroupInscription extends Model
         'email',
         'phone',
         'quantity',
+        'quantity_remote',
+        'quantity_hybrid
+        ',
         'institution',
         'payment_id',
         'code'
@@ -60,6 +64,20 @@ class GroupInscription extends Model
             }
         }
         return $count;
+    }
+
+    public function usedPresencialCodes() : string
+    {    
+        return ucfirst(InscriptionTypeEnum::PRESENCIAL->value) . " " .$this->codes->where('status',">",0)->where('type', InscriptionTypeEnum::PRESENCIAL)->count() ."/". $this->codes->where('type', InscriptionTypeEnum::PRESENCIAL)->count();        
+    }
+
+    public function usedRemoteCodes() : string
+    {    
+        return ucfirst(InscriptionTypeEnum::REMOTO->value) . " " .$this->codes->where('status',">",0)->where('type', InscriptionTypeEnum::REMOTO)->count() ."/". $this->codes->where('type', InscriptionTypeEnum::REMOTO)->count();        
+    }
+    public function usedHybridCodes() : string
+    {    
+        return ucfirst(InscriptionTypeEnum::HIBRIDO->value). " " .$this->codes->where('status',">",0)->where('type', InscriptionTypeEnum::HIBRIDO)->count() ."/". $this->codes->where('type', InscriptionTypeEnum::HIBRIDO)->count();        
     }
 
 }

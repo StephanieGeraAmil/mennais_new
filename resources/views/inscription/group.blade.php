@@ -61,7 +61,13 @@ INSCRIPCIÓN GRUPAL
         <input type="text" placeholder="Ciudad" id="city-4c18" name="city" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" required="" value="{{old('city')}}">
     </div>
     <div class="u-form-group u-form-name">
-        <input type="number" placeholder="Cantidad a inscribir" min="0" step="1" pattern="\d*" id="quantity_insc-4c18" name="quantity_insc" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" required="" value="{{old('quantity_insc')}}">
+        <input type="number" placeholder="Cantidad a inscribir Presencial" min="0" step="1" pattern="\d*" id="quantity_insc-4c18" name="quantity_insc" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" required="" value="{{old('quantity_insc')??0}}">
+    </div>
+    <div class="u-form-group u-form-name">
+        <input type="number" placeholder="Cantidad a inscribir Remoto" min="0" step="1" pattern="\d*" id="quantity_insc_remote-4c18" name="quantity_insc_remote" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" required="" value="{{old('quantity_insc_remote')??0}}">
+    </div>
+    <div class="u-form-group u-form-name">
+        <input type="number" placeholder="Cantidad a inscribir Ambas" min="0" step="1" pattern="\d*" id="quantity_insc_hybrid-4c18" name="quantity_insc_hybrid" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" required="" value="{{old('quantity_insc_hybrid')??0}}">
     </div>
     <div class="u-form-group u-form-name">
         <input type="number" placeholder="Monto depositado" min="0" step="1" pattern="\d*" id="amount-4c18" name="amount" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" required="" value="{{old('amount')}}">

@@ -16,10 +16,8 @@ class CodeInscriptionRequest extends FormRequest
         
         return [
             'name' => 'required|string|max:255',
-            'lastname' => 'required|string|max:255',
             'document' => 'required|string|max:255|unique:user_data',
             'email' => 'required|email',
-            'phone' => 'required|string|max:255',
             'extra' => 'required|array',
             'code' => 'required|integer',
         ];

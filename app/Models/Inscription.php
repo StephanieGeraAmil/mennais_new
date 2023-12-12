@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Enums\InscriptionTypeEnum;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Hash;
@@ -18,10 +19,11 @@ class Inscription extends Model
     protected $fillable = [
         'user_data_id',
         'payment_id',
-        'status'
+        'status',
+        'type'
     ];
 
-
+    protected $casts = ["type"=>InscriptionTypeEnum::class];
 
     public function payment(){
         return $this->belongsTo(Payment::class);

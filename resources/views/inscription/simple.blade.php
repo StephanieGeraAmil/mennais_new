@@ -58,28 +58,20 @@ Por favor, complete el formulario con sus datos.
   @csrf
   <div class="u-form-group u-form-name">
     <label for="name-05a8" class="u-form-control-hidden u-label"></label>
-    <input type="text" placeholder="Nombre" id="name-05a8" name="name" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-1" required="" value="{{old('name')}}">
-  </div>
-  <div class="u-form-group u-form-group-2">
-    <label for="text-8cb6" class="u-form-control-hidden u-label"></label>
-    <input type="text" placeholder="Apellido" id="text-8cb6" name="lastname" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-2" value="{{old('lastname')}}">
-  </div>
-  <div class="u-form-group u-form-name u-form-group-3">
-    <label for="name-b2b6" class="u-form-control-hidden u-label"></label>
-    <input type="text" placeholder="Cédula de Identidad, sin puntos ni guiones (12345678)" id="name-b2b6" name="document" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-3" onblur="clean_document(this)" required="" value="{{old('document')}}">
+    <input type="text" placeholder="Nombre Completo" id="name-05a8" name="name" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-1" required="" value="{{old('name')}}">
   </div>
   <div class="u-form-email u-form-group">
     <label for="email-05a8" class="u-form-control-hidden u-label"></label>
     <input type="email" placeholder="email" id="email-05a8" name="email" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-4" required=""  value="{{old('email')}}">
   </div>
-  <div class="u-form-group u-form-phone u-form-group-5">
-    <label for="phone-bfdf" class="u-form-control-hidden u-label"></label>
-    <input type="tel" placeholder="Teléfono" id="phone-bfdf" name="phone" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-5" required=""  value="{{old('phone')}}">
+  <div class="u-form-group u-form-name u-form-group-3">
+    <label for="name-b2b6" class="u-form-control-hidden u-label"></label>
+    <input type="text" placeholder="Cédula de Identidad, sin puntos ni guiones (12345678)" id="name-b2b6" name="document" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-3" onblur="clean_document(this)" required="" value="{{old('document')}}">
   </div>
   <div class="u-form-group u-form-group-6">
     <label for="text-59c6" class="u-form-control-hidden u-label"></label>
-    <input type="text" placeholder="Centro Educativo" id="text-59c6" name="extra[centro_educativo]" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-6"  value="{{old('extra.centro_educativo')}}">    
-  </div>  
+    <input type="text" placeholder="Institución" id="text-59c6" name="extra[centro_educativo]" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-6"  value="{{old('extra.centro_educativo')}}">    
+  </div> 
   <div class="u-form-group u-form-group-11">
     <label for="text-c55e" class="u-form-control-hidden u-label"></label>
     <select id="place" name="extra[place]" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
@@ -89,9 +81,10 @@ Por favor, complete el formulario con sus datos.
   </div>
   <div class="u-form-group u-form-group-11">
     <label for="text-c55e" class="u-form-control-hidden u-label"></label>
-    <select id="place" name="extra[role]" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
-      <option value="docente">Docente</option>
-      <option value="gestión">Gestión</option>
+    <select id="type" name="type" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
+      <option value="presencial">Presencial</option>
+      <option value="remoto">Remoto</option>
+      <option value="ambas">ambas</option>
     </select>
   </div>
   <div class="u-form-group u-form-group-11">

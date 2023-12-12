@@ -2,7 +2,9 @@
 
 namespace App\Http\Requests;
 
+use App\Enums\InscriptionTypeEnum;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rules\Enum;
 
 class SimpleInscriptionRequest extends FormRequest
 {
@@ -13,15 +15,22 @@ class SimpleInscriptionRequest extends FormRequest
     */
     public function rules()
     {
-        
         return [
             'name' => 'required|string|max:255',
-            'lastname' => 'required|string|max:255',
             'document' => 'required|string|max:255|unique:user_data',
             'email' => 'required|email',
-            'phone' => 'required|string|max:255',
             'payment_file'=>'required|file|mimes:jpg,png,jpeg,gif,svg,pdf',
             'extra' => 'required|array',
+            'type'=> ['required', new Enum(InscriptionTypeEnum::class) ]
         ];
     }
+    
+    public function prepareForValidation()
+    {
+        $this->merge([
+            'document' => str_replace([',','-','.',' '], '',$this->document),
+        ]);
+    }
+    
+    
 }

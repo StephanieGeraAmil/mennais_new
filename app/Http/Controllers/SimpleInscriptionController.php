@@ -6,11 +6,10 @@ use App\Http\Requests\SimpleInscriptionRequest;
 use App\Mail\AdminInscriptionMail;
 use App\Mail\FacetofaceInscriptionMail;
 use App\Models\Inscription;
-use App\Models\Institution;
 use App\Models\Payment;
 use App\Models\UserData;
 use Carbon\Carbon;
-use Illuminate\Http\Request;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 
@@ -27,8 +26,7 @@ class SimpleInscriptionController extends Controller
     public function simpleInscriptionStore(SimpleInscriptionRequest $request)
     {
         $validated_data = $request->validated();
-        $document = str_replace([',','-','.',' '], '',$validated_data['document']);
-
+        
         $clean_name = preg_replace('/[^A-Za-z0-9\-]/', '_', $request->get('name'));
         $image_name = Carbon::now()->format('dmyHis')."_".$clean_name.".".$request->payment_file->extension();
         $request->payment_file->move(public_path('images'),$image_name);        
@@ -42,10 +40,8 @@ class SimpleInscriptionController extends Controller
         
         $user_data = UserData::create([
             'name'=>$validated_data['name'],
-            'lastname'=>$validated_data['lastname'],
-            'document'=>$document,
+            'document'=>Arr::get($validated_data, "document"),
             'email'=>$validated_data['email'],
-            'phone'=>$validated_data['phone'],
             'extra'=>json_encode($validated_data['extra']) ?? json_encode([]),
         ]);
         
@@ -56,7 +52,8 @@ class SimpleInscriptionController extends Controller
         $inscription = Inscription::create([
             'user_data_id'=>$user_data->id,
             'payment_id'=>$payment->id,
-            'status'=>1
+            'status'=>1,
+            'type'=>Arr::get($validated_data,"type")
         ]);
         try {
             Mail::to($user_data->email)->send(new FacetofaceInscriptionMail($inscription));   

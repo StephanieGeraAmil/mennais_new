@@ -16,12 +16,12 @@ class UserData extends Model
      */
     protected $fillable = [
         'name',
-        'lastname',
         'document',
         'email',
-        'phone',
         'extra',        
     ];
+
+    protected $casts = ['extra'=>'array'];
 
     public function inscription(){
         return $this->hasOne(Inscription::class);
