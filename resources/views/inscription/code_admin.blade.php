@@ -75,7 +75,7 @@ INVITACIÓN GRUPAL
             @if ($code->status > 0)
             <TR>
                 <td style="width: 45px">@if ($code->status == 1) <i class="fa-solid fa-user-clock" style="color:#A9A9A9"></i> @else <i class="fa-solid fa-user-check" style="color:#00A36C "></i> @endif</td>
-                <td>{{$code->email}} ({{$code->type->value}})</td>
+                <td>{{$code->email}} ({{$code->type->text()}})</td>
                 <td>
                     <form action="/code/{{$code->id}}/delete" method="post" id="delete_{{$code->id}}">
                         @csrf

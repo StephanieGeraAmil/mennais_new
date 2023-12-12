@@ -8,7 +8,7 @@ Hacia una innovación con sentido
 El docente como protagonista del cambio">
     <title>Inicio</title>
     <link rel="stylesheet" href="/css/nicepage.css" media="screen">
-<link rel="stylesheet" href="/css/inicio.css" media="screen">
+  <link rel="stylesheet" href="/css/inicio.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     
     <meta name="generator" content="isf.uy">
@@ -26,7 +26,8 @@ El docente como protagonista del cambio">
 Hacia una innovación con sentido
 El docente como protagonista del cambio">
     <meta property="og:type" content="website">
-  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+    <meta data-intl-tel-input-cdn-path="intlTelInput/">
+</head>
   <body data-home-page="Inicio.html" data-home-page-title="Inicio" data-path-to-root="./" data-include-products="false" class="u-body u-stick-footer u-xl-mode" data-lang="es"> 
   <section class="u-align-center u-clearfix u-gradient u-section-1" id="sec-d247">
       <div class="u-clearfix u-sheet u-sheet-1">
