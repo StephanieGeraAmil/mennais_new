@@ -16,8 +16,8 @@
             <td>{{$inscription->userData->email}}</td>
         </tr>
         <tr>
-            <td>Teléfono</td>
-            <td>{{$inscription->userData->phone}}</td>
+            <td>Tipo</td>
+            <td>{{$inscription->type->text()}}</td>
         </tr>
         <tr>
             <td>Monto</td>

@@ -55,8 +55,8 @@ INVITACIÓN GRUPAL
         <div class="u-form-group u-form-group-11">
     <label for="text-c55e" class="u-form-control-hidden u-label"></label>
     <select id="type" name="type" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
-      <option value="virtual">Parcial</option>
-      <option value="hibrido">Completa</option>
+      <option value="virtual">{{App\Enums\InscriptionTypeEnum::REMOTO->text()}}</option>
+      <option value="hibrido">{{App\Enums\InscriptionTypeEnum::HIBRIDO->text()}}</option>
     </select>
   </div>
         <div class="u-align-right u-form-group u-form-submit">                                                    

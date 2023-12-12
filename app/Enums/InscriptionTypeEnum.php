@@ -13,7 +13,7 @@ enum InscriptionTypeEnum: string
         return match($this){
             Self::PRESENCIAL => "presencial",
             Self::REMOTO => "Parcial",
-            Self::HIBRIDO => "Completo",
+            Self::HIBRIDO => "Completa",
         };
     }
 

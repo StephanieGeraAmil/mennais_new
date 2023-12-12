@@ -9,7 +9,7 @@
     Congreso
     transformación Educativa">
     <meta name="description" content="La transformación educativa en acción es un evento organizado por AUDEC - Asociación Uruguaya de Educación Católica">
-    <title>Inscripción Indivudual</title>
+    <title>@yield('title')</title>
     <link rel="stylesheet" href="/css/nicepage.css" media="screen">
     <link rel="stylesheet" href="/css/inscripcion.css" media="screen">
     <script class="u-script" type="text/javascript" src="/js/jquery.js" defer=""></script>
