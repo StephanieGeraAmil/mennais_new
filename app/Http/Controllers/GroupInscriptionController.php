@@ -25,7 +25,6 @@ class GroupInscriptionController extends Controller
     public function groupInscriptionStore(GroupInscriptionRequest $request)
     {
         $validated_data = $request->validated();
-        
         /**
         * Create Payment
         */
@@ -51,7 +50,7 @@ class GroupInscriptionController extends Controller
             'quantity'=>Arr::get($validated_data, 'quantity_insc', 0),
             'quantity_remote'=>Arr::get($validated_data, 'quantity_insc_remote', 0),
             'quantity_hybrid'=>Arr::get($validated_data, 'quantity_insc_hybrid',0),
-            'institution'=>$validated_data['extra']['institution'] ?? "",
+            'institution'=>Arr::get($validated_data, 'extra.institution',""),
             'payment_id'=>$payment->id,
             'code'=>$code_group_insc
         ]);

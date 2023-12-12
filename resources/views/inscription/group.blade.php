@@ -23,8 +23,9 @@ Invitación Grupal
                     @error('name') El campo nombre no es correcto.<br/> @enderror
                     @error('email')  El campo email no es correcto.<br/>  @enderror
                     @error('phone') El campo teléfono no es correcto.<br/> @enderror
-                    @error('quantity_insc_remote')  El campo cantidad de inscripción Parcial no es correcto.<br/>  @enderror
-                    @error('quantity_insc_hybrid')  El campo cantidad de inscripción Completa no es correcto.<br/>  @enderror
+                    @error('quantity_insc_remote')  El campo cantidad de invitaciones Parcial no es correcto.<br/>  @enderror
+                    @error('quantity_insc_hybrid')  El campo cantidad de invitaciones Completa no es correcto.<br/>  @enderror
+                    @error('payment_file')  El comprobante de pago no es correcto.<br/>  @enderror
                     @error('code', 'payment_id') Hemos encontrado un error al procesar su solicitud. Por favor contacte a la administración.<br/> @enderror
                     @error('amount', 'payment_ref', 'payment_file') Hemos encontrado un error al procesar su solicitud. Por favor contacte a la administración.<br/> @enderror
                 </h5>                         
@@ -56,16 +57,16 @@ INVITACIÓN GRUPAL
         <input type="text" placeholder="Teléfono de quien inscribe" id="phone-4c18" name="phone" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" required="" value="{{old('phone')}}">
     </div>                                            
     <div class="u-form-group u-form-name">
-        <input type="text" placeholder="Institución" id="institution_name-4c18" name="extra[institution]" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" required="" value="{{old('institution_name')}}">
+        <input type="text" placeholder="Institución" id="institution_name-4c18" name="extra[institution]" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" required="" value="{{old('extra.institution')}}">
     </div>
     <div class="u-form-group u-form-name">
         <input type="text" placeholder="Ciudad" id="city-4c18" name="city" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" required="" value="{{old('city')}}">
     </div>
     <div class="u-form-group u-form-name">
-        <input type="number" placeholder="Cantidad a invitaciones Parciales" min="0" step="1" pattern="\d*" id="quantity_insc_remote-4c18" name="quantity_insc_remote" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" required="" value="{{old('quantity_insc_remote')??0}}">
+        <input type="number" placeholder="Cantidad a invitaciones Parciales" min="0" step="1" pattern="\d*" id="quantity_insc_remote-4c18" name="quantity_insc_remote" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" value="{{old('quantity_insc_remote')}}">
     </div>
     <div class="u-form-group u-form-name">
-        <input type="number" placeholder="Cantidad a invitaciones Completa" min="0" step="1" pattern="\d*" id="quantity_insc_hybrid-4c18" name="quantity_insc_hybrid" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" required="" value="{{old('quantity_insc_hybrid')??0}}">
+        <input type="number" placeholder="Cantidad a invitaciones Completa" min="0" step="1" pattern="\d*" id="quantity_insc_hybrid-4c18" name="quantity_insc_hybrid" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" value="{{old('quantity_insc_hybrid')}}">
     </div>
     <div class="u-form-group u-form-name">
         <input type="number" placeholder="Monto depositado" min="0" step="1" pattern="\d*" id="amount-4c18" name="amount" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" required="" value="{{old('amount')}}">

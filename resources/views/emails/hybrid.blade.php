@@ -1,6 +1,8 @@
 <p>Gracias {{$inscription->userData->name}} por inscribirse al PROEDUCAR - FEBRERO 2024</p>
 <p>
     Presentando el siguiente código QR podrá ingresar al evento.
+    </p>
+<p>
     <img src="{!!$message->embedData(QrCode::format('png')->generate($inscription->qrUrl()), 'QrCode.png', 'image/png')!!}">
 </p>
 <p>

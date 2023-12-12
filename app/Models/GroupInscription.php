@@ -65,6 +65,9 @@ class GroupInscription extends Model
         return $count;
     }
 
+
+    
+
     public function usedPresencialCodes() : string
     {    
         return ucfirst(InscriptionTypeEnum::PRESENCIAL->value) . " " .$this->codes->where('status',">",0)->where('type', InscriptionTypeEnum::PRESENCIAL)->count() ."/". $this->codes->where('type', InscriptionTypeEnum::PRESENCIAL)->count();        
