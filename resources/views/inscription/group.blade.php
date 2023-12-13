@@ -42,7 +42,8 @@ Invitación Grupal
 INVITACIÓN GRUPAL
 @endsection
 @section('left-text-box')
-<p class="u-text u-text-3">Por favor, complete y envíe el formulario con sus datos</p>
+<p class="u-text u-text-3">Por favor, complete y envíe el formulario con sus datos como responsable de la inscripción grupal.<BR/>
+En el siguiente paso le pediremos los datos de sus invitados.</p>
 @endsection
 @section('form')
 <form action="/store_group_inscription" method="POST" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" enctype="multipart/form-data" style="padding: 0px;">

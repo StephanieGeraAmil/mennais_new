@@ -39,9 +39,9 @@ INVITACIÓN GRUPAL
 @endsection
 @section('left-text-box')
 <p class="u-text">
-    Por favor ingrese el correo de las personas que desea invitar (UNO POR VEZ) y presione ENVIAR.<BR/><BR/>
-    De esta forma, cada invitado recibirá un mail para completar su inscripción con sus datos personales.<BR/><BR/>
-    Puede chequear si sus invitados completaron su inscripción volviendo a esta web a través del link que recibió en su correo.<BR/><BR/>
+Por favor ingrese el correo de las personas que desea invitar (UNO POR VEZ), marque en cada caso si es participación Completa o Parcial y presione ENVIAR.<BR/><BR/>
+De esta forma, cada invitado recibirá un mail para completar su inscripción con sus datos personales.<BR/><BR/>
+Puede chequear si sus invitados completaron su inscripción volviendo a esta web a través del link que recibió en su correo.<BR/><BR/>
 </p>
 @endsection
 @section('left-form')
