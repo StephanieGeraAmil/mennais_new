@@ -20,11 +20,11 @@ Se ha realizado una nueva Invitación grupal:
         <td>{{$group_inscription->email}}</td>
     </tr>
     <tr>
-        <td>Cantidad de Cupos Parcial</td>
+        <td>Cantidad de Cupos {{App\Enums\InscriptionTypeEnum::REMOTO->text()}}</td>
         <td>{{$group_inscription->quantity_remote}}</td>
     </tr>
     <tr>
-        <td>Cantidad de Cupos Parcial</td>
+        <td>Cantidad de Cupos {{App\Enums\InscriptionTypeEnum::HIBRIDO->text()}}</td>
         <td>{{$group_inscription->quantity_hybrid}}</td>
     </tr>    
     <tr>
