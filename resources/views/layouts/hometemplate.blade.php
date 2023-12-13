@@ -81,7 +81,7 @@ El docente como protagonista del cambio">
                   <span style="font-weight: 700;"></span>
                   <span style="font-weight: 400;"> Jornada Presencial<br>8/Feb 8:00hs
                   </span>
-                  <br>Colegio Santo Domingo
+                  <br>Lugar a confirmar
                 </h5>
               </div>
             </div>
@@ -111,7 +111,7 @@ El docente como protagonista del cambio">
                   <div class="u-container-layout u-valign-bottom u-container-layout-2">
                     <h3 class="u-custom-font u-font-raleway u-text u-text-palette-1-dark-2 u-text-1" data-lang-es="Sample Headline">Participación COMPLETA</h3>
                     <p class="u-text u-text-palette-1-dark-3 u-text-2" data-lang-es="Sample text. Click to select the Text Element.">Incluye la Jornada PRESENCIAL + 2 Sesiones VIRTUALES<br>
-                      <br>Socios AUDEC: $ 1.800<br>Socios - Grupo +5: $1.400 c/u<br>No Socios: $ 2.200
+                      <br>Socios AUDEC: $ 1.800<br>BONIFICACIÓN ESPECIAL PARA SOCIOS: Grupos de 5 o más: $1.400 c/u<br>No Socios: $ 2.200
                     </p>
                   </div>
                 </div>
@@ -303,7 +303,7 @@ Laura Pérez</b>
     </section>
     <section class="u-clearfix u-palette-1-dark-1 u-section-8" id="carousel_6000">
       <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
-        <h6 class="u-align-center u-custom-font u-font-raleway u-text u-text-1" data-lang-es="Sample Headline">JORNADA PRESENCIAL&nbsp;<br>8 de febrero, 2024<br>Colegio Santo Domingo
+        <h6 class="u-align-center u-custom-font u-font-raleway u-text u-text-1" data-lang-es="Sample Headline">JORNADA PRESENCIAL&nbsp;<br>8 de febrero, 2024<br>Lugar a confirmar
         </h6><span class="u-custom-item u-file-icon u-icon u-icon-circle u-text-palette-1-dark-2 u-white u-icon-1"><img src="images/3503656-8260a0ff.png" alt=""></span>
       </div>
     </section>
@@ -396,44 +396,13 @@ Laura Pérez</b>
         </div>
       </div>
     </section>
-    <section class="u-clearfix u-gradient u-section-11" id="sec-e17c">
-      <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-sheet-1">
-        <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
-          <div class="u-layout">
-            <div class="u-layout-row">
-              <div class="u-container-style u-layout-cell u-size-17-xl u-size-20-lg u-size-24-md u-size-24-sm u-size-24-xs u-layout-cell-1">
-                <div class="u-container-layout u-valign-middle-sm u-valign-middle-xl u-container-layout-1">
-                  <div class="u-border-2 u-border-palette-1-light-1 u-container-style u-expanded-width u-group u-palette-2-light-3 u-radius-14 u-shape-round u-group-1">
-                    <div class="u-container-layout u-container-layout-2">
-                      <h6 class="u-text u-text-default u-text-1" data-lang-es="Sample Headline">Colegio Santo Domin<span style="font-weight: 700;"></span>go<span style="font-weight: 700;"></span>
-                      </h6>
-                      <p class="u-text u-text-2" data-lang-es="Sample text. Click to select the Text Element."> Av.Gral Rivera 2257,&nbsp;<br>11200 Montevideo,&nbsp;<br>Departamento de Montevideo,&nbsp;<br>Uruguay
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="u-container-style u-layout-cell u-size-36-md u-size-36-sm u-size-36-xs u-size-40-lg u-size-43-xl u-layout-cell-2">
-                <div class="u-container-layout u-valign-bottom-lg u-valign-bottom-md u-valign-bottom-xl u-container-layout-3">
-                  <div class="u-expanded-width u-grey-light-2 u-map u-map-1">
-                    <div class="embed-responsive">
-                      <iframe class="embed-responsive-item" src="https://maps.google.com/maps?output=embed&amp;q=Av.Gral%20Rivera%202257%2C%2011200%20Montevideo%2C%20Departamento%20de%20Montevideo%2C%20Uruguay&amp;z=17&amp;t=m" data-map="JTdCJTIycG9zaXRpb25UeXBlJTIyJTNBJTIybWFwLWFkZHJlc3MlMjIlMkMlMjJhZGRyZXNzJTIyJTNBJTIyQXYuR3JhbCUyMFJpdmVyYSUyMDIyNTclMkMlMjAxMTIwMCUyME1vbnRldmlkZW8lMkMlMjBEZXBhcnRhbWVudG8lMjBkZSUyME1vbnRldmlkZW8lMkMlMjBVcnVndWF5JTIyJTJDJTIyem9vbSUyMiUzQTE3JTJDJTIydHlwZUlkJTIyJTNBJTIycm9hZCUyMiUyQyUyMmxhbmclMjIlM0FudWxsJTJDJTIyYXBpS2V5JTIyJTNBbnVsbCUyQyUyMm1hcmtlcnMlMjIlM0ElNUIlNUQlN0Q="></iframe>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="u-clearfix u-palette-1-dark-1 u-section-12" id="carousel_1b21">
+    <section class="u-clearfix u-palette-1-dark-1 u-section-11" id="carousel_1b21">
       <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-sheet-1"><span class="u-custom-item u-file-icon u-icon u-icon-circle u-text-palette-1-dark-2 u-white u-icon-1"><img src="images/10479965-9b0dfd18.png" alt=""></span>
         <h6 class="u-align-center u-custom-font u-font-raleway u-text u-text-1" data-lang-es="Sample Headline">Sesiones Virtuales&nbsp;<br>19 y 21 de febrero, 2024<br>
         </h6>
       </div>
     </section>
-    <section class="u-clearfix u-gradient u-section-13" id="sec-dce2">
+    <section class="u-clearfix u-gradient u-section-12" id="sec-dce2">
       <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-sheet-1">
         <div class="u-expanded-width u-list u-list-1">
           <div class="u-repeater u-repeater-1">
@@ -465,12 +434,12 @@ Laura Pérez</b>
         </div>
       </div>
     </section>
-    <section class="u-clearfix u-palette-1-dark-1 u-section-14" id="carousel_6015">
+    <section class="u-clearfix u-palette-1-dark-1 u-section-13" id="carousel_6015">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <h6 class="u-align-center u-custom-font u-font-raleway u-text u-text-1" data-lang-es="Sample Headline">Contacto y Certificados</h6>
       </div>
     </section>
-    <section class="u-clearfix u-gradient u-section-15" id="sec-8ec3">
+    <section class="u-clearfix u-gradient u-section-14" id="sec-8ec3">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
