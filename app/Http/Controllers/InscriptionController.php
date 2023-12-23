@@ -124,8 +124,6 @@ class InscriptionController extends Controller
     */
     public function create()
     {
-        // $notification_mail = explode(";",config('app.notification_mail'));
-        // Mail::to($notification_mail)->send(new FacetofaceInscriptionMail());        
         return view('home');
     }
     
@@ -200,10 +198,11 @@ class InscriptionController extends Controller
 
         if($inscription->validateToken($token)){
             try {                
-                $attendance = Attendance::create([
+                Attendance::create([
                     'inscription_id'=>$inscription->id,
                     'date'=>Carbon::now(),
-                    'user_id'=>0
+                    'user_id'=>0,
+                    'type'=>InscriptionTypeEnum::REMOTO
                 ]);            
             } catch (\Throwable $th) {
                 
@@ -236,7 +235,8 @@ class InscriptionController extends Controller
                 Attendance::create([
                     'inscription_id'=>$inscription->id,
                     'date'=>Carbon::now(),
-                    'user_id'=>0
+                    'user_id'=>0,
+                    'type'=>InscriptionTypeEnum::PRESENCIAL
                 ]);            
             } catch (\Throwable $th) {
                 

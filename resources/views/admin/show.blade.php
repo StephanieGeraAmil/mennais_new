@@ -32,17 +32,17 @@ Admin Panel
                                     <div class="flex items-center border-b @error('name') border-red-500 @else border-teal-500 @enderror py-2 w-100">
                                         <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Nombre" aria-label="Nombre" name="name" value="{{$inscription->userData->name}}"/>	  
                                     </div>
-                                    <div class="flex items-center border-b @error('lastname') border-red-500 @else border-teal-500 @enderror py-2 w-100">
-                                        <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Apellido" aria-label="Apellido" name="lastname" value="{{$inscription->userData->lastname}}"/>	  
-                                    </div>
                                     <div class="flex items-center border-b @error('document') border-red-500 @else border-teal-500 @enderror py-2 w-100">
                                         <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Documento" aria-label="Documento" name="document" value="{{$inscription->userData->document}}"/>	  
                                     </div>
                                     <div class="flex items-center border-b @error('email') border-red-500 @else border-teal-500 @enderror py-2 w-100">
                                         <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="E-Mail" aria-label="E-Mail" name="email" value="{{$inscription->userData->email}}"/>	  
                                     </div>
-                                    <div class="flex items-center border-b @error('phone') border-red-500 @else border-teal-500 @enderror py-2 w-100">
-                                        <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Teléfono" aria-label="Teléfono" name="phone" value="{{$inscription->userData->phone}}"/>	  
+                                    <div class="flex items-center border-b py-2 w-100">
+                                        <select id="type" name="type" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
+                                            <option value="virtual" {{(old('type') =="virtual")?"Selected":""}}>{{App\Enums\InscriptionTypeEnum::REMOTO->text()}}</option>
+                                            <option value="hibrido" {{(old('type') =="hibrido")?"Selected":""}}>{{App\Enums\InscriptionTypeEnum::HIBRIDO->text()}}</option>
+                                        </select>                           
                                     </div>
                                     <div class="">
                                         <div class="pt-3">
@@ -65,10 +65,10 @@ Admin Panel
                     </div>                    
                     <div class="w-full overflow-hidden shadow-xs">
                         <div class="w-full overflow-x-auto">
-                                @foreach ($inscription->userData->jsonextra as $key => $extra)
-                                    <div class="m-2"><label for="">{{$key}}: {{$extra}}</label></div>
-                                @endforeach                                
-                            </div>
+                            @foreach ($inscription->userData->extra as $key => $extra)
+                            <div class="m-2"><label for="">{{$key}}: {{$extra}}</label></div>
+                            @endforeach                                
+                        </div>
                     </div>                    
                 </div>                
             </div>            
@@ -115,6 +115,12 @@ Admin Panel
                                 <div class="flex items-center @error('name') border-red-500 @else border-teal-500 @enderror py-2 w-100">
                                     <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="date" placeholder="Nombre" aria-label="" name="acreditation_date" value=""/>	  
                                 </div>
+                                <div class="flex items-center border-b py-2 w-100">
+                                    <select id="type" name="type" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
+                                        <option value="virtual" {{(old('type') =="virtual")?"Selected":""}}>{{App\Enums\InscriptionTypeEnum::REMOTO->text()}}</option>
+                                        <option value="hibrido" {{(old('type') =="hibrido")?"Selected":""}}>{{App\Enums\InscriptionTypeEnum::HIBRIDO->text()}}</option>
+                                    </select>                           
+                                </div>
                                 <div class="flex items-center py-2 w-100">
                                     <button type="submit" class="bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 border border-white rounded-xl">
                                         Acreditación Manual
@@ -124,7 +130,7 @@ Admin Panel
                             <div class="flex items-center py-2 w-100">                                
                                 <ul>
                                     @foreach ($inscription->attendances as $attendance)
-                                    <li>{{Carbon\Carbon::parse($attendance->date)->format('d-m-Y')}}</li>
+                                    <li>{{Carbon\Carbon::parse($attendance->date)->format('d-m-Y')}} - ({{$attendance->type->value}})</li>
                                     @endforeach
                                 </ul>
                             </div>
