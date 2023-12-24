@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ManualAttendanceRequest;
 use App\Mail\FacetofaceInscriptionMail;
 use App\Models\Attendance;
 use App\Models\GroupInscription;
@@ -9,6 +10,7 @@ use App\Models\Inscription;
 use App\Models\School;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 
@@ -117,18 +119,17 @@ class AdminController extends Controller
         return redirect('/admin/inscription/'.$id);
     }
 
-    public function manualAttendance(Request $request){
-        $validated_data = $request->validate([
-            'acreditation_date' => 'required|date',
-            'inscription_id' => 'required|integer'
-        ]);
+    public function manualAttendance(ManualAttendanceRequest $request){
+        $validated_data = $request->validated();
         $date = Carbon::createFromFormat('Y-m-d',  $validated_data['acreditation_date']); 
         $inscription = Inscription::findOrFail($validated_data['inscription_id']);
         $user_id = auth()->user()->id;
-        $attendance = Attendance::create([
+        Attendance::create([
             'inscription_id'=>$inscription->id,
             'date'=>$date,
-            'user_id'=>$user_id
+            'user_id'=>$user_id,
+            'type'=>Arr::get($validated_data,"type")
+
         ]);            
         return redirect("/admin/inscription/".$inscription->id);
                 
