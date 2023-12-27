@@ -10,7 +10,6 @@ El docente como protagonista del cambio">
     <link rel="stylesheet" href="/css/nicepage.css" media="screen">
   <link rel="stylesheet" href="/css/inicio.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-    
     <meta name="generator" content="isf.uy">
     <link rel="icon" href="images/favicon1.png">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
@@ -26,10 +25,9 @@ El docente como protagonista del cambio">
 Hacia una innovación con sentido
 El docente como protagonista del cambio">
     <meta property="og:type" content="website">
-    <meta data-intl-tel-input-cdn-path="intlTelInput/">
-</head>
-  <body data-home-page="Inicio.html" data-home-page-title="Inicio" data-path-to-root="./" data-include-products="false" class="u-body u-stick-footer u-xl-mode" data-lang="es"> 
-      <section class="u-align-center u-clearfix u-gradient u-section-1" id="sec-d247">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body data-path-to-root="./" data-include-products="false" class="u-body u-stick-footer u-xl-mode" data-lang="es"> 
+    <section class="u-align-center u-clearfix u-gradient u-section-1" id="sec-d247">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="data-layout-selected u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
           <div class="u-gutter-0 u-layout">
@@ -81,7 +79,7 @@ El docente como protagonista del cambio">
                   <span style="font-weight: 700;"></span>
                   <span style="font-weight: 400;"> Jornada Presencial<br>8/Feb 8:00hs
                   </span>
-                  <br>Lugar a confirmar
+                  <br>Salón de Actos del Colegio Sando Domingo
                 </h5>
               </div>
             </div>
@@ -303,7 +301,7 @@ Laura Pérez</b>
     </section>
     <section class="u-clearfix u-palette-1-dark-1 u-section-8" id="carousel_6000">
       <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
-        <h6 class="u-align-center u-custom-font u-font-raleway u-text u-text-1" data-lang-es="Sample Headline">JORNADA PRESENCIAL&nbsp;<br>8 de febrero, 2024<br>Lugar a confirmar
+        <h6 class="u-align-center u-custom-font u-font-raleway u-text u-text-1" data-lang-es="Sample Headline">JORNADA PRESENCIAL&nbsp;<br>8 de febrero, 2024<br>Salón de Actos del Colegio Santo Domingo
         </h6><span class="u-custom-item u-file-icon u-icon u-icon-circle u-text-palette-1-dark-2 u-white u-icon-1"><img src="images/3503656-8260a0ff.png" alt=""></span>
       </div>
     </section>
@@ -394,6 +392,32 @@ Laura Pérez</b>
             </div>
           </div>
         </div>
+        <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-layout-cell u-size-25-lg u-size-25-xl u-size-60-md u-size-60-sm u-size-60-xs u-layout-cell-1">
+                <div class="u-container-layout u-valign-middle-xl u-container-layout-2">
+                  <div class="u-align-center u-border-2 u-border-palette-1-light-1 u-container-align-center-xl u-container-style u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-group u-palette-2-light-3 u-radius-12 u-shape-round u-group-2">
+                    <div class="u-container-layout u-valign-middle u-container-layout-3">
+                      <h5 class="u-align-center u-text u-text-default u-text-2" data-lang-es="Sample Headline">Salón de Actos del&nbsp;<br>Colegio Santo Domingo<br>
+                        <br>Palmar 2288 esq. Acevedo Díaz
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-size-35-lg u-size-35-xl u-size-60-md u-size-60-sm u-size-60-xs u-layout-cell-2">
+                <div class="u-container-layout u-valign-bottom u-container-layout-4">
+                  <div class="u-expanded-width u-grey-light-2 u-map u-map-1">
+                    <div class="embed-responsive">
+                      <iframe class="embed-responsive-item" src="https://maps.google.com/maps?output=embed&amp;q=Palmar%202288%2C%2011200%20Montevideo%2C%20Departamento%20de%20Montevideo&amp;z=17&amp;t=m" data-map="JTdCJTIyYWRkcmVzcyUyMiUzQSUyMlBhbG1hciUyMDIyODglMkMlMjAxMTIwMCUyME1vbnRldmlkZW8lMkMlMjBEZXBhcnRhbWVudG8lMjBkZSUyME1vbnRldmlkZW8lMjIlMkMlMjJ6b29tJTIyJTNBMTclMkMlMjJ0eXBlSWQlMjIlM0ElMjJyb2FkJTIyJTJDJTIybGFuZyUyMiUzQW51bGwlMkMlMjJhcGlLZXklMjIlM0FudWxsJTJDJTIybWFya2VycyUyMiUzQSU1QiU1RCU3RA=="></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="u-clearfix u-palette-1-dark-1 u-section-11" id="carousel_1b21">
@@ -472,6 +496,6 @@ Laura Pérez</b>
           <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-white u-btn-1" data-href="https://isf.uy/"><span class="u-file-icon u-icon u-text-white u-icon-1"><img src="images/7199452-c2e758c2.png" alt=""></span>&nbsp;ISF.uy
           </a>
         </p>
-      </div></footer>
-  </body>
-  </html>
+      </div></footer>  
+</body>
+</html>
