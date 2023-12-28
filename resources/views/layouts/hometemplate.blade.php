@@ -79,7 +79,7 @@ El docente como protagonista del cambio">
                   <span style="font-weight: 700;"></span>
                   <span style="font-weight: 400;"> Jornada Presencial<br>8/Feb 8:00hs
                   </span>
-                  <br>Salón de Actos del Colegio Sando Domingo
+                  <br>Salón de Actos del Colegio Santo Domingo
                 </h5>
               </div>
             </div>
