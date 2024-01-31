@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Enums\InscriptionTypeEnum;
 use App\Models\UserData;
 use Illuminate\Http\Request;
+use Illuminate\Support\Arr;
+use Illuminate\Validation\Rules\Enum;
 
 class UserDataController extends Controller
 {
@@ -71,18 +74,18 @@ class UserDataController extends Controller
     {
         $validated_data = $request->validate([
             'name' => 'required|string|max:255',
-            'lastname' => 'required|string|max:255',
             'document' => 'required|string|max:255',
             'email' => 'required|email',
-            'phone' => 'required|string|max:255',
+            'type' => ['required', new Enum(InscriptionTypeEnum::class)]
         ]); 
         $user_data = UserData::findOrFail($id);               
         $user_data->name=$validated_data['name'];
-        $user_data->lastname=$validated_data['lastname'];
         $user_data->document=$validated_data['document'];
         $user_data->email=$validated_data['email'];
-        $user_data->phone=$validated_data['phone'];        
         $user_data->save();
+        $inscription = $user_data->inscription;
+        $inscription->type = Arr::get($validated_data, "type");
+        $inscription->save();
         return redirect("/admin/inscription/".$user_data->inscription->id);
     }
 
