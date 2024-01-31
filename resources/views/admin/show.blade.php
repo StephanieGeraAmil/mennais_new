@@ -65,9 +65,10 @@ Admin Panel
                     </div>                    
                     <div class="w-full overflow-hidden shadow-xs">
                         <div class="w-full overflow-x-auto">
-                            @foreach ($inscription?->userData?->extra ?? [] as $key => $extra)
+                            {!! $inscription?->userData?->extra  !!}
+                            {{-- @foreach ($inscription?->userData?->extra ?? [] as $key => $extra)
                             <div class="m-2"><label for="">{{$key}}: {{$extra}}</label></div>
-                            @endforeach                                
+                            @endforeach --}}                                
                         </div>
                     </div>                    
                 </div>                
