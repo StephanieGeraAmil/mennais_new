@@ -34,6 +34,9 @@ class UserData extends Model
     
     
     public function getJsonextraAttribute($data = null){
+        if(is_array($this->extra)){
+            return $this->extra;
+        }
         if($data == null){
             return json_decode($this->extra, true);
         }   
@@ -41,5 +44,6 @@ class UserData extends Model
     }
 
     
+
 
 }
