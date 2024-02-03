@@ -218,11 +218,12 @@ class InscriptionController extends Controller
     public function presencialAttendance(int $inscription_id, $token){
         
         $inscription = Inscription::find($inscription_id); 
-        
-        $returned = Arr::where(explode(",",env("EVENTDATES","2023-12-12")),function($value){
+        Log::debug($inscription_id);
+        $returned = Arr::where(explode(",",env("PRESENCIALEVENTDATES","2023-12-12")),function($value){
             return Carbon::parse($value)->isToday();
         });
-
+        Log::debug($inscription);
+        Log::debug($returned);
         if($inscription === null || empty($returned)){
             return redirect('/');
         }
