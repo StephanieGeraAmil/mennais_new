@@ -30,7 +30,7 @@ class ReminderMail extends Mailable
      */
     public function build()
     {
-        return $this->subject('La Transformación Educativa en acción - Recordatorio')->view('emails.reminder')
+        return $this->subject(env('EVENT_NAME').' - Recordatorio')->view('emails.reminder')
         ->with('inscription',$this->inscription);         
     }
 }
