@@ -30,7 +30,15 @@ class ReminderMail extends Mailable
      */
     public function build()
     {
+
+          $qrCode = QrCode::format('png')->generate($this->inscription->qrUrl());
+        $qrCodeData = base64_encode($qrCode);
         return $this->subject(env('EVENT_NAME').' - Recordatorio')->view('emails.reminder')
-        ->with('inscription',$this->inscription);         
+         ->with([
+                    'qrCodeData' => $qrCodeData,
+                    'inscription' => $this->inscription,
+                ]);
+
+               
     }
 }
