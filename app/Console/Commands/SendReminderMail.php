@@ -54,8 +54,11 @@ class SendReminderMail extends Command
                 'created_at'=>Carbon::now()
             ]);
         }
-
-        $inscriptions_list = Inscription::where('id','>',$mail->last_id)->take(100)->get();   
+  
+         $inscriptions_list = Inscription::where('type', 'hibrido')
+            ->where('id', '>', $mail->last_id)
+            ->take(100)
+            ->get();
         $last_id = 0;
         foreach($inscriptions_list as $inscription){ 
              $qrCode = QrCode::format('png')->generate($inscription->qrUrl());
