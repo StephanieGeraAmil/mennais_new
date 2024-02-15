@@ -12,7 +12,7 @@ class ReminderMail extends Mailable
     use Queueable, SerializesModels;
 
     private $inscription;
-    private $qrCodeData;
+    //private $qrCodeData;
 
     /**
      * Create a new message instance.
@@ -22,7 +22,7 @@ class ReminderMail extends Mailable
     public function __construct($inscription)
     {
         $this->inscription = $inscription;
-        $this->qrCodeData = $qrCodeData;
+       // $this->qrCodeData = $qrCodeData;
     }
 
     /**
@@ -32,11 +32,15 @@ class ReminderMail extends Mailable
      */
     public function build()
     {
-        return  $this->subject('La Transformación Educativa en acción - Recordatorio')->view('emails.reminder')
+        return  $this->subject('PROEDUCAR XXXII - HACIA UNA INNOVACIÓN CON SENTIDO. - Recordatorio')->view('emails.reminder')
            ->with([
-                'qrCodeData' =>  $this->qrCodeData,
                 'inscription' => $this->inscription,
         ]);
+     //      return  $this->subject('La Transformación Educativa en acción - Recordatorio')->view('emails.reminder')
+     //      ->with([
+     //           'qrCodeData' =>  $this->qrCodeData,
+     //           'inscription' => $this->inscription,
+     //   ]);
                
     }
 }
