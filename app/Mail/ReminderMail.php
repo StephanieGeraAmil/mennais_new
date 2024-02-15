@@ -33,9 +33,8 @@ class ReminderMail extends Mailable
     public function build()
     {
         return  $this->subject('PROEDUCAR XXXII - HACIA UNA INNOVACIÓN CON SENTIDO. - Recordatorio')->view('emails.reminder')
-           ->with([
-                'inscription' => $this->inscription,
-        ]);
+                ->with('inscription', $this->inscription);
+    
      //      return  $this->subject('La Transformación Educativa en acción - Recordatorio')->view('emails.reminder')
      //      ->with([
      //           'qrCodeData' =>  $this->qrCodeData,
