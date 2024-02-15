@@ -55,19 +55,23 @@ class SendReminderMail extends Command
             ]);
         }
   
-         $inscriptions_list = Inscription::where('type', 'hibrido')
-            ->where('id', '>', $mail->last_id)
+         $inscriptions_list = Inscription::where('id', '>', $mail->last_id)
             ->take(100)
             ->get();
+         //  $inscriptions_list = Inscription::where('type', 'hibrido')
+         //   ->where('id', '>', $mail->last_id)
+         //   ->take(100)
+         //   ->get();
         $last_id = 0;
         foreach($inscriptions_list as $inscription){ 
-             $qrCode = QrCode::format('png')->generate($inscription->qrUrl());
-            $qrCodeData = base64_encode($qrCode);
+            // $qrCode = QrCode::format('png')->generate($inscription->qrUrl());
+            // $qrCodeData = base64_encode($qrCode);
             if($inscription->id > 0){
                 $email = $inscription->userData->email;
                 Log::info("email: ".$email);
                 try {
-                   Mail::to($email)->send(new ReminderMail($inscription, $qrCodeData));
+                   Mail::to($email)->send(new ReminderMail($inscription));
+                // Mail::to($email)->send(new ReminderMail($inscription, $qrCodeData));
                 } catch (\Throwable $th) {
                     Log::error("Fallo email: ".$email);
                 }
