@@ -43,7 +43,7 @@ class SendCertificatesMail extends Command
      */
     public function handle()
     {
-        Log::info("Se envían los correos de inscripcion");
+        Log::info("Se envían los correos de link a certificados");
         $mail = SendMail::find(1);
         if(!isset($mail)){
             $mail = SendMail::create([
@@ -52,16 +52,32 @@ class SendCertificatesMail extends Command
                 'created_at'=>Carbon::now()
             ]);
         }
+        
 
-        $inscriptions_list = Inscription::where('id','>',$mail->last_id)->take(30)->get();   
+        $inscriptions_list = Inscription::where('id','>',$mail->last_id)->take(100)->get();   
         $last_id = 0;
+        
+        // $mail_list = [];
+        // foreach ($inscriptions_list as $inscription) {
+        //     if ($inscription->id > 0) {
+        //         $attendance_list = Attendance::where('inscription_id', $inscription->id)->get();
+        //         if ($attendance_list->isNotEmpty()) {
+        //             $mail_list[] = $inscription->userData->email;
+        //         }
+        //     }
+        // }
+        
+        
         foreach($inscriptions_list as $inscription){            
             if($inscription->id > 0){
-                $email = $inscription->userData->email;
-                Log::info("email: ".$email);
-                Mail::to($email)->send(new RecoveryCertificateMail($inscription));
-                echo "Correo enviado a: ".$email."\n";
-                $last_id = $inscription->id;                
+                $attendance_list = Attendance::where('inscription_id', $inscription->id)->get();
+                if ($attendance_list->isNotEmpty()) {
+                    $email = $inscription->userData->email;
+                    Log::info("email: ".$email);
+                    Mail::to($email)->send(new RecoveryCertificateMail($inscription));
+                    echo "Correo enviado a: ".$email."\n";
+                    $last_id = $inscription->id;        
+                }       
             }
         } 
         $mail->last_id = $last_id;
