@@ -19,120 +19,130 @@ use Illuminate\Support\Facades\Redirect;
 
 class InscriptionController extends Controller
 {
-    
-    
+
+
     public function certificate(Inscription $inscription, $token)
-    {           
-        if($inscription->validateToken($token)){   
+    {
+        if ($inscription->validateToken($token)) {
             $attendances = $inscription->attendances;
-            if($attendances->count() > 0){
+            if ($attendances->count() > 0) {
                 $today = Carbon::now()->locale('es');
                 $today->settings(['formatFunction' => 'translatedFormat']);
-                $name = $inscription->userData->name." ".$inscription->userData->lastname;
-                $attendance_text = $this->attendance_text($attendances);
-                $singular_day = false;
-                if($attendances->count() == 1){
-                    $singular_day = true;                
+                $name = $inscription->userData->name . " " . $inscription->userData->lastname;
+                $attendance_list = Attendance::where('inscription_id', $inscription->id)->get();
+                // Format the attendance list for the view
+                $attendance_text = "";
+                foreach ($attendance_list as $attendance) {
+                    if ($attendance->date == "2024-02-08") {
+                        $attendance_text .= '<li>08 de febrero, Jornada Presencial.</li>';
+                    } elseif ($attendance->date == "2024-02-19") {
+                        $attendance_text .= '<li>19 de febrero, primera Sesión Virtual.</li>';
+                    } elseif ($attendance->date == "2024-02-21") {
+                        $attendance_text .= '<li>21 de febrero, segunda Sesión Virtual.</li>';
+                    }
                 }
-                $document = $inscription->userData->document;                
+                // Log::info("attendance_list: " . $attendance_list);
+                // Log::info("attendance_text: " . $attendance_text);
+                $document = $inscription->userData->document;
                 $data = [
-                    'today'=>$today->format('j F Y'),
-                    'date'=>$attendance_text,
-                    'singular_day'=>$singular_day,
-                    'name'=>$name,
-                    'document'=>$document
+                    'today' => $today->format('j F Y'),
+                    'name' => $name,
+                    'attendance_text' => $attendance_text,
+                    'document' => $document
                 ];
                 $pdf = app('dompdf.wrapper');
-                /* return view('pdf.certificate', $data); */
                 return $pdf->loadView('pdf.certificate', $data)
-                ->setPaper('a4', 'landscape')
-                ->download('certificado_'.$token.'.pdf');
-            }else{
-                abort(404);   
-            }            
-        }else{            
+                    ->setPaper('a4', 'landscape')
+                    ->download('certificado_' . $token . '.pdf');
+            } else {
+                abort(404);
+            }
+        } else {
             abort(403);
         }
     }
-        
-    private function attendance_text($attendances){
-        
-        if($attendances->count() == 1){            
+
+    private function attendance_text($attendances)
+    {
+
+        if ($attendances->count() == 1) {
             $attendance_date = Carbon::parse($attendances->first()->date)->locale('es');
             $attendance_date->settings(['formatFunction' => 'translatedFormat']);
-            $attendance_text = $attendance_date->format('j')." de ".$attendance_date->format('F')." de ".$attendance_date->format('Y');
-        }else{
-            $date_text = "";            
+            $attendance_text = $attendance_date->format('j') . " de " . $attendance_date->format('F') . " de " . $attendance_date->format('Y');
+        } else {
+            $date_text = "";
             $limit = $attendances->count();
-            $last = $limit -1;
-            for ($i=0; $i < $limit; $i++) {
-                if($i > 0){                    
-                    if($i==$last){
+            $last = $limit - 1;
+            for ($i = 0; $i < $limit; $i++) {
+                if ($i > 0) {
+                    if ($i == $last) {
                         $date_text .= " y ";
-                    }else{
+                    } else {
                         $date_text .= ", ";
                     }
-                } 
+                }
                 $date = Carbon::parse($attendances[$i]->date)->locale('es');
-                $date_text .= $date->format('j');                
+                $date_text .= $date->format('j');
             }
             $date->settings(['formatFunction' => 'translatedFormat']);
-            $attendance_text = $date_text." de ".$date->format('F')." de ".$date->format('Y');            
+            $attendance_text = $date_text . " de " . $date->format('F') . " de " . $date->format('Y');
         }
         return $attendance_text;
     }
-    
-    
-    public function certificateRecovery(){        
+
+
+    public function certificateRecovery()
+    {
         return view('recoverycertificate');
     }
-    
-    public function certificateRecoveryMail(Request $request){
+
+    public function certificateRecoveryMail(Request $request)
+    {
         $validatedData = $request->validate([
             'document' => 'required|string',
-        ]);        
-        $document = str_replace(['.','-',' '],'',$validatedData['document']);
-        if(is_numeric($document)){            
+        ]);
+        $document = str_replace(['.', '-', ' '], '', $validatedData['document']);
+        if (is_numeric($document)) {
             $user_data = UserData::where('document', $document)->first();
-            if($user_data == null){
+            if ($user_data == null) {
                 return view('recoverycertificate')->with('fail', true);
             }
-            if($user_data->inscription->attendances->count() > 0){
-                Mail::to($user_data->email)->send(new RecoveryCertificateMail($user_data->inscription));            
+            if ($user_data->inscription->attendances->count() > 0) {
+                Mail::to($user_data->email)->send(new RecoveryCertificateMail($user_data->inscription));
                 return view('recoverycertificate')->with('success', true);
             }
             return view('recoverycertificate')->with('fail', 'Attendance error');
         }
         return view('recoverycertificate')->with('wrong_document', 'Documento Invalido');
     }
-    
-    
+
+
     /**
-    * Display a listing of the resource.
-    *
-    * @return \Illuminate\Http\Response
-    */
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function index()
     {
         return redirect('/');
     }
-    
+
     /**
-    * Show the form for creating a new resource.
-    *
-    * @return \Illuminate\Http\Response
-    */
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function create()
     {
         return view('home');
     }
-    
+
     /**
-    * Store a newly created resource in storage.
-    *
-    * @param  \Illuminate\Http\Request  $request
-    * @return \Illuminate\Http\Response
-    */
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
     public function store(Request $request)
     {
         // $validatedData = $request->validate([
@@ -142,121 +152,122 @@ class InscriptionController extends Controller
         //     'email' => 'required|email',
         //     'payment_file'=>'required|image|mimes:jpg,png,jpeg,gif,svg,pdf',
         // ]); 
-        
+
         // $clean_name = preg_replace('/[^A-Za-z0-9\-]/', '_', $request->get('name'));
         // $image_name = Carbon::now()->format('dmyHis')."_".$clean_name.".".$request->payment_file->extension();
         // $request->payment_file->move(public_path('images'),$image_name);        
-        
+
         // $payment = Payment::create([
         //     'url_payment'=>"/images/".$image_name
         // ]);
-        
-        
+
+
         // $user_data = UserData::create([
         //     'name'=>$validatedData['name'],
         //     'lastname'=>$validatedData['lastname'],
         //     'document'=>$validatedData['document'],
         //     'email'=>$validatedData['email']
         // ]);
-        
-        
+
+
         // $inscription = Inscription::create([
         //     'user_data_id'=>$user_data->id,
         //     'payment_id'=>$payment->id
         // ]);
-        
-        
-        
+
+
+
         // // $thumbnail_name = $brand->name."_".$clean_name.".".$request->vehicle_thumbnail->extension();
         // // $request->vehicle_thumbnail->move(public_path('images/thumbnails'),$thumbnail_name);
-        
-        
-        
+
+
+
         // // QrCode::format('png')->size(399)->color(40,40,40)->generate('Make me a QrCode!');
         // // $notification_mail = explode(";",config('app.notification_mail'));
         // Mail::to($user_data->email)->send(new FacetofaceInscriptionMail($inscription));       
         // Mail::to(env('ADMIN_EMAIL'))->send(new AdminInscriptionMail($inscription));             
         // return view('successinscription')
         // ->with('user_data', $user_data);
-        
+
     }
-    
-    
-    
-    
-    public function attendance(int $inscription_id, $token){
-        
-        $inscription = Inscription::find($inscription_id); 
-        
-        $returned = Arr::where(explode(",",env("EVENTDATES","2023-12-12")),function($value){
+
+
+
+
+    public function attendance(int $inscription_id, $token)
+    {
+
+        $inscription = Inscription::find($inscription_id);
+
+        $returned = Arr::where(explode(",", env("EVENTDATES", "2023-12-12")), function ($value) {
             return Carbon::parse($value)->isToday();
         });
 
-        if($inscription === null || empty($returned)){
+        if ($inscription === null || empty($returned)) {
             return redirect('/');
         }
 
-        if($inscription->validateToken($token)){
-            try {                
+        if ($inscription->validateToken($token)) {
+            try {
                 Attendance::create([
-                    'inscription_id'=>$inscription->id,
-                    'date'=>Carbon::now(),
-                    'user_id'=>0,
-                    'type'=>InscriptionTypeEnum::REMOTO
-                ]);            
+                    'inscription_id' => $inscription->id,
+                    'date' => Carbon::now(),
+                    'user_id' => 0,
+                    'type' => InscriptionTypeEnum::REMOTO
+                ]);
             } catch (\Throwable $th) {
-                
             }
-            
-            return view('welcome')->with('zoom_link', env('ZOOMLINK_'.Carbon::now()->format('Ymd'), "https://us02web.zoom.us/j/82435816542?pwd=Q2F1cVdZMi96OGl1Q3lidlkzSTlLdz09"));
-        }else{            
+
+            return view('welcome')->with('zoom_link', env('ZOOMLINK_' . Carbon::now()->format('Ymd'), "https://us02web.zoom.us/j/82435816542?pwd=Q2F1cVdZMi96OGl1Q3lidlkzSTlLdz09"));
+        } else {
             abort(403);
         }
     }
 
 
-    public function presencialAttendance(int $inscription_id, $token){
-        
-        $inscription = Inscription::find($inscription_id); 
+    public function presencialAttendance(int $inscription_id, $token)
+    {
+
+        $inscription = Inscription::find($inscription_id);
         Log::debug($inscription_id);
-        $returned = Arr::where(explode(",",env("PRESENCIALEVENTDATES","2023-12-12")),function($value){
+        $returned = Arr::where(explode(",", env("PRESENCIALEVENTDATES", "2023-12-12")), function ($value) {
             return Carbon::parse($value)->isToday();
         });
         Log::debug($inscription);
         Log::debug($returned);
-        if($inscription === null || empty($returned)){
+        if ($inscription === null || empty($returned)) {
             return redirect('/');
         }
-        if($inscription->type !== InscriptionTypeEnum::HIBRIDO){
+        if ($inscription->type !== InscriptionTypeEnum::HIBRIDO) {
             return view('errorPresencialInscrption')->with('userData', $inscription->userData);
         }
 
-        if($inscription->validateToken($token)){
-            try {                
+        if ($inscription->validateToken($token)) {
+            try {
                 Attendance::create([
-                    'inscription_id'=>$inscription->id,
-                    'date'=>Carbon::now(),
-                    'user_id'=>0,
-                    'type'=>InscriptionTypeEnum::PRESENCIAL
-                ]);            
+                    'inscription_id' => $inscription->id,
+                    'date' => Carbon::now(),
+                    'user_id' => 0,
+                    'type' => InscriptionTypeEnum::PRESENCIAL
+                ]);
             } catch (\Throwable $th) {
-                
             }
-            
+
             return view('welcomePresencial')->with('userData', $inscription->userData);
-        }else{            
+        } else {
             abort(403);
         }
     }
-    
-    
-    public function adminCodeInscription($group_inscription_id, $code){
+
+
+    public function adminCodeInscription($group_inscription_id, $code)
+    {
         $group_inscription = GroupInscription::findOrFail($group_inscription_id);
-        if(!$group_inscription->validCode($code)){
+        if (!$group_inscription->validCode($code)) {
             abort('403');
         }
         return view('inscription.code_admin')
-        ->with('group_inscription', $group_inscription);
+            ->with('group_inscription', $group_inscription);
     }
 
 
@@ -264,26 +275,22 @@ class InscriptionController extends Controller
 
 
 
-    public function sendInscription(SendInscriptionRequest $request){
-        $validated_data = $request->validated(); 
+    public function sendInscription(SendInscriptionRequest $request)
+    {
+        $validated_data = $request->validated();
         $group_inscription = GroupInscription::findOrFail($validated_data['group_inscription_id']);
-        $code = $group_inscription->codes()->where('status', 0)->where("type",Arr::get($validated_data,'type'))->first();
-        if($code === null){
+        $code = $group_inscription->codes()->where('status', 0)->where("type", Arr::get($validated_data, 'type'))->first();
+        if ($code === null) {
             return Redirect::back()->withErrors(['no_code' => 'No cuenta con códigos disponibles']);
         }
         $code->status = 1;
         $code->email = $validated_data['email'];
         $code->save();
         try {
-            Mail::to($validated_data['email'])->send(new SendInscriptionCodeMail($code));                    
+            Mail::to($validated_data['email'])->send(new SendInscriptionCodeMail($code));
         } catch (\Throwable $th) {
-            Log::error("InscriptionController::Email: ".$validated_data['email']."; ".env('ADMIN_EMAIL'));
-        }         
+            Log::error("InscriptionController::Email: " . $validated_data['email'] . "; " . env('ADMIN_EMAIL'));
+        }
         return redirect($group_inscription->getUrl());
     }
-    
-    
-
-
-    
 }

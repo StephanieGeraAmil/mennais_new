@@ -7,25 +7,30 @@
     <title>Document</title>
     <style>
         body{
-            background: url("{{ URL::asset('images') }}/proeducar_certificado_blco_c.jpeg"); 
+            background: url("{{ URL::asset('images') }}/certificado_2023_c.jpg"); 
             background-size: 1024px 722px; 
             background-repeat: no-repeat;
         }
     </style>
 </head>
-<body style="width: 1024px; font-size:24px; font-family:'Open Sans',sans-serif"; >
+<body style="width: 1024px; font-size:20px; font-family:'Open Sans',sans-serif"; >
     <div style="width:934px; margin-top:200px; text-align:right">
-        Montevideo, miércoles 25 de octubre de 2023
+        Montevideo, miércoles 22 de febrero de 2024
         </div>
     <div style="margin-left:80px; margin-top:49px">
         Se certifica que:
     </div>
-    <div style="width:100%; text-align:center;margin-top:10px; font-size: 24px;font-weight: bold;letter-spacing:2px">
+    <div style="width:100%; text-align:center;margin-top:10px; font-size: 20px;font-weight: bold;letter-spacing:2px">
         {{$name}}, C.I.: {{$document}} 
     </div>
-    <div style="width:904px;margin-left:60px; margin-top:10px">
-        Ha participado de los encuentros {{env('EVENT_NAME')}}, liderados por Melina Furman y organizados por AUDEC.<BR/>
-        Dichos encuentros fueron realizados el 2 de agosto y el 25 de octubre, con una duración de 2 horas y media cada uno.
+    
+    <div style="width:85%;margin-left:80px; margin-top:10px;text-align:center;">
+        Ha participado de {{env('EVENT_NAME')}}, <BR/>
+        organizado por AUDEC, en las siguientes instancias:
+
+           <ul style="font-size:18px; text-align:left;">
+        {!! $attendance_text !!}
+    </ul>
     </div>
 </body>
 </html>
