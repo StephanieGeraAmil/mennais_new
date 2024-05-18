@@ -46,7 +46,7 @@ Route::get('/admin_group_inscription/{group_inscription_id}/{code}',[Inscription
 
 
 // Procesamiento de formulario
-/** Guardar inscripción simple */
+/** Guardar inscripción simple */ 
 Route::post('/store_inscription',[SimpleInscriptionController::class,'simpleInscriptionStore']);
 /** Guardar inscripción grupal y reenvío al sitio de administración de códigos de invitación */
 Route::post('/store_group_inscription',[GroupInscriptionController::class,'groupInscriptionStore']);
