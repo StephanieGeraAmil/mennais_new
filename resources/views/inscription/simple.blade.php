@@ -191,9 +191,9 @@ transformación Educativa">
                                                                 {{-- @error('type')
                                                                     Debe seleccionar la modalidad.<br />
                                                                 @enderror --}}
-                                                                @error('institution_name')
+                                                                {{-- @error('institution_name')
                                                                     El campo institución no es correcto.<br />
-                                                                @enderror
+                                                                @enderror --}}
                                                                 {{-- @error('institution_type')
                                                                     El campo tipo de institución no es correcto.<br />
                                                                 @enderror
@@ -306,7 +306,7 @@ transformación Educativa">
                                                 <div class="u-form-group u-form-select u-form-group-7">
                                                     <label for="select-c14a"
                                                         class="u-form-control-hidden u-label"></label>
-                                                    <div class="u-form-select-wrapper">
+                                                    {{-- <div class="u-form-select-wrapper">
                                                         <select id="institution_id" name="institution_id"
                                                             class="u-input u-input-rectangle u-radius-14">
                                                             <option value="" disabled selected>institución
@@ -323,7 +323,7 @@ transformación Educativa">
                                                             style="fill:currentColor;" xml:space="preserve">
                                                             <polygon class="st0" points="8,12 2,4 14,4 "></polygon>
                                                         </svg>
-                                                    </div>
+                                                    </div> --}}
                                                 </div>
                                                 <div class="u-form-group u-form-select u-form-group-7">
                                                     <label for="select-c14a"
