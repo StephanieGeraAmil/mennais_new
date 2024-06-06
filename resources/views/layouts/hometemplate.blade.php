@@ -191,7 +191,8 @@ hacer escuela.
                       <div class="custom-expanded u-container-align-center u-container-style u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xl u-group u-shape-rectangle u-group-2">
                         <div class="u-container-layout u-container-layout-4">
                           <h5 class="u-align-center u-text u-text-palette-1-dark-3 u-text-2">INSCRIBITE AQUÍ </h5>
-                          <a href="#" class="u-align-center u-btn u-button-style u-btn-1">Inscripción Individual </a>
+                          {{-- <a href="#" class="u-align-center u-btn u-button-style u-btn-1">Inscripción Individual </a> --}}
+                          <div class="u-clearfix u-custom-html u-custom-html-1">@yield('inscription_buttons')</div>
                         </div>
                       </div>
                     </div>
@@ -449,7 +450,8 @@ Blejmar
                     </div>
                   </div>
                   <p class="u-text u-text-4">A partir del 29 de julio podrá descargar aquí su certificado digital de asistencia​&nbsp; </p>
-                  <a href="#" class="u-align-center u-btn u-button-style u-btn-2">Descargar Certificado </a>
+                  {{-- <a href="#" class="u-align-center u-btn u-button-style u-btn-2">Descargar Certificado </a> --}}
+                  <div class="u-clearfix u-custom-html u-custom-html-1" style="font-size:1.25rem !important;color:#040404 !important;" >@yield('certificate_button')</div>
                 </div>
               </div>
             </div>
