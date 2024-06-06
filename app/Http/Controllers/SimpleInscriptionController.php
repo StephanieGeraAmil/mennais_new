@@ -53,7 +53,8 @@ class SimpleInscriptionController extends Controller
             'user_data_id'=>$user_data->id,
             'payment_id'=>$payment->id,
             'status'=>1,
-            'type'=>Arr::get($validated_data,"type")
+            // 'type'=>Arr::get($validated_data,"type")
+            'type' => 'hibrido',
         ]);
         try {
             Mail::to($user_data->email)->send(new FacetofaceInscriptionMail($inscription));   

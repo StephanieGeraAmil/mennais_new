@@ -23,7 +23,7 @@ class SimpleInscriptionRequest extends FormRequest
             'payment_file'=>'required|file|mimes:jpg,png,jpeg,gif,svg,pdf',
             'extra' => 'required|array',
             'extra.place'=> ["required", Rule::in(['montevideo', 'interior'])],
-            'type'=> ['required', new Enum(InscriptionTypeEnum::class) ]
+            // 'type'=> ['required', new Enum(InscriptionTypeEnum::class) ]
         ];
     }
     
