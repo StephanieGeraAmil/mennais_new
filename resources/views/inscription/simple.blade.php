@@ -40,12 +40,12 @@
                             @error('phone')
                                 El campo teléfono no es correcto.<br />
                             @enderror
-                            {{-- @error('extra.place')
+                            @error('extra.place')
                                 Debe seleccionar el Origen.<br />
-                            @enderror --}}
-                            {{-- @error('type')
+                            @enderror
+                            @error('type')
                                 Debe seleccionar la modalidad.<br />
-                            @enderror --}}
+                            @enderror
                             @error('institution_name')
                                 El campo institución no es correcto.<br />
                             @enderror
