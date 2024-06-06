@@ -136,32 +136,23 @@ transformación Educativa">
 
 <body data-path-to-root="./" data-include-products="false" class="u-body u-overlap u-xl-mode" data-lang="es">
   <header class="u-clearfix u-container-align-left-xl u-header u-palette-1-dark-1 u-sticky u-sticky-387b" id="sec-055d" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-valign-middle-xl u-valign-middle-xs u-sheet-1">
-      <div class="u-clearfix u-container-align-left u-group-elements u-valign-middle u-group-elements-1">
-        <h5 class="u-align-left u-custom-font u-font-raleway u-text u-text-default u-text-1" data-lang-es="<a class=&quot;u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-3 u-block-control&quot; data-href=&quot;https://nicepage.com&quot; style=&quot;background-image: none; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot; data-block=&quot;552&quot; data-lang-es=&quot;{&amp;quot;content&amp;quot;:&amp;quot;PROEDUCAR XXXII&amp;quot;}&quot;>PROEDUCAR XXXII</a>">
-          <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-2 u-btn-1" data-href="#" data-lang-es="{&quot;content&quot;:&quot;PROEDUCAR XXXII&quot;}">PROEDUCAR XXXIII</a>
-        </h5>
-        <h5 class="u-align-left u-text u-text-default u-text-palette-1-light-2 u-text-2" data-lang-es="Sample Headline">LA GESTIÓN COMO PALABRA</h5>
-      </div>
+    <div class="u-clearfix u-container-align-left u-group-elements u-valign-middle u-group-elements-1">
+      <h5 class="u-align-left u-custom-font u-font-raleway u-text u-text-default u-text-1" data-lang-es="<a class=&quot;u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-3 u-block-control&quot; data-href=&quot;https://nicepage.com&quot; style=&quot;background-image: none; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot; data-block=&quot;552&quot; data-lang-es=&quot;{&amp;quot;content&amp;quot;:&amp;quot;PROEDUCAR XXXII&amp;quot;}&quot;>PROEDUCAR XXXII</a>">
+        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-2 u-btn-1" data-href="#" data-lang-es="{&quot;content&quot;:&quot;PROEDUCAR XXXII&quot;}">PROEDUCAR XXXIII</a>
+      </h5>
+      <h5 class="u-align-left u-text u-text-default u-text-palette-1-light-2 u-text-2" data-lang-es="Sample Headline">LA GESTIÓN COMO PALABRA</h5>
     </div>
-  </header>
-    <section class="u-clearfix u-custom-color-26 u-section-1" id="sec-3ffd">
-        <div class="u-clearfix u-sheet u-sheet-1">
-            <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
-                <div class="u-gutter-0 u-layout">
-                    <div class="u-layout-col">
-                        <div class="u-size-5">
-                            <div class="u-layout-col">
-                                <div
-                                    class="u-align-center u-container-style u-custom-color-27 u-layout-cell u-size-60 u-layout-cell-1">
-                                    <div class="u-container-layout u-valign-middle u-container-layout-1"
-                                        style="padding: 10px;">
-                                        @if ($errors->any())
-                                            <div class="u-size-30">
-                                                <div class="u-layout-col">
-                                                    <div
-                                                        class="u-align-center u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
-                                                        <div
-                                                            class="u-container-layout u-valign-middle u-container-layout-1">
+  </div>
+</header>
+<section class="u-clearfix u-container-align-center-lg u-container-align-center-md u-container-align-center-xl u-gradient u-section-1" id="sec-3ffd">
+  <div class="u-clearfix u-sheet u-sheet-1">
+    <div class="data-layout-selected u-clearfix u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-layout-wrap u-layout-wrap-1">
+      <div class="u-gutter-0 u-layout">
+        <div class="u-layout-col">
+          <div class="u-size-30">
+            <div class="u-layout-col">
+              <div class="u-align-center u-container-align-center u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
+                <div class="u-container-layout u-valign-middle u-container-layout-1">
                                                             <h5 class="u-text u-text-default u-text-1">
                                                                 @error('name')
                                                                     El campo nombre no es correcto.<br />
@@ -214,7 +205,7 @@ transformación Educativa">
                                                     </div>
                                                 </div>
                                             </div>
-                                        @endif
+                                        {{-- @endif --}}
                                     </div>
                                 </div>
                             </div>
