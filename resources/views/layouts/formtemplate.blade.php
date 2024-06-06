@@ -11,7 +11,7 @@
     <meta name="description" content="Vivenciando la transformación educativa es un evento organizado por AUDEC - Asociación Uruguaya de Educación Católica">
     <title>@yield('title')</title>
     <link rel="stylesheet" href="/css/nicepage.css" media="screen">
-    <link rel="stylesheet" href="/css/inscripcion-IndivIdual.css" media="screen">
+    <link rel="stylesheet" href="/css/inscripcion.css" media="screen">
     <script class="u-script" type="text/javascript" src="/js/jquery.js" defer=""></script>
     <meta name="generator" content="Nicepage 5.13.1, nicepage.com">
     <link rel="icon" href="images/favicon1.png">
