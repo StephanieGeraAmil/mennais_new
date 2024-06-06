@@ -325,13 +325,13 @@ transformación Educativa">
                                                         </svg>
                                                     </div> --}}
                                                 </div>
-                                                <div class="u-form-group u-form-select u-form-group-7">
+                                                {{-- <div class="u-form-group u-form-select u-form-group-7">
                                                     <label for="select-c14a"
                                                         class="u-form-control-hidden u-label"></label>
                                                     <div class="u-form-select-wrapper">
                                                         <select id="first_workshop" name="first_workshop_id"
                                                             class="u-input u-input-rectangle u-radius-14">
-                                                            {{-- <option value="" selected hidden>Taller Primer Turno</option> --}}
+
                                                             <option value="" selected>Taller Primer Turno</option> 
                                                             @foreach ($workshops->where('order', 1) as $workshop)
                                                                 <option value="{{ $workshop->id }}">
@@ -346,14 +346,14 @@ transformación Educativa">
                                                             <polygon class="st0" points="8,12 2,4 14,4 "></polygon>
                                                         </svg>
                                                     </div>
-                                                </div>
-                                                <div class="u-form-group u-form-select u-form-group-7">
+                                                </div> --}}
+                                                {{-- <div class="u-form-group u-form-select u-form-group-7">
                                                     <label for="select-c14a"
                                                         class="u-form-control-hidden u-label"></label>
                                                     <div class="u-form-select-wrapper">
                                                         <select id="second_workshop" name="second_workshop_id"
                                                             class="u-input u-input-rectangle u-radius-14">
-                                                            {{-- <option value="" selected hidden>Taller Segundo Turno</option> --}}
+                                                             <option value="" selected hidden>Taller Segundo Turno</option> 
                                                             <option value="" selected>Taller Segundo Turno</option> 
                                                             @foreach ($workshops->where('order', 2) as $workshop)
                                                                 <option value="{{ $workshop->id }}">
@@ -368,7 +368,7 @@ transformación Educativa">
                                                             <polygon class="st0" points="8,12 2,4 14,4 "></polygon>
                                                         </svg>
                                                     </div>
-                                                </div>
+                                                </div> --}}
                                                 <div class="u-align-right u-form-group u-form-submit">
                                                     <button onclick="disableButton(this)"
                                                             class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-1">
