@@ -11,7 +11,7 @@
     <meta name="description" content="La transformación educativa en acción es un evento organizado por AUDEC - Asociación Uruguaya de Educación Católica">
     <title>@yield('title')</title>
     <link rel="stylesheet" href="/css/nicepage.css" media="screen">
-    <link rel="stylesheet" href="/css/inscripcion.css" media="screen">
+    <link rel="stylesheet" href="/css/inscripcion-Individual.css" media="screen">
     <script class="u-script" type="text/javascript" src="/js/jquery.js" defer=""></script>
     <meta name="generator" content="Nicepage 5.13.1, nicepage.com">
     <link rel="icon" href="images/favicon1.png">
@@ -20,24 +20,26 @@
     
     @yield('custom_css')
     <script type="application/ld+json">{
-        "@context": "http://schema.org",
-        "@type": "Organization",
-        "name": "AUDEC_EF_ago_oct_23"
-    }</script>
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "PROEDUCAR"
+}</script>
     <meta name="theme-color" content="#ddd6f3">
     <meta property="og:title" content="Inscripción Indivudual">
     <meta property="og:description" content="La transformación educativa en acción es un evento organizado por AUDEC - Asociación Uruguaya de Educación Católica">
     <meta property="og:type" content="website">
     <meta data-intl-tel-input-cdn-path="intlTelInput/">
 </head>
-<body data-path-to-root="./" data-include-products="false" class="u-body u-overlap u-xl-mode" data-lang="es"><header class="u-clearfix u-header u-palette-1-dark-1 u-sticky u-sticky-387b u-header" id="sec-055d"><div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-clearfix u-group-elements u-group-elements-1">
-          <h5 class="u-custom-font u-font-raleway u-text u-text-default u-text-1" data-lang-es="<a class=&quot;u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-3 u-block-control&quot; data-href=&quot;https://nicepage.com&quot; style=&quot;background-image: none; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot; data-block=&quot;552&quot; data-lang-es=&quot;{&amp;quot;content&amp;quot;:&amp;quot;PROEDUCAR XXXII&amp;quot;}&quot;>PROEDUCAR XXXII</a>">
-            <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-2 u-btn-1" data-href="https://nicepage.com" data-lang-es="{&quot;content&quot;:&quot;PROEDUCAR XXXII&quot;}">PROEDUCAR XXXII</a>
+<body data-path-to-root="./" data-include-products="false" class="u-body u-overlap u-xl-mode" data-lang="es">
+    <header class="u-clearfix u-container-align-left-xl u-header u-palette-1-dark-1 u-sticky u-sticky-387b" id="sec-055d" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-valign-middle-xl u-valign-middle-xs u-sheet-1">
+        <div class="u-clearfix u-container-align-left u-group-elements u-valign-middle u-group-elements-1">
+          <h5 class="u-align-left u-custom-font u-font-raleway u-text u-text-default u-text-1" data-lang-es="<a class=&quot;u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-3 u-block-control&quot; data-href=&quot;https://nicepage.com&quot; style=&quot;background-image: none; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot; data-block=&quot;552&quot; data-lang-es=&quot;{&amp;quot;content&amp;quot;:&amp;quot;PROEDUCAR XXXII&amp;quot;}&quot;>PROEDUCAR XXXII</a>">
+            <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-2 u-btn-1" data-href="#" data-lang-es="{&quot;content&quot;:&quot;PROEDUCAR XXXII&quot;}">PROEDUCAR XXXIII</a>
           </h5>
-          <h5 class="u-text u-text-default u-text-palette-1-light-2 u-text-2" data-lang-es="Sample Headline">HACIA UNA INNOVACIÓN CON SENTIDO</h5>
+          <h5 class="u-align-left u-text u-text-default u-text-palette-1-light-2 u-text-2" data-lang-es="Sample Headline">LA GESTIÓN COMO PALABRA</h5>
         </div>
-      </div></header>
+      </div>
+    </header>
 <section class="u-clearfix u-gradient u-section-1" id="sec-3ffd">
     <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
