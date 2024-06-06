@@ -25,6 +25,7 @@ class SimpleInscriptionController extends Controller
     
     public function simpleInscriptionStore(SimpleInscriptionRequest $request)
     {
+        dd($request->all());
         $validated_data = $request->validated();
 
         $clean_name = preg_replace('/[^A-Za-z0-9\-]/', '_', $request->get('name'));
@@ -58,7 +59,7 @@ class SimpleInscriptionController extends Controller
         ]);
         try {
             Mail::to($user_data->email)->send(new FacetofaceInscriptionMail($inscription));   
-            Mail::to(env('ADMIN_EMAIL', "goday985@gmail.com"))->send(new AdminInscriptionMail($inscription));     
+            Mail::to(env('ADMIN_EMAIL', "cgerauy@gmail.com"))->send(new AdminInscriptionMail($inscription));     
             session()->flash('msg', 'Inscripción realizada con exito!!!');
         } catch (\Throwable $th) {
             Log::error("SimpleInscriptionController::Email: ".$user_data->email."; ".env('ADMIN_EMAIL'));
