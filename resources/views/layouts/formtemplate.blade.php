@@ -8,7 +8,7 @@
     Uruguay
     Congreso
     transformación Educativa">
-    <meta name="description" content="La transformación educativa en acción es un evento organizado por AUDEC - Asociación Uruguaya de Educación Católica">
+    <meta name="description" content="Vivenciando la transformación educativa es un evento organizado por AUDEC - Asociación Uruguaya de Educación Católica">
     <title>@yield('title')</title>
     <link rel="stylesheet" href="/css/nicepage.css" media="screen">
     <link rel="stylesheet" href="/css/inscripcion-Individual.css" media="screen">
@@ -26,9 +26,8 @@
 }</script>
     <meta name="theme-color" content="#ddd6f3">
     <meta property="og:title" content="Inscripción Indivudual">
-    <meta property="og:description" content="La transformación educativa en acción es un evento organizado por AUDEC - Asociación Uruguaya de Educación Católica">
+    <meta property="og:description" content="Vivenciando la transformación educativa es un evento organizado por AUDEC - Asociación Uruguaya de Educación Católica">
     <meta property="og:type" content="website">
-    <meta data-intl-tel-input-cdn-path="intlTelInput/">
 </head>
 <body data-path-to-root="./" data-include-products="false" class="u-body u-overlap u-xl-mode" data-lang="es">
     <header class="u-clearfix u-container-align-left-xl u-header u-palette-1-dark-1 u-sticky u-sticky-387b" id="sec-055d" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-valign-middle-xl u-valign-middle-xs u-sheet-1">
@@ -40,7 +39,7 @@
         </div>
       </div>
     </header>
-<section class="u-clearfix u-gradient u-section-1" id="sec-3ffd">
+    <section class="u-clearfix u-container-align-center-lg u-container-align-center-md u-container-align-center-xl u-gradient u-section-1" id="sec-3ffd">
     <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
             <div class="u-gutter-0 u-layout">
