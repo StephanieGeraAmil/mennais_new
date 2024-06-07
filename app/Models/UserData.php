@@ -18,7 +18,9 @@ class UserData extends Model
         'name',
         'document',
         'email',
-        'extra',        
+        'extra',   
+        'institution_name',
+        'institution_type',     
     ];
 
     protected $casts = ['extra'=>'array'];
