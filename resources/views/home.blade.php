@@ -50,9 +50,14 @@
     <label for="message-fbd3" class="u-form-control-hidden u-label"></label>
     <textarea placeholder="Mensaje" rows="4" cols="50" id="message-fbd3" name="message" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white" required="">{{old('message')}}</textarea>
   </div>
-  <div class="u-align-right u-form-group u-form-submit">    
+  {{-- <div class="u-align-right u-form-group u-form-submit">    
     <a onclick="$(this).closest('form').submit();" class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-3">ENVIAR</a>
     <input type="submit" value="submit" class="u-form-control-hidden">
+  </div> --}}
+  <div class="u-align-right u-form-group u-form-submit">
+    <button type="submit" class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-3">
+      ENVIAR
+    </button>
   </div>
   <input type="hidden" value="" name="recaptchaResponse">
 </form>
