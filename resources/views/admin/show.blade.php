@@ -200,7 +200,7 @@
                             <div class="w-full overflow-x-auto">
 
                                 <div class="flex items-center py-2 w-100">
-                                    @if ($inscription->certificateUrl())
+                                    @if (count($inscription->attendances) > 0)
                                         <a href="{!! $inscription->certificateUrl() !!}"
                                             class="mx-3.5 border-b bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 border border-white rounded-xl">
                                             link a certificado <i class="fas fa-certificate"></i>
