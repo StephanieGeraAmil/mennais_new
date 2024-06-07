@@ -68,6 +68,22 @@
                                                     {{ App\Enums\InscriptionTypeEnum::HIBRIDO->text() }}</option>
                                             </select>
                                         </div>
+                                        <div
+                                            class="flex items-center border-b @error('name') border-red-500 @else border-teal-500 @enderror py-2 w-100">
+                                            <input
+                                                class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                                                type="text" placeholder="Institucion" aria-label="Institucion"
+                                                name="institution_name"
+                                                value="{{ $inscription->userData->institution_name }}" />
+                                        </div>
+                                        <div
+                                            class="flex items-center border-b @error('document') border-red-500 @else border-teal-500 @enderror py-2 w-100">
+                                            <input
+                                                class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                                                type="text" placeholder="Tipo de institución"
+                                                aria-label="Tipo de institución" name="institution_type"
+                                                value="{{ $inscription->userData->institution_type }}" />
+                                        </div>
                                         <div class="">
                                             <div class="pt-3">
                                                 <button type="submit"
@@ -95,7 +111,7 @@
                             @endforeach                                
                         </div>      --}}
 
-                            <form action="/admin/user_data/{{ $inscription->userData->id }}" method="POST"
+                            {{-- <form action="/admin/user_data/{{ $inscription->userData->id }}" method="POST"
                                 class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="customphp"
                                 name="form" style="padding: 10px;">
                                 @csrf
@@ -123,7 +139,7 @@
                                         </button>
                                     </div>
                                 </div>
-                            </form>
+                            </form> --}}
                         </div>
                     </div>
                 </div>
@@ -145,9 +161,8 @@
                                         type="text" value="{{ $inscription->payment->reference }}" readonly />
                                 </div>
                                 <div class="justify-center flex items-center border-b py-2 w-100">
-                                    <a class="w-9/12" href="{{ $inscription->payment->url_payment }}"
-                                        target="_blank"><img src="{{ $inscription->payment->url_payment }}"
-                                            alt="payment"
+                                    <a class="w-9/12" href="{{ $inscription->payment->url_payment }}" target="_blank"><img
+                                            src="{{ $inscription->payment->url_payment }}" alt="payment"
                                             onerror="this.src='/assetsadmin/images/payment_default.png'"></a>
                                 </div>
                             </div>
@@ -203,7 +218,8 @@
                                     <ul>
                                         @foreach ($inscription->attendances as $attendance)
                                             <li>{{ Carbon\Carbon::parse($attendance->date)->format('d-m-Y') }} -
-                                                ({{ $attendance->type->value }})</li>
+                                                ({{ $attendance->type->value }})
+                                            </li>
                                         @endforeach
                                     </ul>
                                 </div>
