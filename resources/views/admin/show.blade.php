@@ -76,13 +76,35 @@
                                                 name="institution_name"
                                                 value="{{ $inscription->userData->institution_name }}" />
                                         </div>
-                                        <div
+                                        {{-- <div
                                             class="flex items-center border-b @error('institution_type') border-red-500 @else border-teal-500 @enderror py-2 w-100">
                                             <input
                                                 class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
                                                 type="text" placeholder="Tipo de institución"
                                                 aria-label="Tipo de institución" name="institution_type"
                                                 value="{{ $inscription->userData->institution_type }}" />
+                                        </div> --}}
+                                        <div class="flex items-center border-b py-2 w-100">
+                                            <select id="type" name="type"
+                                                class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
+                                                <option value="Educación Inicial"
+                                                    {{ old('type') ?? $inscription->userData->institution_type == 'Educación Inicial' ? 'Selected' : '' }}>
+                                                    Educación Inicial</option>
+                                                <option value="Primaria"
+                                                    {{ old('type') ?? $inscription->userData->institution_type == 'Primaria' ? 'Selected' : '' }}>
+                                                    Primaria</option>
+                                                    <option value="Secundaria"
+                                                    {{ old('type') ?? $inscription->userData->institution_type == 'Secundaria' ? 'Selected' : '' }}>
+                                                    Secundaria</option>
+                                                    <option value="Dirección General"
+                                                    {{ old('type') ?? $inscription->userData->institution_type == 'Dirección General' ? 'Selected' : '' }}>
+                                                    Dirección General</option>
+                                                    <option value="Otro"
+                                                    {{ old('type') ?? $inscription->userData->institution_type == 'Otro' ? 'Selected' : '' }}>
+                                                    Otro</option>
+
+
+                                            </select>
                                         </div>
                                         <div class="">
                                             <div class="pt-3">
