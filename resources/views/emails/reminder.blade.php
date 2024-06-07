@@ -12,7 +12,7 @@
 {{-- <p>Podrá acceder a las dos sesiones unos minutos antes del comienzo a través del <strong>mismo link</strong> :
  <button style="font-weight: bold; font: inherit; cursor: pointer; color: blue;" onclick="window.open('{!!$inscription->url()!!}', '_blank')">Acceso al Zoom</button></p> --}}
 
-<p>Para más información sobre las sesiones y los oradores puede visitar: <a href="audec.org">audec.org</a></p>
+<p>Para más información sobre sobre los contenidos, visite:  <a href="audec.org">audec.org</a></p>
 <p>Lo esperamos,</p>
 
 <!--<p>Saludos,</p>-->
