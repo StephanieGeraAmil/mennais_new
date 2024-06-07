@@ -85,7 +85,7 @@
                                                 value="{{ $inscription->userData->institution_type }}" />
                                         </div> --}}
                                         <div class="flex items-center border-b py-2 w-100">
-                                            <select id="type" name="type"
+                                            <select id="institution_type" name="institution_type"
                                                 class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
                                                 <option value="Educación Inicial"
                                                     {{ old('type') ?? $inscription->userData->institution_type == 'Educación Inicial' ? 'Selected' : '' }}>
