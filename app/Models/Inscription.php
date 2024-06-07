@@ -50,7 +50,7 @@ class Inscription extends Model
     }
 
     public function certificateUrl(){
-        return env("APP_URL", "https://audec.infinitosf.xyz")."/certificate/".$this->id."/".$this->generateToken();
+        return env("APP_URL", "https://audec.org")."/certificate/".$this->id."/".$this->generateToken();
     }
 
     public function validateToken($token){       

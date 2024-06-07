@@ -56,7 +56,7 @@ class SendCertificatesMail extends Command
         }
         
 
-        $inscriptions_list = Inscription::where('id','>',$mail->last_id)->take(2)->get();   
+        $inscriptions_list = Inscription::where('id','>',$mail->last_id)->take(100)->get();   
         $last_id = 0;
         
         // $mail_list = [];

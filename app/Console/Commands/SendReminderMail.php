@@ -57,7 +57,7 @@ class SendReminderMail extends Command
         }
   
          $inscriptions_list = Inscription::where('id', '>', $mail->last_id)
-            ->take(2)
+            ->take(100)
             ->get();
          //  $inscriptions_list = Inscription::where('type', 'hibrido')
          //   ->where('id', '>', $mail->last_id)
