@@ -214,13 +214,13 @@
                                     @csrf
                                     <input type="hidden" name="inscription_id" value="{{ $inscription->id }}">
                                     <div
-                                        class="flex items-center @error('name') border-red-500 @else border-teal-500 @enderror py-2 w-100">
+                                        class="flex items-center @error('name') border-red-500 @else border-teal-500 @enderror py-2 w-100 border-t ">
                                         <input
                                             class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
-                                            type="date" placeholder="Nombre" aria-label="" name="acreditation_date"
+                                            type="date" placeholder="acreditation_date" aria-label="" name="acreditation_date"
                                             value="" />
                                     </div>
-                                    <div class="flex items-center border-b py-2 w-100">
+                                    <div class="flex items-center p-2 w-100">
                                         <select id="type" name="type"
                                             class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
                                             {{-- <option value="virtual" {{ old('type') == 'virtual' ? 'Selected' : '' }}>
@@ -229,14 +229,14 @@
                                                 {{ App\Enums\InscriptionTypeEnum::HIBRIDO->text() }}</option>
                                         </select>
                                     </div>
-                                    <div class="flex items-center py-2 w-100">
+                                    <div class="flex items-center p-2 w-100">
                                         <button type="submit"
                                             class="bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 border border-white rounded-xl">
                                             Acreditación Manual
                                         </button>
                                     </div>
                                 </form>
-                                <div class="flex items-center py-2 w-100">
+                                <div class="flex items-center p-2 w-100">
                                     <ul>
                                         @foreach ($inscription->attendances as $attendance)
                                             <li>{{ Carbon\Carbon::parse($attendance->date)->format('d-m-Y') }} -
