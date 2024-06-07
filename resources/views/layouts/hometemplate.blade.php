@@ -108,7 +108,7 @@ transformación Educativa">
     </section>
     <section class="u-clearfix u-palette-1-light-2 u-section-3" id="sec-b098">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h3 class="u-align-center u-text u-text-palette-1-dark-3 u-text-1">Declarado de Interés Educativo por ANEP y MEC </h3>
+        {{-- <h3 class="u-align-center u-text u-text-palette-1-dark-3 u-text-1">Declarado de Interés Educativo por ANEP y MEC </h3> --}}
         <p class="u-align-justify u-text u-text-2"> En el aula, en el encuentro de
 docentes, en las reuniones con las autoridades educativas hay un
 dispositivo clave para que las cosas pasen o no pasen y es la calidad
@@ -171,7 +171,7 @@ hacer escuela.
                           <p class="u-align-left u-text u-text-1">El pago se realiza en:<br><b>SANTANDER CC Pesos Nº </b>
                             <span style="font-weight: 700;">000000256277</span>
                             <span style="font-weight: 700;">&nbsp;- Sucursal 62</span>
-                            <br>a nombre de la Asociación Uruguaya de Educación Católica.<br>
+                            a nombre de la Asociación Uruguaya de Educación Católica.<br>
                             <br>Es necesario realizar el depósito previo a la inscripción. Necesitará una imagen del mismo para poder inscribirse.
                           </p>
                         </div>
