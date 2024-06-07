@@ -68,6 +68,7 @@ class SendReminderMail extends Command
             // $qrCode = QrCode::format('png')->generate($inscription->qrUrl());
             // $qrCodeData = base64_encode($qrCode);
             if($inscription->id > 0){
+                Log::info("inscription: ".$inscription);
                 $email = $inscription->userData->email;
                 Log::info("email: ".$email);
                 try {
@@ -75,6 +76,7 @@ class SendReminderMail extends Command
                    Mail::to($email)->send(new ReminderMail($inscription));
                 // Mail::to($email)->send(new ReminderMail($inscription, $qrCodeData));
                 } catch (\Throwable $th) {
+                    Log::error("error: ".$th);
                     Log::error("Fallo email: ".$email);
                 }
                 echo "Correo enviado a: ".$email."\n";
