@@ -438,12 +438,12 @@ Blejmar
 
                     </form>
                   </div> --}}
-                  <div class="u-container-layout u-valign-bottom u-container-layout-1"><span class="u-file-icon u-icon u-icon-circle u-text-palette-1-dark-3 u-white u-icon-1"><img src="images/1034204-6aa7c0f0.png" alt=""></span>
+                  {{-- <div class="u-container-layout u-valign-bottom u-container-layout-1"><span class="u-file-icon u-icon u-icon-circle u-text-palette-1-dark-3 u-white u-icon-1"><img src="images/1034204-6aa7c0f0.png" alt=""></span>
                     <h3 class="u-custom-font u-font-raleway u-text u-text-default u-text-palette-1-dark-3 u-text-1">CONTACTO</h3>
                     <p class="u-text u-text-custom-color-21 u-text-default u-text-2">Por dudas o consultas sobre el evento, por favor comuníquese con nosotros al teléfono&nbsp;<a href="tel:24099899" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-color u-btn-1">2409 9899</a>, al mail <a href="mailto:stephanie036@gmail.com?subject=Contacto%20Proeducar" class="u-active-none u-border-grey-75 u-border-none u-btn u-button-link u-button-style u-hover-none u-text-body-color u-btn-2">secretaria@audec.edu.uy</a> o complete el siguiente formulario:
-                    </p>
+                    </p> --}}
                     <div class="u-clearfix u-custom-html u-custom-html-1">@yield('contact_form')</div>
-                  </div>
+                  {{-- </div> --}}
                 </div>
               </div>
               <div class="u-align-left u-container-style u-layout-cell u-size-30 u-layout-cell-2">
