@@ -7,9 +7,7 @@ Educación
 Uruguay
 Congreso
 transformación Educativa">
-    <meta name="description" content="PROEDUCAR XXXIII
-Hacia una innovación con sentido
-El docente como protagonista del cambio">
+    <meta name="description" content={{env('EVENT_NAME')}}>
     <title>Inicio</title>
     <link rel="stylesheet" href="/css/nicepage.css" media="screen">
 <link rel="stylesheet" href="/css/inicio.css" media="screen">
@@ -42,9 +40,7 @@ El docente como protagonista del cambio">
 }</script>
     <meta name="theme-color" content="#ddd6f3">
     <meta property="og:title" content="Inicio">
-    <meta property="og:description" content="PROEDUCAR XXXIII
-Hacia una innovación con sentido
-El docente como protagonista del cambio">
+    <meta property="og:description" content={{env('EVENT_NAME')}}>
     <meta property="og:type" content="website">
   <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
   <body data-path-to-root="./" data-include-products="false" class="u-body u-stick-footer u-xl-mode" data-lang="es"> 

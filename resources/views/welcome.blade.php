@@ -32,10 +32,10 @@ transformación Educativa">
 </head>
   <body class="u-body u-overlap u-xl-mode" data-lang="es"><header class="u-clearfix u-header u-palette-1-dark-1 u-sticky u-sticky-387b u-header" id="sec-055d"><div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-group-elements u-group-elements-1">
-          <h5 class="u-custom-font u-font-raleway u-text u-text-default u-text-1" data-lang-es="<a class=&quot;u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-3 u-block-control&quot; data-href=&quot;https://nicepage.com&quot; style=&quot;background-image: none; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot; data-block=&quot;552&quot; data-lang-es=&quot;{&amp;quot;content&amp;quot;:&amp;quot;PROEDUCAR XXXII&amp;quot;}&quot;>PROEDUCAR XXXII</a>">
-            <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-2 u-btn-1" data-href="https://nicepage.com" data-lang-es="{&quot;content&quot;:&quot;PROEDUCAR XXXII&quot;}">PROEDUCAR XXXII</a>
+          <h5 class="u-custom-font u-font-raleway u-text u-text-default u-text-1" data-lang-es="<a class=&quot;u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-3 u-block-control&quot; data-href=&quot;https://nicepage.com&quot; style=&quot;background-image: none; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot; data-block=&quot;552&quot; data-lang-es=&quot;{&amp;quot;content&amp;quot;:&amp;quot;PROEDUCAR XXXIII&amp;quot;}&quot;>PROEDUCAR XXXIII</a>">
+            <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-2 u-btn-1" data-href="https://nicepage.com" data-lang-es="{&quot;content&quot;:&quot;PROEDUCAR XXXIII&quot;}">PROEDUCAR XXXIII</a>
           </h5>
-          <h5 class="u-text u-text-default u-text-palette-1-light-2 u-text-2" data-lang-es="Sample Headline">HACIA UNA INNOVACIÓN CON SENTIDO</h5>
+          <h5 class="u-text u-text-default u-text-palette-1-light-2 u-text-2" data-lang-es="Sample Headline">LA GESTIÓN COMO PALABRA</h5>
         </div>
       </div></header>
     <section class="u-clearfix u-gradient u-section-1" id="sec-3ffd">
@@ -43,7 +43,7 @@ transformación Educativa">
         <h3 class="u-align-center u-text u-text-body-alt-color u-text-1">BIENVENIDO</h3>
         <div class="u-align-center u-border-2 u-border-palette-1-light-1 u-container-style u-expanded-width-xs u-group u-opacity u-opacity-60 u-radius-22 u-shape-round u-white u-group-1">
           <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-top-xs u-container-layout-1">
-            <p class="u-text u-text-2">Gracias por participar de PROEDUCAR XXXII.<br>
+            <p class="u-text u-text-2">Gracias por participar de PROEDUCAR XXXIII.<br>
               <br>Será redirigido al zoom del evento en unos segundos.&nbsp;Si no es redireccionado automáticamente, presione el botón a continuación.
             </p>
           </div>
