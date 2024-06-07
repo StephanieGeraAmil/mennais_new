@@ -84,6 +84,8 @@ class UserDataController extends Controller
         $user_data->name=$validated_data['name'];
         $user_data->document=$validated_data['document'];
         $user_data->email=$validated_data['email'];
+        $user_data->institution_name=$validated_data['institution_name'];
+        $user_data->institution_type=$validated_data['institution_type'];
         $user_data->save();
         $inscription = $user_data->inscription;
         $inscription->type = Arr::get($validated_data, "type");
