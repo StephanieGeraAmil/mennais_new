@@ -408,7 +408,7 @@ Blejmar
                     </div>
                   </div>
                   <p class="u-text u-text-custom-color-21 u-text-2">Por dudas o consultas sobre el evento, por favor comuníquese con nosotros al teléfono&nbsp;2409 9899, al mail secretaria@audec.edu.uy o complete el siguiente formulario:</p>
-                  <div class="u-expanded-width-sm u-expanded-width-xs u-form u-form-1">
+                  {{-- <div class="u-expanded-width-sm u-expanded-width-xs u-form u-form-1">
                     <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 15px;" source="email" name="form">
                       <div class="u-form-group u-form-name u-label-none">
                         <label class="u-label">Name</label>
@@ -433,11 +433,16 @@ Blejmar
                       <div class="u-form-send-message u-form-send-success">Gracias! Su mensaje ha sido enviado.</div>
                       <div class="u-form-send-error u-form-send-message">No fue posible enviar su mensaje, comuníquese por mail o teléfono. Gracias.</div>
                       <input type="hidden" value="" name="recaptchaResponse">
-                      {{-- <input type="hidden" name="formServices" value="6173dd73-d875-2282-6eb3-841d30298ddb">
-                      <input type="hidden" name="siteKey" value="6Lc5FscpAAAAAASaAml6WBZgYueijqCmZEeIGfsc"> --}}
-                      <input type="hidden" name="formServices" value="a5654f54-356b-6af3-603f-b7a6a72879a0">
-                      <input type="hidden" name="siteKey" value="6Lc5FscpAAAAAASaAml6WBZgYueijqCmZEeIGfsc">
+                      <input type="hidden" name="formServices" value="6173dd73-d875-2282-6eb3-841d30298ddb">
+                      <input type="hidden" name="siteKey" value="6Lc5FscpAAAAAASaAml6WBZgYueijqCmZEeIGfsc"> 
+
                     </form>
+                  </div> --}}
+                  <div class="u-container-layout u-valign-bottom u-container-layout-1"><span class="u-file-icon u-icon u-icon-circle u-text-palette-1-dark-3 u-white u-icon-1"><img src="images/1034204-6aa7c0f0.png" alt=""></span>
+                    <h3 class="u-custom-font u-font-raleway u-text u-text-default u-text-palette-1-dark-3 u-text-1">CONTACTO</h3>
+                    <p class="u-text u-text-custom-color-21 u-text-default u-text-2">Por dudas o consultas sobre el evento, por favor comuníquese con nosotros al teléfono&nbsp;<a href="tel:24099899" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-color u-btn-1">2409 9899</a>, al mail <a href="mailto:stephanie036@gmail.com?subject=Contacto%20Proeducar" class="u-active-none u-border-grey-75 u-border-none u-btn u-button-link u-button-style u-hover-none u-text-body-color u-btn-2">secretaria@audec.edu.uy</a> o complete el siguiente formulario:
+                    </p>
+                    <div class="u-clearfix u-custom-html u-custom-html-1">@yield('contact_form')</div>
                   </div>
                 </div>
               </div>
