@@ -2,6 +2,9 @@
   background-image: linear-gradient(#b8aed9, rgba(252,209,207,0.75));
   padding-top: 55px;
 }
+.certificate_form{
+  padding-top: 10px;
+}
 
 .u-section-1 .u-sheet-1 {
   min-height: 1037px;
