@@ -64,6 +64,7 @@ class SimpleInscriptionController extends Controller
             Mail::to(env('ADMIN_EMAIL', "cgerauy@gmail.com"))->send(new AdminInscriptionMail($inscription));     
             session()->flash('msg', 'Inscripción realizada con exito!!!');
         } catch (\Throwable $th) {
+            Log::error("error: ".$th);
             Log::error("SimpleInscriptionController::Email: ".$user_data->email."; ".env('ADMIN_EMAIL'));
             session()->flash('msg', 'Inscripción realizada con exito. En caso de no recibir el email, contactese con Audec');
         }        
