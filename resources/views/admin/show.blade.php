@@ -223,8 +223,8 @@
                                     <div class="flex items-center border-b py-2 w-100">
                                         <select id="type" name="type"
                                             class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
-                                            <option value="virtual" {{ old('type') == 'virtual' ? 'Selected' : '' }}>
-                                                {{ App\Enums\InscriptionTypeEnum::REMOTO->text() }}</option>
+                                            {{-- <option value="virtual" {{ old('type') == 'virtual' ? 'Selected' : '' }}>
+                                                {{ App\Enums\InscriptionTypeEnum::REMOTO->text() }}</option> --}}
                                             <option value="hibrido" {{ old('type') == 'hibrido' ? 'Selected' : '' }}>
                                                 {{ App\Enums\InscriptionTypeEnum::HIBRIDO->text() }}</option>
                                         </select>
