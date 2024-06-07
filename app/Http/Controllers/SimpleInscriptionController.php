@@ -25,8 +25,9 @@ class SimpleInscriptionController extends Controller
     
     public function simpleInscriptionStore(SimpleInscriptionRequest $request)
     {
+    //  dd($request->all());
         $validated_data = $request->validated();
-
+        // dd($validated_data);
         $clean_name = preg_replace('/[^A-Za-z0-9\-]/', '_', $request->get('name'));
         $image_name = Carbon::now()->format('dmyHis')."_".$clean_name.".".$request->payment_file->extension();
         $request->payment_file->move(public_path('images'),$image_name);        
@@ -39,10 +40,12 @@ class SimpleInscriptionController extends Controller
          
         
         $user_data = UserData::create([
-            'name'=>$validated_data['name'],
+            'name'=>$validated_data['name']." ".$validated_data['lastname'],
             'document'=>Arr::get($validated_data, "document"),
             'email'=>$validated_data['email'],
-            'extra'=>json_encode($validated_data['extra']) ?? json_encode([]),
+            'extra' => isset($validated_data['extra']) ? json_encode($validated_data['extra']) : json_encode([]),
+            'institution_name'=>$validated_data['institution_name'],
+            'institution_type'=>$validated_data['institution_type'],
         ]);
         
         
@@ -53,11 +56,12 @@ class SimpleInscriptionController extends Controller
             'user_data_id'=>$user_data->id,
             'payment_id'=>$payment->id,
             'status'=>1,
-            'type'=>Arr::get($validated_data,"type")
+            // 'type'=>Arr::get($validated_data,"type")
+            'type' => 'hibrido',
         ]);
         try {
             Mail::to($user_data->email)->send(new FacetofaceInscriptionMail($inscription));   
-            Mail::to(env('ADMIN_EMAIL', "goday985@gmail.com"))->send(new AdminInscriptionMail($inscription));     
+            Mail::to(env('ADMIN_EMAIL', "cgerauy@gmail.com"))->send(new AdminInscriptionMail($inscription));     
             session()->flash('msg', 'Inscripción realizada con exito!!!');
         } catch (\Throwable $th) {
             Log::error("SimpleInscriptionController::Email: ".$user_data->email."; ".env('ADMIN_EMAIL'));

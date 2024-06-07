@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Mail;
-
+use Illuminate\Support\Facades\Log;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
@@ -32,7 +32,7 @@ class ReminderMail extends Mailable
      */
     public function build()
     {
-        return  $this->subject('PROEDUCAR XXXII - HACIA UNA INNOVACIÓN CON SENTIDO. - Recordatorio')->view('emails.reminder')
+        return  $this->subject('PROEDUCAR XXXIII - LA GESTIÓN COMO PALABRA- Recordatorio')->view('emails.reminder')
                 ->with('inscription', $this->inscription);
     
      //      return  $this->subject('La Transformación Educativa en acción - Recordatorio')->view('emails.reminder')

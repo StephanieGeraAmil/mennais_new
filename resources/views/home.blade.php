@@ -3,9 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="keywords" content="Cosmos, Read what our customers say, ​View our work, discover more about us, read more of our stories, explore our archive or get in touch., How We Work, ​Uncover and meet customer needs., ​Want your brand to stand above the rest?, Get in touch">
-    <meta name="description" content="PROEDUCAR XXXII
-Hacia una innovación con sentido
-El docente como protagonista del cambio">
+    <meta name="description" content={{env('EVENT_NAME')}}>
     <title>Inicio</title>
     <link rel="stylesheet" href="/css/nicepage.css" media="screen">
     <link rel="stylesheet" href="/css/inicio.css" media="screen">
@@ -22,9 +20,7 @@ El docente como protagonista del cambio">
 }</script>
     <meta name="theme-color" content="#ddd6f3">
     <meta property="og:title" content="Inicio">
-    <meta property="og:description" content="PROEDUCAR XXXII
-Hacia una innovación con sentido
-El docente como protagonista del cambio">
+    <meta property="og:description" content={{env('EVENT_NAME')}}>
     <meta property="og:type" content="website">
   <meta data-intl-tel-input-cdn-path="intlTelInput/">
 @endsection
@@ -54,9 +50,14 @@ El docente como protagonista del cambio">
     <label for="message-fbd3" class="u-form-control-hidden u-label"></label>
     <textarea placeholder="Mensaje" rows="4" cols="50" id="message-fbd3" name="message" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white" required="">{{old('message')}}</textarea>
   </div>
-  <div class="u-align-right u-form-group u-form-submit">    
+  {{-- <div class="u-align-right u-form-group u-form-submit">    
     <a onclick="$(this).closest('form').submit();" class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-3">ENVIAR</a>
     <input type="submit" value="submit" class="u-form-control-hidden">
+  </div> --}}
+  <div class="u-align-right u-form-group u-form-submit">
+    <button type="submit" class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-3">
+      ENVIAR
+    </button>
   </div>
   <input type="hidden" value="" name="recaptchaResponse">
 </form>
@@ -64,17 +65,17 @@ El docente como protagonista del cambio">
 
 @section('inscription_buttons')
 {{-- @if (Carbon\Carbon::now()->lt(Carbon\Carbon::parse(env('FINISHINSCRIPTIONDATE','31-12-2023'))))  --}}
-<!--<div align="center">
+<div align="center">
   <a href="/simple_inscription" class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-1">inscripción individual</a>
-  <a href="/group_inscription" class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-2">Invitación Grupal</a>
-</div> -->
+ <!-- <a href="/group_inscription" class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-2">Invitación Grupal</a>-->
+</div> 
 {{-- @else
 <!--<p class="">Inscripción finalizada.</p>-->
 @endif --}}
 <!--<p class="">Se han agotado los cupos de la Jornada Presencial. 
 Si aún no lo ha hecho, lo invitamos a inscribirse para las instancias virtuales a partir del 9 de febrero.</p> -->
-<p class="">INSCRIPCIONES CERRADAS. 
-Se han agotado los cupos para la inscripción virtual. Muchas gracias por el interés, nos encontramos en la próxima actividad.</p>
+{{-- <p class="">INSCRIPCIONES CERRADAS. 
+Se han agotado los cupos para la inscripción virtual. Muchas gracias por el interés, nos encontramos en la próxima actividad.</p> --}}
 @endsection
 
 @section('certificate_button')

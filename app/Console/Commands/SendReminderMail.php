@@ -46,7 +46,8 @@ class SendReminderMail extends Command
     public function handle()
     {
         Log::info("Se envían los correos de inscripcion");
-        $mail = SendMail::find(1);
+        // $mail = SendMail::find(1);
+        $mail =  SendMail::query()->orderBy('id', 'desc')->first();
         if(!isset($mail)){
             $mail = SendMail::create([
                 'id'=>1,
@@ -67,12 +68,14 @@ class SendReminderMail extends Command
             // $qrCode = QrCode::format('png')->generate($inscription->qrUrl());
             // $qrCodeData = base64_encode($qrCode);
             if($inscription->id > 0){
+                // Log::info("inscription: ".$inscription);
                 $email = $inscription->userData->email;
                 Log::info("email: ".$email);
                 try {
                    Mail::to($email)->send(new ReminderMail($inscription));
                 // Mail::to($email)->send(new ReminderMail($inscription, $qrCodeData));
                 } catch (\Throwable $th) {
+                    Log::error("error: ".$th);
                     Log::error("Fallo email: ".$email);
                 }
                 echo "Correo enviado a: ".$email."\n";

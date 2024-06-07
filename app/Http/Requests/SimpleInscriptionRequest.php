@@ -18,12 +18,18 @@ class SimpleInscriptionRequest extends FormRequest
     {
         return [
             'name' => 'required|string|max:255',
+            'lastname' => 'required|string|max:255',
             'document' => 'required|string|max:255|unique:user_data',
             'email' => 'required|email',
             'payment_file'=>'required|file|mimes:jpg,png,jpeg,gif,svg,pdf',
-            'extra' => 'required|array',
-            'extra.place'=> ["required", Rule::in(['montevideo', 'interior'])],
-            'type'=> ['required', new Enum(InscriptionTypeEnum::class) ]
+            'extra' => 'array', 
+            'extra.place' => [ 
+                Rule::in(['montevideo', 'interior'])
+            ],
+            'amount'=>'numeric',
+            'institution_name'=>'string|max:255',
+            'institution_type'=>'string|max:255',
+            'type' =>  new Enum(InscriptionTypeEnum::class)
         ];
     }
     

@@ -15,7 +15,7 @@
 </head>
 <body style="width: 1024px; font-size:20px; font-family:'Open Sans',sans-serif"; >
     <div style="width:934px; margin-top:200px; text-align:right">
-        Montevideo, miércoles 22 de febrero de 2024
+        Montevideo, viernes 26 de julio de 2024
         </div>
     <div style="margin-left:80px; margin-top:49px">
         Se certifica que:
@@ -26,11 +26,8 @@
     
     <div style="width:85%;margin-left:80px; margin-top:10px;text-align:center;">
         Ha participado de {{env('EVENT_NAME')}}, <BR/>
-        organizado por AUDEC, en las siguientes instancias:
-
-           <ul style="font-size:18px; text-align:left;">
-        {!! $attendance_text !!}
-    </ul>
+        organizado por AUDEC, el día {!! $attendance_text !!}
+  
     </div>
 </body>
 </html>

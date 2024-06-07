@@ -7,9 +7,7 @@ Educación
 Uruguay
 Congreso
 transformación Educativa">
-    <meta name="description" content="PROEDUCAR XXXIII
-Hacia una innovación con sentido
-El docente como protagonista del cambio">
+    <meta name="description" content={{env('EVENT_NAME')}}>
     <title>Inicio</title>
     <link rel="stylesheet" href="/css/nicepage.css" media="screen">
 <link rel="stylesheet" href="/css/inicio.css" media="screen">
@@ -42,9 +40,7 @@ El docente como protagonista del cambio">
 }</script>
     <meta name="theme-color" content="#ddd6f3">
     <meta property="og:title" content="Inicio">
-    <meta property="og:description" content="PROEDUCAR XXXIII
-Hacia una innovación con sentido
-El docente como protagonista del cambio">
+    <meta property="og:description" content={{env('EVENT_NAME')}}>
     <meta property="og:type" content="website">
   <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
   <body data-path-to-root="./" data-include-products="false" class="u-body u-stick-footer u-xl-mode" data-lang="es"> 
@@ -112,7 +108,7 @@ El docente como protagonista del cambio">
     </section>
     <section class="u-clearfix u-palette-1-light-2 u-section-3" id="sec-b098">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h3 class="u-align-center u-text u-text-palette-1-dark-3 u-text-1">Declarado de Interés Educativo por ANEP y MEC </h3>
+        {{-- <h3 class="u-align-center u-text u-text-palette-1-dark-3 u-text-1">Declarado de Interés Educativo por ANEP y MEC </h3> --}}
         <p class="u-align-justify u-text u-text-2"> En el aula, en el encuentro de
 docentes, en las reuniones con las autoridades educativas hay un
 dispositivo clave para que las cosas pasen o no pasen y es la calidad
@@ -175,7 +171,7 @@ hacer escuela.
                           <p class="u-align-left u-text u-text-1">El pago se realiza en:<br><b>SANTANDER CC Pesos Nº </b>
                             <span style="font-weight: 700;">000000256277</span>
                             <span style="font-weight: 700;">&nbsp;- Sucursal 62</span>
-                            <br>a nombre de la Asociación Uruguaya de Educación Católica.<br>
+                            a nombre de la Asociación Uruguaya de Educación Católica.<br>
                             <br>Es necesario realizar el depósito previo a la inscripción. Necesitará una imagen del mismo para poder inscribirse.
                           </p>
                         </div>
@@ -191,7 +187,8 @@ hacer escuela.
                       <div class="custom-expanded u-container-align-center u-container-style u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xl u-group u-shape-rectangle u-group-2">
                         <div class="u-container-layout u-container-layout-4">
                           <h5 class="u-align-center u-text u-text-palette-1-dark-3 u-text-2">INSCRIBITE AQUÍ </h5>
-                          <a href="#" class="u-align-center u-btn u-button-style u-btn-1">Inscripción Individual </a>
+                          {{-- <a href="#" class="u-align-center u-btn u-button-style u-btn-1">Inscripción Individual </a> --}}
+                          <div class="u-clearfix u-custom-html u-custom-html-1">@yield('inscription_buttons')</div>
                         </div>
                       </div>
                     </div>
@@ -411,7 +408,7 @@ Blejmar
                     </div>
                   </div>
                   <p class="u-text u-text-custom-color-21 u-text-2">Por dudas o consultas sobre el evento, por favor comuníquese con nosotros al teléfono&nbsp;2409 9899, al mail secretaria@audec.edu.uy o complete el siguiente formulario:</p>
-                  <div class="u-expanded-width-sm u-expanded-width-xs u-form u-form-1">
+                  {{-- <div class="u-expanded-width-sm u-expanded-width-xs u-form u-form-1">
                     <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 15px;" source="email" name="form">
                       <div class="u-form-group u-form-name u-label-none">
                         <label class="u-label">Name</label>
@@ -437,8 +434,16 @@ Blejmar
                       <div class="u-form-send-error u-form-send-message">No fue posible enviar su mensaje, comuníquese por mail o teléfono. Gracias.</div>
                       <input type="hidden" value="" name="recaptchaResponse">
                       <input type="hidden" name="formServices" value="6173dd73-d875-2282-6eb3-841d30298ddb">
+                      <input type="hidden" name="siteKey" value="6Lc5FscpAAAAAASaAml6WBZgYueijqCmZEeIGfsc"> 
+
                     </form>
-                  </div>
+                  </div> --}}
+                  {{-- <div class="u-container-layout u-valign-bottom u-container-layout-1"><span class="u-file-icon u-icon u-icon-circle u-text-palette-1-dark-3 u-white u-icon-1"><img src="images/1034204-6aa7c0f0.png" alt=""></span>
+                    <h3 class="u-custom-font u-font-raleway u-text u-text-default u-text-palette-1-dark-3 u-text-1">CONTACTO</h3>
+                    <p class="u-text u-text-custom-color-21 u-text-default u-text-2">Por dudas o consultas sobre el evento, por favor comuníquese con nosotros al teléfono&nbsp;<a href="tel:24099899" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-color u-btn-1">2409 9899</a>, al mail <a href="mailto:stephanie036@gmail.com?subject=Contacto%20Proeducar" class="u-active-none u-border-grey-75 u-border-none u-btn u-button-link u-button-style u-hover-none u-text-body-color u-btn-2">secretaria@audec.edu.uy</a> o complete el siguiente formulario:
+                    </p> --}}
+                    <div class="u-clearfix u-custom-html u-custom-html-1">@yield('contact_form')</div>
+                  {{-- </div> --}}
                 </div>
               </div>
               <div class="u-align-left u-container-style u-layout-cell u-size-30 u-layout-cell-2">
@@ -449,7 +454,8 @@ Blejmar
                     </div>
                   </div>
                   <p class="u-text u-text-4">A partir del 29 de julio podrá descargar aquí su certificado digital de asistencia​&nbsp; </p>
-                  <a href="#" class="u-align-center u-btn u-button-style u-btn-2">Descargar Certificado </a>
+                  {{-- <a href="#" class="u-align-center u-btn u-button-style u-btn-2">Descargar Certificado </a> --}}
+                  <div class="u-clearfix u-custom-html u-custom-html-1" style="font-size:1.25rem !important;color:#040404 !important;" >@yield('certificate_button')</div>
                 </div>
               </div>
             </div>

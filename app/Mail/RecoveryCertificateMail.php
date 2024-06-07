@@ -6,6 +6,7 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Support\Facades\Log;
 
 class RecoveryCertificateMail extends Mailable
 {
@@ -30,7 +31,7 @@ class RecoveryCertificateMail extends Mailable
      */
     public function build()
     {
-        return $this->subject(env('EVENT_NAME').' - Certificado, materiales y videos')->view('emails.recoverycertificate')
+        return $this->subject(' PROEDUCAR XXXIII - LA GESTIÓN COMO PALABRA- Certificado')->view('emails.recoverycertificate')
         ->with('inscription',$this->inscription);
     }
 }

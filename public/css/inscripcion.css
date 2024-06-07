@@ -1,5 +1,12 @@
  .u-section-1 {
   background-image: linear-gradient(#b8aed9, rgba(252,209,207,0.75));
+  padding-top: 55px;
+}
+.certificate_form{
+  margin: 10px 0;
+}
+.certificate_button{
+  margin: 5px 0;
 }
 
 .u-section-1 .u-sheet-1 {
@@ -150,7 +157,7 @@
   }
 
   .u-section-1 .u-layout-wrap-1 {
-    margin-top: 189px;
+    margin-top: 280px;
     margin-bottom: 60px;
     margin-right: initial;
     margin-left: initial;

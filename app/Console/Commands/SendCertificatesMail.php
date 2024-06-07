@@ -5,6 +5,7 @@ namespace App\Console\Commands;
 use App\Mail\RecoveryCertificateMail;
 use App\Models\Inscription;
 use App\Models\SendMail;
+use App\Models\Attendance;
 use Carbon\Carbon;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
@@ -44,7 +45,8 @@ class SendCertificatesMail extends Command
     public function handle()
     {
         Log::info("Se envían los correos de link a certificados");
-        $mail = SendMail::find(1);
+        // $mail = SendMail::find(1);
+        $mail =  SendMail::query()->orderBy('id', 'desc')->first();
         if(!isset($mail)){
             $mail = SendMail::create([
                 'id'=>1,

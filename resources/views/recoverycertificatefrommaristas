@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="es-UY">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords"
+        content="JORNADAS PEDAGÓGICAS MARISTAS, Un tiempo de encuentro y formación en torno a los desafíos de la educación marista hoy.">
+    <meta name="description" content="JORNADAS PEDAGÓGICAS MARISTAS">
+    <title>Certificado</title>
+    <link rel="stylesheet" href="/css/nicepage.css" media="screen">
+    <link rel="stylesheet" href="/css/zoom.css" media="screen">
+    <script class="u-script" type="text/javascript" src="/js/jquery.js" defer></script>
+    <meta name="generator" content="isf.uy">
+    <link rel="icon" href="/images/favicon1.png">
+    <link id="u-theme-google-font" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "JornadasMaristas"
+    }
+    </script>
+    <script>
+        function clean_document(element) {
+            let input = $(element);
+            let input_val = input.val();
+            let new_input_val = input_val.replace(/\D/g, "");
+            input.val(new_input_val);
+        }
+    </script>
+
+    <style class="u-overlap-style">
+        .u-overlap:not(.u-sticky-scroll) .u-header {
+            background-color: #25225B !important;
+        }
+        body {
+            margin: 0;
+            padding: 50px;
+        }
+
+        .u-section-first {
+            padding-top: 120px;
+        }
+    </style>
+    <meta name="theme-color" content="#25225B">
+    <meta property="og:title" content="Certifcate">
+    <meta property="og:description"
+        content="Un tiempo de encuentro y formación en torno a los desafíos de la educación marista hoy.">
+    <meta property="og:type" content="website">
+    <meta data-intl-tel-input-cdn-path="intlTelInput/">
+</head>
+
+<body class="u-body u-overlap u-xl-mode" data-lang="es">
+    <header class="u-clearfix u-container-align-center u-custom-color-26 u-header u-sticky u-header" id="sec-055d"
+        style="background-color:#25225B;width:100%;">
+        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1" style="background-color:#25225B;width:100%;">
+            <img class="u-image u-image-contain u-image-default u-image-1" src="{{ asset('images/logo_cab_x.png') }}"
+                alt="" data-image-width="1249" data-image-height="338">
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </header>
+
+    <section class="u-clearfix u-gradient u-section-1 u-section-first" id="sec-3ffd">
+        @isset($errors)
+            @error('document')
+                <div class="u-size-30">
+                    <div class="u-layout-col">
+                        <div class="u-align-center u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
+                            <div class="u-container-layout u-valign-middle u-container-layout-1">
+                                <h5 class="">El documento ingresado no es correcto.</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            @enderror
+        @endisset
+
+        @isset($wrong_document)
+            <div class="u-size-30">
+                <div class="u-layout-col">
+                    <div class="u-align-center u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
+                        <div class="u-container-layout u-valign-middle u-container-layout-1">
+                            <h5 class="">El documento ingresado no es correcto.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        @endisset
+
+        @isset($success)
+            <div class="u-size-30">
+                <div class="u-layout-col">
+                    <div class="u-align-center u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
+                        <div class="u-container-layout u-valign-middle u-container-layout-1"
+                            style="background-color:#2cccc4">
+                            <h5 class="">El vínculo se ha enviado correctamente.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        @endisset
+
+        @isset($fail)
+            <div class="u-size-30">
+                <div class="u-layout-col">
+                    <div class="u-align-center u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
+                        <div class="u-container-layout u-valign-middle u-container-layout-1">
+                            <h5 class="">Usted no figura acreditado, por favor comuníquese con
+                                nosotros al mail <a
+                                    href="mailto:info@proeventos.com.uy?subject=Solicitud%20de%20Certificado">info@proeventos.com.uy</a>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        @endisset
+    </section>
+
+    <section class="u-clearfix u-gradient u-section-1" id="sec-3ffd">
+      <h4 style="color:#25225B;"> Solicitud de certificado</h4> 
+    </section>
+
+    <section class="u-clearfix u-gradient u-section-1" id="sec-3ffd">
+        <p class="u-text u-text-3">Ingrese su documento y le enviaremos a su mail un link donde podrá descargar el
+            certificado.</p>
+    </section>
+
+    <section class="u-clearfix u-gradient u-section-1"  style="width:50%;"id="sec-3ffd">
+        <form class="w-full max-w-sm" action="{{ Route('inscription.certificateRecoveryMail') }}" method="POST">
+            @csrf
+            <div class="u-form-group u-form-name">
+                <label for="document-05a8" class="u-form-control-hidden u-label"></label>
+                <input type="text" placeholder="Ingrese el documento" id="document-05a8" name="document"
+                    class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-1" required
+                    value="{{ old('document') }}" onblur="clean_document(this)">
+            </div>
+            <div class="u-align-right u-form-group u-form-submit">
+                <a onclick="$(this).closest('form').submit()"
+                    class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-1">Enviar</a>
+            </div>
+        </form>
+    </section>
+
+    <footer class="u-align-center u-clearfix u-footer u-palette-1-dark-2 u-footer"   style="position:absolute; bottom:0; left:0;background-color:#25225B;width:100%;" id="sec-ca3a">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <p class="u-text u-text-default u-text-1">
+                <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-white u-btn-1"
+                    href="https://isf.uy/">
+                    <span class="u-file-icon u-icon u-text-white u-icon-1"><img src="images/7199452-c2e758c2.png"
+                            alt=""></span>&nbsp;ISF.uy
+                </a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
