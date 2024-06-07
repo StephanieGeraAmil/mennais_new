@@ -25,7 +25,7 @@ class SimpleInscriptionController extends Controller
     
     public function simpleInscriptionStore(SimpleInscriptionRequest $request)
     {
-        dd($request->all());
+        // dd($request->all());
         $validated_data = $request->validated();
 
         $clean_name = preg_replace('/[^A-Za-z0-9\-]/', '_', $request->get('name'));
