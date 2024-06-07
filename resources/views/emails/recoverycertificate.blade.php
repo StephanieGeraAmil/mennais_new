@@ -1,4 +1,4 @@
-<p>Hola {{$inscription->userData->name}} {{$inscription->userData->lastname}}, Agradecemos su participación en el PROEDUCAR XXXIII - LA GESTIÓN COMO PALABRA.</p>
+<p>Hola {{$inscription->userData->name}}, Agradecemos su participación en el PROEDUCAR XXXIII - LA GESTIÓN COMO PALABRA.</p>
 
 <p>
     En el siguiente enlace puede descargarse su  certificado de asistencia: <a href="{!!$inscription->certificateUrl()!!}">{!!$inscription->certificateUrl()!!}</a>
