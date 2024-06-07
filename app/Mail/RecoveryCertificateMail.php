@@ -31,7 +31,7 @@ class RecoveryCertificateMail extends Mailable
      */
     public function build()
     {
-        return $this->subject(' PROEDUCAR XXXIII - LA GESTIÓN COMO PALABRA- Certificado, materiales y videos')->view('emails.recoverycertificate')
+        return $this->subject(' PROEDUCAR XXXIII - LA GESTIÓN COMO PALABRA- Certificado')->view('emails.recoverycertificate')
         ->with('inscription',$this->inscription);
     }
 }
