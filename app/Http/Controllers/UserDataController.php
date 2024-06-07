@@ -76,7 +76,9 @@ class UserDataController extends Controller
             'name' => 'required|string|max:255',
             'document' => 'required|string|max:255',
             'email' => 'required|email',
-            'type' => ['required', new Enum(InscriptionTypeEnum::class)]
+            'type' => ['required', new Enum(InscriptionTypeEnum::class)],
+            'institution_name'=>'string|max:255',
+            'institution_type'=>'string|max:255'
         ]); 
         $user_data = UserData::findOrFail($id);               
         $user_data->name=$validated_data['name'];
