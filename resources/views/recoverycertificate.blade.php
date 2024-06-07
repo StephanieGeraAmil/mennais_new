@@ -5,7 +5,7 @@ Solicitud de certificado
 @section('notifications')
 @isset($errors)                                        
 @error('document')                        
-<div class="u-size-30 certificate_form">
+<div class="u-size-30">
     <div class="u-layout-col">
         <div class="u-align-center u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
             <div class="u-container-layout u-valign-middle u-container-layout-1">
@@ -63,7 +63,7 @@ Solicitud de certificado
 <p class="u-text u-text-3">Ingrese su documento y le enviaremos a su mail un link donde podrá descargar el certificado.</p>
 @endsection
 @section('form')
-<form class="w-full max-w-sm" action="{{Route('inscription.certificateRecoveryMail')}}" method="POST">
+<form class="w-full max-w-sm certificate_form" action="{{Route('inscription.certificateRecoveryMail')}}" method="POST">
     @csrf
     <div class="u-form-group u-form-name">
         <label for="document-05a8" class="u-form-control-hidden u-label"></label>
