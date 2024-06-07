@@ -177,7 +177,7 @@
                                         class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
                                         type="text" value="{{ $inscription->payment->amount_deposited }}" readonly />
                                 </div>
-                                <div class="flex items-center border-b py-2 w-100">
+                                <div class="flex items-center  py-2 w-100">
                                     <input
                                         class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
                                         type="text" value="{{ $inscription->payment->reference }}" readonly />
