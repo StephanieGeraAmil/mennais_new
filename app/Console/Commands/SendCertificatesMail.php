@@ -44,7 +44,8 @@ class SendCertificatesMail extends Command
     public function handle()
     {
         Log::info("Se envían los correos de link a certificados");
-        $mail = SendMail::find(1);
+        // $mail = SendMail::find(1);
+        $mail =  SendMail::query()->orderBy('id', 'desc')->first();
         if(!isset($mail)){
             $mail = SendMail::create([
                 'id'=>1,

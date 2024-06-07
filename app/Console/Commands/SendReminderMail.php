@@ -46,7 +46,8 @@ class SendReminderMail extends Command
     public function handle()
     {
         Log::info("Se envían los correos de inscripcion");
-        $mail = SendMail::find(1);
+        // $mail = SendMail::find(1);
+        $mail =  SendMail::query()->orderBy('id', 'desc')->first();
         if(!isset($mail)){
             $mail = SendMail::create([
                 'id'=>1,
