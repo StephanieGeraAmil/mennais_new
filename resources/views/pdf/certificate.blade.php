@@ -26,11 +26,8 @@
     
     <div style="width:85%;margin-left:80px; margin-top:10px;text-align:center;">
         Ha participado de {{env('EVENT_NAME')}}, <BR/>
-        organizado por AUDEC, en las siguientes instancias:
-
-           <ul style="font-size:18px; text-align:left;">
-        {!! $attendance_text !!}
-    </ul>
+        organizado por AUDEC, el día {!! $attendance_text !!}
+  
     </div>
 </body>
 </html>

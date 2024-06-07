@@ -34,7 +34,7 @@ class InscriptionController extends Controller
                 $attendance_text = "";
                 foreach ($attendance_list as $attendance) {
                     if ($attendance->date == "2024-07-25") {
-                        $attendance_text .= '<li>08 de febrero, Jornada Presencial.</li>';
+                        $attendance_text .= '25 de julio';
                     } 
                     // elseif ($attendance->date == "2024-02-19") {
                     //     $attendance_text .= '<li>19 de febrero, primera Sesión Virtual.</li>';
