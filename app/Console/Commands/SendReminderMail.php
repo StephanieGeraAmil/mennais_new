@@ -71,6 +71,7 @@ class SendReminderMail extends Command
                 $email = $inscription->userData->email;
                 Log::info("email: ".$email);
                 try {
+                    Log::info("inscription: ".$inscription);
                    Mail::to($email)->send(new ReminderMail($inscription));
                 // Mail::to($email)->send(new ReminderMail($inscription, $qrCodeData));
                 } catch (\Throwable $th) {

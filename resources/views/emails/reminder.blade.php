@@ -1,7 +1,7 @@
 <p>Hola {{$inscription->userData->name}},</p>
 <!--<p>Le recordamos que está inscripto PROEDUCAR XXXII - HACIA UNA INNOVACIÓN CON SENTIDO.</p>-->
 <!--<p>Lo esperamos el próximo jueves 8 de febrero a las 8:00 HS en el SALÓN DE ACTOS DEL COLEGIO SANTO DOMINGO  - PALMAR 2288 ESQ. ACEVEDO DÍAZ.</p>-->
-<!--<img src="{!!$message->embedData(base64_decode($qrCodeData), 'QrCode.png', 'image/png')!!}">-->
+
 <p>Le recordamos las próximas actividades del PROEDUCAR XXXIII</p>
 <p>
     <ul>
