@@ -25,7 +25,7 @@ class SimpleInscriptionController extends Controller
     
     public function simpleInscriptionStore(SimpleInscriptionRequest $request)
     {
-    //    dd($request->all());
+     dd($request->all());
         $validated_data = $request->validated();
 
         $clean_name = preg_replace('/[^A-Za-z0-9\-]/', '_', $request->get('name'));
@@ -44,6 +44,8 @@ class SimpleInscriptionController extends Controller
             'document'=>Arr::get($validated_data, "document"),
             'email'=>$validated_data['email'],
             'extra' => isset($validated_data['extra']) ? json_encode($validated_data['extra']) : json_encode([]),
+            'institution_name'=>$validated_data['institution_name'],
+            'institution_type'=>$validated_data['institution_type'],
         ]);
         
         
