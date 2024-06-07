@@ -57,7 +57,7 @@ class SendReminderMail extends Command
         }
   
          $inscriptions_list = Inscription::where('id', '>', $mail->last_id)
-            ->take(100)
+            ->take(2)
             ->get();
          //  $inscriptions_list = Inscription::where('type', 'hibrido')
          //   ->where('id', '>', $mail->last_id)
@@ -68,11 +68,10 @@ class SendReminderMail extends Command
             // $qrCode = QrCode::format('png')->generate($inscription->qrUrl());
             // $qrCodeData = base64_encode($qrCode);
             if($inscription->id > 0){
-                Log::info("inscription: ".$inscription);
+                // Log::info("inscription: ".$inscription);
                 $email = $inscription->userData->email;
                 Log::info("email: ".$email);
                 try {
-                    Log::info("inscription: ".$inscription);
                    Mail::to($email)->send(new ReminderMail($inscription));
                 // Mail::to($email)->send(new ReminderMail($inscription, $qrCodeData));
                 } catch (\Throwable $th) {
