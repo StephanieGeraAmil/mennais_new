@@ -93,13 +93,13 @@
                                                 <option value="Primaria"
                                                     {{ old('type') ?? $inscription->userData->institution_type == 'Primaria' ? 'Selected' : '' }}>
                                                     Primaria</option>
-                                                    <option value="Secundaria"
+                                                <option value="Secundaria"
                                                     {{ old('type') ?? $inscription->userData->institution_type == 'Secundaria' ? 'Selected' : '' }}>
                                                     Secundaria</option>
-                                                    <option value="Dirección General"
+                                                <option value="Dirección General"
                                                     {{ old('type') ?? $inscription->userData->institution_type == 'Dirección General' ? 'Selected' : '' }}>
                                                     Dirección General</option>
-                                                    <option value="Otro"
+                                                <option value="Otro"
                                                     {{ old('type') ?? $inscription->userData->institution_type == 'Otro' ? 'Selected' : '' }}>
                                                     Otro</option>
 
@@ -198,11 +198,16 @@
                         </div>
                         <div class="w-full overflow-hidden shadow-xs">
                             <div class="w-full overflow-x-auto">
+
                                 <div class="flex items-center py-2 w-100">
-                                    <a href="{!! $inscription->certificateUrl() !!}"
-                                        class="mx-3.5 border-b bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 border border-white rounded-xl">
-                                        link a certificado <i class="fas fa-certificate"></i>
-                                    </a>
+                                    @if ($inscription->certificateUrl())
+                                        <a href="{!! $inscription->certificateUrl() !!}"
+                                            class="mx-3.5 border-b bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 border border-white rounded-xl">
+                                            link a certificado <i class="fas fa-certificate"></i>
+                                        </a>
+                                    @else
+                                        <span class="px-4 text-gray-500">Certificado no disponible</span>
+                                    @endif
                                 </div>
                                 <div class="flex items-center py-2 w-100">
                                     <a href="/admin/resend_qr/{{ $inscription->id }}"
@@ -217,8 +222,8 @@
                                         class="flex items-center @error('name') border-red-500 @else border-teal-500 @enderror py-2 w-100 border-t ">
                                         <input
                                             class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
-                                            type="date" placeholder="acreditation_date" aria-label="" name="acreditation_date"
-                                            value="" />
+                                            type="date" placeholder="acreditation_date" aria-label=""
+                                            name="acreditation_date" value="" />
                                     </div>
                                     <div class="flex items-center p-2 w-100">
                                         <select id="type" name="type"
