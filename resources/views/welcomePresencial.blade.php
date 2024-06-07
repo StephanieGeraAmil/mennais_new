@@ -37,7 +37,7 @@ transformación Educativa">
           <h5 class="u-custom-font u-font-raleway u-text u-text-default u-text-1" data-lang-es="<a class=&quot;u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-3 u-block-control&quot; data-href=&quot;https://nicepage.com&quot; style=&quot;background-image: none; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot; data-block=&quot;552&quot; data-lang-es=&quot;{&amp;quot;content&amp;quot;:&amp;quot;PROEDUCAR XXXIII&amp;quot;}&quot;>PROEDUCAR XXXIII</a>">
             <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-2 u-btn-1" data-href="https://nicepage.com" data-lang-es="{&quot;content&quot;:&quot;PROEDUCAR XXXIII&quot;}">PROEDUCAR XXXIII</a>
           </h5>
-          <h5 class="u-text u-text-default u-text-palette-1-light-2 u-text-2" data-lang-es="Sample Headline">LA GESTION COMO PALABRA</h5>
+          <h5 class="u-text u-text-default u-text-palette-1-light-2 u-text-2" data-lang-es="Sample Headline">LA GESTIÓN COMO PALABRA</h5>
         </div>
       </div></header>
     <section class="u-clearfix u-gradient u-section-1" id="sec-3ffd">
