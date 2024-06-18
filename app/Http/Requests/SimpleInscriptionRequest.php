@@ -26,6 +26,7 @@ class SimpleInscriptionRequest extends FormRequest
             'extra.place' => [ 
                 Rule::in(['montevideo', 'interior'])
             ],
+            'city'=>'string|max:255',
             'amount'=>'numeric',
             'institution_name'=>'string|max:255',
             'institution_type'=>'string|max:255',
