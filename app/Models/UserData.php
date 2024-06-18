@@ -19,6 +19,7 @@ class UserData extends Model
         'document',
         'email',
         'extra',   
+        'city',  
         'institution_name',
         'institution_type',     
     ];

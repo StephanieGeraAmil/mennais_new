@@ -69,6 +69,14 @@
                                             </select>
                                         </div>
                                         <div
+                                        class="flex items-center border-b @error('institution_name') border-red-500 @else border-teal-500 @enderror py-2 w-100">
+                                        <input
+                                            class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                                            type="text" placeholder="Ciudad" aria-label="Ciudad"
+                                            name="city"
+                                            value="{{ $inscription->userData->city }}" />
+                                    </div>
+                                        <div
                                             class="flex items-center border-b @error('institution_name') border-red-500 @else border-teal-500 @enderror py-2 w-100">
                                             <input
                                                 class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"

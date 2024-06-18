@@ -44,6 +44,7 @@ class SimpleInscriptionController extends Controller
             'document'=>Arr::get($validated_data, "document"),
             'email'=>$validated_data['email'],
             'extra' => isset($validated_data['extra']) ? json_encode($validated_data['extra']) : json_encode([]),
+            'city'=>$validated_data['city'],
             'institution_name'=>$validated_data['institution_name'],
             'institution_type'=>$validated_data['institution_type'],
         ]);
