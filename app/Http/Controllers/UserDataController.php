@@ -77,6 +77,7 @@ class UserDataController extends Controller
             'document' => 'required|string|max:255',
             'email' => 'required|email',
             'type' => ['required', new Enum(InscriptionTypeEnum::class)],
+            'city'=>'string|max:255',
             'institution_name'=>'string|max:255',
             'institution_type'=>'string|max:255'
         ]); 
@@ -84,6 +85,7 @@ class UserDataController extends Controller
         $user_data->name=$validated_data['name'];
         $user_data->document=$validated_data['document'];
         $user_data->email=$validated_data['email'];
+        $user_data->city=$validated_data['city'];
         $user_data->institution_name=$validated_data['institution_name'];
         $user_data->institution_type=$validated_data['institution_type'];
         $user_data->save();
