@@ -37,9 +37,9 @@
                             @error('email')
                                 El campo email no es correcto.<br />
                             @enderror
-                            @error('phone')
+                            {{-- @error('phone')
                                 El campo teléfono no es correcto.<br />
-                            @enderror
+                            @enderror --}}
                             @error('extra.place')
                                 Debe seleccionar el Origen.<br />
                             @enderror
@@ -135,11 +135,11 @@
             <input type="email" placeholder="email" id="email-05a8" name="email"
                 class="u-input u-input-rectangle u-radius-14 u-input-4" required="">
         </div>
-        <div class="u-form-group u-form-phone u-form-group-5">
+        {{-- <div class="u-form-group u-form-phone u-form-group-5">
             <label for="phone-bfdf" class="u-form-control-hidden u-label"></label>
             <input type="tel" placeholder="Teléfono" id="phone-bfdf" name="phone"
                 class="u-input u-input-rectangle u-radius-14 u-input-5" required="">
-        </div>
+        </div> --}}
         <div class="u-form-group u-form-group-6">
             <label for="text-59c6" class="u-form-control-hidden u-label"></label>
             <input type="text" placeholder="Institución" id="text-59c6" name="institution_name"
