@@ -109,7 +109,7 @@ transformación Educativa">
     <section class="u-clearfix u-palette-1-light-2 u-section-3" id="sec-b098">
       <div class="u-clearfix u-sheet u-sheet-1">
         {{-- <h3 class="u-align-center u-text u-text-palette-1-dark-3 u-text-1">Declarado de Interés Educativo por ANEP y MEC </h3> --}}
-        <div style="display:flex; justify-conten:center;">
+        <div style="display:flex; justify-content:center;">
         <img src="public/images/LogoMECgrises.png" alt="Logo MEC" style="width: 500px; height: auto;">
       </div>
         <p class="u-align-justify u-text u-text-2"> En el aula, en el encuentro de
