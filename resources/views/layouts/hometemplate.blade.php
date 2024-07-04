@@ -120,7 +120,7 @@ las condiciones más fértiles para el despliegue del hacer clase,
 hacer escuela.
         </p>
         <div style="display:flex; justify-content:center;">
-          <img src="public/images/LogoMECgrises.png" alt="Logo MEC" style="width: 500px; height: auto; margin-bottom:10px;">
+          <img src="public/images/LogoMECgrises.png" alt="Logo MEC" style="width: 500px; height: auto; margin-bottom:30px;">
         </div>
       </div>
     </section>
