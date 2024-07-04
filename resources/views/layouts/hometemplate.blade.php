@@ -410,7 +410,7 @@ Blejmar
                       <h3 class="u-align-left u-custom-font u-font-raleway u-text u-text-default u-text-palette-1-dark-3 u-text-1">CONTACTO</h3>
                     </div>
                   </div>
-                  <p class="u-text u-text-custom-color-21 u-text-2">Por dudas o consultas sobre el evento, por favor comuníquese con nosotros al teléfono&nbsp;2409 9899, al mail secretaria@audec.edu.uy o complete el siguiente formulario:</p>
+                  <p class="u-text u-text-custom-color-21 u-text-2">Por dudas o consultas sobre el evento, por favor comuníquese con nosotros al mail secretaria@audec.edu.uy o complete el siguiente formulario:</p>
                   {{-- <div class="u-expanded-width-sm u-expanded-width-xs u-form u-form-1">
                     <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 15px;" source="email" name="form">
                       <div class="u-form-group u-form-name u-label-none">
