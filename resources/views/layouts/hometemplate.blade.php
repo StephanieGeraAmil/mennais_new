@@ -109,7 +109,7 @@ transformación Educativa">
     <section class="u-clearfix u-palette-1-light-2 u-section-3" id="sec-b098">
       <div class="u-clearfix u-sheet u-sheet-1">
         {{-- <h3 class="u-align-center u-text u-text-palette-1-dark-3 u-text-1">Declarado de Interés Educativo por ANEP y MEC </h3> --}}
-        <img src="public/images/Logo MEC_Declarado de interés ministerial_una tinta 100 % negro.png" alt="Logo MEC" class="small-image">
+        <img src="public/images/LogoMECgrises.png" alt="Logo MEC" style="width: 200px; height: auto;">
         <p class="u-align-justify u-text u-text-2"> En el aula, en el encuentro de
 docentes, en las reuniones con las autoridades educativas hay un
 dispositivo clave para que las cosas pasen o no pasen y es la calidad

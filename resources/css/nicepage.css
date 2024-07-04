@@ -3,10 +3,7 @@
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2021 Froala Labs
  */
- .small-image {
-  width: 100px; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
-}
+
 
 .fr-clearfix::after {
   clear: both;
