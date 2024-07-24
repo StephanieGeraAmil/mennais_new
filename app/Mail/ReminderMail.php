@@ -32,10 +32,10 @@ class ReminderMail extends Mailable
      */
     public function build()
     {
-        Log::info("Armando mail");
-        Log::info($this->inscription);
-        return  $this->subject('PROEDUCAR XXXIII - LA GESTIÓN COMO PALABRA- Recordatorio')->view('emails.reminder')
+        return  $this->subject('PROEDUCAR XXXIII - Te esperamos mañana')->view('emails.reminder')
                 ->with('inscription', $this->inscription);
+                // return  $this->subject('PROEDUCAR XXXIII - LA GESTIÓN COMO PALABRA- Recordatorio')->view('emails.reminder')
+                // ->with('inscription', $this->inscription);
     
      //      return  $this->subject('La Transformación Educativa en acción - Recordatorio')->view('emails.reminder')
      //      ->with([
