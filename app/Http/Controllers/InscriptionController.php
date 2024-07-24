@@ -103,7 +103,7 @@ class InscriptionController extends Controller
             'document' => 'required|string',
         ]);
         $document = str_replace(['.', '-', ' '], '', $validatedData['document']);
-        if (is_numeric($document)) {
+        // if (is_numeric($document)) {
             $user_data = UserData::where('document', $document)->first();
             if ($user_data == null) {
                 return view('recoverycertificate')->with('fail', true);
@@ -113,8 +113,8 @@ class InscriptionController extends Controller
                 return view('recoverycertificate')->with('success', true);
             }
             return view('recoverycertificate')->with('fail', 'Attendance error');
-        }
-        return view('recoverycertificate')->with('wrong_document', 'Documento Invalido');
+        // }
+        // return view('recoverycertificate')->with('wrong_document', 'Documento Invalido');
     }
 
 
