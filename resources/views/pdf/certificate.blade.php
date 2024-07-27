@@ -7,7 +7,8 @@
     <title>Document</title>
     <style>
         body{
-            background: url("{{ URL::asset('images') }}/certificado_2023_c.jpg"); 
+            background: url("{{ URL::asset('images') }}/certificado_202407_x1.jpg"); 
+            /* background: url("{{ URL::asset('images') }}/certificado_2023_c.jpg");  */
             background-size: 1024px 722px; 
             background-repeat: no-repeat;
         }
