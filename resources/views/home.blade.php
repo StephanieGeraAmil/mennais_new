@@ -64,14 +64,14 @@
 @endsection
 
 @section('inscription_buttons')
-{{-- @if (Carbon\Carbon::now()->lt(Carbon\Carbon::parse(env('FINISHINSCRIPTIONDATE','31-12-2023'))))  --}}
+ @if (Carbon\Carbon::now()->lt(Carbon\Carbon::parse(env('FINISHINSCRIPTIONDATE','25-07-2024')))) 
 <div align="center">
   <a href="/simple_inscription" class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-1">inscripción individual</a>
  <!-- <a href="/group_inscription" class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-2">Invitación Grupal</a>-->
 </div> 
-{{-- @else
-<!--<p class="">Inscripción finalizada.</p>-->
-@endif --}}
+ @else
+<p class="">Inscripciones finalizadas.</p>
+@endif 
 <!--<p class="">Se han agotado los cupos de la Jornada Presencial. 
 Si aún no lo ha hecho, lo invitamos a inscribirse para las instancias virtuales a partir del 9 de febrero.</p> -->
 {{-- <p class="">INSCRIPCIONES CERRADAS. 
