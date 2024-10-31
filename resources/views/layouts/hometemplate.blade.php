@@ -342,32 +342,36 @@ transformación Educativa">
                                             director de ORT Uruguay, y consultor para el Programa de Cambio
                                             Organizacional del Ministerio de Defensa de Argentina.</p>
                                     </div>
-                                    <div class="u-container-layout u-container-layout-3">
-                                        <h6
-                                            class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-text u-text-default-lg u-text-default-xl u-text-1">
-                                            <b>Bernardo Blejmar</b>
-                                        </h6>
-                                        <p class="u-align-justify u-text u-text-default u-text-2"> Licenciado en
-                                            Ciencia de la
-                                            Educación por la Universidad de Buenos Aires.
-                                            Docente
-                                            en la Universidad de San Andrés.
-                                            Becario del Sherman Program en Management Organizations y del
-                                            programa Distinguished Leaders en la Brandeis University, Boston,
-                                            USA. Diseñador
-                                            metodológico y facilitador en el Ministerio de Desarrollo urbano de
-                                            Argentina.
-                                            Es
-                                            director de la Consultora Bernardo Blejmar &amp; Asoc,
-                                            dedicada
-                                            al comportamiento y estrategia organizacional, en la que se realizan
-                                            diseños de dispositivos de capacitación y consultoría para
-                                            empresas. Tiene
-                                            una larga trayectoria como profesor, tanto titular como invitado, en
-                                            reconocidas universidades nacionales e internacionales. Ha publicado
-                                            diversos libros y artículos. Además fue director general de AMIA,
-                                            director de ORT Uruguay, y consultor para el Programa de Cambio
-                                            Organizacional del Ministerio de Defensa de Argentina.</p>
+                                    <div
+                                        class="u-container-align-left-lg u-container-align-left-xl u-container-style u-layout-cell u-size-45 u-layout-cell-2">
+
+                                        <div class="u-container-layout u-container-layout-3">
+                                            <h6
+                                                class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-text u-text-default-lg u-text-default-xl u-text-1">
+                                                <b>Bernardo Blejmar</b>
+                                            </h6>
+                                            <p class="u-align-justify u-text u-text-default u-text-2"> Licenciado en
+                                                Ciencia de la
+                                                Educación por la Universidad de Buenos Aires.
+                                                Docente
+                                                en la Universidad de San Andrés.
+                                                Becario del Sherman Program en Management Organizations y del
+                                                programa Distinguished Leaders en la Brandeis University, Boston,
+                                                USA. Diseñador
+                                                metodológico y facilitador en el Ministerio de Desarrollo urbano de
+                                                Argentina.
+                                                Es
+                                                director de la Consultora Bernardo Blejmar &amp; Asoc,
+                                                dedicada
+                                                al comportamiento y estrategia organizacional, en la que se realizan
+                                                diseños de dispositivos de capacitación y consultoría para
+                                                empresas. Tiene
+                                                una larga trayectoria como profesor, tanto titular como invitado, en
+                                                reconocidas universidades nacionales e internacionales. Ha publicado
+                                                diversos libros y artículos. Además fue director general de AMIA,
+                                                director de ORT Uruguay, y consultor para el Programa de Cambio
+                                                Organizacional del Ministerio de Defensa de Argentina.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
