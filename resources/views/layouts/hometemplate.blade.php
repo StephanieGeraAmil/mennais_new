@@ -138,7 +138,7 @@ transformación Educativa">
                             </h5>
                         </div>
                     </div>
-                    <div
+                    {{-- <div
                         class="u-align-center u-border-1 u-border-palette-1-light-1 u-container-align-center u-container-style u-gradient u-list-item u-radius-5 u-repeater-item u-shape-round u-list-item-4">
                         <div class="u-container-layout u-similar-container u-valign-top-xs u-container-layout-4"><span
                                 class="u-align-center u-custom-item u-file-icon u-icon u-icon-circle u-text-palette-1-dark-2 u-white u-icon-4"><img
@@ -146,7 +146,7 @@ transformación Educativa">
                             <h5 class="u-align-center u-text u-text-body-alt-color u-text-4">Universidad Católica del
                                 Uruguay</h5>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
