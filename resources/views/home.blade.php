@@ -67,7 +67,7 @@
  @if (Carbon\Carbon::now()->lt(Carbon\Carbon::parse(env('FINISHINSCRIPTIONDATE','25-07-2024')))) 
 <div align="center">
   <a href="/simple_inscription" class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-1">inscripción individual</a>
- <!-- <a href="/group_inscription" class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-2">Invitación Grupal</a>-->
+  <a href="/group_inscription" class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-2">Invitación Grupal</a>
 </div> 
  @else
 <p align="center">Inscripciones finalizadas.</p>
