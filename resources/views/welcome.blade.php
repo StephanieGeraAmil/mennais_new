@@ -40,7 +40,7 @@ transformación Educativa">
       </div></header>
     <section class="u-clearfix u-gradient u-section-1" id="sec-3ffd">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h3 class="u-align-center u-text u-text-body-alt-color u-text-1">BIENVENIDO</h3>
+        <h3 class="u-align-center u-text u-text-body-alt-color u-text-1 pt-4">BIENVENIDO</h3>
         <div class="u-align-center u-border-2 u-border-palette-1-light-1 u-container-style u-expanded-width-xs u-group u-opacity u-opacity-60 u-radius-22 u-shape-round u-white u-group-1">
           <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-top-xs u-container-layout-1">
             <p class="u-text u-text-2">Gracias por participar de PROEDUCAR XXXIII.<br>
