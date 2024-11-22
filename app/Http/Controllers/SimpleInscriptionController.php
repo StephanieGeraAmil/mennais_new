@@ -40,7 +40,8 @@ class SimpleInscriptionController extends Controller
          
         
         $user_data = UserData::create([
-            'name'=>$validated_data['name']." ".$validated_data['lastname'],
+            // 'name'=>$validated_data['name']." ".$validated_data['lastname'],
+            'name'=>$validated_data['name'] ,
             'document'=>Arr::get($validated_data, "document"),
             'email'=>$validated_data['email'],
             'extra' => isset($validated_data['extra']) ? json_encode($validated_data['extra']) : json_encode([]),

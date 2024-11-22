@@ -117,14 +117,14 @@
   </div> 
         <div class="u-form-group u-form-name">
             <label for="name-05a8" class="u-form-control-hidden u-label"></label>
-            <input type="text" placeholder="Nombre" id="name-05a8" name="name"
+            <input type="text" placeholder="Nombre Completo" id="name-05a8" name="name"
                 class="u-input u-input-rectangle u-radius-14 u-input-1" required="">
         </div>
-        <div class="u-form-group u-form-group-2">
+        {{-- <div class="u-form-group u-form-group-2">
             <label for="text-8cb6" class="u-form-control-hidden u-label"></label>
             <input type="text" placeholder="Apellido" id="text-8cb6" name="lastname"
                 class="u-input u-input-rectangle u-radius-14 u-input-2">
-        </div>
+        </div> --}}
         <div class="u-form-group u-form-name u-form-group-3">
             <label for="name-b2b6" class="u-form-control-hidden u-label"></label>
             <input type="text" placeholder="Cédula de Identidad (1234567-8)" id="name-b2b6" name="document"
