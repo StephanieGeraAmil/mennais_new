@@ -200,7 +200,7 @@ class InscriptionController extends Controller
 
         $inscription = Inscription::find($inscription_id);
 
-        $returned = Arr::where(explode(",", env("EVENTDATES", "2023-12-12")), function ($value) {
+        $returned = Arr::where(explode(",", env("EVENTDATES", "2024-11-12")), function ($value) {
             return Carbon::parse($value)->isToday();
         });
 
