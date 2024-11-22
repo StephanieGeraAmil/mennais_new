@@ -5,7 +5,8 @@
     <table>
         <tr>
             <td>Nombre</td>
-            <td>{{$inscription->userData->name}} {{$inscription->userData->lastname}}</td>
+            {{-- <td>{{$inscription->userData->name}} {{$inscription->userData->lastname}}</td> --}}
+            <td>{{$inscription->userData->name}} </td>
         </tr>
         <tr>
             <td>Documento</td>

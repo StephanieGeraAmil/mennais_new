@@ -18,7 +18,7 @@ class SimpleInscriptionRequest extends FormRequest
     {
         return [
             'name' => 'required|string|max:255',
-            'lastname' => 'required|string|max:255',
+            // 'lastname' => 'required|string|max:255',
             'document' => 'required|string|max:255|unique:user_data',
             'email' => 'required|email',
             'payment_file'=>'required|file|mimes:jpg,png,jpeg,gif,svg,pdf',

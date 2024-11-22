@@ -28,7 +28,8 @@ class InscriptionController extends Controller
             if ($attendances->count() > 0) {
                 $today = Carbon::now()->locale('es');
                 $today->settings(['formatFunction' => 'translatedFormat']);
-                $name = $inscription->userData->name . " " . $inscription->userData->lastname;
+                // $name = $inscription->userData->name . " " . $inscription->userData->lastname;
+                  $name = $inscription->userData->name ;
                 $attendance_list = Attendance::where('inscription_id', $inscription->id)->get();
                 // Format the attendance list for the view
                 $attendance_text = "";

@@ -23,9 +23,9 @@
                             @error('name')
                                 El campo nombre no es correcto.<br />
                             @enderror
-                            @error('lastname')
+                            {{-- @error('lastname')
                                 El campo apellido no es correcto.<br />
-                            @enderror
+                            @enderror --}}
                             @error('document')
                                 @if ($message == 'The document has already been taken.')
                                     Su cédula de indentidad ya se encuentra inscripta. <BR />
@@ -46,7 +46,7 @@
                             @error('type')
                                 Debe seleccionar la modalidad.<br />
                             @enderror
-                            @error('institution_name')
+                            {{-- @error('institution_name')
                                 El campo institución no es correcto.<br />
                             @enderror
                             @error('institution_type')
@@ -54,7 +54,7 @@
                             @enderror
                             @error('city')
                                 El campo ciudad no es correcto.<br />
-                            @enderror
+                            @enderror --}}
                             @error('amount')
                                 El campo monto depositado no es correcto.<br />
                             @enderror

@@ -85,7 +85,8 @@ Admin Panel
                                         <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                             <div class="flex items-center">
                                                 <div class="ml-3">
-                                                    <p class="text-gray-900 whitespace-no-wrap">{{$registered_user->userData->name}} {{$registered_user->userData->lastname}}</p>
+                                                    {{-- <p class="text-gray-900 whitespace-no-wrap">{{$registered_user->userData->name}} {{$registered_user->userData->lastname}}</p> --}}
+                                                     <p class="text-gray-900 whitespace-no-wrap">{{$registered_user->userData->name}}</p>
                                                 </div>
                                             </div>
                                         </td>
