@@ -219,7 +219,7 @@ class InscriptionController extends Controller
             } catch (\Throwable $th) {
             }
 
-            return view('welcome')->with('zoom_link', env('ZOOMLINK_' . Carbon::now()->format('Ymd'), "https://us02web.zoom.us/j/82435816542?pwd=Q2F1cVdZMi96OGl1Q3lidlkzSTlLdz09"));
+            return view('welcome')->with('zoom_link', env('ZOOMLINK' . Carbon::now()->format('Ymd'), "https://us02web.zoom.us/j/82435816542?pwd=Q2F1cVdZMi96OGl1Q3lidlkzSTlLdz09"));
         } else {
             abort(403);
         }
