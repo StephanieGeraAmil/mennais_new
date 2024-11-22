@@ -68,7 +68,7 @@
                                                     {{ App\Enums\InscriptionTypeEnum::HIBRIDO->text() }}</option>
                                             </select>
                                         </div>
-                                        <div
+                                        {{-- <div
                                         class="flex items-center border-b @error('institution_name') border-red-500 @else border-teal-500 @enderror py-2 w-100">
                                         <input
                                             class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
@@ -83,7 +83,7 @@
                                                 type="text" placeholder="Institucion" aria-label="Institucion"
                                                 name="institution_name"
                                                 value="{{ $inscription->userData->institution_name }}" />
-                                        </div>
+                                        </div> --}}
                                         {{-- <div
                                             class="flex items-center border-b @error('institution_type') border-red-500 @else border-teal-500 @enderror py-2 w-100">
                                             <input
