@@ -102,11 +102,11 @@
                             <i class="fa fa-wallet fa-fw mr-3"></i><span class="pb-1 md:pb-0 text-sm">Payments</span>
 						</a>
                     </li> --}}
-					<li class="mr-6 my-2 md:my-0">
+					{{-- <li class="mr-6 my-2 md:my-0">
                         <a href="/admin/group_insc" class="block py-1 md:py-3 pl-1 align-middle no-underline hover:text-gray-400 border-b-2 hover:border-gray-400 {{(Route::current()->getName() == "admingrupal")?"text-gray-400 border-gray-400 ":"text-gray-600 border-gray-600 "}}">
                             <i class="fas fa-users mr-3"></i><span class="pb-1 md:pb-0 text-sm">Insc. Grupales</span>
 						</a>
-                    </li>
+                    </li> --}}
                     {{-- <li class="mr-6 my-2 md:my-0">
                         <a href="/admin/payment" class="block py-1 md:py-3 pl-1 align-middle no-underline hover:text-gray-400 border-b-2 hover:border-gray-400 {{(Route::current()->getName() == "adminpayment")?"text-gray-400 border-gray-400 ":"text-gray-600 border-gray-600 "}}">
                             <i class="fa fa-wallet fa-fw mr-3"></i><span class="pb-1 md:pb-0 text-sm">Pagos realizados</span>
