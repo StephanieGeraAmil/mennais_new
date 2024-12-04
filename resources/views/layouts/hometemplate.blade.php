@@ -101,7 +101,7 @@ transformación Educativa">
                         class="u-align-center u-border-1 u-border-palette-1-light-1 u-container-align-center u-container-style u-gradient u-list-item u-radius-5 u-repeater-item u-shape-round u-list-item-1">
                         <div class="u-container-layout u-similar-container u-valign-top-xs u-container-layout-1"><span
                                 class="u-align-center u-custom-item u-file-icon u-icon u-icon-circle u-text-palette-1-dark-2 u-white u-icon-1"><img
-                                    src="images/4304013-2f1bd77d.png" alt=""></span>
+                                    src="images/2420290-50651ab8.png" alt=""></span>
                             <h5 class="u-align-center u-text u-text-body-alt-color u-text-1">Jornada Presencial<br>+<br>1 Sesión Virtual
                 </h5>
                         </div>
@@ -110,7 +110,7 @@ transformación Educativa">
                         class="u-align-center u-border-1 u-border-palette-1-light-1 u-container-align-center u-container-style u-gradient u-list-item u-radius-5 u-repeater-item u-shape-round u-list-item-2">
                         <div class="u-container-layout u-similar-container u-valign-top-xs u-container-layout-2"><span
                                 class="u-align-center u-custom-item u-file-icon u-icon u-icon-circle u-text-palette-1-dark-2 u-white u-icon-2"><img
-                                    src="images/1268036-d02ca122.png" alt=""></span>
+                                    src="images/3503656-8260a0ff.png" alt=""></span>
                             <h5 class="u-align-center u-text u-text-body-alt-color u-text-2">
                                 <span style="font-weight: 700;"></span>
                                 <span style="font-weight: 400;"> Jornada Presencial<br>6/Feb 8:00 a 17:30 h
@@ -123,20 +123,20 @@ transformación Educativa">
                         class="u-align-center u-border-1 u-border-palette-1-light-1 u-container-align-center u-container-style u-gradient u-list-item u-radius-5 u-repeater-item u-shape-round u-list-item-3">
                         <div class="u-container-layout u-similar-container u-valign-top-xs u-container-layout-3"><span
                                 class="u-align-center u-custom-item u-file-icon u-icon u-icon-circle u-text-palette-1-dark-2 u-white u-icon-3"><img
-                                    src="images/9081726-f4eb419a.png" alt=""></span>
+                                    src="images/10479965-9b0dfd18.png" alt=""></span>
                             <h5 class="u-align-center u-text u-text-body-alt-color u-text-3">Sesión Virtual<br>20/Feb<br>14:00 a 16:00 h<br>
                             </h5>
                         </div>
                     </div>
-                    {{-- <div
+                    <div
                         class="u-align-center u-border-1 u-border-palette-1-light-1 u-container-align-center u-container-style u-gradient u-list-item u-radius-5 u-repeater-item u-shape-round u-list-item-4">
                         <div class="u-container-layout u-similar-container u-valign-top-xs u-container-layout-4"><span
                                 class="u-align-center u-custom-item u-file-icon u-icon u-icon-circle u-text-palette-1-dark-2 u-white u-icon-4"><img
-                                    src="images/819865-a595b3ce.png" alt=""></span>
-                            <h5 class="u-align-center u-text u-text-body-alt-color u-text-4">Universidad Católica del
-                                Uruguay</h5>
+                                    src="images/780455-80970ad0.png" alt=""></span>
+                            <h5 class="u-align-center u-text u-text-body-alt-color u-text-4"2 Modalidades de participación:<br>Completa o Parcial
+</h5>
                         </div>
-                    </div> --}}
+                    </div>
                 </div>
             </div>
         </div>
