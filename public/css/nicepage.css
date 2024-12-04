@@ -45664,6 +45664,6 @@ html {
     margin: 0;
 }
 .no-min-heihgt {
-    min-height: auto !important;
+    min-height: 300px !important;
     height: auto !important;
 }
