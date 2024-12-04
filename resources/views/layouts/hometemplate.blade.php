@@ -145,7 +145,7 @@ transformación Educativa">
         <div class="u-clearfix u-sheet u-sheet-1">
             {{-- <h3 class="u-align-center u-text u-text-palette-1-dark-3 u-text-1">Declarado de Interés Educativo por ANEP y MEC </h3> --}}
 
-            <p class="u-align-justify u-text u-text-2"> En el aula, en el encuentro de
+            {{-- <p class="u-align-justify u-text u-text-2"> En el aula, en el encuentro de
                 docentes, en las reuniones con las autoridades educativas hay un
                 dispositivo clave para que las cosas pasen o no pasen y es la calidad
                 de conversaciones que circula en estos colectivos.<br>&nbsp;&nbsp;<br>En
@@ -153,7 +153,7 @@ transformación Educativa">
                 esa palabra que, tejida en conversaciones generativas, co construyan
                 las condiciones más fértiles para el despliegue del hacer clase,
                 hacer escuela.
-            </p>
+            </p> --}}
             <div style="display:flex; justify-content:center;">
                 <img src="public/images/LogoMECgrises.png" alt="Logo MEC" class="responsive-img">
             </div>
@@ -161,7 +161,7 @@ transformación Educativa">
     </section>
     <section class="u-clearfix u-palette-1-dark-1 u-section-4" id="sec-f56e">
         <div class="u-clearfix u-sheet u-sheet-1">
-            <h6 class="u-align-center u-custom-font u-font-raleway u-text u-text-1">CUPOS LIMITADOS</h6>
+            <h6 class="u-align-center u-custom-font u-font-raleway u-text u-text-1">INTELIGENCIA ARTIFICIAL - HERRAMIENTAS PARA EL AULA - INFANCIAS Y PANTALLAS - EVALUACIÓN</h6>
         </div>
     </section>
     <section class="u-clearfix u-container-align-center u-gradient u-section-5" id="sec-fc88">
@@ -173,14 +173,12 @@ transformación Educativa">
                             <div
                                 class="u-align-center u-border-2 u-border-palette-1-light-1 u-container-align-center u-container-style u-expanded-width u-group u-palette-1-light-3 u-radius-11 u-shape-round u-group-1">
                                 <div class="u-container-layout u-valign-middle u-container-layout-2">
-                                    <h3
-                                        class="u-align-center u-custom-font u-font-raleway u-text u-text-palette-1-dark-2 u-text-1">
-                                        Inscripción TEMPRANA</h3>
-                                    <p class="u-align-center u-text u-text-palette-1-dark-3 u-text-2">HASTA EL 9 DE
-                                        JULIO<br>
-                                        <br>$ 600 - Socios ubicados al norte del Río Negro<br>$ 1.000 -&nbsp;Socios
-                                        ubicados al sur del Río Negro<br>$ 1.300 - No socios
-                                    </p>
+                                         <h3 class="u-custom-font u-font-raleway u-text u-text-palette-1-dark-2 u-text-1">Participación COMPLETA</h3>
+                      <p class="u-text u-text-palette-1-dark-3 u-text-2">Incluye la Jornada PRESENCIAL + Sesión VIRTUAL<br>
+                        <br>$ 1.300 hasta el 28/12, luego $1.500<br>Venta exclusiva por Tickantel
+                      </p>
+                      <a href="https://tickantel.com.uy/inicio/espectaculo/40016337/espectaculo/OSSODRE%20%20Bach%20-%20Haydn%20-%20Mozart?3" class="u-active-palette-1-light-2 u-align-center u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-light-2 u-border-palette-1-light-2 u-btn u-button-style u-hover-palette-1-light-2 u-palette-1-dark-1 u-btn-1" target="_blank">Tickantel </a>
+                 
                                 </div>
                             </div>
                         </div>
