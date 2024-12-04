@@ -218,9 +218,9 @@
 
 .u-section-2 .u-repeater-1 {
     grid-gap: 50px 50px;
-    grid-template-columns: calc(25% - 37.5px) calc(25% - 37.5px) calc(
-            25% - 37.5px
-        ) calc(25% - 37.5px);
+    grid-template-columns:
+        calc(25% - 37.5px) calc(25% - 37.5px) calc(25% - 37.5px)
+        calc(25% - 37.5px);
     min-height: 263px;
 }
 
