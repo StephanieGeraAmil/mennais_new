@@ -458,8 +458,8 @@ transformación Educativa">
             <div
                 class="custom-expanded u-border-2 u-border-palette-1-light-1 u-container-align-center-lg u-container-align-center-xl u-container-style u-expanded-width-lg u-expanded-width-xl u-group u-palette-1-light-3 u-radius-11 u-shape-round u-group-1">
                 <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-1">
-                    <div
-                        class="white-rectangle">
+                    {{-- <div
+                        class="white-rectangle"> --}}
                         <div class="text-layout-rectangle">
                           
                                
@@ -477,7 +477,7 @@ transformación Educativa">
                                     
                                 
                             </div> --}}
-                        </div>
+                        {{-- </div> --}}
                     </div>
                 </div>
             </div>

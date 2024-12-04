@@ -45645,15 +45645,17 @@ html {
     font-size: 16px;
 }
 /*end-variables base-font-size*/
-.white-rectangle {
+/* .white-rectangle {
     background: red;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
+} */
 .text-layout-rectangle {
     background: green;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: 70%;
 }
