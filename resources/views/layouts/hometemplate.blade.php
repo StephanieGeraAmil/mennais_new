@@ -461,7 +461,7 @@ transformación Educativa">
                     <div
                         class="data-layout-selected u-align-center u-clearfix u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-layout-wrap u-layout-wrap-1">
                         <div class="u-layout">
-                            <div class="u-layout-row">
+                          
                                
                                 <div
                                     class="u-container-align-left-lg u-container-align-left-xl u-container-style u-layout-cell u-size-45 u-layout-cell-2">
@@ -475,7 +475,7 @@ transformación Educativa">
                     </p>
                                     </div>
                                     
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
