@@ -404,10 +404,10 @@ transformación Educativa">
                                     class="custom-expanded u-align-center u-border-2 u-border-palette-1-light-1 u-container-align-center-lg u-container-align-center-xl u-container-style u-group u-palette-2-light-3 u-radius-12 u-shape-round u-group-1">
                                     <div
                                         class="u-container-layout u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-container-layout-2">
-                                        <h5 class="u-align-center u-text u-text-default-lg u-text-default-xl u-text-1">
-                                            Aula Magna de la Universidad Católica del Uruguay<br>
-                                            <br>Av. 8 de Octubre 2738<span class="u-text-palette-1-dark-3"></span>
-                                        </h5>
+                                        <p class="u-align-center u-text u-text-palette-1-dark-2 u-text-1">AUDITORIO NACIONAL&nbsp;<br>ADELA RETA - SODRE
+                      </p>
+                      <p class="u-align-center u-text u-text-palette-1-dark-2 u-text-2">Andes esq. Mercedes<br>Montevideo 
+                      </p>
                                     </div>
                                 </div>
                             </div>
@@ -416,9 +416,7 @@ transformación Educativa">
                             <div class="u-container-layout u-container-layout-3">
                                 <div class="u-expanded-width u-grey-light-2 u-map u-map-1">
                                     <div class="embed-responsive">
-                                        <iframe class="embed-responsive-item"
-                                            src="https://maps.google.com/maps?output=embed&amp;q=Universidad%20Cat%C3%B3lica%20del%20Uruguay&amp;z=17&amp;t=m"
-                                            data-map="JTdCJTIyYWRkcmVzcyUyMiUzQSUyMlVuaXZlcnNpZGFkJTIwQ2F0JUMzJUIzbGljYSUyMGRlbCUyMFVydWd1YXklMjIlMkMlMjJ6b29tJTIyJTNBMTclMkMlMjJ0eXBlSWQlMjIlM0ElMjJyb2FkJTIyJTJDJTIybGFuZyUyMiUzQW51bGwlMkMlMjJhcGlLZXklMjIlM0FudWxsJTJDJTIybWFya2VycyUyMiUzQSU1QiU1RCU3RA=="></iframe>
+                                        <iframe class="embed-responsive-item" src="https://maps.google.com/maps?output=embed&amp;q=Auditorio%20Nacional%20Adela%20Reta&amp;z=17&amp;t=m" data-map="JTdCJTIycG9zaXRpb25UeXBlJTIyJTNBJTIybWFwLWFkZHJlc3MlMjIlMkMlMjJhZGRyZXNzJTIyJTNBJTIyQXVkaXRvcmlvJTIwTmFjaW9uYWwlMjBBZGVsYSUyMFJldGElMjIlMkMlMjJ6b29tJTIyJTNBMTclMkMlMjJ0eXBlSWQlMjIlM0ElMjJyb2FkJTIyJTJDJTIybGFuZyUyMiUzQW51bGwlMkMlMjJhcGlLZXklMjIlM0FudWxsJTJDJTIybWFya2VycyUyMiUzQSU1QiU1RCU3RA=="></iframe>
                                     </div>
                                 </div>
                             </div>
