@@ -45667,4 +45667,5 @@ html {
 }
 .no-min-heihgt {
     min-height: auto;
+    height: auto;
 }
