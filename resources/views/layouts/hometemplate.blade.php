@@ -404,9 +404,9 @@ transformación Educativa">
                                     class="custom-expanded u-align-center u-border-2 u-border-palette-1-light-1 u-container-align-center-lg u-container-align-center-xl u-container-style u-group u-palette-2-light-3 u-radius-12 u-shape-round u-group-1">
                                     <div
                                         class="u-container-layout u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-container-layout-2">
-                                        <p class="u-align-center u-text u-text-palette-1-dark-2 u-text-1">AUDITORIO NACIONAL&nbsp;<br>ADELA RETA - SODRE
+                                        <p class="u-align-center u-text u-text-palette-1-dark-2">AUDITORIO NACIONAL&nbsp;<br>ADELA RETA - SODRE
                       </p>
-                      <p class="u-align-center u-text u-text-palette-1-dark-2 u-text-2">Andes esq. Mercedes<br>Montevideo 
+                      <p class="u-align-center u-text u-text-palette-1-dark-2 ">Andes esq. Mercedes<br>Montevideo 
                       </p>
                                     </div>
                                 </div>
@@ -473,7 +473,7 @@ transformación Educativa">
                                     class="u-container-align-left-lg u-container-align-left-xl u-container-style u-layout-cell u-size-45 u-layout-cell-2">
                                     <div class="u-container-layout u-container-layout-3">
                                         <h6
-                                            class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-text u-text-default-lg u-text-default-xl u-text-1">
+                                            class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-text u-text-default-lg u-text-default-xl">
                                             <b>Laura Lewin (Argentina)</b>
                                         </h6>
                                         <p class="u-align-justify u-text u-text-default u-text-2">
@@ -506,7 +506,7 @@ transformación Educativa">
                                     class="u-container-align-left-lg u-container-align-left-xl u-container-style u-layout-cell u-size-45 u-layout-cell-2">
                                     <div class="u-container-layout u-container-layout-3">
                                         <h6
-                                            class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-text u-text-default-lg u-text-default-xl u-text-1">
+                                            class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-text u-text-default-lg u-text-default-xl">
                                             <b>Melina Masnatta (Argentina)</b>
                                         </h6>
                                         <p class="u-align-justify u-text u-text-default u-text-2">  Es emprendedora especialista en educación, tecnología y diversidad. <br>Consultora especialista en tecnología, educación, diversidad e innovación y miembro de boards de compañías privadas y de la sociedad civil. Desarrolla laboratorios de innovación y comunidades como las Clínicas de Re/Invención Profesional. <br>Es LinkedIn Top Voice, oradora TEDx, speaker internacional, columnista y autora de más 200 publicaciones nacionales e internacionales. <br>En el mundo académico se desempeña como Subdirectora de posgrado, Coordinadora académica, Profesora e Investigadora en áreas de Inteligencia digital, Diversidad y Negocios tecnológicos. <br>Doctoranda, con una Maestría en Tecnología Educativa, Licenciatura en Ciencias de la Educación y Magisterio en Artes. Especializada en temas de liderazgo e impacto en Georgetown University (USA), London School of Economics and Political Science (UK) y Schusterman Foundation (Israel).<br></p>
@@ -538,7 +538,7 @@ transformación Educativa">
                                     class="u-container-align-left-lg u-container-align-left-xl u-container-style u-layout-cell u-size-45 u-layout-cell-2">
                                     <div class="u-container-layout u-container-layout-3">
                                         <h6
-                                            class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-text u-text-default-lg u-text-default-xl u-text-1">
+                                            class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-text u-text-default-lg u-text-default-xl">
                                             <b>Lorena Estefanell (Uruguay)</b>
                                         </h6>
                                         <p class="u-align-justify u-text u-text-default u-text-2"> Es psicóloga clínica por la Universidad Católica del Uruguay y cuenta con 23 años de experiencia en el área de salud mental. <br>Se encuentra realizando el doctorado en Psicología en la Universidad de Palermo (Argentina). Tiene una maestría en psicoterapia cognitiva (Universidad de Valencia- España) y una maestría en organizaciones y comunicación (UCU- Uruguay). <br>Cuenta con formación de postgrado en cambio organizacional (UCU- Uruguay) y en psicoterapia cognitiva de adultos y niños (Suamoc- Uruguay), así como un diploma de formación en Supervisión Clínica (Universidad San Salvador- Fundación Aigle Argentina). <br>Algunas de sus especializaciones en el área de la Psicología clínica son: Terapia cognitiva centrado en esquemas, Terapia EMDR, Terapia de parejas y Disciplina positiva.
@@ -570,7 +570,7 @@ transformación Educativa">
                                     class="u-container-align-left-lg u-container-align-left-xl u-container-style u-layout-cell u-size-45 u-layout-cell-2">
                                     <div class="u-container-layout u-container-layout-3">
                                         <h6
-                                            class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-text u-text-default-lg u-text-default-xl u-text-1">
+                                            class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-text u-text-default-lg u-text-default-xl">
                                             <b>Alfredo Cerisola (Uruguay)</b>
                                         </h6>
                                         <p class="u-align-justify u-text u-text-default u-text-2"> Es médico Pediatra y Neuropediatra, Profesor Agregado (Grado 4) de Neuropediatría de la Facultad de Medicina de la Universidad de la República, Montevideo, Uruguay, desarrollando actividades docentes, asistenciales y de investigación en el Centro Hospitalario Pereira Rossell. <br>Además, es Neuropediatra del Centro de Rehabilitación Infantil Teletón, y del Centro de Referencia Nacional en Defectos Congénitos y Enfermedades Raras (CRENADECER) del Banco de Previsión Social (BPS). <br>Ha sido presidente de varias sociedades científicas, incluyendo la Sociedad Uruguaya de Pediatría (SUP), el Foro de Sociedades de Pediatría del Cono Sur, la Sociedad Uruguaya de Neuropediatría (SUN) y, actualmente es past-president de la Academia Iberoamericana de Neurología Pediátrica (AINP). <br>En los últimos 10 años, se ha dedicado a profundizar en el impacto de la exposición a pantallas en los niños pequeños y ha dado múltiples conferencias y publicado artículos y columnas sobre el tema.&nbsp;
@@ -603,7 +603,7 @@ transformación Educativa">
                                     class="u-container-align-left-lg u-container-align-left-xl u-container-style u-layout-cell u-size-45 u-layout-cell-2">
                                     <div class="u-container-layout u-container-layout-3">
                                         <h6
-                                            class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-text u-text-default-lg u-text-default-xl u-text-1">
+                                            class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-text u-text-default-lg u-text-default-xl">
                                             <b>Silvia Umpiérrez Oroño (Uruguay)</b>
                                         </h6>
                                         <p class="u-align-justify u-text u-text-default u-text-2">Es Licenciada en Ciencias Biológicas por la Universidad de la República y cuenta con una Maestría en Educación por la Universidad ORT Uruguay. Además tiene un Doctorado en Educación y una especialización en Gestión de las Instituciones Educativas.Se ha especializado en Inteligencia Artificial tanto en Uruguay como en el extranjero. <br>Actualmente es formadora efectiva de Biología con dedicación exclusiva en el Centro Regional de Profesores del Sur del CFE. Tutora y docente a nivel de maestrías en Universidad ORT Uruguay. <br>Autora de Inteligencia artificial en educación - Contribuciones desde la teoría, las prácticas pedagógicas y la investigación.
@@ -637,7 +637,7 @@ transformación Educativa">
                                     class="u-container-align-left-lg u-container-align-left-xl u-container-style u-layout-cell u-size-45 u-layout-cell-2">
                                     <div class="u-container-layout u-container-layout-3">
                                         <h6
-                                            class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-text u-text-default-lg u-text-default-xl u-text-1">
+                                            class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-text u-text-default-lg u-text-default-xl">
                                             <b> Claudia Cabrera Borges (Uruguay)</b>
                                         </h6>
                                         <p class="u-align-justify u-text u-text-default u-text-2"> Es Licenciada en Ciencias Biológicas por la Universidad de la República, <br>Ayudante preparador de laboratorio de Biología y Profesora de Biología por el IPA.  Cuenta con amplia experiencia de aula. Actualmente es docente en el Centro Regional de Profesores del Centro y Tutora y docente de Maestría en Universidad ORT Uruguay. Es Investigadora del Sistema Nacional de Investigadores (SNI). <br>Autora de Inteligencia artificial en educación - Contribuciones desde la teoría, las prácticas pedagógicas y la investigación.
@@ -672,7 +672,7 @@ transformación Educativa">
                                     class="u-container-align-left-lg u-container-align-left-xl u-container-style u-layout-cell u-size-45 u-layout-cell-2">
                                     <div class="u-container-layout u-container-layout-3">
                                         <h6
-                                            class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-text u-text-default-lg u-text-default-xl u-text-1">
+                                            class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-text u-text-default-lg u-text-default-xl">
                                             <b> Mariela Questa-Torterolo (Uruguay)</b>
                                         </h6>
                                         <p class="u-align-justify u-text u-text-default u-text-2"> Es Doctora en en Educación por la Universitat Autònoma de Barcelona. <br>Tiene una Maestría en Gestión Educativa por la Universidad ORT Uruguay. Además es Licenciada en Relaciones Internacionales por la Universidad de la República. <br>Ha participado en diversos grupos de investigación, financiados a nivel nacional e internacional. También ha desarrollado actividades de docencia en maestrías en áreas de educación, gestión educativa, formación de formadores y en el ámbito de intervenciones psicopedagógicas. <br>Autora de Inteligencia artificial en educación - Contribuciones desde la teoría, las prácticas pedagógicas y la investigación.&nbsp;<br>
@@ -707,7 +707,7 @@ transformación Educativa">
                                     class="u-container-align-left-lg u-container-align-left-xl u-container-style u-layout-cell u-size-45 u-layout-cell-2">
                                     <div class="u-container-layout u-container-layout-3">
                                         <h6
-                                            class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-text u-text-default-lg u-text-default-xl u-text-1">
+                                            class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-text u-text-default-lg u-text-default-xl">
                                             <b>Héctor Ruiz Martín (España)</b>
                                         </h6>
                                         <p class="u-align-justify u-text u-text-default u-text-2">Es director de la International Science Teaching Foundation e investigador en el ámbito de la psicología cognitiva de la memoria y el aprendizaje en contextos educativos. <br>Desde 2002, ha impulsado varios proyectos para contribuir a la mejora de la educación básica, proporcionando a maestros y estudiantes herramientas y metodologías fundamentadas en la investigación sobre cómo aprenden las personas. <br>Ha sido asesor de varias escuelas, organizaciones educativas y gobiernos de Europa, Asia y América, y es autor de varios libros que han sido traducidos a múltiples idiomas: “¿Cómo aprendemos? Una aproximación científica al aprendizaje y la enseñanza”, “Aprendiendo a aprender”, “Edumitos” y “Los secretos de la memoria”. <br>Forma parte del Grupo de Investigación en Ciencias del Aprendizaje y la Enseñanza de la Universidad Autónoma de Madrid y es profesor asociado en la Universidad Politécnica de Cataluña.<br>
