@@ -252,28 +252,27 @@ transformación Educativa">
             </div>
         </div>
     </section>
-    <section class="u-clearfix u-container-align-center u-palette-1-dark-1 u-section-9" id="carousel_6000">
-        <div
-            class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-sm u-valign-middle-xl u-valign-middle-xs u-sheet-1">
+
+        <section class="u-clearfix u-container-align-center u-palette-1-dark-1 u-section-7" id="carousel_4081">
+        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
             <div
-                class="data-layout-selected u-clearfix u-expanded-width u-layout-custom-sm u-layout-custom-xs u-layout-wrap u-layout-wrap-1">
+                class="data-layout-selected u-clearfix u-expanded-width u-gutter-0 u-layout-custom-sm u-layout-custom-xs u-layout-wrap u-layout-wrap-1">
                 <div class="u-layout">
                     <div class="u-layout-row">
                         <div
-                            class="u-container-style u-layout-cell u-size-10-sm u-size-10-xs u-size-5-lg u-size-5-md u-size-5-xl u-layout-cell-1">
+                            class="u-container-align-center u-container-style u-layout-cell u-size-11-sm u-size-11-xs u-size-5-lg u-size-5-md u-size-5-xl u-layout-cell-1">
                             <div
-                                class="u-container-layout u-valign-middle-sm u-valign-middle-xs u-valign-top-lg u-valign-top-md u-valign-top-xl u-container-layout-1">
+                                class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-container-layout-1">
                                 <span
-                                    class="u-align-center u-custom-item u-file-icon u-icon u-icon-circle u-text-palette-1-dark-2 u-white u-icon-1"><img
+                                    class="u-align-center u-file-icon u-icon u-icon-circle u-text-palette-1-dark-2 u-white u-icon-1"><img
                                         src="images/3503656-8260a0ff.png" alt=""></span>
                             </div>
                         </div>
                         <div
-                            class="u-container-align-center u-container-style u-layout-cell u-size-55-md u-size-55-xl u-layout-cell-2">
-                            <div class="u-container-layout u-valign-middle-sm u-valign-middle-xs u-container-layout-2">
-                                <h6
-                                    class="u-align-center u-custom-font u-font-raleway u-text u-text-body-alt-color u-text-1">
-                                    JORNADA PRESENCIAL&nbsp;<br>6 de febrero, 2025<br>Auditorio Nacional Adela Reta - SODRE </h6>
+                            class="u-container-align-center u-container-style u-layout-cell u-size-49-sm u-size-49-xs u-size-55-lg u-size-55-md u-size-55-xl u-layout-cell-2">
+                            <div
+                                class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-container-layout-2">
+                                <h6 class="u-align-center u-custom-font u-font-raleway u-text u-text-1"> JORNADA PRESENCIAL&nbsp;<br>6 de febrero, 2025<br>Auditorio Nacional Adela Reta - SODRE</h6>
                             </div>
                         </div>
                     </div>
