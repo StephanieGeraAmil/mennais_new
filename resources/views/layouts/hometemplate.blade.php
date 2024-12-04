@@ -438,7 +438,7 @@ transformación Educativa">
                                 class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-container-layout-1">
                                 <span
                                     class="u-align-center u-file-icon u-icon u-icon-circle u-text-palette-1-dark-2 u-white u-icon-1"><img
-                                        src="images/5110070-a0e213bf.png" alt=""></span>
+                                        src="images/10479965-9b0dfd18.png" alt=""></span>
                             </div>
                         </div>
                         <div
@@ -462,22 +462,17 @@ transformación Educativa">
                         class="data-layout-selected u-align-center u-clearfix u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-layout-wrap u-layout-wrap-1">
                         <div class="u-layout">
                             <div class="u-layout-row">
-                                <div class="u-container-style u-layout-cell u-size-15 u-layout-cell-1">
-                                    <div class="u-container-layout u-valign-top u-container-layout-2">
-                                        <img class="u-align-center u-image u-image-contain u-image-default u-preserve-proportions u-image-1"
-                                           src="images/exp_llewin.png" alt="" data-image-width="350"
-                                            data-image-height="350">
-                                    </div>
-                                </div>
+                               
                                 <div
                                     class="u-container-align-left-lg u-container-align-left-xl u-container-style u-layout-cell u-size-45 u-layout-cell-2">
                                     <div class="u-container-layout u-container-layout-3">
-                                        <h6
-                                            class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-text u-text-default-lg u-text-default-xl">
-                                            <b>Laura Lewin (Argentina)</b>
-                                        </h6>
-                                        <p class="u-align-justify u-text u-text-default u-text-2">
-                                           Es formadora docente y ha dictado talleres de capacitación en toda Latinoamérica, América Central, el Caribe, Estados Unidos y Europa. <br>Laura es oradora TEDx y columnista en temas de educación para la radio de la CNN, y para Infobae, entre otros medios nacionales e internacionales. <br>Su enfoque innovador y práctico la ha convertido en una figura clave para las instituciones educativas, así como para organismos públicos y privados. Ha asesorado y dictado capacitaciones para Ministerios de Educación tanto en Argentina como en el extranjero. Es autora de trece libros de educación para docentes y directivos de instituciones educativas, entre los que se destacan: El Aula Afectiva, Que enseñes no significa que Aprendan, La Nueva Educación, Hackeando la educación tradicional. <br>En septiembre lanzó su más reciente trabajo para directivos: Liderazgo de Impacto, de editorial Bonum.<br></p>
+                                       <h5 class="u-align-center u-custom-font u-font-raleway u-text-default u-text-palette-1-dark-2">20 de febrero, 2025<br>14:00 a 16:00 h<br>
+                    </h5>
+                    <p class="u-align-center u-text u-text-default u-text-palette-1-dark-2">
+                      <span style="font-style: italic;"></span><b>
+                        <span style="font-style: italic;">¿Cómo pueden usar la IA los estudiantes para aprender de manera más efectiva?</span>
+                        <span style="font-weight: 400;">Héctor Ruiz Martín, España</span></b>
+                    </p>
                                     </div>
                                     
                                 </div>
