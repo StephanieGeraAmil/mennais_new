@@ -454,9 +454,9 @@ transformación Educativa">
         </div>
     </section>
  <section class="u-clearfix u-container-align-center u-gradient u-section-8 no-min-height" id="sec-968d">
-        <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-xl u-sheet-1">
+        <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-xl u-sheet-1 no-min-height">
             <div
-                class="custom-expanded u-border-2 u-border-palette-1-light-1 u-container-align-center-lg u-container-align-center-xl u-container-style u-expanded-width-lg u-expanded-width-xl u-group u-palette-1-light-3 u-radius-11 u-shape-round u-group-1">
+                class="custom-expanded u-border-2 u-border-palette-1-light-1 u-container-align-center-lg u-container-align-center-xl u-container-style u-expanded-width-lg u-expanded-width-xl u-group u-palette-1-light-3 u-radius-11 u-shape-round u-group-1 no-min-height">
                 <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl no-space">
                     {{-- <div
                         class="white-rectangle"> --}}
@@ -466,7 +466,7 @@ transformación Educativa">
                                 {{-- <div
                                     class="u-container-align-left-lg u-container-align-left-xl u-container-style u-layout-cell u-size-45 u-layout-cell-2">
                                     <div class="u-container-layout u-container-layout-2"> --}}
-                                       <h5 class="u-align-center u-custom-font u-font-raleway u-text-default u-text-palette-1-dark-2">20 de febrero, 2025<br>14:00 a 16:00 h<br>
+                                       <h5 class="u-align-center u-custom-font u-font-raleway u-text-default u-text-palette-1-dark-2 text-layout-rectangle">20 de febrero, 2025<br>14:00 a 16:00 h<br>
                     </h5>
                     <p class="u-align-center u-text u-text-default u-text-palette-1-dark-2">
                       <span style="font-style: italic;"></span><b>
