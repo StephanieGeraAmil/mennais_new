@@ -159,7 +159,7 @@ transformación Educativa">
             </div>
         </div>
     </section>
-    <section class="u-clearfix u-palette-1-dark-1 u-section-3" id="sec-f56e">
+    <section class="u-clearfix u-palette-1-dark-1 u-section-2" id="sec-f56e">
         <div class="u-clearfix u-sheet u-sheet-1">
             <h6 class="u-align-center u-custom-font u-font-raleway u-text u-text-1">INTELIGENCIA ARTIFICIAL - HERRAMIENTAS PARA EL AULA - INFANCIAS Y PANTALLAS - EVALUACIÓN</h6>
         </div>
@@ -265,7 +265,7 @@ transformación Educativa">
                                 class="u-container-layout u-valign-middle-sm u-valign-middle-xs u-valign-top-lg u-valign-top-md u-valign-top-xl u-container-layout-1">
                                 <span
                                     class="u-align-center u-custom-item u-file-icon u-icon u-icon-circle u-text-palette-1-dark-2 u-white u-icon-1"><img
-                                        src="images/7655302-ecce176f.png" alt=""></span>
+                                        src="images/3503656-8260a0ff.png" alt=""></span>
                             </div>
                         </div>
                         <div
@@ -273,7 +273,7 @@ transformación Educativa">
                             <div class="u-container-layout u-valign-middle-sm u-valign-middle-xs u-container-layout-2">
                                 <h6
                                     class="u-align-center u-custom-font u-font-raleway u-text u-text-body-alt-color u-text-1">
-                                    AGENDA </h6>
+                                    JORNADA PRESENCIAL&nbsp;<br>6 de febrero, 2025<br>Auditorio Nacional Adela Reta - SODRE </h6>
                             </div>
                         </div>
                     </div>
