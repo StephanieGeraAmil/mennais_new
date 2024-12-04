@@ -264,14 +264,14 @@ transformación Educativa">
                                 class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-container-layout-1">
                                 <span
                                     class="u-align-center u-file-icon u-icon u-icon-circle u-text-palette-1-dark-2 u-white u-icon-1"><img
-                                        src="images/7387704-4642e1ad.png" alt=""></span>
+                                        src="images/5110070-a0e213bf.png" alt=""></span>
                             </div>
                         </div>
                         <div
                             class="u-container-align-center u-container-style u-layout-cell u-size-49-sm u-size-49-xs u-size-55-lg u-size-55-md u-size-55-xl u-layout-cell-2">
                             <div
                                 class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-container-layout-2">
-                                <h6 class="u-align-center u-custom-font u-font-raleway u-text u-text-1">INVITADO</h6>
+                                <h6 class="u-align-center u-custom-font u-font-raleway u-text u-text-1">ORADORES</h6>
                             </div>
                         </div>
                     </div>
@@ -291,7 +291,7 @@ transformación Educativa">
                                 <div class="u-container-style u-layout-cell u-size-15 u-layout-cell-1">
                                     <div class="u-container-layout u-valign-top u-container-layout-2">
                                         <img class="u-align-center u-image u-image-contain u-image-default u-preserve-proportions u-image-1"
-                                            src="images/bejmar_x.png" alt="" data-image-width="350"
+                                           src="images/exp_llewin.png" alt="" data-image-width="350"
                                             data-image-height="350">
                                     </div>
                                 </div>
@@ -300,29 +300,10 @@ transformación Educativa">
                                     <div class="u-container-layout u-container-layout-3">
                                         <h6
                                             class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-text u-text-default-lg u-text-default-xl u-text-1">
-                                            <b>Bernardo Blejmar</b>
+                                            <b>Laura Lewin (Argentina)</b>
                                         </h6>
-                                        <p class="u-align-justify u-text u-text-default u-text-2"> Licenciado en
-                                            Ciencia de la
-                                            Educación por la Universidad de Buenos Aires.
-                                            Docente
-                                            en la Universidad de San Andrés.
-                                            Becario del Sherman Program en Management Organizations y del
-                                            programa Distinguished Leaders en la Brandeis University, Boston,
-                                            USA. Diseñador
-                                            metodológico y facilitador en el Ministerio de Desarrollo urbano de
-                                            Argentina.
-                                            Es
-                                            director de la Consultora Bernardo Blejmar &amp; Asoc,
-                                            dedicada
-                                            al comportamiento y estrategia organizacional, en la que se realizan
-                                            diseños de dispositivos de capacitación y consultoría para
-                                            empresas. Tiene
-                                            una larga trayectoria como profesor, tanto titular como invitado, en
-                                            reconocidas universidades nacionales e internacionales. Ha publicado
-                                            diversos libros y artículos. Además fue director general de AMIA,
-                                            director de ORT Uruguay, y consultor para el Programa de Cambio
-                                            Organizacional del Ministerio de Defensa de Argentina.</p>
+                                        <p class="u-align-justify u-text u-text-default u-text-2">
+                                           Es formadora docente y ha dictado talleres de capacitación en toda Latinoamérica, América Central, el Caribe, Estados Unidos y Europa. <br>Laura es oradora TEDx y columnista en temas de educación para la radio de la CNN, y para Infobae, entre otros medios nacionales e internacionales. <br>Su enfoque innovador y práctico la ha convertido en una figura clave para las instituciones educativas, así como para organismos públicos y privados. Ha asesorado y dictado capacitaciones para Ministerios de Educación tanto en Argentina como en el extranjero. Es autora de trece libros de educación para docentes y directivos de instituciones educativas, entre los que se destacan: El Aula Afectiva, Que enseñes no significa que Aprendan, La Nueva Educación, Hackeando la educación tradicional. <br>En septiembre lanzó su más reciente trabajo para directivos: Liderazgo de Impacto, de editorial Bonum.<br></p>
                                     </div>
                                     
                                 </div>
@@ -343,7 +324,7 @@ transformación Educativa">
                                 <div class="u-container-style u-layout-cell u-size-15 u-layout-cell-1">
                                     <div class="u-container-layout u-valign-top u-container-layout-2">
                                         <img class="u-align-center u-image u-image-contain u-image-default u-preserve-proportions u-image-1"
-                                            src="images/bejmar_x.png" alt="" data-image-width="350"
+                                            src="images/exp_mmasnatta.png" alt="" data-image-width="350"
                                             data-image-height="350">
                                     </div>
                                 </div>
@@ -352,29 +333,9 @@ transformación Educativa">
                                     <div class="u-container-layout u-container-layout-3">
                                         <h6
                                             class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-text u-text-default-lg u-text-default-xl u-text-1">
-                                            <b>Bernardo Blejmar</b>
+                                            <b>Melina Masnatta (Argentina)</b>
                                         </h6>
-                                        <p class="u-align-justify u-text u-text-default u-text-2"> Licenciado en
-                                            Ciencia de la
-                                            Educación por la Universidad de Buenos Aires.
-                                            Docente
-                                            en la Universidad de San Andrés.
-                                            Becario del Sherman Program en Management Organizations y del
-                                            programa Distinguished Leaders en la Brandeis University, Boston,
-                                            USA. Diseñador
-                                            metodológico y facilitador en el Ministerio de Desarrollo urbano de
-                                            Argentina.
-                                            Es
-                                            director de la Consultora Bernardo Blejmar &amp; Asoc,
-                                            dedicada
-                                            al comportamiento y estrategia organizacional, en la que se realizan
-                                            diseños de dispositivos de capacitación y consultoría para
-                                            empresas. Tiene
-                                            una larga trayectoria como profesor, tanto titular como invitado, en
-                                            reconocidas universidades nacionales e internacionales. Ha publicado
-                                            diversos libros y artículos. Además fue director general de AMIA,
-                                            director de ORT Uruguay, y consultor para el Programa de Cambio
-                                            Organizacional del Ministerio de Defensa de Argentina.</p>
+                                        <p class="u-align-justify u-text u-text-default u-text-2">  Es emprendedora especialista en educación, tecnología y diversidad. <br>Consultora especialista en tecnología, educación, diversidad e innovación y miembro de boards de compañías privadas y de la sociedad civil. Desarrolla laboratorios de innovación y comunidades como las Clínicas de Re/Invención Profesional. <br>Es LinkedIn Top Voice, oradora TEDx, speaker internacional, columnista y autora de más 200 publicaciones nacionales e internacionales. <br>En el mundo académico se desempeña como Subdirectora de posgrado, Coordinadora académica, Profesora e Investigadora en áreas de Inteligencia digital, Diversidad y Negocios tecnológicos. <br>Doctoranda, con una Maestría en Tecnología Educativa, Licenciatura en Ciencias de la Educación y Magisterio en Artes. Especializada en temas de liderazgo e impacto en Georgetown University (USA), London School of Economics and Political Science (UK) y Schusterman Foundation (Israel).<br></p>
                                     </div>
                                     
                                 </div>
