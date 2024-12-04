@@ -344,84 +344,84 @@ transformación Educativa">
                     </div>
                 </div>
             </div>
-        </div>
-         <div class="u-container-align-center u-container-style u-list-item u-repeater-item u-list-item-3">
-              <div class="u-container-layout u-similar-container u-container-layout-5">
-                <div class="u-border-2 u-border-palette-1-light-1 u-container-style u-expanded-width u-group u-palette-1-light-3 u-radius u-shape-round u-group-3">
-                  <div class="u-container-layout u-container-layout-6">
-                    <h6 class="u-text u-text-palette-1-dark-3 u-text-5"><b></b><b>Lorena Estefanell (Uruguay)</b>
-                    </h6>
-                    <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-3" src="images/exp_lestefanell.png" alt="" data-image-width="350" data-image-height="350">
-                    <p class="u-align-justify u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-palette-1-dark-3 u-text-6">Es psicóloga clínica por la Universidad Católica del Uruguay y cuenta con 23 años de experiencia en el área de salud mental. <br>Se encuentra realizando el doctorado en Psicología en la Universidad de Palermo (Argentina). Tiene una maestría en psicoterapia cognitiva (Universidad de Valencia- España) y una maestría en organizaciones y comunicación (UCU- Uruguay). <br>Cuenta con formación de postgrado en cambio organizacional (UCU- Uruguay) y en psicoterapia cognitiva de adultos y niños (Suamoc- Uruguay), así como un diploma de formación en Supervisión Clínica (Universidad San Salvador- Fundación Aigle Argentina). <br>Algunas de sus especializaciones en el área de la Psicología clínica son: Terapia cognitiva centrado en esquemas, Terapia EMDR, Terapia de parejas y Disciplina positiva.
-                    </p>
-                  </div>
+            <div class="u-container-align-center u-container-style u-list-item u-repeater-item u-list-item-3">
+                <div class="u-container-layout u-similar-container u-container-layout-5">
+                    <div class="u-border-2 u-border-palette-1-light-1 u-container-style u-expanded-width u-group u-palette-1-light-3 u-radius u-shape-round u-group-3">
+                        <div class="u-container-layout u-container-layout-6">
+                            <h6 class="u-text u-text-palette-1-dark-3 u-text-5"><b></b><b>Lorena Estefanell (Uruguay)</b>
+                            </h6>
+                            <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-3" src="images/exp_lestefanell.png" alt="" data-image-width="350" data-image-height="350">
+                            <p class="u-align-justify u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-palette-1-dark-3 u-text-6">Es psicóloga clínica por la Universidad Católica del Uruguay y cuenta con 23 años de experiencia en el área de salud mental. <br>Se encuentra realizando el doctorado en Psicología en la Universidad de Palermo (Argentina). Tiene una maestría en psicoterapia cognitiva (Universidad de Valencia- España) y una maestría en organizaciones y comunicación (UCU- Uruguay). <br>Cuenta con formación de postgrado en cambio organizacional (UCU- Uruguay) y en psicoterapia cognitiva de adultos y niños (Suamoc- Uruguay), así como un diploma de formación en Supervisión Clínica (Universidad San Salvador- Fundación Aigle Argentina). <br>Algunas de sus especializaciones en el área de la Psicología clínica son: Terapia cognitiva centrado en esquemas, Terapia EMDR, Terapia de parejas y Disciplina positiva.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
             <div class="u-container-style u-list-item u-repeater-item u-list-item-4">
-              <div class="u-container-layout u-similar-container u-container-layout-7">
-                <div class="u-border-2 u-border-palette-1-light-1 u-container-style u-expanded-width u-group u-palette-1-light-3 u-radius u-shape-round u-group-4">
-                  <div class="u-container-layout u-container-layout-8">
-                    <h6 class="u-text u-text-palette-1-dark-3 u-text-7"> Alfredo Cerisola (Uruguay)</h6>
-                    <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-4" src="images/exp_acerisola.png" alt="" data-image-width="350" data-image-height="350">
-                    <p class="u-align-justify u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-palette-1-dark-3 u-text-8"> Es médico Pediatra y Neuropediatra, Profesor Agregado (Grado 4) de Neuropediatría de la Facultad de Medicina de la Universidad de la República, Montevideo, Uruguay, desarrollando actividades docentes, asistenciales y de investigación en el Centro Hospitalario Pereira Rossell. <br>Además, es Neuropediatra del Centro de Rehabilitación Infantil Teletón, y del Centro de Referencia Nacional en Defectos Congénitos y Enfermedades Raras (CRENADECER) del Banco de Previsión Social (BPS). <br>Ha sido presidente de varias sociedades científicas, incluyendo la Sociedad Uruguaya de Pediatría (SUP), el Foro de Sociedades de Pediatría del Cono Sur, la Sociedad Uruguaya de Neuropediatría (SUN) y, actualmente es past-president de la Academia Iberoamericana de Neurología Pediátrica (AINP). <br>En los últimos 10 años, se ha dedicado a profundizar en el impacto de la exposición a pantallas en los niños pequeños y ha dado múltiples conferencias y publicado artículos y columnas sobre el tema.&nbsp;
-                    </p>
-                  </div>
+                <div class="u-container-layout u-similar-container u-container-layout-7">
+                    <div class="u-border-2 u-border-palette-1-light-1 u-container-style u-expanded-width u-group u-palette-1-light-3 u-radius u-shape-round u-group-4">
+                        <div class="u-container-layout u-container-layout-8">
+                            <h6 class="u-text u-text-palette-1-dark-3 u-text-7"> Alfredo Cerisola (Uruguay)</h6>
+                            <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-4" src="images/exp_acerisola.png" alt="" data-image-width="350" data-image-height="350">
+                            <p class="u-align-justify u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-palette-1-dark-3 u-text-8"> Es médico Pediatra y Neuropediatra, Profesor Agregado (Grado 4) de Neuropediatría de la Facultad de Medicina de la Universidad de la República, Montevideo, Uruguay, desarrollando actividades docentes, asistenciales y de investigación en el Centro Hospitalario Pereira Rossell. <br>Además, es Neuropediatra del Centro de Rehabilitación Infantil Teletón, y del Centro de Referencia Nacional en Defectos Congénitos y Enfermedades Raras (CRENADECER) del Banco de Previsión Social (BPS). <br>Ha sido presidente de varias sociedades científicas, incluyendo la Sociedad Uruguaya de Pediatría (SUP), el Foro de Sociedades de Pediatría del Cono Sur, la Sociedad Uruguaya de Neuropediatría (SUN) y, actualmente es past-president de la Academia Iberoamericana de Neurología Pediátrica (AINP). <br>En los últimos 10 años, se ha dedicado a profundizar en el impacto de la exposición a pantallas en los niños pequeños y ha dado múltiples conferencias y publicado artículos y columnas sobre el tema.&nbsp;
+                            </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
             <div class="u-container-style u-list-item u-repeater-item u-list-item-5">
-              <div class="u-container-layout u-similar-container u-container-layout-9">
-                <div class="u-border-2 u-border-palette-1-light-1 u-container-style u-expanded-width u-group u-palette-1-light-3 u-radius u-shape-round u-group-5">
-                  <div class="u-container-layout u-container-layout-10">
-                    <h6 class="u-text u-text-palette-1-dark-3 u-text-9"><b> Silvia Umpiérrez Oroño (Uruguay)</b>
-                    </h6>
-                    <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-5" src="images/exp_sumpierrez.png" alt="" data-image-width="350" data-image-height="350">
-                    <p class="u-align-justify u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-palette-1-dark-3 u-text-10"> Es Licenciada en Ciencias Biológicas por la Universidad de la República y cuenta con una Maestría en Educación por la Universidad ORT Uruguay. Además tiene un Doctorado en Educación y una especialización en Gestión de las Instituciones Educativas.Se ha especializado en Inteligencia Artificial tanto en Uruguay como en el extranjero. <br>Actualmente es formadora efectiva de Biología con dedicación exclusiva en el Centro Regional de Profesores del Sur del CFE. Tutora y docente a nivel de maestrías en Universidad ORT Uruguay. <br>Autora de Inteligencia artificial en educación - Contribuciones desde la teoría, las prácticas pedagógicas y la investigación.
-                    </p>
-                  </div>
+                <div class="u-container-layout u-similar-container u-container-layout-9">
+                    <div class="u-border-2 u-border-palette-1-light-1 u-container-style u-expanded-width u-group u-palette-1-light-3 u-radius u-shape-round u-group-5">
+                        <div class="u-container-layout u-container-layout-10">
+                            <h6 class="u-text u-text-palette-1-dark-3 u-text-9"><b> Silvia Umpiérrez Oroño (Uruguay)</b>
+                            </h6>
+                            <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-5" src="images/exp_sumpierrez.png" alt="" data-image-width="350" data-image-height="350">
+                            <p class="u-align-justify u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-palette-1-dark-3 u-text-10"> Es Licenciada en Ciencias Biológicas por la Universidad de la República y cuenta con una Maestría en Educación por la Universidad ORT Uruguay. Además tiene un Doctorado en Educación y una especialización en Gestión de las Instituciones Educativas.Se ha especializado en Inteligencia Artificial tanto en Uruguay como en el extranjero. <br>Actualmente es formadora efectiva de Biología con dedicación exclusiva en el Centro Regional de Profesores del Sur del CFE. Tutora y docente a nivel de maestrías en Universidad ORT Uruguay. <br>Autora de Inteligencia artificial en educación - Contribuciones desde la teoría, las prácticas pedagógicas y la investigación.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
             <div class="u-container-style u-list-item u-repeater-item u-list-item-6">
-              <div class="u-container-layout u-similar-container u-container-layout-11">
-                <div class="u-border-2 u-border-palette-1-light-1 u-container-style u-expanded-width u-group u-palette-1-light-3 u-radius u-shape-round u-group-6">
-                  <div class="u-container-layout u-container-layout-12">
-                    <h6 class="u-text u-text-palette-1-dark-3 u-text-11"> Claudia Cabrera Borges (Uruguay)</h6>
-                    <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-6" src="images/exp_ccabrera.png" alt="" data-image-width="350" data-image-height="350">
-                    <p class="u-align-justify u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-palette-1-dark-3 u-text-12"> Es Licenciada en Ciencias Biológicas por la Universidad de la República, <br>Ayudante preparador de laboratorio de Biología y Profesora de Biología por el IPA.  Cuenta con amplia experiencia de aula. Actualmente es docente en el Centro Regional de Profesores del Centro y Tutora y docente de Maestría en Universidad ORT Uruguay. Es Investigadora del Sistema Nacional de Investigadores (SNI). <br>Autora de Inteligencia artificial en educación - Contribuciones desde la teoría, las prácticas pedagógicas y la investigación.
-                    </p>
-                  </div>
+                <div class="u-container-layout u-similar-container u-container-layout-11">
+                    <div class="u-border-2 u-border-palette-1-light-1 u-container-style u-expanded-width u-group u-palette-1-light-3 u-radius u-shape-round u-group-6">
+                        <div class="u-container-layout u-container-layout-12">
+                            <h6 class="u-text u-text-palette-1-dark-3 u-text-11"> Claudia Cabrera Borges (Uruguay)</h6>
+                            <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-6" src="images/exp_ccabrera.png" alt="" data-image-width="350" data-image-height="350">
+                            <p class="u-align-justify u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-palette-1-dark-3 u-text-12"> Es Licenciada en Ciencias Biológicas por la Universidad de la República, <br>Ayudante preparador de laboratorio de Biología y Profesora de Biología por el IPA.  Cuenta con amplia experiencia de aula. Actualmente es docente en el Centro Regional de Profesores del Centro y Tutora y docente de Maestría en Universidad ORT Uruguay. Es Investigadora del Sistema Nacional de Investigadores (SNI). <br>Autora de Inteligencia artificial en educación - Contribuciones desde la teoría, las prácticas pedagógicas y la investigación.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
             <div class="u-container-style u-list-item u-repeater-item u-list-item-7">
-              <div class="u-container-layout u-similar-container u-container-layout-13">
-                <div class="u-border-2 u-border-palette-1-light-1 u-container-style u-expanded-width u-group u-palette-1-light-3 u-radius u-shape-round u-group-7">
-                  <div class="u-container-layout u-container-layout-14">
-                    <h6 class="u-text u-text-palette-1-dark-3 u-text-13"><b> Mariela Questa-Torterolo (Uruguay)</b>
-                    </h6>
-                    <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-7" src="images/exp_mquesta.png" alt="" data-image-width="350" data-image-height="350">
-                    <p class="u-align-justify u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-palette-1-dark-3 u-text-14"> Es Doctora en en Educación por la Universitat Autònoma de Barcelona. <br>Tiene una Maestría en Gestión Educativa por la Universidad ORT Uruguay. Además es Licenciada en Relaciones Internacionales por la Universidad de la República. <br>Ha participado en diversos grupos de investigación, financiados a nivel nacional e internacional. También ha desarrollado actividades de docencia en maestrías en áreas de educación, gestión educativa, formación de formadores y en el ámbito de intervenciones psicopedagógicas. <br>Autora de Inteligencia artificial en educación - Contribuciones desde la teoría, las prácticas pedagógicas y la investigación.&nbsp;<br>
-                    </p>
-                  </div>
+                <div class="u-container-layout u-similar-container u-container-layout-13">
+                    <div class="u-border-2 u-border-palette-1-light-1 u-container-style u-expanded-width u-group u-palette-1-light-3 u-radius u-shape-round u-group-7">
+                        <div class="u-container-layout u-container-layout-14">
+                            <h6 class="u-text u-text-palette-1-dark-3 u-text-13"><b> Mariela Questa-Torterolo (Uruguay)</b>
+                            </h6>
+                            <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-7" src="images/exp_mquesta.png" alt="" data-image-width="350" data-image-height="350">
+                            <p class="u-align-justify u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-palette-1-dark-3 u-text-14"> Es Doctora en en Educación por la Universitat Autònoma de Barcelona. <br>Tiene una Maestría en Gestión Educativa por la Universidad ORT Uruguay. Además es Licenciada en Relaciones Internacionales por la Universidad de la República. <br>Ha participado en diversos grupos de investigación, financiados a nivel nacional e internacional. También ha desarrollado actividades de docencia en maestrías en áreas de educación, gestión educativa, formación de formadores y en el ámbito de intervenciones psicopedagógicas. <br>Autora de Inteligencia artificial en educación - Contribuciones desde la teoría, las prácticas pedagógicas y la investigación.&nbsp;<br>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
             <div class="u-container-style u-list-item u-repeater-item u-list-item-8">
-              <div class="u-container-layout u-similar-container u-container-layout-15">
-                <div class="u-border-2 u-border-palette-1-light-1 u-container-style u-expanded-width u-group u-palette-1-light-3 u-radius u-shape-round u-group-8">
-                  <div class="u-container-layout u-container-layout-16">
-                    <h6 class="u-text u-text-palette-1-dark-3 u-text-15"><b> Héctor Ruiz Martín (España)</b>
-                    </h6>
-                    <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-8" src="images/exp_hruiz.png" alt="" data-image-width="350" data-image-height="350">
-                    <p class="u-align-justify u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-palette-1-dark-3 u-text-16"> Es director de la International Science Teaching Foundation e investigador en el ámbito de la psicología cognitiva de la memoria y el aprendizaje en contextos educativos. <br>Desde 2002, ha impulsado varios proyectos para contribuir a la mejora de la educación básica, proporcionando a maestros y estudiantes herramientas y metodologías fundamentadas en la investigación sobre cómo aprenden las personas. <br>Ha sido asesor de varias escuelas, organizaciones educativas y gobiernos de Europa, Asia y América, y es autor de varios libros que han sido traducidos a múltiples idiomas: “¿Cómo aprendemos? Una aproximación científica al aprendizaje y la enseñanza”, “Aprendiendo a aprender”, “Edumitos” y “Los secretos de la memoria”. <br>Forma parte del Grupo de Investigación en Ciencias del Aprendizaje y la Enseñanza de la Universidad Autónoma de Madrid y es profesor asociado en la Universidad Politécnica de Cataluña.<br>
-                    </p>
-                  </div>
+                <div class="u-container-layout u-similar-container u-container-layout-15">
+                    <div class="u-border-2 u-border-palette-1-light-1 u-container-style u-expanded-width u-group u-palette-1-light-3 u-radius u-shape-round u-group-8">
+                        <div class="u-container-layout u-container-layout-16">
+                            <h6 class="u-text u-text-palette-1-dark-3 u-text-15"><b> Héctor Ruiz Martín (España)</b>
+                            </h6>
+                            <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-8" src="images/exp_hruiz.png" alt="" data-image-width="350" data-image-height="350">
+                            <p class="u-align-justify u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-palette-1-dark-3 u-text-16"> Es director de la International Science Teaching Foundation e investigador en el ámbito de la psicología cognitiva de la memoria y el aprendizaje en contextos educativos. <br>Desde 2002, ha impulsado varios proyectos para contribuir a la mejora de la educación básica, proporcionando a maestros y estudiantes herramientas y metodologías fundamentadas en la investigación sobre cómo aprenden las personas. <br>Ha sido asesor de varias escuelas, organizaciones educativas y gobiernos de Europa, Asia y América, y es autor de varios libros que han sido traducidos a múltiples idiomas: “¿Cómo aprendemos? Una aproximación científica al aprendizaje y la enseñanza”, “Aprendiendo a aprender”, “Edumitos” y “Los secretos de la memoria”. <br>Forma parte del Grupo de Investigación en Ciencias del Aprendizaje y la Enseñanza de la Universidad Autónoma de Madrid y es profesor asociado en la Universidad Politécnica de Cataluña.<br>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-    </section>
+        </div>
+        </section>
     <section class="u-clearfix u-container-align-center u-palette-1-dark-1 u-section-9" id="carousel_6000">
         <div
             class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-sm u-valign-middle-xl u-valign-middle-xs u-sheet-1">
