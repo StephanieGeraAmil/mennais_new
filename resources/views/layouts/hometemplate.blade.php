@@ -252,6 +252,183 @@ transformación Educativa">
             </div>
         </div>
     </section>
+    <section class="u-clearfix u-container-align-center u-palette-1-dark-1 u-section-9" id="carousel_6000">
+        <div
+            class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-sm u-valign-middle-xl u-valign-middle-xs u-sheet-1">
+            <div
+                class="data-layout-selected u-clearfix u-expanded-width u-layout-custom-sm u-layout-custom-xs u-layout-wrap u-layout-wrap-1">
+                <div class="u-layout">
+                    <div class="u-layout-row">
+                        <div
+                            class="u-container-style u-layout-cell u-size-10-sm u-size-10-xs u-size-5-lg u-size-5-md u-size-5-xl u-layout-cell-1">
+                            <div
+                                class="u-container-layout u-valign-middle-sm u-valign-middle-xs u-valign-top-lg u-valign-top-md u-valign-top-xl u-container-layout-1">
+                                <span
+                                    class="u-align-center u-custom-item u-file-icon u-icon u-icon-circle u-text-palette-1-dark-2 u-white u-icon-1"><img
+                                        src="images/7655302-ecce176f.png" alt=""></span>
+                            </div>
+                        </div>
+                        <div
+                            class="u-container-align-center u-container-style u-layout-cell u-size-50-sm u-size-50-xs u-size-55-lg u-size-55-md u-size-55-xl u-layout-cell-2">
+                            <div class="u-container-layout u-valign-middle-sm u-valign-middle-xs u-container-layout-2">
+                                <h6
+                                    class="u-align-center u-custom-font u-font-raleway u-text u-text-body-alt-color u-text-1">
+                                    AGENDA </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="u-clearfix u-container-align-center u-gradient u-section-10" id="sec-8ee4">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <div
+                class="u-border-2 u-border-palette-1-light-1 u-container-style u-group u-opacity u-opacity-75 u-palette-1-light-3 u-radius-12 u-shape-round u-group-1">
+                <div class="u-container-layout u-container-layout-1">
+                    <h6
+                        class="u-align-center u-custom-font u-font-raleway u-text u-text-default u-text-palette-1-dark-2 u-text-1">
+                        AGENDA<br>25 de julio de 2024
+                    </h6>
+                    <div class="u-expanded-width u-table u-table-responsive u-table-1">
+                        <table class="u-table-entity">
+                            <colgroup>
+                                <col width="16.5%">
+                                <col width="83.5%">
+                            </colgroup>
+                            <tbody class="u-table-body">
+                                <tr style="height: 46px;">
+                                    <td
+                                        class="u-align-center u-border-1 u-border-grey-dark-1 u-custom-color-25 u-table-cell u-table-cell-1">
+                                        08:00</td>
+                                    <td
+                                        class="u-border-1 u-border-grey-dark-1 u-custom-color-25 u-table-cell u-table-cell-2">
+                                        Acreditaciones</td>
+                                </tr>
+                                <tr style="height: 46px;">
+                                    <td
+                                        class="u-align-center u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-3">
+                                        08:30</td>
+                                    <td class="u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-4">Palabras de
+                                        Bienvenida y oración</td>
+                                </tr>
+                                <tr style="height: 46px;">
+                                    <td
+                                        class="u-align-center u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-5">
+                                        08:40 a 10:00</td>
+                                    <td class="u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-6">
+                                        <b>Conversación
+                                            y vínculo, un mecanismo de doble vía - </b>Bernardo
+                                        Blejmar
+                                    </td>
+                                </tr>
+                                <tr style="height: 46px;">
+                                    <td
+                                        class="u-align-center u-border-1 u-border-grey-dark-1 u-custom-color-24 u-table-cell u-table-cell-7">
+                                        10:00 a 10:30</td>
+                                    <td
+                                        class="u-border-1 u-border-grey-dark-1 u-custom-color-24 u-table-cell u-table-cell-8">
+                                        <b>
+                                            <span style="font-weight: 400;">Corte</span>
+                                            <span style="font-weight: 400;"></span>
+                                            <span style="font-weight: 400;"></span></b>
+                                    </td>
+                                </tr>
+                                <tr style="height: 46px;">
+                                    <td
+                                        class="u-align-center u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-9">
+                                        10:30 a 12:00</td>
+                                    <td class="u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-10">
+                                        <b>Entrenamiento
+                                            conversacional para educadores - </b>Bernardo
+                                        Blejmar
+                                    </td>
+                                </tr>
+                                <tr style="height: 46px;">
+                                    <td
+                                        class="u-align-center u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-11">
+                                        12:00 a 13:30</td>
+                                    <td class="u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-12">Corte para
+                                        almuerzo </td>
+                                </tr>
+                                <tr style="height: 46px;">
+                                    <td
+                                        class="u-align-center u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-13">
+                                        13:30 a 15:00</td>
+                                    <td class="u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-14"><b>Trabajo
+                                            en grupos</b>&nbsp;<br>Práctica
+                                        habilitadora: Feria POP de pedidos, ofertas y promesas.
+                                    </td>
+                                </tr>
+                                <tr style="height: 46px;">
+                                    <td
+                                        class="u-align-center u-border-1 u-border-grey-dark-1 u-custom-color-24 u-table-cell u-table-cell-15">
+                                        15:00 a 15:30</td>
+                                    <td
+                                        class="u-border-1 u-border-grey-dark-1 u-custom-color-24 u-table-cell u-table-cell-16">
+                                        Corte </td>
+                                </tr>
+                                <tr style="height: 46px;">
+                                    <td
+                                        class="u-align-center u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-17">
+                                        15:30 a 16:30</td>
+                                    <td class="u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-18"><b>Frases
+                                            que “Matan Futuro” - Crear condiciones fértiles para que las
+                                            cosas pasen - </b>Bernardo
+                                        Blejmar
+                                    </td>
+                                </tr>
+                                <tr style="height: 46px;">
+                                    <td
+                                        class="u-align-center u-border-1 u-border-grey-dark-1 u-custom-color-24 u-table-cell u-table-cell-19">
+                                        16:30</td>
+                                    <td
+                                        class="u-border-1 u-border-grey-dark-1 u-custom-color-24 u-table-cell u-table-cell-20">
+                                        Cierre</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="u-clearfix u-container-align-center u-gradient u-section-11" id="sec-3baf">
+        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+            <div class="custom-expanded data-layout-selected u-clearfix u-layout-wrap u-layout-wrap-1">
+                <div class="u-layout">
+                    <div class="u-layout-row">
+                        <div
+                            class="u-container-align-center u-container-style u-layout-cell u-size-25 u-layout-cell-1">
+                            <div class="u-container-layout u-valign-middle u-container-layout-1">
+                                <div
+                                    class="custom-expanded u-align-center u-border-2 u-border-palette-1-light-1 u-container-align-center-lg u-container-align-center-xl u-container-style u-group u-palette-2-light-3 u-radius-12 u-shape-round u-group-1">
+                                    <div
+                                        class="u-container-layout u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-container-layout-2">
+                                        <h5 class="u-align-center u-text u-text-default-lg u-text-default-xl u-text-1">
+                                            Aula Magna de la Universidad Católica del Uruguay<br>
+                                            <br>Av. 8 de Octubre 2738<span class="u-text-palette-1-dark-3"></span>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="u-container-style u-layout-cell u-size-35 u-layout-cell-2">
+                            <div class="u-container-layout u-container-layout-3">
+                                <div class="u-expanded-width u-grey-light-2 u-map u-map-1">
+                                    <div class="embed-responsive">
+                                        <iframe class="embed-responsive-item"
+                                            src="https://maps.google.com/maps?output=embed&amp;q=Universidad%20Cat%C3%B3lica%20del%20Uruguay&amp;z=17&amp;t=m"
+                                            data-map="JTdCJTIyYWRkcmVzcyUyMiUzQSUyMlVuaXZlcnNpZGFkJTIwQ2F0JUMzJUIzbGljYSUyMGRlbCUyMFVydWd1YXklMjIlMkMlMjJ6b29tJTIyJTNBMTclMkMlMjJ0eXBlSWQlMjIlM0ElMjJyb2FkJTIyJTJDJTIybGFuZyUyMiUzQW51bGwlMkMlMjJhcGlLZXklMjIlM0FudWxsJTJDJTIybWFya2VycyUyMiUzQSU1QiU1RCU3RA=="></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="u-clearfix u-container-align-center u-palette-1-dark-1 u-section-7" id="carousel_4081">
         <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
             <div
@@ -550,183 +727,7 @@ transformación Educativa">
        
 
         </section>
-    <section class="u-clearfix u-container-align-center u-palette-1-dark-1 u-section-9" id="carousel_6000">
-        <div
-            class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-sm u-valign-middle-xl u-valign-middle-xs u-sheet-1">
-            <div
-                class="data-layout-selected u-clearfix u-expanded-width u-layout-custom-sm u-layout-custom-xs u-layout-wrap u-layout-wrap-1">
-                <div class="u-layout">
-                    <div class="u-layout-row">
-                        <div
-                            class="u-container-style u-layout-cell u-size-10-sm u-size-10-xs u-size-5-lg u-size-5-md u-size-5-xl u-layout-cell-1">
-                            <div
-                                class="u-container-layout u-valign-middle-sm u-valign-middle-xs u-valign-top-lg u-valign-top-md u-valign-top-xl u-container-layout-1">
-                                <span
-                                    class="u-align-center u-custom-item u-file-icon u-icon u-icon-circle u-text-palette-1-dark-2 u-white u-icon-1"><img
-                                        src="images/7655302-ecce176f.png" alt=""></span>
-                            </div>
-                        </div>
-                        <div
-                            class="u-container-align-center u-container-style u-layout-cell u-size-50-sm u-size-50-xs u-size-55-lg u-size-55-md u-size-55-xl u-layout-cell-2">
-                            <div class="u-container-layout u-valign-middle-sm u-valign-middle-xs u-container-layout-2">
-                                <h6
-                                    class="u-align-center u-custom-font u-font-raleway u-text u-text-body-alt-color u-text-1">
-                                    AGENDA </h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="u-clearfix u-container-align-center u-gradient u-section-10" id="sec-8ee4">
-        <div class="u-clearfix u-sheet u-sheet-1">
-            <div
-                class="u-border-2 u-border-palette-1-light-1 u-container-style u-group u-opacity u-opacity-75 u-palette-1-light-3 u-radius-12 u-shape-round u-group-1">
-                <div class="u-container-layout u-container-layout-1">
-                    <h6
-                        class="u-align-center u-custom-font u-font-raleway u-text u-text-default u-text-palette-1-dark-2 u-text-1">
-                        AGENDA<br>25 de julio de 2024
-                    </h6>
-                    <div class="u-expanded-width u-table u-table-responsive u-table-1">
-                        <table class="u-table-entity">
-                            <colgroup>
-                                <col width="16.5%">
-                                <col width="83.5%">
-                            </colgroup>
-                            <tbody class="u-table-body">
-                                <tr style="height: 46px;">
-                                    <td
-                                        class="u-align-center u-border-1 u-border-grey-dark-1 u-custom-color-25 u-table-cell u-table-cell-1">
-                                        08:00</td>
-                                    <td
-                                        class="u-border-1 u-border-grey-dark-1 u-custom-color-25 u-table-cell u-table-cell-2">
-                                        Acreditaciones</td>
-                                </tr>
-                                <tr style="height: 46px;">
-                                    <td
-                                        class="u-align-center u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-3">
-                                        08:30</td>
-                                    <td class="u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-4">Palabras de
-                                        Bienvenida y oración</td>
-                                </tr>
-                                <tr style="height: 46px;">
-                                    <td
-                                        class="u-align-center u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-5">
-                                        08:40 a 10:00</td>
-                                    <td class="u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-6">
-                                        <b>Conversación
-                                            y vínculo, un mecanismo de doble vía - </b>Bernardo
-                                        Blejmar
-                                    </td>
-                                </tr>
-                                <tr style="height: 46px;">
-                                    <td
-                                        class="u-align-center u-border-1 u-border-grey-dark-1 u-custom-color-24 u-table-cell u-table-cell-7">
-                                        10:00 a 10:30</td>
-                                    <td
-                                        class="u-border-1 u-border-grey-dark-1 u-custom-color-24 u-table-cell u-table-cell-8">
-                                        <b>
-                                            <span style="font-weight: 400;">Corte</span>
-                                            <span style="font-weight: 400;"></span>
-                                            <span style="font-weight: 400;"></span></b>
-                                    </td>
-                                </tr>
-                                <tr style="height: 46px;">
-                                    <td
-                                        class="u-align-center u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-9">
-                                        10:30 a 12:00</td>
-                                    <td class="u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-10">
-                                        <b>Entrenamiento
-                                            conversacional para educadores - </b>Bernardo
-                                        Blejmar
-                                    </td>
-                                </tr>
-                                <tr style="height: 46px;">
-                                    <td
-                                        class="u-align-center u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-11">
-                                        12:00 a 13:30</td>
-                                    <td class="u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-12">Corte para
-                                        almuerzo </td>
-                                </tr>
-                                <tr style="height: 46px;">
-                                    <td
-                                        class="u-align-center u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-13">
-                                        13:30 a 15:00</td>
-                                    <td class="u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-14"><b>Trabajo
-                                            en grupos</b>&nbsp;<br>Práctica
-                                        habilitadora: Feria POP de pedidos, ofertas y promesas.
-                                    </td>
-                                </tr>
-                                <tr style="height: 46px;">
-                                    <td
-                                        class="u-align-center u-border-1 u-border-grey-dark-1 u-custom-color-24 u-table-cell u-table-cell-15">
-                                        15:00 a 15:30</td>
-                                    <td
-                                        class="u-border-1 u-border-grey-dark-1 u-custom-color-24 u-table-cell u-table-cell-16">
-                                        Corte </td>
-                                </tr>
-                                <tr style="height: 46px;">
-                                    <td
-                                        class="u-align-center u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-17">
-                                        15:30 a 16:30</td>
-                                    <td class="u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-18"><b>Frases
-                                            que “Matan Futuro” - Crear condiciones fértiles para que las
-                                            cosas pasen - </b>Bernardo
-                                        Blejmar
-                                    </td>
-                                </tr>
-                                <tr style="height: 46px;">
-                                    <td
-                                        class="u-align-center u-border-1 u-border-grey-dark-1 u-custom-color-24 u-table-cell u-table-cell-19">
-                                        16:30</td>
-                                    <td
-                                        class="u-border-1 u-border-grey-dark-1 u-custom-color-24 u-table-cell u-table-cell-20">
-                                        Cierre</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="u-clearfix u-container-align-center u-gradient u-section-11" id="sec-3baf">
-        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-            <div class="custom-expanded data-layout-selected u-clearfix u-layout-wrap u-layout-wrap-1">
-                <div class="u-layout">
-                    <div class="u-layout-row">
-                        <div
-                            class="u-container-align-center u-container-style u-layout-cell u-size-25 u-layout-cell-1">
-                            <div class="u-container-layout u-valign-middle u-container-layout-1">
-                                <div
-                                    class="custom-expanded u-align-center u-border-2 u-border-palette-1-light-1 u-container-align-center-lg u-container-align-center-xl u-container-style u-group u-palette-2-light-3 u-radius-12 u-shape-round u-group-1">
-                                    <div
-                                        class="u-container-layout u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-container-layout-2">
-                                        <h5 class="u-align-center u-text u-text-default-lg u-text-default-xl u-text-1">
-                                            Aula Magna de la Universidad Católica del Uruguay<br>
-                                            <br>Av. 8 de Octubre 2738<span class="u-text-palette-1-dark-3"></span>
-                                        </h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="u-container-style u-layout-cell u-size-35 u-layout-cell-2">
-                            <div class="u-container-layout u-container-layout-3">
-                                <div class="u-expanded-width u-grey-light-2 u-map u-map-1">
-                                    <div class="embed-responsive">
-                                        <iframe class="embed-responsive-item"
-                                            src="https://maps.google.com/maps?output=embed&amp;q=Universidad%20Cat%C3%B3lica%20del%20Uruguay&amp;z=17&amp;t=m"
-                                            data-map="JTdCJTIyYWRkcmVzcyUyMiUzQSUyMlVuaXZlcnNpZGFkJTIwQ2F0JUMzJUIzbGljYSUyMGRlbCUyMFVydWd1YXklMjIlMkMlMjJ6b29tJTIyJTNBMTclMkMlMjJ0eXBlSWQlMjIlM0ElMjJyb2FkJTIyJTJDJTIybGFuZyUyMiUzQW51bGwlMkMlMjJhcGlLZXklMjIlM0FudWxsJTJDJTIybWFya2VycyUyMiUzQSU1QiU1RCU3RA=="></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
     <section class="u-clearfix u-container-align-center u-palette-1-dark-1 u-section-12" id="carousel_6015">
         <div
             class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-valign-middle-xs u-sheet-1">
