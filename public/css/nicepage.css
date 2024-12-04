@@ -45652,7 +45652,6 @@ html {
     justify-content: center;
 } */
 .text-layout-rectangle {
-    background: green;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45660,4 +45659,8 @@ html {
     width: 70%;
     margin: 0 auto;
     padding: 0 auto;
+}
+.no-space {
+    padding: 0;
+    margin: 0;
 }
