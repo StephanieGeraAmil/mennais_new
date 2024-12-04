@@ -454,7 +454,7 @@ transformación Educativa">
         </div>
     </section>
  <section class="u-gradient u-section-8 no-min-height" id="sec-968d">
-        <div class="u-sheet u-valign-middle-lg u-valign-middle-xl u-sheet-1 no-min-height">
+        <div class="u-sheet u-valign-middle-lg u-valign-middle-xl  no-min-height">
             <div
                 class=" u-border-2 u-border-palette-1-light-1 u-container-style  u-palette-1-light-3 u-radius-11 u-shape-round  no-min-height">
                 <div class=" no-space no-min-height">

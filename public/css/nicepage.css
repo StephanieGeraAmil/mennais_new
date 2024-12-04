@@ -45665,6 +45665,6 @@ html {
 }
 .no-min-heihgt {
     min-height: auto !important;
-    max-height: 300px !important;
+    max-height: 350px !important;
     height: auto !important;
 }
