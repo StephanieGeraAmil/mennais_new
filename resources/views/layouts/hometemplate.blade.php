@@ -159,7 +159,7 @@ transformación Educativa">
             </div>
         </div>
     </section>
-    <section class="u-clearfix u-palette-1-dark-1 u-section-4" id="sec-f56e">
+    <section class="u-clearfix u-palette-1-dark-1 u-section-3" id="sec-f56e">
         <div class="u-clearfix u-sheet u-sheet-1">
             <h6 class="u-align-center u-custom-font u-font-raleway u-text u-text-1">INTELIGENCIA ARTIFICIAL - HERRAMIENTAS PARA EL AULA - INFANCIAS Y PANTALLAS - EVALUACIÓN</h6>
         </div>
