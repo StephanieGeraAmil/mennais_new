@@ -457,7 +457,7 @@ transformación Educativa">
         <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-xl u-sheet-1 no-min-height">
             <div
                 class="custom-expanded u-border-2 u-border-palette-1-light-1 u-container-align-center-lg u-container-align-center-xl u-container-style u-expanded-width-lg u-expanded-width-xl u-group u-palette-1-light-3 u-radius-11 u-shape-round u-group-1 no-min-height">
-                <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl no-space">
+                <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl no-space no-min-height">
                     {{-- <div
                         class="white-rectangle"> --}}
                         <div class="text-layout-rectangle">
