@@ -458,13 +458,14 @@ transformación Educativa">
             <div
                 class="custom-expanded u-border-2 u-border-palette-1-light-1 u-container-align-center-lg u-container-align-center-xl u-container-style u-expanded-width-lg u-expanded-width-xl u-group u-palette-1-light-3 u-radius-11 u-shape-round u-group-1">
                 <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-1">
-                       <div
-                            class="u-container-align-center u-container-style u-layout-cell u-size-25 u-layout-cell-1">
-                            <div class="u-container-layout u-valign-middle u-container-layout-1">
-                                <div
-                                    class="custom-expanded u-align-center u-border-2 u-border-palette-1-light-1 u-container-align-center-lg u-container-align-center-xl u-container-style u-group u-palette-2-light-3 u-radius-12 u-shape-round u-group-1">
-                                    <div
-                                        class="u-container-layout u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-container-layout-2">
+                    <div
+                        class="white-rectangle">
+                        <div class="text-layout-rectangle">
+                          
+                               
+                                {{-- <div
+                                    class="u-container-align-left-lg u-container-align-left-xl u-container-style u-layout-cell u-size-45 u-layout-cell-2">
+                                    <div class="u-container-layout u-container-layout-2"> --}}
                                        <h5 class="u-align-center u-custom-font u-font-raleway u-text-default u-text-palette-1-dark-2">20 de febrero, 2025<br>14:00 a 16:00 h<br>
                     </h5>
                     <p class="u-align-center u-text u-text-default u-text-palette-1-dark-2">
@@ -472,10 +473,10 @@ transformación Educativa">
                         <span style="font-style: italic;">¿Cómo pueden usar la IA los estudiantes para aprender de manera más efectiva?</span>
                         <span style="font-weight: 400;">Héctor Ruiz Martín, España</span></b>
                     </p>
-                                    </div>
+                                    {{-- </div>
                                     
                                 
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
