@@ -188,14 +188,11 @@ transformación Educativa">
                             <div
                                 class="u-align-center u-border-2 u-border-palette-1-light-1 u-container-style u-expanded-width u-group u-palette-1-light-3 u-radius-11 u-shape-round u-group-2">
                                 <div class="u-container-layout u-valign-middle u-container-layout-4">
-                                    <h3
-                                        class="u-align-center u-custom-font u-font-raleway u-text u-text-palette-1-dark-2 u-text-3">
-                                        Inscripción ESTÁNDAR</h3>
-                                    <p class="u-align-center u-text u-text-palette-1-dark-3 u-text-4">A PARTIR DEL 10
-                                        DE JULIO<br>
-                                        <br> $ 700 - Socios ubicados al norte del Río Negro<br>$ 1.200 -&nbsp;Socios
-                                        ubicados al sur del Río Negro<br>$ 1.300 - No socios<br>
-                                    </p>
+                                    <h3 class="u-align-center u-custom-font u-font-raleway u-text u-text-palette-1-dark-2 u-text-3">Participación PARCIAL</h3>
+                      <p class="u-align-center u-text u-text-palette-1-dark-3 u-text-4">Incluye SÓLO la sesión VIRTUAL<br>Socios AUDEC: $ 400<br>No Socios: $ 500<br>
+                      </p>
+                      <p class="u-align-left u-text u-text-5"> El pago de la Participación PARCIAL se realiza en:<br><b>SANTANDER CC Pesos Nº </b>000000256277&nbsp;- Sucursal 62<br>a nombre de la Asociación Uruguaya de Educación Católica.
+                      </p>
                                 </div>
                             </div>
                         </div>
@@ -219,14 +216,11 @@ transformación Educativa">
                                         <div
                                             class="custom-expanded u-align-left u-border-2 u-border-palette-1-light-1 u-container-style u-expanded-width-sm u-group u-opacity u-opacity-80 u-radius-11 u-shape-round u-white u-group-1">
                                             <div class="u-container-layout u-container-layout-2">
-                                                <p class="u-align-left u-text u-text-1">El pago se realiza
-                                                    en:<br><b>SANTANDER CC Pesos Nº </b>
-                                                    <span style="font-weight: 700;">000000256277</span>
-                                                    <span style="font-weight: 700;">&nbsp;- Sucursal 62</span>
-                                                    a nombre de la Asociación Uruguaya de Educación Católica.<br>
-                                                    <br>Es necesario realizar el depósito previo a la inscripción.
-                                                    Necesitará una imagen del mismo para poder inscribirse.
-                                                </p>
+                                              <p class="u-text u-text-palette-1-dark-3 u-text-1">
+                            <span style="font-weight: 700; text-decoration: underline !important;">Participación COMPLETA:</span>&nbsp;Además de comprar la entrada en Tickantel, es necesario inscribirse en ésta página para poder enviarle el link de la sesión virtual y contar con su información para emitirle el certificado.<br>
+                            <br>
+                            <span style="font-weight: 700; text-decoration: underline !important;">Participación PARCIAL:</span>&nbsp;Es necesario realizar el depósito previo a la inscripción. Necesitará una imagen del mismo para poder inscribirse.<br>
+                          </p>
                                             </div>
                                         </div>
                                     </div>
