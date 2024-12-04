@@ -45661,9 +45661,7 @@ html {
     padding: 10px auto;
 }
 .no-space {
-    padding: 0;
     margin: 0;
-    height: auto;
 }
 .no-min-heihgt {
     min-height: auto !important;
