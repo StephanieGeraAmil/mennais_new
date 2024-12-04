@@ -464,8 +464,8 @@ transformación Educativa">
                             <div class="u-layout-row">
                                
                                 <div
-                                    class="u-container-align-left-lg u-container-align-left-xl u-container-style u-layout-cell u-size-45 u-layout-cell-2">
-                                    <div class="u-container-layout u-container-layout-3">
+                                    class="custom-expanded u-align-center u-border-2 u-border-palette-1-light-1 u-container-align-center u-container-style u-group u-opacity u-opacity-85 u-radius-14 u-shape-round u-white u-group-1">
+                                    <div class="u-container-layout u-valign-middle u-container-layout-2">
                                        <h5 class="u-align-center u-custom-font u-font-raleway u-text-default u-text-palette-1-dark-2">20 de febrero, 2025<br>14:00 a 16:00 h<br>
                     </h5>
                     <p class="u-align-center u-text u-text-default u-text-palette-1-dark-2">
