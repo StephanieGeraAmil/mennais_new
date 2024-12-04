@@ -445,7 +445,7 @@ transformación Educativa">
                             class="u-container-align-center u-container-style u-layout-cell u-size-49-sm u-size-49-xs u-size-55-lg u-size-55-md u-size-55-xl u-layout-cell-2">
                             <div
                                 class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-container-layout-2">
-                                <h6 class="u-align-center u-custom-font u-font-raleway u-text u-text-1">Sesión Virtual&nbsp;<br>20 de febrero, 2025<br></h6>
+                                <h6 class="u-align-center u-custom-font u-font-raleway ">Sesión Virtual&nbsp;<br>20 de febrero, 2025<br></h6>
                             </div>
                         </div>
                     </div>
