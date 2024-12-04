@@ -45666,6 +45666,6 @@ html {
     height: auto;
 }
 .no-min-heihgt {
-    min-height: auto;
-    height: auto;
+    min-height: auto !important;
+    height: auto !important;
 }
