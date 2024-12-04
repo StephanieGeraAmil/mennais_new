@@ -453,7 +453,7 @@ transformación Educativa">
             </div>
         </div>
     </section>
- <section class="u-clearfix u-container-align-center u-gradient u-section-8" id="sec-968d">
+ <section class="u-clearfix u-container-align-center u-gradient " id="sec-968d">
         <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-xl u-sheet-1">
             <div
                 class="custom-expanded u-border-2 u-border-palette-1-light-1 u-container-align-center-lg u-container-align-center-xl u-container-style u-expanded-width-lg u-expanded-width-xl u-group u-palette-1-light-3 u-radius-11 u-shape-round u-group-1">
@@ -461,17 +461,17 @@ transformación Educativa">
                     <div
                         class="data-layout-selected u-align-center u-clearfix u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-layout-wrap u-layout-wrap-1">
                         <div class="u-layout">
-                            <div class="u-layout-row">
+                           
                                 <div class="u-container-style u-layout-cell u-size-15 u-layout-cell-1">
                                       <h5 class="u-align-center u-custom-font u-font-raleway u-text u-text-default u-text-palette-1-dark-2 u-text-1">20 de febrero, 2025<br>14:00 a 16:00 h<br>
                     </h5>
-                    <p class="u-align-center u-text u-text-default u-text-palette-1-dark-2 u-text-2">
+                    <p class="u-align-center u-text u-text-default u-text-palette-1-dark-2 ">
                       <span style="font-style: italic;"></span><b>
                         <span style="font-style: italic;">¿Cómo pueden usar la IA los estudiantes para aprender de manera más efectiva?</span>
                         <span style="font-weight: 400;">Héctor Ruiz Martín, España</span></b>
                     </p>
                                     
-                                </div>
+                             
                             </div>
                         </div>
                     </div>
