@@ -344,6 +344,7 @@ transformación Educativa">
                     </div>
                 </div>
             </div>
+            </div>
             <div class="u-container-align-center u-container-style u-list-item u-repeater-item u-list-item-3">
                 <div class="u-container-layout u-similar-container u-container-layout-5">
                     <div class="u-border-2 u-border-palette-1-light-1 u-container-style u-expanded-width u-group u-palette-1-light-3 u-radius u-shape-round u-group-3">
@@ -420,7 +421,7 @@ transformación Educativa">
                     </div>
                 </div>
             </div>
-        </div>
+       
         </section>
     <section class="u-clearfix u-container-align-center u-palette-1-dark-1 u-section-9" id="carousel_6000">
         <div
