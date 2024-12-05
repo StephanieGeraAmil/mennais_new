@@ -345,8 +345,8 @@ El docente como protagonista del cambio">
           <div class="u-repeater u-repeater-1">
             <div class="u-container-style u-list-item u-repeater-item u-list-item-1">
               <div class="u-container-layout u-similar-container u-container-layout-1">
+                <div class="inside">
                 <div class="u-border-2 u-border-palette-1-light-1 u-container-style u-expanded-width u-group u-palette-1-light-3 u-radius u-shape-round u-group-1">
-                  <div class="inside">
                   <div class="u-container-layout u-container-layout-2">
                     
                     <h6 class="u-text u-text-palette-1-dark-3 u-text-1"> Laura Lewin (Argentina)</h6>
