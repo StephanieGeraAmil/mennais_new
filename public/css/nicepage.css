@@ -45681,8 +45681,9 @@ html {
     .speakers-photo {
         width: 80% !important;
         aspect-ratio: 1 !important;
+        padding-top: 0;
     }
     .speaker-photo-container {
-        min-height: 200px !important;
+        min-height: 300px !important;
     }
 }
