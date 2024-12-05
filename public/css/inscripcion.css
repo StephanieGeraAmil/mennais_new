@@ -337,3 +337,7 @@
         width: 320px;
     }
 }
+
+.full_width {
+    width: 100% !important;
+}

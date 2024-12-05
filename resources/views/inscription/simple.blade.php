@@ -167,7 +167,7 @@
             <input type="text" placeholder="Ciudad" id="text-8b97" name="city"
                 class="u-input u-input-rectangle u-radius-14 u-input-8">
         </div> --}}
-        <div id="payment_div">
+        <div id="payment_div" class="full_width">
 
             <div class="u-form-group u-form-group-9">
                 <label for="text-1207" class="u-form-control-hidden u-label"></label>
@@ -178,7 +178,7 @@
                 <label for="text-c55e" class="u-form-control-hidden u-label"></label>
                 <input type="file" placeholder="Adjunte un comprobante de pago" id="payment_file-4c18"
                 name="payment_file" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10"
-                required="">
+                >
                 <div style="width: 100%;text-align: center;"><small>Adjunte el comprobante de pago (pdf o jpg)</small></div>
             </div>
         </div>
@@ -238,6 +238,7 @@
         }
 
          function togglePaymentDiv() {
+            console.log("in toggle");
             const modalidad = document.getElementById('type').value;
             const paymentDiv = document.getElementById('payment_div');
             if (modalidad === 'completa') {
