@@ -45672,3 +45672,7 @@ html {
 .extra-padding {
     padding: 20px !important;
 }
+.speakers-photo {
+    width: 80% !important;
+    aspect-ratio: 1 !important;
+}
