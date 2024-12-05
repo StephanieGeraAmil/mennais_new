@@ -196,6 +196,7 @@
                 loadSecondWorkshopGroup();
             });
             loadOldWorkShops();
+             togglePaymentDiv();
         });
 
         function loadSecondWorkshopGroup() {
@@ -241,15 +242,15 @@
             console.log("in toggle");
             const modalidad = document.getElementById('type').value;
             const paymentDiv = document.getElementById('payment_div');
+            console.log(modalidad);
             if (modalidad === 'completa') {
+                console.log("in completa")
                 paymentDiv.style.display = 'none';
             } else {
                 paymentDiv.style.display = 'block';
             }
         }
 
-        document.addEventListener('DOMContentLoaded', () => {
-            togglePaymentDiv();
-        });
+       
     </script>
 @endsection
