@@ -1295,7 +1295,8 @@
 }
 .u-section-10 {
     /* background-image: linear-gradient(#ddd6f3, rgba(252, 209, 207, 0.75)); */
-    background-image: linear-gradient(rgba(252, 209, 207, 0.75), #ddd6f3);
+    /* background-image: linear-gradient(rgba(252, 209, 207, 0.75), #ddd6f3); */
+    background-image: linear-gradient(#ddd6f3, #fcd1cf);
 }
 
 .u-section-10 .u-sheet-1 {
