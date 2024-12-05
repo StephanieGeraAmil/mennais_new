@@ -487,7 +487,7 @@ Doctoranda, con una Maestría en Tecnología Educativa, Licenciatura en Ciencias
                   <h3 class="u-custom-font u-font-raleway u-text u-text-default u-text-palette-1-dark-3 u-text-1">CONTACTO</h3>
                   <p class="u-text u-text-default u-text-palette-1-dark-2 u-text-2">Por dudas o consultas sobre el evento, por favor comuníquese con nosotros al teléfono&nbsp;<a href="tel:+59898000243" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-color u-btn-1">098 000 243</a>, al mail <a href="mailto:secretaria@audec.edu.uy?subject=Contacto%20Proeducar" class="u-active-none u-border-grey-75 u-border-none u-btn u-button-link u-button-style u-hover-none u-text-body-color u-btn-2">secretaria@audec.edu.uy</a> o complete el siguiente formulario:
                   </p>
-                  <div class="u-form u-form-1">
+                  {{-- <div class="u-form u-form-1">
                     <form action="./scripts/form-7b8f-8ec3.php" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 15px;" source="customphp" name="form">
                       <div class="u-form-group u-form-name u-label-none">
                         <label class="u-label">Name</label>
@@ -513,7 +513,8 @@ Doctoranda, con una Maestría en Tecnología Educativa, Licenciatura en Ciencias
                       <div class="u-form-send-error u-form-send-message">No fue posible enviar el mensaje. Intente nuevamente o póngase en contacto por otros medios.</div>
                       <input type="hidden" value="" name="recaptchaResponse">
                     </form>
-                  </div>
+                  </div> --}}
+                     <div class="u-clearfix u-custom-html u-custom-html-1">@yield('contact_form')</div>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2">
