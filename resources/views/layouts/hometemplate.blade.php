@@ -344,19 +344,19 @@ El docente como protagonista del cambio">
         <div class="u-expanded-width u-list u-list-1">
           <div class="u-repeater u-repeater-1">
             <div class="u-container-style u-list-item u-repeater-item u-list-item-1">
-              <div class="inside">
-              <div class="u-container-layout u-similar-container u-container-layout-1">
-                <div class="u-border-2 u-border-palette-1-light-1 u-container-style u-expanded-width u-group u-palette-1-light-3 u-radius u-shape-round u-group-1">
-                  <div class="u-container-layout u-container-layout-2">
-                    
-                    <h6 class="u-text u-text-palette-1-dark-3 u-text-1"> Laura Lewin (Argentina)</h6>
-                    <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-1" src="images/exp_llewin.png" alt="" data-image-width="350" data-image-height="350">
-                    <p class="u-align-justify u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-palette-1-dark-3 u-text-2"> Es formadora docente y ha dictado talleres de capacitación en toda Latinoamérica, América Central, el Caribe, Estados Unidos y Europa. <br>Laura es oradora TEDx y columnista en temas de educación para la radio de la CNN, y para Infobae, entre otros medios nacionales e internacionales. <br>Su enfoque innovador y práctico la ha convertido en una figura clave para las instituciones educativas, así como para organismos públicos y privados. Ha asesorado y dictado capacitaciones para Ministerios de Educación tanto en Argentina como en el extranjero. Es autora de trece libros de educación para docentes y directivos de instituciones educativas, entre los que se destacan: El Aula Afectiva, Que enseñes no significa que Aprendan, La Nueva Educación, Hackeando la educación tradicional. <br>En septiembre lanzó su más reciente trabajo para directivos: Liderazgo de Impacto, de editorial Bonum.<br>
-                    </p>
+              {{-- <div class="inside"> --}}
+                <div class="u-container-layout u-similar-container u-container-layout-1">
+                  <div class="u-border-2 u-border-palette-1-light-1 u-container-style u-expanded-width u-group u-palette-1-light-3 u-radius u-shape-round u-group-1">
+                    <div class="u-container-layout u-container-layout-2">
+                      
+                      <h6 class="u-text u-text-palette-1-dark-3 u-text-1"> Laura Lewin (Argentina)</h6>
+                      <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-1" src="images/exp_llewin.png" alt="" data-image-width="350" data-image-height="350">
+                      <p class="u-align-justify u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-palette-1-dark-3 u-text-2"> Es formadora docente y ha dictado talleres de capacitación en toda Latinoamérica, América Central, el Caribe, Estados Unidos y Europa. <br>Laura es oradora TEDx y columnista en temas de educación para la radio de la CNN, y para Infobae, entre otros medios nacionales e internacionales. <br>Su enfoque innovador y práctico la ha convertido en una figura clave para las instituciones educativas, así como para organismos públicos y privados. Ha asesorado y dictado capacitaciones para Ministerios de Educación tanto en Argentina como en el extranjero. Es autora de trece libros de educación para docentes y directivos de instituciones educativas, entre los que se destacan: El Aula Afectiva, Que enseñes no significa que Aprendan, La Nueva Educación, Hackeando la educación tradicional. <br>En septiembre lanzó su más reciente trabajo para directivos: Liderazgo de Impacto, de editorial Bonum.<br>
+                      </p>
                     </div>
                   </div>
                 </div>
-              </div>
+              {{-- </div> --}}
             </div>
             <div class="u-container-style u-list-item u-repeater-item u-list-item-2">
               <div class="u-container-layout u-similar-container u-container-layout-3">
