@@ -173,7 +173,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-full md:w-1/4 p-3">
+                {{-- <div class="w-full md:w-1/4 p-3">
                     <div class="h-full bg-white border rounded shadow">
                         <div class="border-b p-3">
                             <h5 class="font-bold uppercase text-gray-600">Datos del pago</h5>
@@ -198,7 +198,45 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
+                <div class="w-full md:w-1/4 p-3">
+    <div class="h-full bg-white border rounded shadow">
+        <div class="border-b p-3">
+            <h5 class="font-bold uppercase text-gray-600">Datos del pago</h5>
+        </div>
+        <div class="w-full overflow-hidden shadow-xs">
+            <div class="w-full overflow-x-auto">
+                @if(isset($inscription->payment))
+                    @if(isset($inscription->payment->amount_deposited))
+                        <div class="flex items-center border-b py-2 w-100">
+                            <input
+                                class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                                type="text" value="{{ $inscription->payment->amount_deposited }}" readonly />
+                        </div>
+                    @endif
+                    @if(isset($inscription->payment->reference))
+                        <div class="flex items-center py-2 w-100">
+                            <input
+                                class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                                type="text" value="{{ $inscription->payment->reference }}" readonly />
+                        </div>
+                    @endif
+                    @if(isset($inscription->payment->url_payment))
+                        <div class="justify-center flex items-center border-b py-2 w-100">
+                            <a class="w-9/12" href="{{ $inscription->payment->url_payment }}" target="_blank">
+                                <img src="{{ $inscription->payment->url_payment }}" alt="payment"
+                                     onerror="this.src='/assetsadmin/images/payment_default.png'">
+                            </a>
+                        </div>
+                    @endif
+                @else
+                    <p class="text-gray-500 text-center py-4">No hay datos de pago disponibles.</p>
+                @endif
+            </div>
+        </div>
+    </div>
+</div>
+
                 <div class="w-full md:w-1/4 p-3">
                     <div class="h-full bg-white border rounded shadow">
                         <div class="border-b p-3">
