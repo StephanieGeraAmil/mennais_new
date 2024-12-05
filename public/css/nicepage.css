@@ -47177,3 +47177,11 @@ html {
     justify-content: space-between;
     align-items: flex-start;
 }
+.title {
+    font-weight: bold;
+}
+@media (max-width: 991px) {
+    .inside {
+        flex-direction: column;
+    }
+}
