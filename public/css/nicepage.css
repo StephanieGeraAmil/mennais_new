@@ -47167,8 +47167,10 @@ html {
 }
 .photo {
     padding: 20px;
+    width: 20%;
 }
 .text {
+    width: 80%;
     padding: 20px;
     display: flex;
     flex-direction: column;
