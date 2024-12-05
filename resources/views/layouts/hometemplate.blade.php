@@ -519,7 +519,7 @@ transformación Educativa">
                         <div class="u-layout">
                             <div class="u-layout-row">
                                 <div class="u-container-style u-layout-cell u-size-15 u-layout-cell-1">
-                                    <div class="u-container-layout u-valign-top u-container-layout-2">
+                                    <div class="u-container-layout u-valign-top u-container-layout-2 speaker-photo-container">
                                         <img class="u-align-center u-image u-image-contain u-image-default u-preserve-proportions u-image-1 speakers-photo"
                                            src="images/exp_llewin.png" alt="" data-image-width="350"
                                             data-image-height="350">
