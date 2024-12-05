@@ -45679,7 +45679,7 @@ html {
 }
 @media (max-width: 767px) {
     .speakers-photo {
-        width: 80% !important;
+        height: 80% !important;
         aspect-ratio: 1 !important;
         padding-top: 0;
     }
