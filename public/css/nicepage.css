@@ -47187,11 +47187,24 @@ html {
         align-items: center;
     }
     .photo {
-        width: 70%;
+        width: 40%;
         margin: auto;
     }
     .text {
         width: 70%;
         margin: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .inside {
+        padding: 0;
+    }
+    .photo {
+        width: 70%;
+        margin: auto;
+    }
+    .text {
+        padding: 0;
     }
 }
