@@ -47183,6 +47183,8 @@ html {
 @media (max-width: 991px) {
     .inside {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .photo {
         width: 70%;
