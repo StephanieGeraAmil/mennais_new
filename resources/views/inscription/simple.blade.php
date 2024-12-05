@@ -55,7 +55,7 @@
                             @error('city')
                                 El campo ciudad no es correcto.<br />
                             @enderror --}}
-                            @error('amount')
+                            {{-- @error('amount')
                                 El campo monto depositado no es correcto.<br />
                             @enderror
                             @error('payment_ref')
@@ -63,7 +63,7 @@
                             @enderror
                             @error('payment_file')
                                 El campo comprobante de pago no es correcto.<br />
-                            @enderror
+                            @enderror --}}
                         </h5>
                     </div>
                 </div>
@@ -109,7 +109,7 @@
   </div>--}}
   <div class="u-form-group u-form-group-11">
     <label for="text-c55e" class="u-form-control-hidden u-label"></label>
-    <select id="type" name="type" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
+    <select id="type" name="type" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" onchange="togglePaymentDiv()">
       <option value="">Modalidad </option>
       <option value="virtual" {{(old('type') =="virtual")?"Selected":""}}>{{App\Enums\InscriptionTypeEnum::REMOTO->text()}}</option>
       <option value="hibrido" {{(old('type') =="hibrido")?"Selected":""}}>{{App\Enums\InscriptionTypeEnum::HIBRIDO->text()}}</option>
@@ -167,20 +167,23 @@
             <input type="text" placeholder="Ciudad" id="text-8b97" name="city"
                 class="u-input u-input-rectangle u-radius-14 u-input-8">
         </div> --}}
-        <div class="u-form-group u-form-group-9">
-            <label for="text-1207" class="u-form-control-hidden u-label"></label>
-            <input type="text" placeholder="Monto depositado" id="text-1207" name="amount"
+        <div id="payment_div">
+
+            <div class="u-form-group u-form-group-9">
+                <label for="text-1207" class="u-form-control-hidden u-label"></label>
+                <input type="text" placeholder="Monto depositado" id="text-1207" name="amount"
                 class="u-input u-input-rectangle u-radius-14 u-input-9">
-        </div>
-        <div class="u-form-group u-form-group-11">
-            <label for="text-c55e" class="u-form-control-hidden u-label"></label>
-            <input type="file" placeholder="Adjunte un comprobante de pago" id="payment_file-4c18"
+            </div>
+            <div class="u-form-group u-form-group-11">
+                <label for="text-c55e" class="u-form-control-hidden u-label"></label>
+                <input type="file" placeholder="Adjunte un comprobante de pago" id="payment_file-4c18"
                 name="payment_file" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10"
                 required="">
-            <div style="width: 100%;text-align: center;"><small>Adjunte el comprobante de pago (pdf o jpg)</small></div>
+                <div style="width: 100%;text-align: center;"><small>Adjunte el comprobante de pago (pdf o jpg)</small></div>
+            </div>
         </div>
-        <div class="u-align-right u-form-group u-form-submit">
-            <a onclick="$(this).closest('form').submit()"
+            <div class="u-align-right u-form-group u-form-submit">
+                <a onclick="$(this).closest('form').submit()"
                 class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-1">Enviar</a>
         </div>
     </form>
@@ -233,5 +236,19 @@
             new_input_val = input_val.replace(/\D/g, "");
             input.val(new_input_val);
         }
+
+         function togglePaymentDiv() {
+            const modalidad = document.getElementById('type').value;
+            const paymentDiv = document.getElementById('payment_div');
+            if (modalidad === 'completa') {
+                paymentDiv.style.display = 'none';
+            } else {
+                paymentDiv.style.display = 'block';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            togglePaymentDiv();
+        });
     </script>
 @endsection
