@@ -45668,3 +45668,7 @@ html {
     max-height: 320px !important;
     height: auto !important;
 }
+
+.extra-padding {
+    padding: 20px;
+}
