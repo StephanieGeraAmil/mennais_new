@@ -366,7 +366,11 @@ El docente como protagonista del cambio">
                       <img class="photo" src="images/exp_mmasnatta.png" alt="" data-image-width="350" data-image-height="350">
                      <div class="text">
                       <h6 class="u-text u-text-palette-1-dark-3 title"> Melina Masnatta (Argentina)</h6>
-                      <p class="u-align-justify u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-palette-1-dark-3 "> Es formadora docente y ha dictado talleres de capacitación en toda Latinoamérica, América Central, el Caribe, Estados Unidos y Europa. <br>Laura es oradora TEDx y columnista en temas de educación para la radio de la CNN, y para Infobae, entre otros medios nacionales e internacionales. <br>Su enfoque innovador y práctico la ha convertido en una figura clave para las instituciones educativas, así como para organismos públicos y privados. Ha asesorado y dictado capacitaciones para Ministerios de Educación tanto en Argentina como en el extranjero. Es autora de trece libros de educación para docentes y directivos de instituciones educativas, entre los que se destacan: El Aula Afectiva, Que enseñes no significa que Aprendan, La Nueva Educación, Hackeando la educación tradicional. <br>En septiembre lanzó su más reciente trabajo para directivos: Liderazgo de Impacto, de editorial Bonum.<br>
+                      <p class="u-align-justify u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-palette-1-dark-3 "> Es emprendedora especialista en educación, tecnología y diversidad.
+Consultora especialista en tecnología, educación, diversidad e innovación y miembro de boards de compañías privadas y de la sociedad civil. Desarrolla laboratorios de innovación y comunidades como las Clínicas de Re/Invención Profesional.
+Es LinkedIn Top Voice, oradora TEDx, speaker internacional, columnista y autora de más 200 publicaciones nacionales e internacionales.
+En el mundo académico se desempeña como Subdirectora de posgrado, Coordinadora académica, Profesora e Investigadora en áreas de Inteligencia digital, Diversidad y Negocios tecnológicos.
+Doctoranda, con una Maestría en Tecnología Educativa, Licenciatura en Ciencias de la Educación y Magisterio en Artes. Especializada en temas de liderazgo e impacto en Georgetown University (USA), London School of Economics and Political Science (UK) y Schusterman Foundation (Israel).
                       </p>
                       </div>
                     </div>
