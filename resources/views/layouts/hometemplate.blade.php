@@ -348,7 +348,7 @@ transformación Educativa">
                                     <td
                                          class="u-align-center u-border-1 u-border-grey-dark-1 u-custom-color-24 u-table-cell u-table-cell-7">
                                         13:00</td>
-                                    <td class="u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-12">Corte para
+                                                                        <td class="u-border-1 u-border-palette-1-dark-3 u-custom-color-24 u-table-cell u-table-cell-10">Corte para
                                         almuerzo </td>
                                 </tr>
                                 <tr style="height: 46px;">
