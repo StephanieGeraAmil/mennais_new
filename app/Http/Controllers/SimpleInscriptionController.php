@@ -58,7 +58,7 @@ class SimpleInscriptionController extends Controller
         */
         $inscription = Inscription::create([
             'user_data_id'=>$user_data->id,
-            'payment_id'=>$payment ? $payment->id : null,
+            'payment_id'=>$payment ? $payment->id : 0,
             'status'=>1,
             'type'=>Arr::get($validated_data,"type")
             // 'type' => 'hibrido',
