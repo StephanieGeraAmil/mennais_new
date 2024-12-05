@@ -47167,10 +47167,10 @@ html {
 }
 .photo {
     padding: 20px;
-    width: 20%;
+    width: 25%;
 }
 .text {
-    width: 80%;
+    width: 75%;
     padding: 10px 25px 0 0;
     display: flex;
     flex-direction: column;
@@ -47183,5 +47183,13 @@ html {
 @media (max-width: 991px) {
     .inside {
         flex-direction: column;
+    }
+    .photo {
+        width: 70%;
+        margin: auto;
+    }
+    .text {
+        width: 70%;
+        margin: auto;
     }
 }
