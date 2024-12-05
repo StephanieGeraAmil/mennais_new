@@ -521,8 +521,8 @@ transformación Educativa">
                                 <div class="u-container-style u-layout-cell u-size-15 u-layout-cell-1">
                                     <div class="u-container-layout u-valign-top u-container-layout-2">
                                         <img class="u-align-center u-image u-image-contain u-image-default u-preserve-proportions u-image-1"
-                                           src="images/exp_llewin.png" alt="" data-image-width="320"
-                                            data-image-height="320">
+                                           src="images/exp_llewin.png" alt="" data-image-width="200"
+                                            data-image-height="200">
                                     </div>
                                 </div>
                                 <div
@@ -554,8 +554,8 @@ transformación Educativa">
                                 <div class="u-container-style u-layout-cell u-size-15 u-layout-cell-1">
                                     <div class="u-container-layout u-valign-top u-container-layout-2">
                                         <img class="u-align-center u-image u-image-contain u-image-default u-preserve-proportions u-image-1"
-                                            src="images/exp_mmasnatta.png" alt="" data-image-width="320"
-                                            data-image-height="320">
+                                            src="images/exp_mmasnatta.png" alt="" data-image-width="200"
+                                            data-image-height="200">
                                     </div>
                                 </div>
                                 <div
@@ -586,8 +586,8 @@ transformación Educativa">
                                 <div class="u-container-style u-layout-cell u-size-15 u-layout-cell-1">
                                     <div class="u-container-layout u-valign-top u-container-layout-2">
                                         <img class="u-align-center u-image u-image-contain u-image-default u-preserve-proportions u-image-1"
-                                            src="images/exp_lestefanell.png" alt="" data-image-width="320"
-                                            data-image-height="320">
+                                            src="images/exp_lestefanell.png" alt="" data-image-width="200"
+                                            data-image-height="200">
                                     </div>
                                 </div>
                                 <div
@@ -618,8 +618,8 @@ transformación Educativa">
                                 <div class="u-container-style u-layout-cell u-size-15 u-layout-cell-1">
                                     <div class="u-container-layout u-valign-top u-container-layout-2">
                                         <img class="u-align-center u-image u-image-contain u-image-default u-preserve-proportions u-image-1"
-                                            src="images/exp_acerisola.png" alt="" data-image-width="320"
-                                            data-image-height="320">
+                                            src="images/exp_acerisola.png" alt="" data-image-width="200"
+                                            data-image-height="200">
                                     </div>
                                 </div>
                                 <div
@@ -651,8 +651,8 @@ transformación Educativa">
                                 <div class="u-container-style u-layout-cell u-size-15 u-layout-cell-1">
                                     <div class="u-container-layout u-valign-top u-container-layout-2">
                                         <img class="u-align-center u-image u-image-contain u-image-default u-preserve-proportions u-image-1"
-                                            src="images/exp_sumpierrez.png" alt="" data-image-width="320"
-                                            data-image-height="320">
+                                            src="images/exp_sumpierrez.png" alt="" data-image-width="200"
+                                            data-image-height="200">
                                     </div>
                                 </div>
                                 <div
@@ -685,8 +685,8 @@ transformación Educativa">
                                 <div class="u-container-style u-layout-cell u-size-15 u-layout-cell-1">
                                     <div class="u-container-layout u-valign-top u-container-layout-2">
                                         <img class="u-align-center u-image u-image-contain u-image-default u-preserve-proportions u-image-1"
-                                            src="images/exp_ccabrera.png" alt="" data-image-width="320"
-                                            data-image-height="320">
+                                            src="images/exp_ccabrera.png" alt="" data-image-width="200"
+                                            data-image-height="200">
                                     </div>
                                 </div>
                                 <div
@@ -720,8 +720,8 @@ transformación Educativa">
                                 <div class="u-container-style u-layout-cell u-size-15 u-layout-cell-1">
                                     <div class="u-container-layout u-valign-top u-container-layout-2">
                                         <img class="u-align-center u-image u-image-contain u-image-default u-preserve-proportions u-image-1"
-                                            src="images/exp_mquesta.png" alt="" data-image-width="320"
-                                            data-image-height="320">
+                                            src="images/exp_mquesta.png" alt="" data-image-width="200"
+                                            data-image-height="200">
                                     </div>
                                 </div>
                                 <div
@@ -755,8 +755,8 @@ transformación Educativa">
                                 <div class="u-container-style u-layout-cell u-size-15 u-layout-cell-1">
                                     <div class="u-container-layout u-valign-top u-container-layout-2">
                                         <img class="u-align-center u-image u-image-contain u-image-default u-preserve-proportions u-image-1"
-                                            src="images/exp_hruiz.png" alt="" data-image-width="320"
-                                            data-image-height="320">
+                                            src="images/exp_hruiz.png" alt="" data-image-width="200"
+                                            data-image-height="200">
                                     </div>
                                 </div>
                                 <div
