@@ -29,6 +29,7 @@ class SimpleInscriptionController extends Controller
         $validated_data = $request->validated();
         // dd($validated_data);
         $clean_name = preg_replace('/[^A-Za-z0-9\-]/', '_', $request->get('name'));
+          $payment = null;
         if(isset($validated_data['payment_file'])){
             $image_name = Carbon::now()->format('dmyHis')."_".$clean_name.".".$request->payment_file->extension();
 
