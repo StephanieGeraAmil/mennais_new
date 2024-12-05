@@ -27,7 +27,7 @@ class SimpleInscriptionRequest extends FormRequest
                 Rule::in(['montevideo', 'interior'])
             ],
             'city'=>'string|max:255',
-            'amount'=>'numeric',
+            'amount'=>'nullable|numeric',
             'institution_name'=>'string|max:255',
             'institution_type'=>'string|max:255',
             'type' =>  new Enum(InscriptionTypeEnum::class)
