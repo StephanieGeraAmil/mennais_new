@@ -287,7 +287,7 @@ transformación Educativa">
                 <div class="u-container-layout u-container-layout-1">
                     <h6
                         class="u-align-center u-custom-font u-font-raleway u-text u-text-default u-text-palette-1-dark-2 u-text-1">
-                        AGENDA<br>25 de julio de 2024
+                        AGENDA<br>6 de febrero de 2025
                     </h6>
                     <div class="u-expanded-width u-table u-table-responsive u-table-1">
                         <table class="u-table-entity">
@@ -307,83 +307,79 @@ transformación Educativa">
                                 <tr style="height: 46px;">
                                     <td
                                         class="u-align-center u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-3">
-                                        08:30</td>
-                                    <td class="u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-4">Palabras de
+                                        08:45</td>
+                                    <td class="u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-4">
                                         Bienvenida y oración</td>
                                 </tr>
                                 <tr style="height: 46px;">
                                     <td
                                         class="u-align-center u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-5">
-                                        08:40 a 10:00</td>
+                                        09:00</td>
                                     <td class="u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-6">
-                                        <b>Conversación
-                                            y vínculo, un mecanismo de doble vía - </b>Bernardo
-                                        Blejmar
+                                         <span style="font-weight: 700;">
+                        <span style="font-style: italic;">Impacto de la exposición a las pantallas sobre el desarrollo infantil en los primeros años de vida</span>
+                      </span> - Alfredo Cerisola, Uruguay
                                     </td>
                                 </tr>
                                 <tr style="height: 46px;">
                                     <td
                                         class="u-align-center u-border-1 u-border-grey-dark-1 u-custom-color-24 u-table-cell u-table-cell-7">
-                                        10:00 a 10:30</td>
+                                        10:00</td>
+                                     <td class="u-border-1 u-border-grey-dark-1 u-table-cell u-text-palette-1-dark-3 u-table-cell-8">
+                      <span style="font-weight: 700; font-style: italic;"> La caja de Pandora en el aula: inteligencia artificial y sus implicaciones educativas</span> - Silvia Umpiérrez Oroño, Claudia Cabrera Borges, Mariela Questa-Torterolo, Uruguay
+                    </td>
+                                </tr>
+                                 <tr style="height: 46px;">
                                     <td
-                                        class="u-border-1 u-border-grey-dark-1 u-custom-color-24 u-table-cell u-table-cell-8">
-                                        <b>
-                                            <span style="font-weight: 400;">Corte</span>
-                                            <span style="font-weight: 400;"></span>
-                                            <span style="font-weight: 400;"></span></b>
-                                    </td>
+                                        class="u-align-center u-border-1 u-border-grey-dark-1 u-custom-color-24 u-table-cell u-table-cell-7">
+                                        11:00</td>
+                                    <td class="u-border-1 u-border-palette-1-dark-3 u-custom-color-24 u-table-cell u-table-cell-10"> Coffee break y visita a stands</td>
                                 </tr>
                                 <tr style="height: 46px;">
                                     <td
                                         class="u-align-center u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-9">
-                                        10:30 a 12:00</td>
-                                    <td class="u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-10">
-                                        <b>Entrenamiento
-                                            conversacional para educadores - </b>Bernardo
-                                        Blejmar
-                                    </td>
+                                        11:30</td>
+                                   <td class="u-border-1 u-border-grey-dark-1 u-table-cell u-text-palette-1-dark-2 u-table-cell-12">
+                      <span style="font-weight: 700;"></span>
+                      <span style="font-weight: 700; font-style: italic;">Educar en tiempos sintéticos </span>- Melina Masnatta, Argentina
+                    </td>
                                 </tr>
                                 <tr style="height: 46px;">
                                     <td
                                         class="u-align-center u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-11">
-                                        12:00 a 13:30</td>
+                                        13:00/td>
                                     <td class="u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-12">Corte para
                                         almuerzo </td>
                                 </tr>
                                 <tr style="height: 46px;">
                                     <td
                                         class="u-align-center u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-13">
-                                        13:30 a 15:00</td>
-                                    <td class="u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-14"><b>Trabajo
-                                            en grupos</b>&nbsp;<br>Práctica
-                                        habilitadora: Feria POP de pedidos, ofertas y promesas.
-                                    </td>
+                                        14:30 a 15:00</td>
+                                    <td class="u-border-1 u-border-grey-dark-1 u-table-cell u-text-palette-1-dark-3 u-table-cell-16">
+                      <span style="font-weight: 700; font-style: italic;">Convivencia en red: uso responsable de pantallas</span> - Lorena Estefanell, Uruguay
+                    </td>
                                 </tr>
                                 <tr style="height: 46px;">
                                     <td
                                         class="u-align-center u-border-1 u-border-grey-dark-1 u-custom-color-24 u-table-cell u-table-cell-15">
-                                        15:00 a 15:30</td>
-                                    <td
-                                        class="u-border-1 u-border-grey-dark-1 u-custom-color-24 u-table-cell u-table-cell-16">
-                                        Corte </td>
+                                        15:30</td>
+                                      <td class="u-border-1 u-border-grey-dark-1 u-custom-color-24 u-table-cell u-text-palette-1-dark-3 u-table-cell-18"> Coffee break y visita a stands</td>
                                 </tr>
                                 <tr style="height: 46px;">
                                     <td
                                         class="u-align-center u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-17">
-                                        15:30 a 16:30</td>
-                                    <td class="u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-18"><b>Frases
-                                            que “Matan Futuro” - Crear condiciones fértiles para que las
-                                            cosas pasen - </b>Bernardo
-                                        Blejmar
-                                    </td>
+                                        16:00</td>
+                                    <td class="u-border-1 u-border-grey-dark-1 u-table-cell u-text-palette-1-dark-3 u-table-cell-20">
+                      <span style="font-weight: 700; font-style: italic;">Enredados en el aula</span> - Laura Lewin, Argentina
+                    </td>
                                 </tr>
                                 <tr style="height: 46px;">
                                     <td
                                         class="u-align-center u-border-1 u-border-grey-dark-1 u-custom-color-24 u-table-cell u-table-cell-19">
-                                        16:30</td>
+                                        17:15</td>
                                     <td
                                         class="u-border-1 u-border-grey-dark-1 u-custom-color-24 u-table-cell u-table-cell-20">
-                                        Cierre</td>
+                                        Sorteos y palabras de cierre</td>
                                 </tr>
                             </tbody>
                         </table>
