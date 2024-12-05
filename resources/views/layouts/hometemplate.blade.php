@@ -388,7 +388,7 @@ transformación Educativa">
             </div>
         </div>
     </section>
-    <section class="u-clearfix u-container-align-center u-gradient u-section-11" id="sec-3baf">
+    <section class="u-clearfix u-container-align-center u-gradient u-section-7" id="sec-3baf">
         <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
             <div class="custom-expanded data-layout-selected u-clearfix u-layout-wrap u-layout-wrap-1">
                 <div class="u-layout">
