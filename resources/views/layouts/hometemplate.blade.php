@@ -122,10 +122,10 @@ CONECTAR PARA EDUCAR">
         <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
             <div class="u-layout-row">
-              <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
-                <div class="u-container-layout u-container-layout-1">
-                  <div class="u-align-center u-border-2 u-border-palette-1-light-1 u-container-align-center u-container-style u-expanded-width u-group u-palette-1-light-3 u-radius-11 u-shape-round u-group-1">
-                    <div class="u-container-layout u-container-layout-2">
+                        <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+                <div class="u-container-layout u-container-layout-3">
+                  <div class="u-border-2 u-border-palette-1-light-1 u-container-align-center u-container-style u-expanded-width u-group u-palette-1-light-3 u-radius-11 u-shape-round u-group-2">
+                    <div class="u-container-layout u-container-layout-4">
                       <h3 class="u-custom-font u-font-raleway u-text u-text-palette-1-dark-2 u-text-1">Participación COMPLETA</h3>
                       <p class="u-text u-text-palette-1-dark-3 u-text-2">Incluye la Jornada PRESENCIAL + Sesión VIRTUAL<br>
                         <br>$ 1.300 hasta el 28/12, luego $1.500<br>Venta exclusiva por Tickantel
@@ -160,10 +160,10 @@ CONECTAR PARA EDUCAR">
             <div class="u-layout-row">
               <div class="u-size-30">
                 <div class="u-layout-col">
-                  <div class="u-container-style u-layout-cell u-size-60 u-layout-cell-1">
-                    <div class="u-container-layout u-valign-top u-container-layout-1">
-                      <div class="u-align-left u-border-2 u-border-palette-1-light-1 u-container-align-left u-container-style u-expanded-width-xs u-group u-opacity u-opacity-80 u-radius-11 u-shape-round u-white u-group-1">
-                        <div class="u-container-layout u-container-layout-2">
+                             <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+                <div class="u-container-layout u-container-layout-3">
+                  <div class="u-border-2 u-border-palette-1-light-1 u-container-align-center u-container-style u-expanded-width u-group u-palette-1-light-3 u-radius-11 u-shape-round u-group-2">
+                    <div class="u-container-layout u-container-layout-4">
                           <p class="u-text u-text-palette-1-dark-3 u-text-1">
                             <span style="font-weight: 700; text-decoration: underline !important;">Participación COMPLETA:</span>&nbsp;Además de comprar la entrada en Tickantel, es necesario inscribirse en ésta página para poder enviarle el link de la sesión virtual y contar con su información para emitirle el certificado.<br>
                             <br>
