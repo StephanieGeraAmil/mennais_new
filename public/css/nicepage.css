@@ -47184,14 +47184,15 @@ html {
 .min-height-rectangle {
     min-height: 350px;
     width: 350px;
+}
+.extra-padding {
+    padding: 30px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-.extra-padding {
-    padding: 30px;
-}
+
 @media (max-width: 991px) {
     .inside {
         flex-direction: column;
