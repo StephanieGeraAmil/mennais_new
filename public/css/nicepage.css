@@ -47201,6 +47201,9 @@ html {
         width: 70%;
         margin: auto;
     }
+    .min-height-rectangle {
+        min-height: 480px;
+    }
 }
 
 @media (max-width: 750px) {
@@ -47216,5 +47219,8 @@ html {
         margin: 0;
         text-align: justify;
         width: 95%;
+    }
+    .min-height-rectangle {
+        min-height: 500px;
     }
 }
