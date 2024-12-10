@@ -47184,6 +47184,10 @@ html {
 .min-height-rectangle {
     min-height: 350px;
     width: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .extra-padding {
     padding: 30px;
