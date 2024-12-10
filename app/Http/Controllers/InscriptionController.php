@@ -34,17 +34,17 @@ class InscriptionController extends Controller
                 // Format the attendance list for the view
                 $attendance_text = "";
                 foreach ($attendance_list as $attendance) {
-                    if ($attendance->date == "2024-11-22") {
+                    if ($attendance->date == "2024-12-10") {
                         if($attendance_text!=""){
                             $attendance_text .=" y el día ";  
                         }
-                        $attendance_text .= '22 de noviembre (Presencial)';
+                        $attendance_text .= '10 de diciembre (Presencial)';
                     } 
-                    elseif ($attendance->date == "2024-11-22") {
+                    elseif ($attendance->date == "2024-12-11") {
                          if($attendance_text!=""){
                             $attendance_text .=" y el día ";  
                         }
-                        $attendance_text .= '22 de noviembre (Sesión Virtual)';
+                        $attendance_text .= '11 de diciembre (Sesión Virtual)';
                     // } elseif ($attendance->date == "2024-02-21") {
                     //     $attendance_text .= '<li>21 de febrero, segunda Sesión Virtual.</li>';
                     }
