@@ -1,4 +1,4 @@
-<p>Hola {{$inscription->userData->name}}, Agradecemos su participación en el PROEDUCAR XXXII Hacia una innovación con sentido.</p>
+<p>Hola {{$inscription->userData->name}}, Agradecemos su participación en el PROEDUCAR 2025 - CONECTAR PARA EDUCAR</p>
 
 <p>
     En el siguiente enlace puede descargarse su  certificado de asistencia: <a href="{!!$inscription->certificateUrl()!!}">{!!$inscription->certificateUrl()!!}</a>

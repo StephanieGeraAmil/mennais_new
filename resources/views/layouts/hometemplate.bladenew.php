@@ -3,9 +3,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="keywords" content="Cosmos, Read what our customers say, ​View our work, discover more about us, read more of our stories, explore our archive or get in touch., How We Work, ​Uncover and meet customer needs., ​Want your brand to stand above the rest?, Get in touch">
-    <meta name="description" content="PROEDUCAR XXXII
-Hacia una innovación con sentido
-El docente como protagonista del cambio">
+    <meta name="description" content="PROEDUCAR 2025
+    CONECTAR PARA EDUCAR">
     <title>Inicio</title>
     <link rel="stylesheet" href="/css/nicepage.css" media="screen">
 <link rel="stylesheet" href="/css/index.css" media="screen">
@@ -24,9 +23,8 @@ El docente como protagonista del cambio">
 }</script>
     <meta name="theme-color" content="#ddd6f3">
     <meta property="og:title" content="Inicio">
-    <meta property="og:description" content="PROEDUCAR XXXII
-Hacia una innovación con sentido
-El docente como protagonista del cambio">
+    <meta property="og:description" content="PROEDUCAR 2025
+CONECTAR PARA EDUCAR">
     <meta property="og:type" content="website">
   <meta data-intl-tel-input-cdn-path="intlTelInput/">
     <style>
