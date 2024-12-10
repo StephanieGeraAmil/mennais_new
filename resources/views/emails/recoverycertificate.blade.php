@@ -1,4 +1,5 @@
-<p>Hola {{$inscription->userData->name}}, Agradecemos su participación en el PROEDUCAR 2025 - CONECTAR PARA EDUCAR</p>
+<p>Hola {{$inscription->userData->name}},</p>
+<p>Agradecemos su participación en el PROEDUCAR 2025 - CONECTAR PARA EDUCAR</p>
 
 <p>
     En el siguiente enlace puede descargarse su  certificado de asistencia: <a href="{!!$inscription->certificateUrl()!!}">{!!$inscription->certificateUrl()!!}</a>
@@ -18,4 +19,6 @@
     Equipo de AUDEC<BR/>
     Asociación Uruguaya de Educación Católica
 </p>
+
+
 
