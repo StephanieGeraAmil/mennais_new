@@ -47183,6 +47183,7 @@ html {
 
 .min-height-rectangle {
     min-height: 350px;
+    width: 350px;
 }
 .extra-padding {
     padding: 30px;
