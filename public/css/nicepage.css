@@ -47180,6 +47180,13 @@ html {
 .title {
     font-weight: bold;
 }
+
+.min-height-rectangle {
+    min-height: 350px;
+}
+.extra-padding {
+    padding: 10px;
+}
 @media (max-width: 991px) {
     .inside {
         flex-direction: column;
