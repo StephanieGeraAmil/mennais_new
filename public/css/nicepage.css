@@ -47185,7 +47185,7 @@ html {
     min-height: 350px;
 }
 .extra-padding {
-    padding: 10px;
+    padding: 30px;
 }
 @media (max-width: 991px) {
     .inside {
