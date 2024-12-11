@@ -178,7 +178,7 @@ CONECTAR PARA EDUCAR">
               <div class="u-size-30">
                 <div class="u-layout-col">
                   <div class="u-container-style u-layout-cell u-size-60 u-layout-cell-2">
-                    <div class="u-container-layout u-valign-top u-container-layout-3">
+                    <div class="u-container-layout u-valign-top u-container-layout-3 min-height-rectangle">
                       <div class="u-clearfix u-custom-html u-custom-html-1">@yield('inscription_buttons')</div>
                     </div>
                   </div>
