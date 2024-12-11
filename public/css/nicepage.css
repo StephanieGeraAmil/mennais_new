@@ -47182,6 +47182,7 @@ html {
 }
 
 .min-height-rectangle {
+    height: 100%;
     min-height: 350px;
     width: 350px;
     padding: 30px !important;
