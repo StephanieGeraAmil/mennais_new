@@ -47184,6 +47184,7 @@ html {
 .min-height-rectangle {
     min-height: 350px;
     width: 350px;
+    padding: 30px !important;
 }
 .extra-padding {
     padding: 30px;
