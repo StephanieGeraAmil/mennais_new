@@ -47185,9 +47185,6 @@ html {
     min-height: 350px;
     width: 350px;
     padding: 30px !important;
-}
-.extra-padding {
-    padding: 30px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -47209,7 +47206,7 @@ html {
         margin: auto;
     }
     .min-height-rectangle {
-        min-height: 480px;
+        min-height: 400px;
     }
 }
 
