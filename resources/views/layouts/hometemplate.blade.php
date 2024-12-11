@@ -137,7 +137,7 @@ CONECTAR PARA EDUCAR">
               </div>
               <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2 ">
                 <div class="u-container-layout u-container-layout-3">
-                  <div class="u-border-2 u-border-palette-1-light-1 u-container-align-center u-container-style u-expanded-width u-group u-palette-1-light-3 u-radius-11 u-shape-round u-group-2 ">
+                  <div class="u-border-2 u-border-palette-1-light-1 u-container-align-center u-container-style u-expanded-width u-group u-palette-1-light-3 u-radius-11 u-shape-round u-group-2 height-100 ">
                     <div class="u-container-layout u-container-layout-4 min-height-rectangle">
                       <h3 class="u-align-center u-custom-font u-font-raleway u-text u-text-palette-1-dark-2 u-text-3">Participación PARCIAL</h3>
                       <p class="u-align-center u-text u-text-palette-1-dark-3 u-text-4">Incluye SÓLO la sesión VIRTUAL<br>Socios AUDEC: $ 400<br>No Socios: $ 500<br>
