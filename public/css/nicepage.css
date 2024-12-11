@@ -47182,6 +47182,7 @@ html {
 }
 .height-100 {
     height: 100% !important;
+    padding: 30px !important;
 }
 
 .min-height-rectangle {
@@ -47212,6 +47213,9 @@ html {
     .min-height-rectangle {
         min-height: 400px;
     }
+    .height-100 {
+        height: 100% !important;
+    }
 }
 
 @media (max-width: 750px) {
@@ -47230,5 +47234,9 @@ html {
     }
     .min-height-rectangle {
         min-height: 500px;
+    }
+    .height-100 {
+        height: 100% !important;
+        padding: 30px 10px !important;
     }
 }

@@ -162,7 +162,7 @@ CONECTAR PARA EDUCAR">
                 <div class="u-layout-col">
                              <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2 ">
                 <div class="u-container-layout u-container-layout-3">
-                  <div class="u-border-2 u-border-palette-1-light-1 u-container-align-center u-container-style u-expanded-width u-group u-palette-1-light-3 u-radius-11 u-shape-round u-group-2 ">
+                  <div class="u-border-2 u-border-palette-1-light-1 u-container-align-center u-container-style u-expanded-width u-group u-palette-1-light-3 u-radius-11 u-shape-round u-group-2 height-100">
                     <div class="u-container-layout u-container-layout-4 min-height-rectangle">
                           <p class="u-text u-text-palette-1-dark-3 u-text-1 extra-padding">
                             <span style="font-weight: 700; text-decoration: underline !important;">Participación COMPLETA:</span>&nbsp;Además de comprar la entrada en Tickantel, es necesario inscribirse en ésta página para poder enviarle el link de la sesión virtual y contar con su información para emitirle el certificado.<br>
