@@ -159,7 +159,7 @@ CONECTAR PARA EDUCAR">
           <div class="u-layout">
             <div class="u-layout-row">
               <div class="u-size-30">
-                <div class="u-layout-col">
+                <div class="u-layout-col width-100">
                              <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2 height-100 ">
                 <div class="u-container-layout u-container-layout-3">
                   <div class="u-border-2 u-border-palette-1-light-1 u-container-align-center u-container-style u-expanded-width u-group u-palette-1-light-3 u-radius-11 u-shape-round u-group-2 height-100">
