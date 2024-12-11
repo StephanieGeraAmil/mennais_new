@@ -122,9 +122,9 @@ CONECTAR PARA EDUCAR">
         <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
             <div class="u-layout-row">
-                        <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2 min-height-rectangle">
+                        <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2 ">
                 <div class="u-container-layout u-container-layout-3">
-                  <div class="u-border-2 u-border-palette-1-light-1 u-container-align-center u-container-style u-expanded-width u-group u-palette-1-light-3 u-radius-11 u-shape-round u-group-2">
+                  <div class="u-border-2 u-border-palette-1-light-1 u-container-align-center u-container-style u-expanded-width u-group u-palette-1-light-3 u-radius-11 u-shape-round u-group-2 min-height-rectangle">
                     <div class="u-container-layout u-container-layout-4">
                       <h3 class="u-custom-font u-font-raleway u-text u-text-palette-1-dark-2 u-text-1">Participación COMPLETA</h3>
                       <p class="u-text u-text-palette-1-dark-3 u-text-2">Incluye la Jornada PRESENCIAL + Sesión VIRTUAL<br>
@@ -135,9 +135,9 @@ CONECTAR PARA EDUCAR">
                   </div>
                 </div>
               </div>
-              <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2 min-height-rectangle">
+              <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2 ">
                 <div class="u-container-layout u-container-layout-3">
-                  <div class="u-border-2 u-border-palette-1-light-1 u-container-align-center u-container-style u-expanded-width u-group u-palette-1-light-3 u-radius-11 u-shape-round u-group-2">
+                  <div class="u-border-2 u-border-palette-1-light-1 u-container-align-center u-container-style u-expanded-width u-group u-palette-1-light-3 u-radius-11 u-shape-round u-group-2 min-height-rectangle">
                     <div class="u-container-layout u-container-layout-4">
                       <h3 class="u-align-center u-custom-font u-font-raleway u-text u-text-palette-1-dark-2 u-text-3">Participación PARCIAL</h3>
                       <p class="u-align-center u-text u-text-palette-1-dark-3 u-text-4">Incluye SÓLO la sesión VIRTUAL<br>Socios AUDEC: $ 400<br>No Socios: $ 500<br>
@@ -160,9 +160,9 @@ CONECTAR PARA EDUCAR">
             <div class="u-layout-row">
               <div class="u-size-30">
                 <div class="u-layout-col">
-                             <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2 min-height-rectangle">
+                             <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2 ">
                 <div class="u-container-layout u-container-layout-3">
-                  <div class="u-border-2 u-border-palette-1-light-1 u-container-align-center u-container-style u-expanded-width u-group u-palette-1-light-3 u-radius-11 u-shape-round u-group-2">
+                  <div class="u-border-2 u-border-palette-1-light-1 u-container-align-center u-container-style u-expanded-width u-group u-palette-1-light-3 u-radius-11 u-shape-round u-group-2 min-height-rectangle">
                     <div class="u-container-layout u-container-layout-4">
                           <p class="u-text u-text-palette-1-dark-3 u-text-1 extra-padding">
                             <span style="font-weight: 700; text-decoration: underline !important;">Participación COMPLETA:</span>&nbsp;Además de comprar la entrada en Tickantel, es necesario inscribirse en ésta página para poder enviarle el link de la sesión virtual y contar con su información para emitirle el certificado.<br>
