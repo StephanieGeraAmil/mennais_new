@@ -29,7 +29,10 @@ class SimpleInscriptionController extends Controller
         $validated_data = $request->validated();
         // dd($validated_data);
         $clean_name = preg_replace('/[^A-Za-z0-9\-]/', '_', $request->get('name'));
-        $image_name = Carbon::now()->format('dmyHis')."_".$clean_name.".".$request->payment_file->extension();
+          $payment = null;
+        if(isset($validated_data['payment_file'])){
+            $image_name = Carbon::now()->format('dmyHis')."_".$clean_name.".".$request->payment_file->extension();
+
         $request->payment_file->move(public_path('images'),$image_name);        
         
         $payment = Payment::create([
@@ -37,16 +40,17 @@ class SimpleInscriptionController extends Controller
             'amount_deposited'=>$validated_data['amount'] ?? 0,
             'reference'=>$validated_data['payment_ref'] ?? ""
         ]);
-         
+        }  
         
         $user_data = UserData::create([
-            'name'=>$validated_data['name']." ".$validated_data['lastname'],
+            // 'name'=>$validated_data['name']." ".$validated_data['lastname'],
+            'name'=>$validated_data['name'] ,
             'document'=>Arr::get($validated_data, "document"),
             'email'=>$validated_data['email'],
             'extra' => isset($validated_data['extra']) ? json_encode($validated_data['extra']) : json_encode([]),
-            'city'=>$validated_data['city'],
-            'institution_name'=>$validated_data['institution_name'],
-            'institution_type'=>$validated_data['institution_type'],
+            // 'city'=>$validated_data['city'],
+            // 'institution_name'=>$validated_data['institution_name'],
+            // 'institution_type'=>$validated_data['institution_type'],
         ]);
         
         
@@ -55,10 +59,10 @@ class SimpleInscriptionController extends Controller
         */
         $inscription = Inscription::create([
             'user_data_id'=>$user_data->id,
-            'payment_id'=>$payment->id,
+            'payment_id'=>$payment ? $payment->id : null,
             'status'=>1,
-            // 'type'=>Arr::get($validated_data,"type")
-            'type' => 'hibrido',
+            'type'=>Arr::get($validated_data,"type")
+            // 'type' => 'hibrido',
         ]);
         try {
             Mail::to($user_data->email)->send(new FacetofaceInscriptionMail($inscription));   

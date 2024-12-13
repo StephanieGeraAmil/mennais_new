@@ -28,19 +28,41 @@ class InscriptionController extends Controller
             if ($attendances->count() > 0) {
                 $today = Carbon::now()->locale('es');
                 $today->settings(['formatFunction' => 'translatedFormat']);
-                $name = $inscription->userData->name . " " . $inscription->userData->lastname;
+                // $name = $inscription->userData->name . " " . $inscription->userData->lastname;
+                  $name = $inscription->userData->name ;
                 $attendance_list = Attendance::where('inscription_id', $inscription->id)->get();
                 // Format the attendance list for the view
                 $attendance_text = "";
                 foreach ($attendance_list as $attendance) {
-                    if ($attendance->date == "2024-07-25") {
-                        $attendance_text .= '25 de julio';
+                    //for testing
+                    if ($attendance->date == "2024-12-10") {
+                        if($attendance_text!=""){
+                            $attendance_text .=" y el día ";  
+                        }
+                        $attendance_text .= '10 de diciembre (Presencial)';
                     } 
-                    // elseif ($attendance->date == "2024-02-19") {
-                    //     $attendance_text .= '<li>19 de febrero, primera Sesión Virtual.</li>';
+                    elseif ($attendance->date == "2024-12-11") {
+                         if($attendance_text!=""){
+                            $attendance_text .=" y el día ";  
+                        }
+                        $attendance_text .= '11 de diciembre (Sesión Virtual)';
                     // } elseif ($attendance->date == "2024-02-21") {
                     //     $attendance_text .= '<li>21 de febrero, segunda Sesión Virtual.</li>';
-                    // }
+                    }
+
+                     if ($attendance->date == "2025-02-06") {
+                        if($attendance_text!=""){
+                            $attendance_text .=" y el día ";  
+                        }
+                        $attendance_text .= '6 de febrero (Presencial)';
+                    } 
+                    elseif ($attendance->date == "2025-02-20") {
+                         if($attendance_text!=""){
+                            $attendance_text .=" y el día ";  
+                        }
+                        $attendance_text .= '20 de febrero (Sesión Virtual)';
+               
+                    }
                 }
                 // Log::info("attendance_list: " . $attendance_list);
                 // Log::info("attendance_text: " . $attendance_text);
@@ -200,7 +222,7 @@ class InscriptionController extends Controller
 
         $inscription = Inscription::find($inscription_id);
 
-        $returned = Arr::where(explode(",", env("EVENTDATES", "2023-12-12")), function ($value) {
+        $returned = Arr::where(explode(",", env("EVENTDATES", "2024-11-12")), function ($value) {
             return Carbon::parse($value)->isToday();
         });
 
@@ -219,7 +241,8 @@ class InscriptionController extends Controller
             } catch (\Throwable $th) {
             }
 
-            return view('welcome')->with('zoom_link', env('ZOOMLINK_' . Carbon::now()->format('Ymd'), "https://us02web.zoom.us/j/82435816542?pwd=Q2F1cVdZMi96OGl1Q3lidlkzSTlLdz09"));
+            return view('welcome')->with('zoom_link', env('ZOOMLINK', "https://us02web.zoom.us/j/82435816542?pwd=Q2F1cVdZMi96OGl1Q3lidlkzSTlLdz09"));
+                // return view('welcome')->with('zoom_link', env('ZOOMLINK' . Carbon::now()->format('Ymd'), "https://us02web.zoom.us/j/82435816542?pwd=Q2F1cVdZMi96OGl1Q3lidlkzSTlLdz09"));
         } else {
             abort(403);
         }
