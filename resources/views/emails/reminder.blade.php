@@ -1,6 +1,6 @@
 <p>Hola {{$inscription->userData->name}},</p>
 <p>Te reenviamos la información para acceder al evento:</p>
-@if ($inscription->type !== \App\Enums\InscriptionTypeEnum::HIBRIDO)
+@if ($inscription->type === \App\Enums\InscriptionTypeEnum::HIBRIDO)
 <p>Jornada Presencial:</p>
 <p>6 de febrero 08:00 h</p>
 <p>Auditorio Nacional Adela Reta - Sodre</p>
