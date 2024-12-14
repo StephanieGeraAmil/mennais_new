@@ -128,7 +128,7 @@
     <select id="type" name="type" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" onchange="togglePaymentDiv()">
       {{-- <option value="">Modalidad </option> --}}
       <option value="virtual" {{(old('type') =="virtual")?"Selected":""}}>{{App\Enums\InscriptionTypeEnum::REMOTO->text()}}</option>
-      <option value="hibrido" {{(old('type') =="hibrido")?"Selected":""}}>{{App\Enums\InscriptionTypeEnum::HIBRIDO->text()}}</option>
+      {{-- <option value="hibrido" {{(old('type') =="hibrido")?"Selected":""}}>{{App\Enums\InscriptionTypeEnum::HIBRIDO->text()}}</option> --}}
     </select>
   </div> 
         <div class="u-form-group u-form-name">
