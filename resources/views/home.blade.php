@@ -64,7 +64,7 @@
 @endsection
 
 @section('inscription_buttons')
- @if (Carbon\Carbon::now()->lt(Carbon\Carbon::parse(env('FINISHINSCRIPTIONDATE','25-07-2024')))) 
+ @if (Carbon\Carbon::now()->lt(Carbon\Carbon::parse(env('FINISHINSCRIPTIONDATE','21-02-2025')))) 
 <div align="center">
   <a href="/simple_inscription" class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-1">inscripción  virtual</a>
   {{-- <a href="/group_inscription" class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-2">Invitación Grupal</a> --}}
@@ -79,7 +79,7 @@ Se han agotado los cupos para la inscripción virtual. Muchas gracias por el int
 @endsection
 
 @section('certificate_button')
-  @if (Carbon\Carbon::now()->gt(env('CERTIFICATEDATE','29-07-2024'))) 
+  @if (Carbon\Carbon::now()->gt(env('CERTIFICATEDATE','24-02-2025'))) 
      <div align="center">
       <a href="/inscription/certificateRecoveryMail" class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-3">Descargar certificado</a>
     </div> 
