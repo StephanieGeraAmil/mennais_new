@@ -1,12 +1,13 @@
 <p>Hola {{$inscription->userData->name}},</p>
 <p>Te reenviamos la información para acceder al evento:</p>
-
+@if ($inscription->type !== \App\Enums\InscriptionTypeEnum::HIBRIDO)
 <p>Jornada Presencial:</p>
 <p>6 de febrero 08:00 h</p>
 <p>Auditorio Nacional Adela Reta - Sodre</p>
 <p>
     <img src="{!!$message->embedData(QrCode::format('png')->generate($inscription->qrUrl()), 'QrCode.png', 'image/png')!!}">
 </p>
+@endif
 <p>Sesión Virtual:</p>
 <p>20 de febrero 14:00 h </p>
 <p>Podrá acceder a las dos sesiones unos minutos antes del comienzo a través del <strong>link</strong> :
