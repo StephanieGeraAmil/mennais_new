@@ -128,7 +128,7 @@ CONECTAR PARA EDUCAR">
                     <div class="u-container-layout u-container-layout-4 min-height-rectangle">
                       <h3 class="u-custom-font u-font-raleway u-text u-text-palette-1-dark-2 u-text-1">Participación COMPLETA</h3>
                       <p class="u-text u-text-palette-1-dark-3 u-text-2">Incluye la Jornada PRESENCIAL + Sesión VIRTUAL<br>
-                        <br>$ 1.300 hasta el 28/12, luego $1.500<br>Venta exclusiva por Tickantel
+                        <br>$ 1.300 hasta el 30/12, luego $1.500<br>Venta exclusiva por Tickantel
                       </p>
                       <a href="https://tickantel.com.uy/inicio/espectaculo/40017820/espectaculo/Proeducar%202025?3" class="u-active-palette-1-light-2 u-align-center u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-light-2 u-border-palette-1-light-2 u-btn u-button-style u-hover-palette-1-light-2 u-palette-1-dark-1 u-btn-1" target="_blank">Tickantel </a>
                     </div>
@@ -519,7 +519,7 @@ Doctoranda, con una Maestría en Tecnología Educativa, Licenciatura en Ciencias
                 <div class="u-container-layout u-container-layout-2"><span class="u-file-icon u-icon u-icon-circle u-text-palette-1-dark-3 u-white u-icon-2"><img src="images/3135722-62d5ffa3.png" alt=""></span>
                   <h3 class="u-custom-font u-font-raleway u-text u-text-default u-text-palette-1-dark-3 u-text-3">CERTIFICADO</h3>
                   <p class="u-text u-text-palette-1-dark-2 u-text-4">A partir del 24 de febrero podrá descargar aquí su certificado digital de asistencia​&nbsp; </p>
-                  {{-- <div class="u-clearfix u-custom-html u-custom-html-1">@yield('certificate_button')</div> --}}
+                  <div class="u-clearfix u-custom-html u-custom-html-1">@yield('certificate_button')</div>
                 </div>
               </div>
             </div>
