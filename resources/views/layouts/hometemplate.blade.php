@@ -226,8 +226,12 @@ CONECTAR PARA EDUCAR">
                   </tr>
                   <tr style="height: 46px;">
                     <td class="u-align-center u-border-1 u-border-grey-dark-1 u-table-cell u-text-palette-1-dark-3 u-table-cell-7">10:00</td>
-                    <td class="u-border-1 u-border-grey-dark-1 u-table-cell u-text-palette-1-dark-3 u-table-cell-8">
+                    {{-- <td class="u-border-1 u-border-grey-dark-1 u-table-cell u-text-palette-1-dark-3 u-table-cell-8">
                       <span style="font-weight: 700; font-style: italic;"> La caja de Pandora en el aula: inteligencia artificial y sus implicaciones educativas</span> - Silvia Umpiérrez Oroño, Claudia Cabrera Borges, Mariela Questa-Torterolo, Uruguay
+                    </td> --}}
+                      <td class="u-border-1 u-border-grey-dark-1 u-table-cell u-text-palette-1-dark-2 u-table-cell-12">
+                      <span style="font-weight: 700;"></span>
+                      <span style="font-weight: 700; font-style: italic;">Educar en tiempos sintéticos </span>- Melina Masnatta, Argentina
                     </td>
                   </tr>
                   <tr style="height: 46px;">
@@ -236,9 +240,12 @@ CONECTAR PARA EDUCAR">
                   </tr>
                   <tr style="height: 46px;">
                     <td class="u-align-center u-border-1 u-border-grey-dark-1 u-table-cell u-text-palette-1-dark-3 u-table-cell-11">11:30</td>
-                    <td class="u-border-1 u-border-grey-dark-1 u-table-cell u-text-palette-1-dark-2 u-table-cell-12">
+                    {{-- <td class="u-border-1 u-border-grey-dark-1 u-table-cell u-text-palette-1-dark-2 u-table-cell-12">
                       <span style="font-weight: 700;"></span>
                       <span style="font-weight: 700; font-style: italic;">Educar en tiempos sintéticos </span>- Melina Masnatta, Argentina
+                    </td> --}}
+                      <td class="u-border-1 u-border-grey-dark-1 u-table-cell u-text-palette-1-dark-3 u-table-cell-8">
+                      <span style="font-weight: 700; font-style: italic;"> La caja de Pandora en el aula: inteligencia artificial y sus implicaciones educativas</span> - Silvia Umpiérrez Oroño, Claudia Cabrera Borges, Mariela Questa-Torterolo, Uruguay
                     </td>
                   </tr>
                   <tr style="height: 46px;">
