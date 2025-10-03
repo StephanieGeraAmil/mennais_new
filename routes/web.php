@@ -79,6 +79,7 @@ Route::resource('/admin/inscription', AdminInscriptionController::class)->middle
 Route::resource('/admin/user_data', UserDataController::class)->middleware('auth');
 
 Route::get('/inscription',[SimpleInscriptionController::class,'simpleInscription']); 
+Route::get('/certificate', [InscriptionController::class,'certificateRecovery']);
 
 Auth::routes();
 
