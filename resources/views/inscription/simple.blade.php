@@ -99,30 +99,6 @@
     <form action="/store_inscription" method="POST" class="u-clearfix u-form-spacing-12 u-form-vertical u-inner-form"
         source="custom" name="Inscripción Individual" style="padding: 18px 0px;" enctype="multipart/form-data">
         @csrf
-        {{-- <div class="u-form-group u-form-name">
-    <label for="name-05a8" class="u-form-control-hidden u-label"></label>
-    <input type="text" placeholder="Nombre Completo" id="name-05a8" name="name" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-1" required="" value="{{old('name')}}">
-  </div>
-  <div class="u-form-email u-form-group">
-    <label for="email-05a8" class="u-form-control-hidden u-label"></label>
-    <input type="email" placeholder="email" id="email-05a8" name="email" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-4" required=""  value="{{old('email')}}">
-  </div>
-  <div class="u-form-group u-form-name u-form-group-3">
-    <label for="name-b2b6" class="u-form-control-hidden u-label"></label>
-    <input type="text" placeholder="Cédula de Identidad, sin puntos ni guiones (12345678)" id="name-b2b6" name="document" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-3" onblur="clean_document(this)" required="" value="{{old('document')}}">
-  </div>
-  <div class="u-form-group u-form-group-6">
-    <label for="text-59c6" class="u-form-control-hidden u-label"></label>
-    <input type="text" placeholder="Institución" id="text-59c6" name="extra[centro_educativo]" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-6"  value="{{old('extra.centro_educativo')}}">    
-  </div> 
-  <div class="u-form-group u-form-group-11">
-    <label for="text-c55e" class="u-form-control-hidden u-label"></label>
-    <select id="place" name="extra[place]" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
-      <option value="">Origen</option>
-      <option value="montevideo" {{(old('extra.place') =="montevideo")?"Selected":""}}>Montevideo</option>
-      <option value="interior" {{(old('extra.place') =="interior")?"Selected":""}}>Interior</option>
-    </select>
-  </div>--}}
   <div class="u-form-group u-form-group-11">
     <label for="text-c55e" class="u-form-control-hidden u-label"></label>
     <select id="type" name="type" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" onchange="togglePaymentDiv()">
@@ -131,16 +107,13 @@
       {{-- <option value="hibrido" {{(old('type') =="hibrido")?"Selected":""}}>{{App\Enums\InscriptionTypeEnum::HIBRIDO->text()}}</option> --}}
     </select>
   </div> 
+        <input type="hidden" name="type" value="hibrido">
         <div class="u-form-group u-form-name">
             <label for="name-05a8" class="u-form-control-hidden u-label"></label>
             <input type="text" placeholder="Nombre Completo" id="name-05a8" name="name"
                 class="u-input u-input-rectangle u-radius-14 u-input-1" required="">
         </div>
-        {{-- <div class="u-form-group u-form-group-2">
-            <label for="text-8cb6" class="u-form-control-hidden u-label"></label>
-            <input type="text" placeholder="Apellido" id="text-8cb6" name="lastname"
-                class="u-input u-input-rectangle u-radius-14 u-input-2">
-        </div> --}}
+
         <div class="u-form-group u-form-name u-form-group-3">
             <label for="name-b2b6" class="u-form-control-hidden u-label"></label>
             <input type="text" placeholder="Cédula de Identidad (1234567-8)" id="name-b2b6" name="document"
@@ -151,24 +124,19 @@
             <input type="email" placeholder="email" id="email-05a8" name="email"
                 class="u-input u-input-rectangle u-radius-14 u-input-4" required="">
         </div>
-        {{-- <div class="u-form-group u-form-phone u-form-group-5">
-            <label for="phone-bfdf" class="u-form-control-hidden u-label"></label>
-            <input type="tel" placeholder="Teléfono" id="phone-bfdf" name="phone"
-                class="u-input u-input-rectangle u-radius-14 u-input-5" required="">
-        </div> --}}
-        {{-- <div class="u-form-group u-form-group-6">
+        <div class="u-form-group u-form-group-6">
             <label for="text-59c6" class="u-form-control-hidden u-label"></label>
             <input type="text" placeholder="Institución" id="text-59c6" name="institution_name"
                 class="u-input u-input-rectangle u-radius-14 u-input-6">
-        </div> --}}
-        {{-- <div class="u-form-group u-form-select u-form-group-7">
+        </div>
+         <div class="u-form-group u-form-select u-form-group-7">
             <label for="select-c14a" class="u-label">Nivel</label>
             <div class="u-form-select-wrapper">
                 <select id="select-c14a" name="institution_type" class="u-input u-input-rectangle u-radius-14">
                     <option value="Educación Inicial" data-calc="">Educación Inicial</option>
                     <option value="Primaria" data-calc="">Primaria</option>
                     <option value="Secundaria" data-calc="">Secundaria</option>
-                    <option value="Dirección General" data-calc="">Dirección General</option>
+                    <option value="Equipo Directivo" data-calc="">Equipo Directivo</option>
                     <option value="Otro" data-calc="">Otro</option>
                 </select>
                 <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -177,19 +145,14 @@
                     <polygon class="st0" points="8,12 2,4 14,4 "></polygon>
                 </svg>
             </div>
-        </div> --}}
-        {{-- <div class="u-form-group u-form-group-8">
-            <label for="text-8b97" class="u-form-control-hidden u-label"></label>
-            <input type="text" placeholder="Ciudad" id="text-8b97" name="city"
-                class="u-input u-input-rectangle u-radius-14 u-input-8">
-        </div> --}}
+        </div>
         <div id="payment_div" class="full_width">
 
-            <div class="u-form-group u-form-group-9">
+            {{-- <div class="u-form-group u-form-group-9">
                 <label for="text-1207" class="u-form-control-hidden u-label"></label>
                 <input type="text" placeholder="Monto depositado" id="text-1207" name="amount"
                 class="u-input u-input-rectangle u-radius-14 u-input-9">
-            </div>
+            </div> --}}
             <div class="u-form-group u-form-group-11">
                 <label for="text-c55e" class="u-form-control-hidden u-label"></label>
                 <input type="file" placeholder="Adjunte un comprobante de pago" id="payment_file-4c18"
@@ -198,9 +161,15 @@
                 <div style="width: 100%;text-align: center;"><small>Adjunte el comprobante de pago (pdf o jpg)</small></div>
             </div>
         </div>
-            <div class="u-align-right u-form-group u-form-submit">
+            {{-- <div class="u-align-right u-form-group u-form-submit">
                 <a onclick="$(this).closest('form').submit()"
                 class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-1">Enviar</a>
+        </div> --}}
+        <div class="button-section">
+                <a href="https://lamennais.edu.uy/cp25" 
+                class="button-save">Volver</a>
+                <a onclick="$(this).closest('form').submit()"
+                class="button-save">Enviar</a>
         </div>
     </form>
 @endsection
