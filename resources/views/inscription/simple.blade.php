@@ -175,66 +175,66 @@
 @endsection
 @section('custom_script')
     <script>
-        jQuery(document).ready(function() {
-            loadSecondWorkshopGroup();
-            $('#first_workshop_group_id').change(function(ev) {
-                loadSecondWorkshopGroup();
-            });
-            loadOldWorkShops();
-             togglePaymentDiv();
-        });
+        // jQuery(document).ready(function() {
+        //     loadSecondWorkshopGroup();
+        //     $('#first_workshop_group_id').change(function(ev) {
+        //         loadSecondWorkshopGroup();
+        //     });
+        //     loadOldWorkShops();
+        //      togglePaymentDiv();
+        // });
 
-        function loadSecondWorkshopGroup() {
-            let first_workshop_group = $('#first_workshop_group_id').val();
-            let second_workshop_group = $('#second_workshop_group_id');
-            $.ajax({
-                url: '/api/second_workshop_group/' + first_workshop_group,
-                async: false
-            }).done(function(data) {
-                second_workshop_group.children().remove();
-                if ('data' in data) {
-                    if (Array.isArray(data.data)) {
-                        data.data.forEach(function(valor, indice, array) {
-                            second_workshop_group.append(new Option(valor.text, valor.id));
-                        });
-                        second_workshop_group.append(new Option('No asistiré en este horario.', 0));
-                    }
-                }
-            });
-        }
+        // function loadSecondWorkshopGroup() {
+        //     let first_workshop_group = $('#first_workshop_group_id').val();
+        //     let second_workshop_group = $('#second_workshop_group_id');
+        //     $.ajax({
+        //         url: '/api/second_workshop_group/' + first_workshop_group,
+        //         async: false
+        //     }).done(function(data) {
+        //         second_workshop_group.children().remove();
+        //         if ('data' in data) {
+        //             if (Array.isArray(data.data)) {
+        //                 data.data.forEach(function(valor, indice, array) {
+        //                     second_workshop_group.append(new Option(valor.text, valor.id));
+        //                 });
+        //                 second_workshop_group.append(new Option('No asistiré en este horario.', 0));
+        //             }
+        //         }
+        //     });
+        // }
 
-        function loadOldWorkShops() {
-            let old_first_workshop_group = $('#old_first_workshop_group_id').val();
-            let old_second_workshop_group = $('#old_second_workshop_group_id').val();
-            if (old_first_workshop_group > 0) {
-                let first_workshop_group = $('#first_workshop_group_id').val(old_first_workshop_group);
-            }
-            if (old_second_workshop_group > 0) {
-                let first_workshop_group = $('#second_workshop_group_id').val(old_second_workshop_group);
-            }
-        }
+        // function loadOldWorkShops() {
+        //     let old_first_workshop_group = $('#old_first_workshop_group_id').val();
+        //     let old_second_workshop_group = $('#old_second_workshop_group_id').val();
+        //     if (old_first_workshop_group > 0) {
+        //         let first_workshop_group = $('#first_workshop_group_id').val(old_first_workshop_group);
+        //     }
+        //     if (old_second_workshop_group > 0) {
+        //         let first_workshop_group = $('#second_workshop_group_id').val(old_second_workshop_group);
+        //     }
+        // }
 
 
 
-        function clean_document(element) {
-            let input = $(element);
-            let input_val = input.val();
-            new_input_val = input_val.replace(/\D/g, "");
-            input.val(new_input_val);
-        }
+        // function clean_document(element) {
+        //     let input = $(element);
+        //     let input_val = input.val();
+        //     new_input_val = input_val.replace(/\D/g, "");
+        //     input.val(new_input_val);
+        // }
 
-         function togglePaymentDiv() {
-            console.log("in toggle");
-            const modalidad = document.getElementById('type').value;
-            const paymentDiv = document.getElementById('payment_div');
-            console.log(modalidad);
-            if (modalidad === 'hibrido') {
-                console.log("in completa")
-                paymentDiv.style.display = 'none';
-            } else {
-                paymentDiv.style.display = 'block';
-            }
-        }
+        //  function togglePaymentDiv() {
+        //     console.log("in toggle");
+        //     const modalidad = document.getElementById('type').value;
+        //     const paymentDiv = document.getElementById('payment_div');
+        //     console.log(modalidad);
+        //     if (modalidad === 'hibrido') {
+        //         console.log("in completa")
+        //         paymentDiv.style.display = 'none';
+        //     } else {
+        //         paymentDiv.style.display = 'block';
+        //     }
+        // }
 
        
     </script>
