@@ -99,15 +99,8 @@
     <form action="/store_inscription" method="POST" class="u-clearfix u-form-spacing-12 u-form-vertical u-inner-form"
         source="custom" name="Inscripción Individual" style="padding: 18px 0px;" enctype="multipart/form-data">
         @csrf
-  <div class="u-form-group u-form-group-11">
-    <label for="text-c55e" class="u-form-control-hidden u-label"></label>
-    <select id="type" name="type" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" onchange="togglePaymentDiv()">
-      {{-- <option value="">Modalidad </option> --}}
-      <option value="virtual" {{(old('type') =="virtual")?"Selected":""}}>{{App\Enums\InscriptionTypeEnum::REMOTO->text()}}</option>
-      {{-- <option value="hibrido" {{(old('type') =="hibrido")?"Selected":""}}>{{App\Enums\InscriptionTypeEnum::HIBRIDO->text()}}</option> --}}
-    </select>
-  </div> 
         <input type="hidden" name="type" value="hibrido">
+   
         <div class="u-form-group u-form-name">
             <label for="name-05a8" class="u-form-control-hidden u-label"></label>
             <input type="text" placeholder="Nombre Completo" id="name-05a8" name="name"
