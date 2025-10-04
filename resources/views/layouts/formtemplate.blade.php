@@ -64,7 +64,7 @@ transformación Educativa">
     <meta property="og:type" content="website">
   <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
   <body data-path-to-root="./" data-include-products="false" class="u-body u-overlap u-xl-mode" data-lang="es">
-    <header class="u-clearfix u-container-align-center u-custom-color-26 u-header u-header" id="sec-055d"><div class="u-clearfix u-sheet u-sheet-1">
+    <header class="u-clearfix u-container-align-center u-custom-color-26 u-header u-sticky u-sticky-387b u-header" id="sec-055d"><div class="u-clearfix u-sheet u-sheet-1">
         <img class="u-align-center u-image u-image-default u-image-1" src="images/logo_sist.png" alt="" data-image-width="1024" data-image-height="119" data-lang-es="">
       </div>
     </header>
@@ -82,9 +82,9 @@ transformación Educativa">
     </header> --}}
 
     <section class="u-clearfix u-container-align-center-lg u-container-align-center-md u-container-align-center-xl u-gradient u-section-1" id="sec-3ffd">
-    <div class="u-clearfix u-sheet u-sheet-1">
+    {{-- <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
-            <div class="u-gutter-0 u-layout">
+            <div class="u-gutter-0 u-layout"> --}}
                 <div class="u-layout-col">
                     @yield('notifications')              
                     <div class="u-size-30">
@@ -111,9 +111,9 @@ transformación Educativa">
                         </div>
                     </div>
                 </div>
-            </div>
+            {{-- </div>
         </div>
-    </div>
+    </div> --}}
 </section>
 {{-- <style class="u-overlap-style">.u-overlap:not(.u-sticky-scroll) .u-header {
     background-color: #908b6c !important
