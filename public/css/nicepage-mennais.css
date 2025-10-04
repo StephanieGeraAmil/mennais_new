@@ -3,8 +3,8 @@
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2021 Froala Labs
  */
-.min_padding {
-    padding: 10px !important;
+.min_margin {
+    margin: 10px !important;
 }
 .fr-clearfix::after {
     clear: both;
