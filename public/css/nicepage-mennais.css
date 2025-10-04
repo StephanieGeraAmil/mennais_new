@@ -19096,7 +19096,6 @@ h5,
 h6 {
     margin-top: 0;
     margin-bottom: 0.5rem;
-    margin-left: 1em;
     line-height: 1.2;
     font-weight: 500;
     color: inherit;
@@ -49033,7 +49032,6 @@ h5 {
     line-height: 1.2;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 10px;
 }
 h6 {
     font-weight: 400;
