@@ -85,11 +85,11 @@ transformación Educativa">
     {{-- <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
             <div class="u-gutter-0 u-layout"> --}}
-                {{-- <div class="u-layout-col"> --}}
+                <div class="u-layout-col">
                     @yield('notifications')              
-                    {{-- <div class="u-size-30">
-                        <div class="u-layout-row"> --}}
-                          
+                    <div class="u-size-30">
+                        <div class="u-layout-row">
+                       
                             <div class="u-container-style u-layout-cell u-opacity u-opacity-85 u-shape-rectangle u-size-30 u-layout-cell-3">
                                 <div class="u-container-layout u-container-layout-4">
                                     <div class="u-form u-form-1">
@@ -97,9 +97,9 @@ transformación Educativa">
                                     </div>
                                 </div>
                             </div>
-                        {{-- </div>
-                    </div> --}}
-                {{-- </div> --}}
+                        </div>
+                    </div>
+                </div>
             {{-- </div>
         </div>
     </div> --}}
