@@ -110,7 +110,7 @@
          <div class="u-form-group u-form-select u-form-group-7">
             <label for="select-c14a" class="u-label">Nivel</label>
             <div class="u-form-select-wrapper">
-                <select id="select-c14a" name="institution_type" class="u-input u-input-rectangle u-radius-14">
+                <select id="select-c14a" name="type" class="u-input u-input-rectangle u-radius-14">
                     <option value="Educación Inicial" data-calc="">Educación Inicial</option>
                     <option value="Primaria" data-calc="">Primaria</option>
                     <option value="Secundaria" data-calc="">Secundaria</option>
