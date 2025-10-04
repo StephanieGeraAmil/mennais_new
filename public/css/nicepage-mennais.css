@@ -3,9 +3,7 @@
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2021 Froala Labs
  */
-.min_margin {
-    margin: 10px !important;
-}
+
 .fr-clearfix::after {
     clear: both;
     display: block;
@@ -19098,6 +19096,7 @@ h5,
 h6 {
     margin-top: 0;
     margin-bottom: 0.5rem;
+    margin-left: 1em;
     line-height: 1.2;
     font-weight: 500;
     color: inherit;

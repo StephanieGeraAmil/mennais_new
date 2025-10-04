@@ -8,7 +8,7 @@
             <div class="u-layout-col ">
                 <div class="u-align-left u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
                     <div class="u-container-layout u-valign-middle u-container-layout-1 " style="background-color:#2cccc4">
-                        <h5 class="u-text u-text-default u-text-1 min_margin">{!! Session::get('msg') !!}</h5>
+                        <h5 class="u-text u-text-default u-text-1">{!! Session::get('msg') !!}</h5>
                     </div>
                 </div>
             </div>
@@ -19,7 +19,7 @@
             <div class="u-layout-col ">
                 <div class="u-align-left u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
                     <div class="u-container-layout u-valign-middle u-container-layout-1 ">
-                        <h5 class="u-text u-text-default u-text-1 min_margin">
+                        <h5 class="u-text u-text-default u-text-1">
                             @error('name')
                                 El campo nombre no es correcto.<br />
                             @enderror
