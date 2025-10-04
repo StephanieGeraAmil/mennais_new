@@ -134,12 +134,10 @@
             </div>
         </div>
         <div class="u-align-right u-form-group u-form-submit">
-                {{-- <a href="https://lamennais.edu.uy/cp25" 
-                class="button-save">Volver</a> --}}
-                <a href="https://lamennais.edu.uy/cp25"  class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-1" >Volver<br>
-                {{-- <a onclick="$(this).closest('form').submit()"
-                class="button-save">Enviar</a> --}}
-                <a onclick="$(this).closest('form').submit()" class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-1" >Enviar<br>
+   
+                <a href="https://lamennais.edu.uy/cp25"  class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-1" >Volver</a>
+        
+                <a onclick="$(this).closest('form').submit()" class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-1" >Enviar</a>
         </div>
     </form>
 @endsection
