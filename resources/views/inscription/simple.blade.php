@@ -65,21 +65,21 @@
                                 El campo comprobante de pago no es correcto.<br />
                             @enderror --}}
                             @if ($errors->any())
-    <div class="u-size-30">
-        <div class="u-layout-col">
-            <div class="u-align-center u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
-                <div class="u-container-layout u-valign-middle u-container-layout-1">
-                    <h5 class="u-text u-text-default u-text-1">
-                        {{-- Display specific error messages --}}
-                        @foreach ($errors->all() as $error)
-                            <div>{{ $error }}</div>
-                        @endforeach
-                    </h5>
-                </div>
-            </div>
-        </div>
-    </div>
-@endif
+                                <div class="u-size-30">
+                                    <div class="u-layout-col">
+                                        <div class="u-align-center u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
+                                            <div class="u-container-layout u-valign-middle u-container-layout-1">
+                                                <h5 class="u-text u-text-default u-text-1">
+                                                    {{-- Display specific error messages --}}
+                                                    @foreach ($errors->all() as $error)
+                                                        <div>{{ $error }}</div>
+                                                    @endforeach
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endif
                         </h5>
                     </div>
                 </div>
@@ -87,12 +87,12 @@
         </div>
     @endif
 @endsection
-@section('subtitle')
+{{-- @section('subtitle')
     INSCRIPCIÓN INDIVIDUAL
 @endsection
 @section('left-text-box')
     Por favor, complete el formulario con sus datos.
-@endsection
+@endsection --}}
 @section('form')
     <input type="hidden" id="old_first_workshop_group_id" value={{ old('first_workshop_group_id') ?? 0 }}>
     <input type="hidden" id="old_second_workshop_group_id" value={{ old('second_workshop_group_id') ?? 0 }}>
