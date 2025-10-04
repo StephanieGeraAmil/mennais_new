@@ -81,7 +81,7 @@ transformación Educativa">
       </div>
     </header> --}}
 
-    <section class="u-clearfix u-container-align-center-lg u-container-align-center-md u-container-align-center-xl u-gradient" id="sec-3ffd">
+    <section class="u-clearfix u-container-align-center-lg u-container-align-center-md u-container-align-center-xl u-gradient full-height" id="sec-3ffd">
     <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
             <div class="u-gutter-0 u-layout">
