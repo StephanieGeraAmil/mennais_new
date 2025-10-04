@@ -63,9 +63,11 @@ transformación Educativa">
     <meta property="og:description" content="Vivenciando la transformación educativa es un evento organizado por AUDEC - Asociación Uruguaya de Educación Católica">
     <meta property="og:type" content="website">
   <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
-  <body data-path-to-root="./" data-include-products="false" class="u-body u-overlap u-xl-mode" data-lang="es"><header class="u-clearfix u-container-align-center u-custom-color-26 u-header u-sticky u-sticky-387b u-header" id="sec-055d"><div class="u-clearfix u-sheet u-sheet-1">
+  <body data-path-to-root="./" data-include-products="false" class="u-body u-overlap u-xl-mode" data-lang="es">
+    <header class="u-clearfix u-container-align-center u-custom-color-26 u-header u-header" id="sec-055d"><div class="u-clearfix u-sheet u-sheet-1">
         <img class="u-align-center u-image u-image-default u-image-1" src="images/logo_sist.png" alt="" data-image-width="1024" data-image-height="119" data-lang-es="">
-      </div></header>
+      </div>
+    </header>
 
 
 <body data-path-to-root="./" data-include-products="false" class="u-body u-overlap u-xl-mode" data-lang="es">
