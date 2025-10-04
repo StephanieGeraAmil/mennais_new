@@ -80,11 +80,11 @@
 @endsection --}}
 @section('form')
 
-    <input type="hidden" name="type" value="hibrido">
     <form action="/store_inscription" method="POST" class="u-clearfix u-form-spacing-12 u-form-vertical u-inner-form"
         source="custom" name="Inscripción Individual" style="padding: 18px 0px;" enctype="multipart/form-data">
         @csrf
       
+        <input type="hidden" name="type" value="hibrido">
    
         <div class="u-form-group u-form-name">
             <label for="name-05a8" class="u-form-control-hidden u-label"></label>
