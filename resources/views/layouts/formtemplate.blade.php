@@ -79,7 +79,7 @@ transformación Educativa">
       </div>
     </header> --}}
 
-    {{-- <section class="u-clearfix u-container-align-center-lg u-container-align-center-md u-container-align-center-xl u-gradient u-section-1" id="sec-3ffd">
+    <section class="u-clearfix u-container-align-center-lg u-container-align-center-md u-container-align-center-xl u-gradient u-section-1" id="sec-3ffd">
     <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
             <div class="u-gutter-0 u-layout">
@@ -89,13 +89,13 @@ transformación Educativa">
                         <div class="u-layout-row">
                             <div class="u-container-style u-layout-cell u-opacity u-opacity-85 u-shape-rectangle u-size-30 u-layout-cell-2">
                                 <div class="u-container-layout u-container-layout-2">
-                                    <h4 class="u-text u-text-2">@yield('subtitle')</h4>
+                                    {{-- <h4 class="u-text u-text-2">@yield('subtitle')</h4> --}}
                                     
-                                    <div class="u-container-style u-expanded-width u-group u-opacity u-opacity-70 u-radius-22 u-shape-round u-white u-group-1">
+                                    {{-- <div class="u-container-style u-expanded-width u-group u-opacity u-opacity-70 u-radius-22 u-shape-round u-white u-group-1">
                                         <div class="u-container-layout u-valign-middle u-container-layout-3">
                                             <p class="u-text u-text-3">@yield('left-text-box')</p>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                     @yield('left-form')
                                 </div>
                             </div>
@@ -113,7 +113,7 @@ transformación Educativa">
         </div>
     </div>
 </section>
-<style class="u-overlap-style">.u-overlap:not(.u-sticky-scroll) .u-header {
+{{-- <style class="u-overlap-style">.u-overlap:not(.u-sticky-scroll) .u-header {
     background-color: #908b6c !important
 }</style> --}}
 
