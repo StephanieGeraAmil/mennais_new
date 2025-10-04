@@ -4,7 +4,7 @@
 @endsection --}}
 @section('notifications')
     @if (Session::has('msg'))
-        <div class="u-size-30">
+        <div class="u-size-60">
             <div class="u-layout-col">
                 <div class="u-align-center u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
                     <div class="u-container-layout u-valign-middle u-container-layout-1" style="background-color:#2cccc4">
@@ -15,7 +15,7 @@
         </div>
     @endif
     @if ($errors->any())
-        <div class="u-size-30">
+        <div class="u-size-60">
             <div class="u-layout-col">
                 <div class="u-align-center u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
                     <div class="u-container-layout u-valign-middle u-container-layout-1">
@@ -84,7 +84,7 @@
         source="custom" name="Inscripción Individual" style="padding: 18px 0px;" enctype="multipart/form-data">
         @csrf
       
-        <input type="hidden" name="type" value="hibrido">
+    <input type="hidden" name="type" value="hibrido">
    
         <div class="u-form-group u-form-name">
             <label for="name-05a8" class="u-form-control-hidden u-label"></label>
