@@ -82,7 +82,7 @@ transformación Educativa">
     </header> --}}
 
     <section class="u-clearfix u-container-align-center-lg u-container-align-center-md u-container-align-center-xl u-gradient u-section-1" id="sec-3ffd">
-    <div class="u-clearfix u-sheet u-sheet-1">
+    {{-- <div class="u-clearfix u-sheet u-sheet-1"> --}}
         <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
             <div class="u-gutter-0 u-layout">
                 <div class="u-layout-col">
@@ -102,7 +102,7 @@ transformación Educativa">
                 </div>
             </div>
         </div>
-    </div>
+    {{-- </div> --}}
 </section>
 {{-- <style class="u-overlap-style">.u-overlap:not(.u-sticky-scroll) .u-header {
     background-color: #908b6c !important
