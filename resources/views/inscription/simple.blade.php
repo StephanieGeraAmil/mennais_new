@@ -1,8 +1,8 @@
 @extends('layouts.formtemplate')
-@section('title')
+{{-- @section('title')
     Inscripción Indivudual
-@endsection
-@section('notifications')
+@endsection --}}
+{{-- @section('notifications')
     @if (Session::has('msg'))
         <div class="u-size-30">
             <div class="u-layout-col">
@@ -23,9 +23,7 @@
                             @error('name')
                                 El campo nombre no es correcto.<br />
                             @enderror
-                            {{-- @error('lastname')
-                                El campo apellido no es correcto.<br />
-                            @enderror --}}
+                    
                             @error('document')
                                 @if ($message == 'The document has already been taken.')
                                     Su cédula de indentidad ya se encuentra inscripta. <BR />
@@ -37,16 +35,8 @@
                             @error('email')
                                 El campo email no es correcto.<br />
                             @enderror
-                            {{-- @error('phone')
-                                El campo teléfono no es correcto.<br />
-                            @enderror --}}
-                            @error('extra.place')
-                                Debe seleccionar el Origen.<br />
-                            @enderror
-                            @error('type')
-                                Debe seleccionar la modalidad.<br />
-                            @enderror
-                            {{-- @error('institution_name')
+                    
+                          @error('institution_name')
                                 El campo institución no es correcto.<br />
                             @enderror
                             @error('institution_type')
@@ -54,23 +44,18 @@
                             @enderror
                             @error('city')
                                 El campo ciudad no es correcto.<br />
-                            @enderror --}}
-                            {{-- @error('amount')
-                                El campo monto depositado no es correcto.<br />
-                            @enderror
-                            @error('payment_ref')
-                                El campo referencia de pago no es correcto.<br />
-                            @enderror
+                            @enderror 
+                           
                             @error('payment_file')
                                 El campo comprobante de pago no es correcto.<br />
-                            @enderror --}}
+                            @enderror 
                             @if ($errors->any())
                                 <div class="u-size-30">
                                     <div class="u-layout-col">
                                         <div class="u-align-center u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
                                             <div class="u-container-layout u-valign-middle u-container-layout-1">
                                                 <h5 class="u-text u-text-default u-text-1">
-                                                    {{-- Display specific error messages --}}
+                                                  
                                                     @foreach ($errors->all() as $error)
                                                         <div>{{ $error }}</div>
                                                     @endforeach
@@ -86,7 +71,7 @@
             </div>
         </div>
     @endif
-@endsection
+@endsection --}}
 {{-- @section('subtitle')
     INSCRIPCIÓN INDIVIDUAL
 @endsection
@@ -94,12 +79,12 @@
     Por favor, complete el formulario con sus datos.
 @endsection --}}
 @section('form')
-    <input type="hidden" id="old_first_workshop_group_id" value={{ old('first_workshop_group_id') ?? 0 }}>
-    <input type="hidden" id="old_second_workshop_group_id" value={{ old('second_workshop_group_id') ?? 0 }}>
+
+    <input type="hidden" name="type" value="hibrido">
     <form action="/store_inscription" method="POST" class="u-clearfix u-form-spacing-12 u-form-vertical u-inner-form"
         source="custom" name="Inscripción Individual" style="padding: 18px 0px;" enctype="multipart/form-data">
         @csrf
-        <input type="hidden" name="type" value="hibrido">
+      
    
         <div class="u-form-group u-form-name">
             <label for="name-05a8" class="u-form-control-hidden u-label"></label>
@@ -140,12 +125,6 @@
             </div>
         </div>
         <div id="payment_div" class="full_width">
-
-            {{-- <div class="u-form-group u-form-group-9">
-                <label for="text-1207" class="u-form-control-hidden u-label"></label>
-                <input type="text" placeholder="Monto depositado" id="text-1207" name="amount"
-                class="u-input u-input-rectangle u-radius-14 u-input-9">
-            </div> --}}
             <div class="u-form-group u-form-group-11">
                 <label for="text-c55e" class="u-form-control-hidden u-label"></label>
                 <input type="file" placeholder="Adjunte un comprobante de pago" id="payment_file-4c18"
@@ -154,10 +133,6 @@
                 <div style="width: 100%;text-align: center;"><small>Adjunte el comprobante de pago (pdf o jpg)</small></div>
             </div>
         </div>
-            {{-- <div class="u-align-right u-form-group u-form-submit">
-                <a onclick="$(this).closest('form').submit()"
-                class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-1">Enviar</a>
-        </div> --}}
         <div class="button-section">
                 <a href="https://lamennais.edu.uy/cp25" 
                 class="button-save">Volver</a>
@@ -165,70 +140,4 @@
                 class="button-save">Enviar</a>
         </div>
     </form>
-@endsection
-@section('custom_script')
-    <script>
-        // jQuery(document).ready(function() {
-        //     loadSecondWorkshopGroup();
-        //     $('#first_workshop_group_id').change(function(ev) {
-        //         loadSecondWorkshopGroup();
-        //     });
-        //     loadOldWorkShops();
-        //      togglePaymentDiv();
-        // });
-
-        // function loadSecondWorkshopGroup() {
-        //     let first_workshop_group = $('#first_workshop_group_id').val();
-        //     let second_workshop_group = $('#second_workshop_group_id');
-        //     $.ajax({
-        //         url: '/api/second_workshop_group/' + first_workshop_group,
-        //         async: false
-        //     }).done(function(data) {
-        //         second_workshop_group.children().remove();
-        //         if ('data' in data) {
-        //             if (Array.isArray(data.data)) {
-        //                 data.data.forEach(function(valor, indice, array) {
-        //                     second_workshop_group.append(new Option(valor.text, valor.id));
-        //                 });
-        //                 second_workshop_group.append(new Option('No asistiré en este horario.', 0));
-        //             }
-        //         }
-        //     });
-        // }
-
-        // function loadOldWorkShops() {
-        //     let old_first_workshop_group = $('#old_first_workshop_group_id').val();
-        //     let old_second_workshop_group = $('#old_second_workshop_group_id').val();
-        //     if (old_first_workshop_group > 0) {
-        //         let first_workshop_group = $('#first_workshop_group_id').val(old_first_workshop_group);
-        //     }
-        //     if (old_second_workshop_group > 0) {
-        //         let first_workshop_group = $('#second_workshop_group_id').val(old_second_workshop_group);
-        //     }
-        // }
-
-
-
-        // function clean_document(element) {
-        //     let input = $(element);
-        //     let input_val = input.val();
-        //     new_input_val = input_val.replace(/\D/g, "");
-        //     input.val(new_input_val);
-        // }
-
-        //  function togglePaymentDiv() {
-        //     console.log("in toggle");
-        //     const modalidad = document.getElementById('type').value;
-        //     const paymentDiv = document.getElementById('payment_div');
-        //     console.log(modalidad);
-        //     if (modalidad === 'hibrido') {
-        //         console.log("in completa")
-        //         paymentDiv.style.display = 'none';
-        //     } else {
-        //         paymentDiv.style.display = 'block';
-        //     }
-        // }
-
-       
-    </script>
 @endsection
