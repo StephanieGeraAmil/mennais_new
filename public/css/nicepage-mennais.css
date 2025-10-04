@@ -4,7 +4,7 @@
  * Copyright 2014-2021 Froala Labs
  */
 .min_padding {
-    padding: 10px;
+    padding: 10px !important;
 }
 .fr-clearfix::after {
     clear: both;
