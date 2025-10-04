@@ -3,7 +3,9 @@
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2021 Froala Labs
  */
-
+.min_padding {
+    padding: 10px;
+}
 .fr-clearfix::after {
     clear: both;
     display: block;
