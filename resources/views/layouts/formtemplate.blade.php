@@ -43,7 +43,7 @@ transformación Educativa">
 
     <link rel="stylesheet" href="Inscripcion-Indivudual.css" media="screen">
     <link rel="stylesheet" href="/css/nicepage-mennais.css" media="screen">
-\
+
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="isf.uy">
@@ -78,7 +78,7 @@ transformación Educativa">
         </div>
       </div>
     </header> --}}
-    
+
     {{-- <section class="u-clearfix u-container-align-center-lg u-container-align-center-md u-container-align-center-xl u-gradient u-section-1" id="sec-3ffd">
     <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
@@ -125,5 +125,5 @@ transformación Educativa">
     </p>
 </div>
 </footer>
-@yield('custom_script')
+
 </body></html>
