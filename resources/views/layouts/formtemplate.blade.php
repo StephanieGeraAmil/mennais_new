@@ -63,14 +63,14 @@ transformación Educativa">
     <meta property="og:description" content="Vivenciando la transformación educativa es un evento organizado por AUDEC - Asociación Uruguaya de Educación Católica">
     <meta property="og:type" content="website">
   <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
-  <body data-path-to-root="./" data-include-products="false" class="u-body u-overlap u-xl-mode" data-lang="es">
+  <body data-path-to-root="./" data-include-products="false" class="u-body  u-xl-mode" data-lang="es">
     <header class="u-clearfix u-container-align-center u-custom-color-26 u-header u-sticky u-sticky-387b u-header" id="sec-055d"><div class="u-clearfix u-sheet u-sheet-1">
         <img class="u-align-center u-image u-image-default u-image-1" src="images/logo_sist.png" alt="" data-image-width="1024" data-image-height="119" data-lang-es="">
       </div>
     </header>
 
 
-<body data-path-to-root="./" data-include-products="false" class="u-body u-overlap u-xl-mode" data-lang="es">
+{{-- <body data-path-to-root="./" data-include-products="false" class="u-body u-overlap u-xl-mode" data-lang="es"> --}}
     {{-- <header class="u-clearfix u-container-align-left-xl u-header u-palette-1-dark-1" id="sec-055d" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-valign-middle-xl u-valign-middle-xs u-sheet-1">
         <div class="u-clearfix u-container-align-left u-group-elements u-valign-middle u-group-elements-1">
           <h5 class="u-align-left u-custom-font u-font-raleway u-text u-text-default u-text-1" data-lang-es="<a class=&quot;u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-light-3 u-block-control&quot; data-href=&quot;https://nicepage.com&quot; style=&quot;background-image: none; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot; data-block=&quot;552&quot; data-lang-es=&quot;{&amp;quot;content&amp;quot;:&amp;quot;PROEDUCAR 2025&amp;quot;}&quot;>PROEDUCAR 2025</a>">
