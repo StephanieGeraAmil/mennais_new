@@ -49429,7 +49429,7 @@ blockquote {
 }
 
 .u-header .u-sheet-1 {
-    min-height: 111px;
+    /* min-height: 111px; */
 }
 
 .u-header .u-image-1 {
@@ -49440,7 +49440,7 @@ blockquote {
 
 @media (max-width: 767px) {
     .u-header .u-sheet-1 {
-        min-height: 108px;
+        /* min-height: 108px; */
     }
 
     .u-header .u-image-1 {
@@ -49450,7 +49450,7 @@ blockquote {
 }
 @media (max-width: 575px) {
     .u-header .u-sheet-1 {
-        min-height: 85px;
+        /* min-height: 85px; */
     }
 
     .u-header .u-image-1 {
@@ -49463,7 +49463,7 @@ blockquote {
 }
 
 .u-footer .u-sheet-1 {
-    min-height: 54px;
+    /* min-height: 54px; */
 }
 
 .u-footer .u-text-1 {
