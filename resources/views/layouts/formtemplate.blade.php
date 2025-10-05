@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <title>Inscripcion Individual</title>
+   <title>env('APP_NAME', 'Proeventos')</title>
 
     <link rel="stylesheet" href="css/nicepage-form.css" media="screen" />
     <link rel="stylesheet" href="css/index-form.css" media="screen" />
@@ -39,7 +39,7 @@
     </script>
 
     <meta name="theme-color" content="#478ac9" />
-    <meta property="og:title" content="Inscripcion Indivudual">
+    <meta property="og:title" content="">
     <meta property="og:description" content="">
     <meta property="og:type" content="website">
     <meta data-intl-tel-input-cdn-path="intlTelInput/">

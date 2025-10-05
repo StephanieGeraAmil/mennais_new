@@ -3,21 +3,22 @@
 <h3 class="u-align-center u-text u-text-1">Solicitud de certificado</h3>
 @endsection
 @section('notifications')
-@isset($errors)                                        
-@error('document')                        
-<div class="u-size-30">
-    <div class="u-layout-col">
-        <div class="u-align-center u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
-            <div class="u-container-layout u-valign-middle u-container-layout-1">
-                <h5 class="u-text u-text-default u-text-1">
-                    El documento ingresado no es correcto.
-                </h5>                         
+    @isset($errors)                                        
+        @error('document')                        
+        <div class="u-size-30">
+            <div class="u-layout-col">
+                <div class="u-align-center u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
+                    <div class="u-container-layout u-valign-middle u-container-layout-1">
+                        <h5 class="u-text u-text-default u-text-1">
+                            El documento ingresado no es correcto.
+                        </h5>                         
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-@enderror                        
-@endisset
+        @enderror                        
+    @endisset
+@endsection
 @isset($wrong_document)
 <div class="u-size-30">
     <div class="u-layout-col">
