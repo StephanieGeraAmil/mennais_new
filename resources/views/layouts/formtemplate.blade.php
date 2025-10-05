@@ -7,7 +7,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
 
-   <title>{{ config('app.name') }}</title>
+   <title>Congreso Pedagógico</title>
 
     <link rel="stylesheet" href="css/nicepage-form.css" media="screen" />
     <link rel="stylesheet" href="css/index-form.css" media="screen" />
