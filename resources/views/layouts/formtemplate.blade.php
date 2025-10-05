@@ -8,8 +8,8 @@
     <meta name="description" content="">
     <title>Inscripcion Indivudual</title>
 
-    <link rel="stylesheet" href="nicepage-fom.css" media="screen" />
-    <link rel="stylesheet" href="index-form.css" media="screen" />
+    <link rel="stylesheet" href="css/nicepage-fom.css" media="screen" />
+    <link rel="stylesheet" href="css/index-form.css" media="screen" />
     <script
         class="u-script"
         type="text/javascript"
@@ -59,7 +59,7 @@
             >
                 <img
                     class="u-align-center u-image u-image-default u-image-1"
-                    src="images/logo_.png"
+                    src="images/logo_sist.png"
                     alt=""
                     data-image-width="750"
                     data-image-height="240"

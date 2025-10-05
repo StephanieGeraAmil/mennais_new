@@ -179,7 +179,7 @@
                 <a class="u-btn u-button-style u-upload-button"
                     >Adjuntar</a
                 >
-                <div class="u-file-list">
+                {{-- <div class="u-file-list">
                     <div class="u-file-item u-file-template">
                         <span class="u-file-name u-text"
                             >FileExample.pdf</span
@@ -223,7 +223,7 @@
                     class="u-file-max u-text u-text-grey-30 u-text-3"
                 >
                     Max File Size: 10 MB
-                </p>
+                </p> --}}
                 <span class="u-file-group">
                     <input
                         type="file"
@@ -231,7 +231,7 @@
                         name="payment_file"
                         class="u-input u-input-rectangle u-text-black"
                         required=""
-                        accept="IMAGES"
+                        {{-- accept="IMAGES" --}}
                 /></span>
             </div>
     </div>
