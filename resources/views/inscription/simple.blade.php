@@ -249,5 +249,31 @@
                 Enviar
             </button>
     </div>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form[name='Inscripción Individual']");
+    const requiredFields = form.querySelectorAll("[required]");
+    const submitButton = form.querySelector("button[type='submit']");
+
+    function checkRequiredFields() {
+        let allFilled = true;
+        requiredFields.forEach((field) => {
+            if (!field.value.trim()) {
+                allFilled = false;
+            }
+        });
+        submitButton.disabled = !allFilled;
+    }
+
+    // Disable the button initially
+    submitButton.disabled = true;
+
+    // Add event listeners to required fields
+    requiredFields.forEach((field) => {
+        field.addEventListener("input", checkRequiredFields);
+        field.addEventListener("change", checkRequiredFields);
+    });
+});
+</script>
     </form>
 @endsection
