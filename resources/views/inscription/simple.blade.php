@@ -245,7 +245,7 @@
              
 
              <a onclick="$(this).closest('form').submit()"
-
+                id="submit-btn"
                 class="u-btn u-btn-submit u-button-style u-btn-3"
                 >Enviar</a>
     </div>
@@ -253,7 +253,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form[name='Inscripción Individual']");
     const requiredFields = form.querySelectorAll("[required]");
-    const submitLink = form.querySelector("a.u-btn-submit"); // your 'Enviar' <a> button
+    const submitLink = querySelector("#submit-btn");
 
     function allFieldsFilled() {
         for (let field of requiredFields) {
