@@ -40,6 +40,14 @@ class SimpleInscriptionRequest extends FormRequest
             'document' => str_replace([',','-','.',' '], '',$this->document),
         ]);
     }
+
+
+    public function messages()
+    {
+        return [
+            'document.unique' => 'Esta cédula ya se encuentra registrada. Si aún no recibió el email de confirmación, comuníquese con Audec.',
+        ];
+    }
     
     
 }

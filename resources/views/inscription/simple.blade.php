@@ -15,7 +15,6 @@
     </section>
     @endif
     @if ($errors->any())
-    error
         <section
             class="u-clearfix u-palette-2-light-2 u-section-4"
             id="block-7"
