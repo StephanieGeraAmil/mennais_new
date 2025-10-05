@@ -1,6 +1,6 @@
 @extends('layouts.formtemplate')
 @section('title')
-Solicitud de certificado
+<h3 class="u-align-center u-text u-text-1">Solicitud de certificado</h3>
 @endsection
 @section('notifications')
 @isset($errors)                                        
@@ -56,31 +56,37 @@ Solicitud de certificado
 </div>                    
 @endisset
 @endsection
-@section('subtitle')
-Solicitud de certificado  
-@endsection
-@section('left-text-box')
-<p class="u-text u-text-3">Ingrese su documento y le enviaremos a su mail un link donde podrá descargar el certificado.</p>
-@endsection
+
 @section('form')
 <form class="w-full max-w-sm certificate_form" action="{{Route('inscription.certificateRecoveryMail')}}" method="POST">
     @csrf
-    <div class="u-form-group u-form-name">
+    {{-- <div class="u-form-group u-form-name">
         <label for="document-05a8" class="u-form-control-hidden u-label"></label>
         <input type="text" placeholder="Ingrese el documento" id="document-05a8" name="document" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-1" required="" value="{{old('document')}}" onblur="clean_document(this)">
-    </div>											
+    </div>		 --}}
+     <div class="u-form-group u-form-name">
+            <label for="document-072d" class="u-label">Cédula de Identidad</label>
+            <input
+                type="text"
+                placeholder="(1234567-8)"
+                id="document-072d"
+                name="document"
+                class="u-input u-input-rectangle"
+                required=""
+            />
+        </div>									
     <div class="u-align-right u-form-group u-form-submit certificate_button">                                              
         <a onclick="$(this).closest('form').submit()" class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-1">Enviar</a>
     </div>
 </form>
 @endsection
 @section('custom_script')
-<script>  
+{{-- <script>  
     function clean_document(element){
         let input = $(element);
         let input_val = input.val();
         new_input_val = input_val.replace(/\D/g, "");
         input.val(new_input_val);
     }
-</script>    
+</script>     --}}
 @endsection 
