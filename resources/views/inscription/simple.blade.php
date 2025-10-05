@@ -1,24 +1,25 @@
 @extends('layouts.formtemplate')
-{{-- @section('title')
-    Inscripción Indivudual
-@endsection --}}
+@section('title')
+ <h3 class="u-align-center u-text u-text-1">Inscripción Indivudual</h3>
+    
+@endsection
 @section('notifications')
     @if (Session::has('msg'))
-        <div class="u-size-30">
-            <div class="u-layout-col ">
-                <div class="u-align-left u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
-                    <div class="u-container-layout u-valign-middle u-container-layout-1 " style="background-color:#2cccc4">
+     <section class="u-clearfix u-custom-color-1 u-section-5" id="sec-ef85">
+            <div class="u-clearfix u-sheet u-sheet-1">
+                <p class="u-align-center u-text u-text-1">
                         <h5 class="u-text u-text-default u-text-1">{!! Session::get('msg') !!}</h5>
-                    </div>
-                </div>
+                </p>
             </div>
-        </div>
+    </section>
     @endif
     @if ($errors->any())
-        <div class="u-size-30">
-            <div class="u-layout-col ">
-                <div class="u-align-left u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
-                    <div class="u-container-layout u-valign-middle u-container-layout-1 ">
+        <section
+            class="u-clearfix u-palette-2-light-2 u-section-4"
+            id="block-7"
+        >
+            <div class="u-clearfix u-sheet u-sheet-1">
+                
                         <h5 class="u-text u-text-default u-text-1">
                             @error('name')
                                 El campo nombre no es correcto.<br />
@@ -66,80 +67,188 @@
                                 </div>
                             @endif
                         </h5>
-                    </div>
-                </div>
-            </div>
-        </div>
+             </div>
+        </section>
     @endif
 @endsection
-{{-- @section('subtitle')
-    INSCRIPCIÓN INDIVIDUAL
-@endsection
-@section('left-text-box')
-    Por favor, complete el formulario con sus datos.
-@endsection --}}
+
 @section('form')
 
-    <form action="/store_inscription" method="POST" class="u-clearfix u-form-spacing-12 u-form-vertical u-inner-form"
-        source="custom" name="Inscripción Individual" style="padding: 18px 0px;" enctype="multipart/form-data">
+    <form 
+    action="/store_inscription" 
+    method="POST" 
+    class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form"
+    source="custom" 
+    name="Inscripción Individual" 
+    style="padding: 10px"
+    enctype="multipart/form-data">
         @csrf
       
     <input type="hidden" name="type" value="hibrido">
    
         <div class="u-form-group u-form-name">
-            <label for="name-05a8" class="u-form-control-hidden u-label"></label>
-            <input type="text" placeholder="Nombre Completo" id="name-05a8" name="name"
-                class="u-input u-input-rectangle u-radius-14 u-input-1" required="">
+            <label for="name-072d" class="u-label">Nombre Completo</label>
+            <input
+                type="text"
+                placeholder=""
+                id="name-072d"
+                name="name"
+                class="u-input u-input-rectangle"
+                required=""
+            />
         </div>
-
-        <div class="u-form-group u-form-name u-form-group-3">
-            <label for="name-b2b6" class="u-form-control-hidden u-label"></label>
-            <input type="text" placeholder="Cédula de Identidad (1234567-8)" id="name-b2b6" name="document"
-                class="u-input u-input-rectangle u-radius-14 u-input-3" required="">
+        <div class="u-form-group u-form-name">
+            <label for="document-072d" class="u-label">Cédula de Identidad</label>
+            <input
+                type="text"
+                placeholder="(1234567-8)"
+                id="document-072d"
+                name="document"
+                class="u-input u-input-rectangle"
+                required=""
+            />
         </div>
         <div class="u-form-email u-form-group">
-            <label for="email-05a8" class="u-form-control-hidden u-label"></label>
-            <input type="email" placeholder="email" id="email-05a8" name="email"
-                class="u-input u-input-rectangle u-radius-14 u-input-4" required="">
+            <label for="email-072d" class="u-label"
+                >Email</label
+            >
+            <input
+                type="email"
+                placeholder=""
+                id="email-072d"
+                name="email"
+                class="u-input u-input-rectangle"
+                required=""
+            />
         </div>
-        <div class="u-form-group u-form-group-6">
-            <label for="text-59c6" class="u-form-control-hidden u-label"></label>
-            <input type="text" placeholder="Institución" id="text-59c6" name="institution_name"
-                class="u-input u-input-rectangle u-radius-14 u-input-6">
+          <div class="u-form-group u-form-name">
+            <label for="institution-072d" class="u-label">Institución</label>
+            <input
+                type="text"
+                placeholder=""
+                id="institution-072d"
+                name="institution_name"
+                class="u-input u-input-rectangle"
+                required=""
+            />
         </div>
-         <div class="u-form-group u-form-select u-form-group-7">
-            <label for="select-c14a" class="u-label">Nivel</label>
+        <div class="u-form-group u-form-select u-form-group-6">
+            <label for="select-c689" class="u-label"
+                >Nivel</label
+            >
             <div class="u-form-select-wrapper">
-                <select id="select-c14a" name="institution_type" class="u-input u-input-rectangle u-radius-14">
+                <select
+                    id="select-c689"
+                    name="institution_type"
+                    class="u-input u-input-rectangle"
+                >
                     <option value="Educación Inicial" data-calc="">Educación Inicial</option>
                     <option value="Primaria" data-calc="">Primaria</option>
                     <option value="Secundaria" data-calc="">Secundaria</option>
                     <option value="Equipo Directivo" data-calc="">Equipo Directivo</option>
                     <option value="Otro" data-calc="">Otro</option>
                 </select>
-                <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px"
-                    viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve">
-                    <polygon class="st0" points="8,12 2,4 14,4 "></polygon>
+                <svg
+                    class="u-caret u-caret-svg"
+                    version="1.1"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    width="16px"
+                    height="16px"
+                    viewBox="0 0 16 16"
+                    style="fill: currentColor"
+                    xml:space="preserve"
+                >
+                    <polygon
+                        class="st0"
+                        points="8,12 2,4 14,4 "
+                    ></polygon>
                 </svg>
             </div>
         </div>
-        <div id="payment_div" class="full_width">
-            <div class="u-form-group u-form-group-11">
-                <label for="text-c55e" class="u-form-control-hidden u-label"></label>
-                <input type="file" placeholder="Adjunte un comprobante de pago" id="payment_file-4c18"
-                name="payment_file" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10"
+        <div
+             class="u-form-file-upload u-form-group u-form-group-30"
+         >
+            <label for="file-upload-2d36" class="u-label"
+                >Comprobante de pago</label
+            >
+            <div class="u-file-input-wrapper">
+                <a class="u-btn u-button-style u-upload-button"
+                    >Adjuntar</a
                 >
-                <div style="width: 100%;text-align: center;"><small>Adjunte el comprobante de pago (pdf o jpg)</small></div>
+                <div class="u-file-list">
+                    <div class="u-file-item u-file-template">
+                        <span class="u-file-name u-text"
+                            >FileExample.pdf</span
+                        >
+                        <span
+                            class="u-file-remove u-icon u-text-grey-30 u-icon-1"
+                            >
+                            <svg
+                                class="u-svg-link"
+                                preserveAspectRatio="xMidYMin slice"
+                                viewBox="0 0 51.976 51.976"
+                                style=""
+                            >
+                                <use xlink:href="#svg-312f"></use>
+                            </svg>
+                            <svg
+                                class="u-svg-content"
+                                viewBox="0 0 51.976 51.976"
+                                x="0px"
+                                y="0px"
+                                id="svg-312f"
+                                style="
+                                    enable-background: new 0 0
+                                        51.976 51.976;
+                                "
+                            >
+                                <g>
+                                    <path
+                                        d="M44.373,7.603c-10.137-10.137-26.632-10.138-36.77,0c-10.138,10.138-10.137,26.632,0,36.77s26.632,10.138,36.77,0
+    C54.51,34.235,54.51,17.74,44.373,7.603z M36.241,36.241c-0.781,0.781-2.047,0.781-2.828,0l-7.425-7.425l-7.778,7.778
+    c-0.781,0.781-2.047,0.781-2.828,0c-0.781-0.781-0.781-2.047,0-2.828l7.778-7.778l-7.425-7.425c-0.781-0.781-0.781-2.048,0-2.828
+    c0.781-0.781,2.047-0.781,2.828,0l7.425,7.425l7.071-7.071c0.781-0.781,2.047-0.781,2.828,0c0.781,0.781,0.781,2.047,0,2.828
+    l-7.071,7.071l7.425,7.425C37.022,34.194,37.022,35.46,36.241,36.241z"
+                                    ></path>
+                                </g>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+                <p
+                    class="u-file-max u-text u-text-grey-30 u-text-3"
+                >
+                    Max File Size: 10 MB
+                </p>
+                <span class="u-file-group">
+                    <input
+                        type="file"
+                        id="file-upload-2d36"
+                        name="payment_file"
+                        class="u-input u-input-rectangle u-text-black"
+                        required=""
+                        accept="IMAGES"
+                /></span>
             </div>
-        </div>
-        <div class="u-align-right u-form-group u-form-submit">
-   
-                <a href="https://carlosgera.com"  class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-1" >Volver</a>
-        
-                 <button type="submit" class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-1">
-        Enviar
-    </button>
-        </div>
+    </div>
+     
+    <div class="u-align-left u-form-group u-form-submit">
+
+            <a 
+            href="https://carlosgera.com"  
+            class="u-btn u-btn-submit u-button-style u-btn-3"
+            >Volver</a>
+    
+                <button 
+                type="submit" 
+                class="u-btn u-btn-submit u-button-style u-btn-3"
+                >
+                Enviar
+            </button>
+    </div>
     </form>
 @endsection
