@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <title>Inscripcion Indivudual</title>
 
-    <link rel="stylesheet" href="css/nicepage-fom.css" media="screen" />
+    <link rel="stylesheet" href="css/nicepage-form.css" media="screen" />
     <link rel="stylesheet" href="css/index-form.css" media="screen" />
     <script
         class="u-script"
