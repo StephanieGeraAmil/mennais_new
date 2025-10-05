@@ -249,29 +249,48 @@
                 class="u-btn u-btn-submit u-button-style u-btn-3"
                 >Enviar</a>
     </div>
-    <script>
+   <script>
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form[name='Inscripción Individual']");
     const requiredFields = form.querySelectorAll("[required]");
-    const submitButton = form.querySelector("button[type='submit']");
+    const submitLink = form.querySelector("a.u-btn-submit"); // your 'Enviar' <a> button
 
-    function checkRequiredFields() {
-        let allFilled = true;
-        requiredFields.forEach((field) => {
-            if (!field.value.trim()) {
-                allFilled = false;
-            }
-        });
-        submitButton.disabled = !allFilled;
+    function allFieldsFilled() {
+        for (let field of requiredFields) {
+            if (field.type === "file" && !field.files.length) return false;
+            if (field.type !== "file" && !field.value.trim()) return false;
+        }
+        return true;
     }
 
-    // Disable the button initially
-    submitButton.disabled = true;
+    function updateLinkState() {
+        if (allFieldsFilled()) {
+            submitLink.classList.remove("disabled");
+            submitLink.style.pointerEvents = "auto";
+            submitLink.style.opacity = "1";
+        } else {
+            submitLink.classList.add("disabled");
+            submitLink.style.pointerEvents = "none"; // disables clicks
+            submitLink.style.opacity = "0.5"; // visual cue
+        }
+    }
 
-    // Add event listeners to required fields
+    // Initial state
+    updateLinkState();
+
+    // Monitor input changes
     requiredFields.forEach((field) => {
-        field.addEventListener("input", checkRequiredFields);
-        field.addEventListener("change", checkRequiredFields);
+        field.addEventListener("input", updateLinkState);
+        field.addEventListener("change", updateLinkState);
+    });
+
+    // Optional: allow form submission via JS when all fields filled
+    submitLink.addEventListener("click", function (event) {
+        if (!allFieldsFilled()) {
+            event.preventDefault(); // block click
+        } else {
+            form.submit(); // manually submit
+        }
     });
 });
 </script>
