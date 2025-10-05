@@ -63,7 +63,14 @@
 @endsection
 
 @section('form')
-<form class="w-full max-w-sm certificate_form"   action="/certificate"  method="POST">
+ <form 
+    action="/certificate" 
+    method="POST" 
+    class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form"
+    source="custom" 
+    name="Certificate" 
+    style="padding: 10px"
+    enctype="multipart/form-data">
     @csrf
      <div class="u-form-group u-form-name">
             <label for="document-072d" class="u-label">Cédula de Identidad</label>
