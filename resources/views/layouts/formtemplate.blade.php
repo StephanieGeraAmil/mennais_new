@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <title>Inscripcion Indivudual</title>
+    <title>Inscripcion Individual</title>
 
     <link rel="stylesheet" href="css/nicepage-form.css" media="screen" />
     <link rel="stylesheet" href="css/index-form.css" media="screen" />

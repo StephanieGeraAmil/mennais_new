@@ -1,10 +1,11 @@
 @extends('layouts.formtemplate')
 @section('title')
- <h3 class="u-align-center u-text u-text-1">Inscripción Indivudual</h3>
+ <h3 class="u-align-center u-text u-text-1">Inscripción Individual</h3>
     
 @endsection
 @section('notifications')
     @if (Session::has('msg'))
+    msg
      <section class="u-clearfix u-custom-color-1 u-section-5" id="sec-ef85">
             <div class="u-clearfix u-sheet u-sheet-1">
                 <p class="u-align-center u-text u-text-1">
@@ -14,6 +15,7 @@
     </section>
     @endif
     @if ($errors->any())
+    error
         <section
             class="u-clearfix u-palette-2-light-2 u-section-4"
             id="block-7"
@@ -22,7 +24,7 @@
                 
                         <h5 class="u-text u-text-default u-text-1">
                             @error('name')
-                                El campo nombre no es correcto.<br />
+                                El campo nombre no es valido.<br />
                             @enderror
                     
                             @error('document')
@@ -37,7 +39,7 @@
                                 El campo email no es correcto.<br />
                             @enderror
                     
-                          @error('institution_name')
+                            @error('institution_name')
                                 El campo institución no es correcto.<br />
                             @enderror
                             @error('institution_type')
