@@ -253,8 +253,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form[name='Inscripción Individual']");
     const requiredFields = form.querySelectorAll("[required]");
-    const submitLink = querySelector("#submit-btn");
-
+    const submitLink = document.querySelector("#submit-btn");
     function allFieldsFilled() {
         for (let field of requiredFields) {
             if (field.type === "file" && !field.files.length) return false;
