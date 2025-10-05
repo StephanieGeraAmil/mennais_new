@@ -13,7 +13,7 @@
     <script
         class="u-script"
         type="text/javascript"
-        src="jquery.js"
+        src="js/jquery.js"
         defer=""
     ></script>
     <script
