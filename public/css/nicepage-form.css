@@ -1369,7 +1369,6 @@ a {
     background-color: transparent;
     margin: 0;
     -webkit-text-decoration-skip: objects;
-    height: 20px;
 }
 .u-image.u-logo {
     display: table;
