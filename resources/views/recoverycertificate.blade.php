@@ -63,7 +63,7 @@
 @endsection
 
 @section('form')
-<form class="w-full max-w-sm certificate_form" action="{{Route('certificate')}}" method="POST">
+<form class="w-full max-w-sm certificate_form"   action="/certificate"  method="POST">
     @csrf
      <div class="u-form-group u-form-name">
             <label for="document-072d" class="u-label">Cédula de Identidad</label>
