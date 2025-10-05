@@ -242,12 +242,12 @@
             class="u-btn u-btn-submit u-button-style u-btn-3"
             >Volver</a>
     
-                <button 
-                type="submit" 
+             
+
+             <a onclick="$(this).closest('form').submit()"
+
                 class="u-btn u-btn-submit u-button-style u-btn-3"
-                >
-                Enviar
-            </button>
+                >Enviar</a>
     </div>
     <script>
 document.addEventListener("DOMContentLoaded", function () {
