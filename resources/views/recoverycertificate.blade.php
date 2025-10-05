@@ -60,10 +60,6 @@
 @section('form')
 <form class="w-full max-w-sm certificate_form" action="{{Route('inscription.certificateRecoveryMail')}}" method="POST">
     @csrf
-    {{-- <div class="u-form-group u-form-name">
-        <label for="document-05a8" class="u-form-control-hidden u-label"></label>
-        <input type="text" placeholder="Ingrese el documento" id="document-05a8" name="document" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-14 u-white u-input-1" required="" value="{{old('document')}}" onblur="clean_document(this)">
-    </div>		 --}}
      <div class="u-form-group u-form-name">
             <label for="document-072d" class="u-label">Cédula de Identidad</label>
             <input
@@ -74,9 +70,12 @@
                 class="u-input u-input-rectangle"
                 required=""
             />
-        </div>									
-    <div class="u-align-right u-form-group u-form-submit certificate_button">                                              
-        <a onclick="$(this).closest('form').submit()" class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-1">Enviar</a>
+     </div>									
+      <div class="u-align-left u-form-group u-form-submit">
+             <a onclick="$(this).closest('form').submit()"
+                id="submit-btn"
+                class="u-btn u-btn-submit u-button-style u-btn-3"
+                >Enviar</a>
     </div>
 </form>
 @endsection
