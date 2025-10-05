@@ -71,9 +71,12 @@
                 required=""
             />
      </div>	
-      <div class="u-form-group u-form-name">	
+      {{-- <div class="u-form-group u-form-name">	
         <p>   </p>	
-           </div>							
+           </div>		
+           					 --}}
+        </br>
+        </br>
       <div class="u-align-left u-form-group u-form-submit">
              <a onclick="$(this).closest('form').submit()"
                 id="submit-btn"
