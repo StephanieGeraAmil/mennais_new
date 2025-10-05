@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html style="font-size: 16px;" lang="es-UY"><head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
@@ -62,4 +62,18 @@ background-color: #756c90 !important
         </p>
       </div>
     </footer>
-</body></html>
+</body></html> --}}
+@extends('layouts.formtemplate')
+
+    
+
+@section('info')
+
+    <section class="u-clearfix u-section-3" id="block-3">
+            <div
+                class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1"
+            >
+               <h3 class="u-align-center u-text u-text-1">BIENVENIDO</h3>
+            </div>
+        </section>
+@endsection
