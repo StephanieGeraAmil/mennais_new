@@ -6,7 +6,8 @@
     <meta charset="utf-8">
     <meta name="keywords" content="">
     <meta name="description" content="">
-   <title>env('APP_NAME', 'Proeventos')</title>
+
+   <title>{{ config('app.name') }}</title>
 
     <link rel="stylesheet" href="css/nicepage-form.css" media="screen" />
     <link rel="stylesheet" href="css/index-form.css" media="screen" />
