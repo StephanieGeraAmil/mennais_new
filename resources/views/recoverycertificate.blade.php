@@ -36,19 +36,14 @@
    
     @endisset
     @isset($success)
-     <section
-            class="u-clearfix u-palette-2-light-2 u-section-4"
-            id="block-7"
-        >
+        <section class="u-clearfix u-custom-color-1 u-section-5" id="sec-ef85">
             <div class="u-clearfix u-sheet u-sheet-1">
-                
-                        <h5 class="u-text u-text-default u-text-1">
-                            El vínculo se ha enviado correctamente.
-                        </h5>
+                <p class="u-align-center u-text u-text-1">
+                        <h5 class="u-text u-text-default u-text-1">   El vínculo se ha enviado correctamente.</h5>
+                </p>
             </div>
-          
-      
-    </section>                        
+    </section>
+                        
     @endisset
     @isset($fail)           
    <section

@@ -24,7 +24,7 @@
         defer=""
     ></script>
     <meta name="generator" content="isf.uy">
-    <link rel="icon" href="images/favicon1.png">
+    <link rel="icon" href="/images/favicon1.png">
 
     <link
         id="u-page-google-font"
@@ -60,7 +60,7 @@
             >
                 <img
                     class="u-align-center .u-image.u-logo img"
-                    src="images/logo_sist.png"
+                    src="/images/logo_sist.png"
                     alt=""
                     {{-- data-image-width="750"
                     data-image-height="240" --}}
