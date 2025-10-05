@@ -5,7 +5,7 @@
 @endsection
 @section('notifications')
     @if (Session::has('msg'))
-    msg
+    
      <section class="u-clearfix u-custom-color-1 u-section-5" id="sec-ef85">
             <div class="u-clearfix u-sheet u-sheet-1">
                 <p class="u-align-center u-text u-text-1">
@@ -15,7 +15,7 @@
     </section>
     @endif
     @if ($errors->any())
-    error
+    
         <section
             class="u-clearfix u-palette-2-light-2 u-section-4"
             id="block-7"
@@ -52,7 +52,7 @@
                             @error('payment_file')
                                 El campo comprobante de pago no es correcto.<br />
                             @enderror 
-                            @if ($errors->any())
+                            {{-- @if ($errors->any())
                                 <div class="u-size-30">
                                     <div class="u-layout-col">
                                         <div class="u-align-center u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
@@ -67,7 +67,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            @endif
+                            @endif --}}
                         </h5>
              </div>
         </section>
