@@ -16,12 +16,12 @@
         src="jquery.js"
         defer=""
     ></script>
-    <script
+    {{-- <script
         class="u-script"
         type="text/javascript"
         src="nicepage.js"
         defer=""
-    ></script>
+    ></script> --}}
     <meta name="generator" content="isf.uy">
     <link rel="icon" href="images/favicon1.png">
 
