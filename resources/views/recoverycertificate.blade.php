@@ -71,10 +71,7 @@
                 required=""
             />
      </div>	
-      {{-- <div class="u-form-group u-form-name">	
-        <p>   </p>	
-           </div>		
-           					 --}}
+
         </br>
         </br>
       <div class="u-align-left u-form-group u-form-submit">
