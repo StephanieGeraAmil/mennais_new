@@ -64,7 +64,7 @@
 
 @section('form')
  <form 
-    action="/certificate" 
+    action="/inscription/certificateRecoveryMail" 
     method="POST" 
     class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form"
     source="custom" 
