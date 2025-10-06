@@ -233,6 +233,7 @@
             <a 
             href="https://carlosgera.com"  
             class="u-btn u-btn-submit u-button-style u-btn-3"
+            type="button"
             >Volver</a>
     
              
@@ -262,8 +263,8 @@ document.addEventListener("DOMContentLoaded", function () {
             submitLink.style.opacity = "1";
         } else {
             submitLink.classList.add("disabled");
-            submitLink.style.pointerEvents = "none"; // disables clicks
-            submitLink.style.opacity = "0.5"; // visual cue
+            submitLink.style.pointerEvents = "none"; 
+            submitLink.style.opacity = "0.5";
         }
     }
 
@@ -276,14 +277,14 @@ document.addEventListener("DOMContentLoaded", function () {
         field.addEventListener("change", updateLinkState);
     });
 
-    // Optional: allow form submission via JS when all fields filled
-    submitLink.addEventListener("click", function (event) {
-        if (!allFieldsFilled()) {
-            event.preventDefault(); // block click
-        } else {
-            form.submit(); // manually submit
-        }
-    });
+    // // Optional: allow form submission via JS when all fields filled
+    // submitLink.addEventListener("click", function (event) {
+    //     if (!allFieldsFilled()) {
+    //         event.preventDefault(); // block click
+    //     } else {
+    //         form.submit(); // manually submit
+    //     }
+    // });
 });
 </script>
     </form>
