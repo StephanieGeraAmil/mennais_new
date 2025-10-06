@@ -328,4 +328,15 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
     </form>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form[name='Inscripción Individual']");
+
+    // Detach any submit handlers Nicepage attached
+    form.addEventListener("submit", function (e) {
+        // If Nicepage tries to prevent submission, force it back
+        e.stopImmediatePropagation();
+    }, true);
+});
+</script>
 @endsection
