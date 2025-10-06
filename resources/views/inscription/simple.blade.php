@@ -21,7 +21,7 @@
         >
             <div class="u-clearfix u-sheet u-sheet-1">
                 
-                        <h5 class="u-text u-text-default u-text-1">
+                        {{-- <h5 class="u-text u-text-default u-text-1">
                             @error('name')
                                 El campo nombre no es valido.<br />
                             @enderror
@@ -51,23 +51,17 @@
                             @error('payment_file')
                                 El campo comprobante de pago no es correcto.<br />
                             @enderror 
-                            {{-- @if ($errors->any())
-                                <div class="u-size-30">
-                                    <div class="u-layout-col">
-                                        <div class="u-align-center u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
-                                            <div class="u-container-layout u-valign-middle u-container-layout-1">
-                                                <h5 class="u-text u-text-default u-text-1">
-                                                  
-                                                    @foreach ($errors->all() as $error)
-                                                        <div>{{ $error }}</div>
-                                                    @endforeach
-                                                </h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            @endif --}}
+                           
+                        </h5> --}}
+                      
+                              
+                        <h5 class="u-text u-text-default u-text-1">
+                            
+                            @foreach ($errors->all() as $error)
+                                <div>{{ $error }}</div>
+                            @endforeach
                         </h5>
+                                            
              </div>
         </section>
     @endif

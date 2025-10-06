@@ -16,7 +16,7 @@
 </head>
 <body style="width: 1024px; font-size:20px; font-family:'Open Sans',sans-serif"; >
     <div style="width:934px; margin-top:200px; text-align:right">
-        Montevideo, viernes 26 de julio de 2024
+        Montevideo, miércoles 6 de agosto de 2025
         </div>
     <div style="margin-left:80px; margin-top:49px">
         Se certifica que:
@@ -25,9 +25,14 @@
         {{$name}}, C.I.: {{$document}} 
     </div>
     
-    <div style="width:85%;margin-left:80px; margin-top:10px;text-align:center;">
+    {{-- <div style="width:85%;margin-left:80px; margin-top:10px;text-align:center;">
         Ha participado de {{env('EVENT_NAME')}}, <BR/>
         organizado por AUDEC, el día {!! $attendance_text !!}
+  
+    </div> --}}
+     <div style="width:85%;margin-left:80px; margin-top:10px;text-align:center;">
+        Ha participado del Congreso Pedagógico Educación Emocional<BR/> Desarrollando competencias para el siglo XXI <BR/>
+        organizado por el Colegio La Mennais, el día 2 de agosto del 2025
   
     </div>
 </body>
