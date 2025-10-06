@@ -232,7 +232,7 @@
 
             <a 
             href="https://carlosgera.com" 
-            onclick="event.stopPropagation();" 
+            onclick="event.stopPropagation(); window.location.href=this.href; return false;"
             class="u-btn u-btn-submit u-button-style u-btn-3"
             type="button"
             >Volver</a>
