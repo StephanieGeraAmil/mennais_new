@@ -328,7 +328,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
     </form>
-    <script>
+    {{-- <script>
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form[name='Inscripción Individual']");
 
@@ -338,5 +338,5 @@ document.addEventListener("DOMContentLoaded", function () {
         e.stopImmediatePropagation();
     }, true);
 });
-</script>
+</script> --}}
 @endsection
