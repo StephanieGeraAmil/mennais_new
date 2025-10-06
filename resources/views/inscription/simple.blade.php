@@ -231,7 +231,8 @@
     <div class="u-align-left u-form-group u-form-submit">
 
             <a 
-            href="https://carlosgera.com"  
+            href="https://carlosgera.com" 
+            onclick="event.stopPropagation();" 
             class="u-btn u-btn-submit u-button-style u-btn-3"
             type="button"
             >Volver</a>
