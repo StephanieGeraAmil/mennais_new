@@ -5,7 +5,7 @@
 @endsection
 @section('notifications')
     @if (Session::has('msg'))
-    
+    message
      <section class="u-clearfix u-custom-color-1 u-section-5" id="sec-ef85">
             <div class="u-clearfix u-sheet u-sheet-1">
                 <p class="u-align-center u-text u-text-1">
