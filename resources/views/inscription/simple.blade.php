@@ -77,7 +77,7 @@
     name="Inscripción Individual" 
     style="padding: 10px"
     enctype="multipart/form-data"
-    data-np-ajax="false">
+   >
         @csrf
       
     <input type="hidden" name="type" value="hibrido">
