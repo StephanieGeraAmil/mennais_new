@@ -45,7 +45,7 @@ class SimpleInscriptionRequest extends FormRequest
     public function messages()
     {
         return [
-            'document.unique' => 'Esta cédula ya se encuentra registrada. Si aún no recibió el email de confirmación, comuníquese con Audec.',
+            'document.unique' => 'Este documento ya se encuentra registrada. Si aún no recibió el email de confirmación, comuníquese con AUDEC.',
         ];
     }
     

@@ -76,7 +76,8 @@
     source="custom" 
     name="Inscripción Individual" 
     style="padding: 10px"
-    enctype="multipart/form-data">
+    enctype="multipart/form-data"
+    data-np-ajax="false">
         @csrf
       
     <input type="hidden" name="type" value="hibrido">
@@ -237,14 +238,16 @@
             type="button"
             >Volver</a>
     
-             
+            <button type="submit" id="submit-btn" class="u-btn u-btn-submit u-button-style u-btn-3">
+                Enviar
+            </button>
 
-             <a onclick="$(this).closest('form').submit()"
+             {{-- <a onclick="$(this).closest('form').submit()"
                 id="submit-btn"
                 class="u-btn u-btn-submit u-button-style u-btn-3"
-                >Enviar</a>
+                >Enviar</a> --}}
     </div>
-   <script>
+   {{-- <script>
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form[name='Inscripción Individual']");
     const requiredFields = form.querySelectorAll("[required]");
@@ -286,6 +289,42 @@ document.addEventListener("DOMContentLoaded", function () {
     //         form.submit(); // manually submit
     //     }
     // });
+});
+</script> --}}
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form[name='Inscripción Individual']");
+    const requiredFields = form.querySelectorAll("[required]");
+    const submitBtn = document.querySelector("#submit-btn");
+
+    function allFieldsFilled() {
+        for (let field of requiredFields) {
+            if (field.type === "file" && !field.files.length) return false;
+            if (field.type !== "file" && !field.value.trim()) return false;
+        }
+        return true;
+    }
+
+    function updateButtonState() {
+        const filled = allFieldsFilled();
+
+        // Disable or enable the button cleanly
+        submitBtn.disabled = !filled;
+
+        // Optional visual feedback
+        submitBtn.style.opacity = filled ? "1" : "0.5";
+        submitBtn.style.cursor = filled ? "pointer" : "not-allowed";
+    }
+
+    // Initialize state
+    updateButtonState();
+
+    // Watch all inputs for changes
+    requiredFields.forEach((field) => {
+        field.addEventListener("input", updateButtonState);
+        field.addEventListener("change", updateButtonState);
+    });
 });
 </script>
     </form>
