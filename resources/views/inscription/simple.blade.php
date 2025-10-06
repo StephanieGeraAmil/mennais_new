@@ -252,15 +252,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
  --}}
 
-
 @extends('layouts.formtemplate')
 @section('title')
  <h3 class="u-align-center u-text u-text-1">Inscripción Individual</h3>
-    
+
 @endsection
 @section('notifications')
     @if (Session::has('msg'))
-    message
+
      <section class="u-clearfix u-custom-color-1 u-section-5" id="sec-ef85">
             <div class="u-clearfix u-sheet u-sheet-1">
                 <p class="u-align-center u-text u-text-1">
@@ -270,17 +269,18 @@ document.addEventListener("DOMContentLoaded", function () {
     </section>
     @endif
     @if ($errors->any())
+    error
         <section
             class="u-clearfix u-palette-2-light-2 u-section-4"
             id="block-7"
         >
             <div class="u-clearfix u-sheet u-sheet-1">
-                
-                        {{-- <h5 class="u-text u-text-default u-text-1">
+
+                        <h5 class="u-text u-text-default u-text-1">
                             @error('name')
                                 El campo nombre no es valido.<br />
                             @enderror
-                    
+
                             @error('document')
                                 @if ($message == 'The document has already been taken.')
                                     Su cédula de indentidad ya se encuentra inscripta. <BR />
@@ -292,7 +292,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             @error('email')
                                 El campo email no es correcto.<br />
                             @enderror
-                    
+
                             @error('institution_name')
                                 El campo institución no es correcto.<br />
                             @enderror
@@ -302,21 +302,27 @@ document.addEventListener("DOMContentLoaded", function () {
                             @error('city')
                                 El campo ciudad no es correcto.<br />
                             @enderror 
-                           
+
                             @error('payment_file')
                                 El campo comprobante de pago no es correcto.<br />
                             @enderror 
-                           
-                        </h5> --}}
-                      
-                              
-                        <h5 class="u-text u-text-default u-text-1">
-                            
-                            @foreach ($errors->all() as $error)
-                                <div>{{ $error }}</div>
-                            @endforeach
+                            {{-- @if ($errors->any())
+                                <div class="u-size-30">
+                                    <div class="u-layout-col">
+                                        <div class="u-align-center u-container-style u-layout-cell u-palette-2-base u-size-60 u-layout-cell-1">
+                                            <div class="u-container-layout u-valign-middle u-container-layout-1">
+                                                <h5 class="u-text u-text-default u-text-1">
+                                                  
+                                                    @foreach ($errors->all() as $error)
+                                                        <div>{{ $error }}</div>
+                                                    @endforeach
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endif --}}
                         </h5>
-                                            
              </div>
         </section>
     @endif
@@ -331,12 +337,11 @@ document.addEventListener("DOMContentLoaded", function () {
     source="custom" 
     name="Inscripción Individual" 
     style="padding: 10px"
-    enctype="multipart/form-data"
-   >
+    enctype="multipart/form-data">
         @csrf
-      
+
     <input type="hidden" name="type" value="hibrido">
-   
+
         <div class="u-form-group u-form-name">
             <label for="name-072d" class="u-label">Nombre Completo</label>
             <input
@@ -426,7 +431,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <label for="file-upload-2d36" class="u-label"
                 >Comprobante de pago</label
             >
-      
+
                             <div class="u-file-input-wrapper">
                                 <a class="u-btn u-button-style u-upload-button"
                                     >Adjuntar</a
@@ -483,26 +488,22 @@ document.addEventListener("DOMContentLoaded", function () {
                 /></span>
             </div>
     </div>
-     
+
     <div class="u-align-left u-form-group u-form-submit">
 
             <a 
-            href="https://carlosgera.com" 
-            onclick="event.stopPropagation(); window.location.href=this.href; return false;"
+            href="https://carlosgera.com"  
             class="u-btn u-btn-submit u-button-style u-btn-3"
-            type="button"
             >Volver</a>
-    
-            <button type="submit" id="submit-btn" class="u-btn u-btn-submit u-button-style u-btn-3">
-                Enviar
-            </button>
 
-             {{-- <a onclick="$(this).closest('form').submit()"
+
+
+             <a onclick="$(this).closest('form').submit()"
                 id="submit-btn"
                 class="u-btn u-btn-submit u-button-style u-btn-3"
-                >Enviar</a> --}}
+                >Enviar</a>
     </div>
-   {{-- <script>
+   <script>
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form[name='Inscripción Individual']");
     const requiredFields = form.querySelectorAll("[required]");
@@ -522,8 +523,8 @@ document.addEventListener("DOMContentLoaded", function () {
             submitLink.style.opacity = "1";
         } else {
             submitLink.classList.add("disabled");
-            submitLink.style.pointerEvents = "none"; 
-            submitLink.style.opacity = "0.5";
+            submitLink.style.pointerEvents = "none"; // disables clicks
+            submitLink.style.opacity = "0.5"; // visual cue
         }
     }
 
@@ -536,62 +537,15 @@ document.addEventListener("DOMContentLoaded", function () {
         field.addEventListener("change", updateLinkState);
     });
 
-    // // Optional: allow form submission via JS when all fields filled
-    // submitLink.addEventListener("click", function (event) {
-    //     if (!allFieldsFilled()) {
-    //         event.preventDefault(); // block click
-    //     } else {
-    //         form.submit(); // manually submit
-    //     }
-    // });
-});
-</script> --}}
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector("form[name='Inscripción Individual']");
-    const requiredFields = form.querySelectorAll("[required]");
-    const submitBtn = document.querySelector("#submit-btn");
-
-    function allFieldsFilled() {
-        for (let field of requiredFields) {
-            if (field.type === "file" && !field.files.length) return false;
-            if (field.type !== "file" && !field.value.trim()) return false;
+    // Optional: allow form submission via JS when all fields filled
+    submitLink.addEventListener("click", function (event) {
+        if (!allFieldsFilled()) {
+            event.preventDefault(); // block click
+        } else {
+            form.submit(); // manually submit
         }
-        return true;
-    }
-
-    function updateButtonState() {
-        const filled = allFieldsFilled();
-
-        // Disable or enable the button cleanly
-        submitBtn.disabled = !filled;
-
-        // Optional visual feedback
-        submitBtn.style.opacity = filled ? "1" : "0.5";
-        submitBtn.style.cursor = filled ? "pointer" : "not-allowed";
-    }
-
-    // Initialize state
-    updateButtonState();
-
-    // Watch all inputs for changes
-    requiredFields.forEach((field) => {
-        field.addEventListener("input", updateButtonState);
-        field.addEventListener("change", updateButtonState);
     });
 });
 </script>
     </form>
-    {{-- <script>
-document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector("form[name='Inscripción Individual']");
-
-    // Detach any submit handlers Nicepage attached
-    form.addEventListener("submit", function (e) {
-        // If Nicepage tries to prevent submission, force it back
-        e.stopImmediatePropagation();
-    }, true);
-});
-</script> --}}
 @endsection
