@@ -507,7 +507,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <!-- Volver -->
     <a 
         href="https://carlosgera.com"
-        class="u-btn u-button-style u-btn-3"
+        class="u-btn u-btn-submit u-button-style u-btn-3"
        
     >
         Volver
@@ -523,7 +523,7 @@ document.addEventListener("DOMContentLoaded", function () {
     >
         Enviar
     </button>
-</div>
+    </div>
    {{-- <script>
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form[name='Inscripción Individual']");
