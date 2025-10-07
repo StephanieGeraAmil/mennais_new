@@ -140,8 +140,8 @@ background-color: #756c90 !important
 
 
 @section('form')
- <div class="u-align-left u-form-group u-form-submit">
-    <h3 class="u-align-center u-text u-text-1">BIENVENIDO</h3>
+ <div class="u-form-group u-form-submit">
+    <h3 class="u-text u-text-1">BIENVENIDO</h3>
             <a 
            href="{{$zoom_link}}" 
             class="u-align-center u-btn u-btn-submit u-button-style u-btn-3"
