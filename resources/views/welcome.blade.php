@@ -138,19 +138,10 @@ background-color: #756c90 !important
 
     
 
-@section('info')
 
-    <section class="u-clearfix u-section-3" id="block-3">
-            <div
-                class=""
-            >
-               <h3 class="u-align-center u-text u-text-1">BIENVENIDO</h3>
-            </div>
-        </section>
-@endsection
 @section('form')
  <div class="u-align-left u-form-group u-form-submit">
-
+    <h3 class="u-align-center u-text u-text-1">BIENVENIDO</h3>
             <a 
            href="{{$zoom_link}}" 
             class="u-btn u-btn-submit u-button-style u-btn-3"
