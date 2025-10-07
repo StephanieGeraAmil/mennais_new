@@ -488,7 +488,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 /></span>
             </div>
     </div>
-
+{{-- 
     <div class="u-align-left u-form-group u-form-submit">
 
             <a 
@@ -502,8 +502,29 @@ document.addEventListener("DOMContentLoaded", function () {
                 id="submit-btn"
                 class="u-btn u-btn-submit u-button-style u-btn-3"
                 >Enviar</a>
-    </div>
-   <script>
+    </div> --}}
+    <div class="u-align-left u-form-group u-form-submit">
+    <!-- Volver -->
+    <a 
+        href="https://carlosgera.com"
+        class="u-btn u-button-style u-btn-3"
+        type="button"
+        onclick="event.stopPropagation(); window.location.href=this.href; return false;"
+    >
+        Volver
+    </a>
+
+    <!-- Enviar -->
+    <button 
+        type="submit"
+        id="submit-btn"
+        class="u-btn u-btn-submit u-button-style u-btn-3"
+        style="pointer-events: auto; opacity: 1;"
+    >
+        Enviar
+    </button>
+</div>
+   {{-- <script>
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form[name='Inscripción Individual']");
     const requiredFields = form.querySelectorAll("[required]");
@@ -523,27 +544,54 @@ document.addEventListener("DOMContentLoaded", function () {
             submitLink.style.opacity = "1";
         } else {
             submitLink.classList.add("disabled");
-            submitLink.style.pointerEvents = "none"; // disables clicks
-            submitLink.style.opacity = "0.5"; // visual cue
+            submitLink.style.pointerEvents = "none"; 
+            submitLink.style.opacity = "0.5"; 
         }
     }
 
-    // Initial state
+    
     updateLinkState();
 
-    // Monitor input changes
+
     requiredFields.forEach((field) => {
         field.addEventListener("input", updateLinkState);
         field.addEventListener("change", updateLinkState);
     });
 
-    // Optional: allow form submission via JS when all fields filled
+
     submitLink.addEventListener("click", function (event) {
         if (!allFieldsFilled()) {
-            event.preventDefault(); // block click
+            event.preventDefault(); 
         } else {
-            form.submit(); // manually submit
+            form.submit(); 
         }
+    });
+});
+</script> --}}
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form[name='Inscripción Individual']");
+    const requiredFields = form.querySelectorAll("[required]");
+    const submitBtn = document.querySelector("#submit-btn");
+
+    function allFieldsFilled() {
+        return Array.from(requiredFields).every(field => {
+            if (field.type === "file") return field.files.length > 0;
+            return field.value.trim() !== "";
+        });
+    }
+
+    function updateButtonState() {
+        const filled = allFieldsFilled();
+        submitBtn.disabled = !filled;
+        submitBtn.style.opacity = filled ? "1" : "0.5";
+        submitBtn.style.cursor = filled ? "pointer" : "not-allowed";
+    }
+
+    updateButtonState();
+    requiredFields.forEach(field => {
+        field.addEventListener("input", updateButtonState);
+        field.addEventListener("change", updateButtonState);
     });
 });
 </script>
