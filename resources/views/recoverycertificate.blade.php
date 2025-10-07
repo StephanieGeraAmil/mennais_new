@@ -180,7 +180,7 @@
 @endsection
 
 @section('form')
-<form class="w-full max-w-sm certificate_form" action="{{Route('inscription.certificateRecoveryMail')}}" method="POST">
+<form id="Certificate Recovery" class="w-full max-w-sm certificate_form" action="{{Route('inscription.certificateRecoveryMail')}}" method="POST">
     @csrf
      <div class="u-form-group u-form-name">
             <label for="document-072d" class="u-label">Cédula de Identidad</label>
@@ -197,11 +197,62 @@
         </br>
         </br>
       <div class="u-align-left u-form-group u-form-submit">
-             <a onclick="$(this).closest('form').submit()"
+             {{-- <a onclick="$(this).closest('form').submit()"
                 id="submit-btn"
                 class="u-btn u-btn-submit u-button-style u-btn-3"
-                >Enviar</a>
+                >Enviar</a> --}}
+             <a id="submit-btn" class="u-btn u-btn-submit u-button-style u-btn-3">Enviar</a>
     </div>
+
+      <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form[name='Certificate Recovery']");
+    const requiredFields = form.querySelectorAll("[required]");
+    const submitLink = document.querySelector("#submit-btn");
+   
+    function allFieldsFilled() {
+        for (let field of requiredFields) {
+            if (field.type === "file" && !field.files.length) return false;
+            if (field.type !== "file" && !field.value.trim()) return false;
+        }
+        return true;
+    }
+
+    function updateLinkState() {
+        if (allFieldsFilled()) {
+            submitLink.classList.remove("disabled");
+            submitLink.style.pointerEvents = "auto";
+            submitLink.style.opacity = "1";
+        } else {
+            submitLink.classList.add("disabled");
+            submitLink.style.pointerEvents = "none"; 
+            submitLink.style.opacity = "0.5"; 
+        }
+    }
+
+
+    updateLinkState();
+
+
+    requiredFields.forEach((field) => {
+        field.addEventListener("input", updateLinkState);
+        field.addEventListener("change", updateLinkState);
+    });
+
+   
+   submitLink.addEventListener("click", function (e) {
+        e.preventDefault();
+        if (allFieldsFilled()) {
+            submitLink.style.pointerEvents = "none";
+            submitLink.style.opacity = "0.5";
+            submitLink.textContent = "Enviando...";
+            form.submit(); 
+        }
+    });
+
+
+});
+</script>
 </form>
 @endsection
 @section('custom_script')
