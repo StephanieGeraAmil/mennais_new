@@ -180,7 +180,7 @@
 @endsection
 
 @section('form')
-<form id="Certificate Recovery" class="w-full max-w-sm certificate_form" action="{{Route('inscription.certificateRecoveryMail')}}" method="POST">
+<form name="Certificate Recovery" class="w-full max-w-sm certificate_form" action="{{Route('inscription.certificateRecoveryMail')}}" method="POST">
     @csrf
      <div class="u-form-group u-form-name">
             <label for="document-072d" class="u-label">Cédula de Identidad</label>
