@@ -67,13 +67,8 @@ background-color: #756c90 !important
 
     
 
-@section('info')
-
-    <section class="u-clearfix u-section-3" id="block-3">
-            <div
-                class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1"
-            >
-               <h3 class="u-align-center u-text u-text-1">BIENVENIDO</h3>
-            </div>
-        </section>
+@section('form')
+ <div class="u-align-center u-form-group u-form-submit">
+    <h3 class="u-align-center u-text u-text-1">BIENVENIDO</h3>
+         </div>
 @endsection
