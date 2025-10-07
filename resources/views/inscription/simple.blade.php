@@ -269,7 +269,6 @@ document.addEventListener("DOMContentLoaded", function () {
     </section>
     @endif
     @if ($errors->any())
-    error
         <section
             class="u-clearfix u-palette-2-light-2 u-section-4"
             id="block-7"
@@ -331,7 +330,6 @@ document.addEventListener("DOMContentLoaded", function () {
 @section('form')
 
     <form 
-    id="inscription-form"
     action="/store_inscription" 
     method="POST" 
     class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form"
@@ -489,7 +487,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 /></span>
             </div>
     </div>
-{{-- 
+
     <div class="u-align-left u-form-group u-form-submit">
 
             <a 
@@ -503,33 +501,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 id="submit-btn"
                 class="u-btn u-btn-submit u-button-style u-btn-3"
                 >Enviar</a>
-    </div> --}}
-    <div class="u-align-left u-form-group u-form-submit">
-    <!-- Volver -->
-    <a 
-        href="https://carlosgera.com"
-        class="u-btn u-btn-submit u-button-style u-btn-3"
-       
-    >
-        Volver
-    </a>
-
-    <!-- Enviar -->
-    <button 
-        type="submit"
-        id="submit-btn"
-        class="u-btn u-btn-submit u-button-style u-btn-3"
-        style="pointer-events: auto; opacity: 1;"
-        disabled
-    >
-        Enviar
-    </button>
     </div>
-   {{-- <script>
+   <script>
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form[name='Inscripción Individual']");
     const requiredFields = form.querySelectorAll("[required]");
     const submitLink = document.querySelector("#submit-btn");
+    const volverLink = document.querySelector("a[href='https://carlosgera.com']");
     function allFieldsFilled() {
         for (let field of requiredFields) {
             if (field.type === "file" && !field.files.length) return false;
@@ -550,7 +528,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    
+
     updateLinkState();
 
 
@@ -559,31 +537,20 @@ document.addEventListener("DOMContentLoaded", function () {
         field.addEventListener("change", updateLinkState);
     });
 
-
-    submitLink.addEventListener("click", function (event) {
-        if (!allFieldsFilled()) {
-            event.preventDefault(); 
-        } else {
+   
+   submitLink.addEventListener("click", function (e) {
+        e.preventDefault();
+        if (allFieldsFilled()) {
             form.submit(); 
         }
     });
+
+
+    volverLink.addEventListener("click", function (e) {
+        e.preventDefault();
+        window.location.href = this.href; 
+    });
 });
-</script> --}}
-<script>
-  const form = document.getElementById('inscription-form');
-  const submitBtn = document.getElementById('submit-btn');
-  
-
-  function checkRequired() {
-    const allFilled = [...form.querySelectorAll('[required]')].every(
-      (input) => input.value.trim() !== ''
-    );
-    submitBtn.disabled = !allFilled;
-  }
-
-  form.addEventListener('input', checkRequired);
-  form.addEventListener('change', checkRequired);
-
-
-  checkRequired();
 </script>
+    </form>
+@endsection
