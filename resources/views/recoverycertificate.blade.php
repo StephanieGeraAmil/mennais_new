@@ -155,9 +155,6 @@
                         <h5 class="u-text u-text-default u-text-1">
                             El vínculo se ha enviado correctamente.
                         </h5>
-                <p class="u-align-center u-text u-text-1">
-                        <h5 class="u-text u-text-default u-text-1">   El vínculo se ha enviado correctamente.</h5>
-                </p>
             </div>
           
       
