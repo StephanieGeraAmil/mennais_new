@@ -508,8 +508,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <a 
         href="https://carlosgera.com"
         class="u-btn u-button-style u-btn-3"
-        type="button"
-        onclick="event.stopPropagation(); window.location.href=this.href; return false;"
+       
     >
         Volver
     </a>
@@ -520,6 +519,7 @@ document.addEventListener("DOMContentLoaded", function () {
         id="submit-btn"
         class="u-btn u-btn-submit u-button-style u-btn-3"
         style="pointer-events: auto; opacity: 1;"
+        disabled
     >
         Enviar
     </button>
@@ -569,31 +569,20 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script> --}}
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector("form[name='Inscripción Individual']");
-    const requiredFields = form.querySelectorAll("[required]");
-    const submitBtn = document.querySelector("#submit-btn");
+  const form = document.getElementById('inscription-form');
+  const submitBtn = document.getElementById('submit-btn');
+  
 
-    function allFieldsFilled() {
-        return Array.from(requiredFields).every(field => {
-            if (field.type === "file") return field.files.length > 0;
-            return field.value.trim() !== "";
-        });
-    }
+  function checkRequired() {
+    const allFilled = [...form.querySelectorAll('[required]')].every(
+      (input) => input.value.trim() !== ''
+    );
+    submitBtn.disabled = !allFilled;
+  }
 
-    function updateButtonState() {
-        const filled = allFieldsFilled();
-        submitBtn.disabled = !filled;
-        submitBtn.style.opacity = filled ? "1" : "0.5";
-        submitBtn.style.cursor = filled ? "pointer" : "not-allowed";
-    }
+  form.addEventListener('input', checkRequired);
+  form.addEventListener('change', checkRequired);
 
-    updateButtonState();
-    requiredFields.forEach(field => {
-        field.addEventListener("input", updateButtonState);
-        field.addEventListener("change", updateButtonState);
-    });
-});
+
+  checkRequired();
 </script>
-    </form>
-@endsection
