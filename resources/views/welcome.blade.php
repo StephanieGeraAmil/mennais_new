@@ -144,7 +144,7 @@ background-color: #756c90 !important
     <h3 class="u-align-center u-text u-text-1">BIENVENIDO</h3>
             <a 
            href="{{$zoom_link}}" 
-            class="u-btn u-btn-submit u-button-style u-btn-3"
+            class="u-align-center u-btn u-btn-submit u-button-style u-btn-3"
             >Ingresar a Zoom</a>
         </div>
 @endsection
