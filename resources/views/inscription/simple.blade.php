@@ -55,6 +55,7 @@
                 placeholder=""
                 id="name-072d"
                 name="name"
+                value="{{ old('name') }}"
                 class="u-input u-input-rectangle"
                 required=""
             />
@@ -66,6 +67,7 @@
                 placeholder="(1234567-8)"
                 id="document-072d"
                 name="document"
+                value="{{ old('document') }}"
                 class="u-input u-input-rectangle"
                 required=""
             />
@@ -79,6 +81,7 @@
                 placeholder=""
                 id="email-072d"
                 name="email"
+                value="{{ old('email') }}"
                 class="u-input u-input-rectangle"
                 required=""
             />
@@ -90,6 +93,7 @@
                 placeholder=""
                 id="institution-072d"
                 name="institution_name"
+                value="{{ old('institution_name') }}"
                 class="u-input u-input-rectangle"
                 required=""
             />
@@ -104,11 +108,11 @@
                     name="institution_type"
                     class="u-input u-input-rectangle"
                 >
-                    <option value="Educación Inicial" data-calc="">Educación Inicial</option>
-                    <option value="Primaria" data-calc="">Primaria</option>
-                    <option value="Secundaria" data-calc="">Secundaria</option>
-                    <option value="Equipo Directivo" data-calc="">Equipo Directivo</option>
-                    <option value="Otro" data-calc="">Otro</option>
+                    <option value="Educación Inicial" {{ old('institution_type') == 'Educación Inicial' ? 'selected' : '' }}>Educación Inicial</option>
+                    <option value="Primaria" {{ old('institution_type') == 'Primaria' ? 'selected' : '' }}>Primaria</option>
+                    <option value="Secundaria" {{ old('institution_type') == 'Secundaria' ? 'selected' : '' }}>Secundaria</option>
+                    <option value="Equipo Directivo" {{ old('institution_type') == 'Equipo Directivo' ? 'selected' : '' }}>Equipo Directivo</option>
+                    <option value="Otro" {{ old('institution_type') == 'Otro' ? 'selected' : '' }}>Otro</option>
                 </select>
                 <svg
                     class="u-caret u-caret-svg"
@@ -249,6 +253,9 @@ document.addEventListener("DOMContentLoaded", function () {
    submitLink.addEventListener("click", function (e) {
         e.preventDefault();
         if (allFieldsFilled()) {
+            submitLink.style.pointerEvents = "none";
+            submitLink.style.opacity = "0.5";
+            submitLink.textContent = "Enviando...";
             form.submit(); 
         }
     });
