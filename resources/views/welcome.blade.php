@@ -142,7 +142,7 @@ background-color: #756c90 !important
 
     <section class="u-clearfix u-section-3" id="block-3">
             <div
-                class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1"
+                class=""
             >
                <h3 class="u-align-center u-text u-text-1">BIENVENIDO</h3>
             </div>

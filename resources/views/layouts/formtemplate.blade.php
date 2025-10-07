@@ -91,8 +91,9 @@
         </section> --}}
    <section class="u-clearfix u-section-6" id="block-2">
             <div class="u-clearfix u-sheet u-valign-top u-sheet-1">
+                 @yield('info')
                 <div class="u-align-center u-form u-form-1">
-                    @yield('info')
+                   
                     @yield('form')
                 </div>
             </div>
