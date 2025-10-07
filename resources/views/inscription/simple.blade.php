@@ -331,6 +331,7 @@ document.addEventListener("DOMContentLoaded", function () {
 @section('form')
 
     <form 
+    id="inscription-form"
     action="/store_inscription" 
     method="POST" 
     class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form"
