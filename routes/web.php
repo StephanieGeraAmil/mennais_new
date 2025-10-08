@@ -50,6 +50,8 @@ Route::get('/admin_group_inscription/{group_inscription_id}/{code}',[Inscription
 Route::post('/store_inscription',[SimpleInscriptionController::class,'simpleInscriptionStore']);
 /** Guardar inscripción grupal y reenvío al sitio de administración de códigos de invitación */
 Route::post('/store_group_inscription',[GroupInscriptionController::class,'groupInscriptionStore']);
+
+
 /** Guardar incripción con código */
 Route::post('/store_code_inscription',[CodeInscriptionController::class,'codeInscriptionStore']);
 /** Envío de invitación */
@@ -80,6 +82,7 @@ Route::resource('/admin/user_data', UserDataController::class)->middleware('auth
 
 Route::get('/inscription',[SimpleInscriptionController::class,'simpleInscription']); 
 Route::get('/certificate', [InscriptionController::class,'certificateRecovery']);
+Route::get('/group-inscription/{id}/join', [App\Http\Controllers\GroupInscriptionController::class, 'showJoinForm'])->name('group.inscription.join');
 
 Auth::routes();
 

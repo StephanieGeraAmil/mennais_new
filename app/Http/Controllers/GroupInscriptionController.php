@@ -5,23 +5,87 @@ namespace App\Http\Controllers;
 use App\Enums\InscriptionTypeEnum;
 use App\Http\Requests\GroupInscriptionRequest;
 use App\Http\Requests\GroupCodeUseRequest;
-
+use App\Mail\FacetofaceInscriptionMail;
 use App\Mail\AdminGroupInscriptionMail;
 use App\Mail\GroupInscriptionMail;
+use App\Mail\AdminInscriptionMail;
 use App\Models\Code;
 use App\Models\GroupInscription;
 use App\Models\Payment;
+use App\Models\UserData;
+use App\Models\Inscription;
 use Carbon\Carbon;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
-
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 class GroupInscriptionController extends Controller
 {
     public function groupInscription()
     {
         return view('inscription.group');
     }
+    public function showJoinForm($id)
+    {
+        $group = \App\Models\GroupInscription::findOrFail($id);
+        return view('inscription.join', compact('group'));
+    }
+
+    public function joinStore(Request $request, $id)
+    {
+        $group = \App\Models\GroupInscription::findOrFail($id);
+
+       $validated_data = $request->validate([
+            'code' => 'required|string',
+            'type' => 'required|in:virtual,hibrido',
+            'name' => 'required|string|max:255',
+            'email' => 'required|email',
+            'document' => 'nullable|string',
+            'institution_name' => 'nullable|string',
+            'institution_type' => 'nullable|string',
+        ]);
+
+
+     $useRequest = new GroupCodeUseRequest([
+            'group_inscription_id' => $group->id,
+            'code' => $validated_data['code'],
+            'type' => $validated_data['type'],
+        ]);
+
+    $controller = app(self::class);
+    $response = $controller->groupInscriptionUse($useRequest);
+
+    if ($response->getStatusCode() !== 200) {
+        return back()->withErrors(['error' => json_decode($response->getContent(), true)['error']]);
+    }   
+$clean_name = preg_replace('/[^A-Za-z0-9\-]/', '_', $request->get('name'));
+     $user_data = UserData::create([
+            'name' => $clean_name,
+            'document' => Arr::get($validated_data, "document"),
+            'email' => $validated_data['email'],
+            'institution_name' => Arr::get($validated_data, 'institution_name'),
+            'institution_type' => Arr::get($validated_data, 'institution_type'),
+        ]);
+         $inscription = Inscription::create([
+            'user_data_id' => $user_data->id,
+            'payment_id' => null,
+            'status' => 1,
+            'type' => $validated_data['type'] === 'hybrid' ? InscriptionTypeEnum::HIBRIDO : InscriptionTypeEnum::REMOTO,
+        ]);
+        try {
+            Mail::to($user_data->email)->send(new FacetofaceInscriptionMail($inscription));   
+            Mail::to(env('ADMIN_EMAIL', "cgerauy@gmail.com"))->send(new AdminInscriptionMail($inscription));     
+            session()->flash('msg', 'Inscripción realizada con exito usando un link de inscripcion grupal!!!');
+        } catch (\Throwable $th) {
+            Log::error("error: ".$th);
+            Log::error("SimpleInscriptionController::Email: ".$user_data->email."; ".env('ADMIN_EMAIL'));
+            session()->flash('msg', 'Inscripción realizada con exito usando un link de inscripcion grupal. En caso de no recibir el email, contactese con Audec');
+        }  
+
+    return redirect()->route('group.inscription.join', ['id' => $id])
+        ->with('success', 'Inscripción completada correctamente.');
+    }   
     
     
     public function groupInscriptionStore(GroupInscriptionRequest $request)
