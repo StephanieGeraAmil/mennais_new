@@ -22,9 +22,14 @@ class GroupInscription extends Model
         'quantity',
         'quantity_remote',
         'quantity_hybrid',
+        'quantity_remote_avaiable',
+        'quantity_hybrid_avaiable',
         'institution',
         'payment_id',
-        'code'
+        'code',
+        'code_hybrid',
+        'code_remote',
+    
     ];
 
     public function payment(){
