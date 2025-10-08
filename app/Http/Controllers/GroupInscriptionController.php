@@ -190,19 +190,19 @@ $clean_name = preg_replace('/[^A-Za-z0-9\-]/', '_', $request->get('name'));
     $code = $request->code;
 
     // Validate code matches the corresponding type
-    if ($type === 'hybrid' && $code !== $group->code_hybrid) {
-        return response()->json(['error' => 'Código híbrido incorrecto.'], 400);
+    if ($type === 'hibrido' && $code !== $group->code_hybrid) {
+        return response()->json(['error' => 'Código de inscripcion completa incorrecto.'], 400);
     }
 
-    if ($type === 'remote' && $code !== $group->code_remote) {
-        return response()->json(['error' => 'Código remoto incorrecto.'], 400);
+    if ($type === 'virtual' && $code !== $group->code_remote) {
+        return response()->json(['error' => 'Código de inscripcion virtual incorrecto.'], 400);
     }
 
     try {
         \DB::transaction(function () use ($group, $type) {
             $group->lockForUpdate();
 
-            if ($type === 'hybrid') {
+            if ($type === 'hibrido') {
                 if ($group->quantity_hybrid_avaiable <= 0) {
                     throw new \Exception('No quedan cupos híbridos disponibles.');
                 }
