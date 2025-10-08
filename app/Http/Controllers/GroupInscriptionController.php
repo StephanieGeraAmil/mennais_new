@@ -53,11 +53,11 @@ class GroupInscriptionController extends Controller
             'institution'=>Arr::get($validated_data, 'extra.institution',"")?? "",
             'phone'=>$validated_data['phone'],
             'quantity'=>Arr::get($validated_data, 'quantity_insc', 0)?? 0,
-            'quantity_remote'=>Arr::get($validated_data, 'quantity_insc_remote', 0)?? 0,
-            'quantity_hybrid'=>Arr::get($validated_data, 'quantity_insc_hybrid',0)?? 0,
+            'quantity_remote'=>Arr::get($validated_data, 'quantity_remote', 0)?? 0,
+            'quantity_hybrid'=>Arr::get($validated_data, 'quantity_hybrid',0)?? 0,
 
-            'quantity_remote_avaiable'=>Arr::get($validated_data, 'quantity_insc_remote', 0)?? 0,
-            'quantity_hybrid_avaiable'=>Arr::get($validated_data, 'quantity_insc_hybrid',0)?? 0,
+            'quantity_remote_avaiable'=>Arr::get($validated_data, 'quantity_remote', 0)?? 0,
+            'quantity_hybrid_avaiable'=>Arr::get($validated_data, 'quantity_hybrid',0)?? 0,
        
             'payment_id'=>$payment->id,
             'code'=>0,

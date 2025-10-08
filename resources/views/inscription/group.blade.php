@@ -139,8 +139,8 @@ En el siguiente paso le pediremos los datos de sus invitados.</p>
                 type="text"
                 placeholder=""
                 id="number-hybrid-072d"
-                name="number-hybrid"
-                value="{{ old('number-hybrid') }}"
+                name="quantity_hybrid"
+                value="{{ old('quantity_hybrid') }}"
                 class="u-input u-input-rectangle"
                 required=""
             />
@@ -151,8 +151,8 @@ En el siguiente paso le pediremos los datos de sus invitados.</p>
                 type="text"
                 placeholder=""
                 id="number-virtual-072d"
-                name="number-virtual"
-                value="{{ old('number-virtual') }}"
+                name="quantity_remote"
+                value="{{ old('quantity_remote') }}"
                 class="u-input u-input-rectangle"
                 required=""
             />
