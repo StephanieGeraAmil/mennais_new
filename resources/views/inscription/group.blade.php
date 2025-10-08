@@ -120,6 +120,18 @@ En el siguiente paso le pediremos los datos de sus invitados.</p>
                 required=""
             />
         </div>
+             <div class="u-form-group u-form-name">
+            <label for="phone-072d" class="u-label">Telefono</label>
+            <input
+                type="text"
+                placeholder=""
+                id="phone-072d"
+                name="phone"
+                value="{{ old('phone') }}"
+                class="u-input u-input-rectangle"
+                required=""
+            />
+        </div>
 
         <div class="u-form-group u-form-name">
             <label for="number-hybrid-072d" class="u-label">Cantidad de Invitaciones Completas</label>

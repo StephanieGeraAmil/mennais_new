@@ -17,7 +17,7 @@ class GroupInscriptionRequest extends FormRequest
         return [
             'name' => 'required|string|max:255',            
             'email' => 'required|email',
-            // 'phone' => 'required|string|max:255',
+            'phone' => 'required|string|max:255',
             'institution' => 'required|string|max:255',            
             // 'city' => 'required|string|max:255',
             'amount' => 'required|integer',
