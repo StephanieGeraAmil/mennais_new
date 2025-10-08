@@ -51,7 +51,7 @@ class GroupInscriptionController extends Controller
             'name'=>$validated_data['name'],
             'email'=>$validated_data['email'],
             'institution'=>Arr::get($validated_data, 'extra.institution',"")?? "",
-            // 'phone'=>$validated_data['phone'],
+            'phone'=>$validated_data['phone'],
             // 'quantity'=>Arr::get($validated_data, 'quantity_insc', 0)?? 0,
             'quantity_remote'=>Arr::get($validated_data, 'quantity_insc_remote', 0)?? 0,
             'quantity_hybrid'=>Arr::get($validated_data, 'quantity_insc_hybrid',0)?? 0,
