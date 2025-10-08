@@ -34,8 +34,8 @@ class GroupInscriptionController extends Controller
 
     public function joinStore(Request $request, $id)
     {
-        $group = \App\Models\GroupInscription::findOrFail($id);
-
+        // $group = \App\Models\GroupInscription::findOrFail($id);
+        $group = GroupInscription::findOrFail($id);
        $validated_data = $request->validate([
             'code' => 'required|string',
             'type' => 'required|in:virtual,hibrido',
@@ -47,14 +47,19 @@ class GroupInscriptionController extends Controller
         ]);
 
 
-     $useRequest = new GroupCodeUseRequest([
-            'group_inscription_id' => $group->id,
-            'code' => $validated_data['code'],
-            'type' => $validated_data['type'],
-        ]);
+    //  $useRequest = new GroupCodeUseRequest([
+    //         'group_inscription_id' => $group->id,
+    //         'code' => $validated_data['code'],
+    //         'type' => $validated_data['type'],
+    //     ]);
 
-    $controller = app(self::class);
-    $response = $controller->groupInscriptionUse($useRequest);
+    // $controller = app(self::class);
+    // $response = $controller->groupInscriptionUse($useRequest);
+        $decrementResult = $this->decrementGroupAvailability($group, $validated_data['code'], $validated_data['type']);
+
+    if ($decrementResult !== true) {
+        return back()->withErrors(['error' => $decrementResult]);
+    }
 
     if ($response->getStatusCode() !== 200) {
         return back()->withErrors(['error' => json_decode($response->getContent(), true)['error']]);
@@ -178,50 +183,84 @@ $clean_name = preg_replace('/[^A-Za-z0-9\-]/', '_', $request->get('name'));
         }        
         return redirect($group_inscription->getUrl());        
     }
-   public function groupInscriptionUse(GroupCodeUseRequest $request)
+//    public function groupInscriptionUse(GroupCodeUseRequest $request)
+// {
+//     $group = \App\Models\GroupInscription::find($request->group_inscription_id);
+
+//     if (!$group) {
+//         return response()->json(['error' => 'Inscripción grupal no encontrada.'], 404);
+//     }
+
+//     $type = $request->type;
+//     $code = $request->code;
+
+//     // Validate code matches the corresponding type
+//     if ($type === 'hibrido' && $code !== $group->code_hybrid) {
+//         return response()->json(['error' => 'Código de inscripcion completa incorrecto.'], 400);
+//     }
+
+//     if ($type === 'virtual' && $code !== $group->code_remote) {
+//         return response()->json(['error' => 'Código de inscripcion virtual incorrecto.'], 400);
+//     }
+
+//     try {
+//         \DB::transaction(function () use ($group, $type) {
+//             $group->lockForUpdate();
+
+//             if ($type === 'hibrido') {
+//                 if ($group->quantity_hybrid_avaiable <= 0) {
+//                     throw new \Exception('No quedan cupos híbridos disponibles.');
+//                 }
+
+//                 $group->decrement('quantity_hybrid_avaiable', 1);
+//             } else {
+//                 if ($group->quantity_remote_avaiable <= 0) {
+//                     throw new \Exception('No quedan cupos remotos disponibles.');
+//                 }
+
+//                 $group->decrement('quantity_remote_avaiable', 1);
+//             }
+//         });
+//     } catch (\Exception $e) {
+//         return response()->json(['error' => $e->getMessage()], 400);
+//     }
+
+//     return response()->json(['success' => 'Código utilizado correctamente.'], 200);
+// }
+private function decrementGroupAvailability($group, $code, $type)
 {
-    $group = \App\Models\GroupInscription::find($request->group_inscription_id);
-
-    if (!$group) {
-        return response()->json(['error' => 'Inscripción grupal no encontrada.'], 404);
-    }
-
-    $type = $request->type;
-    $code = $request->code;
-
-    // Validate code matches the corresponding type
+ 
     if ($type === 'hibrido' && $code !== $group->code_hybrid) {
-        return response()->json(['error' => 'Código de inscripcion completa incorrecto.'], 400);
+        return 'Código de inscripción completa incorrecto.';
     }
 
     if ($type === 'virtual' && $code !== $group->code_remote) {
-        return response()->json(['error' => 'Código de inscripcion virtual incorrecto.'], 400);
+        return 'Código de inscripción virtual incorrecto.';
     }
 
     try {
-        \DB::transaction(function () use ($group, $type) {
+        DB::transaction(function () use ($group, $type) {
             $group->lockForUpdate();
 
             if ($type === 'hibrido') {
                 if ($group->quantity_hybrid_avaiable <= 0) {
                     throw new \Exception('No quedan cupos híbridos disponibles.');
                 }
-
                 $group->decrement('quantity_hybrid_avaiable', 1);
             } else {
                 if ($group->quantity_remote_avaiable <= 0) {
-                    throw new \Exception('No quedan cupos remotos disponibles.');
+                    throw new \Exception('No quedan cupos virtuales disponibles.');
                 }
-
                 $group->decrement('quantity_remote_avaiable', 1);
             }
         });
     } catch (\Exception $e) {
-        return response()->json(['error' => $e->getMessage()], 400);
+        return $e->getMessage();
     }
 
-    return response()->json(['success' => 'Código utilizado correctamente.'], 200);
+    return true; 
 }
+
     
     private function codeGenerator($i = 15){
         $rand_code = rand(10,500);
