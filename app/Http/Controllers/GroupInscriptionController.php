@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Enums\InscriptionTypeEnum;
 use App\Http\Requests\GroupInscriptionRequest;
+use App\Http\Requests\GroupCodeUseRequest;
+
 use App\Mail\AdminGroupInscriptionMail;
 use App\Mail\GroupInscriptionMail;
 use App\Models\Code;
@@ -42,49 +44,59 @@ class GroupInscriptionController extends Controller
         /**
         * Create Grupal inscription
         */
-        $code_group_insc = $this->codeGenerator();
+        // $code_group_insc = $this->codeGenerator();
+          $code_hybrid = $this->codeGenerator(1);
+    $code_remote = $this->codeGenerator(2);
         $group_inscription = GroupInscription::create([
             'name'=>$validated_data['name'],
             'email'=>$validated_data['email'],
-            'phone'=>$validated_data['phone'],
-            'quantity'=>Arr::get($validated_data, 'quantity_insc', 0)?? 0,
+            'institution'=>Arr::get($validated_data, 'extra.institution',"")?? "",
+            // 'phone'=>$validated_data['phone'],
+            // 'quantity'=>Arr::get($validated_data, 'quantity_insc', 0)?? 0,
             'quantity_remote'=>Arr::get($validated_data, 'quantity_insc_remote', 0)?? 0,
             'quantity_hybrid'=>Arr::get($validated_data, 'quantity_insc_hybrid',0)?? 0,
-            'institution'=>Arr::get($validated_data, 'extra.institution',"")?? "",
+
+            'quantity_remote_avaiable'=>Arr::get($validated_data, 'quantity_insc_remote', 0)?? 0,
+            'quantity_hybrid_avaiable'=>Arr::get($validated_data, 'quantity_insc_hybrid',0)?? 0,
+       
             'payment_id'=>$payment->id,
-            'code'=>$code_group_insc
+            // 'code'=>$code_group_insc
+            'code_hybrid' => $code_hybrid,
+             'code_remote' => $code_remote,  
         ]);
         
         /**
         * Create Codes
         */
         
-        $codes = array();
-        $arrayCode = [
-            'group_inscription_id'=>$group_inscription->id,
-            'institution'=>$validated_data['extra']['institution']  ?? "",
-            'code'=>0,
-            'inscription_id'=>0,
-            'status'=>0,
-            'type'=>InscriptionTypeEnum::PRESENCIAL,
-            'email'=>""
-        ];
-        for ($i=0; $i < Arr::get($validated_data, 'quantity_insc',0); $i++) { 
-            $arrayCode['code']=$this->codeGenerator($i);
-            Code::create($arrayCode);
-        }
+        // $codes = array();
+        // $arrayCode = [
+        //     'group_inscription_id'=>$group_inscription->id,
+        //     'institution'=>$validated_data['extra']['institution']  ?? "",
+        //     'code'=>0,
+        //     'inscription_id'=>0,
+        //     'status'=>0,
+        //     'type'=>InscriptionTypeEnum::PRESENCIAL,
+        //     'email'=>""
+        // ];
+    
         
-        $arrayCode['type'] = InscriptionTypeEnum::REMOTO;
-        for($i=0; $i < Arr::get($validated_data, 'quantity_insc_remote', 0); $i++){
-            $arrayCode['code']=$this->codeGenerator($i);
-            Code::create($arrayCode);
-        }
+        // for ($i=0; $i < Arr::get($validated_data, 'quantity_insc',0); $i++) { 
+        //     $arrayCode['code']=$this->codeGenerator($i);
+        //     Code::create($arrayCode);
+        // }
+        
+        // $arrayCode['type'] = InscriptionTypeEnum::REMOTO;
+        // for($i=0; $i < Arr::get($validated_data, 'quantity_insc_remote', 0); $i++){
+        //     $arrayCode['code']=$this->codeGenerator($i);
+        //     Code::create($arrayCode);
+        // }
 
-        $arrayCode['type'] = InscriptionTypeEnum::HIBRIDO;
-        for($i=0; $i < Arr::get($validated_data, 'quantity_insc_hybrid', 0); $i++){
-            $arrayCode['code']=$this->codeGenerator($i);
-            Code::create($arrayCode);
-        }
+        // $arrayCode['type'] = InscriptionTypeEnum::HIBRIDO;
+        // for($i=0; $i < Arr::get($validated_data, 'quantity_insc_hybrid', 0); $i++){
+        //     $arrayCode['code']=$this->codeGenerator($i);
+        //     Code::create($arrayCode);
+        // }
         
         try {
             Mail::to($group_inscription->email)->send(new GroupInscriptionMail($group_inscription));
@@ -102,10 +114,53 @@ class GroupInscriptionController extends Controller
         }        
         return redirect($group_inscription->getUrl());        
     }
-    
+   public function groupInscriptionUse(GroupCodeUseRequest $request)
+{
+    $group = \App\Models\GroupInscription::find($request->group_inscription_id);
+
+    if (!$group) {
+        return response()->json(['error' => 'Inscripción grupal no encontrada.'], 404);
+    }
+
+    $type = $request->type;
+    $code = $request->code;
+
+    // Validate code matches the corresponding type
+    if ($type === 'hybrid' && $code !== $group->code_hybrid) {
+        return response()->json(['error' => 'Código híbrido incorrecto.'], 400);
+    }
+
+    if ($type === 'remote' && $code !== $group->code_remote) {
+        return response()->json(['error' => 'Código remoto incorrecto.'], 400);
+    }
+
+    try {
+        \DB::transaction(function () use ($group, $type) {
+            $group->lockForUpdate();
+
+            if ($type === 'hybrid') {
+                if ($group->quantity_hybrid_avaiable <= 0) {
+                    throw new \Exception('No quedan cupos híbridos disponibles.');
+                }
+
+                $group->decrement('quantity_hybrid_avaiable', 1);
+            } else {
+                if ($group->quantity_remote_avaiable <= 0) {
+                    throw new \Exception('No quedan cupos remotos disponibles.');
+                }
+
+                $group->decrement('quantity_remote_avaiable', 1);
+            }
+        });
+    } catch (\Exception $e) {
+        return response()->json(['error' => $e->getMessage()], 400);
+    }
+
+    return response()->json(['success' => 'Código utilizado correctamente.'], 200);
+}
     
     private function codeGenerator($i = 15){
-        $rand_code = rand(10,100);
+        $rand_code = rand(10,500);
         $date = date('YmdHis');
         $value = $rand_code + $date;
         $code = md5($i.":sk".$value.":".$date);
@@ -113,22 +168,22 @@ class GroupInscriptionController extends Controller
     }
     
     
-    public function deleteCode($id){
-        $old_code = Code::findOrFail($id);
-        $group_inscription = $old_code->groupInscription;
-        if($old_code->status == 1){
-            $code = $this->codeGenerator();
-            $i_code = Code::create([
-                'group_inscription_id'=>$old_code->group_inscription_id,
-                'institution'=>$old_code->institution  ?? "",
-                'code'=>$code,
-                'inscription_id'=>0,
-                'status'=>0,
-                'type'=>$old_code->type,
-                'email'=>""
-            ]);
-            $old_code->delete();
-        }        
-        return redirect($group_inscription->getUrl());        
-    }
+    // public function deleteCode($id){
+    //     $old_code = Code::findOrFail($id);
+    //     $group_inscription = $old_code->groupInscription;
+    //     if($old_code->status == 1){
+    //         $code = $this->codeGenerator();
+    //         $i_code = Code::create([
+    //             'group_inscription_id'=>$old_code->group_inscription_id,
+    //             'institution'=>$old_code->institution  ?? "",
+    //             'code'=>$code,
+    //             'inscription_id'=>0,
+    //             'status'=>0,
+    //             'type'=>$old_code->type,
+    //             'email'=>""
+    //         ]);
+    //         $old_code->delete();
+    //     }        
+    //     return redirect($group_inscription->getUrl());        
+    // }
 }
