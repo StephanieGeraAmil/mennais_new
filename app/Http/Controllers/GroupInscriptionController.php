@@ -60,7 +60,7 @@ class GroupInscriptionController extends Controller
             'quantity_hybrid_avaiable'=>Arr::get($validated_data, 'quantity_insc_hybrid',0)?? 0,
        
             'payment_id'=>$payment->id,
-            // 'code'=>$code_group_insc
+            'code'=>0,
             'code_hybrid' => $code_hybrid,
              'code_remote' => $code_remote,  
         ]);
