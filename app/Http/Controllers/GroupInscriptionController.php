@@ -240,19 +240,23 @@ private function decrementGroupAvailability($group, $code, $type)
 
     try {
         DB::transaction(function () use ($group, $type) {
-            $group->lockForUpdate();
+            $lockedGroup = GroupInscription::where('id', $group->id)->lockForUpdate()->first();
 
-            if ($type === 'hibrido') {
-                if ($group->quantity_hybrid_avaiable <= 0) {
+
+          if ($type === 'hibrido') {
+                if ($lockedGroup->quantity_hybrid_avaiable <= 0) {
                     throw new \Exception('No quedan cupos híbridos disponibles.');
                 }
-                $group->decrement('quantity_hybrid_avaiable', 1);
+
+                $lockedGroup->decrement('quantity_hybrid_avaiable', 1);
             } else {
-                if ($group->quantity_remote_avaiable <= 0) {
+                if ($lockedGroup->quantity_remote_avaiable <= 0) {
                     throw new \Exception('No quedan cupos virtuales disponibles.');
                 }
-                $group->decrement('quantity_remote_avaiable', 1);
+
+                $lockedGroup->decrement('quantity_remote_avaiable', 1);
             }
+             $group->refresh();
         });
     } catch (\Exception $e) {
         return $e->getMessage();
