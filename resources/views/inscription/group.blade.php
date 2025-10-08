@@ -1,6 +1,7 @@
 @extends('layouts.formtemplate')
 @section('title')
-Invitación Grupal
+
+<h3 class="u-align-center u-text u-text-1">Invitación Grupal</h3>
 @endsection
 @section('notifications')
 {{-- @if(Session::has('msg'))
@@ -113,8 +114,8 @@ En el siguiente paso le pediremos los datos de sus invitados.</p>
                 type="text"
                 placeholder=""
                 id="institution-072d"
-                name="institution_name"
-                value="{{ old('institution_name') }}"
+                name="institution"
+                value="{{ old('institution') }}"
                 class="u-input u-input-rectangle"
                 required=""
             />
