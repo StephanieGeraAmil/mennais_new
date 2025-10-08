@@ -1,7 +1,7 @@
 @extends('layouts.formtemplate')
-@section('title')
+{{-- @section('title')
 Invitación Grupal
-@endsection
+@endsection --}}
 @section('custom_css')
 <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
 <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
@@ -34,17 +34,17 @@ Invitación Grupal
 </div>
 @endif 
 @endsection
-@section('subtitle')
+{{-- @section('subtitle')
 INVITACIÓN GRUPAL
-@endsection
-@section('left-text-box')
+@endsection --}}
+{{-- @section('left-text-box')
 <p class="u-text">
 Por favor ingrese el correo de las personas que desea invitar (UNO POR VEZ), marque en cada caso si es participación Completa o Parcial y presione ENVIAR.<BR/><BR/>
 De esta forma, cada invitado recibirá un mail para completar su inscripción con sus datos personales.<BR/><BR/>
 Puede chequear si sus invitados completaron su inscripción volviendo a esta web a través del link que recibió en su correo.<BR/><BR/>
 </p>
-@endsection
-@section('left-form')
+@endsection --}}
+{{-- @section('left-form')
 <div class="u-form u-form-1">
     <form action="/send_inscripton" method="POST" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 0px;">
         @csrf
@@ -64,9 +64,9 @@ Puede chequear si sus invitados completaron su inscripción volviendo a esta web
         </div>
     </form>
 </div>
-@endsection
+@endsection --}}
 @section('form')
-<div class="u-container-layout u-valign-top u-container-layout-2" style="min-height: 460px;background-color:#ffffff80;margin-top:65px">
+{{-- <div class="u-container-layout u-valign-top u-container-layout-2" style="min-height: 460px;background-color:#ffffff80;margin-top:65px">
     <h5 class="u-text u-text-custom-color-2 u-text-default u-text-2">Invitaciones enviadas:</BR/>{{$group_inscription->usedRemoteCodes()}}<BR/>{{$group_inscription->usedHybridCodes()}}</h5>
     <div class="u-expanded-width u-table u-table-responsive u-table-2">
         <div style="width: 100%;border-bottom: 1px solid #D3D3D3;padding: 3px;"></div>
@@ -89,9 +89,9 @@ Puede chequear si sus invitados completaron su inscripción volviendo a esta web
             @endforeach
         </TABLE>
     </div>
-</div>
+</div> --}}
 @endsection
-@section('custom_script') 
+{{-- @section('custom_script') 
 <script>
     function delete_item(form_id){
         if(confirm('Está seguro que desea eliminar esta invitación.')){
@@ -99,4 +99,4 @@ Puede chequear si sus invitados completaron su inscripción volviendo a esta web
         }
     }    
 </script> 
-@endsection
+@endsection --}}
