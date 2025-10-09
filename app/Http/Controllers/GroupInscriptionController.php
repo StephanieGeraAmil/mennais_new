@@ -61,9 +61,9 @@ class GroupInscriptionController extends Controller
         return back()->withErrors(['error' => $decrementResult]);
     }
 
-    if ($response->getStatusCode() !== 200) {
-        return back()->withErrors(['error' => json_decode($response->getContent(), true)['error']]);
-    }   
+    // if ($response->getStatusCode() !== 200) {
+    //     return back()->withErrors(['error' => json_decode($response->getContent(), true)['error']]);
+    // }   
 $clean_name = preg_replace('/[^A-Za-z0-9\-]/', '_', $request->get('name'));
      $user_data = UserData::create([
             'name' => $clean_name,
