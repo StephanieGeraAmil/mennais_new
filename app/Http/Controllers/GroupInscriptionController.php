@@ -76,7 +76,7 @@ $clean_name = preg_replace('/[^A-Za-z0-9\-]/', '_', $request->get('name'));
             'user_data_id' => $user_data->id,
             'payment_id' => null,
             'status' => 1,
-            'type' => $validated_data['type'] === 'hybrid' ? InscriptionTypeEnum::HIBRIDO : InscriptionTypeEnum::REMOTO,
+            'type' => $validated_data['type'] === 'hibrido' ? InscriptionTypeEnum::HIBRIDO : InscriptionTypeEnum::REMOTO,
         ]);
         try {
             Mail::to($user_data->email)->send(new FacetofaceInscriptionMail($inscription));   
