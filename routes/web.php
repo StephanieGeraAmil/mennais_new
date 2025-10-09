@@ -83,7 +83,7 @@ Route::resource('/admin/user_data', UserDataController::class)->middleware('auth
 Route::get('/inscription',[SimpleInscriptionController::class,'simpleInscription']); 
 Route::get('/certificate', [InscriptionController::class,'certificateRecovery']);
 Route::get('/group-inscription/{id}/join', [App\Http\Controllers\GroupInscriptionController::class, 'showJoinForm'])->name('group.inscription.join');
-
+Route::post('/join_group_inscription',[GroupInscriptionController::class,'joinStore']);
 Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
