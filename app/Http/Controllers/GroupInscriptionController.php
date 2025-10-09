@@ -229,7 +229,7 @@ $clean_name = preg_replace('/[^A-Za-z0-9\-]/', '_', $request->get('name'));
 // }
 private function decrementGroupAvailability($group, $code, $type)
 {
- 
+ Log::info("Decrementing type: $type for group {$group->id}");
     if ($type === 'hibrido' && $code !== $group->code_hybrid) {
         return 'Código de inscripción completa incorrecto.';
     }
@@ -248,21 +248,28 @@ private function decrementGroupAvailability($group, $code, $type)
                     throw new \Exception('No quedan cupos híbridos disponibles.');
                 }
 
-                $lockedGroup->decrement('quantity_hybrid_avaiable', 1);
+                // $lockedGroup->decrement('quantity_hybrid_avaiable', 1);
+                $lockedGroup->quantity_hybrid_avaiable = $lockedGroup->quantity_hybrid_avaiable - 1;
+
             } else {
                 if ($lockedGroup->quantity_remote_avaiable <= 0) {
                     throw new \Exception('No quedan cupos virtuales disponibles.');
                 }
 
-                $lockedGroup->decrement('quantity_remote_avaiable', 1);
+                // $lockedGroup->decrement('quantity_remote_avaiable', 1);
+                $lockedGroup->quantity_remote_avaiable = $lockedGroup->quantity_remote_avaiable - 1;
+
             }
+            $lockedGroup->save();
+            Log::info("Remaining hybrid: {$lockedGroup->quantity_hybrid_avaiable}, remote: {$lockedGroup->quantity_remote_avaiable}");
              $group->refresh();
+              return true; 
         });
     } catch (\Exception $e) {
         return $e->getMessage();
     }
 
-    return true; 
+   
 }
 
     
