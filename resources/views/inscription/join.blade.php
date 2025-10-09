@@ -88,8 +88,8 @@
                 type="text"
                 placeholder="(1234567-8)"
                 id="codigo-072d"
-                name="codigo"
-                value="{{ old('codigo') }}"
+                name="code"
+                value="{{ old('code') }}"
                 class="u-input u-input-rectangle"
                 required=""
             />
