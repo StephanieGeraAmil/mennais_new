@@ -94,9 +94,8 @@ class GroupInscriptionController extends Controller
     
 public function joinStore(Request $request, $id)
 {
-     Log::info('********************************************************');
-      Log::info('********************************************************');
-    Log::info('Reached joinStore start');
+
+
     $group = GroupInscription::findOrFail($id);
 
     $validated_data = $request->validate([
@@ -112,8 +111,7 @@ public function joinStore(Request $request, $id)
     try {
         DB::transaction(function () use ($group, $validated_data, $request) {
             Log::info("Decrementing type: {$validated_data['type']} for group {$group->id}");
-              Log::info('<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<,');
-  Log::info('on transaction');
+          
             $lockedGroup = GroupInscription::where('id', $group->id)->lockForUpdate()->first();
 
             if ($validated_data['type'] === 'hibrido') {
@@ -134,8 +132,7 @@ public function joinStore(Request $request, $id)
                 $lockedGroup->decrement('quantity_remote_avaiable', 1);
             }
 
-            Log::info('++++++++,');
-  Log::info('decremented');
+ 
             $clean_name = preg_replace('/[^A-Za-z0-9\-]/', '_', $validated_data['name']);
             $user_data = UserData::create([
                 'name' => $clean_name,
@@ -146,7 +143,7 @@ public function joinStore(Request $request, $id)
             ]);
 
          
-  Log::info('user data stored');
+ 
       
             $inscription = Inscription::create([
                 'user_data_id' => $user_data->id,
@@ -156,7 +153,7 @@ public function joinStore(Request $request, $id)
                     ? InscriptionTypeEnum::HIBRIDO
                     : InscriptionTypeEnum::REMOTO,
             ]);
-              Log::info('inscription stored');
+       
 
           
             $request->session()->put('new_inscription_id', $inscription->id);
@@ -182,6 +179,7 @@ public function joinStore(Request $request, $id)
     
     public function groupInscriptionStore(GroupInscriptionRequest $request)
     {
+             Log::info('********************************************************');
         $validated_data = $request->all();
         /**
         * Create Payment
@@ -221,40 +219,11 @@ public function joinStore(Request $request, $id)
              'code_remote' => $code_remote,  
         ]);
         
-        /**
-        * Create Codes
-        */
         
-        // $codes = array();
-        // $arrayCode = [
-        //     'group_inscription_id'=>$group_inscription->id,
-        //     'institution'=>$validated_data['extra']['institution']  ?? "",
-        //     'code'=>0,
-        //     'inscription_id'=>0,
-        //     'status'=>0,
-        //     'type'=>InscriptionTypeEnum::PRESENCIAL,
-        //     'email'=>""
-        // ];
-    
-        
-        // for ($i=0; $i < Arr::get($validated_data, 'quantity_insc',0); $i++) { 
-        //     $arrayCode['code']=$this->codeGenerator($i);
-        //     Code::create($arrayCode);
-        // }
-        
-        // $arrayCode['type'] = InscriptionTypeEnum::REMOTO;
-        // for($i=0; $i < Arr::get($validated_data, 'quantity_insc_remote', 0); $i++){
-        //     $arrayCode['code']=$this->codeGenerator($i);
-        //     Code::create($arrayCode);
-        // }
-
-        // $arrayCode['type'] = InscriptionTypeEnum::HIBRIDO;
-        // for($i=0; $i < Arr::get($validated_data, 'quantity_insc_hybrid', 0); $i++){
-        //     $arrayCode['code']=$this->codeGenerator($i);
-        //     Code::create($arrayCode);
-        // }
         
         try {
+                 Log::info('+++++++');
+                      Log::info('sending mail to user');
             Mail::to($group_inscription->email)->send(new GroupInscriptionMail($group_inscription));
             session()->flash('msg', 'Inscripción realizada con exito!!!');
         } catch (\Throwable $th) {
@@ -263,6 +232,8 @@ public function joinStore(Request $request, $id)
         }
         try {
             Mail::to(env('ADMIN_EMAIL'))->send(new AdminGroupInscriptionMail($group_inscription));
+              Log::info('+++++++');
+                      Log::info('sending mail to admin');
             session()->flash('msg', 'Inscripción realizada con exito!!!');
         } catch (\Throwable $th) {
             Log::error("GroupInscriptionController::Email: ".$group_inscription->email."; ".env('ADMIN_EMAIL'));
@@ -270,94 +241,8 @@ public function joinStore(Request $request, $id)
         }        
         return redirect($group_inscription->getUrl());        
     }
-//    public function groupInscriptionUse(GroupCodeUseRequest $request)
-// {
-//     $group = \App\Models\GroupInscription::find($request->group_inscription_id);
-
-//     if (!$group) {
-//         return response()->json(['error' => 'Inscripción grupal no encontrada.'], 404);
-//     }
-
-//     $type = $request->type;
-//     $code = $request->code;
-
-//     // Validate code matches the corresponding type
-//     if ($type === 'hibrido' && $code !== $group->code_hybrid) {
-//         return response()->json(['error' => 'Código de inscripcion completa incorrecto.'], 400);
-//     }
-
-//     if ($type === 'virtual' && $code !== $group->code_remote) {
-//         return response()->json(['error' => 'Código de inscripcion virtual incorrecto.'], 400);
-//     }
-
-//     try {
-//         \DB::transaction(function () use ($group, $type) {
-//             $group->lockForUpdate();
-
-//             if ($type === 'hibrido') {
-//                 if ($group->quantity_hybrid_avaiable <= 0) {
-//                     throw new \Exception('No quedan cupos híbridos disponibles.');
-//                 }
-
-//                 $group->decrement('quantity_hybrid_avaiable', 1);
-//             } else {
-//                 if ($group->quantity_remote_avaiable <= 0) {
-//                     throw new \Exception('No quedan cupos remotos disponibles.');
-//                 }
-
-//                 $group->decrement('quantity_remote_avaiable', 1);
-//             }
-//         });
-//     } catch (\Exception $e) {
-//         return response()->json(['error' => $e->getMessage()], 400);
-//     }
-
-//     return response()->json(['success' => 'Código utilizado correctamente.'], 200);
-// }
-private function decrementGroupAvailability($group, $code, $type)
-{
- Log::info("Decrementing type: $type for group {$group->id}");
-    if ($type === 'hibrido' && $code !== $group->code_hybrid) {
-        return 'Código de inscripción completa incorrecto.';
-    }
-
-    if ($type === 'virtual' && $code !== $group->code_remote) {
-        return 'Código de inscripción virtual incorrecto.';
-    }
-
-    try {
-        DB::transaction(function () use ($group, $type) {
-            $lockedGroup = GroupInscription::where('id', $group->id)->lockForUpdate()->first();
 
 
-          if ($type === 'hibrido') {
-                if ($lockedGroup->quantity_hybrid_avaiable <= 0) {
-                    throw new \Exception('No quedan cupos híbridos disponibles.');
-                }
-
-                // $lockedGroup->decrement('quantity_hybrid_avaiable', 1);
-                $lockedGroup->quantity_hybrid_avaiable = $lockedGroup->quantity_hybrid_avaiable - 1;
-
-            } else {
-                if ($lockedGroup->quantity_remote_avaiable <= 0) {
-                    throw new \Exception('No quedan cupos virtuales disponibles.');
-                }
-
-                // $lockedGroup->decrement('quantity_remote_avaiable', 1);
-                $lockedGroup->quantity_remote_avaiable = $lockedGroup->quantity_remote_avaiable - 1;
-
-            }
-            $lockedGroup->save();
-            Log::info("Remaining hybrid: {$lockedGroup->quantity_hybrid_avaiable}, remote: {$lockedGroup->quantity_remote_avaiable}");
-             $group->refresh();
-              return true; 
-        });
-    } catch (\Exception $e) {
-        return $e->getMessage();
-    }
-
-   
-}
 
     
     private function codeGenerator($i = 15){
@@ -369,22 +254,5 @@ private function decrementGroupAvailability($group, $code, $type)
     }
     
     
-    // public function deleteCode($id){
-    //     $old_code = Code::findOrFail($id);
-    //     $group_inscription = $old_code->groupInscription;
-    //     if($old_code->status == 1){
-    //         $code = $this->codeGenerator();
-    //         $i_code = Code::create([
-    //             'group_inscription_id'=>$old_code->group_inscription_id,
-    //             'institution'=>$old_code->institution  ?? "",
-    //             'code'=>$code,
-    //             'inscription_id'=>0,
-    //             'status'=>0,
-    //             'type'=>$old_code->type,
-    //             'email'=>""
-    //         ]);
-    //         $old_code->delete();
-    //     }        
-    //     return redirect($group_inscription->getUrl());        
-    // }
+
 }
