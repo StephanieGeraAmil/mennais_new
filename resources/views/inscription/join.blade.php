@@ -37,7 +37,8 @@
 @section('form')
 
     <form 
-    action="/join_group_inscription" 
+    {{-- action="/join_group_inscription"  --}}
+      action="{{ route('group.inscription.join.store', ['id' => $group->id]) }}"
     method="POST" 
     class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form"
     source="custom" 
