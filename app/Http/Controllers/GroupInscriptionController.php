@@ -94,6 +94,9 @@ class GroupInscriptionController extends Controller
     
 public function joinStore(Request $request, $id)
 {
+     Log::info('********************************************************');
+      Log::info('********************************************************');
+    Log::info('Reached joinStore start');
     $group = GroupInscription::findOrFail($id);
 
     $validated_data = $request->validate([
@@ -109,7 +112,8 @@ public function joinStore(Request $request, $id)
     try {
         DB::transaction(function () use ($group, $validated_data, $request) {
             Log::info("Decrementing type: {$validated_data['type']} for group {$group->id}");
-
+              Log::info('<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<,');
+  Log::info('on transaction');
             $lockedGroup = GroupInscription::where('id', $group->id)->lockForUpdate()->first();
 
             if ($validated_data['type'] === 'hibrido') {
@@ -130,7 +134,8 @@ public function joinStore(Request $request, $id)
                 $lockedGroup->decrement('quantity_remote_avaiable', 1);
             }
 
-         
+            Log::info('++++++++,');
+  Log::info('decremented');
             $clean_name = preg_replace('/[^A-Za-z0-9\-]/', '_', $validated_data['name']);
             $user_data = UserData::create([
                 'name' => $clean_name,
@@ -140,6 +145,8 @@ public function joinStore(Request $request, $id)
                 'institution_type' => Arr::get($validated_data, 'institution_type'),
             ]);
 
+         
+  Log::info('user data stored');
       
             $inscription = Inscription::create([
                 'user_data_id' => $user_data->id,
@@ -149,6 +156,7 @@ public function joinStore(Request $request, $id)
                     ? InscriptionTypeEnum::HIBRIDO
                     : InscriptionTypeEnum::REMOTO,
             ]);
+              Log::info('inscription stored');
 
           
             $request->session()->put('new_inscription_id', $inscription->id);
