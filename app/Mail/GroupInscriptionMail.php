@@ -31,7 +31,15 @@ class GroupInscriptionMail extends Mailable
      */
     public function build()
     {
+        $joinUrl = route('group.inscription.join', ['id' => $this->groupInscription->id]);
         return $this->subject(env('EVENT_NAME').' - Invitación grupal')->view('emails.group_inscription')
-        ->with('group_inscription',$this->group_inscription);         
+        ->with([
+            'group_inscription' => $this->groupInscription,
+            'joinUrl' => $joinUrl,
+        ]);
+        
+        
+
+   
     }
 }
