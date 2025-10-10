@@ -104,8 +104,9 @@ public function joinStore(Request $request, $id)
         'name' => 'required|string|max:255',
         'email' => 'required|email',
         'document' => 'nullable|string',
-        'institution_name' => 'nullable|string',
-        'institution_type' => 'nullable|string',
+        // 'institution_name' => 'nullable|string',
+        // 'institution_type' => 'nullable|string',
+              'institution' => 'required|string',
     ]);
 
     try {
