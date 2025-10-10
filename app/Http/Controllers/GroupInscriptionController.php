@@ -104,9 +104,9 @@ public function joinStore(Request $request, $id)
         'name' => 'required|string|max:255',
         'email' => 'required|email',
         'document' => 'nullable|string',
-        // 'institution_name' => 'nullable|string',
-        // 'institution_type' => 'nullable|string',
-              'institution' => 'required|string',
+        'institution_name' => 'nullable|string',
+        'institution_type' => 'nullable|string',
+
     ]);
 
     try {
@@ -210,7 +210,9 @@ public function joinStore(Request $request, $id)
         $group_inscription = GroupInscription::create([
             'name'=>$validated_data['name'],
             'email'=>$validated_data['email'],
-            'institution'=>Arr::get($validated_data, 'extra.institution',"")?? "",
+                   'institution'=>$validated_data['institution'],
+            // 'institution'=>Arr::get($validated_data, 'extra.institution',"")?? "",
+                
             'phone'=>$validated_data['phone'],
             'quantity'=>Arr::get($validated_data, 'quantity_insc', 0)?? 0,
             'quantity_remote'=>Arr::get($validated_data, 'quantity_remote', 0)?? 0,
