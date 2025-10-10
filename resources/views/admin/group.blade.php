@@ -49,8 +49,10 @@ Admin Panel
                                         <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">E-mail</th>
                                         <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Teléfono</th>
                                         <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Institución</th>
-                                        <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Invitaciones</th>
-                                        <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">link</th>
+                                        <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Inv Completas Tot/Disp</th>
+                                        <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Inv Virtuales Tot/Disp</th>
+                                        <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Codigo Inv.Completas</th>
+                                        <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Codigo Inv.Virtuales</th>               
                                         <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Pago.</th>
                                         {{-- <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Accred.</th>
                                         <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Acción</th> --}}
@@ -73,13 +75,22 @@ Admin Panel
                                             <p class="text-gray-900 whitespace-no-wrap">{{$gr_inscription->phone}}</p>
                                         </td>
                                         <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                            <p class="text-gray-900 whitespace-no-wrap">{{$gr_inscription->institution}}</p>
+                                            <p class="text-gray-900 whitespace-no-wrap">{{$gr_inscription->institution_name}}</p>
+                                        </td>
+                                        {{-- <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                            <p class="text-gray-900 whitespace-no-wrap">{{$gr_inscription->quantity_hybrid }}/{{$gr_inscription->usedCodes()}}</p>
+                                        </td> --}}
+                                         <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                            <p class="text-gray-900 whitespace-no-wrap">{{$gr_inscription->quantity_hybrid }}/{{$gr_inscription->quantity_hybrid_avaiable}}</p>
+                                        </td>
+                                            <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                            <p class="text-gray-900 whitespace-no-wrap">{{$gr_inscription->quantity_remote }}/{{$gr_inscription->quantity_remote_avaiable}}</p>
                                         </td>
                                         <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                            <p class="text-gray-900 whitespace-no-wrap">{{$gr_inscription->inscriptedCodes()}}/{{$gr_inscription->usedCodes()}}/{{$gr_inscription->quantity}}</p>
+                                            <a target="_blank" href="{{$gr_inscription->getUrl()}}">{{$gr_inscription->code_hybrid}}</a>
                                         </td>
-                                        <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                            <a target="_blank" href="{{$gr_inscription->getUrl()}}">{{$gr_inscription->code}}</a>
+                                           <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                            <a target="_blank" href="{{$gr_inscription->getUrl()}}">{{$gr_inscription->code_remote}}</a>
                                         </td>
                                         <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                             {!!($gr_inscription->payment_id == 0)?"<span
