@@ -178,8 +178,11 @@ public function joinStore(Request $request, $id)
 
     
     public function groupInscriptionStore(GroupInscriptionRequest $request)
+
     {
+        try{
              Log::info('********************************************************');
+                  DB::beginTransaction();
         $validated_data = $request->all();
         /**
         * Create Payment
@@ -194,7 +197,9 @@ public function joinStore(Request $request, $id)
             'reference'=>$validated_data['payment_ref'] ?? ""
         ]);
         
-        
+              if (!$payment) {
+            throw new \Exception('Error al crear el registro de pago.');
+        }
         /**
         * Create Grupal inscription
         */
@@ -219,7 +224,11 @@ public function joinStore(Request $request, $id)
              'code_remote' => $code_remote,  
         ]);
         
-        
+           if (!$group_inscription) {
+            throw new \Exception('Error al crear la inscripción grupal.');
+        }
+
+        DB::commit();
         
         try {
                  Log::info('+++++++');
@@ -239,7 +248,16 @@ public function joinStore(Request $request, $id)
             Log::error("GroupInscriptionController::Email: ".$group_inscription->email."; ".env('ADMIN_EMAIL'));
             session()->flash('msg', 'Inscripción realizada con exito. En caso de no recibir el email, contactese con Audec');
         }        
-        return redirect($group_inscription->getUrl());        
+        // return redirect($group_inscription->getUrl());        
+        return redirect()->back()->with('msg', 'Inscripción realizada con éxito')->withInput();
+ } catch (\Throwable $e) {
+        DB::rollBack(); // ❌ Roll back everything
+        Log::error('Error creating group inscription: '.$e->getMessage());
+
+        return redirect()->back()
+            ->withErrors(['error' => 'Ocurrió un error: '.$e->getMessage()])
+            ->withInput();
+    }
     }
 
 
