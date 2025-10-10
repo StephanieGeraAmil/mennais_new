@@ -41,14 +41,18 @@ class GroupInscription extends Model
     {
         return $this->hasMany(Code::class);
     }
+    public function getUrl()
+{
+    return route('group.inscription.join', ['id' => $this->id]);
+}
 
     public function validCode($code){        
             return $this->code == $code;
     }
 
-    public function getUrl(){
-            return env('APP_URL').'/admin_group_inscription/'.$this->id.'/'.$this->code;
-    }
+    // public function getUrl(){
+    //         return env('APP_URL').'/admin_group_inscription/'.$this->id.'/'.$this->code;
+    // }
 
     public function usedCodes(){
         $count = 0;

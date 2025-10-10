@@ -52,7 +52,8 @@ Admin Panel
                                         <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Inv Completas Tot/Disp</th>
                                         <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Inv Virtuales Tot/Disp</th>
                                         <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Codigo Inv.Completas</th>
-                                        <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Codigo Inv.Virtuales</th>               
+                                        <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Codigo Inv.Virtuales</th>   
+                                                                                <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Link.</th>            
                                         <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Pago.</th>
                                         {{-- <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Accred.</th>
                                         <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Acción</th> --}}
@@ -86,12 +87,15 @@ Admin Panel
                                             <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                             <p class="text-gray-900 whitespace-no-wrap">{{$gr_inscription->quantity_remote }}/{{$gr_inscription->quantity_remote_avaiable}}</p>
                                         </td>
-                                        <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                            <a target="_blank" href="{{$gr_inscription->getUrl()}}">{{$gr_inscription->code_hybrid}}</a>
-                                        </td>
-                                           <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                            <a target="_blank" href="{{$gr_inscription->getUrl()}}">{{$gr_inscription->code_remote}}</a>
-                                        </td>
+                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+    {{ $gr_inscription->code_hybrid }}
+</td>
+<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+    {{ $gr_inscription->code_remote }}
+</td>
+                                           <td>
+                                        <a target="_blank" href="{{ $gr_inscription->getUrl() }}">Link</a>
+      </td>
                                         <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                             {!!($gr_inscription->payment_id == 0)?"<span
                                             class=\"relative inline-block px-3 py-1 font-semibold text-orange-900 leading-tight\">
