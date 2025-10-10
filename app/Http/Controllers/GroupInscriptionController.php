@@ -249,7 +249,7 @@ public function joinStore(Request $request, $id)
             session()->flash('msg', 'Inscripción realizada con exito. En caso de no recibir el email, contactese con Audec');
         }        
         // return redirect($group_inscription->getUrl());        
-        return redirect()->back()->with('msg', 'Inscripción realizada con éxito')->withInput();
+        return redirect()->back()->with('msg', 'Inscripción realizada con éxito');
  } catch (\Throwable $e) {
         DB::rollBack(); // ❌ Roll back everything
         Log::error('Error creating group inscription: '.$e->getMessage());
