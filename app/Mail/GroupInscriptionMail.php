@@ -11,7 +11,7 @@ class GroupInscriptionMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    protected $group_inscription;
+    public $group_inscription;
 
     /**
      * Create a new message instance.
