@@ -5,7 +5,7 @@
 <p><strong>Código para inscripciones híbridas:</strong> {{ $group_inscription->code_hybrid }}</p>
 <p><strong>Código para inscripciones remotas:</strong> {{ $group_inscription->code_remote }}</p>
 
-<p><a href="{{ $joinUrl }}">Link al que deben acceder para completar la inscripcion</a></p>
+<p><a href="{{ $joinUrl }}">Link al que deben acceder para completar la inscripción</a></p>
 
 
   
