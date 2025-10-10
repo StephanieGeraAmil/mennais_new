@@ -7,9 +7,9 @@
 
 @if($group_inscription->quantity_hybrid > 0)
     <p>
-        <strong>Invitaciones híbridas disponibles:</strong> {{ $group_inscription->quantity_hybrid }}
+        <strong>Invitaciones completas disponibles:</strong> {{ $group_inscription->quantity_hybrid }}
         <br>
-        <strong>Código para inscripciones híbridas:</strong> {{ $group_inscription->code_hybrid }}
+        <strong>Código para inscripciones completas:</strong> {{ $group_inscription->code_hybrid }}
     </p>
 @endif
 
@@ -17,7 +17,7 @@
     <p>
         <strong>Invitaciones virtuales disponibles:</strong> {{ $group_inscription->quantity_remote }}
         <br>
-        <strong>Código para inscripciones remotas:</strong> {{ $group_inscription->code_remote }}
+        <strong>Código para inscripciones virtuales:</strong> {{ $group_inscription->code_remote }}
     </p>
 @endif
 
