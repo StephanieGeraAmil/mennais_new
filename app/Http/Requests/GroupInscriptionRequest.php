@@ -20,10 +20,11 @@ class GroupInscriptionRequest extends FormRequest
             'phone' => 'required|string|max:255',
             'institution' => 'required|string|max:255',            
             // 'city' => 'required|string|max:255',
-            'amount' => 'required|integer',
+           
             'payment_file'=>'required|file|mimes:jpg,png,jpeg,gif,svg,pdf',
-            'quantity_remote'=> 'required|integer',
-            'quantity_hybrid'=> 'required|integer',
-        ];
+            'quantity_hybrid' => 'required|integer|min:0',
+            'quantity_remote' => 'required|integer|min:0',
+            'amount'          => 'required|numeric|min:0',
+                ];
     }
 }
