@@ -153,6 +153,7 @@ public function joinStore(Request $request, $id)
                 'type' => $validated_data['type'] === 'hibrido'
                     ? InscriptionTypeEnum::HIBRIDO
                     : InscriptionTypeEnum::REMOTO,
+                'group_inscription_id'=> $group->id,   
             ]);
        
 

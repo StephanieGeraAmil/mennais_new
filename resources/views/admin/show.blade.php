@@ -75,7 +75,7 @@
                                             type="text" placeholder="Ciudad" aria-label="Ciudad"
                                             name="city"
                                             value="{{ $inscription->userData->city }}" />
-                                    </div>
+                                    </div>--}}
                                         <div
                                             class="flex items-center border-b @error('institution_name') border-red-500 @else border-teal-500 @enderror py-2 w-100">
                                             <input
@@ -83,16 +83,16 @@
                                                 type="text" placeholder="Institucion" aria-label="Institucion"
                                                 name="institution_name"
                                                 value="{{ $inscription->userData->institution_name }}" />
-                                        </div> --}}
-                                        {{-- <div
+                                        </div> 
+                                      {{-- <div
                                             class="flex items-center border-b @error('institution_type') border-red-500 @else border-teal-500 @enderror py-2 w-100">
                                             <input
                                                 class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
                                                 type="text" placeholder="Tipo de institución"
                                                 aria-label="Tipo de institución" name="institution_type"
                                                 value="{{ $inscription->userData->institution_type }}" />
-                                        </div> --}}
-                                        {{-- <div class="flex items-center border-b py-2 w-100">
+                                        </div>  --}}
+                                        <div class="flex items-center border-b py-2 w-100">
                                             <select id="institution_type" name="institution_type"
                                                 class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
                                                 <option value="Educación Inicial"
@@ -113,7 +113,7 @@
 
 
                                             </select>
-                                        </div> --}}
+                                        </div>
                                         <div class="">
                                             <div class="pt-3">
                                                 <button type="submit"
@@ -122,6 +122,26 @@
                                                 </button>
                                             </div>
                                         </div>
+                                  @if($inscription->groupInscription)
+                                        <div class="flex items-center border-b py-2 w-100">
+                                            <label class="text-gray-700 font-semibold mr-2">Inscripción grupal:</label>
+                                            <input
+                                                class="appearance-none bg-transparent border-none w-full text-gray-700 py-1 px-2 leading-tight focus:outline-none"
+                                                type="text"
+                                                value="{{ $inscription->groupInscription->id }}"
+                                                readonly
+                                            />
+                                        </div>
+                                    @else
+                                        <div class="flex items-center border-b py-2 w-100">
+                                            <input
+                                                class="appearance-none bg-transparent border-none w-full text-gray-400 py-1 px-2 leading-tight focus:outline-none"
+                                                type="text"
+                                                value="No pertenece a inscripción grupal"
+                                                readonly
+                                            />
+                                        </div>
+                                    @endif
                                     </form>
                                 </div>
                             </div>

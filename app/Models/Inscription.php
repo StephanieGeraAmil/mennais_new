@@ -28,6 +28,10 @@ class Inscription extends Model
     public function payment(){
         return $this->belongsTo(Payment::class);
     }
+    public function groupInscription()
+{
+    return $this->belongsTo(GroupInscription::class);
+}
 
     public function userData(){
         return $this->belongsTo(UserData::class);
