@@ -20,7 +20,8 @@ class Inscription extends Model
         'user_data_id',
         'payment_id',
         'status',
-        'type'
+        'type',
+        'group_inscription_id',
     ];
 
     protected $casts = ["type"=>InscriptionTypeEnum::class];
