@@ -136,7 +136,7 @@ En el siguiente paso le pediremos los datos de sus invitados.</p>
                 placeholder=""
                 id="amount-072d"
                 name="amount"
-                value="{{ old('amount') }}"
+                value="{{ old('amount', 0) }}"
                 class="u-input u-input-rectangle"
                 required=""
                      min="0"
