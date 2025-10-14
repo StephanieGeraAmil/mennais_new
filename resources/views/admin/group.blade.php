@@ -46,6 +46,7 @@ Admin Panel
                                 <thead>
                                     <tr>                                        
                                         <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Nombre</th>
+                                               <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Id</th>
                                         <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">E-mail</th>
                                         <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Teléfono</th>
                                         <th class="px-5 py-3 border-b-2 bg-gray-400 text-left text-xs font-semibold text-white uppercase tracking-wider">Institución</th>
@@ -66,6 +67,13 @@ Admin Panel
                                             <div class="flex items-center">
                                                 <div class="ml-3">
                                                     <p class="text-gray-900 whitespace-no-wrap">{{$gr_inscription->name}}</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                             <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                            <div class="flex items-center">
+                                                <div class="ml-3">
+                                                    <p class="text-gray-900 whitespace-no-wrap">{{$gr_inscription->id}}</p>
                                                 </div>
                                             </div>
                                         </td>
