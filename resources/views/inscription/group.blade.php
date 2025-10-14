@@ -105,24 +105,28 @@ En el siguiente paso le pediremos los datos de sus invitados.</p>
             <label for="number-hybrid-072d" class="u-label">Cantidad de Invitaciones Completas</label>
             <input
                 type="text"
-                placeholder=""
+                placeholder="0"
                 id="number-hybrid-072d"
                 name="quantity_hybrid"
                 value="{{ old('quantity_hybrid') }}"
                 class="u-input u-input-rectangle"
                 required=""
+                min="0"
+                step="1"
             />
         </div>
           <div class="u-form-group u-form-name">
             <label for="number-virtual-072d" class="u-label">Cantidad de Invitaciones Virtuales</label>
             <input
                 type="text"
-                placeholder=""
+                placeholder="0"
                 id="number-virtual-072d"
                 name="quantity_remote"
                 value="{{ old('quantity_remote') }}"
                 class="u-input u-input-rectangle"
                 required=""
+                min="0"
+                step="1"
             />
         </div>
           <div class="u-form-group u-form-name">
