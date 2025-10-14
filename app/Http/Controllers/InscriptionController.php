@@ -318,3 +318,29 @@ class InscriptionController extends Controller
         return redirect($group_inscription->getUrl());
     }
 }
+public function deleteInscription(int $inscription_id)
+{
+    $inscription = Inscription::findOrFail($inscription_id);
+
+    DB::transaction(function () use ($inscription) {
+
+        // 1. Delete all attendances/accreditations
+        $inscription->attendances()->delete();
+
+        // 2. Increment available quantity if it belongs to a group
+        if ($inscription->group_inscription_id) {
+            $group = GroupInscription::lockForUpdate()->find($inscription->group_inscription_id);
+
+            if ($inscription->type === InscriptionTypeEnum::HIBRIDO) {
+                $group->increment('quantity_hybrid_avaiable', 1);
+            } else {
+                $group->increment('quantity_remote_avaiable', 1);
+            }
+        }
+
+        // 3. Delete the inscription itself
+        $inscription->delete();
+    });
+
+     return redirect('/admin/');
+}
