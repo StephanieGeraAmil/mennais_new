@@ -253,6 +253,11 @@ document.addEventListener("DOMContentLoaded", function () {
    submitLink.addEventListener("click", function (e) {
         e.preventDefault();
         if (allFieldsFilled()) {
+            const amount = parseFloat(form.querySelector('[name="amount"]').value) || 0;
+            if (amount <= 0) {
+                alert("El monto depositado debe ser mayor a 0.");
+                return;
+            }
             submitLink.style.pointerEvents = "none";
             submitLink.style.opacity = "0.5";
             submitLink.textContent = "Enviando...";
