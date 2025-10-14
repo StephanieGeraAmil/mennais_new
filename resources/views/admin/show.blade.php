@@ -114,13 +114,21 @@
 
                                             </select>
                                         </div>
-                                        <div class="">
+                                        <div class="flex space-x-2 pt-3">
                                             <div class="pt-3">
                                                 <button type="submit"
                                                     class="bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 border border-white rounded-xl">
-                                                    Guardar cambios
+                                                    Guardar
                                                 </button>
                                             </div>
+                                             <form action="{{ route('inscription.delete', $inscription->id) }}" method="POST" class="inline-flex">
+                                                @csrf
+                                                @method('DELETE')
+                                                <button type="submit"
+                                                    class="bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 border border-white rounded-xl">
+                                                    Borrar
+                                                </button>
+                                            </form>
                                         </div>
                                   @if($inscription->groupInscription)
                                         <div class="flex items-center border-b py-2 w-100">

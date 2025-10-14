@@ -79,6 +79,9 @@ Route::post('/admin/attendance', [AdminController::class,'manualAttendance'])->m
 Route::resource('/admin/', AdminController::class)->middleware('auth');
 Route::resource('/admin/inscription', AdminInscriptionController::class)->middleware('auth');
 Route::resource('/admin/user_data', UserDataController::class)->middleware('auth');
+Route::delete('/admin/inscription/{inscription}', [InscriptionController::class, 'deleteInscription'])
+    ->name('inscription.delete')
+    ->middleware('auth');
 
 Route::get('/inscription',[SimpleInscriptionController::class,'simpleInscription']); 
 Route::get('/certificate', [InscriptionController::class,'certificateRecovery']);
