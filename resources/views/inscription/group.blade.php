@@ -249,6 +249,24 @@ document.addEventListener("DOMContentLoaded", function () {
    submitLink.addEventListener("click", function (e) {
         e.preventDefault();
         if (allFieldsFilled()) {
+
+             const hybrid = parseInt(form.querySelector('[name="quantity_hybrid"]').value) || 0;
+            const remote = parseInt(form.querySelector('[name="quantity_remote"]').value) || 0;
+            const amount = parseFloat(form.querySelector('[name="amount"]').value) || 0;
+            if (hybrid < 0 || remote < 0) {
+                alert("Las cantidades no pueden ser negativas.");
+                return;
+            }
+
+            if (hybrid === 0 && remote === 0) {
+                alert("Debe ingresar al menos una invitación completa o virtual.");
+                return;
+            }
+
+            if (amount <= 0) {
+                alert("El monto depositado debe ser mayor a 0.");
+                return;
+            }
             submitLink.style.pointerEvents = "none";
             submitLink.style.opacity = "0.5";
             submitLink.textContent = "Enviando...";
