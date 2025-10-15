@@ -317,7 +317,7 @@ class InscriptionController extends Controller
         }
         return redirect($group_inscription->getUrl());
     }
-}
+
 public function deleteInscription(int $inscription_id)
 {
 
@@ -346,4 +346,5 @@ public function deleteInscription(int $inscription_id)
     });
 
      return redirect('/admin/');
+}
 }
