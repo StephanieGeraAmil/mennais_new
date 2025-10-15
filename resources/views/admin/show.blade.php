@@ -31,7 +31,7 @@
                         <div class="w-full overflow-hidden shadow-xs">
                             <div class="w-full overflow-x-auto">
                                 <div class="u-form u-form-1">
-                                    <form action="/admin/user_data/{{ $inscription->userData->id }}" method="POST"
+                                    <form action="/admin/inscription/{{ $inscription->id }}" method="POST"
                                         class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="customphp"
                                         name="form" style="padding: 10px;">
                                         @csrf
