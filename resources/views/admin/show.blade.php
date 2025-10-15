@@ -121,7 +121,10 @@
                                                     Guardar
                                          </button>
                                             {{-- </div> --}}
-                                        <form action="{{ route('inscription.destroy', $inscription->id) }}" method="POST" class="inline-flex">
+                               
+                                        </div>
+                                         <div class="pt-3 px-2">
+                                                 <form action="{{ route('inscription.destroy', $inscription->id) }}" method="POST" class="inline-flex">
                                             @csrf
                                             @method('DELETE')
                                             <button type="submit"
@@ -129,7 +132,7 @@
                                                 Borrar
                                             </button>
                                         </form>
-                                        </div>
+                                                    </div>
                                   @if($inscription->groupInscription)
                                      <div class="pt-3 px-2">
                                         <div class="flex items-center border-b py-2 w-100">
