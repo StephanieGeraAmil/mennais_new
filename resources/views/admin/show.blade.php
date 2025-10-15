@@ -31,7 +31,7 @@
                         <div class="w-full overflow-hidden shadow-xs">
                             <div class="w-full overflow-x-auto">
                                 <div class="u-form u-form-1">
-                                    <form action="/admin/inscription/{{ $inscription->id }}" method="POST"
+                                    <form action="/admin/user_data/{{ $inscription->userData->id }}" method="POST"
                                         class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="customphp"
                                         name="form" style="padding: 10px;">
                                         @csrf
@@ -121,9 +121,8 @@
                                                     Guardar
                                          </button>
                                             {{-- </div> --}}
-                               
+                                        
                                         </div>
-                                      
                                   @if($inscription->groupInscription)
                                      <div class="pt-3 px-2">
                                         <div class="flex items-center border-b py-2 w-100">
@@ -149,8 +148,8 @@
                                           </div>
                                     @endif
                                     </form>
-                                       <div class="pt-3 px-2">
-                                                 <form action="{{ route('inscription.destroy', $inscription->id) }}" method="POST" class="inline-flex">
+                                      <div class="pt-3 px-2">
+                                    <form action="{{ route('inscription.destroy', $inscription->id) }}" method="POST" class="inline-flex">
                                             @csrf
                                             @method('DELETE')
                                             <button type="submit"
@@ -158,7 +157,7 @@
                                                 Borrar
                                             </button>
                                         </form>
-                                                    </div>
+                                           </div>
                                 </div>
                             </div>
                         </div>
