@@ -320,6 +320,9 @@ class InscriptionController extends Controller
 }
 public function deleteInscription(int $inscription_id)
 {
+
+      Log::info('+++++++');
+                      Log::info('deleting inscription id: ' . $inscription_id);
     $inscription = Inscription::findOrFail($inscription_id);
 
     DB::transaction(function () use ($inscription) {
