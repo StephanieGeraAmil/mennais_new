@@ -123,16 +123,7 @@
                                             {{-- </div> --}}
                                
                                         </div>
-                                         <div class="pt-3 px-2">
-                                                 <form action="{{ route('inscription.destroy', $inscription->id) }}" method="POST" class="inline-flex">
-                                            @csrf
-                                            @method('DELETE')
-                                            <button type="submit"
-                                                class="bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 border border-white rounded-xl">
-                                                Borrar
-                                            </button>
-                                        </form>
-                                                    </div>
+                                      
                                   @if($inscription->groupInscription)
                                      <div class="pt-3 px-2">
                                         <div class="flex items-center border-b py-2 w-100">
@@ -158,6 +149,16 @@
                                           </div>
                                     @endif
                                     </form>
+                                       <div class="pt-3 px-2">
+                                                 <form action="{{ route('inscription.destroy', $inscription->id) }}" method="POST" class="inline-flex">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit"
+                                                class="bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 border border-white rounded-xl">
+                                                Borrar
+                                            </button>
+                                        </form>
+                                                    </div>
                                 </div>
                             </div>
                         </div>
