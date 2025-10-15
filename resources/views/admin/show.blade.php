@@ -114,7 +114,7 @@
 
                                             </select>
                                         </div>
-                                        <div class="">
+                                        <div class="pt-3">
                                             {{-- <div class="pt-3"> --}}
                                                 <button type="submit"
                                                     class="bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 border border-white rounded-xl">
