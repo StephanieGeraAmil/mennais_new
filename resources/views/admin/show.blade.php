@@ -96,19 +96,19 @@
                                             <select id="institution_type" name="institution_type"
                                                 class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
                                                 <option value="Educación Inicial"
-                                                    {{ old('type') ?? $inscription->userData->institution_type == 'Educación Inicial' ? 'Selected' : '' }}>
+                                                    {{ old('institution_type') ?? $inscription->userData->institution_type == 'Educación Inicial' ? 'Selected' : '' }}>
                                                     Educación Inicial</option>
                                                 <option value="Primaria"
-                                                    {{ old('type') ?? $inscription->userData->institution_type == 'Primaria' ? 'Selected' : '' }}>
+                                                    {{ old('institution_type') ?? $inscription->userData->institution_type == 'Primaria' ? 'Selected' : '' }}>
                                                     Primaria</option>
                                                 <option value="Secundaria"
-                                                    {{ old('type') ?? $inscription->userData->institution_type == 'Secundaria' ? 'Selected' : '' }}>
+                                                    {{ old('institution_type') ?? $inscription->userData->institution_type == 'Secundaria' ? 'Selected' : '' }}>
                                                     Secundaria</option>
                                                 <option value="Dirección General"
-                                                    {{ old('type') ?? $inscription->userData->institution_type == 'Dirección General' ? 'Selected' : '' }}>
+                                                    {{ old('institution_type') ?? $inscription->userData->institution_type == 'Dirección General' ? 'Selected' : '' }}>
                                                     Dirección General</option>
                                                 <option value="Otro"
-                                                    {{ old('type') ?? $inscription->userData->institution_type == 'Otro' ? 'Selected' : '' }}>
+                                                    {{ old('institution_type') ?? $inscription->userData->institution_type == 'Otro' ? 'Selected' : '' }}>
                                                     Otro</option>
 
 
