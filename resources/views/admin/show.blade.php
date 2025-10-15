@@ -133,7 +133,7 @@
                                             </form>
                                         </div>
                                   @if($inscription->groupInscription)
-                                     <div class="pt-3">
+                                     <div class="pt-3 px-2">
                                         <div class="flex items-center border-b py-2 w-100">
                                             <label class="text-gray-700 font-semibold mr-2">Inscripción grupal:</label>
                                             <input
@@ -145,7 +145,7 @@
                                         </div>
                                           </div>
                                     @else
-                                       <div class="pt-3">
+                                       <div class="pt-3 px-2">
                                         <div class="flex items-center border-b py-2 w-100">
                                             <input
                                                 class="appearance-none bg-transparent border-none w-full text-gray-400 py-1 px-2 leading-tight focus:outline-none"
