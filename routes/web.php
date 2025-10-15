@@ -77,7 +77,7 @@ Route::post('/admin/attendance', [AdminController::class,'manualAttendance'])->m
 
 // Route::resource('/inscription', InscriptionController::class);
 
-Route::delete('/admin/inscription/{inscription}', [InscriptionController::class, 'deleteInscription'])
+Route::delete('/admin/delete_inscription/{inscription}', [InscriptionController::class, 'deleteInscription'])
     ->name('inscription.delete')
     ->middleware('auth');
 Route::resource('/admin/', AdminController::class)->middleware('auth');
