@@ -1,9 +1,19 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Attendance;
+use App\Models\GroupInscription;
 use App\Models\Inscription;
+use App\Models\UserData;
 use Illuminate\Http\Request;
+use Carbon\Carbon;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\DB;
+
+
 
 class AdminInscriptionController extends Controller
 {
@@ -84,6 +94,31 @@ class AdminInscriptionController extends Controller
      */
     public function destroy($id)
     {
-        //
+          Log::info('+++++++');
+                      Log::info('deleting inscription id: ' . $id);
+    $inscription = Inscription::findOrFail($id);
+
+    DB::transaction(function () use ($inscription) {
+
+        // 1. Delete all attendances/accreditations
+        $inscription->attendances()->delete();
+
+        // 2. Increment available quantity if it belongs to a group
+        if ($inscription->group_inscription_id) {
+            $group = GroupInscription::lockForUpdate()->find($inscription->group_inscription_id);
+            if ($group) {
+                if ($inscription->type === InscriptionTypeEnum::HIBRIDO) {
+                    $group->increment('quantity_hybrid_avaiable', 1);
+                } else {
+                    $group->increment('quantity_remote_avaiable', 1);
+                }
+            }
+        }
+
+        // 3. Delete the inscription itself
+        $inscription->delete();
+    });
+
+     return redirect('/admin/');
     }
 }

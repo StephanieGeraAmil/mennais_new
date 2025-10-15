@@ -119,18 +119,16 @@
                                                 <button type="submit"
                                                     class="bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 border border-white rounded-xl">
                                                     Guardar
-                                                </button>
+                                         </button>
                                             {{-- </div> --}}
-                                             <form action="{{ route('inscription.delete', $inscription->id) }}" method="POST" class="inline-flex">
-                                                @csrf
-                                                @method('DELETE')
-                                                   {{-- <div class="pt-3"> --}}
-                                                <button type="submit"
-                                                    class="bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 border border-white rounded-xl">
-                                                    Borrar
-                                                </button>
-                                                {{-- </div> --}}
-                                            </form>
+                                        <form action="{{ route('inscription.destroy', $inscription->id) }}" method="POST" class="inline-flex">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit"
+                                                class="bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 border border-white rounded-xl">
+                                                Borrar
+                                            </button>
+                                        </form>
                                         </div>
                                   @if($inscription->groupInscription)
                                      <div class="pt-3 px-2">
