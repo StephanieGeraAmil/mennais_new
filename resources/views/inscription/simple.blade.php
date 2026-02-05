@@ -107,7 +107,7 @@
             <div class="u-form-select-wrapper">
                 <select
                     id="select-c689"
-                    name="institution_type"
+                    name="city"
                     class="u-input u-input-rectangle"
                 >
                     <option value="Montevideo" {{ old('city') == 'montevideo' ? 'selected' : '' }}>Montevideo</option>
