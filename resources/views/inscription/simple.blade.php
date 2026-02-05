@@ -239,7 +239,7 @@
     <div class="u-align-left u-form-group u-form-submit">
 
             <a 
-            href="https://carlosgera.com"  
+            href="https://audec.org"  
             class="u-btn u-btn-submit u-button-style u-btn-3"
             >Volver</a>
 
@@ -256,11 +256,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form[name='Inscripción Individual']");
     const requiredFields = form.querySelectorAll("[required]");
     const submitLink = document.querySelector("#submit-btn");
-    const volverLink = document.querySelector("a[href='https://carlosgera.com']");
+    const volverLink = document.querySelector("a[href='https://audec.org']");
     function allFieldsFilled() {
         for (let field of requiredFields) {
-            if (field.type === "file" && !field.files.length) return false;
-            if (field.type !== "file" && !field.value.trim()) return false;
+            // if (field.type === "file" && !field.files.length) return false;
+            // if (field.type !== "file" && !field.value.trim()) return false;
+            return true
         }
         return true;
     }
