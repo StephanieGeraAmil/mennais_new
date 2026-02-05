@@ -63,10 +63,10 @@
                                                 class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
                                                 <option value="virtual"
                                                     {{ old('city') ??  $inscription->userData->city == 'montevideo' ? 'Selected' : '' }}>
-                                                    {{ Montevideo }}</option>
+                                                    Montevideo </option>
                                                 <option value="hibrido"
                                                     {{ old('city') ??  $inscription->userData->city == 'interior' ? 'Selected' : '' }}>
-                                                    {{Interior }}</option>
+                                                    Interior </option>
                                             </select>
                                         </div>
                                         <div class="flex items-center border-b py-2 w-100">
