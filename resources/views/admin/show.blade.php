@@ -57,6 +57,13 @@
                                                 type="text" placeholder="E-Mail" aria-label="E-Mail" name="email"
                                                 value="{{ $inscription->userData->email }}" />
                                         </div>
+                                        <div
+                                            class="flex items-center border-b @error('city') border-red-500 @else border-teal-500 @enderror py-2 w-100">
+                                            <input
+                                                class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                                                type="text" placeholder="Localidadl" aria-label="localidad" name="city"
+                                                value="{{ $inscription->userData->city }}" />
+                                        </div>
                                         <div class="flex items-center border-b py-2 w-100">
                                             <select id="type" name="type"
                                                 class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
