@@ -47,6 +47,19 @@
         @csrf
 
     <input type="hidden" name="type" value="hibrido">
+        
+        <div class="u-form-group u-form-name">
+            <label for="document-072d" class="u-label">Cédula de Identidad</label>
+            <input
+                type="text"
+                placeholder="(1234567-8)"
+                id="document-072d"
+                name="document"
+                value="{{ old('document') }}"
+                class="u-input u-input-rectangle"
+                required=""
+            />
+        </div>
 
         <div class="u-form-group u-form-name">
             <label for="name-072d" class="u-label">Nombre Completo</label>
@@ -60,18 +73,7 @@
                 required=""
             />
         </div>
-        <div class="u-form-group u-form-name">
-            <label for="document-072d" class="u-label">Cédula de Identidad</label>
-            <input
-                type="text"
-                placeholder="(1234567-8)"
-                id="document-072d"
-                name="document"
-                value="{{ old('document') }}"
-                class="u-input u-input-rectangle"
-                required=""
-            />
-        </div>
+  
         <div class="u-form-email u-form-group">
             <label for="email-072d" class="u-label"
                 >Email</label
@@ -99,6 +101,41 @@
             />
         </div>
         <div class="u-form-group u-form-select u-form-group-6">
+            <label for="select-c689" class="u-label"
+                >Localidad</label
+            >
+            <div class="u-form-select-wrapper">
+                <select
+                    id="select-c689"
+                    name="institution_type"
+                    class="u-input u-input-rectangle"
+                >
+                    <option value="Montevideo" {{ old('city') == 'montevideo' ? 'selected' : '' }}>Montevideo</option>
+                    <option value="Interior" {{ old('city') == 'interior' ? 'selected' : '' }}>Interior</option>
+                 
+                </select>
+                <svg
+                    class="u-caret u-caret-svg"
+                    version="1.1"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    width="16px"
+                    height="16px"
+                    viewBox="0 0 16 16"
+                    style="fill: currentColor"
+                    xml:space="preserve"
+                >
+                    <polygon
+                        class="st0"
+                        points="8,12 2,4 14,4 "
+                    ></polygon>
+                </svg>
+            </div>
+        </div> 
+        {{-- <div class="u-form-group u-form-select u-form-group-6">
             <label for="select-c689" class="u-label"
                 >Nivel</label
             >
@@ -134,8 +171,8 @@
                     ></polygon>
                 </svg>
             </div>
-        </div>
-        <div
+        </div> --}}
+        {{-- <div
              class="u-form-file-upload u-form-group u-form-group-30"
          >
             <label for="file-upload-2d36" class="u-label"
@@ -197,7 +234,7 @@
                         accept="IMAGES"
                 /></span>
             </div>
-    </div>
+    </div> --}}
 
     <div class="u-align-left u-form-group u-form-submit">
 
@@ -250,20 +287,20 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
    
-   submitLink.addEventListener("click", function (e) {
-        e.preventDefault();
-        if (allFieldsFilled()) {
-            const amount = parseFloat(form.querySelector('[name="amount"]').value) || 0;
-            if (amount <= 0) {
-                alert("El monto depositado debe ser mayor a 0.");
-                return;
-            }
-            submitLink.style.pointerEvents = "none";
-            submitLink.style.opacity = "0.5";
-            submitLink.textContent = "Enviando...";
-            form.submit(); 
-        }
-    });
+//    submitLink.addEventListener("click", function (e) {
+//         e.preventDefault();
+//         if (allFieldsFilled()) {
+//             const amount = parseFloat(form.querySelector('[name="amount"]').value) || 0;
+//             if (amount <= 0) {
+//                 alert("El monto depositado debe ser mayor a 0.");
+//                 return;
+//             }
+//             submitLink.style.pointerEvents = "none";
+//             submitLink.style.opacity = "0.5";
+//             submitLink.textContent = "Enviando...";
+//             form.submit(); 
+//         }
+//     });
 
 
     volverLink.addEventListener("click", function (e) {

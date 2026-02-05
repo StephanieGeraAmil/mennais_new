@@ -21,15 +21,15 @@ class SimpleInscriptionRequest extends FormRequest
             // 'lastname' => 'required|string|max:255',
             'document' => 'required|string|max:255|unique:user_data',
             'email' => 'required|email',
-            'payment_file'=>'nullable|file|mimes:jpg,png,jpeg,gif,svg,pdf',
-            'extra' => 'array', 
+            // 'payment_file'=>'nullable|file|mimes:jpg,png,jpeg,gif,svg,pdf',
+            // 'extra' => 'array', 
             'extra.place' => [ 
                 Rule::in(['montevideo', 'interior'])
             ],
             'city'=>'string|max:255',
-            'amount'=>'nullable|numeric',
+            // 'amount'=>'nullable|numeric',
             'institution_name'=>'string|max:255',
-            'institution_type'=>'string|max:255',
+            // 'institution_type'=>'string|max:255',
             'type' =>  new Enum(InscriptionTypeEnum::class)
         ];
     }
