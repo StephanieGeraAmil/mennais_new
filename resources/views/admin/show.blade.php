@@ -57,12 +57,17 @@
                                                 type="text" placeholder="E-Mail" aria-label="E-Mail" name="email"
                                                 value="{{ $inscription->userData->email }}" />
                                         </div>
-                                        <div
-                                            class="flex items-center border-b @error('city') border-red-500 @else border-teal-500 @enderror py-2 w-100">
-                                            <input
-                                                class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
-                                                type="text" placeholder="Localidadl" aria-label="localidad" name="city"
-                                                value="{{ $inscription->userData->city }}" />
+                                      
+                                           <div class="flex items-center border-b py-2 w-100">
+                                            <select id="city" name="city"
+                                                class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
+                                                <option value="virtual"
+                                                    {{ old('city') ?? $inscription->city->value == 'montevideo' ? 'Selected' : '' }}>
+                                                    {{ Montevideo }}</option>
+                                                <option value="hibrido"
+                                                    {{ old('city') ?? $inscription->city->value == 'interior' ? 'Selected' : '' }}>
+                                                    {{Interior }}</option>
+                                            </select>
                                         </div>
                                         <div class="flex items-center border-b py-2 w-100">
                                             <select id="type" name="type"
@@ -130,7 +135,7 @@
                                             {{-- </div> --}}
                                         
                                         </div>
-                                  @if($inscription->groupInscription)
+                                  {{-- @if($inscription->groupInscription)
                                      <div class="pt-3 px-2">
                                         <div class="flex items-center border-b py-2 w-100">
                                             <label class="text-gray-700 font-semibold mr-2">Inscripción grupal:</label>
@@ -153,7 +158,7 @@
                                             />
                                         </div>
                                           </div>
-                                    @endif
+                                    @endif --}}
                                     </form>
                                       <div class="pt-3 px-2">
                                     <form action="{{ route('inscription.destroy', $inscription->id) }}" method="POST" class="inline-flex">
