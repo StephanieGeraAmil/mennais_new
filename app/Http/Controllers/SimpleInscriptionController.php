@@ -65,12 +65,12 @@ class SimpleInscriptionController extends Controller
             // 'type' => 'hibrido',
         ]);
         try {
-            Mail::to($user_data->email)->send(new FacetofaceInscriptionMail($inscription));   
-            Mail::to(env('ADMIN_EMAIL', "cgerauy@gmail.com"))->send(new AdminInscriptionMail($inscription));     
+            // Mail::to($user_data->email)->send(new FacetofaceInscriptionMail($inscription));   
+            // Mail::to(env('ADMIN_EMAIL', "cgerauy@gmail.com"))->send(new AdminInscriptionMail($inscription));     
             session()->flash('msg', 'Inscripción realizada con exito!!!');
         } catch (\Throwable $th) {
             Log::error("error: ".$th);
-            Log::error("SimpleInscriptionController::Email: ".$user_data->email."; ".env('ADMIN_EMAIL'));
+            // Log::error("SimpleInscriptionController::Email: ".$user_data->email."; ".env('ADMIN_EMAIL'));
             session()->flash('msg', 'Inscripción realizada con exito. En caso de no recibir el email, contactese con Audec');
         }        
         
