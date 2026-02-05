@@ -62,10 +62,10 @@
                                             <select id="city" name="city"
                                                 class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
                                                 <option value="virtual"
-                                                    {{ old('city') ?? $inscription->city->value == 'montevideo' ? 'Selected' : '' }}>
+                                                    {{ old('city') ??  $inscription->userData->city == 'montevideo' ? 'Selected' : '' }}>
                                                     {{ Montevideo }}</option>
                                                 <option value="hibrido"
-                                                    {{ old('city') ?? $inscription->city->value == 'interior' ? 'Selected' : '' }}>
+                                                    {{ old('city') ??  $inscription->userData->city == 'interior' ? 'Selected' : '' }}>
                                                     {{Interior }}</option>
                                             </select>
                                         </div>
