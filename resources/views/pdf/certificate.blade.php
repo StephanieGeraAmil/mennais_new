@@ -61,7 +61,7 @@
   
     </div> --}}
      <div style="width:85%;margin-left:80px; margin-top:10px;text-align:center;">
-       Ha Participado de <BR/> PROEDUCAR 2026 <BR/>- COMUNIDADES QUE CUIDAN: La salud mental como proyecto organizado por AUDEC, el día 11 de febrero de 2026.
+       Ha Participado de PROEDUCAR 2026 - COMUNIDADES QUE CUIDAN:<BR/> La salud mental como proyecto <BR/>organizado por AUDEC, el día 11 de febrero de 2026.
  
     </div>
 </body>
