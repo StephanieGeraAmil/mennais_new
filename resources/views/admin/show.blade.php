@@ -302,12 +302,12 @@
                                         <span class="px-4 text-gray-500">Certificado no disponible</span>
                                     @endif
                                 </div>
-                                <div class="flex items-center py-2 w-100">
+                                {{-- <div class="flex items-center py-2 w-100">
                                     <a href="/admin/resend_qr/{{ $inscription->id }}"
                                         class="mx-3.5 border-b bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 border border-white rounded-xl">
                                         Reenviar código <i class="fas fa-qrcode"></i>
                                     </a>
-                                </div>
+                                </div> --}}
                                 <form action="/admin/attendance" method="post">
                                     @csrf
                                     <input type="hidden" name="inscription_id" value="{{ $inscription->id }}">
