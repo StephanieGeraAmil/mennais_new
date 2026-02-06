@@ -18,6 +18,7 @@
 <meta charset="UTF-8">
 <style>
     @page {
+        size: 1024px 722px;
         margin: 0;
     }
 
@@ -40,7 +41,7 @@
     }
 </style>
 </head>
-<body style="width: 1024px; font-size:20px; font-family:'Open Sans',sans-serif"; >
+<body >
     <div style="width:934px; margin-top:200px; text-align:right">
         Montevideo, miércoles 6 de agosto de 2025
         </div>
