@@ -9,7 +9,7 @@
         body{
             background: url("{{ URL::asset('images') }}/certificado.jpg"); 
             /* background: url("{{ URL::asset('images') }}/certificado_2023_c.jpg");  */
-            background-size: 1024px 722px; 
+            background-size: 2048 × 1448; 
             background-repeat: no-repeat;
         }
     </style>
