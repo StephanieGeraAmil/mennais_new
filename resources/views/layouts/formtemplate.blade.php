@@ -7,7 +7,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
 
-   <title>Congreso Pedagógico</title>
+   <title>PROEDUCAR 2026</title>
 
     <link rel="stylesheet" href="/css/nicepage-form.css" media="screen" />
     <link rel="stylesheet" href="/css/index-form.css" media="screen" />
