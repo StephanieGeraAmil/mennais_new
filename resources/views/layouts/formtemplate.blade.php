@@ -73,6 +73,7 @@
             src="/images/logo_sist.png"
             alt=""
             style="display:block; margin:0 auto;"
+            class="u-align-center u-image u-logo img"
         />
     </div>
             </section>
