@@ -31,7 +31,7 @@ class RecoveryCertificateMail extends Mailable
      */
     public function build()
     {
-        return $this->subject('PROEDUCAR 2025 - CONECTAR PARA EDUCAR - Certificado')->view('emails.recoverycertificate')
+        return $this->subject('PROEDUCAR 2026 - COMUNIDADES QUE CUIDAN - Certificado')->view('emails.recoverycertificate')
         ->with('inscription',$this->inscription);
     }
 }

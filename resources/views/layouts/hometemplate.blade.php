@@ -3,8 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="keywords" content="Cosmos, Read what our customers say, ​View our work, discover more about us, read more of our stories, explore our archive or get in touch., How We Work, ​Uncover and meet customer needs., ​Want your brand to stand above the rest?, Get in touch">
-    <meta name="description" content="PROEDUCAR 2025
-CONECTAR PARA EDUCAR">
+    <meta name="description" content="PROEDUCAR 2026 - COMUNIDADES QUE CUIDAN">
     <title>Inicio</title>
     <link rel="stylesheet" href="/css/nicepage.css" media="screen">
 <link rel="stylesheet" href="/css/index.css" media="screen">
@@ -37,8 +36,7 @@ CONECTAR PARA EDUCAR">
 }</script>
     <meta name="theme-color" content="#ddd6f3">
     <meta property="og:title" content="Inicio">
-    <meta property="og:description" content="PROEDUCAR 2025
-CONECTAR PARA EDUCAR">
+    <meta property="og:description" content="PROEDUCAR 2026 - COMUNIDADES QUE CUIDAN">
     <meta property="og:type" content="website">
   <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
   <body data-home-page="Inicio.html" data-home-page-title="Inicio" data-path-to-root="./" data-include-products="false" class="u-body u-stick-footer u-xl-mode" data-lang="es"> 
@@ -60,8 +58,8 @@ CONECTAR PARA EDUCAR">
                 <div class="u-layout-row">
                   <div class="u-container-style u-layout-cell u-shape-rectangle u-size-60 u-layout-cell-2">
                     <div class="u-container-layout u-container-layout-2">
-                      <h2 class="u-align-center u-custom-font u-font-raleway u-text u-text-palette-1-dark-2 u-text-1">PROEDUCAR 2025</h2>
-                      <h1 class="u-align-center u-custom-font u-font-raleway u-text u-text-palette-1-dark-2 u-title u-text-2">CONECTAR PARA EDUCAR</h1>
+                      <h2 class="u-align-center u-custom-font u-font-raleway u-text u-text-palette-1-dark-2 u-text-1">PROEDUCAR 2026</h2>
+                      <h1 class="u-align-center u-custom-font u-font-raleway u-text u-text-palette-1-dark-2 u-title u-text-2">COMUNIDADES QUE CUIDAN</h1>
                       <h4 class="u-align-center u-text u-text-grey-80 u-text-3">La IA,¿copiloto o competidor?<br>
                         <span style="font-style: italic;">XXXIV Edición</span>
                         <br>

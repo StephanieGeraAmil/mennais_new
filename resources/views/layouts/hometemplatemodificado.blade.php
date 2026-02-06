@@ -76,10 +76,10 @@ transformación Educativa">
                                     <div class="u-container-layout u-valign-middle u-container-layout-2">
                                         <h2
                                             class="u-align-center u-custom-font u-font-raleway u-text u-text-palette-1-dark-2 u-text-1">
-                                            PROEDUCAR 2025</h2>
+                                            PROEDUCAR 2026</h2>
                                         <h1
                                             class="u-align-center u-custom-font u-font-raleway u-text u-text-palette-1-dark-2 u-title u-text-2">
-                                           CONECTAR PARA EDUCAR</h1>
+                                       COMUNIDADES QUE CUIDAN</h1>
                                         <h4 class="u-align-center u-text u-text-grey-80 u-text-3">La IA,¿copiloto o competidor?<br>
                         <span style="font-style: italic;">XXXIV Edición</span>
                         <br>
