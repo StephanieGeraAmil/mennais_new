@@ -30,14 +30,17 @@
     }
 
     body {
-        /* width: 1024px;
-        height: 722px; */
+        width: 1024px;
+        height: 722px;
         font-size: 20px;
         font-family: 'Open Sans', sans-serif;
         background-image: url("{{ public_path('images/certificado.jpg') }}");
-        background-size: cover;
+        /* background-size: cover;
         background-position: center;
+        background-repeat: no-repeat; */
+         background-size: 1024px 722px;
         background-repeat: no-repeat;
+        background-position: left top;
     }
 </style>
 </head>
