@@ -59,7 +59,7 @@
                 class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1"
             >
                 <img
-                    class="u-align-center .u-image.u-logo img"
+                    class="u-align-center u-image u-logo img"
                     src="/images/logo_sist.png"
                     alt=""
                     {{-- data-image-width="750"
