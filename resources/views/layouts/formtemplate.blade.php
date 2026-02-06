@@ -63,7 +63,8 @@
                     class="u-align-center u-image u-logo img"
                     src="/images/logo_sist.png"
                     alt=""
-                    style="max-width:90%; height:auto;"
+                    style="max-width:100%; height:auto; object-fit: contain;"
+                     
                
                 />
             </div>
