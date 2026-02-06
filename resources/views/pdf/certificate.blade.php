@@ -29,8 +29,8 @@
     }
 
     body {
-        width: 1024px;
-        height: 722px;
+        /* width: 1024px;
+        height: 722px; */
         font-size: 20px;
         font-family: 'Open Sans', sans-serif;
         background-image: url("{{ public_path('images/certificado.jpg') }}");
