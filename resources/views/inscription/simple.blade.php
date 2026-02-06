@@ -52,7 +52,7 @@
             <label for="document-072d" class="u-label">Cédula de Identidad</label>
             <input
                 type="text"
-                placeholder="(1234567-8)"
+                placeholder="(12345678)"
                 id="document-072d"
                 name="document"
                 value="{{ old('document') }}"
