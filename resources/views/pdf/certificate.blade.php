@@ -46,7 +46,7 @@
 </head>
 <body >
     <div style="width:934px; margin-top:200px; text-align:right">
-        Montevideo, miércoles 6 de agosto de 2025
+        Montevideo, 15 de febrero de 2026
         </div>
     <div style="margin-left:80px; margin-top:49px">
         Se certifica que:
@@ -61,9 +61,8 @@
   
     </div> --}}
      <div style="width:85%;margin-left:80px; margin-top:10px;text-align:center;">
-        Ha participado del Congreso Pedagógico Educación Emocional<BR/> Desarrollando competencias para el siglo XXI <BR/>
-        organizado por el Colegio La Mennais, el día 2 de agosto del 2025
-  
+       Ha Participado de <BR/> PROEDUCAR 2026 <BR/>- COMUNIDADES QUE CUIDAN: La salud mental como proyecto organizado por AUDEC, el día 11 de febrero de 2026.
+ 
     </div>
 </body>
 </html>
