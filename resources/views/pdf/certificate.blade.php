@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+{{-- <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -13,6 +13,32 @@
             background-repeat: no-repeat;
         }
     </style>
+</head> --}}
+<head>
+<meta charset="UTF-8">
+<style>
+    @page {
+        margin: 0;
+    }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    body {
+        width: 1024px;
+        height: 722px;
+        font-size: 20px;
+        font-family: 'Open Sans', sans-serif;
+        background-image: url("{{ public_path('images/certificado.jpg') }}");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+</style>
 </head>
 <body style="width: 1024px; font-size:20px; font-family:'Open Sans',sans-serif"; >
     <div style="width:934px; margin-top:200px; text-align:right">
