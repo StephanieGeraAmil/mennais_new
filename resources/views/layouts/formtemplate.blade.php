@@ -55,17 +55,26 @@
     <section 
      class="u-clearfix u-container-align-center u-section-1"
             id="block-1">
-          <div
+          {{-- <div
                 class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1"
             >
                 <img
                     class="u-align-center u-image u-logo img"
                     src="/images/logo_sist.png"
                     alt=""
-                    {{-- data-image-width="750"
-                    data-image-height="240" --}}
+               
                 />
-            </div>
+            </div> --}}
+            <div
+        class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1"
+        style="padding:0;"
+    >
+        <img
+            src="/images/logo_sist.png"
+            alt=""
+            style="display:block; margin:0 auto;"
+        />
+    </div>
             </section>
     <section class="u-clearfix u-section-2" id="block-6">
         <div class="u-clearfix u-sheet u-sheet-1">
