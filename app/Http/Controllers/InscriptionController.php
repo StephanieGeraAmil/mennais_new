@@ -229,6 +229,7 @@ class InscriptionController extends Controller
         if ($inscription === null || empty($returned)) {
             return redirect('/');
         }
+        
 
         if ($inscription->validateToken($token)) {
             try {
@@ -254,12 +255,15 @@ class InscriptionController extends Controller
 
         $inscription = Inscription::find($inscription_id);
         Log::debug($inscription_id);
-        $returned = Arr::where(explode(",", env("PRESENCIALEVENTDATES", "2025-10-07")), function ($value) {
-            return Carbon::parse($value)->isToday();
-        });
+        // $returned = Arr::where(explode(",", env("PRESENCIALEVENTDATES", "2025-10-07")), function ($value) {
+        //     return Carbon::parse($value)->isToday();
+        // });
         Log::debug($inscription);
         Log::debug($returned);
-        if ($inscription === null || empty($returned)) {
+        // if ($inscription === null || empty($returned)) {
+        //     return redirect('/');
+        // }
+            if ($inscription === null)) {
             return redirect('/');
         }
         if ($inscription->type !== InscriptionTypeEnum::HIBRIDO) {

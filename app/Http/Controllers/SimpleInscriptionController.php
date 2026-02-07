@@ -65,6 +65,8 @@ class SimpleInscriptionController extends Controller
             // 'type' => 'hibrido',
         ]);
         try {
+            //just for immediate acreditation
+            presencialAttendance($inscription->id,'presencialAttendance');
             // Mail::to($user_data->email)->send(new FacetofaceInscriptionMail($inscription));   
             // Mail::to(env('ADMIN_EMAIL', "cgerauy@gmail.com"))->send(new AdminInscriptionMail($inscription));     
             session()->flash('msg', 'Inscripción realizada con exito!!!');
