@@ -232,16 +232,20 @@
         </div>
       
       
-             <div class="u-form-group u-form-name">
+             {{-- <div class="u-form-group u-form-name">
                    <label for="amount-1207"  class="u-label">Monto depositado</label>
                
                 <input type="text" id="amount-1207" name="amount"
                class="u-input u-input-rectangle">
-            </div>
+            </div> --}}
 
             <div
                         class="u-form-file-upload u-form-group u-form-group-30"
                     >
+                        <label for="amount-1207"  class="u-label">Monto depositado</label>
+               
+                <input type="text" id="amount-1207" name="amount"
+               class="u-input u-input-rectangle">
                         <label for="file-upload-2d36" class="u-label"
                             >Comprobante de pago</label
                         >
