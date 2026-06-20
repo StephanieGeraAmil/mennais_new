@@ -244,7 +244,7 @@
                     >
                         <label for="amount-1207"  class="u-label">Monto depositado</label>
                
-                <input type="text" id="amount-1207" name="amount"
+                <input type="text" id="amount-1207" name="amount_deposited"
                class="u-input u-input-rectangle">
                         <label for="file-upload-2d36" class="u-label"
                             >Comprobante de pago</label
@@ -363,7 +363,7 @@ document.addEventListener("DOMContentLoaded", function () {
    submitLink.addEventListener("click", function (e) {
         e.preventDefault();
         if (allFieldsFilled()) {
-            const amount = parseFloat(form.querySelector('[name="amount"]').value) || 0;
+            const amount = parseFloat(form.querySelector('[name="amount_deposited"]').value) || 0;
             if (amount <= 0) {
                 alert("El monto depositado debe ser mayor a 0.");
                 return;
