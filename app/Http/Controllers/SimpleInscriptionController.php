@@ -29,18 +29,18 @@ class SimpleInscriptionController extends Controller
         $validated_data = $request->validated();
         // dd($validated_data);
         $clean_name = preg_replace('/[^A-Za-z0-9\-]/', '_', $request->get('name'));
-          $payment = null;
-        // if(isset($validated_data['payment_file'])){
-        //     $image_name = Carbon::now()->format('dmyHis')."_".$clean_name.".".$request->payment_file->extension();
+        //   $payment = null;
+        if(isset($validated_data['payment_file'])){
+            $image_name = Carbon::now()->format('dmyHis')."_".$clean_name.".".$request->payment_file->extension();
 
-        // $request->payment_file->move(public_path('images'),$image_name);        
+        $request->payment_file->move(public_path('images'),$image_name);        
         
-        // $payment = Payment::create([
-        //     'url_payment'=>"/images/".$image_name,
-        //     'amount_deposited'=>$validated_data['amount'] ?? 0,
-        //     'reference'=>$validated_data['payment_ref'] ?? ""
-        // ]);
-        // }  
+        $payment = Payment::create([
+            'url_payment'=>"/images/".$image_name,
+            'amount_deposited'=>$validated_data['amount'] ?? 0,
+            'reference'=>$validated_data['payment_ref'] ?? ""
+        ]);
+        }  
         
         $user_data = UserData::create([
             // 'name'=>$validated_data['name']." ".$validated_data['lastname'],
@@ -50,7 +50,7 @@ class SimpleInscriptionController extends Controller
             'extra' => isset($validated_data['extra']) ? json_encode($validated_data['extra']) : json_encode([]),
             'city'=>$validated_data['city'],
             'institution_name'=>$validated_data['institution_name'],
-            // 'institution_type'=>$validated_data['institution_type'],
+            'institution_type'=>$validated_data['institution_type'],
         ]);
         
         
