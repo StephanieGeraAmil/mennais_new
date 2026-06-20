@@ -47,6 +47,20 @@
         @csrf
 
     <input type="hidden" name="type" value="hibrido">
+
+        
+        <div class="u-form-group u-form-name">
+            <label for="name-072d" class="u-label">Nombre Completo</label>
+            <input
+                type="text"
+                placeholder=""
+                id="name-072d"
+                name="name"
+                value="{{ old('name') }}"
+                class="u-input u-input-rectangle"
+                required=""
+            />
+        </div>
         
         <div class="u-form-group u-form-name">
             <label for="document-072d" class="u-label">Cédula de Identidad</label>
@@ -61,18 +75,6 @@
             />
         </div>
 
-        <div class="u-form-group u-form-name">
-            <label for="name-072d" class="u-label">Nombre Completo</label>
-            <input
-                type="text"
-                placeholder=""
-                id="name-072d"
-                name="name"
-                value="{{ old('name') }}"
-                class="u-input u-input-rectangle"
-                required=""
-            />
-        </div>
   
         <div class="u-form-email u-form-group">
             <label for="email-072d" class="u-label"
@@ -101,6 +103,22 @@
             />
         </div>
         <div class="u-form-group u-form-select u-form-group-6">
+            <label for="ciudad-072d" class="u-label"
+                >Ciudad</label
+            >
+            <input
+                type="text"
+                placeholder=""
+                id="ciudad-072d"
+                name="city"
+                value="{{ old('city')  }}"
+                class="u-input u-input-rectangle"
+                required=""
+            />
+            
+        </div> 
+
+        {{-- <div class="u-form-group u-form-select u-form-group-6">
             <label for="select-c689" class="u-label"
                 >Localidad</label
             >
@@ -134,7 +152,9 @@
                     ></polygon>
                 </svg>
             </div>
-        </div> 
+        </div>  --}}
+
+
         {{-- <div class="u-form-group u-form-select u-form-group-6">
             <label for="select-c689" class="u-label"
                 >Nivel</label
@@ -172,70 +192,115 @@
                 </svg>
             </div>
         </div> --}}
-        {{-- <div
-             class="u-form-file-upload u-form-group u-form-group-30"
-         >
-            <label for="file-upload-2d36" class="u-label"
-                >Comprobante de pago</label
-            >
-
-                            <div class="u-file-input-wrapper">
-                                <a class="u-btn u-button-style u-upload-button"
-                                    >Adjuntar</a
-                                >
-                                <div class="u-file-list">
-                                    <div class="u-file-item u-file-template">
-                                        <span class="u-file-name u-text"
-                                            >FileExample.pdf</span
-                                        ><span
-                                            class="u-file-remove u-icon u-text-grey-30 u-icon-1"
-                                            ><svg
-                                                class="u-svg-link"
-                                                preserveAspectRatio="xMidYMin slice"
-                                                viewBox="0 0 51.976 51.976"
-                                                style=""
-                                            >
-                                                <use
-                                                    xlink:href="#svg-312f"
-                                                ></use></svg><svg
-                                                class="u-svg-content"
-                                                viewBox="0 0 51.976 51.976"
-                                                x="0px"
-                                                y="0px"
-                                                id="svg-312f"
-                                                style="
-                                                    enable-background: new 0 0
-                                                        51.976 51.976;
-                                                "
-                                            >
-                                                <g>
-                                                    <path
-                                                        d="M44.373,7.603c-10.137-10.137-26.632-10.138-36.77,0c-10.138,10.138-10.137,26.632,0,36.77s26.632,10.138,36.77,0
-		C54.51,34.235,54.51,17.74,44.373,7.603z M36.241,36.241c-0.781,0.781-2.047,0.781-2.828,0l-7.425-7.425l-7.778,7.778
-		c-0.781,0.781-2.047,0.781-2.828,0c-0.781-0.781-0.781-2.047,0-2.828l7.778-7.778l-7.425-7.425c-0.781-0.781-0.781-2.048,0-2.828
-		c0.781-0.781,2.047-0.781,2.828,0l7.425,7.425l7.071-7.071c0.781-0.781,2.047-0.781,2.828,0c0.781,0.781,0.781,2.047,0,2.828
-		l-7.071,7.071l7.425,7.425C37.022,34.194,37.022,35.46,36.241,36.241z"
-                                                    ></path>
-                                                </g></svg></span>
-                                    </div>
-                                </div>
-                                <p
-                                    class="u-file-max u-text u-text-grey-30 u-text-3"
-                                >
-                                    Tamaño máximo: 10 MB
-                                </p>
-                <span class="u-file-group">
-                    <input
-                        type="file"
-                        id="file-upload-2d36"
-                        name="payment_file"
-                        class="u-input u-input-rectangle u-text-black"
-                        required=""
-                        accept="IMAGES"
-                /></span>
+      <div id="payment_div">
+             <div class="u-form-group u-form-name">
+                <label for="amount-1207"  class="u-label"></label>
+                <input type="text" placeholder="Monto depositado" id="amount-1207" name="amount"
+               class="u-input u-input-rectangle">
             </div>
-    </div> --}}
 
+            <div
+                        class="u-form-file-upload u-form-group u-form-group-30"
+                    >
+                        <label for="file-upload-2d36" class="u-label"
+                            >Comprobante de pago</label
+                        >
+
+                                        <div class="u-file-input-wrapper">
+                                            <a class="u-btn u-button-style u-upload-button"
+                                                >Adjuntar</a
+                                            >
+                                            <div class="u-file-list">
+                                                <div class="u-file-item u-file-template">
+                                                    <span class="u-file-name u-text"
+                                                        >FileExample.pdf</span
+                                                    ><span
+                                                        class="u-file-remove u-icon u-text-grey-30 u-icon-1"
+                                                        ><svg
+                                                            class="u-svg-link"
+                                                            preserveAspectRatio="xMidYMin slice"
+                                                            viewBox="0 0 51.976 51.976"
+                                                            style=""
+                                                        >
+                                                            <use
+                                                                xlink:href="#svg-312f"
+                                                            ></use></svg><svg
+                                                            class="u-svg-content"
+                                                            viewBox="0 0 51.976 51.976"
+                                                            x="0px"
+                                                            y="0px"
+                                                            id="svg-312f"
+                                                            style="
+                                                                enable-background: new 0 0
+                                                                    51.976 51.976;
+                                                            "
+                                                        >
+                                                            <g>
+                                                                <path
+                                                                    d="M44.373,7.603c-10.137-10.137-26.632-10.138-36.77,0c-10.138,10.138-10.137,26.632,0,36.77s26.632,10.138,36.77,0
+                    C54.51,34.235,54.51,17.74,44.373,7.603z M36.241,36.241c-0.781,0.781-2.047,0.781-2.828,0l-7.425-7.425l-7.778,7.778
+                    c-0.781,0.781-2.047,0.781-2.828,0c-0.781-0.781-0.781-2.047,0-2.828l7.778-7.778l-7.425-7.425c-0.781-0.781-0.781-2.048,0-2.828
+                    c0.781-0.781,2.047-0.781,2.828,0l7.425,7.425l7.071-7.071c0.781-0.781,2.047-0.781,2.828,0c0.781,0.781,0.781,2.047,0,2.828
+                    l-7.071,7.071l7.425,7.425C37.022,34.194,37.022,35.46,36.241,36.241z"
+                                                                ></path>
+                                                            </g></svg></span>
+                                                </div>
+                                            </div>
+                                            <p
+                                                class="u-file-max u-text u-text-grey-30 u-text-3"
+                                            >
+                                                Tamaño máximo: 10 MB
+                                            </p>
+                            <span class="u-file-group">
+                                <input
+                                    type="file"
+                                    id="file-upload-2d36"
+                                    name="payment_file"
+                                    class="u-input u-input-rectangle u-text-black"
+                                    required=""
+                                    accept="IMAGES"
+                            /></span>
+                        </div>
+                </div>
+        </div>
+         <div class="u-form-group u-form-select u-form-group-6">
+            <label for="select-c689" class="u-label"
+                >Rol que desempeña</label
+            >
+            <div class="u-form-select-wrapper">
+                <select
+                    id="select-c689"
+                    name="institution_type"
+                    class="u-input u-input-rectangle"
+                >
+                    <option value="Inicial" {{ old('institution_type') == 'Inicial' ? 'selected' : '' }}>Dir. Inicial/Maternal</option>
+                    <option value="Primaria" {{ old('institution_type') == 'Primaria' ? 'selected' : '' }}>Dir. Primaria</option>
+                    <option value="Secundaria" {{ old('institution_type') == 'Secundaria' ? 'selected' : '' }}>Dir. Secundaria</option>
+                    <option value="General" {{ old('institution_type') == 'General' ? 'selected' : '' }}>Dir. General</option>
+                     <option value="Coorinador" {{ old('institution_type') == 'Coorinador' ? 'selected' : '' }}>Coordinador de área</option>
+                    <option value="Otro" {{ old('institution_type') == 'Otro' ? 'selected' : '' }}>Otro</option>
+                </select>
+                <svg
+                    class="u-caret u-caret-svg"
+                    version="1.1"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    width="16px"
+                    height="16px"
+                    viewBox="0 0 16 16"
+                    style="fill: currentColor"
+                    xml:space="preserve"
+                >
+                    <polygon
+                        class="st0"
+                        points="8,12 2,4 14,4 "
+                    ></polygon>
+                </svg>
+            </div>
+        </div>
     <div class="u-align-left u-form-group u-form-submit">
 
             <a 
@@ -291,11 +356,11 @@ document.addEventListener("DOMContentLoaded", function () {
    submitLink.addEventListener("click", function (e) {
         e.preventDefault();
         if (allFieldsFilled()) {
-            // const amount = parseFloat(form.querySelector('[name="amount"]').value) || 0;
-            // if (amount <= 0) {
-            //     alert("El monto depositado debe ser mayor a 0.");
-            //     return;
-            // }
+            const amount = parseFloat(form.querySelector('[name="amount"]').value) || 0;
+            if (amount <= 0) {
+                alert("El monto depositado debe ser mayor a 0.");
+                return;
+            }
             submitLink.style.pointerEvents = "none";
             submitLink.style.opacity = "0.5";
             submitLink.textContent = "Enviando...";
