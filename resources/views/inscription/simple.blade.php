@@ -230,9 +230,10 @@
                 </svg>
             </div>
         </div>
-      <div id="payment_div">
+      
+         <label for="amount-1207"  class="u-label">Monto depositado</label>
              <div class="u-form-group u-form-name">
-                <label for="amount-1207"  class="u-label">Monto depositado</label>
+               
                 <input type="text" placeholder="Monto depositado" id="amount-1207" name="amount"
                class="u-input u-input-rectangle">
             </div>
@@ -300,7 +301,7 @@
                             /></span>
                         </div>
                 </div>
-        </div>
+     
        
     <div class="u-align-left u-form-group u-form-submit">
 
