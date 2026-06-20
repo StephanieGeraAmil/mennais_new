@@ -79,7 +79,7 @@ class UserDataController extends Controller
             'type' => ['required', new Enum(InscriptionTypeEnum::class)],
             'city'=>'string|max:255',
             'institution_name'=>'string|max:255',
-            // 'institution_type'=>'string|max:255'
+            'institution_type'=>'string|max:255'
         ]); 
         $user_data = UserData::findOrFail($id);               
         $user_data->name=$validated_data['name'];
@@ -87,7 +87,7 @@ class UserDataController extends Controller
         $user_data->email=$validated_data['email'];
         $user_data->city=$validated_data['city'];
         $user_data->institution_name=$validated_data['institution_name'];
-        // $user_data->institution_type=$validated_data['institution_type'];
+        $user_data->institution_type=$validated_data['institution_type'];
         $user_data->save();
         $inscription = $user_data->inscription;
         $inscription->type = Arr::get($validated_data, "type");
