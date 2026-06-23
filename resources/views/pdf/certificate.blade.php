@@ -61,7 +61,7 @@
   
     </div> --}}
      <div style="width:85%;margin-left:80px; margin-top:10px;text-align:center;">
-       Ha participado de PROEDUCAR 2026 - COMUNIDADES QUE CUIDAN:<BR/> Miradas para la gestión educativa<BR/>organizado por AUDEC, el día 11 de febrero de 2026.
+       Ha participado de PROEDUCAR 2026 - COMUNIDADES QUE CUIDAN:<BR/> Miradas para la gestión educativa<BR/>organizado por AUDEC, el día 16 de julio de 2026.
  
     </div>
 </body>
