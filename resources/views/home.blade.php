@@ -1,5 +1,5 @@
 @extends('layouts.hometemplate')
-@section('headers')
+{{-- @section('headers')
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="keywords" content="Cosmos, Read what our customers say, ​View our work, discover more about us, read more of our stories, explore our archive or get in touch., How We Work, ​Uncover and meet customer needs., ​Want your brand to stand above the rest?, Get in touch">
@@ -84,4 +84,4 @@ Se han agotado los cupos para la inscripción virtual. Muchas gracias por el int
       <a href="/inscription/certificateRecoveryMail" class="custom-page-typo-item u-active-custom-color-22 u-border-2 u-border-active-palette-1-light-2 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-btn u-button-style u-hover-palette-1-dark-1 u-palette-1-light-3 u-btn-3">Descargar certificado</a>
     </div> 
   @endif
-@endsection
+@endsection --}}
