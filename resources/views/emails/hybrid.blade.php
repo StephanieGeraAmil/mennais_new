@@ -2,6 +2,7 @@
 <p>
     El día de la Jornada deberá acreditarse con el siguiente código QR para que podamos emitir su certificado.
 </p>
+<p>{{ $inscription->qrUrl() }}</p>
 <p>
     <img src="{!!$message->embedData(QrCode::format('png')->generate($inscription->qrUrl()), 'QrCode.png', 'image/png')!!}">
 </p>
