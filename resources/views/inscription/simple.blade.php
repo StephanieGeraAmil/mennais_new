@@ -102,6 +102,45 @@
                 required=""
             />
         </div>
+<div class="u-form-group u-form-select u-form-group-6">
+            <label for="select-c689" class="u-label"
+                >Rol que desempeña</label
+            >
+            <div class="u-form-select-wrapper">
+                <select
+                    id="select-c689"
+                    name="institution_type"
+                    class="u-input u-input-rectangle"
+                >
+                    <option value="Inicial" {{ old('institution_type') == 'Inicial' ? 'selected' : '' }}>Dir. Inicial/Maternal</option>
+                    <option value="Primaria" {{ old('institution_type') == 'Primaria' ? 'selected' : '' }}>Dir. Primaria</option>
+                    <option value="Secundaria" {{ old('institution_type') == 'Secundaria' ? 'selected' : '' }}>Dir. Secundaria</option>
+                    <option value="General" {{ old('institution_type') == 'General' ? 'selected' : '' }}>Dir. General</option>
+                     <option value="Coorinador" {{ old('institution_type') == 'Coorinador' ? 'selected' : '' }}>Coordinador de área</option>
+                    <option value="Otro" {{ old('institution_type') == 'Otro' ? 'selected' : '' }}>Otro</option>
+                </select>
+                <svg
+                    class="u-caret u-caret-svg"
+                    version="1.1"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    width="16px"
+                    height="16px"
+                    viewBox="0 0 16 16"
+                    style="fill: currentColor"
+                    xml:space="preserve"
+                >
+                    <polygon
+                        class="st0"
+                        points="8,12 2,4 14,4 "
+                    ></polygon>
+                </svg>
+            </div>
+        </div>
+
         <div class="u-form-group u-form-select u-form-group-6">
             <label for="ciudad-072d" class="u-label"
                 >Ciudad</label
@@ -192,44 +231,7 @@
                 </svg>
             </div>
         </div> --}}
-          <div class="u-form-group u-form-select u-form-group-6">
-            <label for="select-c689" class="u-label"
-                >Rol que desempeña</label
-            >
-            <div class="u-form-select-wrapper">
-                <select
-                    id="select-c689"
-                    name="institution_type"
-                    class="u-input u-input-rectangle"
-                >
-                    <option value="Inicial" {{ old('institution_type') == 'Inicial' ? 'selected' : '' }}>Dir. Inicial/Maternal</option>
-                    <option value="Primaria" {{ old('institution_type') == 'Primaria' ? 'selected' : '' }}>Dir. Primaria</option>
-                    <option value="Secundaria" {{ old('institution_type') == 'Secundaria' ? 'selected' : '' }}>Dir. Secundaria</option>
-                    <option value="General" {{ old('institution_type') == 'General' ? 'selected' : '' }}>Dir. General</option>
-                     <option value="Coorinador" {{ old('institution_type') == 'Coorinador' ? 'selected' : '' }}>Coordinador de área</option>
-                    <option value="Otro" {{ old('institution_type') == 'Otro' ? 'selected' : '' }}>Otro</option>
-                </select>
-                <svg
-                    class="u-caret u-caret-svg"
-                    version="1.1"
-                    id="Layer_1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    x="0px"
-                    y="0px"
-                    width="16px"
-                    height="16px"
-                    viewBox="0 0 16 16"
-                    style="fill: currentColor"
-                    xml:space="preserve"
-                >
-                    <polygon
-                        class="st0"
-                        points="8,12 2,4 14,4 "
-                    ></polygon>
-                </svg>
-            </div>
-        </div>
+          
       
       
              {{-- <div class="u-form-group u-form-name">
