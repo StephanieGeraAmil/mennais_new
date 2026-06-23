@@ -139,12 +139,12 @@
                                         <div class="flex items-center border-b py-2 w-100">
                                             <select id="institution_type" name="institution_type"
                                                 class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
-                                                <option value="Inicial" {{ old('institution_type') == 'Inicial' ? 'selected' : '' }}>Dir. Inicial/Maternal</option>
-                                                <option value="Primaria" {{ old('institution_type') == 'Primaria' ? 'selected' : '' }}>Dir. Primaria</option>
-                                                <option value="Secundaria" {{ old('institution_type') == 'Secundaria' ? 'selected' : '' }}>Dir. Secundaria</option>
-                                                <option value="General" {{ old('institution_type') == 'General' ? 'selected' : '' }}>Dir. General</option>
-                                                <option value="Coorinador" {{ old('institution_type') == 'Coorinador' ? 'selected' : '' }}>Coordinador de área</option>
-                                                <option value="Otro" {{ old('institution_type') == 'Otro' ? 'selected' : '' }}>Otro</option>
+                                          <option value="Inicial" {{ old('institution_type', $inscription->userData->institution_type) == 'Inicial' ? 'selected' : '' }}>Dir. Inicial/Maternal</option>
+                                            <option value="Primaria" {{ old('institution_type', $inscription->userData->institution_type) == 'Primaria' ? 'selected' : '' }}>Dir. Primaria</option>
+                                            <option value="Secundaria" {{ old('institution_type', $inscription->userData->institution_type) == 'Secundaria' ? 'selected' : '' }}>Dir. Secundaria</option>
+                                            <option value="General" {{ old('institution_type', $inscription->userData->institution_type) == 'General' ? 'selected' : '' }}>Dir. General</option>
+                                            <option value="Coordinador" {{ old('institution_type', $inscription->userData->institution_type) == 'Coordinador' ? 'selected' : '' }}>Coordinador de área</option>
+                                            <option value="Otro" {{ old('institution_type', $inscription->userData->institution_type) == 'Otro' ? 'selected' : '' }}>Otro</option>
 
 
                                             </select>
