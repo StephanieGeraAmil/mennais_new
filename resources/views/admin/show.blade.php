@@ -58,7 +58,14 @@
                                                 value="{{ $inscription->userData->email }}" />
                                         </div>
                                       
-                                           <div class="flex items-center border-b py-2 w-100">
+                                        <div
+                                            class="flex items-center border-b @error('city') border-red-500 @else border-teal-500 @enderror py-2 w-100">
+                                            <input
+                                                class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                                                type="text" placeholder="ciudad" aria-label="ciudad" name="city"
+                                                value="{{ $inscription->userData->city }}" />
+                                        </div>
+                                              {{-- <div class="flex items-center border-b py-2 w-100">
                                             <select id="city" name="city"
                                                 class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
                                                 <option value="montevideo"
@@ -68,7 +75,7 @@
                                                     {{ old('city') ??  $inscription->userData->city == 'interior' ? 'Selected' : '' }}>
                                                     Interior </option>
                                             </select>
-                                        </div>
+                                        </div> --}}
                                         <div class="flex items-center border-b py-2 w-100">
                                             <select id="type" name="type"
                                                 class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
@@ -104,7 +111,7 @@
                                                 aria-label="Tipo de institución" name="institution_type"
                                                 value="{{ $inscription->userData->institution_type }}" />
                                         </div>  --}}
-                                        <div class="flex items-center border-b py-2 w-100">
+                                        {{-- <div class="flex items-center border-b py-2 w-100">
                                             <select id="institution_type" name="institution_type"
                                                 class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
                                                 <option value="Educación Inicial"
@@ -125,7 +132,24 @@
 
 
                                             </select>
+                                        </div> --}}
+
+                              
+
+                                        <div class="flex items-center border-b py-2 w-100">
+                                            <select id="institution_type" name="institution_type"
+                                                class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10">
+                                                <option value="Inicial" {{ old('institution_type') == 'Inicial' ? 'selected' : '' }}>Dir. Inicial/Maternal</option>
+                                                <option value="Primaria" {{ old('institution_type') == 'Primaria' ? 'selected' : '' }}>Dir. Primaria</option>
+                                                <option value="Secundaria" {{ old('institution_type') == 'Secundaria' ? 'selected' : '' }}>Dir. Secundaria</option>
+                                                <option value="General" {{ old('institution_type') == 'General' ? 'selected' : '' }}>Dir. General</option>
+                                                <option value="Coorinador" {{ old('institution_type') == 'Coorinador' ? 'selected' : '' }}>Coordinador de área</option>
+                                                <option value="Otro" {{ old('institution_type') == 'Otro' ? 'selected' : '' }}>Otro</option>
+
+
+                                            </select>
                                         </div>
+
                                         <div class="pt-3">
                                             {{-- <div class="pt-3"> --}}
                                                 <button type="submit"
