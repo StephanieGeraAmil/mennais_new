@@ -44,12 +44,12 @@ class SimpleInscriptionController extends Controller
                /**
         * Create Payment
         */
-        dd([
-    'has_file' => $request->hasFile('payment_file'),
-    'file' => $request->file('payment_file'),
-    'amount_deposited' => $request->input('amount_deposited'),
-    'validated' => $validated_data,
-]);
+//         dd([
+//     'has_file' => $request->hasFile('payment_file'),
+//     'file' => $request->file('payment_file'),
+//     'amount_deposited' => $request->input('amount_deposited'),
+//     'validated' => $validated_data,
+// ]);
         $clean_name = preg_replace('/[^A-Za-z0-9\-]/', '_', $request->get('name'));
         $image_name = Carbon::now()->format('dmyHis')."_".$clean_name.".".$request->payment_file->extension();
         $request->payment_file->move(public_path('images'),$image_name);        
