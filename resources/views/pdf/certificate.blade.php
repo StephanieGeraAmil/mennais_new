@@ -46,7 +46,7 @@
 </head>
 <body >
     <div style="width:934px; margin-top:200px; text-align:right">
-        Montevideo, 15 de febrero de 2026
+        Montevideo, 16 de julio de 2026
         </div>
     <div style="margin-left:80px; margin-top:49px">
         Se certifica que:
