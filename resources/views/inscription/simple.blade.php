@@ -329,6 +329,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form[name='Inscripción Individual']");
     const requiredFields = form.querySelectorAll("[required]");
+    console.log(requiredFields)
     const submitLink = document.querySelector("#submit-btn");
     const volverLink = document.querySelector("a[href='https://audec.org']");
     function allFieldsFilled() {
