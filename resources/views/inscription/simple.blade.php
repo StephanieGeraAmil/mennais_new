@@ -333,10 +333,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const submitLink = document.querySelector("#submit-btn");
     const volverLink = document.querySelector("a[href='https://audec.org']");
     function allFieldsFilled() {
+        // console.log("checking required fields")
         for (let field of requiredFields) {
+            // console.log("field", field.name, "value", field.value, "files", field.files)
             if (field.type === "file" && !field.files.length) return false;
             if (field.type !== "file" && !field.value.trim()) return false;
-            return true
+            // return true
         }
         return true;
     }
