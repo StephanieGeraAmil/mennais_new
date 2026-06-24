@@ -333,8 +333,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const volverLink = document.querySelector("a[href='https://audec.org']");
     function allFieldsFilled() {
         for (let field of requiredFields) {
-            // if (field.type === "file" && !field.files.length) return false;
-            // if (field.type !== "file" && !field.value.trim()) return false;
+            if (field.type === "file" && !field.files.length) return false;
+            if (field.type !== "file" && !field.value.trim()) return false;
             return true
         }
         return true;
