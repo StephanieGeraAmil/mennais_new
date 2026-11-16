@@ -104,6 +104,8 @@ class AdminInscriptionController extends Controller
         $inscription->attendances()->delete();
         // 2. Delete all user data associated with the inscription
         $inscription->userData->delete();
+      
+        
 
         // 3. Increment available quantity if it belongs to a group
         if ($inscription->group_inscription_id) {
@@ -115,9 +117,12 @@ class AdminInscriptionController extends Controller
                     $group->increment('quantity_remote_avaiable', 1);
                 }
             }
+        }else{
+            // 4. Delete the payment associated with the inscription
+            $inscription->payment->delete();
         }
 
-        // 3. Delete the inscription itself
+        // 5. Delete the inscription itself
         $inscription->delete();
     });
 
