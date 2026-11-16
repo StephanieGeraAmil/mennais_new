@@ -358,7 +358,7 @@
                                         <button type="submit"
                                             disabled
                                             id="manualAccreditationButton"  
-                                            class="bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 border border-white rounded-xl">
+                                            class="bg-gray-400 text-white font-bold py-2 px-4 border border-white rounded-xl opacity-50 cursor-not-allowed">
                                             Acreditación Manual
                                         </button>
                                     </div>
@@ -395,13 +395,17 @@
         dateInput.addEventListener('input', function () {
             button.disabled = !dateInput.value;
 
-            if (!button.disabled) {
-                button.classList.remove('opacity-50', 'cursor-not-allowed');
-                button.classList.add('hover:bg-gray-700');
-            } else {
-                button.classList.add('opacity-50', 'cursor-not-allowed');
-                button.classList.remove('hover:bg-gray-700');
-            }
+            // if (!button.disabled) {
+            //     button.classList.remove('opacity-50', 'cursor-not-allowed');
+            //     button.classList.add('hover:bg-gray-700');
+            // } else {
+            //     button.classList.add('opacity-50', 'cursor-not-allowed');
+            //     button.classList.remove('hover:bg-gray-700');
+            // }
+
+            button.classList.toggle('opacity-50', !hasDate);
+            button.classList.toggle('cursor-not-allowed', !hasDate);
+            button.classList.toggle('hover:bg-gray-700', hasDate);
         });
 
         // Prevent duplicate submissions
