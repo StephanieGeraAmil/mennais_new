@@ -340,7 +340,9 @@
                                         class="flex items-center @error('name') border-red-500 @else border-teal-500 @enderror py-2 w-100 border-t ">
                                         <input
                                             class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
-                                            type="date" placeholder="acreditation_date" aria-label=""
+                                            type="date" 
+                                            id="acreditationDate"
+                                            placeholder="acreditation_date" aria-label=""
                                             name="acreditation_date" value="" />
                                     </div>
                                     <div class="flex items-center p-2 w-100">
@@ -354,6 +356,7 @@
                                     </div>
                                     <div class="flex items-center p-2 w-100">
                                         <button type="submit"
+                                            disabled
                                             id="manualAccreditationButton"  
                                             class="bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 border border-white rounded-xl">
                                             Acreditación Manual
@@ -376,31 +379,50 @@
             </div>
         </div>
     </div>
-  <script>
+
+<script>
     document.addEventListener('DOMContentLoaded', function () {
 
         const form = document.getElementById('manualAccreditationForm');
+        const dateInput = document.getElementById('acreditationDate');
+        const button = document.getElementById('manualAccreditationButton');
 
-        if (form) {
-            form.addEventListener('submit', function () {
+        if (!form || !dateInput || !button) {
+            return;
+        }
 
-                const button = document.getElementById('manualAccreditationButton');
+        // Enable button only when a date is selected
+        dateInput.addEventListener('input', function () {
+            button.disabled = !dateInput.value;
 
-                if (!button || button.disabled) {
-                    return;
-                }
-
-                button.disabled = true;
-                button.innerText = 'Procesando...';
-
+            if (!button.disabled) {
+                button.classList.remove('opacity-50', 'cursor-not-allowed');
+                button.classList.add('hover:bg-gray-700');
+            } else {
                 button.classList.add('opacity-50', 'cursor-not-allowed');
                 button.classList.remove('hover:bg-gray-700');
+            }
+        });
 
-            });
-        }
+        // Prevent duplicate submissions
+        form.addEventListener('submit', function (event) {
+
+            if (!dateInput.value || button.disabled) {
+                event.preventDefault();
+                return;
+            }
+
+            button.disabled = true;
+            button.innerText = 'Procesando...';
+
+            button.classList.add('opacity-50', 'cursor-not-allowed');
+            button.classList.remove('hover:bg-gray-700');
+
+        });
 
     });
 </script>
+
 @endsection
 
 
