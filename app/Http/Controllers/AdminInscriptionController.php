@@ -102,8 +102,10 @@ class AdminInscriptionController extends Controller
 
         // 1. Delete all attendances/accreditations
         $inscription->attendances()->delete();
+        // 2. Delete all user data associated with the inscription
+        $inscription->userData->delete();
 
-        // 2. Increment available quantity if it belongs to a group
+        // 3. Increment available quantity if it belongs to a group
         if ($inscription->group_inscription_id) {
             $group = GroupInscription::lockForUpdate()->find($inscription->group_inscription_id);
             if ($group) {
