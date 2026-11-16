@@ -354,6 +354,7 @@
                                     </div>
                                     <div class="flex items-center p-2 w-100">
                                         <button type="submit"
+                                            id="manualAccreditationButton"  
                                             class="bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 border border-white rounded-xl">
                                             Acreditación Manual
                                         </button>
@@ -375,4 +376,21 @@
             </div>
         </div>
     </div>
+    <script>
+    document.getElementById('manualAccreditationForm').addEventListener('submit', function () {
+        const button = document.getElementById('manualAccreditationButton');
+
+        if (button.disabled) {
+            return;
+        }
+
+        button.disabled = true;
+        button.innerText = 'Procesando...';
+
+        button.classList.add('opacity-50', 'cursor-not-allowed');
+        button.classList.remove('hover:bg-gray-700');
+    });
+    </script>   
 @endsection
+
+
