@@ -395,17 +395,17 @@
         dateInput.addEventListener('input', function () {
             button.disabled = !dateInput.value;
 
-            // if (!button.disabled) {
-            //     button.classList.remove('opacity-50', 'cursor-not-allowed');
-            //     button.classList.add('hover:bg-gray-700');
-            // } else {
-            //     button.classList.add('opacity-50', 'cursor-not-allowed');
-            //     button.classList.remove('hover:bg-gray-700');
-            // }
+            if (!button.disabled) {
+                button.classList.remove('opacity-50', 'cursor-not-allowed');
+                button.classList.add('hover:bg-gray-700');
+            } else {
+                button.classList.add('opacity-50', 'cursor-not-allowed');
+                button.classList.remove('hover:bg-gray-700');
+            }
 
-            button.classList.toggle('opacity-50', !hasDate);
-            button.classList.toggle('cursor-not-allowed', !hasDate);
-            button.classList.toggle('hover:bg-gray-700', hasDate);
+            // button.classList.toggle('opacity-50', !hasDate);
+            // button.classList.toggle('cursor-not-allowed', !hasDate);
+            // button.classList.toggle('hover:bg-gray-700', hasDate);
         });
 
         // Prevent duplicate submissions
