@@ -333,7 +333,7 @@
                                     </a>
                                 </div>
                            
-                                <form action="/admin/attendance" method="post">
+                                <form action="/admin/attendance" method="post" id="manualAccreditationForm">
                                     @csrf
                                     <input type="hidden" name="inscription_id" value="{{ $inscription->id }}">
                                     <div
@@ -376,21 +376,31 @@
             </div>
         </div>
     </div>
-    <script>
-    document.getElementById('manualAccreditationForm').addEventListener('submit', function () {
-        const button = document.getElementById('manualAccreditationButton');
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
 
-        if (button.disabled) {
-            return;
+        const form = document.getElementById('manualAccreditationForm');
+
+        if (form) {
+            form.addEventListener('submit', function () {
+
+                const button = document.getElementById('manualAccreditationButton');
+
+                if (!button || button.disabled) {
+                    return;
+                }
+
+                button.disabled = true;
+                button.innerText = 'Procesando...';
+
+                button.classList.add('opacity-50', 'cursor-not-allowed');
+                button.classList.remove('hover:bg-gray-700');
+
+            });
         }
 
-        button.disabled = true;
-        button.innerText = 'Procesando...';
-
-        button.classList.add('opacity-50', 'cursor-not-allowed');
-        button.classList.remove('hover:bg-gray-700');
     });
-    </script>   
+</script>
 @endsection
 
 
