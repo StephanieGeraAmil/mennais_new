@@ -97,15 +97,7 @@ class SimpleInscriptionController extends Controller
         
         session()->flash('msg', 'Inscripción realizada con exito!!!');
        
-        dd([
-          
-    'auto' => env('AUTO_ACREDITATION'),
-    'test' => env('TEST_VARIABLE'),
-
-    'config_cached' => app()->configurationIsCached(),
-    'env_file_exists' => file_exists(base_path('.env')),
-    'env_file_path' => base_path('.env'),
-            ]);
+   
         //if AUTO_ACREDITATION true it wont need the default that is false
         if (env('AUTO_ACREDITATION', false)) {
             try {
@@ -127,7 +119,7 @@ class SimpleInscriptionController extends Controller
                         'line' => $th->getLine()
                     ]);
 
-                    throw $th;
+                    // throw $th;
             }
              return view('welcomePresencial')->with('userData', $inscription->userData);
         }else{
