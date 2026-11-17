@@ -97,6 +97,10 @@ class SimpleInscriptionController extends Controller
         
         session()->flash('msg', 'Inscripción realizada con exito!!!');
        
+        dd([
+                'auto_acreditation' => env('AUTO_ACREDITATION', false),
+                'inscription_id' => $inscription->id,
+            ]);
         //if AUTO_ACREDITATION true it wont need the default that is false
         if (env('AUTO_ACREDITATION', false)) {
             try {
@@ -106,7 +110,19 @@ class SimpleInscriptionController extends Controller
                     'user_id' => 0,
                     'type' => InscriptionTypeEnum::PRESENCIAL
                 ]);
+                Log::info('Attendance created', [
+                    'attendance_id' => $attendance->id,
+                    'inscription_id' => $inscription->id
+                ]);
             } catch (\Throwable $th) {
+                   Log::error('Attendance creation failed', [
+                        'inscription_id' => $inscription->id,
+                        'error' => $th->getMessage(),
+                        'file' => $th->getFile(),
+                        'line' => $th->getLine()
+                    ]);
+
+                    throw $th;
             }
              return view('welcomePresencial')->with('userData', $inscription->userData);
         }else{
