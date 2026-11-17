@@ -84,20 +84,6 @@ class SimpleInscriptionController extends Controller
             'type'=>Arr::get($validated_data,"type")
             // 'type' => 'hibrido',
         ]);
-
-        //if AUTO_ACREDITATION==1 then add presential attendance
-      if (env('AUTO_ACREDITATION', true)) {
-            try {
-                Attendance::create([
-                    'inscription_id' => $inscription->id,
-                    'date' => Carbon::now(),
-                    'user_id' => 0,
-                    'type' => InscriptionTypeEnum::PRESENCIAL
-                ]);
-            } catch (\Throwable $th) {
-            }
-             return view('welcomePresencial')->with('userData', $inscription->userData);
-        }
         try {
 
             Mail::to($user_data->email)->send(new FacetofaceInscriptionMail($inscription));   
@@ -110,7 +96,24 @@ class SimpleInscriptionController extends Controller
         }        
         
         session()->flash('msg', 'Inscripción realizada con exito!!!');
-        return redirect('/simple_inscription');
+       
+        //if AUTO_ACREDITATION true it wont need the default that is false
+        if (env('AUTO_ACREDITATION', false)) {
+            try {
+                Attendance::create([
+                    'inscription_id' => $inscription->id,
+                    'date' => Carbon::now(),
+                    'user_id' => 0,
+                    'type' => InscriptionTypeEnum::PRESENCIAL
+                ]);
+            } catch (\Throwable $th) {
+            }
+             return view('welcomePresencial')->with('userData', $inscription->userData);
+        }else{
+            return redirect('/simple_inscription');    
+        }
+     
+       
     }
     
     
