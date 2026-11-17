@@ -7,7 +7,8 @@ use App\Mail\AdminInscriptionMail;
 use App\Mail\FacetofaceInscriptionMail;
 use App\Models\Inscription;
 use App\Models\Payment;
-use App\Models\UserData; 
+use App\Models\UserData;
+use App\Models\Attendance; 
 use Carbon\Carbon;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Log;
@@ -83,6 +84,20 @@ class SimpleInscriptionController extends Controller
             'type'=>Arr::get($validated_data,"type")
             // 'type' => 'hibrido',
         ]);
+
+        //if AUTO_ACREDITATION==1 then add presential attendance
+      if (env('AUTO_ACREDITATION', true)) {
+            try {
+                Attendance::create([
+                    'inscription_id' => $inscription->id,
+                    'date' => Carbon::now(),
+                    'user_id' => 0,
+                    'type' => InscriptionTypeEnum::PRESENCIAL
+                ]);
+            } catch (\Throwable $th) {
+            }
+             return view('welcomePresencial')->with('userData', $inscription->userData);
+        }
         try {
 
             Mail::to($user_data->email)->send(new FacetofaceInscriptionMail($inscription));   
