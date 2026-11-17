@@ -111,7 +111,7 @@ class SimpleInscriptionController extends Controller
                     'attendance_id' => $attendance->id,
                     'inscription_id' => $inscription->id
                 ]);
-                return view('welcomePresencial')->with('userData', $inscription->userData);
+            
             } catch (\Throwable $th) {
                    Log::error('Attendance creation failed', [
                         'inscription_id' => $inscription->id,
@@ -122,7 +122,7 @@ class SimpleInscriptionController extends Controller
 
                     // throw $th;
             }
-         
+             return view('welcomePresencial')->with('userData', $inscription->userData);
         }else{
             return redirect('/simple_inscription');    
         }
