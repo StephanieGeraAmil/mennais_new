@@ -98,7 +98,10 @@ class SimpleInscriptionController extends Controller
         session()->flash('msg', 'Inscripción realizada con exito!!!');
        
         dd([
-               'env' => env('AUTO_ACREDITATION'),
+          
+    'auto' => env('AUTO_ACREDITATION'),
+    'test' => env('TEST_VARIABLE'),
+
     'config_cached' => app()->configurationIsCached(),
     'env_file_exists' => file_exists(base_path('.env')),
     'env_file_path' => base_path('.env'),
