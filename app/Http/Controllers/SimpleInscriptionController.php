@@ -98,8 +98,10 @@ class SimpleInscriptionController extends Controller
         session()->flash('msg', 'Inscripción realizada con exito!!!');
        
         dd([
-                'auto_acreditation' => env('AUTO_ACREDITATION', false),
-                'inscription_id' => $inscription->id,
+               'env' => env('AUTO_ACREDITATION'),
+    'config_cached' => app()->configurationIsCached(),
+    'env_file_exists' => file_exists(base_path('.env')),
+    'env_file_path' => base_path('.env'),
             ]);
         //if AUTO_ACREDITATION true it wont need the default that is false
         if (env('AUTO_ACREDITATION', false)) {
