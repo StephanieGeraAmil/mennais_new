@@ -73,7 +73,12 @@ class CodeInscriptionController extends Controller
         $code->status = 2;
         $code->inscription_id = $inscription->id;
         $code->save();
-
+dd([
+    'auto_accreditation' => env('AUTO_ACREDITATION'),
+    'inscription' => $inscription,
+    'user_data' => $inscription->userData,
+    'inscription_id' => $inscription->id,
+]);
 
         try {
             Mail::to($user_data->email)->send(new FacetofaceInscriptionMail($inscription));
