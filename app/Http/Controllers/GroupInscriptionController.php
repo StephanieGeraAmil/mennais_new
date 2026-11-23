@@ -179,7 +179,7 @@ public function joinStore(Request $request, $id)
                     'inscription_id' => $inscription->id,
                     'date' => Carbon::now(),
                     'user_id' => 0,
-                    'type' => InscriptionTypeEnum::PRESENCIAL
+                    'type' => $inscription->type,
                 ]);
                
              return view('welcomePresencial')->with('userData', $inscription->userData);
