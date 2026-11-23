@@ -7,10 +7,13 @@ use App\Mail\AdminInscriptionMail;
 use App\Mail\FacetofaceInscriptionMail;
 use App\Models\Code;
 use App\Models\Inscription;
+use App\Models\Attendance;
 use App\Models\UserData;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
+use Carbon\Carbon;
+use App\Enums\InscriptionTypeEnum;
 
 class CodeInscriptionController extends Controller
 {
