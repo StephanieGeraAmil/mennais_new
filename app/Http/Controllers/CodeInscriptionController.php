@@ -70,6 +70,8 @@ class CodeInscriptionController extends Controller
         $code->status = 2;
         $code->inscription_id = $inscription->id;
         $code->save();
+
+
         try {
             Mail::to($user_data->email)->send(new FacetofaceInscriptionMail($inscription));
             session()->flash('msg', 'Inscripción realizada con exito!!!');
@@ -84,7 +86,32 @@ class CodeInscriptionController extends Controller
             Log::error("CodeInscriptionController::AdminEmail: ".env('ADMIN_EMAIL'));
             session()->flash('msg', 'Inscripción realizada con exito. En caso de no recibir el email, contactese con Audec');
         }
-        return redirect('/simple_inscription');        
+        
+        if (env('AUTO_ACREDITATION', false)) {
+            try {
+                Attendance::create([
+                    'inscription_id' => $inscription->id,
+                    'date' => Carbon::now(),
+                    'user_id' => 0,
+                    'type' => InscriptionTypeEnum::PRESENCIAL
+                ]);
+               
+             return view('welcomePresencial')->with('userData', $inscription->userData);
+            } catch (\Throwable $th) {
+                   Log::error('Attendance creation failed', [
+                        'inscription_id' => $inscription->id,
+                        'error' => $th->getMessage(),
+                        'file' => $th->getFile(),
+                        'line' => $th->getLine()
+                    ]);
+
+                    // throw $th;
+            }
+  
+            
+        }else{
+            return redirect('/simple_inscription');    
+        }   
     }
 
 
