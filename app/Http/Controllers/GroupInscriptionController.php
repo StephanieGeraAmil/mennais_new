@@ -14,12 +14,14 @@ use App\Models\GroupInscription;
 use App\Models\Payment;
 use App\Models\UserData;
 use App\Models\Inscription;
+use App\Models\Attendance;
 use Carbon\Carbon;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+
 class GroupInscriptionController extends Controller
 {
     public function groupInscription()
@@ -170,7 +172,32 @@ public function joinStore(Request $request, $id)
         Mail::to(env('ADMIN_EMAIL', 'cgerauy@gmail.com'))->send(new AdminInscriptionMail($inscription));
 
         session()->flash('msg', 'Inscripción realizada con éxito usando un link grupal.');
-        return redirect()->route('group.inscription.join', ['id' => $id]);
+    
+        if (env('AUTO_ACREDITATION', false)) {
+            try {
+                Attendance::create([
+                    'inscription_id' => $inscription->id,
+                    'date' => Carbon::now(),
+                    'user_id' => 0,
+                    'type' => InscriptionTypeEnum::PRESENCIAL
+                ]);
+               
+             return view('welcomePresencial')->with('userData', $inscription->userData);
+            } catch (\Throwable $th) {
+                   Log::error('Attendance creation failed', [
+                        'inscription_id' => $inscription->id,
+                        'error' => $th->getMessage(),
+                        'file' => $th->getFile(),
+                        'line' => $th->getLine()
+                    ]);
+
+                    // throw $th;
+            }
+  
+            
+        }else{
+            return redirect()->route('group.inscription.join', ['id' => $id]);  
+        }   
 
     } catch (\Exception $e) {
         Log::error("Error in joinStore: {$e->getMessage()}");
